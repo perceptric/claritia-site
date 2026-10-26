@@ -19,7 +19,7 @@
 <meta name="theme-color" content="#0b0c0e">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"><!-- taste-skill-ignore -->
 <link rel="stylesheet" href="/assets/base.css">
 <link rel="stylesheet" href="/assets/app.css">
 <link rel="stylesheet" href="/assets/home.css">
@@ -46,10 +46,14 @@
 	<main id="main">
 
 		<!-- 1. Hero: the product performs -->
-		<section class="hero">
-			<div class="wrap hero__in">
+		<section class="section hero" id="top">
+			<div class="hero__glow" aria-hidden="true"></div>
+			<div class="wrap hero__head">
 				<div>
-					<h1 class="hero__h1"><span class="rise"><span>Know who is</span></span><span class="rise"><span style="animation-delay:.09s">on your site.</span></span></h1>
+					<a class="announce" href="#product"><span class="announce__pill"><b>New</b> Introducing the Claritia marketing platform <span class="pt">See the screens</span></span></a>
+					<h1 class="hero__h1"><span class="rise"><span>Know who is</span></span><span class="rise"><span style="animation-delay:.09s"><span class="grad">on your site.</span></span></span></h1>
+				</div>
+				<div class="hero__aside reveal">
 					<p class="hero__lead">Claritia names the companies and people behind your traffic, keeps one live database of contacts and segments, and scores every account with the reason why now.</p>
 					<div class="hero__cta">
 						<a class="btn btn--primary" href="https://app.tryclaritia.com">Start free</a>
@@ -57,88 +61,115 @@
 					</div>
 					<p class="hero__note">No credit card. 60+ sources. Reads your warehouse read-only.</p>
 				</div>
-				<div class="hero__frag">
-					<div data-ui class="ui ui-panel receipt">
-						<input class="r-radio" type="radio" name="acct" id="acct-acme" checked>
-						<input class="r-radio" type="radio" name="acct" id="acct-northwind">
-						<input class="r-radio" type="radio" name="acct" id="acct-globex">
-						<div class="receipt__tabs">
-							<label for="acct-acme">Acme</label>
-							<label for="acct-northwind">Northwind</label>
-							<label for="acct-globex">Globex</label>
+			</div>
+			<div class="wrap hero__stage reveal">
+				<div class="window" data-ui>
+					<div class="window__bar"><span class="wdot"></span><span class="wdot"></span><span class="wdot"></span><span class="window__url">app.tryclaritia.com/accounts</span></div>
+					<div class="window__body">
+						<aside class="wnav" aria-hidden="true">
+							<p class="wnav__group">Views</p>
+							<span class="wnav__item is-on"><i style="--hue:var(--blue)"></i>Accounts</span>
+							<span class="wnav__item"><i style="--hue:var(--green)"></i>Visitors</span>
+							<span class="wnav__item"><i style="--hue:var(--blue)"></i>Contacts</span>
+							<span class="wnav__item"><i style="--hue:var(--violet)"></i>Segments</span>
+							<p class="wnav__group">Sources</p>
+							<span class="wnav__item"><i style="--hue:var(--green)"></i>HubSpot</span>
+							<span class="wnav__item"><i style="--hue:var(--amber)"></i>Imports</span>
+							<span class="wnav__item"><i style="--hue:#a3a3a3"></i>Warehouses</span>
+							<span class="wnav__item"><i style="--hue:var(--red)"></i>Sync log</span>
+						</aside>
+						<div class="window__main">
+							<div data-ui class="ui ui-panel receipt">
+								<input class="r-radio" type="radio" name="acct" id="acct-acme" checked>
+								<input class="r-radio" type="radio" name="acct" id="acct-northwind">
+								<input class="r-radio" type="radio" name="acct" id="acct-globex">
+								<div class="receipt__tabs">
+									<label for="acct-acme">Acme</label>
+									<label for="acct-northwind">Northwind</label>
+									<label for="acct-globex">Globex</label>
+								</div>
+								<div class="receipt__stage">
+									<div class="receipt__body" data-acct="acme">
+										<div class="receipt__top">
+											<span class="ui-av">AC</span>
+											<span><span class="receipt__co">Acme</span><span class="ui-sub">acme.com · SaaS · 201-500 · US</span></span>
+											<span class="receipt__tags"><span class="ui-badge ui-badge--brand">Evaluating</span><span class="ui-badge ui-badge--red">Hot</span></span>
+										</div>
+										<div class="receipt__scores">
+											<div><p class="ui-slabel">Fit</p><p class="ui-sval">82</p></div>
+											<div><p class="ui-slabel">Intent</p><p class="ui-sval">71</p></div>
+											<div><p class="ui-slabel">Priority</p><p class="ui-sval">9</p></div>
+										</div>
+										<p class="receipt__why">Why now: <b>read pricing twice and compared us to Globex.</b></p>
+										<div class="receipt__sigs">
+											<p class="receipt__siglabel">Signals behind the score</p>
+											<details class="sig"><summary><span class="sig__name">pricing · jane@acme.com</span><span class="sig__val">5 × 0.62 = 3.1</span></summary>
+												<div class="sig__ev"><span class="ui-badge ui-badge--brand">AI</span>Visit from chatgpt.com · /pricing, /security, /demo · 4m 30s · Verified person</div></details>
+											<details class="sig"><summary><span class="sig__name">demo · marcus@globex.io</span><span class="sig__val">2 × 0.48 = 1.0</span></summary>
+												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Form</span>Filled “Request a demo” 2 days ago · consent recorded, opted in</div></details>
+											<details class="sig"><summary><span class="sig__name">return_visit · 14 quiet days</span><span class="sig__val">8</span></summary>
+												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Session</span>Back after 14 quiet days · first seen 3 weeks ago</div></details>
+										</div>
+									</div>
+									<div class="receipt__body" data-acct="northwind">
+										<div class="receipt__top">
+											<span class="ui-av">NW</span>
+											<span><span class="receipt__co">Northwind</span><span class="ui-sub">northwind.co · Fintech · 51-200 · CA</span></span>
+											<span class="receipt__tags"><span class="ui-badge ui-badge--violet">Researching</span></span>
+										</div>
+										<div class="receipt__scores">
+											<div><p class="ui-slabel">Fit</p><p class="ui-sval">78</p></div>
+											<div><p class="ui-slabel">Intent</p><p class="ui-sval">54</p></div>
+											<div><p class="ui-slabel">Priority</p><p class="ui-sval">6</p></div>
+										</div>
+										<p class="receipt__why">Why now: <b>two people read the security page this week.</b></p>
+										<div class="receipt__sigs">
+											<p class="receipt__siglabel">Signals behind the score</p>
+											<details class="sig"><summary><span class="sig__name">security · 2 people</span><span class="sig__val">2 × 0.71 = 1.4</span></summary>
+												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Page</span>/security read by lena@northwind.co and marc@northwind.co · 3m each</div></details>
+											<details class="sig"><summary><span class="sig__name">new_person · lena@northwind.co</span><span class="sig__val">6</span></summary>
+												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Form</span>Signed up for the newsletter · Asserted identity</div></details>
+										</div>
+									</div>
+									<div class="receipt__body" data-acct="globex">
+										<div class="receipt__top">
+											<span class="ui-av">GX</span>
+											<span><span class="receipt__co">Globex</span><span class="ui-sub">globex.io · Logistics · 1000+ · US</span></span>
+											<span class="receipt__tags"><span class="ui-badge ui-badge--gray">Engaged</span></span>
+										</div>
+										<div class="receipt__scores">
+											<div><p class="ui-slabel">Fit</p><p class="ui-sval">64</p></div>
+											<div><p class="ui-slabel">Intent</p><p class="ui-sval">38</p></div>
+											<div><p class="ui-slabel">Priority</p><p class="ui-sval">3</p></div>
+										</div>
+										<p class="receipt__why">Why now: <b>came back after three quiet weeks.</b></p>
+										<div class="receipt__sigs">
+											<p class="receipt__siglabel">Signals behind the score</p>
+											<details class="sig"><summary><span class="sig__name">return_visit · 21 quiet days</span><span class="sig__val">8</span></summary>
+												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Session</span>Unknown visitor · Germany · 2 pages · 50s</div></details>
+											<details class="sig"><summary><span class="sig__name">page_mid · /integrations</span><span class="sig__val">3</span></summary>
+												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Page</span>Read /integrations once · desktop</div></details>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="receipt__stage">
-							<div class="receipt__body" data-acct="acme">
-								<div class="receipt__top">
-									<span class="ui-av">AC</span>
-									<span><span class="receipt__co">Acme</span><span class="ui-sub">acme.com · SaaS · 201-500 · US</span></span>
-									<span class="receipt__tags"><span class="ui-badge ui-badge--brand">Evaluating</span><span class="ui-badge ui-badge--red">Hot</span></span>
-								</div>
-								<div class="receipt__scores">
-									<div><p class="ui-slabel">Fit</p><p class="ui-sval">82</p></div>
-									<div><p class="ui-slabel">Intent</p><p class="ui-sval">71</p></div>
-									<div><p class="ui-slabel">Priority</p><p class="ui-sval">9</p></div>
-								</div>
-								<p class="receipt__why">Why now: <b>read pricing twice and compared us to Globex.</b></p>
-								<div class="receipt__sigs">
-									<p class="receipt__siglabel">Signals behind the score</p>
-									<details class="sig"><summary><span class="sig__name">pricing · jane@acme.com</span><span class="sig__val">5 × 0.62 = 3.1</span></summary>
-										<div class="sig__ev"><span class="ui-badge ui-badge--brand">AI</span>Visit from chatgpt.com · /pricing, /security, /demo · 4m 30s · Verified person</div></details>
-									<details class="sig"><summary><span class="sig__name">demo · marcus@globex.io</span><span class="sig__val">2 × 0.48 = 1.0</span></summary>
-										<div class="sig__ev"><span class="ui-badge ui-badge--gray">Form</span>Filled “Request a demo” 2 days ago · consent recorded, opted in</div></details>
-									<details class="sig"><summary><span class="sig__name">return_visit · 14 quiet days</span><span class="sig__val">8</span></summary>
-										<div class="sig__ev"><span class="ui-badge ui-badge--gray">Session</span>Back after 14 quiet days · first seen 3 weeks ago</div></details>
-								</div>
-							</div>
-							<div class="receipt__body" data-acct="northwind">
-								<div class="receipt__top">
-									<span class="ui-av">NW</span>
-									<span><span class="receipt__co">Northwind</span><span class="ui-sub">northwind.co · Fintech · 51-200 · CA</span></span>
-									<span class="receipt__tags"><span class="ui-badge ui-badge--violet">Researching</span></span>
-								</div>
-								<div class="receipt__scores">
-									<div><p class="ui-slabel">Fit</p><p class="ui-sval">78</p></div>
-									<div><p class="ui-slabel">Intent</p><p class="ui-sval">54</p></div>
-									<div><p class="ui-slabel">Priority</p><p class="ui-sval">6</p></div>
-								</div>
-								<p class="receipt__why">Why now: <b>two people read the security page this week.</b></p>
-								<div class="receipt__sigs">
-									<p class="receipt__siglabel">Signals behind the score</p>
-									<details class="sig"><summary><span class="sig__name">security · 2 people</span><span class="sig__val">2 × 0.71 = 1.4</span></summary>
-										<div class="sig__ev"><span class="ui-badge ui-badge--gray">Page</span>/security read by lena@northwind.co and marc@northwind.co · 3m each</div></details>
-									<details class="sig"><summary><span class="sig__name">new_person · lena@northwind.co</span><span class="sig__val">6</span></summary>
-										<div class="sig__ev"><span class="ui-badge ui-badge--gray">Form</span>Signed up for the newsletter · Asserted identity</div></details>
-								</div>
-							</div>
-							<div class="receipt__body" data-acct="globex">
-								<div class="receipt__top">
-									<span class="ui-av">GX</span>
-									<span><span class="receipt__co">Globex</span><span class="ui-sub">globex.io · Logistics · 1000+ · US</span></span>
-									<span class="receipt__tags"><span class="ui-badge ui-badge--gray">Engaged</span></span>
-								</div>
-								<div class="receipt__scores">
-									<div><p class="ui-slabel">Fit</p><p class="ui-sval">64</p></div>
-									<div><p class="ui-slabel">Intent</p><p class="ui-sval">38</p></div>
-									<div><p class="ui-slabel">Priority</p><p class="ui-sval">3</p></div>
-								</div>
-								<p class="receipt__why">Why now: <b>came back after three quiet weeks.</b></p>
-								<div class="receipt__sigs">
-									<p class="receipt__siglabel">Signals behind the score</p>
-									<details class="sig"><summary><span class="sig__name">return_visit · 21 quiet days</span><span class="sig__val">8</span></summary>
-										<div class="sig__ev"><span class="ui-badge ui-badge--gray">Session</span>Unknown visitor · Germany · 2 pages · 50s</div></details>
-									<details class="sig"><summary><span class="sig__name">page_mid · /integrations</span><span class="sig__val">3</span></summary>
-										<div class="sig__ev"><span class="ui-badge ui-badge--gray">Page</span>Read /integrations once · desktop</div></details>
-								</div>
-							</div>
-						</div>
+					</div>
+				</div>
+				<div class="window__float">
+					<div class="float-card" data-ui>
+						<p class="float-card__label">Why now</p>
+						<p class="float-card__line"><b>Read pricing twice</b> and compared us to Globex.</p>
+						<p class="float-card__row"><span class="float-card__tag">AI</span> Visit from chatgpt.com · 4m 30s</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- 2. The sequence -->
-		<section class="sec sec--tint" id="how">
-			<div class="wrap">
+		<section class="section section--raised" id="how">
+			<div class="wrap reveal">
+				<p class="label">// How it starts</p>
 				<h2 class="sec__h">From visit to lead.</h2>
 				<p class="sec__lead">One record, moving. Each step adds what the last one could not say, and keeps the evidence.</p>
 				<ol class="seq">
@@ -167,12 +198,13 @@
 		</section>
 
 		<!-- 3. Showcase -->
-		<section class="sec" id="product">
-			<div class="wrap">
+		<section class="section" id="product">
+			<div class="wrap reveal">
+				<p class="label">// The product</p>
 				<h2 class="sec__h">The product, screen by screen.</h2>
 				<p class="sec__lead">Real screens. Scroll sideways, open the tabs, read every label.</p>
 			</div>
-			<div class="wrap show">
+			<div class="wrap show reveal">
 				<div class="show__rail">
 					<div class="show__item">
 						<div data-ui class="ui ui-panel">
@@ -261,8 +293,9 @@
 		</section>
 
 		<!-- 4. Index -->
-		<section class="sec sec--tint">
-			<div class="wrap">
+		<section class="section section--raised">
+			<div class="wrap reveal">
+				<p class="label">// Everything it does</p>
 				<h2 class="sec__h">Everything it does.</h2>
 				<p class="sec__lead">Find what you need. Open a row to see it.</p>
 				<div class="idx" id="idx">
@@ -345,55 +378,62 @@
 		</section>
 
 		<!-- 5. Sources -->
-		<section class="sec" id="sources">
-			<div class="wrap">
+		<section class="section" id="sources">
+			<div class="wrap reveal">
+				<p class="label">// Your stack</p>
 				<h2 class="sec__h">Where the data comes from.</h2>
 				<p class="sec__lead">You keep your stack. Claritia reads it, cleans it, and writes back where you allow.</p>
+				<div class="marquee" aria-hidden="true">
+					<div class="marquee__row">
+						<span>HubSpot</span><span>Salesforce</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Mailchimp</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Typeform</span><span>Tally</span><span>Calendly</span><span>Stripe</span><span>Snowflake</span><span>BigQuery</span>
+						<span>HubSpot</span><span>Salesforce</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Mailchimp</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Typeform</span><span>Tally</span><span>Calendly</span><span>Stripe</span><span>Snowflake</span><span>BigQuery</span>
+					</div>
+				</div>
 				<div class="srcboard">
-						<div class="srcgroup">
-							<h3>CRMs</h3>
-							<p>HubSpot, Salesforce, Omniscient, Pipedrive, Attio, Close</p>
-						</div>
-						<div class="srcgroup">
-							<h3>Email tools</h3>
-							<p>Mailchimp, Klaviyo, ActiveCampaign, Brevo, Kit, MailerLite</p>
-						</div>
-						<div class="srcgroup">
-							<h3>Forms</h3>
-							<p>Typeform, Tally, Webflow forms</p>
-						</div>
-						<div class="srcgroup">
-							<h3>Meetings</h3>
-							<p>Calendly, Cal.com</p>
-						</div>
-						<div class="srcgroup">
-							<h3>Product and billing</h3>
-							<p>Stripe, Intercom</p>
-						</div>
-						<div class="srcgroup">
-							<h3>Warehouses, read-only</h3>
-							<p>Postgres, Redshift, MySQL, ClickHouse, BigQuery, Snowflake, Databricks</p>
-						</div>
+					<div class="srcgroup">
+						<h3>CRMs</h3>
+						<p>HubSpot, Salesforce, Omniscient, Pipedrive, Attio, Close</p>
 					</div>
-					<div class="srcrun">
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">HubSpot</span><span class="ui-head__end"><span class="ui-badge ui-badge--green">Active</span></span></div>
-							<table class="ui-table">
-								<thead><tr><th class="ui-th">When</th><th class="ui-th">What</th><th class="ui-th r">Read</th><th class="ui-th r">Written</th><th class="ui-th r">Errors</th></tr></thead>
-								<tbody>
-									<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Contacts</td><td class="ui-td r">240</td><td class="ui-td r">18</td><td class="ui-td r">0</td></tr>
-									<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--violet">Out</span> Companies</td><td class="ui-td r">-</td><td class="ui-td r">6</td><td class="ui-td r">0</td></tr>
-									<tr><td class="ui-td ui-dim">1h ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Unsubscribes</td><td class="ui-td r">12</td><td class="ui-td r">12</td><td class="ui-td r">0</td></tr>
-								</tbody>
-							</table>
-						</div>
+					<div class="srcgroup">
+						<h3>Email tools</h3>
+						<p>Mailchimp, Klaviyo, ActiveCampaign, Brevo, Kit, MailerLite</p>
 					</div>
+					<div class="srcgroup">
+						<h3>Forms</h3>
+						<p>Typeform, Tally, Webflow forms</p>
+					</div>
+					<div class="srcgroup">
+						<h3>Meetings</h3>
+						<p>Calendly, Cal.com</p>
+					</div>
+					<div class="srcgroup">
+						<h3>Product and billing</h3>
+						<p>Stripe, Intercom</p>
+					</div>
+					<div class="srcgroup">
+						<h3>Warehouses, read-only</h3>
+						<p>Postgres, Redshift, MySQL, ClickHouse, BigQuery, Snowflake, Databricks</p>
+					</div>
+				</div>
+				<div class="srcrun">
+					<div data-ui class="ui ui-panel">
+						<div class="ui-head"><span class="ui-title">HubSpot</span><span class="ui-head__end"><span class="ui-badge ui-badge--green">Active</span></span></div>
+						<table class="ui-table">
+							<thead><tr><th class="ui-th">When</th><th class="ui-th">What</th><th class="ui-th r">Read</th><th class="ui-th r">Written</th><th class="ui-th r">Errors</th></tr></thead>
+							<tbody>
+								<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Contacts</td><td class="ui-td r">240</td><td class="ui-td r">18</td><td class="ui-td r">0</td></tr>
+								<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--violet">Out</span> Companies</td><td class="ui-td r">-</td><td class="ui-td r">6</td><td class="ui-td r">0</td></tr>
+								<tr><td class="ui-td ui-dim">1h ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Unsubscribes</td><td class="ui-td r">12</td><td class="ui-td r">12</td><td class="ui-td r">0</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<!-- 6. Evidence -->
-		<section class="sec sec--tint">
-			<div class="wrap">
+		<section class="section section--raised">
+			<div class="wrap reveal">
 				<div class="tiles">
 					<div class="tile tile--head">
 						<h2>Every score, with its evidence.</h2>
@@ -408,8 +448,9 @@
 		</section>
 
 		<!-- 7. Trust -->
-		<section class="sec">
-			<div class="wrap">
+		<section class="section">
+			<div class="wrap reveal">
+				<p class="label">// Consent and identity</p>
 				<h2 class="sec__h">Consent, identity, erasure.</h2>
 				<div class="trust">
 					<div class="trust__item"><h3>Every link shows its proof.</h3><p>A visit becomes a person as Verified, Asserted or Probable, with the evidence, and it can be undone.</p></div>
@@ -421,8 +462,9 @@
 		</section>
 
 		<!-- 8. Pricing -->
-		<section class="sec sec--tint" id="pricing">
-			<div class="wrap">
+		<section class="section section--raised" id="pricing">
+			<div class="wrap reveal">
+				<p class="label">// Pricing</p>
 				<h2 class="sec__h">Pick a plan.</h2>
 				<div class="plans">
 					<input class="p-radio" type="radio" name="plan" id="plan-growth" checked>
@@ -475,9 +517,9 @@
 		</section>
 
 		<!-- 9. FAQ -->
-		<section class="sec" id="faq">
-			<div class="wrap faq">
-				<div class="faq__head"><h2 class="sec__h">Questions.</h2></div>
+		<section class="section" id="faq">
+			<div class="wrap faq reveal">
+				<div class="faq__head"><p class="label">// Questions</p><h2 class="sec__h">Questions.</h2></div>
 				<div class="faq__list">
 					<details name="faq"><summary>Does Claritia need my whole CRM?<span class="plus" aria-hidden="true"></span></summary><p>No. Connect a CRM and we keep it in step, or start with a file, a form or the website script alone. Every source is independent, and the sync is two-way only where you switch it on.</p></details>
 					<details name="faq"><summary>What happens to a visitor who never fills a form?<span class="plus" aria-hidden="true"></span></summary><p>They stay a device and a company, matched by network. We do not invent an email. When a form, a sign-in or an email click ties them to a person, the visit joins that record and the evidence is kept.</p></details>
@@ -490,8 +532,8 @@
 		</section>
 
 		<!-- 10. Close -->
-		<section class="close">
-			<div class="wrap">
+		<section class="section close" id="start">
+			<div class="wrap reveal">
 				<form class="close__form" action="https://app.tryclaritia.com" method="get">
 					<span>Bring your site in with</span>
 					<input class="close__email" type="email" name="email" placeholder="you@company.com" aria-label="Work email" autocomplete="email">
@@ -503,29 +545,43 @@
 	</main>
 
 	<footer class="site-foot">
-		<div class="wrap site-foot__grid">
-			<div class="site-foot__tile t-statement">
+		<div class="wrap site-foot__top">
+			<div class="site-foot__brand">
+				<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
 				<p>The website intelligence and marketing platform. See who is on your site, keep one live database of contacts, and know which account to call today.</p>
+				<span class="site-foot__status">All systems running</span>
+				<div class="site-foot__ai">
+					<p class="label">Summarize with AI</p>
+					<ul>
+						<li><a href="https://chatgpt.com/?q=Read%20https%3A%2F%2Ftryclaritia.com%2F%20and%20tell%20me%20what%20Claritia%20does" target="_blank" rel="noopener noreferrer">Open in ChatGPT</a></li>
+						<li><a href="https://claude.ai/new?q=Read%20https%3A%2F%2Ftryclaritia.com%2F%20and%20tell%20me%20what%20Claritia%20does" target="_blank" rel="noopener noreferrer">Open in Claude</a></li>
+						<li><a href="https://www.perplexity.ai/search?q=Read%20https%3A%2F%2Ftryclaritia.com%2F%20and%20tell%20me%20what%20Claritia%20does" target="_blank" rel="noopener noreferrer">Open in Perplexity</a></li>
+					</ul>
+				</div>
 			</div>
-			<nav class="site-foot__tile site-foot__col t-nav" aria-label="Product">
-				<h3>Product</h3>
-				<a href="#product">Screens</a>
-				<a href="#sources">Sources</a>
-				<a href="#pricing">Pricing</a>
-				<a href="#faq">FAQ</a>
-			</nav>
-			<nav class="site-foot__tile site-foot__col t-src" aria-label="Company">
-				<h3>Company</h3>
-				<a href="mailto:hello@tryclaritia.com">Contact</a>
-				<a href="https://app.tryclaritia.com">Sign in</a>
-			</nav>
-			<div class="site-foot__tile t-mail">
-				<p class="site-foot__email"><a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></p>
-			</div>
-			<div class="site-foot__tile t-mark">
-				<p class="site-foot__mark">Claritia</p>
+			<div class="site-foot__cols">
+				<nav class="site-foot__col" aria-label="Product">
+					<h3>Product</h3>
+					<a href="#product">Screens</a>
+					<a href="#sources">Sources</a>
+					<a href="#pricing">Pricing</a>
+					<a href="#faq">FAQ</a>
+				</nav>
+				<nav class="site-foot__col" aria-label="Suite">
+					<h3>Suite</h3>
+					<a href="https://tryclaritia.com">Claritia</a>
+					<a href="mailto:hello@tryclaritia.com">Arrowsterr</a>
+					<a href="mailto:hello@tryclaritia.com">Omniscient</a>
+				</nav>
+				<nav class="site-foot__col" aria-label="Company">
+					<h3>Company</h3>
+					<a href="mailto:hello@tryclaritia.com">Contact</a>
+					<a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a>
+					<a href="https://app.tryclaritia.com">Sign in</a>
+				</nav>
 			</div>
 		</div>
+		<div class="wrap"><p class="site-foot__mark" aria-hidden="true">Claritia</p></div>
 		<div class="wrap site-foot__legal">
 			<p>© 2026 Perceptric. Claritia is a Perceptric product.</p>
 			<p>All systems running.</p>
