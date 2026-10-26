@@ -1,18 +1,17 @@
 # Claritia pricing
 
-Claritia turns plain-English user flows into Playwright tests, runs them in the cloud, and saves video, traces, network logs and screenshots for every run.
+Claritia turns website visitors into leads and leads into meetings, with AI agents running the journeys, writing the emails, building the pages and proving what made revenue.
 
-| Plan | Price | Projects | Cloud minutes a month | AI credits a month | Also includes |
+| Plan | Price | Contacts | Emails a month | Sites | Also includes |
 |---|---|---|---|---|---|
-| Free | $0/month | 1 | 300 | 200 | Video, trace and network log for every run, Test inboxes |
-| Starter | $49/month | 3 | 2,000 | 2,000 | GitHub App, Schedules |
-| Team | $199/month | Unlimited | 10,000 | 10,000 | MCP server, PR-aware runs, Slack alerts |
-| Business | Custom | Unlimited | Unlimited | Unlimited | SSO, Private runners, Data region, Managed test writing |
+| Starter | $299/month | 5,000 | 25,000 | 1 | Website Intelligence, segments, broadcasts, 3 journeys with agent steps (review mode), Funnel QA basics |
+| Growth | $799/month | 25,000 | 100,000 | 3 | Unlimited journeys, review-sample and auto modes, pages and forms, personalization, attribution, Omniscient and HubSpot sync |
+| Scale | From $1,999/month | 100,000+ | Higher limits | More | Dedicated sending IPs, Salesforce sync, Marketing Agent, SSO, priority support |
 
-- Unlimited users on every plan.
-- A cloud minute is one minute of browser time in a cloud run.
-- An AI credit is one call to Claude to write a step. Claude writes each step once, then every run replays the saved Playwright code and uses no credits.
+- Every plan includes Website Intelligence, a live contact database, the agent steps and email sending from your own domain.
+- Overage: $10 per 1,000 contacts and $1 per 1,000 emails.
+- Suite bundle: run Arrowsterr, Claritia and Omniscient together and get 20% off.
 - Plans renew monthly. Cancel any time from Settings.
-- Business is billed yearly. Write to hello@tryclaritia.com.
+- Scale is billed yearly. Write to hello@tryclaritia.com.
 
 Start free: https://app.tryclaritia.com

@@ -195,12 +195,13 @@ button, input, textarea { font: inherit; letter-spacing: inherit; color: inherit
   text-transform: uppercase;
   white-space: nowrap;
 }
-.tag--passed { background: var(--success-soft); color: var(--success); }
-.tag--failed { background: var(--danger-soft); color: var(--danger); }
-.tag--healed { background: var(--violet-soft); color: var(--violet); }
-.tag--cached { border: 1px solid var(--line-strong); color: var(--body); }
-.tag--running, .tag--brand { background: var(--brand); color: #fff; }
-.tag--flaky { background: var(--warning-soft); color: var(--warning); }
+.tag--brand { background: var(--brand); color: #fff; }
+.tag--sourced { background: var(--violet-soft); color: var(--violet); }
+.tag--approved { background: var(--success-soft); color: var(--success); }
+.tag--sent { background: var(--brand-soft); color: var(--brand); }
+.tag--waiting { background: var(--warning-soft); color: var(--warning); }
+.tag--hot { background: var(--danger-soft); color: var(--danger); }
+.tag--draft { border: 1px solid var(--line-strong); color: var(--body); }
 
 /* Buttons */
 .btn {

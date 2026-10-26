@@ -3,8 +3,9 @@
 Static site for Claritia. Plain HTML and CSS: no WordPress, no JavaScript, no build step.
 It is set up the same way as perceptric.com.
 
-The home page is a copy of the Next.js home page in the app repo (`src/app/page.tsx`).
-It looks the same, uses the same words, and sends every button to the same place.
+The home page describes Claritia, the agentic marketing platform: website visitors become leads
+and leads become meetings, with AI agents running the journeys, writing the emails and building the
+pages. The product plan lives in the app repo at `docs/marketing-platform.md`.
 
 ## How it's laid out
 
@@ -18,7 +19,7 @@ It looks the same, uses the same words, and sends every button to the same place
 | `llms.txt` | A short guide to Claritia for AI tools. |
 | `pricing.md` | The plans as a Markdown table. |
 | `robots.txt`, `sitemap.xml` | For search engines. |
-| `.htaccess` | https and www redirects, the 404 page, text file types, old app links, cache times. |
+| `.htaccess` | https and www redirects, the 404 page, text file types, app links, cache times. |
 
 ## Editing
 
@@ -27,9 +28,10 @@ It looks the same, uses the same words, and sends every button to the same place
   The page font size is 14px, so `1rem` is 14px. Breakpoints are 640px, 768px and 1024px.
 - **Header and footer:** they sit in both `index.html` and `404.html`. Change both.
   With two pages there is no partials folder or layout script.
-- **Prices and plan limits:** the cards in the `<!-- Pricing -->` section of `index.html`, the table in
-  `pricing.md`, and `src/lib/plans.ts` in the app. Change all three together.
-- **/llms.txt:** edit `llms.txt`. Keep it in step with `src/app/llms.txt/route.ts` in the app.
+- **Prices and plan limits:** the cards in the `<!-- Pricing -->` section of `index.html` and the
+  table in `pricing.md`. Change both together, and keep them in step with the app's platform plans
+  (`src/lib/plans.ts` in the app) once platform billing ships.
+- **/llms.txt:** edit `llms.txt`. Keep it in step with the app's `/llms.txt`.
 - **Footer year:** typed into the footer of both pages. Change it in January.
 - **New page:** make a folder with an `index.html` (copy `404.html` to start, since it has the header
   and footer). Give it a title, description and canonical tag, drop the `noindex` line, and add it to
@@ -49,7 +51,7 @@ Push to `main` and Hostinger deploys it.
 |---|---|
 | `/llms.txt` | A real file, served as `text/plain; charset=utf-8`. |
 | `/pricing.md` | A real file, served as `text/markdown; charset=utf-8`. |
-| `/tests`, `/runs`, `/settings` and the other app paths | A 301 redirect to the same path on app.tryclaritia.com. The query string comes along. |
+| `/visitors`, `/accounts`, `/contacts`, `/segments`, `/journeys`, `/pages`, `/reports` and the other app paths | A 301 redirect to the same path on app.tryclaritia.com. The query string comes along. |
 | Anything else | The 404 page. |
 
 The app paths are listed in `.htaccess`. Add a path there when the app gets a new top-level page.
@@ -59,7 +61,6 @@ The app paths are listed in `.htaccess`. Add a path there when the app gets a ne
 
 1. **Add the site.** In hPanel, go to Websites → Add website and pick tryclaritia.com.
    Choose an empty website, with no WordPress and no builder.
-   If WordPress is already installed on tryclaritia.com from the old theme, remove it first and empty `public_html`.
 2. **Connect this repo.** In hPanel, open the site, then Advanced → Git.
    - Repository: this repo's GitHub address. For a private repo, add the deploy key hPanel shows to the repo
      (GitHub → Settings → Deploy keys).
@@ -69,30 +70,27 @@ The app paths are listed in `.htaccess`. Add a path there when the app gets a ne
      GitHub repo (Settings → Webhooks), so each push to `main` deploys.
 3. **Turn on SSL.** In hPanel, check that the free SSL certificate covers `tryclaritia.com` and `www.tryclaritia.com`.
    The https redirect in `.htaccess` needs it.
-4. **Check.** Open `/`, `/llms.txt`, `/pricing.md`, `/nope` (it should show the 404 page) and `/tests?x=1`
-   (it should land on `app.tryclaritia.com/tests?x=1`). Also try `http://` and `www.`: both should end on
+4. **Check.** Open `/`, `/llms.txt`, `/pricing.md`, `/nope` (it should show the 404 page) and `/contacts?x=1`
+   (it should land on `app.tryclaritia.com/contacts?x=1`). Also try `http://` and `www.`: both should end on
    `https://tryclaritia.com/`. If you see an old page, purge the cache in hPanel (Performance → Cache Manager).
-
 
 ## DNS
 
 The DNS for tryclaritia.com is managed in Hostinger (hPanel → Domains → tryclaritia.com → DNS).
 
-- `tryclaritia.com` and `www.tryclaritia.com` point to Hostinger. Until this site is live they still point
-  to Render (the old Next.js site). To switch, replace those two Render records with the ones hPanel gives
-  for the website (an A record for `@` and a CNAME for `www`).
+- `tryclaritia.com` and `www.tryclaritia.com` point to Hostinger (an A record for `@` and a CNAME for `www`).
 - `app.tryclaritia.com` is a CNAME to `claritia-web.fly.dev` (the app on Fly.io). Leave it as it is.
 - Leave the Resend records for the test inboxes (`inbox.tryclaritia.com`) as they are.
 
-Once `tryclaritia.com` points here, visits to it never reach the Next.js app, so the app needs no change.
-The app keeps its own copy of /llms.txt and /pricing.md on app.tryclaritia.com.
+Once `tryclaritia.com` points here, visits to it never reach the app, so the app needs no change.
+The app keeps its own copy of `/llms.txt` and `/pricing.md` on app.tryclaritia.com.
 
 ## Running cost
 
-| Item | Beta (50 teams) | Growth (500 teams) |
-|---|---|---|
-| Hostinger hosting | $0 extra, on the existing Hostinger plan | $0 extra |
-| Google Fonts, no tracking, no paid add-ons | $0 | $0 |
-| Total added to the monthly bill | $0 | $0 |
+| Item | Note |
+|---|---|
+| Hostinger hosting | $0 extra, on the existing Hostinger plan |
+| Google Fonts, no tracking, no paid add-ons | $0 |
+| Total added to the monthly bill | $0 |
 
 The site makes no AI calls.

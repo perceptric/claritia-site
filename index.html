@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claritia</title>
-<meta name="description" content="Tests that write and fix themselves. Describe a user flow in plain English and Claritia turns it into a Playwright test.">
+<title>Claritia — Turn website visitors into meetings</title>
+<meta name="description" content="Claritia turns website visitors into leads and leads into meetings, with AI agents running the journeys, writing the emails, building the pages and proving what made revenue.">
 <link rel="canonical" href="https://tryclaritia.com/">
 <meta property="og:site_name" content="Claritia">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Claritia">
-<meta property="og:description" content="Tests that write and fix themselves. Describe a user flow in plain English and Claritia turns it into a Playwright test.">
+<meta property="og:title" content="Claritia — Turn website visitors into meetings">
+<meta property="og:description" content="AI agents run the journeys, write the emails and build the pages. Every claim is sourced and every send waits for your yes.">
 <meta property="og:url" content="https://tryclaritia.com/">
 <meta property="og:image" content="https://tryclaritia.com/assets/brand/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -33,8 +33,7 @@
 			<a class="site-header__logo" href="/" aria-label="Claritia home"><span class="logo"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--brand)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="logo__word">Claritia</span></span></a>
 			<nav class="site-nav" aria-label="Main">
 				<a href="/#product">Product</a>
-				<a href="/#agent">Agent</a>
-				<a href="/#developers">Developers</a>
+				<a href="/#suite">Suite</a>
 				<a href="/#security">Security</a>
 				<a href="/#pricing">Pricing</a>
 			</nav>
@@ -50,126 +49,187 @@
 			<div class="dot-grid" aria-hidden="true"></div>
 			<div class="wrap hero__in">
 				<div class="mk-fade hero__copy">
-					<a class="hero__badge" href="#agent"><span class="tag tag--brand">New</span>Tests from plain English<span class="hero__badge-arrow" aria-hidden="true">→</span></a>
-					<h1 class="hero__title">Tests that write<br><span class="hero__accent">and fix themselves.</span></h1>
-					<p class="hero__lead">Describe a user flow in plain English. Claritia turns it into a Playwright test, runs it on every push, and fixes it when your UI changes. Every run comes with a video.</p>
+					<a class="hero__badge" href="#agents"><span class="tag tag--brand">New</span>AI agents for B2B marketing<span class="hero__badge-arrow" aria-hidden="true">→</span></a>
+					<h1 class="hero__title">Turn website visitors<br><span class="hero__accent">into meetings.</span></h1>
+					<p class="hero__lead">Claritia watches your site, matches companies by IP, and keeps one live database of contacts and segments. AI agents then run the journeys, write the emails and build the pages. Every claim is sourced. Every send waits for your yes.</p>
 					<div class="hero__ctas">
 						<a class="btn btn--lg btn--ink" href="https://app.tryclaritia.com">Start free</a>
-						<a class="btn btn--lg btn--line" href="#product">Watch a test run</a>
+						<a class="btn btn--lg btn--line" href="#product">See how it works</a>
 					</div>
-					<p class="hero__small">Free tier · No card needed · Export to Playwright any time</p>
+					<p class="hero__small">No credit card · Connect HubSpot in two clicks · 20% off when you run the suite</p>
 				</div>
 				<div class="mk-fade hero__mock" style="animation-delay:120ms">
 					<div class="mock">
 						<div class="frame mock__win">
 							<div class="mock__bar">
-								<span class="fig">// fig. 01 — run #482</span>
-								<span class="mock__url">app.tryclaritia.com/runs/482</span>
+								<span class="fig">// fig. 01 — journey step</span>
+								<span class="mock__url">app.tryclaritia.com/journeys/fintech</span>
 							</div>
 							<div class="mock__head">
-								<p class="mock__title">Sign up for a Pro trial</p>
-								<span class="tag tag--passed">Passed</span>
-								<p class="mock__meta">staging · 10.4s · 2m ago</p>
+								<p class="mock__title">Guide downloaders, fintech</p>
+								<span class="tag tag--sent">Running</span>
+								<p class="mock__meta">step 3 · 128 enrolled · 46% replied</p>
 							</div>
 							<div class="mock__body">
 								<ol class="mock__steps">
 									<li>
 										<span class="mock__n">1</span>
-										<p class="mock__step">Go to the pricing page</p>
-										<span class="tag tag--cached">Cached</span>
-										<span class="mock__ms">0.4s</span>
+										<p class="mock__step">Segment entered: Fintech, fit 70+</p>
+										<span class="tag tag--approved">Entered</span>
 									</li>
 									<li>
 										<span class="mock__n">2</span>
-										<p class="mock__step">Click “Start trial”</p>
-										<span class="tag tag--healed">Healed</span>
-										<span class="mock__ms">1.1s</span>
+										<p class="mock__step">Wait 2 days, skip weekends</p>
+										<span class="tag tag--draft">Done</span>
 									</li>
 									<li class="is-on">
 										<span class="mock__n">3</span>
-										<p class="mock__step">Sign up with a test inbox</p>
-										<span class="tag tag--passed">Passed</span>
-										<span class="mock__ms">3.2s</span>
+										<p class="mock__step">Agent: decide the branch</p>
+										<span class="tag tag--sourced">Decided</span>
 									</li>
 									<li>
 										<span class="mock__n">4</span>
-										<p class="mock__step">Enter the code from the email</p>
-										<span class="tag tag--passed">Passed</span>
-										<span class="mock__ms">4.8s</span>
+										<p class="mock__step">Agent: write the email</p>
+										<span class="tag tag--sourced">Sourced</span>
 									</li>
 									<li>
 										<span class="mock__n">5</span>
-										<p class="mock__step">Check the plan says “Pro trial”</p>
-										<span class="tag tag--passed">Passed</span>
-										<span class="mock__ms">0.9s</span>
+										<p class="mock__step">Send from mail.acme.com</p>
+										<span class="tag tag--waiting">Review</span>
 									</li>
 								</ol>
-								<div class="mock__video">
-									<div class="shot">
-										<div class="shot__bar">
-											<span class="shot__dot"></span><span class="shot__dot"></span><span class="shot__dot"></span>
-											<span class="shot__url">staging.acme.com/signup</span>
+								<div class="mock__mail">
+									<div class="mail">
+										<div class="mail__bar">
+											<span class="mail__dot"></span><span class="mail__dot"></span><span class="mail__dot"></span>
+											<span class="mail__subject">A 3-day path to faster payouts</span>
 										</div>
-										<div class="shot__body">
-											<p class="shot__title">Create your account</p>
-											<p class="shot__sub">14-day Pro trial. No card needed.</p>
-											<div class="shot__fields">
-												<div class="shot__field">qa+482@inbox.tryclaritia.com</div>
-												<div class="shot__field shot__field--on">••••••••••<span class="shot__fill">fill</span></div>
-												<div class="shot__button">Create account</div>
-											</div>
+										<div class="mail__body">
+											<p class="mail__sub">From Acme Team · to Dana Reyes, Northwind</p>
+											<p class="mail__p">Hi Dana — Northwind&rsquo;s payouts team is growing fast. Teams like Meridian cut payout delays 40% by moving approvals earlier in the flow.</p>
+											<p class="mail__p">Worth a 20-minute look at what they changed?</p>
+											<div class="mail__cta">Read the Meridian case study</div>
+											<p class="mail__chips"><span>Used 1 case study</span><span>Voice: direct</span></p>
 										</div>
 									</div>
-									<div class="scrub">
-										<span class="scrub__play"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2.5 1.5v7l6-3.5z" fill="currentColor"/></svg></span>
-										<div class="scrub__track">
-											<div class="scrub__done"></div>
-											<span class="scrub__tick" style="left:0%"></span>
-											<span class="scrub__tick" style="left:4%"></span>
-											<span class="scrub__tick" style="left:15%"></span>
-											<span class="scrub__tick" style="left:46%"></span>
-											<span class="scrub__tick" style="left:91%"></span>
-										</div>
-										<span class="scrub__time">0:04 / 0:10</span>
-									</div>
+									<p class="mock__foot"><span class="label-mono">Why this branch</span> Northwind is fintech, fit 78, and read pricing twice.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Healing suggestion, floating -->
-						<div class="float float--heal">
-							<p class="label-mono float__label"><span class="dot dot--violet mk-pulse"></span> Healing suggestion</p>
-							<p class="float__title">Step 2 · Click “Start trial”</p>
-							<p class="float__diff"><span class="float__old">text=Start trial</span> → <span class="float__new">text=Try free</span></p>
-							<p class="float__why">The button text changed in the last deploy. Same place, same page.</p>
+						<!-- Approval, floating -->
+						<div class="float float--approve">
+							<p class="label-mono float__label"><span class="dot dot--violet mk-pulse"></span> Waiting for approval</p>
+							<p class="float__title">Agent email · step 4</p>
+							<p class="float__diff">Dana, a 3-day path to faster payouts</p>
+							<p class="float__why">Every claim maps to an atom in the Brand Brain. Nothing else is sent.</p>
 							<div class="float__btns">
 								<span class="float__ok">Approve</span>
+								<span class="float__skip">Edit</span>
 								<span class="float__skip">Skip</span>
 							</div>
 						</div>
-						<!-- The test, floating -->
-						<div class="float float--test">
-							<p class="float__cap">// test</p>
-							<p class="float__sentence">Sign up, confirm the email, and land on the Pro trial.</p>
-							<p class="float__foot">5 steps · written from one sentence</p>
+						<!-- Brand Brain, floating -->
+						<div class="float float--brain">
+							<p class="float__cap">// brand brain</p>
+							<p class="float__sentence">&ldquo;Meridian cut payout delays 40% after moving approvals earlier.&rdquo;</p>
+							<p class="float__foot">Case study · Mar 2026 · source saved</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Integrations -->
+		<!-- Suite -->
+		<section id="suite" class="suite">
+			<div class="wrap suite__in">
+				<p class="label-mono suite__label">The suite for B2B growth</p>
+				<div class="suite__row">
+					<article class="suite__card">
+						<p class="fig">// get found</p>
+						<h3 class="suite__name">Arrowsterr</h3>
+						<p class="suite__what">SEO, GEO and AI search. Win the answer on ChatGPT and Google.</p>
+					</article>
+					<span class="suite__arrow" aria-hidden="true">→</span>
+					<article class="suite__card suite__card--on">
+						<p class="fig fig--dark">// convert</p>
+						<h3 class="suite__name">Claritia</h3>
+						<p class="suite__what">Visitors, contacts, journeys, email, pages. Turn attention into meetings.</p>
+					</article>
+					<span class="suite__arrow" aria-hidden="true">→</span>
+					<article class="suite__card">
+						<p class="fig">// close</p>
+						<h3 class="suite__name">Omniscient</h3>
+						<p class="suite__what">CRM, opportunities and deal rooms. Close what marketing found.</p>
+					</article>
+				</div>
+				<p class="suite__note">Found by Arrowsterr. Converted by Claritia. Closed with Omniscient.</p>
+			</div>
+		</section>
+		<!-- Works with -->
 		<section class="works">
 			<div class="wrap works__in">
 				<p class="label-mono works__label">Works with</p>
 				<ul class="works__list">
-					<li>GitHub</li>
-					<li>GitLab</li>
-					<li>Vercel</li>
-					<li>Netlify</li>
+					<li>HubSpot</li>
+					<li>Salesforce</li>
+					<li>Omniscient</li>
+					<li>Stripe</li>
+					<li>Segment</li>
+					<li>PostHog</li>
 					<li>Slack</li>
-					<li>Playwright</li>
-					<li>Claude Code</li>
-					<li>Cursor</li>
+					<li>Amazon SES</li>
 				</ul>
+			</div>
+		</section>
+		<!-- The problem -->
+		<section class="sec sec--canvas">
+			<div class="wrap sec__in">
+				<div class="sec__head">
+					<p class="fig">// The problem</p>
+					<h2 class="sec__title">Four tools. One bill. One platform.</h2>
+					<p class="sec__lead">Most B2B teams rent four or five products and still can't see from a visit to a won deal. Claritia does the whole job, and the agents do the busywork.</p>
+				</div>
+				<div class="replace">
+					<div class="replace__head">
+						<p class="label-mono">Job</p>
+						<p class="label-mono">What teams rent today</p>
+						<p class="label-mono">In Claritia</p>
+					</div>
+					<div class="replace__row">
+						<p class="replace__job">See who's on the site</p>
+						<p class="replace__tools">Warmly · Unify · RB2B · Leadfeeder</p>
+						<p class="replace__us">Website Intelligence</p>
+					</div>
+					<div class="replace__row">
+						<p class="replace__job">Keep a marketing database</p>
+						<p class="replace__tools">HubSpot · Marketo · Pardot · ActiveCampaign</p>
+						<p class="replace__us">Contacts &amp; Segments</p>
+					</div>
+					<div class="replace__row">
+						<p class="replace__job">Send and measure email</p>
+						<p class="replace__tools">Mailchimp · Customer.io · Klaviyo</p>
+						<p class="replace__us">Email Engine</p>
+					</div>
+					<div class="replace__row">
+						<p class="replace__job">Run journeys that write themselves</p>
+						<p class="replace__tools">Nobody does this well yet</p>
+						<p class="replace__us">Journeys &amp; AI steps</p>
+					</div>
+					<div class="replace__row">
+						<p class="replace__job">Build and personalize pages</p>
+						<p class="replace__tools">Mutiny · Unbounce · Instapage</p>
+						<p class="replace__us">Pages &amp; Forms</p>
+					</div>
+					<div class="replace__row">
+						<p class="replace__job">Prove what made revenue</p>
+						<p class="replace__tools">HockeyStack · Dreamdata</p>
+						<p class="replace__us">Attribution &amp; Reports</p>
+					</div>
+					<div class="replace__row">
+						<p class="replace__job">Check it all still works</p>
+						<p class="replace__tools">Manual QA, or nobody</p>
+						<p class="replace__us">Funnel QA</p>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- How it works -->
@@ -177,29 +237,39 @@
 			<div class="wrap sec__in">
 				<div class="sec__head">
 					<p class="fig">// How it works</p>
-					<h2 class="sec__title">From a sentence to a green check.</h2>
-					<p class="sec__lead">No selectors to write and no scripts to fix. Tell Claritia what a user does, and it handles the rest.</p>
+					<h2 class="sec__title">From an anonymous visit to a booked meeting.</h2>
+					<p class="sec__lead">One platform follows the buyer the whole way. The agents move each account forward, and you approve anything that goes out.</p>
 				</div>
-				<ol class="frame steps">
+				<ol class="frame steps steps--6">
 					<li>
 						<p class="fig">// step 01</p>
-						<h3>Describe</h3>
-						<p>Write the flow the way you'd explain it to a new teammate. Or paste your product spec.</p>
+						<h3>Visit</h3>
+						<p>A tiny script sees the session, the pages and the reading time. No personal data required.</p>
 					</li>
 					<li>
 						<p class="fig">// step 02</p>
-						<h3>Run</h3>
-						<p>Claritia drives a real browser, step by step, and saves the video, screenshots and logs.</p>
+						<h3>Match</h3>
+						<p>IP becomes a company, and identity stitching turns sessions into people you can act on.</p>
 					</li>
 					<li>
 						<p class="fig">// step 03</p>
-						<h3>Heal</h3>
-						<p>When your UI changes, Claritia finds the new button and asks you to approve the fix.</p>
+						<h3>Segment</h3>
+						<p>Live segments over contacts, behavior and scores, with a count that updates as you build.</p>
 					</li>
 					<li>
 						<p class="fig">// step 04</p>
-						<h3>Gate</h3>
-						<p>Tests run on every pull request. A failure blocks the merge and posts the video.</p>
+						<h3>Journey</h3>
+						<p>AI agents decide the branch and write each email from your Brand Brain. You approve.</p>
+					</li>
+					<li>
+						<p class="fig">// step 05</p>
+						<h3>Handoff</h3>
+						<p>Ready leads go to the right rep in Omniscient or your CRM, with a brief and an SLA timer.</p>
+					</li>
+					<li>
+						<p class="fig">// step 06</p>
+						<h3>Prove</h3>
+						<p>Attribution traces the AI answer, the page, the journey and the email to the won deal.</p>
 					</li>
 				</ol>
 			</div>
@@ -209,111 +279,125 @@
 			<div class="wrap sec__in">
 				<div class="sec__head">
 					<p class="fig">// The product</p>
-					<h2 class="sec__title">Every failure, explained.</h2>
-					<p class="sec__lead">Real bugs get flagged. Flaky ones get sorted out. You only look at what matters.</p>
+					<h2 class="sec__title">Everything from the first click to the closed deal.</h2>
+					<p class="sec__lead">Nine modules, one model of your buyer. Bring your data in, run the journeys, and see what worked.</p>
 				</div>
 				<div class="bento">
-					<!-- Run viewer -->
+					<!-- Website Intelligence -->
 					<article class="frame card bento__4">
-						<h3 class="card__title">See exactly what broke</h3>
-						<p class="card__text card__text--narrow">Video, trace, console and network in one screen. Click a step to jump to that moment.</p>
-						<div class="runlist">
-							<div class="runlist__row">
-								<div class="runlist__in">
-									<span class="runlist__n">1</span>
-									<span class="runlist__text">Add the blue hoodie to the cart</span>
-									<span class="tag tag--passed">Passed</span>
-								</div>
+						<h3 class="card__title">See who's on your site</h3>
+						<p class="card__text card__text--narrow">Companies matched by IP, people stitched across sessions, and intent that rises as they read.</p>
+						<div class="visit">
+							<div class="visit__row">
+								<span class="visit__co">Northwind</span>
+								<span class="visit__what">3 people · pricing, security</span>
+								<span class="tag tag--hot">Hot</span>
 							</div>
-							<div class="runlist__row">
-								<div class="runlist__in">
-									<span class="runlist__n">2</span>
-									<span class="runlist__text">Apply the coupon SAVE10</span>
-									<span class="tag tag--passed">Passed</span>
-								</div>
+							<div class="visit__row">
+								<span class="visit__co">Meridian Pay</span>
+								<span class="visit__what">1 person · case study 4m</span>
+								<span class="tag tag--sourced">Researching</span>
 							</div>
-							<div class="runlist__row">
-								<div class="runlist__in">
-									<span class="runlist__n">3</span>
-									<span class="runlist__text">Check the total drops 10%</span>
-									<span class="tag tag--passed">Passed</span>
-								</div>
-							</div>
-							<div class="runlist__row is-failed">
-								<div class="runlist__in">
-									<span class="runlist__n">4</span>
-									<span class="runlist__text">Pay with the test card</span>
-									<span class="tag tag--failed">Failed</span>
-								</div>
-								<p class="runlist__err">POST /api/checkout → 500 · "card_token is undefined"</p>
+							<div class="visit__row">
+								<span class="visit__co">Lattice Systems</span>
+								<span class="visit__what">2 people · docs, integrations</span>
+								<span class="tag tag--draft">Engaged</span>
 							</div>
 						</div>
 					</article>
-					<!-- Failure sorting -->
+					<!-- Sources -->
 					<article class="card bento__2">
-						<h3 class="card__title">Bug, flake or setup?</h3>
-						<p class="card__text">Each failure gets a label and the reason behind it.</p>
-						<div class="frame verdict">
-							<p class="label-mono">Verdict · set by AI</p>
-							<p class="verdict__tag"><span class="tag tag--failed">App bug</span></p>
-							<p class="verdict__title">Checkout returns a 500</p>
-							<p class="verdict__why">“card_token is undefined” in the console, same error on retry.</p>
-							<p class="verdict__where">Run #482 · step 4 · 0:14</p>
+						<h3 class="card__title">Every contact, every source</h3>
+						<p class="card__text">Import from 60+ tools, files and warehouses. Undo any import.</p>
+						<div class="src">
+							<span class="src__item">HubSpot</span>
+							<span class="src__item">Salesforce</span>
+							<span class="src__item">Mailchimp</span>
+							<span class="src__item">Klaviyo</span>
+							<span class="src__item">Stripe</span>
+							<span class="src__item">Typeform</span>
+							<span class="src__item src__item--more">+ 53 more</span>
 						</div>
 					</article>
-					<!-- Plain-English checks -->
+					<!-- Contacts and Segments -->
 					<article class="card bento__3">
-						<h3 class="card__title">Check what a person would check</h3>
-						<p class="card__text">Write checks in plain words. Claritia shows how it decided.</p>
-						<div class="chat">
-							<p class="chat__ask">Check the total drops 10% after the coupon</p>
-							<div class="chat__reply">
-								<span class="chat__ok">Passed.</span> The total went from $120.00 to $108.00.
-								<p class="chat__chips">
-									<span>Step 6</span>
-									<span>Screenshot</span>
-									<span>DOM</span>
-								</p>
-							</div>
+						<h3 class="card__title">Segments that stay live</h3>
+						<p class="card__text">AND / OR rules over fields, behavior, scores and consent. The count updates as you type.</p>
+						<div class="seg">
+							<p class="seg__rule"><span class="seg__and">If</span> Industry is fintech</p>
+							<p class="seg__rule"><span class="seg__and">And</span> Fit is 70 or more</p>
+							<p class="seg__rule"><span class="seg__and">And</span> Clicked an email in the last 14 days</p>
+							<p class="seg__count"><span class="tag tag--approved">1,284 contacts</span></p>
 						</div>
 					</article>
-					<!-- Tests in your repo -->
+					<!-- Journeys -->
 					<article class="card bento__3">
-						<h3 class="card__title">Your tests live with your code</h3>
-						<p class="card__text">Plain YAML files, reviewed in pull requests like everything else.</p>
+						<h3 class="card__title">Agents write, you approve</h3>
+						<p class="card__text">Agent steps decide the branch and write the email from your Brand Brain. Every claim cites a source.</p>
 						<div class="tree">
-							<p class="tree__dir"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>.claritia/</p>
+							<p class="tree__dir">journey · fintech nurture</p>
 							<div class="tree__files">
 								<div class="tree__file">
-									<span class="tree__name">checkout.yaml</span>
-									<span class="tag tag--failed">Failed</span>
+									<span class="tree__name">Agent: decide branch</span>
+									<span class="tag tag--sourced">Decided</span>
 								</div>
 								<div class="tree__file">
-									<span class="tree__name">signup.yaml</span>
-									<span class="tag tag--passed">Passed</span>
+									<span class="tree__name">Agent: write email</span>
+									<span class="tag tag--approved">Sourced</span>
 								</div>
 								<div class="tree__file">
-									<span class="tree__name">billing.yaml</span>
-									<span class="tag tag--healed">Healed</span>
+									<span class="tree__name">Send from mail.acme.com</span>
+									<span class="tag tag--waiting">Review</span>
 								</div>
 							</div>
+						</div>
+					</article>
+					<!-- Email -->
+					<article class="card bento__2">
+						<h3 class="card__title">Email that reaches the inbox</h3>
+						<p class="card__text">Send from your own domain with DKIM, SPF and DMARC set up for you.</p>
+						<div class="dkim">
+							<p class="dkim__row"><span>DKIM</span><span class="tag tag--approved">Pass</span></p>
+							<p class="dkim__row"><span>SPF</span><span class="tag tag--approved">Pass</span></p>
+							<p class="dkim__row"><span>DMARC</span><span class="tag tag--approved">Pass</span></p>
+						</div>
+					</article>
+					<!-- Pages -->
+					<article class="card bento__2">
+						<h3 class="card__title">Pages built from your proof</h3>
+						<p class="card__text">AI landing pages and smart forms, personalized by account or segment.</p>
+						<div class="blocks">
+							<span class="blocks__b">Hero</span>
+							<span class="blocks__b">Proof</span>
+							<span class="blocks__b">Case study</span>
+							<span class="blocks__b">Form</span>
+						</div>
+					</article>
+					<!-- Attribution -->
+					<article class="card bento__2">
+						<h3 class="card__title">Revenue, traced back</h3>
+						<p class="card__text">Pipeline and closed-won by channel, campaign and asset. AI answers count as a channel.</p>
+						<div class="attrib">
+							<p class="attrib__row"><span>AI answers</span><span class="attrib__bar" style="--w:72%"></span><span class="attrib__val">$184k</span></p>
+							<p class="attrib__row"><span>Journeys</span><span class="attrib__bar" style="--w:48%"></span><span class="attrib__val">$121k</span></p>
+							<p class="attrib__row"><span>Organic</span><span class="attrib__bar" style="--w:31%"></span><span class="attrib__val">$78k</span></p>
 						</div>
 					</article>
 				</div>
 			</div>
 		</section>
-		<!-- Agent -->
-		<section id="agent" class="sec">
+		<!-- Agents -->
+		<section id="agents" class="sec">
 			<div class="wrap sec__in agent">
 				<div>
-					<p class="fig">// Agent</p>
-					<h2 class="sec__title">A QA engineer that never sleeps.</h2>
-					<p class="sec__lead">The agent explores your app, writes tests and keeps them green. Anything that changes a test waits for your yes.</p>
+					<p class="fig">// Agents</p>
+					<h2 class="sec__title">Agents that decide and write.</h2>
+					<p class="sec__lead">The agents read your data, your Brand Brain and the buyer's own activity. They choose branches you defined and write from proof you supplied. Anything that goes out waits for your yes.</p>
 					<ul class="checks">
-						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Crawls a URL and suggests the tests you're missing</li>
-						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Writes tests from your PRD or product spec</li>
-						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Fixes broken selectors and shows you the change</li>
-						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Sorts every failure into bug, flake or setup</li>
+						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Decide: pick a branch you named, with a reason</li>
+						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Write: a one-to-one email from your Brand Brain</li>
+						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Research: account news and a short brief before it writes</li>
+						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Verify: a line with no source is removed before it ships</li>
 					</ul>
 				</div>
 				<div class="frame runs">
@@ -323,104 +407,123 @@
 					</div>
 					<ul class="runs__list">
 						<li>
-							<span class="runs__icon">EX</span>
+							<span class="runs__icon">DE</span>
 							<div class="runs__body">
-								<p class="runs__name">Explore</p>
-								<p class="runs__what">acme.com · 12 tests suggested</p>
+								<p class="runs__name">Decide</p>
+								<p class="runs__what">128 contacts · chose &ldquo;sales-ready&rdquo;</p>
 							</div>
-							<span class="tag tag--flaky">Needs review</span>
+							<span class="tag tag--sourced">Decided</span>
 						</li>
 						<li>
-							<span class="runs__icon">HE</span>
+							<span class="runs__icon">WR</span>
 							<div class="runs__body">
-								<p class="runs__name">Heal</p>
-								<p class="runs__what">checkout.yaml · selector updated</p>
+								<p class="runs__name">Write</p>
+								<p class="runs__what">42 emails · 1 case study each</p>
 							</div>
-							<span class="tag tag--flaky">Needs approval</span>
+							<span class="tag tag--waiting">In review</span>
 						</li>
 						<li>
-							<span class="runs__icon">SO</span>
+							<span class="runs__icon">RE</span>
 							<div class="runs__body">
-								<p class="runs__name">Sort</p>
-								<p class="runs__what">Run #482 · app bug</p>
+								<p class="runs__name">Research</p>
+								<p class="runs__what">Northwind · new funding round</p>
 							</div>
-							<span class="tag tag--passed">Done</span>
+							<span class="tag tag--approved">Done</span>
 						</li>
 						<li>
-							<span class="runs__icon">NI</span>
+							<span class="runs__icon">HO</span>
 							<div class="runs__body">
-								<p class="runs__name">Nightly</p>
-								<p class="runs__what">48 tests on production</p>
+								<p class="runs__name">Handoff</p>
+								<p class="runs__what">3 ready leads → Omniscient</p>
 							</div>
-							<span class="tag tag--brand">Scheduled 2:00</span>
+							<span class="tag tag--approved">Sent</span>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
-		<!-- Developers, dark -->
-		<section id="developers" class="sec sec--dark">
-			<div class="mk-dots" aria-hidden="true"></div>
+		<!-- Trust & control -->
+		<section class="sec sec--canvas">
 			<div class="wrap sec__in">
-				<div class="devs">
-					<div>
-						<p class="fig fig--dark">// Built for developers</p>
-						<h2 class="sec__title">Plain files. Real Playwright. No lock-in.</h2>
-						<p class="sec__lead">Every test is a YAML file in your repo. Run it from your laptop, in CI, or from Claude Code. Export to plain Playwright code whenever you want.</p>
-						<dl class="facts">
-							<div>
-								<dt>Repo files</dt>
-								<dd>Tests are reviewed in pull requests like code</dd>
-							</div>
-							<div>
-								<dt>CI gate</dt>
-								<dd>A GitHub Action blocks merges on failure</dd>
-							</div>
-							<div>
-								<dt>MCP server</dt>
-								<dd>Claude Code and Cursor write and run tests</dd>
-							</div>
-							<div>
-								<dt>Playwright export</dt>
-								<dd>Take your tests with you any time</dd>
-							</div>
-						</dl>
+				<div class="sec__head sec__head--center">
+					<p class="fig">// Trust &amp; control</p>
+					<h2 class="sec__title">The agent does the work. You keep the pen.</h2>
+				</div>
+				<div class="safe">
+					<div class="safe__card">
+						<span class="safe__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+						<h3>Approvals first</h3>
+						<p>Every journey starts in review. Turn on auto mode only after 20 approved sends with few edits.</p>
 					</div>
-					<div class="code">
-						<div class="code__bar">
-							<span class="code__dot"></span><span class="code__dot"></span><span class="code__dot"></span>
-							<span class="code__name">.claritia/checkout.yaml</span>
-						</div>
-						<pre class="code__pre"><code><span class="c-key">name</span>: <span class="c-str">Checkout with a coupon</span>
-<span class="c-key">url</span>: <span class="c-str">https://staging.acme.com</span>
-<span class="c-key">steps</span>:
-  <span class="c-dim">-</span> <span class="c-str">Add the blue hoodie to the cart</span>
-  <span class="c-dim">-</span> <span class="c-str">Apply the coupon SAVE10</span>
-  <span class="c-dim">-</span> <span class="c-str">Check the total drops 10%</span>
-  <span class="c-dim">-</span> <span class="c-str">Pay with the test card</span>
-  <span class="c-dim">-</span> <span class="c-str">Check the page says "Order confirmed"</span></code></pre>
-						<div class="code__foot">
-							<p><span class="c-key">$</span> claritia run <span class="c-str">checkout.yaml</span></p>
-							<p><span class="c-str">✓</span> 5 steps passed · 3 from cache · 8.2s</p>
-						</div>
+					<div class="safe__card">
+						<span class="safe__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+						<h3>Every claim has a source</h3>
+						<p>Emails and pages only state facts from your Brand Brain or the contact's own data. A verifier removes the rest.</p>
+					</div>
+					<div class="safe__card">
+						<span class="safe__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+						<h3>Consent before sending</h3>
+						<p>No marketing email goes out without a lawful basis for the contact's region. It's checked at send time.</p>
+					</div>
+					<div class="safe__card">
+						<span class="safe__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+						<h3>No &ldquo;I saw you were on&hellip;&rdquo;</h3>
+						<p>The agent never mentions tracking. A rule check blocks any message that does.</p>
 					</div>
 				</div>
-				<div class="stats">
-					<div>
-						<p class="stats__label">// to your first passing test</p>
-						<p class="stats__value">5 min</p>
+			</div>
+		</section>
+		<!-- Funnel QA -->
+		<section class="sec">
+			<div class="wrap sec__in qa">
+				<div>
+					<p class="fig">// Funnel QA</p>
+					<h2 class="sec__title">We check the real thing, in a real browser.</h2>
+					<p class="sec__lead">Before a page, form or email goes out, Claritia opens it in a browser and tests it end to end. Then it keeps checking on a schedule, so a broken form never quietly eats your pipeline.</p>
+					<ul class="checks">
+						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pages load at three widths, links resolve, images show</li>
+						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Forms submit and land on the right contact</li>
+						<li><svg width="16" height="16" viewBox="0 0 16 16" class="checks__icon" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Emails render everywhere the unsubscribe link works</li>
+					</ul>
+				</div>
+				<div class="frame qalist">
+					<div class="qalist__head">
+						<p class="label-mono">Funnel checks · acme.com</p>
+						<p class="qalist__live"><span class="dot dot--green mk-pulse"></span>Hourly</p>
 					</div>
-					<div>
-						<p class="stats__label">// of runs saved with video</p>
-						<p class="stats__value">100%</p>
+					<ul class="qalist__list">
+						<li><span class="qalist__what">Pricing page · 3 widths</span><span class="tag tag--approved">Pass</span></li>
+						<li><span class="qalist__what">Demo form → contact created</span><span class="tag tag--approved">Pass</span></li>
+						<li><span class="qalist__what">Booking page · slots load</span><span class="tag tag--approved">Pass</span></li>
+						<li><span class="qalist__what">Newsletter render · links</span><span class="tag tag--waiting">Needs approval</span></li>
+						<li><span class="qalist__what">Site script · events arriving</span><span class="tag tag--approved">Pass</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- Data -->
+		<section class="sec sec--canvas">
+			<div class="wrap sec__in">
+				<div class="sec__head">
+					<p class="fig">// Your data</p>
+					<h2 class="sec__title">Bring the data you already have.</h2>
+					<p class="sec__lead">Claritia sits on top of the tools you use, not in place of all of them. Import everything, sync your CRM both ways, and query your warehouse read-only.</p>
+				</div>
+				<div class="cols">
+					<div class="cols__col">
+						<p class="label-mono">Import from</p>
+						<p class="cols__big">60+ tools</p>
+						<p class="cols__text">CRMs, email tools, forms, events, product and payment data, plus any CSV or Excel file.</p>
 					</div>
-					<div>
-						<p class="stats__label">// lines of selector code</p>
-						<p class="stats__value">0</p>
+					<div class="cols__col">
+						<p class="label-mono">Sync both ways</p>
+						<p class="cols__big">HubSpot · Salesforce · Omniscient</p>
+						<p class="cols__text">Contacts, companies and opportunities stay in step, with every change in one sync log.</p>
 					</div>
-					<div>
-						<p class="stats__label">// lock-in</p>
-						<p class="stats__value">None</p>
+					<div class="cols__col">
+						<p class="label-mono">Query read-only</p>
+						<p class="cols__big">7 warehouses</p>
+						<p class="cols__text">Postgres, Redshift, MySQL, ClickHouse, BigQuery, Snowflake and Databricks.</p>
 					</div>
 				</div>
 			</div>
@@ -429,29 +532,29 @@
 		<section id="security" class="sec">
 			<div class="wrap sec__in">
 				<div class="sec__head sec__head--center">
-					<p class="fig">// Security</p>
-					<h2 class="sec__title">Your staging site and secrets stay safe.</h2>
+					<p class="fig">// Security &amp; privacy</p>
+					<h2 class="sec__title">Your data and your buyers stay safe.</h2>
 				</div>
 				<div class="safe">
 					<div class="safe__card">
 						<span class="safe__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
-						<h3>Encrypted secrets</h3>
-						<p>Passwords and API keys are encrypted and never shown in logs or videos.</p>
+						<h3>Sealed credentials</h3>
+						<p>API keys, tokens and sending domains are encrypted on the server and never sent to the browser.</p>
 					</div>
 					<div class="safe__card">
 						<span class="safe__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
-						<h3>Isolated runs</h3>
-						<p>Every run gets a fresh browser in its own container, wiped when it ends.</p>
+						<h3>Isolated by workspace</h3>
+						<p>Every table is locked to its workspace. One team can never see another's contacts.</p>
 					</div>
 					<div class="safe__card">
 						<span class="safe__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
-						<h3>Never used for training</h3>
-						<p>Your app, tests and videos are never used to train AI models.</p>
+						<h3>Consent on record</h3>
+						<p>Every consent keeps its wording, source and time, so you can prove the basis for any send.</p>
 					</div>
 					<div class="safe__card">
 						<span class="safe__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
-						<h3>Delete any time</h3>
-						<p>Remove a project and its runs, videos and secrets are gone.</p>
+						<h3>Erase on request</h3>
+						<p>Remove a contact and their events, consents and links are gone, from the app or the API.</p>
 					</div>
 				</div>
 			</div>
@@ -461,82 +564,66 @@
 			<div class="wrap sec__in">
 				<div class="sec__head sec__head--center">
 					<p class="fig">// Pricing</p>
-					<h2 class="sec__title">Start free. Pay for what runs.</h2>
-					<p class="sec__lead">Unlimited users on every plan. The AI writes each step once. Replays from saved code use no AI credits.</p>
+					<h2 class="sec__title">Start small. Scale to the whole funnel.</h2>
+					<p class="sec__lead">Every plan includes Website Intelligence, a live contact database and the agent steps. Pay grows with your contacts and emails.</p>
 				</div>
 				<div class="plans">
 					<div class="plan">
 						<div class="plan__top">
-							<p class="plan__name">Free</p>
-						</div>
-						<p class="plan__price">$0</p>
-						<p class="plan__note">for side projects</p>
-						<ul class="plan__items">
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>1 project</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>300 cloud minutes a month</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>200 AI credits a month</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Video, trace and network log for every run</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Test inboxes</li>
-						</ul>
-						<a class="btn btn--md plan__cta btn--ink" href="https://app.tryclaritia.com">Start free</a>
-					</div>
-					<div class="plan">
-						<div class="plan__top">
 							<p class="plan__name">Starter</p>
 						</div>
-						<p class="plan__price">$49</p>
+						<p class="plan__price">$299</p>
 						<p class="plan__note">per month</p>
 						<ul class="plan__items">
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>3 projects</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>2,000 cloud minutes a month</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>2,000 AI credits a month</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>GitHub App</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Schedules</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>5,000 contacts</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>25,000 emails a month</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>1 site and Website Intelligence</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Segments and broadcasts</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>3 journeys with agent steps</li>
 						</ul>
 						<a class="btn btn--md plan__cta btn--ink" href="https://app.tryclaritia.com">Start free</a>
 					</div>
 					<div class="plan plan--featured frame">
 						<div class="plan__top">
-							<p class="plan__name">Team</p>
+							<p class="plan__name">Growth</p>
 							<span class="tag tag--brand">Most popular</span>
 						</div>
-						<p class="plan__price">$199</p>
+						<p class="plan__price">$799</p>
 						<p class="plan__note">per month</p>
 						<ul class="plan__items">
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited projects</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>10,000 cloud minutes a month</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>10,000 AI credits a month</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>MCP server</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>PR-aware runs</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Slack alerts</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>25,000 contacts</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>100,000 emails a month</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>3 sites · Unlimited journeys</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pages, forms and personalization</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Attribution and Omniscient or HubSpot sync</li>
 						</ul>
 						<a class="btn btn--md plan__cta btn--white" href="https://app.tryclaritia.com">Start free</a>
 					</div>
 					<div class="plan">
 						<div class="plan__top">
-							<p class="plan__name">Business</p>
+							<p class="plan__name">Scale</p>
 						</div>
-						<p class="plan__price">Custom</p>
-						<p class="plan__note">billed yearly</p>
+						<p class="plan__price">$1,999</p>
+						<p class="plan__note">per month, from</p>
 						<ul class="plan__items">
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Higher limits</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>SSO</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Private runners</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Data region</li>
-							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Managed test writing</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>100,000+ contacts</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated sending IPs</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Salesforce sync</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Marketing Agent and SSO</li>
+							<li><svg width="16" height="16" viewBox="0 0 16 16" class="plan__check" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority support</li>
 						</ul>
 						<a class="btn btn--md plan__cta btn--ink" href="mailto:hello@tryclaritia.com">Talk to us</a>
 					</div>
 				</div>
-				<p class="plans__note">A cloud minute is a minute of browser time. An AI credit is one call to write a step. Managed service: we write and keep your top flows green.</p>
+				<p class="plans__note">Overage: $10 per 1,000 contacts and $1 per 1,000 emails. Run Arrowsterr, Claritia and Omniscient together and get 20% off the suite.</p>
 			</div>
 		</section>
 		<!-- Final call -->
 		<section class="final">
 			<div class="mk-dots" aria-hidden="true"></div>
 			<div class="final__in">
-				<h2 class="final__title">Stop fixing tests. Start shipping.</h2>
-				<p class="final__lead">Write your first test in plain English and watch it run in the next five minutes.</p>
+				<h2 class="final__title">Stop renting four tools.</h2>
+				<p class="final__lead">Connect HubSpot in two clicks and watch the first accounts light up in minutes.</p>
 				<div class="final__ctas">
 					<a class="btn btn--lg btn--white" href="https://app.tryclaritia.com">Start free</a>
 					<a class="btn btn--lg btn--ghost" href="mailto:hello@tryclaritia.com">Talk to us</a>
@@ -548,29 +635,30 @@
 		<div class="wrap site-footer__in">
 			<div class="site-footer__brand">
 				<span class="logo"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--brand)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="logo__word">Claritia</span></span>
-				<p>Tests that write and fix themselves. Built for teams who would rather ship than babysit a test suite.</p>
+				<p>The agentic marketing platform. Turn website visitors into leads and leads into meetings, with AI agents doing the work.</p>
 				<p class="site-status"><span class="dot dot--green mk-pulse"></span>All systems running</p>
 			</div>
 			<nav class="site-footer__col" aria-label="Product">
 				<p class="label-mono">Product</p>
 				<ul>
-					<li><a href="/#product">Run viewer</a></li>
-					<li><a href="/#agent">Agent</a></li>
+					<li><a href="/#product">Website Intelligence</a></li>
+					<li><a href="/#product">Contacts &amp; Segments</a></li>
+					<li><a href="/#agents">Journeys &amp; agents</a></li>
 					<li><a href="/#pricing">Pricing</a></li>
 				</ul>
 			</nav>
-			<nav class="site-footer__col" aria-label="Developers">
-				<p class="label-mono">Developers</p>
+			<nav class="site-footer__col" aria-label="Suite">
+				<p class="label-mono">Suite</p>
 				<ul>
-					<li><a href="/#developers">Repo files</a></li>
-					<li><a href="/#developers">GitHub Action</a></li>
-					<li><a href="/#developers">MCP server</a></li>
-					<li><a href="/#security">Security</a></li>
+					<li><a href="/#suite">Arrowsterr</a></li>
+					<li><a href="/#suite">Claritia</a></li>
+					<li><a href="/#suite">Omniscient</a></li>
 				</ul>
 			</nav>
 			<nav class="site-footer__col" aria-label="Company">
 				<p class="label-mono">Company</p>
 				<ul>
+					<li><a href="/#security">Security</a></li>
 					<li><a href="mailto:hello@tryclaritia.com">Contact</a></li>
 				</ul>
 			</nav>
