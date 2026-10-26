@@ -37,8 +37,10 @@ pages. The product plan lives in the app repo at `docs/marketing-platform.md`.
   and footer). Give it a title, description and canonical tag, drop the `noindex` line, and add it to
   `sitemap.xml`.
 
-Follow `docs/brand.md` in the app repo: square boxes, 6px corners on buttons and fields, square tags,
-no shadows on cards, no gradients, no emoji.
+Follow `docs/brand.md` in the app repo: the marketing site is **dark** and the product is the
+**reverse (white)**. Dark ground, a product window in the hero, rounded cards (16px), pill buttons,
+one gradient headline and one soft glow per screen, thin section rails, a logo marquee. Take
+direction from the `default.com` homepage; never copy another company's files, images or copy.
 
 Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 The local server ignores `.htaccess`, so redirects and the 404 page only work on Hostinger.
