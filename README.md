@@ -1,8 +1,9 @@
 # tryclaritia.com
 
-Static site for Claritia. Plain HTML and CSS: no WordPress, no build step, no JavaScript. The
-product menus, the accordions, the price table and the try-it form are CSS and HTML only.
-It is set up the same way as perceptric.com.
+Static site for Claritia. Plain HTML and CSS with a small, self-hosted motion layer: no WordPress,
+no build step, no framework. GSAP, ScrollTrigger, SplitText and Lenis are vendored in
+`assets/vendor` and driven by `assets/motion.js`. Every section stays readable and usable with
+JavaScript off or reduced motion on.
 
 The home page describes Claritia, the CRM and inbound stack for small B2B teams: it catches every
 lead on your site, finds out who they are, sends them to the right rep and books the meeting. The
@@ -13,6 +14,9 @@ biggest moments and Inter everywhere else. It is documented in full in `BRAND.md
 live in `assets/tokens.css`. The reference is Mintlify's marketing site, but the copy, mark,
 imagery and font files are Claritia's own.
 
+The page is built as one story: Dana from Acme visits pricing, fills two fields, gets qualified,
+routed to Sam and booked — the 20-second journey is the spine of the homepage.
+
 ## How it's laid out
 
 | Path | What |
@@ -21,8 +25,11 @@ imagery and font files are Claritia's own.
 | `404.html` | The "page not found" page. It uses the shared tokens and base styles, plus a small `<style>` block for the centred layout. |
 | `BRAND.md` | The complete brand guide: logo, color, type, grid, components, imagery, motion, voice, accessibility and CSS usage. Hidden from the web by `.htaccess`. |
 | `assets/tokens.css` | Raw palette, semantic color, type scale, spacing, radii, shadows, motion and layout tokens. The only file with raw values. |
-| `assets/base.css` | Reset, typography, layout primitives, header, footer, buttons, chips and forms. |
-| `assets/home.css` | The home page sections and the product fragments (the `.mini-*`, `.app-preview`, `.bento` pieces). |
+| `assets/base.css` | Reset, typography, layout primitives, header, footer, buttons, chips, forms and the Lenis fallback rules. |
+| `assets/home.css` | Hero, integration marquee, stats, try-it, suite, pricing, FAQ and closing. |
+| `assets/story.css` | The pinned 20-second story, its five scenes and the five-tool collapse. |
+| `assets/motion.js` | The progressive-enhancement layer: Lenis, hero loop, canvas, SplitText, story timeline, counters, stack collapse, try-it, pricing toggle and closing draw. |
+| `assets/vendor/` | GSAP 3.15.0, ScrollTrigger, SplitText and Lenis 1.3.27, with versions and licenses in `README.md`. |
 | `assets/brand/` | Mark SVG, favicon, Apple touch icon and the share image (`og-image.png`). |
 | `llms.txt` | A short guide to Claritia for AI tools. |
 | `pricing.md` | The plans as a Markdown table. |
@@ -31,23 +38,26 @@ imagery and font files are Claritia's own.
 
 ## Editing
 
-- **Home page words:** `index.html`. Each section starts with a comment, like `<!-- 9. Pricing -->`.
-  The order is: hero, integrations and facts, platform bento, how it works, try it, numbers,
-  replace the pile, suite, pricing, FAQ, closing. The bento cards carry ids (`#inbound`,
-  `#scheduling`, `#routing`, `#automation`, `#nurture`, `#crm`) so the header and footer can link
-  straight to a capability.
-- **Home page look:** `assets/home.css`. Tokens and shared pieces are in `assets/tokens.css` and
-  `assets/base.css`. The product pictures are the `.mini-*` and `.app-preview` classes in
-  `home.css` and mirror the app. The page font size is 16px, so `1rem` is 16px. Breakpoints are
-  640px, 768px, 900px, 1000px and 1024px.
+- **Home page words:** `index.html`. Each section starts with a comment, like `<!-- 8. Pricing -->`.
+  The order is: hero, integration marquee, the 20-second story, five tools, numbers, try it, suite,
+  pricing, FAQ, closing.
+- **The story:** the five `<article class="story-act">` blocks carry the captions and the product
+  scenes. On desktop the stage is sticky and scrubbed by ScrollTrigger; below 1024px the acts stack
+  vertically and no pinning is applied. The decorative scenes are `aria-hidden`; the captions and
+  the visually hidden summary carry the meaning.
+- **Home page look:** `assets/home.css` and `assets/story.css`. Tokens and shared pieces are in
+  `assets/tokens.css` and `assets/base.css`. The hero product preview is `.app-preview`; the story
+  scenes are `.scene--*`; the stack is `.stack-*`. The page font size is 16px, so `1rem` is 16px.
+  Breakpoints are 640px, 768px, 900px, 1000px and 1024px.
 - **Header and footer:** they sit in both `index.html` and `404.html`. Change both.
   With two pages there is no partials folder or layout script.
 - **Brand rules:** follow `BRAND.md`. Do not introduce a raw hex value in a section stylesheet:
   add it to `assets/tokens.css` first. Buttons are 4px radius and 40px tall, cards are 12px,
   the grid is 24 columns inside 1088px, and the section tail is 160px desktop / 120px mobile.
   The old warm-paper, clay, pill-button system is gone; do not bring it back.
-- **Prices and plan limits:** the cards in the `<!-- 9. Pricing -->` section of `index.html` and the
-  table in `pricing.md`. Change both together, and keep them in step with `docs/pricing.md` in the app.
+- **Prices and plan limits:** the cards in the `<!-- 8. Pricing -->` section of `index.html`, the
+  comparison table in the same section, and the table in `pricing.md`. Change them together, and
+  keep them in step with `docs/pricing.md` in the app.
 - **/llms.txt:** edit `llms.txt`. Keep it in step with the app's `/llms.txt`.
 - **Footer year:** typed into the footer of both pages. Change it in January.
 - **Brand assets:** `assets/brand/claritia-mark.svg` is the source for the favicon and Apple icon.
@@ -59,6 +69,25 @@ imagery and font files are Claritia's own.
 
 The brand is light-only for now. Dark tokens are documented in `BRAND.md` and reserved in
 `tokens.css` under `[data-theme="dark"]`, but the site does not switch with the OS.
+
+## Motion
+
+- **Stack:** GSAP 3.15.0 + ScrollTrigger + SplitText, Lenis 1.3.27, and a small custom 2D canvas.
+  All libraries are vendored; there is no runtime CDN request and no build step.
+- **What moves:** the hero line draw, the looping lead record, the canvas flow field, the pinned
+  five-act story, the five-tool collapse, the stat counters, the try-it record and the closing
+  draw. Section headings and cards use quiet reveals; everything else is a hover.
+- **Progressive enhancement:** motion is opt-in only. `motion.js` returns early for
+  `prefers-reduced-motion`, `save-data`, very low-core devices, or if GSAP/ScrollTrigger is
+  missing. Without JavaScript, the story acts stack, the hero shows its final state, the stack is
+  static and the pricing/FAQ/try-it controls use their CSS fallbacks.
+- **Mobile/tablet:** Lenis and the pinned story are disabled below 1024px. The story becomes a
+  vertical sequence of cards; the stack does not fan.
+- **Editing motion:** change `assets/motion.js`. Keep the static fallback; do not hide content in
+  CSS that only JavaScript can reveal. `ScrollTrigger.refresh()` is called after fonts load and
+  after the story/stack layouts change.
+- **Libraries:** see `assets/vendor/README.md` for versions, source URLs and licenses. Do not edit
+  the minified files; update the versions there when upgrading.
 
 Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 The local server ignores `.htaccess`, so redirects and the 404 page only work on Hostinger.
@@ -111,6 +140,7 @@ The app keeps its own copy of `/llms.txt` and `/pricing.md` on app.tryclaritia.c
 | Item | Note |
 |---|---|
 | Hostinger hosting | $0 extra, on the existing Hostinger plan |
+| GSAP, ScrollTrigger, SplitText, Lenis | Free, vendored in the repo |
 | Google Fonts, no tracking, no paid add-ons | $0 |
 | Total added to the monthly bill | $0 |
 

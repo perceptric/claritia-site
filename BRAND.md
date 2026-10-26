@@ -1,11 +1,13 @@
 # Claritia brand guide
 
-**Version 1.0 · 26 October 2026**
+**Version 1.1 · 26 October 2026**
 The visual system for tryclaritia.com, the app, and everything made for Claritia.
 
 This guide is the source of truth. It is written for designers and engineers who need to make a new page, component, email or ad without guessing. The values live in code in `assets/tokens.css`; this document explains why they exist and how to use them.
 
 The design language was extracted from the live Mintlify marketing site on 26 October 2026: its layout grid, type scale, color roles, component proportions and motion. Claritia does not use Mintlify's name, copywriting, logo, images, proprietary font files or stylesheet. The values are a starting point, not a template to clone.
+
+The homepage is built as one 20-second story: Dana from Acme visits pricing, fills two fields, gets qualified, routed and booked. The story is the spine; the motion system that carries it is in section 8.
 
 ---
 
@@ -81,7 +83,7 @@ The palette is a warm paper ground, near-black ink, and a single emerald signal.
 |---|---|---|
 | `--bg` | `#FEFDFB` | Page ground |
 | `--bg-alt` | `#FAF8F5` | Alternate band, quiet surface |
-| `--bg-card` | `#F9F6F3` | Bento and content cards |
+| `--bg-card` | `#F9F6F3` | Story scenes and content cards |
 | `--bg-deep` | `#EBE9E6` | Pressed surface, table header |
 | `--ink` | `#08090A` | Primary text, primary button |
 | `--ink-2` | `#121715` | Display and heading alternative |
@@ -183,7 +185,7 @@ Fallbacks: Instrument Serif → `Georgia, "Times New Roman", serif`; Inter → `
 | Display L | Instrument Serif | 36 / 40 · 28 / 32 mobile | 400 | -0.02em | Closing CTA, 404 |
 | Section H2 | Inter | 36 / 40 · 28 / 32 mobile | 500 | -0.02em | Every section heading |
 | Section H3 | Inter | 28 / 32 · 24 / 30 mobile | 500 | -0.02em | Sub-sections |
-| Card title | Inter | 16 / 24 | 500 | -0.01em | Bento, pricing, suite |
+| Card title | Inter | 16 / 24 | 500 | -0.01em | Story, pricing, suite |
 | Lead | Inter | 18 / 28 · 17 / 26 mobile | 400 | -0.005em | Hero and section intros |
 | Body | Inter | 16 / 24 | 400 | 0 | Paragraphs |
 | Small | Inter | 14 / 20 | 400 | 0 | Captions, table rows |
@@ -244,17 +246,17 @@ Use the token names in code: `--s-1` (4px) through `--s-40` (160px). Never hard-
 
 | Name | Width | What changes |
 |---|---|---|
-| Mobile | < 640px | Single column, 16px gutter, stacked nav, 40px hero |
-| Small tablet | 640px | Two-column tiles, side-by-side buttons |
-| Tablet | 768px | Two-column cards, section header action moves right |
-| Desktop | 1024px | 24-column layout, 3-column bento, full nav |
+| Mobile | < 640px | Single column, 16px gutter, static story, 40px hero |
+| Small tablet | 640px | Two-column pricing, side-by-side buttons |
+| Tablet | 768px | Static story cards, two-column pricing, mobile menu |
+| Desktop | 1024px | Pinned story, Lenis, full nav, four-column pricing |
 | Wide | 1280px | Max width reached; margins grow |
 
-### The bento
+### The story stage
 
-The platform section is a 3-column bento with 16px gaps and 412px row height. The first card spans 2 columns; cards 2–5 are single; the sixth spans all 3. On tablet it becomes 2 columns and the spans reset. On mobile it is one column with the natural height.
+The story replaces the old bento. A 136px rail sits on the left; the acts occupy the rest. Each act is a 0.82 / 1.18 split: copy on the left, one product scene on the right. The stage is sticky at 64px and scrubbed by ScrollTrigger. Below 1024px the stage becomes a static vertical sequence, one column, 64px between acts, 16px inset from the rail.
 
-The bento is the page's main product argument. Each card holds one related interface fragment (the wide inbound card holds a form and the calendar it opens), 32px padding, a 16px title, and one 14px sentence. No card is a collage.
+Scenes use the same cream card, 12px radius, 32px padding and dot texture. They hold real interface fragments: a pricing page, a form and calendar, a score ring, a routing diagram, a booked slot. No scene is a collage.
 
 ---
 
@@ -304,7 +306,7 @@ Primary buttons are near-black, not pure black, and not green. Green is the sign
 - Links 14/20 medium, `--text-2`, `--ink` on hover; 8px vertical and 10px horizontal padding.
 - Product uses a `<details>` dropdown: white panel, 6px radius, 1px border, shadow `0 16px 40px -24px rgba(8,9,10,.28)`, 8px padding.
 - Right side: Sign in (ghost) + Start free (primary). "Book a demo" lives in the page, not the bar, on desktop; on mobile it can appear in the panel.
-- Mobile: logo + Start free + a menu `<details>` with a full-width paper panel. No JavaScript.
+- Mobile: logo + Start free + a menu `<details>` with a full-width paper panel. JavaScript only closes the menu on link click, outside click and Escape; it works without JavaScript.
 
 ### Inputs
 
@@ -349,7 +351,7 @@ Primary buttons are near-black, not pure black, and not green. Green is the sign
 - 104px top padding, 64px bottom.
 - 1px `--line` top border.
 - Left: mark + wordmark, one-line description, status chip.
-- Right: five columns (Product, Inbound, Suite, Company, Legal), 16px gap, 14/20 links, `--text-3` headings.
+- Right: four columns (Product, Company, Resources, Legal), 16px gap, 14/20 links, `--text-3` headings.
 - Bottom row: 12/16 `--text-4`, copyright and contact.
 - No newsletter form, no social wall, no giant wordmark.
 
@@ -366,7 +368,7 @@ The signature image is a bundle of thin mint-to-lime bezier curves that converge
 - Colors step from `#18E299` through `#58E97F`, `#6DEE6B` to `#A8FB36`, with a few `#2FE688` accents.
 - Curves start off-canvas, sweep through the content area, and end off-canvas. They must not cross text.
 - Opacity 0.35–0.85; never a solid block.
-- Static is the default. A single 700ms fade-in is allowed; no looping particle animation on the marketing page.
+- The line art can draw once on load or on scroll. The hero also carries a slow canvas dot field; both must pause when offscreen and stop for reduced motion.
 
 ### Dot fields
 
@@ -388,7 +390,9 @@ Not used on the current site. If added later: real teams, real offices, natural 
 
 ## 8. Motion
 
-Motion confirms an action; it never performs.
+**One story, then quiet.** The page is built around a single cinematic moment: the 20-second story of one lead. The hero has a live record and a flow field; the story pins and scrubs through five acts; the five-tool stack collapses; the numbers count; the closing line converges. Everything else is a reveal or a hover. Motion is the narrative, not decoration.
+
+### Tokens
 
 | Token | Value | Use |
 |---|---|---|
@@ -401,16 +405,47 @@ Motion confirms an action; it never performs.
 | `--dur-4` | 300ms | Panel open |
 | `--dur-5` | 500ms | Image scale, reveal |
 
-Recipes:
+GSAP uses the same intent: `power3.out` for reveals, `power2.inOut` for UI moves, and `expo`-style easing for scene handoffs. Durations stay in the 0.3–1.8s range.
 
-- Link or button hover: color and arrow only. 100–150ms.
-- Card hover: border darkens to `--line-3`; no lift, no shadow.
-- Image hover: scale 1.03 over 500ms, clipped by the card radius.
-- Section reveal: 8px rise + fade over 500ms, triggered by `animation-timeline: view()` where supported. Content must be visible without it.
-- Line art: fade in once over 700ms. No loop.
-- Dropdown: opacity + 4px translate over 200ms.
+### The story
 
-Reduced motion: remove every transform and animation, keep color changes. The page must read identically with motion off.
+- A sticky stage inside a 420vh scroll wrapper. The stage stays at `top: 64px` while ScrollTrigger scrubs the timeline.
+- Five acts: **Visit → Form → Qualify → Route → Book**. Each act has one short caption and one product scene.
+- The left rail carries the timecodes, a moving mint line and the active step; the clock reads `0:00` to `0:20`.
+- The stage tells one story, not a slide deck. The acts share the same browser, record and calendar language and crossfade in place while the rail and clock stay fixed: the cursor clicks, fields type, the score ring fills, the lead token routes, the calendar slot locks.
+- A **Skip the story** link jumps to the next section. A visually hidden summary carries the whole narrative for screen readers, because only the active act is visible on desktop.
+- **Below 1024px:** no pin, no Lenis. The five acts stack vertically as cards with quiet reveals.
+- **Reduced motion / save-data / very low-power:** no pin, no canvas, no Lenis, no SplitText. All five acts are visible as static cards.
+
+### Hero
+
+- The line art draws in once with a 1.8s staggered stroke animation.
+- A custom 2D canvas adds a slow flow of mint-to-lime dots, with a light pointer influence. DPR is capped at 2; the canvas pauses when offscreen or the tab is hidden.
+- The product preview runs a ~14s loop: the record facts, the score (0→92), the qualification tag, the activity events and the booked toast. It is decorative and `aria-hidden`; the static final state is what no-JS and reduced-motion visitors see.
+- SplitText masks the hero H1 and the two largest section headings. It runs after `document.fonts.ready`; if it fails, the heading stays readable.
+
+### Supporting motion
+
+- **Stack:** the five tool chips fan out, then converge and blur into the single Claritia card. The final state sits inside two dashed rings. It plays once on enter and never repeats.
+- **Counters:** 15 min counts up; 6 fields counts down to 2; `<1 sec` and `$0` reveal. The numbers line art draws on enter.
+- **Try it:** typing an email builds the record row by row and counts the score to 92. The CSS `:has()` fallback still reveals the record without JavaScript.
+- **Closing:** the line art draws, a mint comet lands, and the stamp check draws.
+- **Reveals:** section headers, stat blocks, suite cards, pricing cards and FAQ rows rise 20px and fade in. 0.8s, 0.06s stagger, once.
+- **Hover:** color and arrow only, 100–150ms. No lift, no tilt, no magnetic buttons.
+
+### Rules
+
+- One cinematic moment. Do not pin, scrub or animate every section.
+- Never hijack the scroll wheel, trap focus or snap the page. The story uses native sticky plus a scrubbed timeline; the reader can always scroll past it.
+- Animate transforms and opacity. Do not animate layout, `top`, `left`, width or height on large elements; the small route token is the exception.
+- No CSS-hidden content that only JavaScript can reveal. GSAP sets initial states at runtime; without it, the page is complete.
+- Pause the canvas offscreen; cap the device pixel ratio; keep the particle count low.
+- Respect `prefers-reduced-motion`, `save-data`, and low-core devices. Disable Lenis and pinning below 1024px.
+- JS budget: GSAP core + ScrollTrigger + SplitText + Lenis + `motion.js` is about 165KB uncompressed / 60KB gzip. Keep new libraries out unless they replace something.
+
+### Reduced motion
+
+Remove every transform, pin, canvas, smooth scroll, split and counter. Keep color changes. The page must read identically with motion off: all five story acts stacked, the hero in its final booked state, the stack static, the numbers at their final values.
 
 ---
 
@@ -453,11 +488,13 @@ Buttons are verbs. No "Submit", "Learn more" or "Click here".
 
 ### Hero
 
-- 24-column grid; copy in columns 1–9, product preview in 10–24.
-- Mint eyebrow chip, serif display XL, 18px lead, primary + secondary buttons, 12/16 note.
-- One line-art field behind the preview; it must not touch the headline.
-- Preview floats with the large soft shadow and is cropped by the right rail.
-- Hero bottom: 80px before the next band.
+- 24-column grid; copy in columns 1–9, live product preview in 10–24.
+- A live chip (`Live · acme.com`), serif display XL, one 18px sentence, primary + secondary buttons, 12/16 note.
+- Secondary CTA is **See the 20 seconds**, not another sales button; it anchors to the story.
+- One line-art field and a canvas flow field behind the preview; neither touches the headline.
+- The preview floats with the large soft shadow and runs the 14s record loop. No browser chrome.
+- A small scroll cue sits at the bottom center on desktop; it is hidden on mobile.
+- Hero bottom: 120px before the marquee.
 
 ### Section header
 
@@ -467,54 +504,65 @@ Buttons are verbs. No "Submit", "Learn more" or "Click here".
 - Optional primary button aligned to the bottom-right of the header.
 - 40px top, 32px to content.
 
-### Bento
+### The 20-second story
 
-- 3 columns, 16px gaps, 412px rows.
-- First card 2 columns; last card 3 columns.
-- Each card: fragment, 16px title, 14px one-line description.
-- Cards are cream on paper; no shadows.
-- On mobile: one column, natural height, 12px gaps.
+- Sticky stage inside a 420vh wrapper; 136px rail on the left, acts on the right.
+- Five acts, each with a timecode, a three-to-five-word title, one sentence and one product scene.
+- The rail shows 0:00 Visit, 0:05 Form, 0:15 Qualify, 0:16 Route, 0:20 Book. The active step and clock update with scroll.
+- Act scene: dot-textured cream card, one browser/record/form/calendar/route composition, 32px padding.
+- Copy column: 27ch max; 28/32 heading; 16/24 sentence.
+- Include **Skip the story** and a visually hidden narrative summary.
+- Below 1024px: no sticky, no rail; acts stack with 64px gaps and a 16px inset.
+- Reduced motion: all acts static.
+
+### Five tools, one path
+
+- A 460px stage with two dashed rings.
+- Five tool chips (HubSpot, Typeform, Calendly, LeanData, Clearbit) fan out, then collapse and blur into the Claritia card.
+- Plays once on enter; no scrub, no repeat.
+- Final state: one card, two rings, the mono caption `CRM · forms · scheduling · routing · enrichment`.
+- Below 768px: static chips + card; no animation.
 
 ### Stat band
 
 - Line art at the top, full-bleed within the rails.
 - 4 columns separated by 1px rules; 40px numbers; 14px captions.
-- Values may be emerald; labels are `--text-2`.
+- 15 min counts up; 6 fields counts down to 2; `<1 sec` and `$0` reveal.
 - On mobile: 2 columns, then 1 column under 480px.
 
-### Proof table
+### Try it
 
-- Two columns, 1px rules, no outer border.
-- Left column `--text-3`, right column `--ink` with `--brand` values.
-- Header row 12px `--text-4`.
-- On mobile: stacked pair blocks with the old tool as a 12px label above the Claritia value.
+- Two columns: form card left, record panel right.
+- Form: work email, one question, primary button, note `Demo only. Nothing is sent.`
+- Record: six rows, score 92, booked bar. It builds on input; the CSS `:has()` fallback works without JS.
+- On mobile: form then record, full width.
 
 ### Pricing
 
-- 4 cards, equal height, 12px radius.
-- Recommended card: `#08090A` ground, `#FAF8F5` text, mint flag, dark secondary button.
-- Price: 32/36 medium, tabular numbers; yearly line 13/18 `--text-3`.
-- Specs: 1px rules, 13/18 rows; CTA pinned to the bottom.
+- Heading, then a native radio fieldset: Monthly / Yearly (2 months free). The CSS `:has()` selector switches prices; JS adds a small flip.
+- 4 cards, equal height, 12px radius. Recommended card: `#08090A` ground, mint flag, mint CTA.
+- Price: 32/36 medium, tabular numbers; the yearly note is 12/18 `--text-3`.
+- Three key specs per card, 1px rules; CTA pinned to the bottom.
+- **Compare every limit** `<details>` holds the full table and overage note.
 - On mobile: 1 column, recommended card remains dark.
 
 ### FAQ
 
 - Heading left, "Talk to us" button right on desktop.
-- `<details>` rows with 1px rules.
-- First row open; answers 16/24 at 64ch.
-- No card around the list.
+- Five `<details>` rows with 1px rules, short answers, 16/24 at 64ch.
+- First row open; no card around the list.
 
 ### Closing CTA
 
 - Full-bleed paper band, 1px top and bottom rules.
 - Serif display L, second line muted.
-- Primary + dark secondary buttons.
-- Line art on the right, clipped, never behind text.
-- 96px vertical padding desktop / 64px mobile.
+- Primary + secondary buttons.
+- Line art on the right draws in; a mint comet lands and a check stamp draws.
+- 96px vertical padding desktop / 64px mobile; stamp hidden on mobile.
 
 ### Footer
 
-- As specified in components. Five columns; no newsletter; no oversized logo.
+- As specified in components. Four columns plus the brand column; no newsletter; no oversized logo.
 - The status dot is the only green element in the footer.
 
 ---
@@ -527,36 +575,56 @@ Buttons are verbs. No "Submit", "Learn more" or "Click here".
 - Focus: visible 2px emerald ring, 2px offset, on every interactive element. Never `outline: none` without a replacement.
 - Tap targets: 40px minimum, 8px apart.
 - Every icon has an accessible name or is `aria-hidden`.
-- The mobile menu, product dropdown and FAQ use native `<details>` so they work with keyboard and without JavaScript.
-- Skip link to `#main` on every page.
-- Respect `prefers-reduced-motion`.
-- Headings run in order: one `h1`, then `h2` per section, `h3` inside cards.
-- Decorative line art and dot fields are `aria-hidden="true"`.
+- The mobile menu, product dropdown and FAQ use native `<details>`; JavaScript only closes them on link click, outside click and Escape.
+- Skip link to `#main` on every page, plus **Skip the story** inside the story.
+- Headings run in order: one `h1`, then `h2` per section, `h3` inside acts and cards.
+- Decorative line art, dot fields, canvas, product previews and story scenes are `aria-hidden="true"`.
+- The desktop story hides inactive acts from assistive tech; a visually hidden summary gives the full five-act narrative. The captions themselves are real text.
+- The pricing toggle is a native `<fieldset>` with radio inputs; the labels are clickable and keyboard focus is visible.
 - Forms have labels, not just placeholders; the try-it form uses a real `<label>`.
+- **Reduced motion:** remove pin, Lenis, canvas, SplitText, counters and transitions; keep color changes. The static page must read identically.
+- **No JavaScript:** every story act is visible, the hero shows its final booked state, the stack is static and the pricing/FAQ/try-it controls use CSS fallbacks.
+- No scroll-jacking, no scroll snapping, no focus traps. The pinned story is a sticky stage the reader can always scroll past.
+- Pause the hero canvas when it is offscreen or the tab is hidden.
 
 ---
 
-## 12. CSS usage
+## 12. CSS and JS usage
 
-Link the token layer before the base stylesheet:
+Link the token layer before the page stylesheets:
 
 ```html
-<link rel="stylesheet" href="/assets/tokens.css?v=5">
-<link rel="stylesheet" href="/assets/base.css?v=5">
-<link rel="stylesheet" href="/assets/home.css?v=5">
+<link rel="stylesheet" href="/assets/tokens.css?v=6">
+<link rel="stylesheet" href="/assets/base.css?v=6">
+<link rel="stylesheet" href="/assets/home.css?v=6">
+<link rel="stylesheet" href="/assets/story.css?v=6">
+```
+
+Load the vendored motion layer at the end of the body, in this order:
+
+```html
+<script defer src="/assets/vendor/gsap.min.js"></script>
+<script defer src="/assets/vendor/ScrollTrigger.min.js"></script>
+<script defer src="/assets/vendor/SplitText.min.js"></script>
+<script defer src="/assets/vendor/lenis.min.js"></script>
+<script defer src="/assets/motion.js?v=6"></script>
 ```
 
 - `assets/tokens.css` is the only place raw colors, type sizes, spacing, radii, shadows and easings are defined.
-- `assets/base.css` contains the reset, typography, layout primitives, header, footer, buttons, chips, forms and utility classes.
-- `assets/home.css` contains only homepage sections.
+- `assets/base.css` contains the reset, typography, layout primitives, header, footer, buttons, chips, forms and Lenis fallback rules.
+- `assets/home.css` contains the hero, marquee, stats, try-it, suite, pricing, FAQ and closing.
+- `assets/story.css` contains the pinned story, the five scenes and the five-tool stack.
+- `assets/motion.js` is progressive enhancement. It returns early for reduced motion, save-data, very low-core devices or missing libraries. Never require it for content to be visible.
 - No component may introduce a raw hex value. Use a token.
-- The site is plain HTML and CSS. No build step, no JavaScript, no framework.
+- The site is static HTML/CSS with a small, vendored motion layer. No build step, no framework.
 - The base font size is 16px. Use `rem` for type and `px` for borders, radii and small gaps where it aids precision.
-- Class naming is BEM-ish for shared components (`.site-head__in`, `.btn--primary`) and plain for page sections (`.hero`, `.bento`, `.tier`).
+- Class naming is BEM-ish for shared components (`.site-head__in`, `.btn--primary`) and plain for page sections (`.hero`, `.story`, `.tier`).
+- Do not edit the minified files in `assets/vendor`; update versions in `assets/vendor/README.md` and `/README.md`.
+- Content must survive `prefers-reduced-motion`, `save-data`, low-power devices and JavaScript being off. Test all four.
 
 ### Inactive dark block
 
-`assets/tokens.css` includes a commented/`[data-theme="dark"]` block with the dark values. It is not triggered by `prefers-color-scheme`; the site stays light until the dark build is audited.
+`assets/tokens.css` includes a `[data-theme="dark"]` block with the dark values. It is not triggered by `prefers-color-scheme`; the site stays light until the dark build is audited.
 
 ---
 
@@ -571,7 +639,9 @@ Link the token layer before the base stylesheet:
 - Leave 160px between sections.
 - Set real numbers, real times and real labels.
 - Write one clear sentence per card.
-- Check the page at 390px before calling it done.
+- Tell the 20-second story: visit → form → qualify → route → book.
+- Spend the motion budget on one pinned stage, one hero loop, one stack collapse and one closing draw.
+- Test with JavaScript off, reduced motion, save-data and a 390px viewport before calling it done.
 
 **Don't**
 
@@ -581,7 +651,10 @@ Link the token layer before the base stylesheet:
 - Don't add a gradient, glow, glass panel or heavy shadow.
 - Don't fill a card with gray placeholder bars or a fake dashboard collage.
 - Don't invent customers, quotes, logos or live metrics.
-- Don't add JavaScript for a menu, carousel or form reveal.
+- Don't animate every section, hijack the scroll wheel or snap the page.
+- Don't hide content in CSS and require JavaScript to reveal it.
+- Don't add a custom cursor, magnetic buttons or 3D tilt; they fight the calm brand.
+- Don't use JavaScript for simple hovers or menu toggles; native `<details>` and CSS handle those.
 - Don't copy Mintlify's copy, screenshots, logo or font files.
 
 ---
@@ -591,4 +664,6 @@ Link the token layer before the base stylesheet:
 - Reference: `https://www.mintlify.com/`, fetched 26 October 2026. Two CSS bundles and full-page desktop/mobile renders were inspected.
 - Extracted values: 24-column 1088px grid, 16px gap, 32px margin; type sizes 50/52, 36/40, 28/32, 16/24, 14/20, 12/16; 4px button radius, 12px card radius; palette `#FEFDFB`, `#FAF8F5`, `#F9F6F3`, `#08090A`, `#121715`, `#485450`, `#717D79`, `#969E9B`, `#F1F0EE`, `#0C8C5E`, `#18E299`, `#A8FB36`. The muted text roles were darkened to `#5F6B67` and `#69736E`, and the text-safe green to `#0A7A52`, so every small text style clears 4.5:1; the mark keeps `#0C8C5E`.
 - The display face on the reference is Arizona Flare (licensed). Claritia uses Instrument Serif as the free stand-in. No font binaries were copied.
+- Motion stack: GSAP 3.15.0 (core, ScrollTrigger, SplitText) and Lenis 1.3.27 are vendored in `assets/vendor/`. GSAP is free for commercial use under the Standard "No Charge" GSAP License 2025; Lenis is MIT. Sources: https://gsap.com/standard-license/ and https://github.com/darkroomengineering/lenis
+- The 20-second story, hero loop, canvas flow field and five-tool collapse were designed for Claritia in this repository. They are not copied from Mintlify or any other site.
 - No Mintlify copy, imagery, logo paths or stylesheet files are included in this repository. The design language is re-expressed as Claritia's own system.
