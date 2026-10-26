@@ -83,8 +83,16 @@
 .trio__flag { font-family: var(--code); font-size: 13px; color: var(--fg-40); font-weight: 400; }
 .callout { margin-top: clamp(44px, 6vw, 80px); max-width: 24ch; font-size: clamp(1.5rem, 3.4vw, 2.6rem); font-weight: 500; letter-spacing: -0.03em; line-height: 1.12; color: var(--fg); }
 
-/* ── 4. Controls ─────────────────────────────────────────────────────── */
-.guards { margin-top: clamp(32px, 4vw, 48px); display: grid; gap: 28px; }
+/* ── the suite ───────────────────────────────────────────────────────── */
+.suite { margin-top: clamp(32px, 4vw, 48px); display: grid; gap: 12px; }
+@media (min-width: 840px) { .suite { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.suite__step { padding: clamp(20px, 2.4vw, 28px); border-radius: var(--r-lg); background: var(--bg-raised); }
+.suite__step--on { background: var(--bg-tile); box-shadow: inset 0 0 0 1px var(--brand); } /* taste-skill-ignore */
+.suite__k { font-family: var(--code); font-size: 13px; color: var(--brand-strong); }
+.suite__step h3 { margin-top: 10px; font-size: 20px; font-weight: 500; }
+.suite__step p { margin-top: 8px; font-size: 16px; color: var(--fg-70); }
+
+/* ── 4. Controls ─────────────────────────────────────────────────────── */.guards { margin-top: clamp(32px, 4vw, 48px); display: grid; gap: 28px; }
 @media (min-width: 640px) { .guards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 40px; } }
 @media (min-width: 1020px) { .guards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .guard { display: flex; flex-direction: column; gap: 12px; }

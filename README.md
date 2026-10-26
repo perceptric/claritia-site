@@ -4,9 +4,10 @@ Static site for Claritia. Plain HTML and CSS: no WordPress, no build step, no Ja
 receipt tabs, the account switcher and the disclosures are CSS and HTML only.
 It is set up the same way as perceptric.com.
 
-The home page describes Claritia, the agentic marketing platform: website visitors become leads
-and leads become meetings, with AI agents running the journeys, writing the emails and building the
-pages. The product plan lives in the app repo at `docs/marketing-platform.md`.
+The home page describes Claritia, the inbound automation platform: it captures the visitors,
+forms and sources that reach you, keeps one clean database, runs AI follow-up you approve, and
+routes leads to meetings. The product plan lives in the app repo at
+`docs/marketing-platform.md`.
 
 ## How it's laid out
 
