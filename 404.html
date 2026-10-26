@@ -8,16 +8,16 @@
 <link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
 <link rel="icon" href="/assets/brand/claritia-mark.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
-<meta name="theme-color" content="#0b0c0e">
+<meta name="theme-color" content="#f2f1ed">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="/assets/base.css?v=3">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/base.css?v=4">
 <style>
-.blank { padding: 140px 0 160px; text-align: center; }
-.blank h1 { font-size: clamp(38px, 6vw, 72px); letter-spacing: -0.035em; }
-.blank p { margin-top: 16px; color: var(--fg-70); }
-.blank .row { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.blank { padding: 120px 0 140px; text-align: center; }
+.blank h1 { font-size: clamp(34px, 6vw, 64px); }
+.blank p { margin-top: 16px; color: var(--body); }
+.blank .row { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 </style>
 </head>
 <body>
@@ -25,10 +25,10 @@
 <div class="page">
 	<header class="site-head">
 		<div class="wrap site-head__in">
-			<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
+			<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--brand)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
 			<div class="site-head__actions">
-				<a class="site-signin" href="https://app.tryclaritia.com">Sign in</a>
-				<a class="btn btn--sm btn--primary" href="https://app.tryclaritia.com">Start free</a>
+				<a class="btn btn--ghost btn--sm" href="https://app.tryclaritia.com">Sign in</a>
+				<a class="btn btn--primary btn--sm" href="https://app.tryclaritia.com">Start free</a>
 			</div>
 		</div>
 	</header>
@@ -37,41 +37,13 @@
 		<p>The address is wrong, or the page is gone. The site is one page now.</p>
 		<div class="row">
 			<a class="btn btn--primary" href="/">Go home</a>
-			<a class="btn btn--ghost" href="https://app.tryclaritia.com">Open the app</a>
+			<a class="btn btn--secondary" href="https://app.tryclaritia.com">Open the app</a>
 		</div>
 	</main>
 	<footer class="site-foot">
-		<div class="wrap site-foot__top">
-			<div class="site-foot__brand">
-				<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
-				<p>The website intelligence and marketing platform. See who is on your site, keep one live database of contacts, and know which account to call today.</p>
-				<span class="site-foot__status">All systems running</span>
-			</div>
-			<div class="site-foot__cols">
-				<nav class="site-foot__col" aria-label="Product">
-					<h3>Product</h3>
-					<a href="/#product">Screens</a>
-					<a href="/#sources">Sources</a>
-					<a href="/#pricing">Pricing</a>
-					<a href="/#faq">FAQ</a>
-				</nav>
-				<nav class="site-foot__col" aria-label="Suite">
-					<h3>Suite</h3>
-					<a href="https://tryclaritia.com">Claritia</a>
-					<a href="mailto:hello@tryclaritia.com">Arrowsterr</a>
-					<a href="mailto:hello@tryclaritia.com">Omniscient</a>
-				</nav>
-				<nav class="site-foot__col" aria-label="Company">
-					<h3>Company</h3>
-					<a href="mailto:hello@tryclaritia.com">Contact</a>
-					<a href="https://app.tryclaritia.com">Sign in</a>
-				</nav>
-			</div>
-		</div>
-		<div class="wrap"><p class="site-foot__mark" aria-hidden="true">Claritia</p></div>
 		<div class="wrap site-foot__legal">
 			<p>© 2026 Perceptric. Claritia is a Perceptric product.</p>
-			<p>All systems running.</p>
+			<a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a>
 		</div>
 	</footer>
 </div>

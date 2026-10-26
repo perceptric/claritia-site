@@ -3,543 +3,529 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claritia | The inbound automation platform</title>
-<meta name="description" content="Claritia captures your inbound. It names the companies behind your traffic, scores and routes every lead, runs AI follow-up you approve, and writes meetings back to your CRM.">
+<title>Claritia: from website visit to booked meeting</title>
+<meta name="description" content="Claritia is the CRM and inbound stack for small B2B teams. Forms, enrichment, routing, scheduling and AI email in one place, live in 15 minutes.">
 <link rel="canonical" href="https://tryclaritia.com/">
 <meta property="og:site_name" content="Claritia">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Claritia | The inbound automation platform">
-<meta property="og:description" content="Names the companies behind your traffic, scores and routes every lead, runs AI follow-up you approve, and writes meetings back to your CRM.">
+<meta property="og:title" content="Claritia: from website visit to booked meeting">
+<meta property="og:description" content="Forms, enrichment, routing, scheduling and AI email in one place, live in 15 minutes.">
 <meta property="og:url" content="https://tryclaritia.com/">
 <meta property="og:image" content="https://tryclaritia.com/assets/brand/og-image.png">
+<meta property="og:image:alt" content="Turn visitors into booked meetings.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
 <link rel="icon" href="/assets/brand/claritia-mark.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
-<meta name="theme-color" content="#0b0c0e">
+<meta name="theme-color" content="#f2f1ed">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"><!-- taste-skill-ignore -->
-<link rel="stylesheet" href="/assets/base.css?v=3">
-<link rel="stylesheet" href="/assets/app.css?v=3">
-<link rel="stylesheet" href="/assets/home.css?v=3">
+<link rel="stylesheet" href="/assets/base.css?v=4">
+<link rel="stylesheet" href="/assets/home.css?v=4">
 </head>
-<body>
+<body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
 	<header class="site-head">
 		<div class="wrap site-head__in">
-			<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
+			<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--brand)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
 			<nav class="site-nav" aria-label="Main">
-				<a href="#loop">Product</a>
-				<a href="#nurture">Nurture</a>
-				<a href="#sources">Sources</a>
+				<details class="menu">
+					<summary class="menu__label">Product
+						<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline;vertical-align:-1px"><path d="m6 9 6 6 6-6"/></svg>
+					</summary>
+					<div class="menu__panel" role="menu">
+						<a class="menu__row" href="#crm"><b>CRM</b><span>Contacts, companies, opportunities and meetings in one place</span></a>
+						<a class="menu__row" href="#automation"><b>Automation</b><span>Workflows, routing and enrichment</span></a>
+						<a class="menu__row" href="#inbound"><b>Inbound</b><span>Forms, scheduling and website visitors</span></a>
+						<a class="menu__row" href="#nurture"><b>Nurture</b><span>Emails, segments and lead scoring</span></a>
+					</div>
+				</details>
+				<a href="#scheduling">Scheduling</a>
+				<a href="#routing">Routing</a>
 				<a href="#pricing">Pricing</a>
+				<a href="https://app.tryclaritia.com">Docs</a>
 			</nav>
 			<div class="site-head__actions">
-				<a class="site-signin" href="https://app.tryclaritia.com">Sign in</a>
-				<a class="site-signin" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
-				<a class="btn btn--sm btn--primary" href="https://app.tryclaritia.com">Start free</a>
+				<a class="btn btn--ghost btn--sm" href="https://app.tryclaritia.com">Sign in</a>
+				<a class="btn btn--secondary btn--sm" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
+				<a class="btn btn--primary btn--sm" href="https://app.tryclaritia.com">Start free</a>
 			</div>
 		</div>
 	</header>
 	<main id="main">
 
-		<!-- 1. Hero: the promise, then the product -->
-		<section class="section hero" id="top">
-			<div class="hero__glow" aria-hidden="true"></div>
-			<div class="wrap hero__head">
-				<a class="announce" href="#loop"><span class="announce__pill"><b>New</b> Nurture and lead scoring are live <span class="pt">See the loop</span></span></a>
-				<h1 class="hero__h1"><span class="rise"><span>Turn inbound</span></span><span class="rise"><span style="animation-delay:.09s"><span class="grad">into pipeline.</span></span></span></h1>
-				<div class="hero__aside reveal">
-					<p class="hero__lead">Claritia captures the visitors, forms and sources that reach you, enriches and scores each account, runs AI follow-up you approve, and writes meetings back to your CRM.</p>
-					<div class="hero__cta">
-						<a class="btn btn--primary" href="https://app.tryclaritia.com">Start free</a>
-						<a class="btn btn--ghost" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
-					</div>
-					<p class="hero__note">No credit card. 60+ sources. Reads your warehouse read-only.</p>
+		<!-- 2. Hero -->
+		<section class="section hero">
+			<div class="hero__wash" aria-hidden="true"></div>
+			<div class="wrap hero__in">
+				<a class="chip chip--clay" href="#how">New · Workflows and reports are live <span aria-hidden="true">→</span></a>
+				<h1 class="hero__h1"><span class="rise"><span>Turn website visitors</span></span><span class="rise"><span style="animation-delay:.09s"><span class="dim">into booked meetings.</span></span></span></h1>
+				<p class="hero__lead">Claritia catches every lead, finds out who they are, sends them to the right rep and books the meeting before they leave your site. One app for small B2B teams who find HubSpot too heavy.</p>
+				<div class="hero__cta">
+					<a class="btn btn--primary" href="https://app.tryclaritia.com">Start free</a>
+					<a class="btn btn--secondary" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
 				</div>
-			</div>
-			<div class="wrap hero__stage reveal">
-				<div class="window" data-ui>
-					<div class="window__bar"><span class="wdot"></span><span class="wdot"></span><span class="wdot"></span><span class="window__url">app.tryclaritia.com/accounts</span></div>
-					<div class="window__body">
-						<aside class="wnav" aria-hidden="true">
-							<p class="wnav__group">Audience</p>
-							<span class="wnav__item"><i style="--hue:var(--blue)"></i>Visitors</span>
-							<span class="wnav__item is-on"><i style="--hue:var(--blue)"></i>Accounts</span>
-							<span class="wnav__item"><i style="--hue:var(--green)"></i>Contacts</span>
-							<span class="wnav__item"><i style="--hue:var(--green)"></i>Companies</span>
-							<span class="wnav__item"><i style="--hue:var(--amber)"></i>Leads</span>
-							<span class="wnav__item"><i style="--hue:var(--violet)"></i>Segments</span>
-							<p class="wnav__group">Engage</p>
-							<span class="wnav__item"><i style="--hue:var(--green)"></i>Nurture</span>
-							<span class="wnav__item"><i style="--hue:var(--blue)"></i>Journeys</span>
-							<span class="wnav__item"><i style="--hue:var(--amber)"></i>Pages</span>
-							<span class="wnav__item"><i style="--hue:var(--red)"></i>Forms</span>
-							<p class="wnav__group">Prove</p>
-							<span class="wnav__item"><i style="--hue:var(--blue)"></i>Reports</span>
-						</aside>
-						<div class="window__main">
-							<div data-ui class="ui ui-panel receipt">
-								<input class="r-radio" type="radio" name="acct" id="acct-acme" checked>
-								<input class="r-radio" type="radio" name="acct" id="acct-northwind">
-								<input class="r-radio" type="radio" name="acct" id="acct-globex">
-								<div class="receipt__tabs">
-									<label for="acct-acme">Acme</label>
-									<label for="acct-northwind">Northwind</label>
-									<label for="acct-globex">Globex</label>
-								</div>
-								<div class="receipt__stage">
-									<div class="receipt__body" data-acct="acme">
-										<div class="receipt__top">
-											<span class="ui-av">AC</span>
-											<span><span class="receipt__co">Acme</span><span class="ui-sub">acme.com · SaaS · 201-500 · US</span></span>
-											<span class="receipt__tags"><span class="ui-badge ui-badge--brand">Evaluating</span><span class="ui-badge ui-badge--red">Hot</span></span>
-										</div>
-										<div class="receipt__scores">
-											<div><p class="ui-slabel">Fit</p><p class="ui-sval">82</p></div>
-											<div><p class="ui-slabel">Intent</p><p class="ui-sval">71</p></div>
-											<div><p class="ui-slabel">Priority</p><p class="ui-sval">9</p></div>
-										</div>
-										<p class="receipt__why">Why now: <b>read pricing twice and compared us to Globex.</b></p>
-										<div class="receipt__sigs">
-											<p class="receipt__siglabel">Signals behind the score</p>
-											<details class="sig"><summary><span class="sig__name">pricing · jane@acme.com</span><span class="sig__val">5 × 0.62 = 3.1</span></summary>
-												<div class="sig__ev"><span class="ui-badge ui-badge--brand">AI</span>Visit from chatgpt.com · /pricing, /security, /demo · 4m 30s · Verified person</div></details>
-											<details class="sig"><summary><span class="sig__name">demo · marcus@globex.io</span><span class="sig__val">2 × 0.48 = 1.0</span></summary>
-												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Form</span>Filled “Request a demo” 2 days ago · consent recorded, opted in</div></details>
-											<details class="sig"><summary><span class="sig__name">return_visit · 14 quiet days</span><span class="sig__val">8</span></summary>
-												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Session</span>Back after 14 quiet days · first seen 3 weeks ago</div></details>
-										</div>
-									</div>
-									<div class="receipt__body" data-acct="northwind">
-										<div class="receipt__top">
-											<span class="ui-av">NW</span>
-											<span><span class="receipt__co">Northwind</span><span class="ui-sub">northwind.co · Fintech · 51-200 · CA</span></span>
-											<span class="receipt__tags"><span class="ui-badge ui-badge--violet">Researching</span></span>
-										</div>
-										<div class="receipt__scores">
-											<div><p class="ui-slabel">Fit</p><p class="ui-sval">78</p></div>
-											<div><p class="ui-slabel">Intent</p><p class="ui-sval">54</p></div>
-											<div><p class="ui-slabel">Priority</p><p class="ui-sval">6</p></div>
-										</div>
-										<p class="receipt__why">Why now: <b>two people read the security page this week.</b></p>
-										<div class="receipt__sigs">
-											<p class="receipt__siglabel">Signals behind the score</p>
-											<details class="sig"><summary><span class="sig__name">security · 2 people</span><span class="sig__val">2 × 0.71 = 1.4</span></summary>
-												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Page</span>/security read by lena@northwind.co and marc@northwind.co · 3m each</div></details>
-											<details class="sig"><summary><span class="sig__name">new_person · lena@northwind.co</span><span class="sig__val">6</span></summary>
-												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Form</span>Signed up for the newsletter · Asserted identity</div></details>
-										</div>
-									</div>
-									<div class="receipt__body" data-acct="globex">
-										<div class="receipt__top">
-											<span class="ui-av">GX</span>
-											<span><span class="receipt__co">Globex</span><span class="ui-sub">globex.io · Logistics · 1000+ · US</span></span>
-											<span class="receipt__tags"><span class="ui-badge ui-badge--gray">Engaged</span></span>
-										</div>
-										<div class="receipt__scores">
-											<div><p class="ui-slabel">Fit</p><p class="ui-sval">64</p></div>
-											<div><p class="ui-slabel">Intent</p><p class="ui-sval">38</p></div>
-											<div><p class="ui-slabel">Priority</p><p class="ui-sval">3</p></div>
-										</div>
-										<p class="receipt__why">Why now: <b>came back after three quiet weeks.</b></p>
-										<div class="receipt__sigs">
-											<p class="receipt__siglabel">Signals behind the score</p>
-											<details class="sig"><summary><span class="sig__name">return_visit · 21 quiet days</span><span class="sig__val">8</span></summary>
-												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Session</span>Unknown visitor · Germany · 2 pages · 50s</div></details>
-											<details class="sig"><summary><span class="sig__name">page_mid · /integrations</span><span class="sig__val">3</span></summary>
-												<div class="sig__ev"><span class="ui-badge ui-badge--gray">Page</span>Read /integrations once · desktop</div></details>
-										</div>
-									</div>
-								</div>
+				<p class="hero__note">Free plan, no card needed.</p>
+				<div class="hero__art reveal">
+					<div class="mk mk-stream" data-ui>
+						<div class="mk-stream__head"><span class="mk-live"></span> Live · acme.com</div>
+						<div class="mk-stream__track">
+							<span class="mk-dot" style="animation-delay:0s"></span>
+							<span class="mk-dot" style="animation-delay:.9s"></span>
+							<span class="mk-dot" style="animation-delay:1.8s"></span>
+							<span class="mk-dot" style="animation-delay:2.7s"></span>
+							<span class="mk-dot" style="animation-delay:3.6s"></span>
+							<span class="mk-dot" style="animation-delay:4.5s"></span>
+							<div class="mk-form">
+								<p class="mk-form__label">Request a demo</p>
+								<div class="mk-form__field">dana@acme.com</div>
+								<div class="mk-form__field">Looking for a CRM that books</div>
 							</div>
+							<div class="mk-person"><span class="av">D</span>Dana · Acme</div>
+							<div class="mk-slot">Booked · Thu 10:00 · Sam</div>
 						</div>
 					</div>
-				</div>
-				<div class="window__float">
-					<div class="float-card" data-ui>
-						<p class="float-card__label">Why now</p>
-						<p class="float-card__line"><b>Read pricing twice</b> and compared us to Globex.</p>
-						<p class="float-card__row"><span class="float-card__tag">AI</span> Visit from chatgpt.com · 4m 30s</p>
-					</div>
+					<p class="mk-cap"><b>Acme visited pricing</b> → Dana filled the demo form → booked with Sam, Thursday 10:00</p>
 				</div>
 			</div>
 		</section>
 
-		<!-- 2. Trust strip -->
-		<section class="section trust-strip">
+		<!-- 3. Logo strip -->
+		<section class="section logos">
 			<div class="wrap reveal">
-				<p>Claritia reads the stack you already run.</p>
+				<p>Connects in one click.</p>
 				<div class="marquee" aria-hidden="true">
 					<div class="marquee__row">
-						<span>HubSpot</span><span>Salesforce</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Mailchimp</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Typeform</span><span>Tally</span><span>Calendly</span><span>Stripe</span><span>Snowflake</span><span>BigQuery</span>
-						<span>HubSpot</span><span>Salesforce</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Mailchimp</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Typeform</span><span>Tally</span><span>Calendly</span><span>Stripe</span><span>Snowflake</span><span>BigQuery</span>
+						<span>Google Calendar</span><span>Outlook</span><span>Zoom</span><span>HubSpot</span><span>Salesforce</span><span>Slack</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Webflow</span><span>Stripe</span><span>Omniscient</span>
+						<span>Google Calendar</span><span>Outlook</span><span>Zoom</span><span>HubSpot</span><span>Salesforce</span><span>Slack</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Webflow</span><span>Stripe</span><span>Omniscient</span>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- 3. The inbound loop -->
-		<section class="section" id="loop">
+		<!-- 4. One lead, start to finish -->
+		<section class="section" id="how">
 			<div class="wrap reveal">
-				<p class="label label--accent">The inbound loop</p>
-				<h2 class="sec__h">From first visit to booked meeting.</h2>
-				<p class="sec__lead">Four steps, run by Claritia, with you in control of every send. It reads your stack, keeps one database, and writes back where you allow.</p>
-				<div class="jobs">
-					<article class="job">
-						<div class="job__copy">
-							<p class="label label--accent">Capture</p>
-							<h3>Every visitor and form, captured.</h3>
-							<p>Claritia names the companies and people behind your traffic, matches them to your records, and takes in every form, CRM and warehouse row. If they reach you, Claritia sees them.</p>
-							<a class="textlink" href="#database">See the database</a>
-						</div>
-						<div class="job__art">
-							<div data-ui class="ui ui-panel">
-								<div class="ui-head"><span class="ui-title">Visitors</span><span class="ui-count">[1,240]</span><span class="ui-head__end ui-live">live</span></div>
-								<table class="ui-table">
-									<thead><tr><th class="ui-th">Visitor</th><th class="ui-th">Company</th><th class="ui-th">Source</th></tr></thead>
-									<tbody>
-										<tr><td class="ui-td"><span class="ui-av">JD</span><span class="ui-name">jane@acme.com</span></td><td class="ui-td">Acme</td><td class="ui-td"><span class="ui-badge ui-badge--brand">AI</span></td></tr>
-										<tr><td class="ui-td"><span class="ui-av">SN</span><span class="ui-name">Sleepy Narwhal</span></td><td class="ui-td ui-dim">Unknown · DE</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Search</span></td></tr>
-										<tr><td class="ui-td"><span class="ui-av">MB</span><span class="ui-name">marcus@globex.io</span></td><td class="ui-td">Globex</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Direct</span></td></tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</article>
+				<div class="sec-head">
+					<span class="chip">How it works</span>
+					<h2>Twenty seconds<br><span class="dim">from form to calendar.</span></h2>
+					<p class="lead">Here is what happens when someone asks for a demo. You set it up once. Claritia runs it for every lead.</p>
+				</div>
+				<div class="flow">
+					<div class="flow__row"><span class="flow__time">0:00</span><span class="flow__step">Visit</span><p class="flow__what">Dana from Acme opens your pricing page. Claritia knows the company from the visit.</p></div>
+					<div class="flow__row"><span class="flow__time">0:05</span><span class="flow__step">Fill</span><p class="flow__what">Dana types a work email. Claritia already knows Acme's size and industry, so the form drops from 6 fields to 2.</p></div>
+					<div class="flow__row"><span class="flow__time">0:15</span><span class="flow__step">Qualify</span><p class="flow__what">Your rules pass. AI reads the “what are you looking for” answer and marks Dana qualified, with its reason.</p></div>
+					<div class="flow__row"><span class="flow__time">0:16</span><span class="flow__step">Route</span><p class="flow__what">Acme has no owner, so the router picks the US team and hands Dana to Sam, who has room this week.</p></div>
+					<div class="flow__row"><span class="flow__time">0:20</span><span class="flow__step">Book</span><p class="flow__what">Sam's open times show inside the form. Dana picks Thursday at 10. The invite lands on both calendars and Slack tells Sam, with a short brief.</p></div>
+				</div>
+				<p class="flow__close">Reminders go out the day before and the hour before. If Dana leaves without booking, Claritia emails Sam's times.</p>
+			</div>
+		</section>
 
-					<article class="job job--flip" id="nurture">
-						<div class="job__copy">
-							<p class="label label--accent">Nurture</p>
-							<h3>Follow-up written for each lead.</h3>
-							<p>Describe who it's for and what you offer. AI writes the emails from your content only, you approve each one, and every consent, unsubscribe and quiet-hour rule is checked as it sends.</p>
-							<a class="textlink" href="#sending">See sending</a>
+		<!-- 5. Inbound -->
+		<section class="section section--sunk" id="inbound">
+			<div class="wrap">
+				<article class="feature reveal">
+					<div class="feature__copy">
+						<span class="tag tag--clay">Inbound</span>
+						<h2>Forms that book<br><span class="dim">the meeting for you.</span></h2>
+						<p class="lead">Build a form by chatting with AI, or keep the forms you have. Either way, the right rep's calendar opens the moment the form is sent.</p>
+						<div class="points">
+							<details open><summary>Built by chat<span class="plus" aria-hidden="true"></span></summary><p>Say what the form is for. AI builds it in your site's fonts and colors.</p></details>
+							<details><summary>Keep your forms<span class="plus" aria-hidden="true"></span></summary><p>Works with HubSpot, Webflow, Marketo, Framer, Typeform and plain HTML forms.</p></details>
+							<details><summary>Booking inside the form<span class="plus" aria-hidden="true"></span></summary><p>Open times show in under a second. No second page to load.</p></details>
+							<details><summary>See who visits<span class="plus" aria-hidden="true"></span></summary><p>Claritia names the companies on your site and alerts you when a target account comes back.</p></details>
 						</div>
-						<div class="job__art">
-							<div data-ui class="ui ui-panel">
-								<div class="ui-head"><span class="ui-title">Guide follow-up</span><span class="ui-head__end"><span class="ui-badge ui-badge--green">Live</span></span></div>
-								<div class="ui-rules uipad">
-									<p class="ui-rule"><span class="ui-kind">Day 0</span>Thanks for the guide, written from your content<span class="ui-badge ui-badge--gray">Approved</span></p>
-									<p class="ui-rule"><span class="ui-kind">Day 3</span>Wait three days</p>
-									<p class="ui-rule"><span class="ui-kind">Day 3</span>A case study for a fintech team<span class="ui-badge ui-badge--gray">Approved</span></p>
-									<p class="ui-rule"><span class="ui-kind">Day 7</span>Offer a demo, routed to Priya<span class="ui-badge ui-badge--brand">In review</span></p>
-									<div style="display:flex;gap:8px;padding-top:12px"><span class="ui-btn">Approve and send</span><span class="ui-btn ui-btn--ghost">Edit</span></div>
+						<p class="feature__link"><a class="textlink" href="#how">See forms</a></p>
+					</div>
+					<div class="feature__art">
+						<div class="mk mk-book" data-ui>
+							<div class="mk-fieldcard">
+								<p>Request a demo</p>
+								<div class="mk-field">dana@acme.com</div>
+								<div class="mk-field">Looking for a CRM that books</div>
+								<div class="mk-field off">Company size (known)</div>
+							</div>
+							<div class="mk-cal">
+								<p>Sam's open times</p>
+								<div class="mk-cal__grid">
+									<span class="mk-cal__cell">Mon</span><span class="mk-cal__cell">Tue</span><span class="mk-cal__cell">Wed</span><span class="mk-cal__cell is-booked">Thu</span>
+									<span class="mk-cal__cell is-live">10:00</span><span class="mk-cal__cell">11:30</span><span class="mk-cal__cell">14:00</span><span class="mk-cal__cell">15:30</span>
 								</div>
+								<p class="mk-cap" style="text-align:left;margin-top:12px">One field drops out. Thursday lights up.</p>
 							</div>
 						</div>
-					</article>
+					</div>
+				</article>
+			</div>
+		</section>
 
-					<article class="job">
-						<div class="job__copy">
-							<p class="label label--accent">Convert</p>
-							<h3>Scored, qualified and routed.</h3>
-							<p>Fit plus engagement makes the score that names an MQL. The lead routes to the right owner with an SLA, and hands off to your CRM with the marketing history attached.</p>
-							<a class="textlink" href="#capabilities">See routing</a>
+		<!-- 6. Scheduling -->
+		<section class="section" id="scheduling">
+			<div class="wrap">
+				<article class="feature feature--flip reveal">
+					<div class="feature__copy">
+						<span class="tag tag--sky">Scheduling</span>
+						<h2>Everything Calendly does,<br><span class="dim">joined to your leads.</span></h2>
+						<p class="lead">Reps connect Google or Outlook in one click and set their hours. Every booking lands on the lead's record, with the source that brought them.</p>
+						<div class="points">
+							<details open><summary>Every meeting type<span class="plus" aria-hidden="true"></span></summary><p>One rep, round robin, the whole team, the owner first, group events and polls.</p></details>
+							<details><summary>Booking links<span class="plus" aria-hidden="true"></span></summary><p>Share a booking page or a one-off link. Reps can also book from Slack with <code>/book</code>.</p></details>
+							<details><summary>Paid meetings<span class="plus" aria-hidden="true"></span></summary><p>Take payment with Stripe when someone books.</p></details>
+							<details><summary>No-shows tracked<span class="plus" aria-hidden="true"></span></summary><p>Reminders go out before every meeting, and reps mark no-shows in one click.</p></details>
 						</div>
-						<div class="job__art">
-							<div data-ui class="ui ui-panel">
-								<div class="ui-head"><span class="ui-title">Leads</span><span class="ui-count">[312]</span></div>
-								<table class="ui-table">
-									<thead><tr><th class="ui-th">Lead</th><th class="ui-th r">Score</th><th class="ui-th">Stage</th><th class="ui-th">Owner</th></tr></thead>
-									<tbody>
-										<tr><td class="ui-td"><span class="ui-name">Acme</span><span class="ui-sub">Routed to Priya · SLA 24h</span></td><td class="ui-td r ui-name">92</td><td class="ui-td"><span class="ui-badge ui-badge--green">MQL</span></td><td class="ui-td"><span class="ui-av">PR</span>Priya</td></tr>
-										<tr><td class="ui-td"><span class="ui-name">Northwind</span></td><td class="ui-td r ui-name">78</td><td class="ui-td"><span class="ui-badge ui-badge--green">MQL</span></td><td class="ui-td"><span class="ui-av">MB</span>Marcus</td></tr>
-										<tr><td class="ui-td"><span class="ui-name">Globex</span></td><td class="ui-td r ui-name">54</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Lead</span></td><td class="ui-td ui-dim">Unassigned</td></tr>
-									</tbody>
-								</table>
+						<p class="feature__link"><a class="textlink" href="#scheduling">See scheduling</a></p>
+					</div>
+					<div class="feature__art">
+						<div class="mk mk-book" data-ui>
+							<div class="mk-cal" style="grid-column:1 / -1">
+								<p>Pick a time · Sam Rivera</p>
+								<div class="mk-cal__grid" style="grid-template-columns:repeat(5,1fr)">
+									<span class="mk-cal__cell">Mon</span><span class="mk-cal__cell">Tue</span><span class="mk-cal__cell">Wed</span><span class="mk-cal__cell is-booked">Thu</span><span class="mk-cal__cell">Fri</span>
+									<span class="mk-cal__cell">09:00</span><span class="mk-cal__cell">10:00</span><span class="mk-cal__cell is-live">10:00</span><span class="mk-cal__cell">13:30</span><span class="mk-cal__cell">15:00</span>
+								</div>
+								<p class="mk-cap" style="text-align:left;margin-top:12px">Booked · Thu 10:00 · reminder set.</p>
 							</div>
 						</div>
-					</article>
+					</div>
+				</article>
+			</div>
+		</section>
 
-					<article class="job job--flip">
-						<div class="job__copy">
-							<p class="label label--accent">Prove</p>
-							<h3>Prove what made pipeline.</h3>
-							<p>Pipeline and revenue by source, journey and page, with AI answers counted as a channel of their own. Every report cites the records behind it.</p>
-							<span class="trio__flag">In build</span>
+		<!-- 7. Routing -->
+		<section class="section section--sunk" id="routing">
+			<div class="wrap">
+				<article class="feature reveal">
+					<div class="feature__copy">
+						<span class="tag tag--lilac">Routing</span>
+						<h2>Every lead to the right rep,<br><span class="dim">with the reason in plain words.</span></h2>
+						<p class="lead">Rules, territories, owners and round robin in one router. Each decision comes with a sentence that says why, so nobody has to guess.</p>
+						<div class="points">
+							<details open><summary>Owners first<span class="plus" aria-hidden="true"></span></summary><p>Known accounts go straight to their owner, in Claritia or your CRM.</p></details>
+							<details><summary>Fair turns<span class="plus" aria-hidden="true"></span></summary><p>Round robin with caps, time off and the hours each rep works.</p></details>
+							<details><summary>Speed to lead<span class="plus" aria-hidden="true"></span></summary><p>A rep who doesn't answer in time gets a nudge, then the lead moves on.</p></details>
+							<details><summary>Try before it goes live<span class="plus" aria-hidden="true"></span></summary><p>Send a test lead through and watch which rule picks it up.</p></details>
 						</div>
-						<div class="job__art">
-							<div data-ui class="ui ui-panel">
-								<div class="ui-head"><span class="ui-title">Pipeline by source</span><span class="ui-head__end"><span class="ui-badge ui-badge--gray">In build</span></span></div>
-								<table class="ui-table">
-									<thead><tr><th class="ui-th">Source</th><th class="ui-th r">Meetings</th><th class="ui-th r">Pipeline</th></tr></thead>
-									<tbody>
-										<tr><td class="ui-td"><span class="ui-name">AI answers</span></td><td class="ui-td r">31</td><td class="ui-td r ui-name">$42k</td></tr>
-										<tr><td class="ui-td"><span class="ui-name">Organic search</span></td><td class="ui-td r">26</td><td class="ui-td r ui-name">$35k</td></tr>
-										<tr><td class="ui-td"><span class="ui-name">Nurture</span></td><td class="ui-td r">19</td><td class="ui-td r ui-name">$28k</td></tr>
-									</tbody>
-								</table>
+						<p class="feature__link"><a class="textlink" href="#routing">See routing</a></p>
+					</div>
+					<div class="feature__art">
+						<div class="mk mk-log" data-ui>
+							<div class="mk-log__row"><span class="mk-log__rule">Rule 3</span><span class="mk-log__text">territory US mid-market</span></div>
+							<div class="mk-log__meta"><span class="av">S</span> Round robin: <b style="color:var(--ink)">Sam</b> (2 of 8 this week)</div>
+							<div class="mk-log__chips"><span class="tag tag--sky">US mid-market</span><span class="tag tag--line">Round robin</span><span class="tag tag--sage">Owner found</span></div>
+						</div>
+						<p class="mk-cap">Every decision keeps the sentence that made it.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- 8. Automation -->
+		<section class="section" id="automation">
+			<div class="wrap">
+				<article class="feature feature--flip reveal">
+					<div class="feature__copy">
+						<span class="tag tag--sage">Automation</span>
+						<h2>The busywork after every lead,<br><span class="dim">done for you.</span></h2>
+						<p class="lead">Fill in missing details, qualify the lead, route it and start the follow-up. Set it up once on one canvas.</p>
+						<div class="points">
+							<details open><summary>Enrichment<span class="plus" aria-hidden="true"></span></summary><p>Claritia checks your own records first, then data vendors in order. Every value shows where it came from and when.</p></details>
+							<details><summary>AI qualify<span class="plus" aria-hidden="true"></span></summary><p>AI can only pick an outcome your team set up, and it always gives its reason.</p></details>
+							<details><summary>Workflows<span class="plus" aria-hidden="true"></span></summary><p>From trigger to goal on one canvas, with templates to start from.</p></details>
+							<details><summary>Your CRM stays in step<span class="plus" aria-hidden="true"></span></summary><p>Two-way sync with HubSpot, Salesforce and Omniscient.</p></details>
+						</div>
+						<p class="feature__link"><a class="textlink" href="#automation">See workflows</a></p>
+					</div>
+					<div class="feature__art">
+						<div class="mk mk-wf" data-ui>
+							<div class="mk-wf__row">
+								<span class="mk-wf__node"><span class="d" style="--d:var(--clay)"></span>Form sent</span>
+								<span class="mk-wf__link"></span>
+								<span class="mk-wf__node"><span class="d" style="--d:var(--butter)"></span>Enrich</span>
+								<span class="mk-wf__link"></span>
+								<span class="mk-wf__node"><span class="d" style="--d:var(--lilac)"></span>Qualify</span>
+								<span class="mk-wf__link"></span>
+								<span class="mk-wf__node"><span class="d" style="--d:var(--sky)"></span>Route</span>
+								<span class="mk-wf__link"></span>
+								<span class="mk-wf__node"><span class="d" style="--d:var(--sage)"></span>Book</span>
+								<span class="mk-wf__link"></span>
+								<span class="mk-wf__node"><span class="d" style="--d:var(--clay)"></span>Email</span>
 							</div>
 						</div>
-					</article>
+						<p class="mk-cap">One canvas, from the trigger to the goal.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- 9. Nurture -->
+		<section class="section section--sunk" id="nurture">
+			<div class="wrap">
+				<article class="feature reveal">
+					<div class="feature__copy">
+						<span class="tag tag--butter">Nurture</span>
+						<h2>AI writes the follow-up.<br><span class="dim">You approve it.</span></h2>
+						<p class="lead">Emails written from your own content, sent from your own domain. Nothing goes out until someone on your team says yes.</p>
+						<div class="points">
+							<details open><summary>Written from your content<span class="plus" aria-hidden="true"></span></summary><p>Every line points to the page it came from.</p></details>
+							<details><summary>Segments that stay fresh<span class="plus" aria-hidden="true"></span></summary><p>Lists built from fields, visits, activity and consent update by themselves.</p></details>
+							<details><summary>Lead scoring<span class="plus" aria-hidden="true"></span></summary><p>Fit plus engagement tells you who to call first.</p></details>
+							<details><summary>Safe sending<span class="plus" aria-hidden="true"></span></summary><p>Consent by region, one-click unsubscribe, frequency caps and quiet hours, checked on every send.</p></details>
+						</div>
+						<p class="feature__link"><a class="textlink" href="#nurture">See nurture</a></p>
+					</div>
+					<div class="feature__art">
+						<div class="mk mk-mail" data-ui>
+							<div class="mk-mail__head">
+								<span class="tag tag--lilac"><svg class="spark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c.4 4.6 2.9 7.1 7.5 7.5-4.6.4-7.1 2.9-7.5 7.5-.4-4.6-2.9-7.1-7.5-7.5C9.1 9.1 11.6 6.6 12 2Z"/></svg>AI</span>
+								<span class="mk-mail__to">To dana@acme.com · from your domain</span>
+							</div>
+							<p class="mk-mail__subj">Pricing for a 200-person team</p>
+							<p class="mk-mail__body">Hi Dana, you looked at pricing twice this week. Here is the short version for a 200-person team, and the security page you opened.</p>
+							<p class="mk-mail__body">Source: <span class="mk-mail__src">acme.com/pricing</span></p>
+							<div class="mk-mail__btns"><span class="btn btn--primary btn--sm">Approve and send</span><span class="btn btn--secondary btn--sm">Edit</span></div>
+						</div>
+						<p class="mk-cap">Every line points to the page it came from.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- 10. CRM -->
+		<section class="section" id="crm">
+			<div class="wrap">
+				<article class="feature feature--flip reveal">
+					<div class="feature__copy">
+						<span class="tag tag--clay">CRM</span>
+						<h2>One clean record<br><span class="dim">for every person.</span></h2>
+						<p class="lead">Contacts, companies, opportunities and meetings in one place. Use it as your CRM, or keep yours and let Claritia sync both ways.</p>
+						<div class="points">
+							<details open><summary>One record per person<span class="plus" aria-hidden="true"></span></summary><p>Visits, forms, emails and meetings on one timeline.</p></details>
+							<details><summary>Bring everything in<span class="plus" aria-hidden="true"></span></summary><p>Import from 20 tools or any CSV file, with undo for 30 days.</p></details>
+							<details><summary>Opportunities on a board<span class="plus" aria-hidden="true"></span></summary><p>Drag a deal from stage to stage.</p></details>
+							<details><summary>Reports where you work<span class="plus" aria-hidden="true"></span></summary><p>Funnel, speed to lead, reps, forms and email, inside each section.</p></details>
+						</div>
+						<p class="feature__link"><a class="textlink" href="#crm">See the CRM</a></p>
+					</div>
+					<div class="feature__art">
+						<div class="mk mk-ba" data-ui>
+							<div class="mk-ba__layer mk-rows mk-rows--messy">
+								<div class="mk-rows__head"><span>name</span><span>compny</span><span>size?</span></div>
+								<div class="mk-rows__r"><span>dana lee</span><span>ACME</span><span>???</span></div>
+								<div class="mk-rows__r"><span>m bell </span><span>kestrel frei</span><span>50-200</span></div>
+								<div class="mk-rows__r"><span>s.marchetti</span><span>tidewater</span><span>1000</span></div>
+								<div class="mk-rows__r"><span>jdoe</span><span>acme</span><span>—</span></div>
+							</div>
+							<div class="mk-ba__layer mk-ba__clean mk-rows">
+								<div class="mk-rows__head"><span>Name</span><span>Company</span><span>Size</span></div>
+								<div class="mk-rows__r"><span>Dana Lee</span><span>Acme</span><span>201–500</span></div>
+								<div class="mk-rows__r"><span>Marcus Bell</span><span>Kestrel Freight</span><span>51–200</span></div>
+								<div class="mk-rows__r"><span>Sofia Marchetti</span><span>Tidewater Health</span><span>1000+</span></div>
+								<div class="mk-rows__r"><span>Jane Doe</span><span>Acme</span><span>201–500</span></div>
+							</div>
+							<span class="mk-ba__handle" aria-hidden="true"></span>
+						</div>
+						<p class="mk-cap">The same leads, cleaned and kept in one place.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- 11. Try it -->
+		<section class="section section--sunk" id="try">
+			<div class="wrap reveal">
+				<div class="sec-head">
+					<span class="chip">Try it</span>
+					<h2>Fill in the form.<br><span class="dim">Watch Claritia work.</span></h2>
+					<p class="lead">This is a real Claritia form. Type a work email and see the record fill in, the score appear and a rep's times open up.</p>
+				</div>
+				<div class="try" style="margin-top:36px">
+					<form class="try__form" data-ui action="https://app.tryclaritia.com" method="get">
+						<label class="try__lbl">Work email<input class="try__input" type="email" name="email" placeholder="dana@acme.com" autocomplete="email"></label>
+						<label class="try__lbl">What are you looking for?<input class="try__input" type="text" name="q" placeholder="A CRM that books meetings"></label>
+						<button class="btn btn--primary" type="submit" style="justify-self:start">Show me</button>
+					</form>
+					<div class="try__result" data-ui>
+						<p class="try__empty">Fill the form to see the record, the score and the rep's times.</p>
+						<div class="try__card">
+							<div class="try__row"><span class="try__k">Company</span><span class="try__v">Acme</span></div>
+							<div class="try__row"><span class="try__k">Size</span><span class="try__v">201–500</span></div>
+							<div class="try__row"><span class="try__k">Industry</span><span class="try__v">SaaS</span></div>
+							<div class="try__row"><span class="try__k">Score</span><span class="try__score">92</span></div>
+							<div class="try__row"><span class="try__k">Routed to</span><span class="try__v">Sam · US team</span></div>
+							<div class="try__row"><span class="try__k">Open times</span><span class="try__v">Thu 10:00 · Thu 14:30</span></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- 4. The suite -->
-		<section class="section section--raised" id="suite">
+		<!-- 12. Numbers -->
+		<section class="section">
 			<div class="wrap reveal">
-				<p class="label label--accent">The suite</p>
-				<h2 class="sec__h">Found, converted, closed.</h2>
-				<p class="sec__lead">Claritia is the middle of one suite. Run all three together and the whole path from an AI answer to a won deal sits in one place.</p>
+				<div class="numbers">
+					<div class="number"><p class="number__n">15 min</p><p class="number__c">to go live, from sign-up to your first booked meeting</p></div>
+					<div class="number"><p class="number__n">Under 1 sec</p><p class="number__c">for a rep's open times to show in the form</p></div>
+					<div class="number"><p class="number__n">2 fields</p><p class="number__c">instead of 6, when Claritia already knows the company</p></div>
+					<div class="number"><p class="number__n">$0</p><p class="number__c">for people who only edit. You pay for hosts.</p></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 13. Replace the pile of tools -->
+		<section class="section section--sunk">
+			<div class="wrap reveal">
+				<div class="sec-head">
+					<span class="chip">One app</span>
+					<h2>One app in place<br><span class="dim">of five subscriptions.</span></h2>
+					<p class="lead">Small teams end up paying for a CRM, a form tool, a scheduler, a router and a data vendor. Claritia does the whole path.</p>
+				</div>
+				<div class="replace">
+					<div class="replace__row"><span>You use today</span><span>Claritia does it in</span></div>
+					<div class="replace__row"><span>HubSpot or a spreadsheet</span><span>CRM</span></div>
+					<div class="replace__row"><span>Typeform or HubSpot forms</span><span>Inbound › Forms</span></div>
+					<div class="replace__row"><span>Calendly or Chili Piper</span><span>Inbound › Scheduling</span></div>
+					<div class="replace__row"><span>Default or LeanData</span><span>Automation › Routing</span></div>
+					<div class="replace__row"><span>Clearbit or Apollo</span><span>Automation › Enrichment</span></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 14. The suite -->
+		<section class="section" id="suite">
+			<div class="wrap reveal">
+				<div class="sec-head">
+					<span class="chip">The suite</span>
+					<h2>From AI answer<br><span class="dim">to won deal.</span></h2>
+					<p class="lead">Claritia is the middle of one suite. Run all three and the whole path from an AI answer to a won deal sits in one place.</p>
+				</div>
 				<div class="suite">
-					<div class="suite__step">
-						<p class="suite__k">Found by Arrowsterr</p>
-						<h3>Arrowsterr</h3>
-						<p>SEO, GEO and AI search. Wins the answer so the right buyer finds you first.</p>
-					</div>
-					<div class="suite__step suite__step--on">
-						<p class="suite__k">Converted by Claritia</p>
-						<h3>Claritia</h3>
-						<p>Captures the visit, keeps one database, runs AI follow-up and routes the lead to a meeting.</p>
-					</div>
-					<div class="suite__step">
-						<p class="suite__k">Closed with Omniscient</p>
-						<h3>Omniscient</h3>
-						<p>The CRM, opportunities and deal rooms where the meeting becomes revenue.</p>
-					</div>
+					<div class="suite__card"><p class="suite__k">Found by Arrowsterr</p><h3>Arrowsterr</h3><p>SEO and AI search, so the right buyer finds you first.</p></div>
+					<div class="suite__card suite__card--on"><p class="suite__k">Converted by Claritia</p><h3>Claritia</h3><p>Forms, routing, scheduling and follow-up, so the visit turns into a meeting.</p></div>
+					<div class="suite__card"><p class="suite__k">Closed with Omniscient</p><h3>Omniscient</h3><p>The CRM and deal rooms where the meeting turns into revenue.</p></div>
 				</div>
+				<p class="overage">Run two or more and save 20%.</p>
 			</div>
 		</section>
 
-		<!-- 5. Deep dive: one live database -->
-		<section class="section" id="database">
-			<div class="wrap">
-				<div class="deep reveal">
-					<div class="deep__head">
-						<p class="label label--accent">One live database</p>
-						<h2 class="sec__h">One clean record per person.</h2>
-						<p class="sec__lead">Visitors, contacts, companies, leads and segments in one place, deduped through identity, with custom fields and consent on every record.</p>
-					</div>
-					<div class="deep__art deep__art--two">
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Contacts</span><span class="ui-count">[18,204]</span></div>
-							<table class="ui-table">
-								<thead><tr><th class="ui-th">Name</th><th class="ui-th">Lifecycle</th><th class="ui-th">Lead status</th></tr></thead>
-								<tbody>
-									<tr><td class="ui-td"><span class="ui-av">JD</span><span class="ui-name">Jane Doe</span></td><td class="ui-td"><span class="ui-badge ui-badge--gray">MQL</span></td><td class="ui-td"><span class="ui-badge ui-badge--green">Connected</span></td></tr>
-									<tr><td class="ui-td"><span class="ui-av">MB</span><span class="ui-name">Marcus Bell</span></td><td class="ui-td"><span class="ui-badge ui-badge--gray">Lead</span></td><td class="ui-td"><span class="ui-badge ui-badge--gray">Attempting</span></td></tr>
-									<tr><td class="ui-td"><span class="ui-av">LK</span><span class="ui-name">Lena Kraus</span></td><td class="ui-td"><span class="ui-badge ui-badge--gray">SQL</span></td><td class="ui-td"><span class="ui-badge ui-badge--green">Qualified</span></td></tr>
-								</tbody>
-							</table>
-						</div>
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Read pricing twice</span><span class="ui-head__end"><span class="ui-badge ui-badge--brand">Dynamic</span></span></div>
-							<div class="ui-rules uipad">
-								<div style="display:flex;justify-content:space-between;align-items:center;padding:2px 0 10px"><span class="ui-switch"><span class="on">All of</span><span>Any of</span></span><span class="ui-btn ui-btn--ghost">+ Rule</span></div>
-								<p class="ui-rule"><span class="ui-kind">Field</span>Fit is 70 or more</p>
-								<p class="ui-rule"><span class="ui-kind">Website</span>Visited /pricing 2 or more times in 14 days</p>
-								<p class="ui-rule"><span class="ui-kind">Consent</span>Can be emailed</p>
-								<p class="ui-match">Matches <b>1,248</b><span class="ui-live" style="margin-left:auto">live</span></p>
-							</div>
-						</div>
-					</div>
-					<ul class="trio">
-						<li><h3>One record per person</h3><p>Deduped through identity, with a lifecycle, lead status, owner and email consent.</p></li>
-						<li><h3>Segments that refresh hourly</h3><p>Live AND/OR rules over fields, activity, visits and consent, three levels deep.</p></li>
-						<li><h3>Custom fields and consent</h3><p>Field packs included. Every consent keeps its wording, source and date.</p></li>
-					</ul>
-				</div>
-				<p class="callout reveal">A score with no reason is a guess.</p>
-			</div>
-		</section>
-
-		<!-- 6. Deep dive: nurture and sending -->
-		<section class="section section--raised" id="sending">
-			<div class="wrap">
-				<div class="deep reveal">
-					<div class="deep__head">
-						<p class="label label--accent">Nurture and sending</p>
-						<h2 class="sec__h">AI writes it. You approve it.</h2>
-						<p class="sec__lead">Send from your own verified domain, with the deliverability, unsubscribes and consent done right. Nothing marketing sends without a lawful basis for the contact's region.</p>
-					</div>
-					<div class="deep__art deep__art--two">
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Draft</span><span class="ui-head__end ui-dim">from your content</span></div>
-							<div class="uipad">
-								<p class="ui-sub">To jane@acme.com · Subject: Pricing for a 200-person team</p>
-								<p style="margin-top:10px">Hi Jane, you looked at pricing twice this week. Here is the short version for a 200-person team, and the security page you opened.</p>
-								<p class="ui-live" style="margin-top:12px">Every line quotes a source</p>
-							</div>
-						</div>
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Sending</span><span class="ui-head__end"><span class="ui-badge ui-badge--green">Verified</span></span></div>
-							<table class="ui-table">
-								<thead><tr><th class="ui-th">Domain</th><th class="ui-th">DKIM</th><th class="ui-th">SPF</th><th class="ui-th">DMARC</th></tr></thead>
-								<tbody>
-									<tr><td class="ui-td"><span class="ui-name">mail.acme.com</span></td><td class="ui-td"><span class="ui-badge ui-badge--green">Pass</span></td><td class="ui-td"><span class="ui-badge ui-badge--green">Pass</span></td><td class="ui-td"><span class="ui-badge ui-badge--green">Pass</span></td></tr>
-									<tr><td class="ui-td ui-dim">complaint rate</td><td class="ui-td" colspan="3"><span class="ui-name">0.02%</span> <span class="ui-dim">· under the 0.1% target</span></td></tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<ul class="trio">
-						<li><h3>Reps before send</h3><p>Every step waits for a person at first. Editing asks for approval again.</p></li>
-						<li><h3>Your own domain</h3><p>Sending runs through Amazon SES with DKIM, SPF and DMARC checked.</p></li>
-						<li><h3>Every guard on</h3><p>Consent by region, one-click unsubscribe, frequency caps and quiet hours, at send time.</p></li>
-					</ul>
-				</div>
-				<p class="callout reveal">Every send quotes its source.</p>
-			</div>
-		</section>
-
-		<!-- 7. Deep dive: the source layer -->
-		<section class="section" id="sources">
-			<div class="wrap">
-				<div class="deep reveal">
-					<div class="deep__head">
-						<p class="label label--accent">The source layer</p>
-						<h2 class="sec__h">60+ sources in, two ways out.</h2>
-						<p class="sec__lead">Keep your stack. Connect a CRM, an email tool, forms, meetings or billing. Claritia reads it, cleans it, and writes back where you allow.</p>
-					</div>
-					<div class="deep__art deep__art--two">
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">HubSpot</span><span class="ui-head__end"><span class="ui-badge ui-badge--green">Active</span></span></div>
-							<table class="ui-table">
-								<thead><tr><th class="ui-th">When</th><th class="ui-th">What</th><th class="ui-th r">Read</th><th class="ui-th r">Written</th></tr></thead>
-								<tbody>
-									<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Contacts</td><td class="ui-td r">240</td><td class="ui-td r">18</td></tr>
-									<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--violet">Out</span> Score and owner</td><td class="ui-td r">-</td><td class="ui-td r">6</td></tr>
-									<tr><td class="ui-td ui-dim">1h ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Unsubscribes</td><td class="ui-td r">12</td><td class="ui-td r">12</td></tr>
-								</tbody>
-							</table>
-						</div>
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Warehouse</span><span class="ui-head__end"><span class="ui-badge ui-badge--gray">Read-only</span></span></div>
-							<div class="uipad">
-								<p class="query"><code>SELECT id, email, plan FROM users WHERE created_at &gt; now() - interval '30 days'</code></p>
-								<p class="ui-sub" style="margin-top:12px">Runs on your schedule · row limit 10,000 · read-only transaction</p>
-								<p class="ui-sub" style="margin-top:6px">Postgres · Redshift · MySQL · ClickHouse · BigQuery · Snowflake</p>
-							</div>
-						</div>
-					</div>
-					<ul class="trio">
-						<li><h3>Two-way sync</h3><p>HubSpot, Salesforce and Omniscient write changes back within minutes, with a retry.</p></li>
-						<li><h3>Read-only warehouses</h3><p>One saved SELECT on your schedule, in a read-only transaction with a row limit.</p></li>
-						<li><h3>Imports with undo</h3><p>Any CSV or Excel file, previewed and reversible for 30 days.</p></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<!-- 8. Controls -->
-		<section class="section section--raised" id="trust">
+		<!-- 15. Pricing -->
+		<section class="section section--sunk" id="pricing">
 			<div class="wrap reveal">
-				<p class="label label--accent">Trust</p>
-				<h2 class="sec__h">Consent, identity, erasure.</h2>
-				<p class="sec__lead">The controls a marketing team needs before it can send.</p>
-				<div class="guards">
-					<div class="guard">
-						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5l6 2.5v5c0 3.6-2.6 6.4-6 7.5-3.4-1.1-6-3.9-6-7.5V5z"/><path d="M7.4 9.9l1.9 1.9 3.3-3.7"/></svg>
-						<h3>Identity with evidence</h3>
-						<p>A visit becomes a person as Verified, Asserted or Probable, with the proof, and it can be undone.</p>
-					</div>
-					<div class="guard">
-						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 2.5h6.5L15.5 6.5v11h-10.5z"/><path d="M11.5 2.5v4h4"/><path d="M7.3 11h5.4M7.3 13.8h3.4"/></svg>
-						<h3>Consent on record</h3>
-						<p>Every consent keeps its wording, source and date. Imports read unsubscribes before a row lands.</p>
-					</div>
-					<div class="guard">
-						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M2.8 10h14.4"/><path d="M10 2.8c2.3 2.5 2.3 11.9 0 14.4M10 2.8c-2.3 2.5-2.3 11.9 0 14.4"/></svg>
-						<h3>Region rules, on their own</h3>
-						<p>Claritia follows each visitor's region privacy rules by itself, so the data stays lawful in each place.</p>
-					</div>
-					<div class="guard">
-						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 5.5h13"/><path d="M8 5.5V3.8h4v1.7"/><path d="M5.6 5.5l1 11h6.8l1-11"/></svg>
-						<h3>Erase on request</h3>
-						<p>Remove a contact and their events, consents and links are gone, from the app or the API.</p>
-					</div>
+				<div class="sec-head">
+					<span class="chip">Pricing</span>
+					<h2>Pay for the people who take meetings.<br><span class="dim">Everyone else is free.</span></h2>
+					<p class="lead">Billed monthly. No platform fee and no onboarding fee. Pay yearly and get 2 months free.</p>
 				</div>
-			</div>
-		</section>
-
-		<!-- 9. Capabilities -->
-		<section class="section" id="capabilities">
-			<div class="wrap reveal">
-				<p class="label label--accent">Live today</p>
-				<h2 class="sec__h">Everything it does.</h2>
-				<p class="sec__lead">Visitors, accounts, contacts, companies, leads, segments, sources, warehouses, imports, sending, forms and nurture are live. Journeys, pages and reports are in build.</p>
-				<div class="caps">
-					<div class="cap"><h3>Visitors<span class="cap__flag">Live</span></h3><p>Names the company and the person behind each visit, with pages, source and time.</p></div>
-					<div class="cap"><h3>Accounts<span class="cap__flag">Live</span></h3><p>Fit and intent, with the reason why now on every score.</p></div>
-					<div class="cap"><h3>Contacts<span class="cap__flag">Live</span></h3><p>One record per person, with lifecycle, owner and email consent.</p></div>
-					<div class="cap"><h3>Companies<span class="cap__flag">Live</span></h3><p>One record per firm, with custom fields and field packs.</p></div>
-					<div class="cap"><h3>Leads<span class="cap__flag">Live</span></h3><p>A board by stage, with score and owner.</p></div>
-					<div class="cap"><h3>Segments<span class="cap__flag">Live</span></h3><p>Live AND/OR rules over fields, activity, visits and consent.</p></div>
-					<div class="cap"><h3>Sources<span class="cap__flag">Live</span></h3><p>CRMs, email tools, forms, meetings and billing, in and out.</p></div>
-					<div class="cap"><h3>Warehouses<span class="cap__flag">Live</span></h3><p>One saved SELECT, read-only, on your schedule.</p></div>
-					<div class="cap"><h3>Imports<span class="cap__flag">Live</span></h3><p>Any CSV or Excel file, previewed and reversible for 30 days.</p></div>
-					<div class="cap"><h3>Sending<span class="cap__flag">Live</span></h3><p>Your own verified domain, with DKIM, SPF and DMARC checked.</p></div>
-					<div class="cap"><h3>Forms<span class="cap__flag">Live</span></h3><p>A form builder and an embeddable form, with consent per region.</p></div>
-					<div class="cap"><h3>Nurture<span class="cap__flag">Live</span></h3><p>AI-written email sequences you approve before they send.</p></div>
-					<div class="cap"><h3>Lead scoring<span class="cap__flag">Live</span></h3><p>Fit plus engagement makes the MQL, then routes it to the owner.</p></div>
-					<div class="cap"><h3>Journeys<span class="cap__flag">In build</span></h3><p>Agent steps decide the next move and write the email.</p></div>
-					<div class="cap"><h3>Pages<span class="cap__flag">In build</span></h3><p>AI landing pages and forms built from your content.</p></div>
-					<div class="cap"><h3>Reports<span class="cap__flag">In build</span></h3><p>Pipeline and revenue traced from AI answers to closed deals.</p></div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 10. Pricing -->
-		<section class="section section--raised" id="pricing">
-			<div class="wrap reveal">
-				<p class="label label--accent">Pricing</p>
-				<h2 class="sec__h">Pricing that scales with volume.</h2>
 				<div class="tiers">
 					<div class="tier">
-						<h3>Starter</h3>
-						<p class="tier__price">$299 <span>a month</span></p>
-						<p class="tier__what">For one team and one site, with website intelligence and your first scored leads.</p>
-						<ul class="tier__list">
-							<li><b>5,000 contacts</b>, 1 site</li>
-							<li>Visitors, accounts, contacts and segments</li>
-							<li>Sources, imports and sending</li>
-							<li>Nurture with review on every send</li>
+						<h3>Free</h3>
+						<p class="tier__price">$0<span>$0 a month, yearly</span></p>
+						<p class="tier__for">Trying it out</p>
+						<ul class="tier__spec">
+							<li><span>Hosts included</span><b>1</b></li>
+							<li><span>Contacts</span><b>500</b></li>
+							<li><span>Emails a month</span><b>500</b></li>
+							<li><span>Enrichment credits</span><b>—</b></li>
 						</ul>
-						<div class="tier__cta"><a class="btn btn--line" href="https://app.tryclaritia.com">Start free</a></div>
+						<ul class="tier__list">
+							<li>1 form and 1 meeting type, one-person meetings</li>
+							<li>Claritia CRM, unlimited editors</li>
+						</ul>
+						<div class="tier__cta"><a class="btn btn--secondary" href="https://app.tryclaritia.com">Start free</a></div>
+					</div>
+					<div class="tier">
+						<h3>Starter</h3>
+						<p class="tier__price">$79<span>$66 a month, yearly</span></p>
+						<p class="tier__for">Small teams booking demos</p>
+						<ul class="tier__spec">
+							<li><span>Hosts included</span><b>3</b></li>
+							<li><span>Extra host</span><b>$15</b></li>
+							<li><span>Contacts</span><b>2,500</b></li>
+							<li><span>Emails a month</span><b>5,000</b></li>
+							<li><span>Enrichment credits</span><b>250</b></li>
+						</ul>
+						<ul class="tier__list">
+							<li>Unlimited forms and booking pages</li>
+							<li>Booking inside forms, round robin, HubSpot sync</li>
+						</ul>
+						<div class="tier__cta"><a class="btn btn--secondary" href="https://app.tryclaritia.com">Start free</a></div>
 					</div>
 					<div class="tier tier--rec">
 						<p class="tier__flag">Recommended</p>
 						<h3>Growth</h3>
-						<p class="tier__price">$799 <span>a month</span></p>
-						<p class="tier__what">For a go-to-market team that sends, syncs a CRM both ways and runs the warehouse.</p>
-						<ul class="tier__list">
-							<li><b>25,000 contacts</b>, 3 sites</li>
-							<li>Two-way HubSpot, Salesforce or Omniscient sync</li>
-							<li>Forms, pages and personalization</li>
-							<li>Warehouse sources and lead routing</li>
-							<li>Attribution and reports as they ship</li>
+						<p class="tier__price">$299<span>$249 a month, yearly</span></p>
+						<p class="tier__for">Teams that route and qualify</p>
+						<ul class="tier__spec">
+							<li><span>Hosts included</span><b>10</b></li>
+							<li><span>Extra host</span><b>$20</b></li>
+							<li><span>Contacts</span><b>10,000</b></li>
+							<li><span>Emails a month</span><b>25,000</b></li>
+							<li><span>Enrichment credits</span><b>2,000</b></li>
 						</ul>
-						<div class="tier__cta"><a class="btn btn--primary" href="https://app.tryclaritia.com">Start free</a></div>
+						<ul class="tier__list">
+							<li>Rules, territories and owner lookup</li>
+							<li>AI qualify and meeting briefs</li>
+							<li>HubSpot, Salesforce and Omniscient sync</li>
+							<li>Company reveal, 3 AI journeys, Slack alerts</li>
+						</ul>
+						<div class="tier__cta"><a class="btn btn--primary" href="https://app.tryclaritia.com">Start 14-day trial</a></div>
 					</div>
 					<div class="tier">
 						<h3>Scale</h3>
-						<p class="tier__price">$1,999 <span>a month, from</span></p>
-						<p class="tier__what">For teams with volume, compliance needs and a warehouse at the centre.</p>
-						<ul class="tier__list">
-							<li><b>100,000+ contacts</b></li>
-							<li>Salesforce sync and dedicated sending IPs</li>
-							<li>Marketing Agent and SSO</li>
-							<li>Priority support</li>
+						<p class="tier__price">$799<span>$666 a month, yearly</span></p>
+						<p class="tier__for">Teams with volume</p>
+						<ul class="tier__spec">
+							<li><span>Hosts included</span><b>25</b></li>
+							<li><span>Extra host</span><b>$25</b></li>
+							<li><span>Contacts</span><b>50,000</b></li>
+							<li><span>Emails a month</span><b>100,000</b></li>
+							<li><span>Enrichment credits</span><b>5,000</b></li>
 						</ul>
-						<div class="tier__cta"><a class="btn btn--line" href="mailto:hello@tryclaritia.com?subject=Claritia%20Scale">Talk to us</a></div>
+						<ul class="tier__list">
+							<li>Everything, with queues</li>
+							<li>Two-way sync with every CRM and account alerts</li>
+							<li>Unlimited AI journeys, SSO, audit log, priority support</li>
+						</ul>
+						<div class="tier__cta"><a class="btn btn--secondary" href="mailto:hello@tryclaritia.com?subject=Claritia%20Scale">Talk to us</a></div>
 					</div>
 				</div>
-				<p class="sec__lead" style="margin-top:28px">Overage is $10 per 1,000 contacts and $1 per 1,000 emails. Run Arrowsterr, Claritia and Omniscient together and get 20% off the suite.</p>
+				<p class="overage">More contacts are $10 per 1,000. More emails are $1 per 1,000. More enrichment is $50 per 1,000 credits.</p>
 			</div>
 		</section>
 
-		<!-- 11. Close -->
-		<section class="section close" id="start">
-			<div class="wrap reveal">
-				<form class="close__form" action="https://app.tryclaritia.com" method="get">
-					<span>Bring your site in with</span>
-					<input class="close__email" type="email" name="email" placeholder="you@company.com" aria-label="Work email" autocomplete="email">
-					<button class="close__go" type="submit">Start free</button>
-				</form>
-				<p class="close__note">Free to start. Connect a source when you are ready. Prefer a walkthrough? <a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>.</p>
+		<!-- 16. FAQ -->
+		<section class="section" id="faq">
+			<div class="wrap faq reveal">
+				<div class="faq__head">
+					<span class="chip">FAQ</span>
+					<h2>Questions.</h2>
+				</div>
+				<div class="faq__list">
+					<details open><summary>Do I have to leave HubSpot?<span class="plus" aria-hidden="true"></span></summary><p>No. Claritia syncs both ways with HubSpot, Salesforce and Omniscient, and pushes leads to Pipedrive, Attio and Close. Use Claritia as your CRM or keep yours.</p></details>
+					<details><summary>Can I keep my current forms?<span class="plus" aria-hidden="true"></span></summary><p>Yes. Claritia works with HubSpot, Webflow, Marketo, Framer, Typeform and plain HTML forms. Routing and booking work the same on them.</p></details>
+					<details><summary>Who counts as a host?<span class="plus" aria-hidden="true"></span></summary><p>Anyone who takes meetings. People who build forms, edit workflows or read reports are free.</p></details>
+					<details><summary>How long does setup take?<span class="plus" aria-hidden="true"></span></summary><p>About 15 minutes. Sign up, connect your calendar, pick a form template and paste one line on your site. Your first test fill books a real meeting.</p></details>
+					<details><summary>Where does lead data come from?<span class="plus" aria-hidden="true"></span></summary><p>Your own records and CRM first, then data vendors in order. Every value shows its source and date, and a person's own edit always wins.</p></details>
+					<details><summary>Does the AI act on its own?<span class="plus" aria-hidden="true"></span></summary><p>AI qualify can only pick an outcome your team set up, and it shows its reason. Emails AI writes wait for your approval before they send.</p></details>
+					<details><summary>Do I need a contract?<span class="plus" aria-hidden="true"></span></summary><p>No. Plans are monthly. Pay yearly if you want 2 months free.</p></details>
+				</div>
+			</div>
+		</section>
+
+		<!-- 17. Closing card -->
+		<section class="section close">
+			<div class="wrap">
+				<div class="close__card reveal">
+					<svg class="close__plane" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l6.5 2.5L12 19l3-4 6-12Z"/><path d="m9.5 13 8-8"/></svg>
+					<h2>Your next lead is on your site right now.<br><span class="dim">Book them before they leave.</span></h2>
+					<div class="close__cta">
+						<a class="btn btn--primary" href="https://app.tryclaritia.com">Start free</a>
+						<a class="btn btn--secondary" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
+					</div>
+					<p class="close__note">Free plan, no card needed.</p>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -547,32 +533,25 @@
 	<footer class="site-foot">
 		<div class="wrap site-foot__top">
 			<div class="site-foot__brand">
-				<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
-				<p>The inbound automation platform. Capture the visitors, forms and sources that reach you, keep one clean database, run AI follow-up you approve, and route leads to meetings.</p>
+				<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--brand)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
+				<p>From website visit to booked meeting.</p>
 				<span class="site-foot__status">All systems running</span>
-				<div class="site-foot__ai">
-					<p class="label">Summarize with AI</p>
-					<ul>
-						<li><a href="https://chatgpt.com/?q=Read%20https%3A%2F%2Ftryclaritia.com%2F%20and%20tell%20me%20what%20Claritia%20does" target="_blank" rel="noopener noreferrer">Open in ChatGPT</a></li>
-						<li><a href="https://claude.ai/new?q=Read%20https%3A%2F%2Ftryclaritia.com%2F%20and%20tell%20me%20what%20Claritia%20does" target="_blank" rel="noopener noreferrer">Open in Claude</a></li>
-						<li><a href="https://www.perplexity.ai/search?q=Read%20https%3A%2F%2Ftryclaritia.com%2F%20and%20tell%20me%20what%20Claritia%20does" target="_blank" rel="noopener noreferrer">Open in Perplexity</a></li>
-					</ul>
-				</div>
 			</div>
 			<div class="site-foot__cols">
 				<nav class="site-foot__col" aria-label="Product">
 					<h3>Product</h3>
-					<a href="#loop">The inbound loop</a>
-					<a href="#database">One database</a>
+					<a href="#crm">CRM</a>
+					<a href="#automation">Automation</a>
+					<a href="#inbound">Inbound</a>
 					<a href="#nurture">Nurture</a>
-					<a href="#capabilities">All capabilities</a>
+					<a href="#pricing">Pricing</a>
 				</nav>
-				<nav class="site-foot__col" aria-label="Sources">
-					<h3>Sources</h3>
-					<a href="#sources">CRMs</a>
-					<a href="#sources">Email tools</a>
-					<a href="#sources">Forms and meetings</a>
-					<a href="#sources">Warehouses</a>
+				<nav class="site-foot__col" aria-label="Inbound">
+					<h3>Inbound</h3>
+					<a href="#inbound">Forms</a>
+					<a href="#scheduling">Scheduling</a>
+					<a href="#routing">Routing</a>
+					<a href="#inbound">Visitors</a>
 				</nav>
 				<nav class="site-foot__col" aria-label="Suite">
 					<h3>Suite</h3>
@@ -584,14 +563,15 @@
 					<h3>Company</h3>
 					<a href="mailto:hello@tryclaritia.com">Contact</a>
 					<a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
+					<a href="#top">Privacy</a>
+					<a href="#top">Terms</a>
 					<a href="https://app.tryclaritia.com">Sign in</a>
 				</nav>
 			</div>
 		</div>
-		<div class="wrap"><p class="site-foot__mark" aria-hidden="true">Claritia</p></div>
 		<div class="wrap site-foot__legal">
 			<p>© 2026 Perceptric. Claritia is a Perceptric product.</p>
-			<p>All systems running.</p>
+			<p>All systems running</p>
 		</div>
 	</footer>
 </div>

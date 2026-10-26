@@ -1,17 +1,20 @@
 # Claritia pricing
 
-Claritia is the inbound automation platform. It captures the visitors, forms and sources that reach you, keeps one clean database, runs AI follow-up you approve, and routes leads to meetings in your CRM.
+Claritia is the CRM and inbound stack for small B2B teams. It catches every lead on your site, finds out who they are, sends them to the right rep and books the meeting. Forms, enrichment, routing, scheduling and AI email in one place, live in 15 minutes.
 
-| Plan | Price | Contacts | Emails a month | Sites | Also includes |
-|---|---|---|---|---|---|
-| Starter | $299/month | 5,000 | 25,000 | 1 | Website Intelligence, contacts, companies, leads, segments, sources, imports, sending, forms and nurture with review on every send |
-| Growth | $799/month | 25,000 | 100,000 | 3 | Two-way HubSpot, Salesforce or Omniscient sync, warehouse sources, lead routing, pages and personalization, attribution and reports as they ship |
-| Scale | From $1,999/month | 100,000+ | Higher limits | More | Dedicated sending IPs, Salesforce sync, Marketing Agent, SSO, priority support |
+| | Free | Starter | Growth | Scale |
+|---|---|---|---|---|
+| Price a month | $0 | $79 | $299 | $799 |
+| Price a month, yearly | $0 | $66 | $249 | $666 |
+| Hosts included | 1 | 3 | 10 | 25 |
+| Each extra host | — | $15 | $20 | $25 |
+| Contacts | 500 | 2,500 | 10,000 | 50,000 |
+| Emails a month | 500 | 5,000 | 25,000 | 100,000 |
+| Enrichment credits a month | — | 250 | 2,000 | 5,000 |
 
-- Every plan includes Website Intelligence, a live contact database, lead scoring, email sending from your own domain and nurture.
-- Overage: $10 per 1,000 contacts and $1 per 1,000 emails.
-- Suite bundle: run Arrowsterr, Claritia and Omniscient together and get 20% off.
-- Plans renew monthly. Cancel any time from Settings.
-- Scale is billed yearly. Write to hello@tryclaritia.com.
+- Only people who take meetings count as hosts. Everyone who builds forms, edits workflows or reads reports is free.
+- Billed monthly. No platform fee and no onboarding fee. Pay yearly and get 2 months free.
+- Overage: $10 per 1,000 contacts, $1 per 1,000 emails, $50 per 1,000 enrichment credits.
+- Suite bundle: run two or more of Arrowsterr, Claritia and Omniscient and save 20%.
 
 Start free: https://app.tryclaritia.com

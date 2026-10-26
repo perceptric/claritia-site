@@ -1,27 +1,25 @@
 # Claritia
 
-> Claritia is the inbound automation platform for B2B teams. It captures the visitors, forms and sources that reach you, keeps one clean database of contacts and companies, enriches and scores every account, runs AI follow-up you approve, and routes leads to meetings in your CRM.
+> Claritia is the CRM and inbound stack for small B2B teams. It catches every lead on your site, finds out who they are, sends them to the right rep and books the meeting before they leave. Forms, enrichment, routing, scheduling and AI email in one place, live in 15 minutes.
 
 ## How it works
 
-- Capture: a small script names the companies behind your traffic and stitches people across sessions. Forms, CRM rows and warehouse rows land in the same database. The company match needs no personal data.
-- One marketing database: contacts, companies, leads, consent and behavior in one place, with live segments built from AND/OR rules over fields, behavior, scores and consent.
-- Sources: import from 60+ tools, sync HubSpot, Salesforce or Omniscient both ways, and query 7 warehouses read-only.
-- Nurture: AI writes each email from your own content only, a person approves it, and every consent, unsubscribe, frequency and quiet-hour rule is checked as it sends.
-- Sending: from your own verified domain through Amazon SES, with DKIM, SPF and DMARC.
-- Lead scoring and routing: fit plus engagement makes the score that names an MQL, then routes the lead to the owner with an SLA and hands off to the CRM.
-- Journeys (in build): agent steps pick the branch you named and write the email, with Approvals first.
-- Pages (in build): AI landing pages and forms built from your content, shaped per segment.
-- Reports (in build): pipeline and revenue traced from AI answers and search, through visits and journeys, to deals won.
+- Inbound: forms that book the meeting. Build a form by chatting with AI or keep the ones you have (HubSpot, Webflow, Marketo, Framer, Typeform, plain HTML). The right rep's calendar opens the moment the form is sent, and Claritia names the companies on your site.
+- Scheduling: Google or Outlook in one click. Every meeting type (one rep, round robin, the whole team, owner first, group events, polls), booking links, paid meetings with Stripe, reminders and no-show tracking.
+- Routing: owners, territories and round robin with caps and time off. Every decision keeps the sentence that made it, and speed-to-lead nudges a rep who is slow.
+- Automation: enrichment (your records first, then vendors), AI qualify that only picks an outcome you set, workflows on one canvas, and two-way CRM sync.
+- Nurture: emails written from your own content and sent from your own domain, approved before they send; segments and lead scoring.
+- CRM: contacts, companies, opportunities and meetings in one place, import from 20 tools, a board view, and reports inside each section.
+- Sending runs on Resend.
 
 ## The suite
 
-- Found by Arrowsterr (SEO, GEO and AI search). Converted by Claritia. Closed with Omniscient (CRM, opportunities and deal rooms).
+- Found by Arrowsterr (SEO and AI search). Converted by Claritia. Closed with Omniscient.
 
 ## Pages
 
 - [Home](https://tryclaritia.com/): what Claritia does
-- [Pricing](https://tryclaritia.com/pricing.md): plans, contacts and emails, in Markdown
+- [Pricing](https://tryclaritia.com/pricing.md): plans, hosts, contacts and emails, in Markdown
 - [App](https://app.tryclaritia.com): sign in and start
 
 ## Contact
