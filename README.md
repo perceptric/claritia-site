@@ -8,15 +8,22 @@ The home page describes Claritia, the CRM and inbound stack for small B2B teams:
 lead on your site, finds out who they are, sends them to the right rep and books the meeting. The
 product plan lives in the app repo at `docs/unify-plan.md` and `docs/inbound.md`.
 
+The visual system is a warm-paper, emerald-and-mint language with Instrument Serif at the two
+biggest moments and Inter everywhere else. It is documented in full in `BRAND.md`; the values
+live in `assets/tokens.css`. The reference is Mintlify's marketing site, but the copy, mark,
+imagery and font files are Claritia's own.
+
 ## How it's laid out
 
 | Path | What |
 |---|---|
 | `index.html` | The home page. |
-| `404.html` | The "page not found" page. Its own styles sit in a `<style>` block at the top. |
-| `assets/base.css` | Tokens, reset, buttons, header and footer. |
-| `assets/home.css` | The home page sections and the product pictures (the `.mk-` pieces). |
-| `assets/brand/` | Favicon, icon, Apple touch icon and the share image (`og-image.png`). |
+| `404.html` | The "page not found" page. It uses the shared tokens and base styles, plus a small `<style>` block for the centred layout. |
+| `BRAND.md` | The complete brand guide: logo, color, type, grid, components, imagery, motion, voice, accessibility and CSS usage. Hidden from the web by `.htaccess`. |
+| `assets/tokens.css` | Raw palette, semantic color, type scale, spacing, radii, shadows, motion and layout tokens. The only file with raw values. |
+| `assets/base.css` | Reset, typography, layout primitives, header, footer, buttons, chips and forms. |
+| `assets/home.css` | The home page sections and the product fragments (the `.mini-*`, `.app-preview`, `.bento` pieces). |
+| `assets/brand/` | Mark SVG, favicon, Apple touch icon and the share image (`og-image.png`). |
 | `llms.txt` | A short guide to Claritia for AI tools. |
 | `pricing.md` | The plans as a Markdown table. |
 | `robots.txt`, `sitemap.xml` | For search engines. |
@@ -24,28 +31,34 @@ product plan lives in the app repo at `docs/unify-plan.md` and `docs/inbound.md`
 
 ## Editing
 
-- **Home page words:** `index.html`. Each section starts with a comment, like `<!-- 15. Pricing -->`.
-  The order is the homepage copy: hero, logo strip, how it works, the six sections (Inbound,
-  Scheduling, Routing, Automation, Nurture, CRM), try it, numbers, replace the pile, the suite,
-  pricing, FAQ, closing card.
-- **Home page look:** `assets/home.css`. Tokens and shared pieces are in `assets/base.css`.
-  The product pictures are the `.mk-` classes in `home.css` and mirror the app. The page font size
-  is 14px, so `1rem` is 14px. Breakpoints are 640px, 880px, 940px and 1000px.
+- **Home page words:** `index.html`. Each section starts with a comment, like `<!-- 9. Pricing -->`.
+  The order is: hero, integrations and facts, platform bento, how it works, try it, numbers,
+  replace the pile, suite, pricing, FAQ, closing. The bento cards carry ids (`#inbound`,
+  `#scheduling`, `#routing`, `#automation`, `#nurture`, `#crm`) so the header and footer can link
+  straight to a capability.
+- **Home page look:** `assets/home.css`. Tokens and shared pieces are in `assets/tokens.css` and
+  `assets/base.css`. The product pictures are the `.mini-*` and `.app-preview` classes in
+  `home.css` and mirror the app. The page font size is 16px, so `1rem` is 16px. Breakpoints are
+  640px, 768px, 900px, 1000px and 1024px.
 - **Header and footer:** they sit in both `index.html` and `404.html`. Change both.
   With two pages there is no partials folder or layout script.
-- **Prices and plan limits:** the cards in the `<!-- 15. Pricing -->` section of `index.html` and the
+- **Brand rules:** follow `BRAND.md`. Do not introduce a raw hex value in a section stylesheet:
+  add it to `assets/tokens.css` first. Buttons are 4px radius and 40px tall, cards are 12px,
+  the grid is 24 columns inside 1088px, and the section tail is 160px desktop / 120px mobile.
+  The old warm-paper, clay, pill-button system is gone; do not bring it back.
+- **Prices and plan limits:** the cards in the `<!-- 9. Pricing -->` section of `index.html` and the
   table in `pricing.md`. Change both together, and keep them in step with `docs/pricing.md` in the app.
 - **/llms.txt:** edit `llms.txt`. Keep it in step with the app's `/llms.txt`.
 - **Footer year:** typed into the footer of both pages. Change it in January.
+- **Brand assets:** `assets/brand/claritia-mark.svg` is the source for the favicon and Apple icon.
+  Regenerate the PNG/ICO files from the mark when it changes. The share image is a 1200x630 render
+  and should be updated when the hero headline changes.
 - **New page:** make a folder with an `index.html` (copy `404.html` to start, since it has the header
-  and footer). Give it a title, description and canonical tag, drop the `noindex` line, and add it to
-  `sitemap.xml`.
+  and footer). Give it a title, description and canonical tag, drop the `noindex` line, add it to
+  `sitemap.xml`, and link `tokens.css`, `base.css` and any page stylesheet.
 
-Follow `docs/brand.md` in the app repo: a warm paper background, Geist for every word, black pill
-buttons, soft round cards (16px to 24px, 32px for the page panel), and calm motion. Headlines are
-two tones, the line after the break in gray. The sparkle marks AI. Cards sit flat and lift on hover.
-Take direction from `default.com` and the brand's modules; never copy another company's files,
-images or copy.
+The brand is light-only for now. Dark tokens are documented in `BRAND.md` and reserved in
+`tokens.css` under `[data-theme="dark"]`, but the site does not switch with the OS.
 
 Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 The local server ignores `.htaccess`, so redirects and the 404 page only work on Hostinger.
@@ -62,7 +75,8 @@ Push to `main` and Hostinger deploys it.
 | Anything else | The 404 page. |
 
 The app paths are listed in `.htaccess`. Add a path there when the app gets a new top-level page.
-`.htaccess` also hides the `.git` folder, dot files and this README, since Hostinger deploys the whole repo.
+`.htaccess` also hides the `.git` folder, dot files, this README and `BRAND.md`, since Hostinger
+deploys the whole repo.
 
 ## Hostinger setup
 
@@ -101,3 +115,11 @@ The app keeps its own copy of `/llms.txt` and `/pricing.md` on app.tryclaritia.c
 | Total added to the monthly bill | $0 |
 
 The site makes no AI calls.
+
+## Brand source note
+
+The design language was extracted from the live Mintlify marketing site on 26 October 2026:
+its 24-column 1088px grid, serif/Inter type scale, 4px controls, 12px cards, warm paper palette
+and emerald/mint accent. No Mintlify copy, logo, image, font binary or stylesheet is included.
+The display face on the reference is licensed Arizona Flare; this site uses Instrument Serif as
+the free stand-in. See `BRAND.md` §14 for the detailed source notes.

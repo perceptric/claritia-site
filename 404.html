@@ -8,44 +8,85 @@
 <link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
 <link rel="icon" href="/assets/brand/claritia-mark.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
-<meta name="theme-color" content="#f2f1ed">
+<meta name="theme-color" content="#fefdfb">
+<meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/base.css?v=4">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/tokens.css?v=5">
+<link rel="stylesheet" href="/assets/base.css?v=5">
 <style>
-.blank { padding: 120px 0 140px; text-align: center; }
-.blank h1 { font-size: clamp(34px, 6vw, 64px); }
-.blank p { margin-top: 16px; color: var(--body); }
-.blank .row { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.blank {
+  position: relative;
+  overflow: clip;
+  padding-block: clamp(72px, 10vw, 140px);
+  border-bottom: 1px solid var(--border);
+}
+.blank__in { position: relative; z-index: 1; max-width: 620px; }
+.blank__k { display: inline-flex; align-items: center; gap: 8px; min-height: 28px; padding: 3px 10px; border: 1px solid var(--border-2); border-radius: var(--r-sm); font-size: 12px; line-height: 16px; font-weight: 500; color: var(--text-2); }
+.blank__k b { color: var(--brand); font-family: var(--font-mono); font-weight: 500; }
+.blank h1 { margin-top: var(--s-5); }
+.blank h1 .dim { display: block; color: var(--text-3); }
+.blank p { margin-top: var(--s-4); max-width: 48ch; font-size: 17px; line-height: 26px; color: var(--text-2); }
+.blank__row { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-top: var(--s-8); }
+.blank__lines { position: absolute; top: 0; right: 0; width: 50%; height: 100%; opacity: .6; pointer-events: none; }
+.blank__lines svg { width: 100%; height: 100%; }
+@media (max-width: 639px) { .blank__lines { width: 100%; opacity: .3; } }
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
-	<header class="site-head">
-		<div class="wrap site-head__in">
-			<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--brand)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
-			<div class="site-head__actions">
-				<a class="btn btn--ghost btn--sm" href="https://app.tryclaritia.com">Sign in</a>
-				<a class="btn btn--primary btn--sm" href="https://app.tryclaritia.com">Start free</a>
-			</div>
-		</div>
-	</header>
-	<main id="main" class="wrap blank">
-		<h1>This page moved or never existed.</h1>
-		<p>The address is wrong, or the page is gone. The site is one page now.</p>
-		<div class="row">
-			<a class="btn btn--primary" href="/">Go home</a>
-			<a class="btn btn--secondary" href="https://app.tryclaritia.com">Open the app</a>
-		</div>
-	</main>
-	<footer class="site-foot">
-		<div class="wrap site-foot__legal">
-			<p>© 2026 Perceptric. Claritia is a Perceptric product.</p>
-			<a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a>
-		</div>
-	</footer>
+  <header class="site-head">
+    <div class="wrap site-head__in">
+      <a class="site-mark" href="/" aria-label="Claritia home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0C8C5E"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Claritia
+      </a>
+      <div class="site-head__actions">
+        <a class="btn btn--ghost" href="https://app.tryclaritia.com">Sign in</a>
+        <a class="btn btn--primary" href="https://app.tryclaritia.com">Start free <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8H10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M7 4.5L10.5 8 7 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="blank">
+    <div class="blank__lines" aria-hidden="true">
+      <svg viewBox="0 0 700 420" preserveAspectRatio="xMidYMid slice" fill="none">
+        <defs>
+          <linearGradient id="blank-trail" x1="0" y1="420" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#18E299" stop-opacity=".2"/>
+            <stop offset=".55" stop-color="#6DEE6B"/>
+            <stop offset="1" stop-color="#A8FB36" stop-opacity=".25"/>
+          </linearGradient>
+        </defs>
+        <g stroke="url(#blank-trail)" stroke-width="1.15" stroke-linecap="round">
+          <path d="M-40 400C130 360 200 280 340 220S580 100 740 10"/>
+          <path d="M-40 380C140 340 220 260 360 204S600 80 740 -10"/>
+          <path d="M-40 360C150 320 240 240 380 188S620 60 740 -30"/>
+          <path d="M-40 340C160 300 260 220 400 172S640 40 740 -50"/>
+          <path d="M-40 320C170 280 280 200 420 156S660 20 740 -70"/>
+          <path d="M-40 300C180 260 300 180 440 140S680 0 740 -90"/>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap blank__in">
+      <span class="blank__k"><b>404</b> Page not found</span>
+      <h1>This page moved or never existed.<span class="dim">The site is one page now.</span></h1>
+      <p>The address is wrong, or the page is gone. Everything about Claritia lives on the home page.</p>
+      <div class="blank__row">
+        <a class="btn btn--primary btn--lg" href="/">Go home <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8H10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M7 4.5L10.5 8 7 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn--secondary btn--lg" href="https://app.tryclaritia.com">Open the app</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap site-foot__legal" style="margin-top:0;border-top:0;padding-top:0">
+      <p>© 2026 Perceptric. Claritia is a Perceptric product.</p>
+      <a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
