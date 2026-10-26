@@ -1,6 +1,8 @@
 # tryclaritia.com
 
-Static site for Claritia. Plain HTML and CSS: no WordPress, no JavaScript, no build step.
+Static site for Claritia. Plain HTML and CSS: no WordPress, no build step, and one small
+progressive-enhancement script (`assets/site.js`, the index filter). Everything else — the
+receipt tabs, the plan switcher, the FAQ and the row disclosures — is CSS and HTML only.
 It is set up the same way as perceptric.com.
 
 The home page describes Claritia, the agentic marketing platform: website visitors become leads
@@ -13,8 +15,10 @@ pages. The product plan lives in the app repo at `docs/marketing-platform.md`.
 |---|---|
 | `index.html` | The home page. |
 | `404.html` | The "page not found" page. Its own styles sit in a `<style>` block at the top. |
-| `assets/base.css` | Brand colors, reset, logo, tags, buttons, header and footer. |
-| `assets/home.css` | Styles for the home page. |
+| `assets/base.css` | Tokens, reset, buttons, header and footer. |
+| `assets/app.css` | The product fragments (the real app, rendered light). |
+| `assets/home.css` | Styles for the home page sections. |
+| `assets/site.js` | The one script: the index filter. |
 | `assets/brand/` | Favicon, icon, Apple touch icon and the share image (`og-image.png`). |
 | `llms.txt` | A short guide to Claritia for AI tools. |
 | `pricing.md` | The plans as a Markdown table. |
@@ -24,7 +28,8 @@ pages. The product plan lives in the app repo at `docs/marketing-platform.md`.
 ## Editing
 
 - **Home page words:** `index.html`. Each section starts with a comment, like `<!-- Pricing -->`.
-- **Home page look:** `assets/home.css`. Colors and shared pieces are in `assets/base.css`.
+- **Home page look:** `assets/home.css`. Tokens and shared pieces are in `assets/base.css`.
+  The product fragments (the light screens) are in `assets/app.css` and mirror the app.
   The page font size is 14px, so `1rem` is 14px. Breakpoints are 640px, 768px and 1024px.
 - **Header and footer:** they sit in both `index.html` and `404.html`. Change both.
   With two pages there is no partials folder or layout script.
