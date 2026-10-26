@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claritia | Know who is on your site</title>
+<title>Claritia | Turn website visitors into meetings</title>
 <meta name="description" content="Claritia names the companies and people behind your traffic, keeps one live database of contacts and segments, and scores every account with the reason why now.">
 <link rel="canonical" href="https://tryclaritia.com/">
 <meta property="og:site_name" content="Claritia">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Claritia | Know who is on your site">
+<meta property="og:title" content="Claritia | Turn website visitors into meetings">
 <meta property="og:description" content="Names the companies and people behind your traffic, keeps one live database of contacts and segments, and scores every account with the reason why now.">
 <meta property="og:url" content="https://tryclaritia.com/">
 <meta property="og:image" content="https://tryclaritia.com/assets/brand/og-image.png">
@@ -23,7 +23,6 @@
 <link rel="stylesheet" href="/assets/base.css">
 <link rel="stylesheet" href="/assets/app.css">
 <link rel="stylesheet" href="/assets/home.css">
-<script defer src="/assets/site.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -32,32 +31,30 @@
 		<div class="wrap site-head__in">
 			<a class="site-mark" href="/" aria-label="Claritia home"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
 			<nav class="site-nav" aria-label="Main">
-				<a href="#product">Product</a>
+				<a href="#how">Product</a>
+				<a href="#agents">Solutions</a>
 				<a href="#sources">Sources</a>
 				<a href="#pricing">Pricing</a>
-				<a href="#faq">FAQ</a>
 			</nav>
 			<div class="site-head__actions">
 				<a class="site-signin" href="https://app.tryclaritia.com">Sign in</a>
+				<a class="site-signin" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
 				<a class="btn btn--sm btn--primary" href="https://app.tryclaritia.com">Start free</a>
 			</div>
 		</div>
 	</header>
 	<main id="main">
 
-		<!-- 1. Hero: the product performs -->
+		<!-- 1. Hero: the promise, then the product -->
 		<section class="section hero" id="top">
 			<div class="hero__glow" aria-hidden="true"></div>
 			<div class="wrap hero__head">
-				<div>
-					<a class="announce" href="#product"><span class="announce__pill"><b>New</b> Introducing the Claritia marketing platform <span class="pt">See the screens</span></span></a>
-					<h1 class="hero__h1"><span class="rise"><span>Know who is</span></span><span class="rise"><span style="animation-delay:.09s"><span class="grad">on your site.</span></span></span></h1>
-				</div>
+				<h1 class="hero__h1"><span class="rise"><span>Turn website visitors</span></span><span class="rise"><span style="animation-delay:.09s"><span class="grad">into meetings.</span></span></span></h1>
 				<div class="hero__aside reveal">
 					<p class="hero__lead">Claritia names the companies and people behind your traffic, keeps one live database of contacts and segments, and scores every account with the reason why now.</p>
 					<div class="hero__cta">
 						<a class="btn btn--primary" href="https://app.tryclaritia.com">Start free</a>
-						<a class="btn btn--ghost" href="#pricing">See a plan</a>
+						<a class="btn btn--ghost" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
 					</div>
 					<p class="hero__note">No credit card. 60+ sources. Reads your warehouse read-only.</p>
 				</div>
@@ -166,75 +163,114 @@
 			</div>
 		</section>
 
-		<!-- 2. The sequence -->
-		<section class="section section--raised" id="how">
+		<!-- 2. Trust strip -->
+		<section class="section trust-strip">
 			<div class="wrap reveal">
-				<p class="label">// How it starts</p>
-				<h2 class="sec__h">From visit to lead.</h2>
-				<p class="sec__lead">One record, moving. Each step adds what the last one could not say, and keeps the evidence.</p>
-				<ol class="seq">
-					<li class="seq__step">
-						<p class="seq__word">First it lands here.</p>
-						<p class="seq__line">An anonymous session: the company by network, the pages, the time on them.</p>
-						<div class="seq__frag"><div data-ui class="ui ui-panel"><div class="ui-mini"><p class="ui-mini__label">Visitor</p><p class="ui-mini__row"><span class="ui-name">Sleepy Narwhal</span><span class="ui-badge ui-badge--gray">Probable</span></p><p class="ui-mini__row ui-dim">Unknown · DE · /pricing · 40s</p></div></div></div>
-					</li>
-					<li class="seq__step">
-						<p class="seq__word">Then we name it.</p>
-						<p class="seq__line">A form, a sign-in or an email click ties the visit to a person.</p>
-						<div class="seq__frag"><div data-ui class="ui ui-panel"><div class="ui-mini"><p class="ui-mini__label">Person</p><p class="ui-mini__row"><span class="ui-name">jane@acme.com</span><span class="ui-badge ui-badge--gray">Verified</span></p><p class="ui-mini__row ui-dim">Evidence: signed in with a link</p></div></div></div>
-					</li>
-					<li class="seq__step">
-						<p class="seq__word">Then it's a contact.</p>
-						<p class="seq__line">Cleaned, merged with the CRM, given a lifecycle and email consent.</p>
-						<div class="seq__frag"><div data-ui class="ui ui-panel"><div class="ui-mini"><p class="ui-mini__label">Contact</p><p class="ui-mini__row"><span class="ui-name">Jane Doe</span><span class="ui-badge ui-badge--gray">MQL</span></p><p class="ui-mini__row ui-dim">Acme · Opted in · on site</p></div></div></div>
-					</li>
-					<li class="seq__step">
-						<p class="seq__word">Then it's routed.</p>
-						<p class="seq__line">Scored on fit and intent, marked ready, and handed to the owner.</p>
-						<div class="seq__frag"><div data-ui class="ui ui-panel"><div class="ui-mini"><p class="ui-mini__label">Account</p><p class="ui-mini__row"><span class="ui-name">Acme</span><span class="ui-badge ui-badge--green">Ready</span></p><p class="ui-mini__row ui-dim">Routed to Priya · SLA 24h</p></div></div></div>
-					</li>
-				</ol>
+				<p>Claritia reads the stack you already run.</p>
+				<div class="marquee" aria-hidden="true">
+					<div class="marquee__row">
+						<span>HubSpot</span><span>Salesforce</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Mailchimp</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Typeform</span><span>Tally</span><span>Calendly</span><span>Stripe</span><span>Snowflake</span><span>BigQuery</span>
+						<span>HubSpot</span><span>Salesforce</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Mailchimp</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Typeform</span><span>Tally</span><span>Calendly</span><span>Stripe</span><span>Snowflake</span><span>BigQuery</span>
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<!-- 3. Showcase -->
-		<section class="section" id="product">
+		<!-- 3. The three jobs -->
+		<section class="section" id="how">
 			<div class="wrap reveal">
-				<p class="label">// The product</p>
-				<h2 class="sec__h">The product, screen by screen.</h2>
-				<p class="sec__lead">Real screens. Scroll sideways, open the tabs, read every label.</p>
+				<p class="label label--accent">The path</p>
+				<h2 class="sec__h">From first visit to booked meeting.</h2>
+				<p class="sec__lead">Each step adds what the last one could not say, and keeps the evidence behind it.</p>
+				<div class="jobs">
+					<article class="job">
+						<div class="job__copy">
+							<p class="label label--accent">Identify</p>
+							<h3>Every visit, named.</h3>
+							<p>Companies come from the network. People come from forms, sign-ins and email clicks. Every match carries its evidence, so a visit becomes a person as Verified, Asserted or Probable.</p>
+							<a class="textlink" href="#database">See the database</a>
+						</div>
+						<div class="job__art">
+							<div data-ui class="ui ui-panel">
+								<div class="ui-head"><span class="ui-title">Visitors</span><span class="ui-count">[1,240]</span><span class="ui-head__end ui-live">live</span></div>
+								<table class="ui-table">
+									<thead><tr><th class="ui-th">Visitor</th><th class="ui-th">Company</th><th class="ui-th">Source</th></tr></thead>
+									<tbody>
+										<tr><td class="ui-td"><span class="ui-av">JD</span><span class="ui-name">jane@acme.com</span></td><td class="ui-td">Acme</td><td class="ui-td"><span class="ui-badge ui-badge--brand">AI</span></td></tr>
+										<tr><td class="ui-td"><span class="ui-av">SN</span><span class="ui-name">Sleepy Narwhal</span></td><td class="ui-td ui-dim">Unknown · DE</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Search</span></td></tr>
+										<tr><td class="ui-td"><span class="ui-av">MB</span><span class="ui-name">marcus@globex.io</span></td><td class="ui-td">Globex</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Direct</span></td></tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</article>
+
+					<article class="job job--flip">
+						<div class="job__copy">
+							<p class="label label--accent">Qualify</p>
+							<h3>Every account, scored with the reason why now.</h3>
+							<p>Fit from your ICP rules, intent from weighted signals with decay, and a stage from fixed rules. Open a score and each signal shows the visit, form or email behind it.</p>
+							<a class="textlink" href="#database">See the scoring</a>
+						</div>
+						<div class="job__art">
+							<div data-ui class="ui ui-panel">
+								<div class="ui-head"><span class="ui-title">Acme</span><span class="ui-head__end"><span class="ui-badge ui-badge--brand">Evaluating</span><span class="ui-badge ui-badge--red">Hot</span></span></div>
+								<div class="uipad">
+									<div class="receipt__scores">
+										<div><p class="ui-slabel">Fit</p><p class="ui-sval">82</p></div>
+										<div><p class="ui-slabel">Intent</p><p class="ui-sval">71</p></div>
+										<div><p class="ui-slabel">Priority</p><p class="ui-sval">9</p></div>
+									</div>
+									<p class="receipt__why">Why now: <b>read pricing twice and compared us to Globex.</b></p>
+									<div class="receipt__sigs">
+										<p class="receipt__siglabel">Signals behind the score</p>
+										<details class="sig"><summary><span class="sig__name">pricing · jane@acme.com</span><span class="sig__val">5 × 0.62 = 3.1</span></summary>
+											<div class="sig__ev"><span class="ui-badge ui-badge--brand">AI</span>Visit from chatgpt.com · /pricing, /security, /demo · 4m 30s</div></details>
+										<details class="sig"><summary><span class="sig__name">demo · marcus@globex.io</span><span class="sig__val">2 × 0.48 = 1.0</span></summary>
+											<div class="sig__ev"><span class="ui-badge ui-badge--gray">Form</span>Filled “Request a demo” 2 days ago · consented</div></details>
+										<details class="sig"><summary><span class="sig__name">return_visit · 14 quiet days</span><span class="sig__val">8</span></summary>
+											<div class="sig__ev"><span class="ui-badge ui-badge--gray">Session</span>Back after 14 quiet days</div></details>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="job">
+						<div class="job__copy">
+							<p class="label label--accent">Act</p>
+							<h3>Every ready lead, routed in minutes.</h3>
+							<p>Fit leads become MQLs and route to the right owner with an SLA. Ready leads hand off to Omniscient, HubSpot or Salesforce, with a brief and a Slack alert.</p>
+							<a class="textlink" href="#agents">See the handoff</a>
+						</div>
+						<div class="job__art">
+							<div data-ui class="ui ui-panel">
+								<div class="ui-head"><span class="ui-title">Leads</span><span class="ui-count">[312]</span></div>
+								<table class="ui-table">
+									<thead><tr><th class="ui-th">Lead</th><th class="ui-th">Owner</th><th class="ui-th">Stage</th><th class="ui-th r">SLA</th></tr></thead>
+									<tbody>
+										<tr><td class="ui-td"><span class="ui-name">Acme</span></td><td class="ui-td"><span class="ui-av">PR</span>Priya</td><td class="ui-td"><span class="ui-badge ui-badge--green">Ready</span></td><td class="ui-td r">24h</td></tr>
+										<tr><td class="ui-td"><span class="ui-name">Northwind</span></td><td class="ui-td"><span class="ui-av">MB</span>Marcus</td><td class="ui-td"><span class="ui-badge ui-badge--gray">MQL</span></td><td class="ui-td r">24h</td></tr>
+										<tr><td class="ui-td"><span class="ui-name">Globex</span></td><td class="ui-td ui-dim">Unassigned</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Lead</span></td><td class="ui-td r ui-dim">-</td></tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</article>
+				</div>
 			</div>
-			<div class="wrap show reveal">
-				<div class="show__rail">
-					<div class="show__item">
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Visitors</span><span class="ui-count">[1,240]</span><span class="ui-head__end ui-live">live</span></div>
-							<table class="ui-table">
-								<thead><tr><th class="ui-th">Visitor</th><th class="ui-th">Company</th><th class="ui-th">Source</th></tr></thead>
-								<tbody>
-									<tr><td class="ui-td"><span class="ui-av">JD</span><span class="ui-name">jane@acme.com</span></td><td class="ui-td">Acme</td><td class="ui-td"><span class="ui-badge ui-badge--brand">AI</span></td></tr>
-									<tr><td class="ui-td"><span class="ui-av">SN</span><span class="ui-name">Sleepy Narwhal</span></td><td class="ui-td ui-dim">Unknown · DE</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Search</span></td></tr>
-									<tr><td class="ui-td"><span class="ui-av">MB</span><span class="ui-name">marcus@globex.io</span></td><td class="ui-td">Globex</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Direct</span></td></tr>
-								</tbody>
-							</table>
-						</div>
-						<p class="show__cap"><b>Visitors.</b> Every visit with its company, its source and its time.</p>
+		</section>
+
+		<!-- 4. Deep dive: one live database -->
+		<section class="section section--raised" id="database">
+			<div class="wrap">
+				<div class="deep reveal">
+					<div class="deep__head">
+						<p class="label label--accent">One live database</p>
+						<h2 class="sec__h">One clean record per person.</h2>
+						<p class="sec__lead">Contacts, companies, leads and segments in one place, deduped through identity, with custom fields and field packs.</p>
 					</div>
-					<div class="show__item">
-						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Accounts</span><span class="ui-count">[312]</span></div>
-							<table class="ui-table">
-								<thead><tr><th class="ui-th">Account</th><th class="ui-th r">Fit</th><th class="ui-th r">Intent</th><th class="ui-th">Stage</th></tr></thead>
-								<tbody>
-									<tr><td class="ui-td"><span class="ui-name">Acme</span></td><td class="ui-td r">82</td><td class="ui-td r">71</td><td class="ui-td"><span class="ui-badge ui-badge--brand">Evaluating</span></td></tr>
-									<tr><td class="ui-td"><span class="ui-name">Northwind</span></td><td class="ui-td r">78</td><td class="ui-td r">54</td><td class="ui-td"><span class="ui-badge ui-badge--violet">Researching</span></td></tr>
-									<tr><td class="ui-td"><span class="ui-name">Globex</span></td><td class="ui-td r">64</td><td class="ui-td r">38</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Engaged</span></td></tr>
-								</tbody>
-							</table>
-						</div>
-						<p class="show__cap"><b>Accounts.</b> Fit and intent per account, with the stage rules decide.</p>
-					</div>
-					<div class="show__item">
+					<div class="deep__art deep__art--two">
 						<div data-ui class="ui ui-panel">
 							<div class="ui-head"><span class="ui-title">Contacts</span><span class="ui-count">[18,204]</span></div>
 							<table class="ui-table">
@@ -246,39 +282,81 @@
 								</tbody>
 							</table>
 						</div>
-						<p class="show__cap"><b>Contacts.</b> One clean record per person, with lifecycle and consent.</p>
-					</div>
-					<div class="show__item">
 						<div data-ui class="ui ui-panel">
 							<div class="ui-head"><span class="ui-title">Read pricing twice</span><span class="ui-head__end"><span class="ui-badge ui-badge--brand">Dynamic</span></span></div>
-							<div class="ui-rules" style="padding:0 14px">
-								<div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0"><span class="ui-switch"><span class="on">All of</span><span>Any of</span></span><span class="ui-btn ui-btn--ghost">+ Rule</span></div>
+							<div class="ui-rules uipad">
+								<div style="display:flex;justify-content:space-between;align-items:center;padding:2px 0 10px"><span class="ui-switch"><span class="on">All of</span><span>Any of</span></span><span class="ui-btn ui-btn--ghost">+ Rule</span></div>
 								<p class="ui-rule"><span class="ui-kind">Field</span>Fit is 70 or more</p>
 								<p class="ui-rule"><span class="ui-kind">Website</span>Visited /pricing 2 or more times in 14 days</p>
 								<p class="ui-rule"><span class="ui-kind">Consent</span>Can be emailed</p>
 								<p class="ui-match">Matches <b>1,248</b><span class="ui-live" style="margin-left:auto">live</span></p>
 							</div>
 						</div>
-						<p class="show__cap"><b>Segments.</b> AND and OR over fields, activity, visits and consent.</p>
 					</div>
-					<div class="show__item">
+					<ul class="trio">
+						<li><h3>One record per person</h3><p>Deduped through identity, with a lifecycle, lead status, owner and email consent.</p></li>
+						<li><h3>Segments that refresh hourly</h3><p>Live AND/OR rules over fields, activity, visits and consent, three levels deep.</p></li>
+						<li><h3>Consent on record</h3><p>Every consent keeps its wording, source and date; imports read unsubscribes first.</p></li>
+					</ul>
+				</div>
+				<p class="callout reveal">A score with no reason is a guess.</p>
+			</div>
+		</section>
+
+		<!-- 5. Deep dive: agents -->
+		<section class="section" id="agents">
+			<div class="wrap">
+				<div class="deep reveal">
+					<div class="deep__head">
+						<p class="label label--accent">Agents</p>
+						<h2 class="sec__h">Agents that do the marketing.</h2>
+						<p class="sec__lead">Set the goal and the paths. Agent steps pick the next move for each contact and write each email from your own content, and nothing sends until you approve.</p>
+					</div>
+					<div class="deep__art deep__art--two">
 						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Sending</span><span class="ui-head__end"><span class="ui-badge ui-badge--green">Verified</span></span></div>
-							<table class="ui-table">
-								<thead><tr><th class="ui-th">Domain</th><th class="ui-th">DKIM</th><th class="ui-th">SPF</th><th class="ui-th">DMARC</th></tr></thead>
-								<tbody>
-									<tr><td class="ui-td"><span class="ui-name">mail.acme.com</span></td><td class="ui-td"><span class="ui-badge ui-badge--green">Pass</span></td><td class="ui-td"><span class="ui-badge ui-badge--green">Pass</span></td><td class="ui-td"><span class="ui-badge ui-badge--green">Pass</span></td></tr>
-									<tr><td class="ui-td ui-dim">complaint rate</td><td class="ui-td" colspan="3"><span class="ui-name">0.02%</span> <span class="ui-dim">· under the 0.1% target</span></td></tr>
-								</tbody>
-							</table>
+							<div class="ui-head"><span class="ui-title">Journey · Acme</span><span class="ui-head__end"><span class="ui-badge ui-badge--brand">Running</span></span></div>
+							<div class="ui-rules uipad">
+								<p class="ui-rule"><span class="ui-kind">Trigger</span>New visitor on /pricing</p>
+								<p class="ui-rule"><span class="ui-kind">Enrich</span>Firmographics and tech stack</p>
+								<p class="ui-rule"><span class="ui-kind">Branch</span>Fit is 70 or more</p>
+								<p class="ui-rule"><span class="ui-kind">Draft</span>Email written from Brand Brain</p>
+								<p class="ui-rule"><span class="ui-kind">Approve</span>Waiting on you</p>
+								<div style="display:flex;gap:8px;padding-top:12px"><span class="ui-btn">Approve and send</span><span class="ui-btn ui-btn--ghost">Edit</span></div>
+							</div>
 						</div>
-						<p class="show__cap"><b>Sending.</b> Verified domains, one-click unsubscribe, a complaint guard.</p>
-					</div>
-					<div class="show__item">
 						<div data-ui class="ui ui-panel">
-							<div class="ui-head"><span class="ui-title">Sync log</span><span class="ui-head__end ui-dim">HubSpot</span></div>
+							<div class="ui-head"><span class="ui-title">Draft</span><span class="ui-head__end ui-dim">from Brand Brain</span></div>
+							<div class="uipad">
+								<p class="ui-sub">To jane@acme.com · Subject: Pricing for a 200-person team</p>
+								<p style="margin-top:10px">Hi Jane, you looked at pricing twice this week. Here is the short version for a 200-person team, and the security page you opened.</p>
+								<p class="ui-live" style="margin-top:12px">Every line quotes a source</p>
+							</div>
+						</div>
+					</div>
+					<ul class="trio">
+						<li><h3>Journeys <span class="trio__flag">In build</span></h3><p>Agent steps move each contact toward the goal, and you approve the sends.</p></li>
+						<li><h3>Pages <span class="trio__flag">In build</span></h3><p>Landing pages and forms built from your content, shaped per segment.</p></li>
+						<li><h3>Brand Brain <span class="trio__flag">In build</span></h3><p>Your content and proof as atoms every AI step writes from, with sources.</p></li>
+					</ul>
+				</div>
+				<p class="callout reveal">Every send quotes its source.</p>
+			</div>
+		</section>
+
+		<!-- 6. Deep dive: the source layer -->
+		<section class="section section--raised" id="sources">
+			<div class="wrap">
+				<div class="deep reveal">
+					<div class="deep__head">
+						<p class="label label--accent">Sources</p>
+						<h2 class="sec__h">60+ sources in, two ways out.</h2>
+						<p class="sec__lead">Keep your stack. Claritia reads it, cleans it, and writes back where you allow.</p>
+					</div>
+					<div class="deep__art deep__art--two">
+						<div data-ui class="ui ui-panel">
+							<div class="ui-head"><span class="ui-title">HubSpot</span><span class="ui-head__end"><span class="ui-badge ui-badge--green">Active</span></span></div>
 							<table class="ui-table">
-								<thead><tr><th class="ui-th">When</th><th class="ui-th">Change</th><th class="ui-th r">Read</th><th class="ui-th r">Written</th></tr></thead>
+								<thead><tr><th class="ui-th">When</th><th class="ui-th">What</th><th class="ui-th r">Read</th><th class="ui-th r">Written</th></tr></thead>
 								<tbody>
 									<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Contacts</td><td class="ui-td r">240</td><td class="ui-td r">18</td></tr>
 									<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--violet">Out</span> Companies</td><td class="ui-td r">-</td><td class="ui-td r">6</td></tr>
@@ -286,248 +364,129 @@
 								</tbody>
 							</table>
 						</div>
-						<p class="show__cap"><b>Sync.</b> Two-way, with every change in one log and a retry.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 4. Index -->
-		<section class="section section--raised">
-			<div class="wrap reveal">
-				<p class="label">// Everything it does</p>
-				<h2 class="sec__h">Everything it does.</h2>
-				<p class="sec__lead">Find what you need. Open a row to see it.</p>
-				<div class="idx" id="idx">
-					<label class="idx__filter"><span class="visually-hidden">Filter</span><input id="idx-filter" type="search" placeholder="Filter" autocomplete="off"><span class="idx__count" id="idx-count">18 things</span></label>
-
-					<details class="idx__row">
-						<summary><span class="idx__name">Website intelligence</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body">
-							<p>Names the company and the person behind each visit, with the pages, the source and the time. Companies come from the network; people come from forms, sign-ins and email clicks.</p>
-							<div data-ui class="ui ui-panel"><table class="ui-table"><thead><tr><th class="ui-th">Visitor</th><th class="ui-th">Company</th><th class="ui-th r">Active</th><th class="ui-th">Source</th></tr></thead><tbody><tr><td class="ui-td"><span class="ui-name">jane@acme.com</span></td><td class="ui-td">Acme</td><td class="ui-td r">4m 30s</td><td class="ui-td"><span class="ui-badge ui-badge--brand">AI</span></td></tr><tr><td class="ui-td"><span class="ui-name">Brisk Walrus</span></td><td class="ui-td ui-dim">Unknown · DE</td><td class="ui-td r">40s</td><td class="ui-td"><span class="ui-badge ui-badge--gray">Search</span></td></tr></tbody></table></div>
+						<div data-ui class="ui ui-panel">
+							<div class="ui-head"><span class="ui-title">Warehouse</span><span class="ui-head__end"><span class="ui-badge ui-badge--gray">Read-only</span></span></div>
+							<div class="uipad">
+								<p class="query"><code>SELECT id, email, plan FROM users WHERE created_at &gt; now() - interval '30 days'</code></p>
+								<p class="ui-sub" style="margin-top:12px">Runs on your schedule · row limit 10,000 · read-only transaction</p>
+								<p class="ui-sub" style="margin-top:6px">Postgres · Redshift · MySQL · ClickHouse · BigQuery · Snowflake</p>
+							</div>
 						</div>
-					</details>
-
-					<details class="idx__row">
-						<summary><span class="idx__name">Accounts</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>Fit from your ICP rules, intent from weighted signals with decay, and a stage from fixed rules: Engaged, Researching or Evaluating, with a one-line reason why now.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Contacts and companies</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>One clean record per person and per firm: deduped through identity, with a lifecycle, lead status, owner and email consent. Custom fields and field packs included.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Leads and routing</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>A board by lead status, with owners. Scores combine fit and engagement; the fit lead becomes an MQL and routes to the right owner with an SLA timer.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Segments</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>Live AND/OR rules over fields, activity, website visits, consent, sources and custom objects, three levels deep. The count updates as you build, and members refresh hourly.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Sources</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>Connect a CRM, an email tool, forms, meetings or billing. Two-way CRMs write changes back within minutes; unsubscribes and consent come in with the contacts.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Warehouses</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>One saved SELECT, run read-only on your schedule. Rows become contacts, companies, activity or custom records linked to their contact.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Imports</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>Any CSV or Excel file, at any size, with a preview and a 30-day undo. Unsubscribes are read before a single row lands, and duplicate emails merge.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Sending</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>Send from your own verified domain through Amazon SES, with DKIM, SPF and DMARC checked. One-click unsubscribe, frequency caps, quiet hours and a complaint guard.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Forms</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>A form builder and an embeddable form, with hidden UTM and page fields, spam checks, and consent wording that follows the visitor's region.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Scoring and handoff</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>Fit, intent, engagement and readiness, with the top signals shown. Ready leads hand off to Omniscient, HubSpot or Salesforce, with a brief and a Slack alert.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Sync log</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>Every change in and out, with the fields and record, a direction badge, and a retry for anything an outbound call failed to write.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Journeys</span><span class="idx__soon">In build</span></summary>
-						<div class="idx__body"><p>Set the goal and the paths. Agent steps pick the next move for each contact and write each email from your own content, and you approve before anything sends.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Pages</span><span class="idx__soon">In build</span></summary>
-						<div class="idx__body"><p>AI builds landing pages and forms from your content, shapes them for each segment or account, and checks that every form reaches your CRM.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Reports</span><span class="idx__soon">In build</span></summary>
-						<div class="idx__body"><p>Trace pipeline from AI answers and search, through visits, journeys and pages, to deals won in Omniscient.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">Brand Brain</span><span class="idx__soon">In build</span></summary>
-						<div class="idx__body"><p>Your content, voice and proof, broken into atoms that every AI step writes from. Every claim quotes its source.</p></div>
-					</details>
-					<details class="idx__row">
-						<summary><span class="idx__name">API and MCP</span><span class="idx__soon">Live</span></summary>
-						<div class="idx__body"><p>A REST API and an MCP server, so Claude Code and other agents can read and write the same data with the same permissions as the app.</p></div>
-					</details>
+					</div>
+					<ul class="trio">
+						<li><h3>Two-way sync</h3><p>HubSpot, Salesforce and Omniscient write changes back within minutes, with a retry.</p></li>
+						<li><h3>Read-only warehouses</h3><p>One saved SELECT on your schedule, in a read-only transaction with a row limit.</p></li>
+						<li><h3>Imports with undo</h3><p>Any CSV or Excel file, previewed and reversible for 30 days.</p></li>
+					</ul>
 				</div>
 			</div>
 		</section>
 
-		<!-- 5. Sources -->
-		<section class="section" id="sources">
+		<!-- 7. Controls -->
+		<section class="section" id="trust">
 			<div class="wrap reveal">
-				<p class="label">// Your stack</p>
-				<h2 class="sec__h">Where the data comes from.</h2>
-				<p class="sec__lead">You keep your stack. Claritia reads it, cleans it, and writes back where you allow.</p>
-				<div class="marquee" aria-hidden="true">
-					<div class="marquee__row">
-						<span>HubSpot</span><span>Salesforce</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Mailchimp</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Typeform</span><span>Tally</span><span>Calendly</span><span>Stripe</span><span>Snowflake</span><span>BigQuery</span>
-						<span>HubSpot</span><span>Salesforce</span><span>Pipedrive</span><span>Attio</span><span>Close</span><span>Mailchimp</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Typeform</span><span>Tally</span><span>Calendly</span><span>Stripe</span><span>Snowflake</span><span>BigQuery</span>
-					</div>
-				</div>
-				<div class="srcboard">
-					<div class="srcgroup">
-						<h3>CRMs</h3>
-						<p>HubSpot, Salesforce, Omniscient, Pipedrive, Attio, Close</p>
-					</div>
-					<div class="srcgroup">
-						<h3>Email tools</h3>
-						<p>Mailchimp, Klaviyo, ActiveCampaign, Brevo, Kit, MailerLite</p>
-					</div>
-					<div class="srcgroup">
-						<h3>Forms</h3>
-						<p>Typeform, Tally, Webflow forms</p>
-					</div>
-					<div class="srcgroup">
-						<h3>Meetings</h3>
-						<p>Calendly, Cal.com</p>
-					</div>
-					<div class="srcgroup">
-						<h3>Product and billing</h3>
-						<p>Stripe, Intercom</p>
-					</div>
-					<div class="srcgroup">
-						<h3>Warehouses, read-only</h3>
-						<p>Postgres, Redshift, MySQL, ClickHouse, BigQuery, Snowflake, Databricks</p>
-					</div>
-				</div>
-				<div class="srcrun">
-					<div data-ui class="ui ui-panel">
-						<div class="ui-head"><span class="ui-title">HubSpot</span><span class="ui-head__end"><span class="ui-badge ui-badge--green">Active</span></span></div>
-						<table class="ui-table">
-							<thead><tr><th class="ui-th">When</th><th class="ui-th">What</th><th class="ui-th r">Read</th><th class="ui-th r">Written</th><th class="ui-th r">Errors</th></tr></thead>
-							<tbody>
-								<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Contacts</td><td class="ui-td r">240</td><td class="ui-td r">18</td><td class="ui-td r">0</td></tr>
-								<tr><td class="ui-td ui-dim">5m ago</td><td class="ui-td"><span class="ui-badge ui-badge--violet">Out</span> Companies</td><td class="ui-td r">-</td><td class="ui-td r">6</td><td class="ui-td r">0</td></tr>
-								<tr><td class="ui-td ui-dim">1h ago</td><td class="ui-td"><span class="ui-badge ui-badge--brand">In</span> Unsubscribes</td><td class="ui-td r">12</td><td class="ui-td r">12</td><td class="ui-td r">0</td></tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 6. Evidence -->
-		<section class="section section--raised">
-			<div class="wrap reveal">
-				<div class="tiles">
-					<div class="tile tile--head">
-						<h2>Every score, with its evidence.</h2>
-						<p>A number with no reason is a guess. Open any score and every signal shows the visit, form or email behind it.</p>
-					</div>
-					<div class="tile"><h3 class="tile__n">Acme <span class="tile__score">82 / 71</span></h3><p class="tile__sig">pricing ×5, demo, return visit. Evaluating.</p></div>
-					<div class="tile"><h3 class="tile__n">Northwind <span class="tile__score">78 / 54</span></h3><p class="tile__sig">security page by 2 people. Researching.</p></div>
-					<div class="tile tile--wide"><h3 class="tile__n">Globex <span class="tile__score">64 / 38</span></h3><p class="tile__sig">return visit after 3 weeks. Engaged.</p></div>
-					<div class="tile tile--wide"><h3 class="tile__n">Jane Doe <span class="tile__score">Ready</span></h3><p class="tile__sig">fit × intent × engagement, routed to Priya.</p></div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 7. Trust -->
-		<section class="section">
-			<div class="wrap reveal">
-				<p class="label">// Consent and identity</p>
+				<p class="label label--accent">Trust</p>
 				<h2 class="sec__h">Consent, identity, erasure.</h2>
-				<div class="trust">
-					<div class="trust__item"><h3>Every link shows its proof.</h3><p>A visit becomes a person as Verified, Asserted or Probable, with the evidence, and it can be undone.</p></div>
-					<div class="trust__item"><h3>Consent is on record.</h3><p>Every consent keeps its wording, source and date. Imports read unsubscribes before a row lands.</p></div>
-					<div class="trust__item"><h3>Region rules, on their own.</h3><p>Claritia follows each visitor's region privacy rules by itself, so the data stays lawful in each place.</p></div>
-					<div class="trust__item"><h3>Erase on request.</h3><p>Remove a contact and their events, consents and links are gone, from the app or the API.</p></div>
+				<p class="sec__lead">The controls a marketing team needs before it can send.</p>
+				<div class="guards">
+					<div class="guard">
+						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5l6 2.5v5c0 3.6-2.6 6.4-6 7.5-3.4-1.1-6-3.9-6-7.5V5z"/><path d="M7.4 9.9l1.9 1.9 3.3-3.7"/></svg>
+						<h3>Identity with evidence</h3>
+						<p>A visit becomes a person as Verified, Asserted or Probable, with the proof, and it can be undone.</p>
+					</div>
+					<div class="guard">
+						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 2.5h6.5L15.5 6.5v11h-10.5z"/><path d="M11.5 2.5v4h4"/><path d="M7.3 11h5.4M7.3 13.8h3.4"/></svg>
+						<h3>Consent on record</h3>
+						<p>Every consent keeps its wording, source and date. Imports read unsubscribes before a row lands.</p>
+					</div>
+					<div class="guard">
+						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M2.8 10h14.4"/><path d="M10 2.8c2.3 2.5 2.3 11.9 0 14.4M10 2.8c-2.3 2.5-2.3 11.9 0 14.4"/></svg>
+						<h3>Region rules, on their own</h3>
+						<p>Claritia follows each visitor's region privacy rules by itself, so the data stays lawful in each place.</p>
+					</div>
+					<div class="guard">
+						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 5.5h13"/><path d="M8 5.5V3.8h4v1.7"/><path d="M5.6 5.5l1 11h6.8l1-11"/></svg>
+						<h3>Erase on request</h3>
+						<p>Remove a contact and their events, consents and links are gone, from the app or the API.</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- 8. Pricing -->
-		<section class="section section--raised" id="pricing">
+		<!-- 8. Capabilities -->
+		<section class="section section--raised" id="capabilities">
 			<div class="wrap reveal">
-				<p class="label">// Pricing</p>
-				<h2 class="sec__h">Pick a plan.</h2>
-				<div class="plans">
-					<input class="p-radio" type="radio" name="plan" id="plan-growth" checked>
-					<input class="p-radio" type="radio" name="plan" id="plan-starter">
-					<input class="p-radio" type="radio" name="plan" id="plan-scale">
-					<div class="plan-names">
-						<label for="plan-starter">Starter</label>
-						<label for="plan-growth">Growth</label>
-						<label for="plan-scale">Scale</label>
+				<p class="label label--accent">Live today</p>
+				<h2 class="sec__h">Everything it does.</h2>
+				<p class="sec__lead">Website intelligence, accounts, contacts, leads, segments, sources, warehouses, imports, sending, forms and scoring are live. Journeys, pages, reports and the Brand Brain are in build.</p>
+				<div class="caps">
+					<div class="cap"><h3>Website intelligence<span class="cap__flag">Live</span></h3><p>Names the company and the person behind each visit, with the pages, the source and the time.</p></div>
+					<div class="cap"><h3>Accounts<span class="cap__flag">Live</span></h3><p>Fit, intent and a stage with a one-line reason why now.</p></div>
+					<div class="cap"><h3>Contacts and companies<span class="cap__flag">Live</span></h3><p>One clean record per person and firm, with custom fields and field packs.</p></div>
+					<div class="cap"><h3>Leads and routing<span class="cap__flag">Live</span></h3><p>A board by lead status, with owners, scores and an SLA timer.</p></div>
+					<div class="cap"><h3>Segments<span class="cap__flag">Live</span></h3><p>Live AND/OR rules over fields, activity, visits and consent, three levels deep.</p></div>
+					<div class="cap"><h3>Sources<span class="cap__flag">Live</span></h3><p>CRMs, email tools, forms, meetings and billing, in and out.</p></div>
+					<div class="cap"><h3>Warehouses<span class="cap__flag">Live</span></h3><p>One saved SELECT, read-only, on your schedule.</p></div>
+					<div class="cap"><h3>Imports<span class="cap__flag">Live</span></h3><p>Any CSV or Excel file, previewed and reversible for 30 days.</p></div>
+					<div class="cap"><h3>Sending<span class="cap__flag">Live</span></h3><p>Your own verified domain, with DKIM, SPF and DMARC checked.</p></div>
+					<div class="cap"><h3>Forms<span class="cap__flag">Live</span></h3><p>A form builder and an embeddable form, with consent wording per region.</p></div>
+					<div class="cap"><h3>Scoring and handoff<span class="cap__flag">Live</span></h3><p>Ready leads hand off with a brief and a Slack alert.</p></div>
+					<div class="cap"><h3>Sync log<span class="cap__flag">Live</span></h3><p>Every change in and out, with a direction badge and a retry.</p></div>
+					<div class="cap"><h3>API and MCP<span class="cap__flag">Live</span></h3><p>Agents read and write the same data with the same permissions.</p></div>
+					<div class="cap"><h3>Journeys<span class="cap__flag">In build</span></h3><p>Agent steps pick the next move, and you approve the sends.</p></div>
+					<div class="cap"><h3>Pages<span class="cap__flag">In build</span></h3><p>Landing pages and forms built from your content.</p></div>
+					<div class="cap"><h3>Reports<span class="cap__flag">In build</span></h3><p>Trace pipeline from AI answers to deals won.</p></div>
+					<div class="cap"><h3>Brand Brain<span class="cap__flag">In build</span></h3><p>Your content and proof as atoms every AI step writes from.</p></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 9. Pricing -->
+		<section class="section" id="pricing">
+			<div class="wrap reveal">
+				<p class="label label--accent">Pricing</p>
+				<h2 class="sec__h">Pricing that scales with volume.</h2>
+				<div class="tiers">
+					<div class="tier">
+						<h3>Starter</h3>
+						<p class="tier__price">$299 <span>a month</span></p>
+						<p class="tier__what">For one team and one site, with the website lens and your first scored accounts.</p>
+						<ul class="tier__list">
+							<li><b>5,000 contacts</b>, 1 site</li>
+							<li>Website intelligence and account scoring</li>
+							<li>Contacts, companies, leads and segments</li>
+							<li>Sources, imports and the sync log</li>
+						</ul>
+						<div class="tier__cta"><a class="btn btn--line" href="https://app.tryclaritia.com">Start free</a></div>
 					</div>
-					<div class="plan-stage">
-						<div class="plan-body" data-plan="starter">
-							<p class="plan-price">$299 <span class="plan-period">a month</span></p>
-							<p class="plan-what">For one team and one site, with the website lens and your first scored accounts.</p>
-							<ul class="plan-items">
-								<li><b>5,000 contacts</b>, 1 site</li>
-								<li>Website intelligence and account scoring</li>
-								<li>Contacts, companies, leads and segments</li>
-								<li>Sources, imports and the sync log</li>
-							</ul>
-							<a class="btn btn--primary plan-cta" href="https://app.tryclaritia.com">Start free</a>
-						</div>
-						<div class="plan-body" data-plan="growth">
-							<p class="plan-price">$799 <span class="plan-period">a month</span></p>
-							<p class="plan-what">For a go-to-market team that sends, syncs a CRM both ways and runs the warehouse.</p>
-							<ul class="plan-items">
-								<li><b>25,000 contacts</b>, 3 sites</li>
-								<li>Two-way HubSpot, Salesforce or Omniscient sync</li>
-								<li>Forms, sending and verified domains</li>
-								<li>Warehouse sources and scoring and handoff</li>
-								<li>Journeys, pages and reports as they ship</li>
-							</ul>
-							<a class="btn btn--primary plan-cta" href="https://app.tryclaritia.com">Start free</a>
-						</div>
-						<div class="plan-body" data-plan="scale">
-							<p class="plan-price">$1,999 <span class="plan-period">a month, from</span></p>
-							<p class="plan-what">For teams with volume, compliance needs and a warehouse at the centre.</p>
-							<ul class="plan-items">
-								<li><b>100,000+ contacts</b></li>
-								<li>Salesforce sync and dedicated sending IPs</li>
-								<li>Marketing agent and SSO</li>
-								<li>Priority support</li>
-							</ul>
-							<a class="btn btn--primary plan-cta" href="mailto:hello@tryclaritia.com">Talk to us</a>
-						</div>
+					<div class="tier tier--rec">
+						<p class="tier__flag">Recommended</p>
+						<h3>Growth</h3>
+						<p class="tier__price">$799 <span>a month</span></p>
+						<p class="tier__what">For a go-to-market team that sends, syncs a CRM both ways and runs the warehouse.</p>
+						<ul class="tier__list">
+							<li><b>25,000 contacts</b>, 3 sites</li>
+							<li>Two-way HubSpot, Salesforce or Omniscient sync</li>
+							<li>Forms, sending and verified domains</li>
+							<li>Warehouse sources, scoring and handoff</li>
+							<li>Journeys, pages and reports as they ship</li>
+						</ul>
+						<div class="tier__cta"><a class="btn btn--primary" href="https://app.tryclaritia.com">Start free</a></div>
+					</div>
+					<div class="tier">
+						<h3>Scale</h3>
+						<p class="tier__price">$1,999 <span>a month, from</span></p>
+						<p class="tier__what">For teams with volume, compliance needs and a warehouse at the centre.</p>
+						<ul class="tier__list">
+							<li><b>100,000+ contacts</b></li>
+							<li>Salesforce sync and dedicated sending IPs</li>
+							<li>Marketing agent and SSO</li>
+							<li>Priority support</li>
+						</ul>
+						<div class="tier__cta"><a class="btn btn--line" href="mailto:hello@tryclaritia.com?subject=Claritia%20Scale">Talk to us</a></div>
 					</div>
 				</div>
 				<p class="sec__lead" style="margin-top:28px">Overage is $10 per 1,000 contacts. Run Arrowsterr, Claritia and Omniscient together and get 20% off the suite.</p>
-			</div>
-		</section>
-
-		<!-- 9. FAQ -->
-		<section class="section" id="faq">
-			<div class="wrap faq reveal">
-				<div class="faq__head"><p class="label">// Questions</p><h2 class="sec__h">Questions.</h2></div>
-				<div class="faq__list">
-					<details name="faq"><summary>Does Claritia need my whole CRM?<span class="plus" aria-hidden="true"></span></summary><p>No. Connect a CRM and we keep it in step, or start with a file, a form or the website script alone. Every source is independent, and the sync is two-way only where you switch it on.</p></details>
-					<details name="faq"><summary>What happens to a visitor who never fills a form?<span class="plus" aria-hidden="true"></span></summary><p>They stay a device and a company, matched by network. We do not invent an email. When a form, a sign-in or an email click ties them to a person, the visit joins that record and the evidence is kept.</p></details>
-					<details name="faq"><summary>How is consent handled in the EU?<span class="plus" aria-hidden="true"></span></summary><p>Consent is recorded per contact with its wording, source and date, and marketing only sends with a lawful basis for that region. Where a country needs opt-in, the form shows an unticked box.</p></details>
-					<details name="faq"><summary>Can I export everything?<span class="plus" aria-hidden="true"></span></summary><p>Yes. Contacts, fields and activity export to CSV, and the API and MCP server read the same data with the same permissions. There is no lock-in.</p></details>
-					<details name="faq"><summary>What is live today, and what is not?<span class="plus" aria-hidden="true"></span></summary><p>Website intelligence, accounts, contacts, leads, companies, segments, sources, warehouses, imports, the sync log, sending, forms and scoring are live. Journeys, pages, reports and the Brand Brain are in build.</p></details>
-					<details name="faq"><summary>Does it read my warehouse?<span class="plus" aria-hidden="true"></span></summary><p>Yes, read-only. One saved SELECT, on your schedule, from Postgres, Redshift, MySQL, ClickHouse, BigQuery, Snowflake or Databricks. The query runs in a read-only transaction with a row limit.</p></details>
-				</div>
 			</div>
 		</section>
 
@@ -539,7 +498,7 @@
 					<input class="close__email" type="email" name="email" placeholder="you@company.com" aria-label="Work email" autocomplete="email">
 					<button class="close__go" type="submit">Start free</button>
 				</form>
-				<p class="close__note">Free to start. Connect a source when you are ready.</p>
+				<p class="close__note">Free to start. Connect a source when you are ready. Prefer a walkthrough? <a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>.</p>
 			</div>
 		</section>
 	</main>
@@ -562,10 +521,17 @@
 			<div class="site-foot__cols">
 				<nav class="site-foot__col" aria-label="Product">
 					<h3>Product</h3>
-					<a href="#product">Screens</a>
-					<a href="#sources">Sources</a>
-					<a href="#pricing">Pricing</a>
-					<a href="#faq">FAQ</a>
+					<a href="#how">Identify</a>
+					<a href="#database">One database</a>
+					<a href="#agents">Agents</a>
+					<a href="#capabilities">All capabilities</a>
+				</nav>
+				<nav class="site-foot__col" aria-label="Sources">
+					<h3>Sources</h3>
+					<a href="#sources">CRMs</a>
+					<a href="#sources">Email tools</a>
+					<a href="#sources">Forms and meetings</a>
+					<a href="#sources">Warehouses</a>
 				</nav>
 				<nav class="site-foot__col" aria-label="Suite">
 					<h3>Suite</h3>
@@ -576,7 +542,7 @@
 				<nav class="site-foot__col" aria-label="Company">
 					<h3>Company</h3>
 					<a href="mailto:hello@tryclaritia.com">Contact</a>
-					<a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a>
+					<a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
 					<a href="https://app.tryclaritia.com">Sign in</a>
 				</nav>
 			</div>

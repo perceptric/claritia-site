@@ -103,6 +103,7 @@ button, input, select { font: inherit; letter-spacing: inherit; color: inherit; 
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 .muted { color: var(--fg-70); }
 .label { font-family: var(--code); font-size: 13px; letter-spacing: 0.02em; color: var(--fg-40); }
+.label--accent { color: var(--brand-strong); }
 .grad {
   background-image: linear-gradient(96deg, #ffffff 16%, #cfe0ff 54%, #60a5fa 102%); /* taste-skill-ignore */
   -webkit-background-clip: text; background-clip: text; color: transparent; /* taste-skill-ignore */
@@ -205,7 +206,7 @@ button, input, select { font: inherit; letter-spacing: inherit; color: inherit; 
 .site-foot__ai a { font-size: 13px; color: var(--fg-70); transition: color 0.15s var(--ease); }
 .site-foot__ai a:hover { color: var(--fg); }
 .site-foot__cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
-@media (min-width: 560px) { .site-foot__cols { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 760px) { .site-foot__cols { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .site-foot__col h3 { font-family: var(--code); font-size: 13px; font-weight: 400; color: var(--fg-40); margin-bottom: 12px; }
 .site-foot__col a { display: block; padding: 4px 0; font-size: 14px; color: var(--fg-70); transition: color 0.15s var(--ease); }
 .site-foot__col a:hover { color: var(--fg); }
