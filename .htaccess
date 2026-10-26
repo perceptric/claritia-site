@@ -19,9 +19,10 @@ RewriteRule ^(.*)$ https://tryclaritia.com/$1 [R=301,L]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
-# Hostinger deploys the whole repo here, so hide the git folder, dot files and the README
+# Hostinger deploys the whole repo here, so hide the git folder, dot files, the README, AGENTS.md and docs/
 RewriteRule (^|/)\.(?!well-known/) - [F]
 RewriteRule ^README\.md$ - [F]
+RewriteRule ^(AGENTS\.md|docs/) - [F]
 
 # Old app links on this domain go to the same path on the app. The query string comes along.
 RewriteRule ^((visitors|accounts|people|contacts|leads|companies|objects|segments|journeys|pages|reports|sources|imports|warehouses|ask|settings|tests|blocks|map|runs|environments|schedules|approvals|insights|start)(/.*)?)$ https://app.tryclaritia.com/$1 [R=301,L]
