@@ -33,5 +33,12 @@ RewriteRule ^((visitors|accounts|people|contacts|leads|companies|objects|segment
   ExpiresByType image/x-icon "access plus 1 year"
   ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
   ExpiresByType text/css "access plus 1 hour"
-  ExpiresByType text/html "access plus 10 minutes"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# HTML revalidates every load, so a change goes live at once
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
 </IfModule>
