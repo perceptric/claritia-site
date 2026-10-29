@@ -28,6 +28,9 @@ RewriteRule ^(AGENTS\.md|tools/) - [F]
 # Old app links on this domain go to the same path on the app. The query string comes along.
 RewriteRule ^((visitors|accounts|people|contacts|leads|companies|objects|segments|journeys|pages|reports|sources|imports|warehouses|ask|settings|tests|blocks|map|runs|environments|schedules|approvals|insights|start)(/.*)?)$ https://app.tryclaritia.com/$1 [R=301,L]
 
+# Booking pages live on the app; the short link tryclaritia.com/booking/<name> sends people there.
+RewriteRule ^(booking(/.*)?)$ https://app.tryclaritia.com/$1 [R=302,L]
+
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/png "access plus 1 year"
