@@ -1,0 +1,56 @@
+<svg class="catch" viewBox="0 0 520 520" role="img" aria-label="Visitors drift in. One lead is caught, known, routed and booked.">
+  <defs><pattern id="catch-grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="var(--line)"/></pattern></defs>
+  <rect x="30" y="30" width="460" height="460" fill="url(#catch-grid)"/>
+  <rect x="150" y="150" width="220" height="220" fill="none" stroke="var(--line-strong)" stroke-dasharray="2 4"/>
+  <g><circle class="v fit" cx="55.3" cy="323.1" r="3.2" style="--i:0;--dx:140.7px;--dy:-43.4px"/>
+    <circle class="v" cx="54.3" cy="305.1" r="2.6" style="--i:1;--dx:68.0px;--dy:-14.9px"/>
+    <circle class="v" cx="344.1" cy="453.3" r="2.6" style="--i:2;--dx:-27.5px;--dy:-63.2px"/>
+    <circle class="v" cx="308.4" cy="85.0" r="2.6" style="--i:3;--dx:-12.5px;--dy:45.2px"/>
+    <circle class="v fit" cx="455.1" cy="385.0" r="3.2" style="--i:4;--dx:-146.5px;--dy:-93.8px"/>
+    <circle class="v" cx="495.4" cy="323.4" r="2.6" style="--i:5;--dx:-91.3px;--dy:-24.6px"/>
+    <circle class="v" cx="136.2" cy="80.5" r="2.6" style="--i:6;--dx:49.2px;--dy:71.3px"/>
+    <circle class="v" cx="471.0" cy="280.0" r="2.6" style="--i:7;--dx:-82.3px;--dy:-7.8px"/>
+    <circle class="v fit" cx="330.4" cy="438.5" r="3.2" style="--i:8;--dx:-59.0px;--dy:-149.5px"/>
+    <circle class="v" cx="59.4" cy="306.2" r="2.6" style="--i:9;--dx:57.8px;--dy:-13.3px"/>
+    <circle class="v" cx="41.8" cy="233.6" r="2.6" style="--i:10;--dx:80.2px;--dy:9.7px"/>
+    <circle class="v" cx="151.8" cy="83.5" r="2.6" style="--i:11;--dx:38.1px;--dy:62.1px"/>
+    <circle class="v fit" cx="504.7" cy="256.4" r="3.2" style="--i:12;--dx:-181.1px;--dy:2.7px"/>
+    <circle class="v" cx="208.4" cy="69.8" r="2.6" style="--i:13;--dx:16.8px;--dy:61.8px"/>
+    <circle class="v" cx="216.3" cy="434.5" r="2.6" style="--i:14;--dx:8.5px;--dy:-34.0px"/>
+    <circle class="v" cx="70.1" cy="397.2" r="2.6" style="--i:15;--dx:79.2px;--dy:-57.3px"/>
+    <circle class="v fit" cx="486.2" cy="198.9" r="3.2" style="--i:16;--dx:-197.2px;--dy:53.2px"/>
+    <circle class="v" cx="319.8" cy="491.1" r="2.6" style="--i:17;--dx:-25.1px;--dy:-97.2px"/>
+    <circle class="v" cx="461.3" cy="235.0" r="2.6" style="--i:18;--dx:-72.7px;--dy:9.0px"/>
+    <circle class="v" cx="102.3" cy="93.2" r="2.6" style="--i:19;--dx:65.7px;--dy:69.4px"/>
+    <circle class="v fit" cx="429.3" cy="363.2" r="3.2" style="--i:20;--dx:-110.8px;--dy:-67.5px"/>
+    <circle class="v" cx="269.3" cy="77.0" r="2.6" style="--i:21;--dx:-2.5px;--dy:49.8px"/>
+    <circle class="v" cx="404.3" cy="366.3" r="2.6" style="--i:22;--dx:-27.1px;--dy:-20.0px"/>
+    <circle class="v" cx="354.0" cy="452.4" r="2.6" style="--i:23;--dx:-33.5px;--dy:-68.6px"/>
+    <circle class="v fit" cx="342.4" cy="470.7" r="3.2" style="--i:24;--dx:-69.5px;--dy:-177.9px"/>
+    <circle class="v" cx="146.6" cy="116.2" r="2.6" style="--i:25;--dx:28.4px;--dy:36.0px"/>
+    <circle class="v" cx="304.8" cy="448.6" r="2.6" style="--i:26;--dx:-10.3px;--dy:-43.3px"/>
+    <circle class="v" cx="324.6" cy="74.7" r="2.6" style="--i:27;--dx:-16.1px;--dy:46.1px"/>
+    <circle class="v fit" cx="309.5" cy="456.5" r="3.2" style="--i:28;--dx:-33.8px;--dy:-134.2px"/>
+    <circle class="v" cx="145.6" cy="118.4" r="2.6" style="--i:29;--dx:20.3px;--dy:25.1px"/>
+    <circle class="v" cx="304.2" cy="448.0" r="2.6" style="--i:30;--dx:-11.0px;--dy:-46.8px"/>
+    <circle class="v" cx="166.8" cy="432.1" r="2.6" style="--i:31;--dx:31.5px;--dy:-58.2px"/>
+    <circle class="v fit" cx="442.1" cy="375.8" r="3.2" style="--i:32;--dx:-148.6px;--dy:-94.5px"/>
+    <circle class="v" cx="98.3" cy="140.5" r="2.6" style="--i:33;--dx:50.7px;--dy:37.5px"/>
+    <circle class="v" cx="462.0" cy="207.0" r="2.6" style="--i:34;--dx:-66.0px;--dy:17.3px"/>
+    <circle class="v" cx="385.5" cy="120.3" r="2.6" style="--i:35;--dx:-37.7px;--dy:42.0px"/>
+    <circle class="v fit" cx="454.8" cy="133.6" r="3.2" style="--i:36;--dx:-161.3px;--dy:104.6px"/>
+    <circle class="v" cx="343.7" cy="470.7" r="2.6" style="--i:37;--dx:-28.8px;--dy:-72.6px"/>
+    <circle class="v" cx="339.5" cy="488.0" r="2.6" style="--i:38;--dx:-31.0px;--dy:-88.9px"/>
+    <circle class="v" cx="97.3" cy="136.2" r="2.6" style="--i:39;--dx:59.1px;--dy:44.9px"/>
+    <circle class="v fit" cx="495.3" cy="318.4" r="3.2" style="--i:40;--dx:-196.9px;--dy:-48.8px"/>
+    <circle class="v" cx="205.7" cy="74.8" r="2.6" style="--i:41;--dx:13.2px;--dy:45.0px"/>
+    <circle class="v" cx="99.3" cy="148.6" r="2.6" style="--i:42;--dx:52.3px;--dy:36.3px"/>
+    <circle class="v" cx="226.7" cy="83.3" r="2.6" style="--i:43;--dx:8.7px;--dy:46.0px"/>
+    <circle class="v fit" cx="41.5" cy="174.5" r="3.2" style="--i:44;--dx:167.7px;--dy:65.6px"/>
+    <circle class="v" cx="214.9" cy="494.9" r="2.6" style="--i:45;--dx:20.1px;--dy:-104.8px"/></g>
+  <g fill="none" stroke="var(--ink)" stroke-width="1.5" stroke-linecap="square"><path class="bk" d="M150 184 V150 H184"/><path class="bk" d="M370 184 V150 H336"/><path class="bk" d="M370 336 V370 H336"/><path class="bk" d="M150 336 V370 H184"/></g>
+  <g><rect class="corner" x="145" y="145" width="10" height="10" style="--d:0s"/><text class="lab clab" x="134" y="132" text-anchor="end" style="--d:0s"><tspan class="num" dx="0">01</tspan> Capture</text><rect class="corner" x="365" y="145" width="10" height="10" style="--d:1.44s"/><text class="lab clab" x="386" y="132" text-anchor="start" style="--d:1.44s"><tspan class="num" dx="0">02</tspan> Know</text><rect class="corner" x="365" y="365" width="10" height="10" style="--d:2.88s"/><text class="lab clab" x="386" y="392" text-anchor="start" style="--d:2.88s"><tspan class="num" dx="0">03</tspan> Route</text><rect class="corner" x="145" y="365" width="10" height="10" style="--d:4.32s"/><text class="lab clab" x="134" y="392" text-anchor="end" style="--d:4.32s"><tspan class="num" dx="0">04</tspan> Book</text></g>
+  <circle class="runner" r="5" cx="0" cy="0"/>
+  <path class="tick" pathLength="1" d="M228 262 L252 286 L296 236"/>
+  <g class="booked"><rect x="176" y="392" width="168" height="28" rx="14" fill="var(--ink)"/><circle cx="194" cy="406" r="3.5" fill="var(--mint)"/><text x="206" y="410" fill="#fff" style="font:500 12px var(--font)">Booked for Thu 10:00</text></g>
+</svg>
