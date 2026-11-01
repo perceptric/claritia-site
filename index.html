@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=7">
-<link rel="stylesheet" href="/assets/tour.css?v=7">
+<link rel="stylesheet" href="/assets/story.css?v=1">
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
 </head>
 <body>
@@ -46,30 +46,18 @@
           <button type="button" class="nav__trigger" aria-expanded="false">Product <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
           <div class="nav__panel">
             <div class="menu">
-              <div class="menu__col"><span class="menu__label">CRM</span>
-                <a class="menu__item" href="#crm"><b>Contacts and companies</b><small>Every visit on the record</small></a>
-                <a class="menu__item" href="#crm"><b>Opportunities</b><small>A board for every deal</small></a>
+              <div class="menu__col"><span class="menu__label">Inbound</span>
+                <a class="menu__item" href="#brand"><b>Brand</b><small>Forms that match your website</small></a>
+                <a class="menu__item" href="#forms"><b>Forms</b><small>Built from a description</small></a>
+                <a class="menu__item" href="#meetings"><b>Meetings</b><small>Booked inside the form</small></a>
               </div>
               <div class="menu__col"><span class="menu__label">Automation</span>
-                <a class="menu__item" href="#workflows"><b>Workflows</b><small>Trigger to goal on one canvas</small></a>
-                <a class="menu__item" href="#routing"><b>Routing</b><small>The right rep, with a reason</small></a>
-                <a class="menu__item" href="#enrichment"><b>Enrichment</b><small>Every value shows its source</small></a>
+                <a class="menu__item" href="#routing"><b>Routing</b><small>The right representative for each lead</small></a>
+                <a class="menu__item" href="#nurture"><b>Workflows and scoring</b><small>Follow-up and prioritization</small></a>
               </div>
-              <div class="menu__col"><span class="menu__label">Inbound</span>
-                <a class="menu__item" href="#forms"><b>Forms</b><small>Two fields instead of six</small></a>
-                <a class="menu__item" href="#scheduling"><b>Scheduling</b><small>Book inside the form</small></a>
-                <a class="menu__item" href="#visitors"><b>Visitors</b><small>The companies on your site</small></a>
-              </div>
-              <div class="menu__col"><span class="menu__label">Nurture</span>
-                <a class="menu__item" href="#emails"><b>Emails</b><small>From your domain, approved first</small></a>
-                <a class="menu__item" href="#scoring"><b>Lead scoring</b><small>Fit and intent in one number</small></a>
-              </div>
-              <div class="menu__aside">
-                <span class="menu__label">See it</span>
-                <a class="menu__link" href="#tour">Product tour</a>
-                <a class="menu__link" href="#try">Try it</a>
-                <span class="menu__label">The suite</span>
-                <a class="menu__link" href="#suite">Arrowsterr, Claritia, Omniscient</a>
+              <div class="menu__col"><span class="menu__label">CRM</span>
+                <a class="menu__item" href="#crm"><b>Contacts and companies</b><small>One record per person</small></a>
+                <a class="menu__item" href="#crm"><b>CRM sync</b><small>HubSpot and Salesforce</small></a>
               </div>
             </div>
           </div>
@@ -94,13 +82,12 @@
     <details>
       <summary>Product <svg aria-hidden="true"><use href="#i-chev"/></svg></summary>
       <div class="sheet__group">
-        <span class="sheet__label">CRM</span><a href="#crm">Contacts, companies, opportunities</a>
-        <span class="sheet__label">Automation</span><a href="#workflows">Workflows</a><a href="#routing">Routing</a><a href="#enrichment">Enrichment</a>
-        <span class="sheet__label">Inbound</span><a href="#forms">Forms</a><a href="#scheduling">Scheduling</a><a href="#visitors">Visitors</a>
-        <span class="sheet__label">Nurture</span><a href="#emails">Emails</a><a href="#scoring">Lead scoring</a>
+        <span class="sheet__label">Inbound</span><a href="#brand">Brand</a><a href="#forms">Forms</a><a href="#meetings">Meetings</a>
+        <span class="sheet__label">Automation</span><a href="#routing">Routing</a><a href="#nurture">Workflows and scoring</a>
+        <span class="sheet__label">CRM</span><a href="#crm">Contacts and CRM sync</a>
       </div>
     </details>
-    <a class="sheet__plain" href="#tour">Product tour</a>
+    <a class="sheet__plain" href="#product">Product</a>
     <a class="sheet__plain" href="#pricing">Pricing</a>
     <a class="sheet__plain" href="#faq">Questions</a>
     <a class="sheet__plain" href="https://app.tryclaritia.com">Sign in</a>
@@ -117,14 +104,14 @@
   <section class="hero">
     <div class="wrap hero__in">
       <div class="hero__copy">
-        <a class="news reveal" href="#tour"><span class="point point--live"></span><b>New</b> Forms that book the meeting <span aria-hidden="true">&rarr;</span></a>
-        <h1 class="display reveal" data-delay="1">Catch every lead.<br><span class="two">Book the meeting.</span></h1>
-        <p class="lead reveal" data-delay="2">Claritia names the company behind each visit, asks two questions instead of six, sends the lead to the right rep and books the call before they leave your site.</p>
+        <a class="news reveal" href="#product"><span class="point point--live"></span><b>New</b> Forms built in your brand <span aria-hidden="true">&rarr;</span></a>
+        <h1 class="display reveal" data-delay="1">Forms, routing and scheduling<br><span class="two">in one inbound platform.</span></h1>
+        <p class="lead reveal" data-delay="2">Claritia builds forms in your brand, assigns each lead to the right representative and books the meeting before the visitor leaves your site. Every submission is kept in one CRM.</p>
         <div class="hero__ctas reveal" data-delay="3">
           <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com">Start free <span class="nudge" aria-hidden="true">&rarr;</span></a>
-          <a class="btn btn--ghost btn--lg" href="#tour">See it work</a>
+          <a class="btn btn--ghost btn--lg" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
         </div>
-        <p class="small reveal" data-delay="3">Free plan. Live in 15 minutes. No card needed.</p>
+        <p class="small reveal" data-delay="3">Free plan available. No card required.</p>
       </div>
       <div class="hero__art reveal" data-delay="1">
 <!-- catch:start -->
@@ -209,231 +196,149 @@
     </div>
   </section>
 
-  <!-- The product tour: one lead, Dana Lee from Acme, in four parts. Built by tools/tour.py, played by assets/tour.js. -->
-  <!-- tour:start -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="t-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z"/></symbol><symbol id="t-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol><symbol id="t-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol><symbol id="t-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol><symbol id="t-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol><symbol id="t-flow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/></symbol><symbol id="t-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="19" r="2.5"/><path d="M6 8.5v1a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-1M12 13.5v3"/></symbol><symbol id="t-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol><symbol id="t-form" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol><symbol id="t-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="t-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="t-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol><symbol id="t-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></symbol><symbol id="t-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 14 4-5"/></symbol><symbol id="t-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M7 12h10M10 18h4"/></symbol><symbol id="t-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></symbol><symbol id="t-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol><symbol id="t-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></symbol><symbol id="t-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7z" fill="currentColor" stroke="none"/></symbol></defs></svg>
-  <section class="tour" id="tour" data-tour>
-    <div class="wrap">
-      <div class="tour__head reveal">
-        <p class="eyebrow">Product tour</p>
-        <h2 class="h2">One lead, twenty seconds.<br><span class="two">Press play.</span></h2>
-      </div>
-      <div class="tour__tabs" role="tablist" aria-label="Product tour"><button type="button" role="tab" id="tab-capture" data-tab="capture" aria-selected="true" aria-controls="capture"><span class="tour__n">01</span><b>Capture</b><small>Forms that know who is there</small><i class="tour__prog"></i></button><button type="button" role="tab" id="tab-qualify" data-tab="qualify" aria-selected="false" aria-controls="qualify"><span class="tour__n">02</span><b>Qualify</b><small>Enrich, score and decide</small><i class="tour__prog"></i></button><button type="button" role="tab" id="tab-route" data-tab="route" aria-selected="false" aria-controls="route"><span class="tour__n">03</span><b>Route</b><small>The right rep, with a reason</small><i class="tour__prog"></i></button><button type="button" role="tab" id="tab-book" data-tab="book" aria-selected="false" aria-controls="book"><span class="tour__n">04</span><b>Book</b><small>The meeting, before they leave</small><i class="tour__prog"></i></button></div>
-      <section class="dstage" data-stage="capture" id="capture" style="--len:6" role="tabpanel" aria-labelledby="tab-capture"><div class="stage__grid"><div class="stage__rail"><div class="stage__title"><p class="eyebrow">Capture</p><h3 class="stage__h">Catch every visit.<br><span class="two">Name the company first.</span></h3></div><ol class="tsteps"><li><button type="button" data-go="0"><span class="tsteps__n">01</span><span class="tsteps__t"><b>Visit</b><small>Dana opens Lumen's pricing page. Claritia names her company before she types.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="1.5"><span class="tsteps__n">02</span><span class="tsteps__t"><b>Name</b><small>Acme, 201 to 500 people, SaaS. Pages read, and how long.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="2.7"><span class="tsteps__n">03</span><span class="tsteps__t"><b>Form</b><small>She types her email. Claritia fills the rest, so the form asks two things.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="4.5"><span class="tsteps__n">04</span><span class="tsteps__t"><b>Send</b><small>One click, and she is a lead.</small></span><i class="tsteps__bar"></i></button></li></ol><div class="tcaps" aria-live="polite"><p class="tcap fade" data-at="0" data-off="1.5">Dana opens Lumen's pricing page. Claritia names her company before she types.</p><p class="tcap fade" data-at="1.5" data-off="2.7">Acme, 201 to 500 people, SaaS. Pages read, and how long.</p><p class="tcap fade" data-at="2.7" data-off="4.5">She types her email. Claritia fills the rest, so the form asks two things.</p><p class="tcap fade" data-at="4.5">One click, and she is a lead.</p></div><div class="ctl">
-        <button type="button" class="ctl__btn" data-act="prev" aria-label="Previous step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ctl__btn ctl__btn--main" data-act="play" aria-label="Play or pause"><svg class="ctl__play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg><svg class="ctl__pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.5" height="13" rx="1" fill="currentColor"/><rect x="13.5" y="5.5" width="3.5" height="13" rx="1" fill="currentColor"/></svg><svg class="ctl__again" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ctl__btn" data-act="next" aria-label="Next step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="tour__next" data-next="qualify">Next: Qualify <span aria-hidden="true">&rarr;</span></button>
-      </div></div><div class="stage__view"><div class="canvas-wrap" aria-hidden="true"><div class="canvas" data-canvas data-w="1000" data-h="580" data-crop="204" style="width:1000px;height:580px"><div class="ground"></div><div class="win" style="left:20px;top:20px;width:960px;height:540px"><div class="side"><div class="side__ws"><svg class="side__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="var(--signal)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Lumen<span class="side__plan">Growth</span></div><div class="side__lab">CRM</div><div class="side__i"><svg aria-hidden="true"><use href="#t-user"/></svg>Contacts</div><div class="side__i"><svg aria-hidden="true"><use href="#t-building"/></svg>Companies</div><div class="side__i"><svg aria-hidden="true"><use href="#t-target"/></svg>Opportunities</div><div class="side__i"><svg aria-hidden="true"><use href="#t-cal"/></svg>Meetings</div><div class="side__lab">Automation</div><div class="side__i"><svg aria-hidden="true"><use href="#t-flow"/></svg>Workflows</div><div class="side__i"><svg aria-hidden="true"><use href="#t-route"/></svg>Routing</div><div class="side__i"><svg aria-hidden="true"><use href="#t-spark"/></svg>Enrichment</div><div class="side__lab">Inbound</div><div class="side__i"><svg aria-hidden="true"><use href="#t-form"/></svg>Forms</div><div class="side__i"><svg aria-hidden="true"><use href="#t-clock"/></svg>Scheduling</div><div class="side__i cur"><svg aria-hidden="true"><use href="#t-eye"/></svg>Visitors</div><div class="side__lab">Nurture</div><div class="side__i"><svg aria-hidden="true"><use href="#t-mail"/></svg>Emails</div><div class="side__i"><svg aria-hidden="true"><use href="#t-users"/></svg>Segments</div><div class="side__i"><svg aria-hidden="true"><use href="#t-gauge"/></svg>Lead scoring</div></div><div class="bar"><span class="bar__crumb">Visitors / <b>Feed</b></span><span class="bar__sp"></span><span class="chip"><span class="point point--live" style="width:6px;height:6px;box-shadow:0 0 0 3px var(--signal-soft)"></span>Live</span><span class="chip"><svg aria-hidden="true"><use href="#t-filter"/></svg>Filter</span></div><div class="body"><div class="tb" style="left:0;top:0"><div class="tb__h" style="grid-template-columns:minmax(0,1.4fr) 110px 80px 110px"><span>Company</span><span>Pages</span><span>Seen</span><span>Intent</span></div><div class="drop" data-at="0.3"><div class="tb__r openable r-acme" data-at="1.5" style="grid-template-columns:minmax(0,1.4fr) 110px 80px 110px"><span class="co"><i class="lg">A</i><span>Acme<small class="mut" style="display:block;font-weight:400;font-size:11.5px;line-height:14px">acme.com/pricing</small></span></span><span class="mut">2 pages</span><span class="mut mono">now</span><span><span class="tagx tagx--sig">High</span></span></div></div><div class="push" data-at="0.3"><div class="tb__r " style="grid-template-columns:minmax(0,1.4fr) 110px 80px 110px"><span class="co"><i class="lg">N</i><span>Northwind<small class="mut" style="display:block;font-weight:400;font-size:11.5px;line-height:14px">northwind.io</small></span></span><span class="mut">3 pages</span><span class="mut mono">9m</span><span><span class="tagx">Browsing</span></span></div><div class="tb__r " style="grid-template-columns:minmax(0,1.4fr) 110px 80px 110px"><span class="co"><i class="lg">G</i><span>Globex<small class="mut" style="display:block;font-weight:400;font-size:11.5px;line-height:14px">globex.com</small></span></span><span class="mut">1 page</span><span class="mut mono">14m</span><span><span class="tagx">Browsing</span></span></div><div class="tb__r " style="grid-template-columns:minmax(0,1.4fr) 110px 80px 110px"><span class="co"><i class="lg">I</i><span>Initech<small class="mut" style="display:block;font-weight:400;font-size:11.5px;line-height:14px">initech.co</small></span></span><span class="mut">5 pages</span><span class="mut mono">31m</span><span><span class="tagx tagx--warn">Returning</span></span></div><div class="tb__r " style="grid-template-columns:minmax(0,1.4fr) 110px 80px 110px"><span class="co"><i class="lg">H</i><span>Hooli<small class="mut" style="display:block;font-weight:400;font-size:11.5px;line-height:14px">hooli.xyz</small></span></span><span class="mut">2 pages</span><span class="mut mono">1h</span><span><span class="tagx">Browsing</span></span></div><div class="tb__r " style="grid-template-columns:minmax(0,1.4fr) 110px 80px 110px"><span class="co"><i class="lg">V</i><span>Vandelay<small class="mut" style="display:block;font-weight:400;font-size:11.5px;line-height:14px">vandelay.com</small></span></span><span class="mut">4 pages</span><span class="mut mono">2h</span><span><span class="tagx">Browsing</span></span></div></div></div><div class="panel slide p-acme" data-at="1.5" style="width:330px;padding:18px 18px"><div style="display:flex;align-items:center;gap:12px"><i class="lg" style="width:36px;height:36px;border-radius:9px;font-size:15px">A</i><div><b style="font-size:15px">Acme</b><p class="mut" style="font-size:12px">acme.com, 201&ndash;500, SaaS</p></div><span class="tagx tagx--sig" style="margin-left:auto">High intent</span></div><p class="mono fnt" style="font-size:10px;letter-spacing:.08em;margin-top:22px">PAGES READ</p><ol class="tl" style="margin-top:6px"><li class="sig rise" data-at="1.8" style="--i:0"><b>/pricing</b><small>Twice, 3 min</small></li><li class="rise" data-at="1.8" style="--i:1"><b>/product/routing</b><small>2 min</small></li><li class="rise" data-at="1.8" style="--i:2"><b>/customers</b><small>40 sec</small></li></ol><p class="mono fnt" style="font-size:10px;letter-spacing:.08em;margin-top:16px">PERSON</p><p class="mut" style="margin-top:6px">Not known yet</p></div></div></div><div class="win view" data-at="2.7" style="left:60px;top:34px;width:880px;height:520px;z-index:2"><div class="site-page"><div class="site-page__bar"><i></i><i></i><i></i><span class="site-page__url">lumen.io/pricing</span></div>
-<div class="abs" style="left:28px;top:52px;right:28px;display:flex;align-items:center;gap:20px">
-  <b style="font-size:15px;letter-spacing:-.02em">&#9670; Lumen</b><span class="mut">Product</span><span>Pricing</span><span class="mut">Customers</span>
-  <span class="bar__sp"></span><span class="btnx">Book a demo</span></div>
-<div class="abs" style="left:28px;top:116px"><p class="mono fnt" style="font-size:11px;letter-spacing:.08em">PRICING</p>
-  <p style="font-size:30px;line-height:36px;font-weight:500;letter-spacing:-.035em;margin-top:6px">Plans for every team</p></div>
-<div class="abs" style="left:28px;top:204px;right:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
-  <div class="card" style="position:relative;height:200px;padding:16px"><b>Team</b><p class="mut" style="margin-top:4px">$40 a month</p></div>
-  <div class="card" style="position:relative;height:200px;padding:16px;border-color:var(--ink)"><b>Business</b><p class="mut" style="margin-top:4px">$120 a month</p></div>
-  <div class="card" style="position:relative;height:200px;padding:16px"><b>Enterprise</b><p class="mut" style="margin-top:4px">Talk to us</p></div>
-</div><div class="card card--pop" style="left:250px;top:70px;width:380px;padding:22px;z-index:2"><div style="display:flex;align-items:center;justify-content:space-between"><b style="font-size:16px">Book a demo</b><span class="tagx">Step 1 of 2</span></div><div class="fld2" style="margin-top:16px"><label>Work email</label><div class="in f-email"><span class="typing" data-type="3.0,3.7">dana@acme.com</span></div></div><div class="fld2" style="margin-top:12px"><label>What are you looking for?</label><div class="in"><span class="typing" data-type="3.9,4.5">Routing for three sales teams</span></div></div><div class="f-auto" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px"><div class="fld2 fade" data-at="3.75"><label>Company</label><div class="in auto"><b>Acme</b></div></div><div class="fld2 fade" data-at="3.85"><label>Size</label><div class="in auto"><b>201&ndash;500</b></div></div></div><p class="fade" data-at="3.9" style="display:flex;align-items:center;gap:6px;margin-top:10px;font-size:11.5px;color:var(--signal-text)"><svg class="sparkle" aria-hidden="true"><use href="#t-sparkle"/></svg> Filled by Claritia. Two fields instead of six.</p><span class="btnx press f-send" data-at="5" style="width:100%;height:34px;margin-top:16px">Continue &rarr;</span></div></div></div><div class="card card--pop rise" data-at="5.3" style="left:640px;top:470px;width:300px;padding:12px 14px;z-index:4;display:flex;gap:10px;align-items:center"><span class="point"></span><span><b>New lead</b> <span class="mut">Dana Lee, Acme</span></span></div><svg class="cursor" data-guide='[[4.5, ".f-send"], [5.4, ""]]' viewBox="0 0 18 22" aria-hidden="true"><path d="M1 1v17l4.5-4.2 3 6.7 3-1.4-3-6.6H15z" fill="#0a0a0a" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></svg></div></div></div></div></section>
-      <section class="dstage" data-stage="qualify" id="qualify" style="--len:5" role="tabpanel" aria-labelledby="tab-qualify"><div class="stage__grid"><div class="stage__rail"><div class="stage__title"><p class="eyebrow">Qualify</p><h3 class="stage__h">Know who it is.<br><span class="two">Decide in a second.</span></h3></div><ol class="tsteps"><li><button type="button" data-go="0"><span class="tsteps__n">01</span><span class="tsteps__t"><b>Enrich</b><small>Every empty field fills from your records first, then vendors. Each value keeps its source.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="1.7"><span class="tsteps__n">02</span><span class="tsteps__t"><b>Score</b><small>Fit and intent add up to one score.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="3.1"><span class="tsteps__n">03</span><span class="tsteps__t"><b>Decide</b><small>AI picks one of your outcomes and says why.</small></span><i class="tsteps__bar"></i></button></li></ol><div class="tcaps" aria-live="polite"><p class="tcap fade" data-at="0" data-off="1.7">Every empty field fills from your records first, then vendors. Each value keeps its source.</p><p class="tcap fade" data-at="1.7" data-off="3.1">Fit and intent add up to one score.</p><p class="tcap fade" data-at="3.1">AI picks one of your outcomes and says why.</p></div><div class="ctl">
-        <button type="button" class="ctl__btn" data-act="prev" aria-label="Previous step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ctl__btn ctl__btn--main" data-act="play" aria-label="Play or pause"><svg class="ctl__play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg><svg class="ctl__pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.5" height="13" rx="1" fill="currentColor"/><rect x="13.5" y="5.5" width="3.5" height="13" rx="1" fill="currentColor"/></svg><svg class="ctl__again" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ctl__btn" data-act="next" aria-label="Next step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="tour__next" data-next="route">Next: Route <span aria-hidden="true">&rarr;</span></button>
-      </div></div><div class="stage__view"><div class="canvas-wrap" aria-hidden="true"><div class="canvas" data-canvas data-w="1000" data-h="580" data-crop="204" style="width:1000px;height:580px"><div class="ground"></div><div class="win" style="left:20px;top:20px;width:960px;height:540px"><div class="side"><div class="side__ws"><svg class="side__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="var(--signal)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Lumen<span class="side__plan">Growth</span></div><div class="side__lab">CRM</div><div class="side__i cur"><svg aria-hidden="true"><use href="#t-user"/></svg>Contacts</div><div class="side__i"><svg aria-hidden="true"><use href="#t-building"/></svg>Companies</div><div class="side__i"><svg aria-hidden="true"><use href="#t-target"/></svg>Opportunities</div><div class="side__i"><svg aria-hidden="true"><use href="#t-cal"/></svg>Meetings</div><div class="side__lab">Automation</div><div class="side__i"><svg aria-hidden="true"><use href="#t-flow"/></svg>Workflows</div><div class="side__i"><svg aria-hidden="true"><use href="#t-route"/></svg>Routing</div><div class="side__i"><svg aria-hidden="true"><use href="#t-spark"/></svg>Enrichment</div><div class="side__lab">Inbound</div><div class="side__i"><svg aria-hidden="true"><use href="#t-form"/></svg>Forms</div><div class="side__i"><svg aria-hidden="true"><use href="#t-clock"/></svg>Scheduling</div><div class="side__i"><svg aria-hidden="true"><use href="#t-eye"/></svg>Visitors</div><div class="side__lab">Nurture</div><div class="side__i"><svg aria-hidden="true"><use href="#t-mail"/></svg>Emails</div><div class="side__i"><svg aria-hidden="true"><use href="#t-users"/></svg>Segments</div><div class="side__i"><svg aria-hidden="true"><use href="#t-gauge"/></svg>Lead scoring</div></div><div class="bar"><span class="bar__crumb">Contacts / <b>Dana Lee</b></span><span class="bar__sp"></span><span class="chip"><svg aria-hidden="true"><use href="#t-spark"/></svg>Enrich</span><span class="chip chip--ink">Open in HubSpot</span></div><div class="body"><div class="abs" style="left:0;top:0;width:430px;bottom:0;border-right:1px solid var(--line-light)"><div style="display:flex;align-items:center;gap:12px;padding:18px 16px"><span class="av" style="width:40px;height:40px;font-size:15px">D</span><div><b style="font-size:16px">Dana Lee</b><p class="mut" style="font-size:12px"><span class="swap" data-at="0.4"><span class="swap__old">dana@acme.com</span><span class="swap__new">Head of RevOps at Acme</span></span></p></div></div><div class="kv"><span>Email</span><b>dana@acme.com</b><span class="src">Form</span></div><div class="kv flash" data-at="0.4"><span>Title</span><span class="swap" data-at="0.4"><span class="swap__old fnt">Empty</span><b class="swap__new">Head of RevOps</b></span><span class="src fade" data-at="0.4">Vendor</span></div><div class="kv flash" data-at="0.6"><span>Company</span><span class="swap" data-at="0.6"><span class="swap__old fnt">Empty</span><b class="swap__new">Acme</b></span><span class="src fade" data-at="0.6">Website</span></div><div class="kv flash" data-at="0.8"><span>Size</span><span class="swap" data-at="0.8"><span class="swap__old fnt">Empty</span><b class="swap__new">201&ndash;500</b></span><span class="src fade" data-at="0.8">Vendor</span></div><div class="kv flash" data-at="1.0"><span>Industry</span><span class="swap" data-at="1.0"><span class="swap__old fnt">Empty</span><b class="swap__new">SaaS</b></span><span class="src fade" data-at="1.0">Vendor</span></div><div class="kv flash" data-at="1.2"><span>Region</span><span class="swap" data-at="1.2"><span class="swap__old fnt">Empty</span><b class="swap__new">United States</b></span><span class="src fade" data-at="1.2">Visit</span></div><div class="kv flash" data-at="1.4"><span>Tech</span><span class="swap" data-at="1.4"><span class="swap__old fnt">Empty</span><b class="swap__new">HubSpot, Slack</b></span><span class="src fade" data-at="1.4">Website</span></div></div><div class="abs" style="left:450px;top:18px;right:18px"><div class="card q-score" style="position:relative;padding:16px;display:flex;align-items:center;gap:18px"><svg width="84" height="84" viewBox="0 0 84 84" aria-hidden="true"><circle class="ring" cx="42" cy="42" r="34"/><circle class="ring ring--on" data-scrub="1.7,2.8" pathLength="1" cx="42" cy="42" r="34" transform="rotate(-90 42 42)"/><text x="42" y="48" text-anchor="middle" style="font:500 20px var(--font);fill:var(--ink)" data-count="0,92,1.7,2.8">92</text></svg><div style="flex:1"><p class="mono fnt" style="font-size:10px;letter-spacing:.08em">LEAD SCORE</p><p style="display:flex;justify-content:space-between;margin-top:8px;font-size:12px"><span>Fit</span><b class="mono" data-count="0,46,1.7,2.6">46</b></p><div class="bar2" data-scrub="1.7,2.6" style="--w:92%"><i></i></div><p style="display:flex;justify-content:space-between;margin-top:8px;font-size:12px"><span>Intent</span><b class="mono" data-count="0,46,1.9,2.8">46</b></p><div class="bar2" data-scrub="1.9,2.8" style="--w:92%"><i></i></div></div></div><div class="card card--pop rise q-ai" data-at="3.1" style="position:relative;margin-top:12px;padding:16px"><p style="display:flex;align-items:center;gap:8px;font-weight:500"><svg class="sparkle" aria-hidden="true"><use href="#t-sparkle"/></svg> Qualify</p><div style="display:flex;gap:6px;margin-top:12px"><span class="tagx tagx--ink pop" data-at="3.6">Qualified</span><span class="tagx">Nurture</span><span class="tagx">Not a fit</span></div><p style="margin-top:12px;color:var(--ink-2);line-height:19px"><span class="typing" data-type="3.7,4.7">Fits your ideal customer: SaaS, 201 to 500 people, US. Read pricing twice and asked about routing.</span></p><p class="fnt fade" data-at="4.7" style="margin-top:10px;font-size:11.5px">Picked from the outcomes you set</p></div></div></div></div><div class="focus" data-guide='[[0.3, ".kv.flash"], [1.7, ".q-score"], [3.1, ".q-ai"], [4.9, ""]]'></div></div></div></div></div></section>
-      <section class="dstage" data-stage="route" id="route" style="--len:5" role="tabpanel" aria-labelledby="tab-route"><div class="stage__grid"><div class="stage__rail"><div class="stage__title"><p class="eyebrow">Route</p><h3 class="stage__h">Send it to the right rep.<br><span class="two">Every choice has a reason.</span></h3></div><ol class="tsteps"><li><button type="button" data-go="0"><span class="tsteps__n">01</span><span class="tsteps__t"><b>Rules</b><small>Owners first, then territories, written as plain rules.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="1.7"><span class="tsteps__n">02</span><span class="tsteps__t"><b>Pick</b><small>Round robin skips people who are away and keeps the load even.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="3.2"><span class="tsteps__n">03</span><span class="tsteps__t"><b>Tell</b><small>Sam hears about it in Slack while Dana is still on the page.</small></span><i class="tsteps__bar"></i></button></li></ol><div class="tcaps" aria-live="polite"><p class="tcap fade" data-at="0" data-off="1.7">Owners first, then territories, written as plain rules.</p><p class="tcap fade" data-at="1.7" data-off="3.2">Round robin skips people who are away and keeps the load even.</p><p class="tcap fade" data-at="3.2">Sam hears about it in Slack while Dana is still on the page.</p></div><div class="ctl">
-        <button type="button" class="ctl__btn" data-act="prev" aria-label="Previous step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ctl__btn ctl__btn--main" data-act="play" aria-label="Play or pause"><svg class="ctl__play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg><svg class="ctl__pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.5" height="13" rx="1" fill="currentColor"/><rect x="13.5" y="5.5" width="3.5" height="13" rx="1" fill="currentColor"/></svg><svg class="ctl__again" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ctl__btn" data-act="next" aria-label="Next step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="tour__next" data-next="book">Next: Book <span aria-hidden="true">&rarr;</span></button>
-      </div></div><div class="stage__view"><div class="canvas-wrap" aria-hidden="true"><div class="canvas" data-canvas data-w="1000" data-h="580" data-crop="204" style="width:1000px;height:580px"><div class="ground"></div><div class="win" style="left:20px;top:20px;width:960px;height:540px"><div class="side"><div class="side__ws"><svg class="side__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="var(--signal)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Lumen<span class="side__plan">Growth</span></div><div class="side__lab">CRM</div><div class="side__i"><svg aria-hidden="true"><use href="#t-user"/></svg>Contacts</div><div class="side__i"><svg aria-hidden="true"><use href="#t-building"/></svg>Companies</div><div class="side__i"><svg aria-hidden="true"><use href="#t-target"/></svg>Opportunities</div><div class="side__i"><svg aria-hidden="true"><use href="#t-cal"/></svg>Meetings</div><div class="side__lab">Automation</div><div class="side__i"><svg aria-hidden="true"><use href="#t-flow"/></svg>Workflows</div><div class="side__i cur"><svg aria-hidden="true"><use href="#t-route"/></svg>Routing</div><div class="side__i"><svg aria-hidden="true"><use href="#t-spark"/></svg>Enrichment</div><div class="side__lab">Inbound</div><div class="side__i"><svg aria-hidden="true"><use href="#t-form"/></svg>Forms</div><div class="side__i"><svg aria-hidden="true"><use href="#t-clock"/></svg>Scheduling</div><div class="side__i"><svg aria-hidden="true"><use href="#t-eye"/></svg>Visitors</div><div class="side__lab">Nurture</div><div class="side__i"><svg aria-hidden="true"><use href="#t-mail"/></svg>Emails</div><div class="side__i"><svg aria-hidden="true"><use href="#t-users"/></svg>Segments</div><div class="side__i"><svg aria-hidden="true"><use href="#t-gauge"/></svg>Lead scoring</div></div><div class="bar"><span class="bar__crumb">Routing / <b>Inbound demo</b></span><span class="bar__sp"></span><span class="chip">Try a contact</span><span class="chip chip--ink">Make live</span></div><div class="body"><svg class="over" width="776" height="492"><path class="edge edge--ink wire" pathLength="1" d="M126 82 V128" data-at="0.3"/><path class="edge edge--ink wire" pathLength="1" d="M126 182 V228" data-at="0.8"/><path class="edge edge--ink wire" pathLength="1" d="M126 282 V328" data-at="1.3"/><path class="edge edge--sig wire" pathLength="1" d="M252 355 C300 355 300 120 420 120" data-at="1.7"/></svg><span class="abs mono fnt" style="left:136px;top:198px;font-size:10px">NO OWNER</span><span class="abs mono fnt" style="left:136px;top:298px;font-size:10px">MATCHED</span><div class="abs rnode pick on" style="left:24px;top:30px;"><span class="rnode__ic"><svg aria-hidden="true"><use href="#t-user"/></svg></span><span><small>New lead</small><b>Dana Lee, Acme</b></span></div><div class="abs rnode rise" data-at="0.3" style="left:24px;top:130px;"><span class="rnode__ic"><svg aria-hidden="true"><use href="#t-building"/></svg></span><span><small>Rule 1</small><b>Has an owner in HubSpot?</b></span></div><div class="abs rnode rise pick" data-at="0.8" style="left:24px;top:230px;"><span class="rnode__ic"><svg aria-hidden="true"><use href="#t-route"/></svg></span><span><small>Rule 2</small><b>US and 200+ people</b></span></div><div class="abs rnode rise" data-at="1.3" style="left:24px;top:330px;"><span class="rnode__ic"><svg aria-hidden="true"><use href="#t-users"/></svg></span><span><small>Send to</small><b>US mid-market team</b></span></div><div class="card rise" data-at="1.8" style="left:420px;top:40px;width:330px;padding:14px"><p style="display:flex;justify-content:space-between"><b>US mid-market</b><span class="fnt">Round robin</span></p><div class="who t-sam" style="margin-top:12px"><span class="av">S</span><span style="flex:1"><b>Sam Rivera</b><small>2 of 8 meetings this week</small></span><span class="tagx tagx--sig pop" data-at="2.5">Picked</span></div><div class="who " style="margin-top:12px;opacity:.55"><span class="av">L</span><span style="flex:1"><b>Lena Park</b><small>Out today</small></span><span class="tagx tagx--warn">Away</span></div><div class="who " style="margin-top:12px"><span class="av">O</span><span style="flex:1"><b>Omar Haddad</b><small>5 of 8 meetings this week</small></span></div><div class="bar2" data-scrub="1.9,2.6" style="--w:25%;margin-top:14px"><i></i></div></div><div class="card rise" data-at="2.8" style="left:420px;top:258px;width:330px;padding:12px 14px;background:var(--tint)"><p class="mono fnt" style="font-size:10px;letter-spacing:.08em">WHY</p><p style="margin-top:4px;line-height:19px">No owner. Rule 2 matched: US, 201 to 500 people. Lena is away, and Sam has the fewest meetings this week.</p></div><div class="card card--pop rise r-slack" data-at="3.4" style="left:420px;top:370px;width:330px;padding:12px 14px"><div class="slack"><span class="slack__av" style="background:var(--tint)"><img src="/assets/logos/slack.svg" width="18" height="18" alt=""></span><div><p><b>Claritia</b><small>10:02</small></p><p style="line-height:19px">Sam, a new lead is yours: Dana Lee, Acme. Score 92. She is picking a time now.</p></div></div></div></div></div><div class="dot6 fly" data-at="1.7" data-off="3.4" style="offset-path:path('M456 423 C504 423 504 188 624 188')"></div></div></div></div></div></section>
-      <section class="dstage" data-stage="book" id="book" style="--len:6" role="tabpanel" aria-labelledby="tab-book"><div class="stage__grid"><div class="stage__rail"><div class="stage__title"><p class="eyebrow">Book</p><h3 class="stage__h">Book the meeting.<br><span class="two">Before they leave the page.</span></h3></div><ol class="tsteps"><li><button type="button" data-go="0"><span class="tsteps__n">01</span><span class="tsteps__t"><b>Open</b><small>Sam's open times show inside the form.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="1.1"><span class="tsteps__n">02</span><span class="tsteps__t"><b>Pick</b><small>Dana picks Thursday at 10:00.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="3"><span class="tsteps__n">03</span><span class="tsteps__t"><b>Booked</b><small>The invite goes out. Twenty seconds from visit to meeting.</small></span><i class="tsteps__bar"></i></button></li><li><button type="button" data-go="4.4"><span class="tsteps__n">04</span><span class="tsteps__t"><b>Record</b><small>The whole path lands on the record and syncs to your CRM.</small></span><i class="tsteps__bar"></i></button></li></ol><div class="tcaps" aria-live="polite"><p class="tcap fade" data-at="0" data-off="1.1">Sam's open times show inside the form.</p><p class="tcap fade" data-at="1.1" data-off="3">Dana picks Thursday at 10:00.</p><p class="tcap fade" data-at="3" data-off="4.4">The invite goes out. Twenty seconds from visit to meeting.</p><p class="tcap fade" data-at="4.4">The whole path lands on the record and syncs to your CRM.</p></div><div class="ctl">
-        <button type="button" class="ctl__btn" data-act="prev" aria-label="Previous step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ctl__btn ctl__btn--main" data-act="play" aria-label="Play or pause"><svg class="ctl__play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg><svg class="ctl__pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.5" height="13" rx="1" fill="currentColor"/><rect x="13.5" y="5.5" width="3.5" height="13" rx="1" fill="currentColor"/></svg><svg class="ctl__again" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ctl__btn" data-act="next" aria-label="Next step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        
-      </div></div><div class="stage__view"><div class="canvas-wrap" aria-hidden="true"><div class="canvas" data-canvas data-w="1000" data-h="580" data-crop="204" style="width:1000px;height:580px"><div class="ground"></div><div class="win" style="left:20px;top:20px;width:960px;height:540px"><div class="side"><div class="side__ws"><svg class="side__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="var(--signal)"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Lumen<span class="side__plan">Growth</span></div><div class="side__lab">CRM</div><div class="side__i cur"><svg aria-hidden="true"><use href="#t-user"/></svg>Contacts</div><div class="side__i"><svg aria-hidden="true"><use href="#t-building"/></svg>Companies</div><div class="side__i"><svg aria-hidden="true"><use href="#t-target"/></svg>Opportunities</div><div class="side__i"><svg aria-hidden="true"><use href="#t-cal"/></svg>Meetings</div><div class="side__lab">Automation</div><div class="side__i"><svg aria-hidden="true"><use href="#t-flow"/></svg>Workflows</div><div class="side__i"><svg aria-hidden="true"><use href="#t-route"/></svg>Routing</div><div class="side__i"><svg aria-hidden="true"><use href="#t-spark"/></svg>Enrichment</div><div class="side__lab">Inbound</div><div class="side__i"><svg aria-hidden="true"><use href="#t-form"/></svg>Forms</div><div class="side__i"><svg aria-hidden="true"><use href="#t-clock"/></svg>Scheduling</div><div class="side__i"><svg aria-hidden="true"><use href="#t-eye"/></svg>Visitors</div><div class="side__lab">Nurture</div><div class="side__i"><svg aria-hidden="true"><use href="#t-mail"/></svg>Emails</div><div class="side__i"><svg aria-hidden="true"><use href="#t-users"/></svg>Segments</div><div class="side__i"><svg aria-hidden="true"><use href="#t-gauge"/></svg>Lead scoring</div></div><div class="bar"><span class="bar__crumb">Contacts / <b>Dana Lee</b></span><span class="bar__sp"></span><span class="chip"><svg aria-hidden="true"><use href="#t-cal"/></svg>Meetings</span></div><div class="body"><div class="abs" style="left:0;top:0;width:430px;bottom:0;border-right:1px solid var(--line-light);padding:18px 16px"><div style="display:flex;align-items:center;gap:12px"><span class="av" style="width:40px;height:40px;font-size:15px">D</span><div><b style="font-size:16px">Dana Lee</b><p class="mut" style="font-size:12px">Head of RevOps at Acme</p></div><span class="tagx tagx--sig" style="margin-left:auto">Meeting booked</span></div><p class="mono fnt" style="font-size:10px;letter-spacing:.08em;margin-top:22px">TIMELINE</p><ol class="tl" style="margin-top:6px"><li class="rise" data-at="4.3" style="--i:0"><b>Visited pricing</b><small>Twice, 3 min</small></li><li class="rise" data-at="4.3" style="--i:1"><b>Filled Book a demo</b><small>Two fields</small></li><li class="rise" data-at="4.3" style="--i:2"><b>Qualified, score 92</b><small>Fits your ideal customer</small></li><li class="rise" data-at="4.3" style="--i:3"><b>Routed to Sam Rivera</b><small>Rule 2, round robin</small></li><li class="rise sig" data-at="4.3" style="--i:4"><b>Meeting booked</b><small>Thu 10:00, Google Meet</small></li></ol></div><div class="abs" style="left:450px;top:18px;right:18px"><div class="card rise" data-at="4.9" style="position:relative;padding:14px"><p class="mono fnt" style="font-size:10px;letter-spacing:.08em">MEETING</p><p style="margin-top:6px"><b>Acme demo</b></p><p class="mut">Thu, Nov 5, 10:00 to 10:30</p><div class="who" style="margin-top:10px"><span class="av">S</span><span>Sam Rivera</span><img src="/assets/logos/meet.svg" width="16" height="16" alt="" style="margin-left:auto"></div></div><div class="card rise" data-at="5.3" style="position:relative;margin-top:12px;padding:14px"><p class="mono fnt" style="font-size:10px;letter-spacing:.08em">SYNCED</p><div class="who" style="margin-top:10px"><i class="lg"><img src="/assets/logos/hubspot.svg" width="13" height="13" alt=""></i><span style="flex:1">HubSpot</span><span class="tagx tagx--sig">Updated</span></div><div class="who" style="margin-top:8px"><i class="lg"><img src="/assets/logos/omniscient.svg" width="13" height="13" alt=""></i><span style="flex:1">Omniscient</span><span class="tagx tagx--sig">Updated</span></div></div></div></div></div><div class="win view" data-at="0" data-off="4.3" style="left:60px;top:34px;width:880px;height:520px;z-index:2"><div class="site-page"><div class="site-page__bar"><i></i><i></i><i></i><span class="site-page__url">lumen.io/pricing</span></div>
-<div class="abs" style="left:28px;top:52px;right:28px;display:flex;align-items:center;gap:20px">
-  <b style="font-size:15px;letter-spacing:-.02em">&#9670; Lumen</b><span class="mut">Product</span><span>Pricing</span><span class="mut">Customers</span>
-  <span class="bar__sp"></span><span class="btnx">Book a demo</span></div>
-<div class="abs" style="left:28px;top:116px"><p class="mono fnt" style="font-size:11px;letter-spacing:.08em">PRICING</p>
-  <p style="font-size:30px;line-height:36px;font-weight:500;letter-spacing:-.035em;margin-top:6px">Plans for every team</p></div>
-<div class="abs" style="left:28px;top:204px;right:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
-  <div class="card" style="position:relative;height:200px;padding:16px"><b>Team</b><p class="mut" style="margin-top:4px">$40 a month</p></div>
-  <div class="card" style="position:relative;height:200px;padding:16px;border-color:var(--ink)"><b>Business</b><p class="mut" style="margin-top:4px">$120 a month</p></div>
-  <div class="card" style="position:relative;height:200px;padding:16px"><b>Enterprise</b><p class="mut" style="margin-top:4px">Talk to us</p></div>
-</div><div class="card card--pop" style="left:240px;top:58px;width:400px;padding:22px;z-index:2"><div class="view" data-at="0" data-off="3"><div style="display:flex;align-items:center;gap:10px"><span class="av" style="width:32px;height:32px">S</span><div><b>Pick a time with Sam</b><p class="mut" style="font-size:12px">30 min, Google Meet</p></div><span class="tagx" style="margin-left:auto">Step 2 of 2</span></div><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:16px"><span class="day"><span>Mon<b>2</b></span></span><span class="day"><span>Tue<b>3</b></span></span><span class="day"><span>Wed<b>4</b></span></span><span class="day cur"><span>Thu<b>5</b></span></span><span class="day"><span>Fri<b>6</b></span></span></div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:12px"><span class="slot">09:00</span><span class="slot b-slot" data-at="1.9">10:00</span><span class="slot">11:30</span><span class="slot">14:00</span><span class="slot">15:30</span><span class="slot">16:30</span></div><span class="btnx press b-ok" data-at="2.7" style="width:100%;height:34px;margin-top:16px">Book Thu 10:00</span></div><div class="view" data-at="3" style="position:absolute;inset:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px"><svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true"><rect x="1" y="1" width="50" height="50" rx="12" fill="var(--signal)"/><path d="M15 27l7 7 15-16" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b style="font-size:17px;margin-top:6px">You are booked with Sam</b><p class="mut">Thursday, Nov 5 at 10:00</p><p class="fnt" style="font-size:12px">The invite is in your inbox.</p><span class="burst" data-at="3.05" style="position:absolute;left:50%;top:40px"><i style="--dx:-60px;--dy:-30px"></i><i style="--dx:54px;--dy:-36px"></i><i style="--dx:-40px;--dy:30px"></i><i style="--dx:66px;--dy:24px"></i><i style="--dx:-74px;--dy:2px"></i><i style="--dx:10px;--dy:-54px"></i><i style="--dx:30px;--dy:46px"></i><i style="--dx:-20px;--dy:-50px"></i></span></div></div></div></div><svg class="cursor" data-guide='[[1.1, ".b-slot"], [2.2, ".b-ok"], [3.0, ""]]' viewBox="0 0 18 22" aria-hidden="true"><path d="M1 1v17l4.5-4.2 3 6.7 3-1.4-3-6.6H15z" fill="#0a0a0a" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></svg></div></div></div></div></section>
-    </div>
-  </section>
-  <!-- tour:end -->
+  <!-- Product: sticky text on the left, one app screen on the right (assets/story.css, assets/story.js). -->
+  <section class="story" id="product" data-story aria-label="Product">
+    <div class="wrap story__in">
+      <div class="story__pin">
+        <div class="story__text">
+          <ol class="story__nav" aria-label="Features">
+            <li><a href="#brand" data-to="0"><span>01</span>Brand</a></li>
+            <li><a href="#forms" data-to="1"><span>02</span>Forms</a></li>
+            <li><a href="#routing" data-to="2"><span>03</span>Routing</a></li>
+            <li><a href="#meetings" data-to="3"><span>04</span>Meetings</a></li>
+            <li><a href="#crm" data-to="4"><span>05</span>CRM</a></li>
+            <li><a href="#nurture" data-to="5"><span>06</span>Nurture</a></li>
+          </ol>
+          <div class="story__feats">
+            <article class="sfeat" id="brand">
+              <p class="eyebrow">01 Brand</p>
+              <h2 class="h2">Your forms match your website.</h2>
+              <p class="lead">Enter your website address. Claritia reads its fonts, colors and buttons, and applies them to every form and booking page.</p>
+              <ul><li>Styles read from your live site</li><li>Applied to forms, booking pages and emails</li><li>Adjustable at any time</li></ul>
+            </article>
+            <article class="sfeat" id="forms">
+              <p class="eyebrow">02 Forms</p>
+              <h2 class="h2">Describe a form and Claritia builds it.</h2>
+              <p class="lead">Write what the form is for. Claritia drafts the questions, saves each answer to the right contact field and checks the form before it goes live.</p>
+              <ul><li>Thirteen question types, multi-step and conditional logic</li><li>Work email checks and spam filtering</li><li>Embed on your site or share a link</li></ul>
+            </article>
+            <article class="sfeat" id="routing">
+              <p class="eyebrow">03 Routing</p>
+              <h2 class="h2">Each lead reaches the right representative.</h2>
+              <p class="lead">Set conditions on any answer or company detail. Claritia assigns the lead to a person or a team in rotation and records the reason.</p>
+              <ul><li>Conditions on answers, company size, region and owner</li><li>Round robin that skips people who are away</li><li>Test a sample lead before you publish</li></ul>
+            </article>
+            <article class="sfeat" id="meetings">
+              <p class="eyebrow">04 Meetings</p>
+              <h2 class="h2">Meetings are booked inside the form.</h2>
+              <p class="lead">After a submission, the assigned representative's open times appear in the form. The visitor picks a time and the invitation is sent.</p>
+              <ul><li>Google Calendar and Outlook</li><li>Individual and dynamic meetings</li><li>Reschedule and cancel links in every invitation</li></ul>
+            </article>
+            <article class="sfeat" id="crm">
+              <p class="eyebrow">05 CRM</p>
+              <h2 class="h2">Every person has one complete record.</h2>
+              <p class="lead">Submissions, meetings and email activity are kept on one contact. Records stay in sync with HubSpot and Salesforce.</p>
+              <ul><li>Two-way sync with HubSpot and Salesforce</li><li>Import from a CSV file</li><li>Segments and custom fields</li></ul>
+            </article>
+            <article class="sfeat" id="nurture">
+              <p class="eyebrow">06 Nurture</p>
+              <h2 class="h2">Follow-up runs on its own.</h2>
+              <p class="lead">Workflows send emails, reminders and updates based on what each lead does. Lead scoring ranks contacts by fit and activity.</p>
+              <ul><li>Meeting reminders that follow reschedules</li><li>Emails from your own domain, approved before sending</li><li>Scores based on fit and activity</li></ul>
+            </article>
+          </div>
+        </div>
 
-  <!-- Every tool, in the four sections of the app -->
-  <section class="section" id="products">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">One app</p>
-        <h2 class="h2">Five tools in one place.<br><span class="two">One record for every lead.</span></h2>
-        <p class="lead">CRM, forms, routing, scheduling and enrichment share the same record, so nothing gets copied and nothing gets lost.</p>
-      </div>
-      <div class="prods">
-        <div class="prods__group reveal">
-          <p class="prods__lab"><b>Inbound</b><small>Catch them</small></p>
-          <div class="fcards">
-            <a class="fcard" id="forms" href="https://app.tryclaritia.com"><img src="/assets/img/feat-forms.svg" alt="" width="320" height="180" loading="lazy"><b>Forms</b><small>Build one by chatting, or keep yours. Claritia fills what it knows, so people answer two fields.</small></a>
-            <a class="fcard" id="scheduling" href="https://app.tryclaritia.com"><img src="/assets/img/feat-scheduling.svg" alt="" width="320" height="180" loading="lazy"><b>Scheduling</b><small>Round robin, group events, polls and paid meetings, with the rep's calendar inside the form.</small></a>
-            <a class="fcard" id="visitors" href="https://app.tryclaritia.com"><img src="/assets/img/feat-visitors.svg" alt="" width="320" height="180" loading="lazy"><b>Visitors</b><small>See which companies are on your site, what they read and when they come back.</small></a>
-          </div>
-        </div>
-        <div class="prods__group reveal">
-          <p class="prods__lab"><b>Automation</b><small>Know them and send them</small></p>
-          <div class="fcards">
-            <a class="fcard" id="enrichment" href="https://app.tryclaritia.com"><img src="/assets/img/feat-enrichment.svg" alt="" width="320" height="180" loading="lazy"><b>Enrichment</b><small>Your own records first, then vendors. Every value shows where it came from.</small></a>
-            <a class="fcard" id="routing" href="https://app.tryclaritia.com"><img src="/assets/img/feat-routing.svg" alt="" width="320" height="180" loading="lazy"><b>Routing</b><small>Owners, territories and round robin with caps and time off. Each choice keeps its reason.</small></a>
-            <a class="fcard" id="workflows" href="https://app.tryclaritia.com"><img src="/assets/img/feat-workflows.svg" alt="" width="320" height="180" loading="lazy"><b>Workflows</b><small>From trigger to goal on one canvas: waits, branches, emails and CRM updates.</small></a>
-          </div>
-        </div>
-        <div class="prods__group reveal">
-          <p class="prods__lab"><b>CRM and Nurture</b><small>Keep them</small></p>
-          <div class="fcards">
-            <a class="fcard" id="crm" href="https://app.tryclaritia.com"><img src="/assets/img/feat-crm.svg" alt="" width="320" height="180" loading="lazy"><b>CRM</b><small>Contacts, companies, opportunities and meetings, with every visit and form on the timeline.</small></a>
-            <a class="fcard" id="emails" href="https://app.tryclaritia.com"><img src="/assets/img/feat-emails.svg" alt="" width="320" height="180" loading="lazy"><b>Emails</b><small>Written from your own content and sent from your own domain. Nothing goes out without a yes.</small></a>
-            <a class="fcard" id="scoring" href="https://app.tryclaritia.com"><img src="/assets/img/feat-scoring.svg" alt="" width="320" height="180" loading="lazy"><b>Lead scoring</b><small>Fit and intent in one number, with the reasons right beside it.</small></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="story__frame" aria-hidden="true">
+          <div class="sw__bar"><i></i><i></i><i></i><span class="sw__url">app.tryclaritia.com</span></div>
+          <div class="sw__body">
 
-  <!-- AI that builds, and waits for a yes -->
-  <section class="band band--tint band--flip" id="ai">
-    <div class="wrap band__in">
-      <div class="band__copy reveal">
-        <p class="eyebrow"><svg width="14" height="14" aria-hidden="true" style="color:var(--purple)"><use href="#i-sparkle"/></svg>Claritia AI</p>
-        <h2 class="h2">Describe it.<br><span class="two">Claritia builds it.</span></h2>
-        <p class="lead">Say what you want in a sentence. Claritia builds the form, the rules and the follow-up, then shows you before anything goes live.</p>
-        <ul class="checks">
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Build by chatting.</b> Forms, routing and workflows from one sentence.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Qualify with a reason.</b> AI only picks from the outcomes you set, and says why.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Write in your voice.</b> Emails come from your own pages and case studies.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Wait for a yes.</b> Emails and live changes ask you first.</span></li>
-        </ul>
-      </div>
-      <div class="band__art">
-        <div class="chat reveal">
-          <p class="chat__me" data-step="1">Add a demo form to our pricing page. Send US teams over 200 people to Sam's team, and nurture the rest.</p>
-          <div class="chat__ai" data-step="2">
-            <p class="chat__who"><svg aria-hidden="true" style="color:var(--purple)"><use href="#i-sparkle"/></svg>Claritia</p>
-            <p>Done. Here is what I built. Nothing is live yet.</p>
-            <ul class="built">
-              <li data-step="3"><span class="built__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><span><b>Book a demo</b><small>Form, 2 fields, Sam's calendar on send</small></span><span class="tag">Draft</span></li>
-              <li data-step="4"><span class="built__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="19" r="2.5"/><path d="M6 8.5v1a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-1M12 13.5v3"/></svg></span><span><b>US and 200+ people</b><small>Routing rule, round robin to Sam's team</small></span><span class="tag">Draft</span></li>
-              <li data-step="5"><span class="built__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/></svg></span><span><b>Not ready yet</b><small>Workflow, 3 emails over 2 weeks</small></span><span class="tag">Draft</span></li>
-            </ul>
-            <div class="chat__acts" data-step="6"><span class="go">Make live</span><span class="ghost">Review</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="sscr" data-i="0">
+              <div class="sx-card sx-scan">
+                <div class="sx-input"><span class="sx-typing">acme.com</span><span class="sx-btn">Learn my brand</span></div>
+                <ul class="sx-checks">
+                  <li style="--d:0">Opening the site</li><li style="--d:1">Reading fonts</li><li style="--d:2">Reading colors</li><li style="--d:3">Reading buttons and fields</li>
+                </ul>
+                <div class="sx-found" style="--d:4">
+                  <span class="sx-pill">Inter</span><i style="background:#0a0a0a"></i><i style="background:#6b6b6b"></i><i style="background:#ffffff"></i><i style="background:#d4d4d0"></i>
+                  <span class="sx-btn sx-btn--brand">Book a demo</span>
+                </div>
+              </div>
+            </div>
 
-  <!-- Try it -->
-  <section class="section" id="try">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Try it</p>
-        <h2 class="h2">Your turn.<br><span class="two">Type a work email.</span></h2>
-      </div>
-      <div class="try reveal">
-        <form class="try__form" data-try novalidate>
-          <div class="try__top"><b>Book a demo</b><span class="tag tag--sig"><span class="point" style="width:6px;height:6px;box-shadow:none"></span>Live preview</span></div>
-          <div class="fld"><label for="try-email">Work email</label><input id="try-email" type="email" placeholder="dana@acme.com" autocomplete="off" spellcheck="false"></div>
-          <p class="try__err" role="alert"></p>
-          <button type="submit" class="btn btn--primary btn--lg">Show me <span class="nudge" aria-hidden="true">&rarr;</span></button>
-          <p class="try__hint">Demo only. Nothing is saved or sent.</p>
-        </form>
-        <div class="try__rec">
-          <div class="rec is-wait" data-rec aria-live="polite">
-            <div class="rec__who"><span class="rec__av" data-v="av">D</span><span><b data-v="name">Dana Lee</b><small data-v="co">acme.com</small></span><span class="rec__score"><b data-v="score">92</b><small>score</small></span></div>
-            <ul class="rec__rows">
-              <li data-row><span>Company</span><span class="val" data-v="company">Acme</span><span class="src">Website</span></li>
-              <li data-row><span>Size</span><span class="val" data-v="size">201&ndash;500</span><span class="src">Vendor</span></li>
-              <li data-row><span>Industry</span><span class="val" data-v="kind">SaaS</span><span class="src">Vendor</span></li>
-              <li data-row data-score><span>Qualify</span><span class="val">Qualified</span><span class="src">AI</span></li>
-              <li data-row><span>Routed to</span><span class="val" data-v="route">Sam, US team</span><span class="src">Rule 2</span></li>
-              <li data-row><span>Open times</span><span class="val" data-v="times">Thu 10:00, Thu 14:30</span><span class="src">Calendar</span></li>
-            </ul>
-            <div class="rec__book" data-row><span>Meeting ready to book</span><b data-v="book">Thu 10:00</b></div>
+            <div class="sscr" data-i="1">
+              <div class="sx-split">
+                <div class="sx-chat">
+                  <p class="sx-msg sx-msg--me" style="--d:0">A demo request for work emails, then book a call</p>
+                  <p class="sx-msg" style="--d:1"><svg class="sx-spark"><use href="#i-sparkle"/></svg>Added work email, name, company and team size.</p>
+                </div>
+                <div class="sx-card sx-form">
+                  <b>Book a demo</b>
+                  <label style="--d:1">Work email<span class="sx-field">name@company.com</span></label>
+                  <label style="--d:2">Full name<span class="sx-field"></span></label>
+                  <label style="--d:3">Company<span class="sx-field"></span></label>
+                  <label style="--d:4">Team size<span class="sx-chips"><em>1&ndash;10</em><em>11&ndash;50</em><em>51&ndash;200</em><em>200+</em></span></label>
+                  <span class="sx-btn sx-btn--full" style="--d:5">Book a demo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sscr" data-i="2">
+              <div class="sx-route">
+                <div class="sx-node sx-node--ink" style="--d:0"><small>New lead</small><b>Dana Lee, Acme</b></div>
+                <span class="sx-wire" style="--d:1"></span>
+                <div class="sx-node" style="--d:1"><small>If</small><b>Company size is 201 or more</b></div>
+                <span class="sx-wire" style="--d:2"></span>
+                <div class="sx-node" style="--d:2"><small>And</small><b>Region is United States</b></div>
+                <span class="sx-wire" style="--d:3"></span>
+                <div class="sx-card sx-team" style="--d:3">
+                  <p><b>US mid-market</b><span>Round robin</span></p>
+                  <div class="sx-rep sx-rep--on"><span class="sx-av">S</span><b>Sam Rivera</b><span class="sx-tag">Assigned</span></div>
+                  <div class="sx-rep sx-rep--off"><span class="sx-av">L</span><b>Lena Park</b><span class="sx-tag sx-tag--gray">Away</span></div>
+                  <div class="sx-rep"><span class="sx-av">O</span><b>Omar Haddad</b></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sscr" data-i="3">
+              <div class="sx-card sx-cal">
+                <div class="sx-calhead"><span class="sx-av">S</span><div><b>Pick a time with Sam</b><small>30 min, Google Meet</small></div></div>
+                <div class="sx-days"><span>Mon<b>2</b></span><span>Tue<b>3</b></span><span>Wed<b>4</b></span><span class="on">Thu<b>5</b></span><span>Fri<b>6</b></span></div>
+                <div class="sx-slots"><span>09:00</span><span class="pick">10:00</span><span>11:30</span><span>14:00</span><span>15:30</span><span>16:30</span></div>
+                <div class="sx-booked"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Booked with Sam</b><small>Thursday, Nov 5 at 10:00</small></div>
+              </div>
+            </div>
+
+            <div class="sscr" data-i="4">
+              <div class="sx-card sx-rec">
+                <div class="sx-rechead"><span class="sx-av sx-av--lg">D</span><div><b>Dana Lee</b><small>Head of Revenue Operations, Acme</small></div><span class="sx-pill sx-pill--sig"><img src="/assets/logos/hubspot.svg" alt="" width="12" height="12">Synced</span></div>
+                <div class="sx-kv"><span>Email</span><b>dana@acme.com</b><span>Company</span><b>Acme</b><span>Size</span><b>201&ndash;500</b><span>Owner</span><b>Sam Rivera</b></div>
+                <ul class="sx-time">
+                  <li style="--d:0"><i></i><b>Submitted Book a demo</b><small>Oct 2, 10:01</small></li>
+                  <li style="--d:1"><i></i><b>Assigned to Sam Rivera</b><small>Oct 2, 10:01</small></li>
+                  <li style="--d:2"><i class="sig"></i><b>Booked Intro call</b><small>Oct 2, 10:02</small></li>
+                  <li style="--d:3"><i></i><b>Opened Meeting reminder</b><small>Oct 4, 09:00</small></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sscr" data-i="5">
+              <div class="sx-flow">
+                <div class="sx-node sx-node--ink"><small>Starts</small><b>When a meeting is booked</b></div>
+                <span class="sx-wire sx-wire--on"></span>
+                <div class="sx-node"><small>Wait</small><b>Until a day before the meeting</b></div>
+                <span class="sx-wire sx-wire--on"></span>
+                <div class="sx-node"><small>Email</small><b>Meeting reminder</b></div>
+                <span class="sx-wire sx-wire--on"></span>
+                <div class="sx-node"><small>Wait</small><b>Until an hour before</b></div>
+                <span class="sx-dot"></span>
+              </div>
+              <div class="sx-card sx-score"><small>Lead score</small><b>92</b><span class="sx-tag">Sales-ready</span></div>
+            </div>
+
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Keep your stack -->
-  <section class="band" id="switch">
-    <div class="wrap band__in">
-      <div class="band__copy reveal">
-        <p class="eyebrow">No migration</p>
-        <h2 class="h2">Keep your forms.<br><span class="two">Keep your CRM.</span></h2>
-        <p class="lead">Add one line to your site and Claritia works with the forms you have. Leads, meetings and activity sync both ways with your CRM.</p>
-      </div>
-      <div class="keep reveal" data-delay="1">
-        <div class="keep__row"><span>Forms</span><ul class="keep__logos">
-          <li><img src="/assets/logos/hubspot.svg" alt="" width="18" height="18">HubSpot</li>
-          <li><img src="/assets/logos/webflow.svg" alt="" width="18" height="18">Webflow</li>
-          <li><img src="/assets/logos/framer.svg" alt="" width="18" height="18">Framer</li>
-          <li><img src="/assets/logos/wordpress.svg" alt="" width="18" height="18">WordPress</li>
-          <li><img src="/assets/logos/typeform.svg" alt="" width="18" height="18">Typeform</li>
-        </ul></div>
-        <div class="keep__arrow" aria-hidden="true"><i></i></div>
-        <div class="keep__to brk"><span class="brk__b"></span><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</div>
-        <div class="keep__arrow" aria-hidden="true"><i></i></div>
-        <div class="keep__row"><span>CRM</span><ul class="keep__logos">
-          <li><img src="/assets/logos/hubspot.svg" alt="" width="18" height="18">HubSpot</li>
-          <li><img src="/assets/logos/salesforce.svg" alt="" width="18" height="18">Salesforce</li>
-          <li><img src="/assets/logos/omniscient.svg" alt="" width="18" height="18">Omniscient</li>
-        </ul></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reliability: the one black section -->
-  <section class="section section--black" id="reliable">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Built not to drop</p>
-        <h2 class="h2">A lost lead costs more<br><span class="two">than a missing feature.</span></h2>
-      </div>
-      <div class="sec-grid">
-        <div class="sec brk reveal"><span class="brk__b"></span>
-          <span class="sec__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg></span>
-          <h3>Never drops a fill</h3><p>If the network fails, the form keeps the answers and sends them again for up to 24 hours.</p></div>
-        <div class="sec brk reveal" data-delay="1"><span class="brk__b"></span>
-          <span class="sec__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
-          <h3>Checked twice</h3><p>Every fill is checked in the browser, then again on our server before it reaches your CRM.</p></div>
-        <div class="sec brk reveal" data-delay="2"><span class="brk__b"></span>
-          <span class="sec__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
-          <h3>Tested every day</h3><p>A bot fills your live forms each day and tells you the moment one breaks.</p></div>
-        <div class="sec brk reveal" data-delay="3"><span class="brk__b"></span>
-          <span class="sec__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
-          <h3>Consent on record</h3><p>Each opt-in keeps its wording, time and source, so you can show it later.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- The suite -->
-  <section class="section" id="suite">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">The suite</p>
-        <h2 class="h2">Found, converted, closed.<br><span class="two">Three apps, one path.</span></h2>
-      </div>
-      <div class="suite">
-        <div class="suite__c reveal"><img src="/assets/logos/arrowsterr.svg" alt="" width="32" height="32"><small>Found by</small><b>Arrowsterr</b><p>SEO and AI search bring buyers to your site.</p></div>
-        <div class="suite__c suite__c--me reveal" data-delay="1"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg><small>Converted by</small><b>Claritia</b><p>Forms, routing and booking turn visits into meetings.</p></div>
-        <div class="suite__c reveal" data-delay="2"><img src="/assets/logos/omniscient.svg" alt="" width="32" height="32"><small>Closed with</small><b>Omniscient</b><p>A CRM and deal rooms that close the deal.</p></div>
-      </div>
-      <p class="suite__note">Run two or more and save 20%.</p>
     </div>
   </section>
 
@@ -524,7 +429,7 @@
         <path class="b" pathLength="1" d="M4 28V4h24"/><path class="b" pathLength="1" d="M60 4h24v24"/><path class="b" pathLength="1" d="M84 60v24H60"/><path class="b" pathLength="1" d="M28 84H4V60"/>
         <path class="c" pathLength="1" d="M29 45l10 10 21-24"/>
       </svg>
-      <h2 class="h2">Your next lead is on your site now.<br><span class="two">Book the meeting.</span></h2>
+      <h2 class="h2">Turn website visitors into meetings.<br><span class="two">Start with the free plan.</span></h2>
       <div class="close__ctas">
         <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com">Start free <span class="nudge" aria-hidden="true">&rarr;</span></a>
         <a class="btn btn--ghost btn--lg" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
@@ -542,9 +447,9 @@
       <p>From website visit to booked meeting.</p>
       <span class="status"><span class="point" style="width:6px;height:6px;box-shadow:none"></span>All systems running</span>
     </div>
-    <div class="site-footer__col"><h2>Inbound</h2><ul><li><a href="#forms">Forms</a></li><li><a href="#scheduling">Scheduling</a></li><li><a href="#visitors">Visitors</a></li></ul></div>
-    <div class="site-footer__col"><h2>Automation</h2><ul><li><a href="#workflows">Workflows</a></li><li><a href="#routing">Routing</a></li><li><a href="#enrichment">Enrichment</a></li></ul></div>
-    <div class="site-footer__col"><h2>CRM and Nurture</h2><ul><li><a href="#crm">CRM</a></li><li><a href="#emails">Emails</a></li><li><a href="#scoring">Lead scoring</a></li></ul></div>
+    <div class="site-footer__col"><h2>Inbound</h2><ul><li><a href="#forms">Forms</a></li><li><a href="#meetings">Scheduling</a></li></ul></div>
+    <div class="site-footer__col"><h2>Automation</h2><ul><li><a href="#nurture">Workflows</a></li><li><a href="#routing">Routing</a></li><li><a href="#crm">Enrichment</a></li></ul></div>
+    <div class="site-footer__col"><h2>CRM and Nurture</h2><ul><li><a href="#crm">CRM</a></li><li><a href="#nurture">Emails</a></li><li><a href="#nurture">Lead scoring</a></li></ul></div>
     <div class="site-footer__col"><h2>Company</h2><ul><li><a href="#pricing">Pricing</a></li><li><a href="#faq">Questions</a></li><li><a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a></li><li><a href="mailto:hello@tryclaritia.com">Contact</a></li></ul></div>
     <div class="site-footer__col"><h2>Resources</h2><ul><li><a href="/llms.txt">llms.txt</a></li><li><a href="/pricing.md">Pricing.md</a></li><li><a href="https://app.tryclaritia.com">Sign in</a></li></ul></div>
   </div>
@@ -557,6 +462,6 @@
 </footer>
 
 <script src="/assets/site.js?v=7" defer></script>
-<script src="/assets/tour.js?v=7" defer></script>
+<script src="/assets/story.js?v=1" defer></script>
 </body>
 </html>
