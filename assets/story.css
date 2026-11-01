@@ -1,14 +1,19 @@
 /* Product story: sticky feature text on the left, one app screen on the right. The section is tall; the pinned
    area stays in view and story.js picks the feature from how far it has scrolled. Motion stops under reduced motion. */
-.story { position: relative; height: calc(6 * 85vh + 15vh); border-top: 1px solid var(--line); }
+.story { position: relative; height: calc(6 * 150vh); border-top: 1px solid var(--line); }
 .story__in { height: 100%; }
 .story__pin { position: sticky; top: var(--header-h); height: calc(100vh - var(--header-h)); display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: center; padding-block: 40px; }
 .story__text { display: flex; flex-direction: column; gap: 36px; min-width: 0; }
-.story__nav { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0; }
-.story__nav a { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 11px; border-radius: 999px; border: 1px solid var(--line); font-size: 12.5px; color: var(--muted); text-decoration: none; transition: background-color .2s, color .2s, border-color .2s; }
-.story__nav a span { font-family: var(--mono); font-size: 11px; color: var(--faint); }
-.story__nav a.on { background: var(--ink); border-color: var(--ink); color: #fff; }
-.story__nav a.on span { color: #a3a3a3; }
+.story__nav { position: relative; display: grid; grid-template-columns: repeat(6, 1fr); list-style: none; padding: 0; margin: 0; }
+.story__nav::before, .story__nav::after { content: ""; position: absolute; left: calc(100% / 12); right: calc(100% / 12); top: 11px; height: 1.5px; background: var(--line-strong); }
+.story__nav::after { right: auto; width: calc((100% - 100% / 6) * var(--p, 0)); background: var(--ink); }
+.story__nav li { position: relative; z-index: 1; display: flex; justify-content: center; }
+.story__nav a { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 12px; color: var(--faint); text-decoration: none; transition: color .2s; }
+.story__nav a span { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 999px; border: 1.5px solid var(--line-strong); background: var(--panel); font-family: var(--mono); font-size: 10.5px; color: var(--faint); transition: background-color .25s, border-color .25s, color .25s; }
+.story__nav a.done { color: var(--muted); }
+.story__nav a.done span { border-color: var(--ink); background: var(--ink); color: #fff; }
+.story__nav a.on { color: var(--ink); font-weight: 500; }
+.story__nav a.on span { border-color: var(--ink); background: var(--panel); color: var(--ink); box-shadow: 0 0 0 4px var(--signal-soft); }
 .story__feats { position: relative; min-height: 330px; }
 .sfeat { position: absolute; inset: 0 0 auto 0; opacity: 0; transform: translateY(14px); transition: opacity .35s cubic-bezier(.2,.7,.2,1), transform .35s cubic-bezier(.2,.7,.2,1); pointer-events: none; }
 .sfeat.on { opacity: 1; transform: none; pointer-events: auto; }
@@ -125,10 +130,10 @@
 
 /* Phones and small tablets: text above the screen, both kept in view. */
 @media (max-width: 900px) {
-  .story { height: calc(6 * 100vh); }
+  .story { height: calc(6 * 130vh); }
   .story__pin { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; gap: 18px; padding-block: 18px; align-items: stretch; }
   .story__text { gap: 14px; }
-  .story__nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .story__nav a { font-size: 0; gap: 0; }
   .story__feats { min-height: 210px; }
   .sfeat .h2 { font-size: 24px; margin-top: 8px; }
   .sfeat .lead { font-size: 14.5px; margin-top: 8px; }

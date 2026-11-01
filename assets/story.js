@@ -13,13 +13,16 @@
     for (var k = 0; k < n; k++) {
       feats[k].classList.toggle("on", k === i);
       if (screens[k]) screens[k].classList.toggle("on", k === i);
-      if (links[k]) links[k].classList.toggle("on", k === i);
+      if (links[k]) { links[k].classList.toggle("on", k === i); links[k].classList.toggle("done", k < i); }
     }
   }
   function pick() {
     var r = root.getBoundingClientRect();
     var span = r.height - window.innerHeight;
     var p = span > 0 ? Math.min(Math.max(-r.top / span, 0), 0.9999) : 0;
+    // The line between the steps fills as you scroll.
+    var nav = root.querySelector(".story__nav");
+    if (nav) nav.style.setProperty("--p", Math.min(1, (p * n - 0.5) / (n - 1)).toFixed(4));
     show(Math.floor(p * n));
   }
   // A link scrolls to the part of the section where that feature shows.
