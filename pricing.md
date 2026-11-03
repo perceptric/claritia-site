@@ -2,15 +2,14 @@
 
 Claritia is forms, meetings and workflows: forms that turn visitors into leads, meetings that book them with the right person, and workflows that send the reminders and follow-ups.
 
-Each plan comes with 1 seat, then a small price for each extra seat. A seat is a teammate people can book a meeting with. Teammates who only build forms, edit workflows or read answers are free.
+Each plan is priced per user. A user is a teammate people can book a meeting with. Teammates who only build forms, edit workflows or read answers are free.
 
 | | Free | Starter | Pro | Business |
 |---|---|---|---|---|
-| Price a month | $0 | $15 | $39 | $79 |
-| Price a month, billed yearly | $0 | $12 | $31 | $63 |
+| Price per user a month | $0 | $15 | $39 | $79 |
+| Price per user a month, billed yearly | $0 | $12 | $31 | $63 |
 | **Plan** | | | | |
-| Seats included | 1 | 1 | 1 | 1 |
-| Each extra seat | – | $8 ($6 yearly) | $15 ($12 yearly) | $25 ($20 yearly) |
+| Users | 1 | Unlimited | Unlimited | Unlimited |
 | Editors | Unlimited | Unlimited | Unlimited | Unlimited |
 | Form answers a month | 250 | 2,000 | 5,000 | Unlimited |
 | Extra form answers | – | $5 per 1,000 | $5 per 1,000 | – |
@@ -58,7 +57,7 @@ Each plan comes with 1 seat, then a small price for each extra seat. A seat is a
 | Disposable email blocking | Yes | Yes | Yes | Yes |
 | Consent wording by region | Yes | Yes | Yes | Yes |
 | **Meetings** | | | | |
-| Calendars per seat | 1 | 3 | 10 | Unlimited |
+| Calendars per user | 1 | 3 | 10 | Unlimited |
 | Meeting types | 1 | Unlimited | Unlimited | Unlimited |
 | Google Calendar and Outlook | Yes | Yes | Yes | Yes |
 | Google Meet, Teams and Zoom links | Yes | Yes | Yes | Yes |

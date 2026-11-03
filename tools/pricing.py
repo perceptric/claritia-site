@@ -1,4 +1,4 @@
-"""Builds /pricing/index.html: the plans, a seat count that prices every plan, every feature side by side and questions. The plans follow docs/pricing.md in the app repo (dev-arrowsterr/claritia). Run: python3 tools/pricing.py"""
+"""Builds /pricing/index.html: the plans, a user count that prices every plan, every feature side by side and questions. The plans follow docs/pricing.md in the app repo (dev-arrowsterr/claritia). Run: python3 tools/pricing.py"""
 import pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -7,20 +7,20 @@ import shell  # noqa: E402
 
 esc = shell.esc
 
-# The plans. Prices are dollars a month; yearly is the monthly price with 20% off, billed once a year.
+# The plans. Prices are dollars per user a month; yearly is the monthly price with 20% off, billed once a year.
 PLANS = [
-    {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0, "host_m": None, "host_y": None,
+    {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"),
-     "top": ["Unlimited forms", "250 form answers a month", "1 calendar per seat", "100 AI credits a month", "1 meeting type", "435 form templates", "Google Calendar or Outlook", "Forms built by Tia from one sentence", "Booking inside your forms", "Email reminders before every call", "Spam blocking"]},
-    {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12, "host_m": 8, "host_y": 6,
+     "top": ["Unlimited forms", "250 form answers a month", "1 calendar per user", "100 AI credits a month", "1 meeting type", "435 form templates", "Google Calendar or Outlook", "Forms built by Tia from one sentence", "Booking inside your forms", "Email reminders before every call", "Spam blocking"]},
+    {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Free",
-     "top": ["2,000 form answers a month", "3 calendars per seat", "500 AI credits a month", "Unlimited meeting types", "Payments and deposits with Stripe", "Signatures", "Paid meetings", "Group meetings and polls", "HubSpot, Google Sheets, Slack and more", "Reminder emails in your own words"]},
-    {"id": "pro", "name": "Pro", "for": "For teams that share leads", "m": 39, "y": 31, "host_m": 15, "host_y": 12, "pick": True,
+     "top": ["Unlimited forms", "2,000 form answers a month", "3 calendars per user", "500 AI credits a month", "Unlimited meeting types", "Payments and deposits with Stripe", "Signatures", "Paid meetings", "Group meetings and polls", "HubSpot, Google Sheets, Slack and more", "Reminder emails in your own words"]},
+    {"id": "pro", "name": "Pro", "for": "For teams that share leads", "m": 39, "y": 31, "pick": True,
      "btn": ("Start free", "https://app.tryclaritia.com", "primary"), "plus": "Starter",
-     "top": ["5,000 form answers a month", "10 calendars per seat", "2,000 AI credits a month", "Routing by answer", "Round robin across your team", "Meetings with everyone free", "Follow-ups after every call and no-show", "No Claritia badge", "Emails from your own domain", "A brief from Tia before each call"]},
-    {"id": "business", "name": "Business", "for": "For busy teams with lots of leads", "m": 79, "y": 63, "host_m": 25, "host_y": 20,
+     "top": ["5,000 form answers a month", "10 calendars per user", "2,000 AI credits a month", "Routing by answer", "Round robin across your team", "Meetings with everyone free", "Follow-ups after every call and no-show", "No Claritia badge", "Emails from your own domain", "A brief from Tia before each call"]},
+    {"id": "business", "name": "Business", "for": "For busy teams with lots of leads", "m": 79, "y": 63,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Pro",
-     "top": ["Unlimited form answers", "Unlimited calendars per seat", "5,000 AI credits a month", "Owner first from your CRM", "Double round robin", "Salesforce", "Your own domain for forms and booking pages", "Partial answers from people who didn't finish", "Priority chat help"]},
+     "top": ["Unlimited form answers", "Unlimited calendars per user", "5,000 AI credits a month", "Owner first from your CRM", "Double round robin", "Salesforce", "Your own domain for forms and booking pages", "Partial answers from people who didn't finish", "Priority chat help"]},
 ]
 
 Y, N = True, False
@@ -30,8 +30,8 @@ SOON = "soon"
 # add SOON as a third item for a feature that isn't built yet.
 GROUPS = [
     ("Plan", [
-        ("Seats included", ["1", "1", "1", "1"]),
-        ("Each extra seat", ["–", ("$8", "$6"), ("$15", "$12"), ("$25", "$20")]),
+        ("Price per user a month", ["$0", ("$15", "$12"), ("$39", "$31"), ("$79", "$63")]),
+        ("Users", ["1", "Unlimited", "Unlimited", "Unlimited"]),
         ("Editors", ["Unlimited"] * 4),
         ("Form answers a month", ["250", "2,000", "5,000", "Unlimited"]),
         ("Extra form answers", ["–", "$5 per 1,000", "$5 per 1,000", "–"]),
@@ -83,7 +83,7 @@ GROUPS = [
         ("Consent wording by region", [Y, Y, Y, Y]),
     ]),
     ("Meetings", [
-        ("Calendars per seat", ["1", "3", "10", "Unlimited"]),
+        ("Calendars per user", ["1", "3", "10", "Unlimited"]),
         ("Meeting types", ["1", "Unlimited", "Unlimited", "Unlimited"]),
         ("Google Calendar and Outlook", [Y, Y, Y, Y]),
         ("Google Meet, Teams and Zoom links", [Y, Y, Y, Y]),
@@ -152,7 +152,7 @@ GROUPS = [
 ]
 
 FAQ = [
-    ("What is a seat?", "A seat is a teammate people can book a meeting with. Teammates who only build forms, edit workflows or read results are free, so you only pay for the people who take calls."),
+    ("Who counts as a user?", "A user is a teammate people can book a meeting with. Teammates who only build forms, edit workflows or read results are free, so you only pay for the people who take calls."),
     ("What happens after 250 form answers on Free?", "Your forms keep working and every answer is saved. Answers past 250 show once you upgrade, or on the 1st of the next month. No lead is lost."),
     ("What is an AI credit?", "One thing Tia does for you, like writing a form or adding questions. A small change is 1 credit and a whole new form is 10. When credits run out, Tia waits for the next month. Your forms, meetings and reminders keep running."),
     ("What if a paid plan passes its form answers?", "Every answer is saved and shows right away. Extra answers are $5 per 1,000 on Starter and Pro. Business has no limit."),
@@ -223,9 +223,9 @@ SCRIPT = """<script>
       var t = p.querySelector(".plan__total");
       var base = +p.getAttribute(yearly ? "data-y" : "data-m"), extra = p.getAttribute(yearly ? "data-hy" : "data-hm");
       if (!t) return;
-      if (n === 1 || extra === "") { t.classList.toggle("on", n > 1 && extra === ""); t.textContent = n > 1 ? "1 seat only" : ""; return; }
+      if (n === 1 || extra === "") { t.classList.toggle("on", n > 1 && extra === ""); t.textContent = n > 1 ? "1 user only" : ""; return; }
       t.classList.add("on");
-      t.textContent = money(base + (n - 1) * +extra) + " a month for " + n + " seats";
+      t.textContent = money(n * base) + " a month for " + n + " users";
     });
   }
   less.addEventListener("click", function () { if (n > 1) { n--; draw(); } });
@@ -259,14 +259,14 @@ def cell(v, pick):
 def card(p):
     pick = p.get("pick")
     label, href, kind = p["btn"]
-    host = (f'<p class="plan__host">1 seat included. Each extra seat is <span data-monthly>${p["host_m"]}</span>'
-            f'<span data-yearly>${p["host_y"]}</span> a month.</p>') if p["host_m"] else '<p class="plan__host">1 seat included. No card needed.</p>'
+    per = "per user a month" if p["m"] else "a month"
+    host = '<p class="plan__host">For each teammate who takes calls</p>' if p["m"] else '<p class="plan__host">1 user. No card needed.</p>'
     heading = f'<h3>Everything in {p["plus"]}, plus</h3>' if p.get("plus") else "<h3>All the basics</h3>"
     items = "".join(f"<li>{CHECK}{esc(t)}</li>" for t in p["top"])
     tag = '<span class="tag tag--green">Most picked</span>' if pick else ""
-    return f"""<div class="plan{' plan--pick' if pick else ''}" data-plan="{p['id']}" data-m="{p['m']}" data-y="{p['y']}" data-hm="{p['host_m'] or ''}" data-hy="{p['host_y'] or ''}">
+    return f"""<div class="plan{' plan--pick' if pick else ''}" data-plan="{p['id']}" data-m="{p['m']}" data-y="{p['y']}" data-hm="{p['m'] or ''}" data-hy="{p['y'] or ''}">
           <div class="plan__top"><b>{p['name']}</b>{tag}</div>
-          <p class="plan__price"><b>{price(p['m'], p['y'])}</b><small>a month</small></p>
+          <p class="plan__price"><b>{price(p['m'], p['y'])}</b><small>{per}</small></p>
           <p class="plan__for">{esc(p['for'])}</p>
           {host}
           <p class="plan__total" aria-live="polite"></p>
@@ -311,18 +311,18 @@ def page():
   <div class="frame">
     <section class="pr-hero" aria-labelledby="price-h">
       <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#card"/></svg>Pricing</span>
-      <h1 class="display" id="price-h">Start free. Add seats as you grow.</h1>
-      <p class="sub">Every plan comes with 1 seat. Add a seat for each teammate who takes calls. Teammates who only build forms or read answers are always free.</p>
+      <h1 class="display" id="price-h">Start free. Pay per user as you grow.</h1>
+      <p class="sub">Pay for each teammate who takes calls. Teammates who only build forms or read answers are always free.</p>
       <div class="pr-tools">
         <div class="bill js-only" data-bill role="group" aria-label="Billing period">
           <button type="button" data-bill-to="monthly" aria-pressed="true">Monthly</button>
           <button type="button" data-bill-to="yearly" aria-pressed="false">Yearly <em>Save 20%</em></button>
         </div>
-        <div class="hosts js-only" data-hosts role="group" aria-label="Number of seats">
-          Seats
-          <button type="button" data-less aria-label="One less seat">&minus;</button>
+        <div class="hosts js-only" data-hosts role="group" aria-label="Number of users">
+          Users
+          <button type="button" data-less aria-label="One less user">&minus;</button>
           <output aria-live="polite">1</output>
-          <button type="button" data-more aria-label="One more seat">+</button>
+          <button type="button" data-more aria-label="One more user">+</button>
         </div>
       </div>
       <div class="plans">
@@ -359,7 +359,7 @@ def page():
 
 {cta()}"""
     title = "Pricing · Claritia"
-    desc = "Free for one person. Starter $15, Pro $39 and Business $79 a month with 1 seat, then a small price for each extra seat. Unlimited forms on every plan."
+    desc = "Free for one person. Starter $15, Pro $39 and Business $79 per user a month. Teammates who only build forms are free. Unlimited forms on every plan."
     return shell.head(title, desc, "/pricing", STYLE) + "\n" + shell.body(main, SCRIPT)
 
 
