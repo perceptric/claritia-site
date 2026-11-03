@@ -1,5 +1,4 @@
-"""Builds /pricing/index.html: the plans, a host count that prices every plan, every feature side by side, the market
-and questions. The plans follow docs/pricing.md in the app repo (dev-arrowsterr/claritia). Run: python3 tools/pricing.py"""
+"""Builds /pricing/index.html: the plans, a host count that prices every plan, every feature side by side and questions. The plans follow docs/pricing.md in the app repo (dev-arrowsterr/claritia). Run: python3 tools/pricing.py"""
 import pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -152,17 +151,6 @@ GROUPS = [
     ]),
 ]
 
-# What 10 hosts cost a month, billed yearly, from each tool's own pricing page on November 3, 2026.
-MARKET = [
-    ("Cal.com Teams", "$120", False),
-    ("Claritia Pro", "$139", True),
-    ("Calendly Teams", "$160", False),
-    ("Claritia Business", "$243", True),
-    ("RevenueHero Essentials", "$329", False),
-    ("Chili Piper Growth", "$1,250", False),
-    ("Default Growth", "$1,450", False),
-]
-
 FAQ = [
     ("What is a host?", "A host is anyone people can book. Everyone who builds forms, edits workflows or reads results is free, so you only pay for the people who take meetings."),
     ("What happens after 250 submissions on Free?", "Your forms keep working and every submission is saved. Answers past 250 show once you upgrade, or on the 1st of the next month. No lead is lost."),
@@ -202,14 +190,6 @@ STYLE = """<style>
 .ftable .no{color:var(--line-strong)}
 .ftable .pick{background:var(--surface);box-shadow:inset 0 0 0 999px rgba(12,140,94,.035)}
 .ftable .tag{height:20px;margin-left:6px;padding:0 6px;font-size:12px;line-height:20px;vertical-align:1px}
-.mkt{max-width:640px;margin:0 auto;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest);overflow:hidden}
-.mkt table{width:100%;border-collapse:collapse;font-size:15px}
-.mkt td{padding:12px 20px;border-bottom:1px solid var(--line)}
-.mkt tr:last-child td{border-bottom:0}
-.mkt td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--text)}
-.mkt .us td{font-weight:500;color:var(--ink)}
-.mkt .us td:first-child::before{content:"";display:inline-block;width:8px;height:8px;margin-right:10px;border-radius:2px;background:var(--green);vertical-align:1px}
-.mkt-note{max-width:640px;margin:14px auto 0;font-size:13px;line-height:1.55;color:var(--meta);text-align:center}
 #pricing .faq{grid-template-columns:minmax(0,1fr)}
 @media (min-width:900px){#pricing .faq{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}}
 @media (max-width:1100px){#pricing .plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -316,11 +296,6 @@ def table():
 </tbody></table></div>"""
 
 
-def market():
-    rows = "".join(f'<tr{" class=\"us\"" if us else ""}><td>{esc(n)}</td><td>{v}</td></tr>' for n, v, us in MARKET)
-    return f'<div class="mkt"><table><caption class="sr-only">Monthly cost for 10 hosts, billed yearly</caption><tbody>{rows}</tbody></table></div>'
-
-
 def faq():
     plus = '<svg aria-hidden="true"><use href="#i-plus"/></svg>'
     return "".join(f"<details><summary>{esc(q)} {plus}</summary><p>{esc(a)}</p></details>" for q, a in FAQ)
@@ -365,19 +340,6 @@ def page():
         <p class="sub">Every plan has unlimited forms and unlimited editors.</p>
       </div>
       {table()}
-    </section>
-  </div>
-  <div class="band"><div class="frame"></div></div>
-
-  <div class="frame">
-    <section class="pr-sec" aria-labelledby="mkt-h">
-      <div class="shead">
-        <span class="eyebrow">10 hosts</span>
-        <h2 class="h2" id="mkt-h">What a team of 10 pays</h2>
-        <p class="sub">A month, billed yearly, on each tool's cheapest plan with team booking.</p>
-      </div>
-      {market()}
-      <p class="mkt-note">Prices from each tool's own pricing page on November 3, 2026.</p>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>

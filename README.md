@@ -11,7 +11,7 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 | Path | What |
 |---|---|
 | `index.html` | The home page: hero with the prompt, why, how it works, compare, tools, integrations, templates, numbers, pricing, questions and the last prompt. It also holds the header, phone menu and footer every page shares. |
-| `pricing/` | The pricing page: plans, the host count, every feature side by side, 10 hosts against other tools, questions. Written by `tools/pricing.py`, which also holds the plan data. |
+| `pricing/` | The pricing page: plans, the host count, every feature side by side, questions. Written by `tools/pricing.py`, which also holds the plan data. |
 | `404.html`, `privacy/`, `terms/` | Page not found and the legal pages. Written by `tools/legal.py`. |
 | `assets/site.css` | Tokens, type, buttons, chips, tags, the header, phone menu, footer, and every home section. |
 | `assets/site.js` | Menus, the phone menu, scroll reveals and the pricing switch. |
