@@ -2,7 +2,7 @@
 targets "<tool> form integration" or "<tool> scheduling integration" and the searches around it (docs: the keyword
 plan in the chat that started this, volumes from Arrowsterr). Every workflow on a page is one the app really does
 today: check claritia/docs/integrations-plan.md and the code before adding a line. Plan tags follow docs/pricing.md in
-the app repo. Uses the product pages' parts and styles (tools/products.py, assets/products.css) plus
+the app repo. Uses the product pages' layout (tools/products.py: how, shelf, cta; assets/products.css) plus
 assets/integrations.css. Run: python3 tools/integrations.py"""
 import json, pathlib, re, sys
 
@@ -12,9 +12,42 @@ import shell  # noqa: E402
 import templates as tpl  # noqa: E402
 import products as px  # noqa: E402
 
-IX_V = 1
+IX_V = 2
 LASTMOD = "2026-11-03"
-esc, I, APP, frame, head_block, shelf, caps, faq = px.esc, px.I, px.APP, px.frame, px.head_block, px.shelf, px.caps, px.faq
+esc, I, APP, frame = px.esc, px.I, px.APP, px.frame
+
+
+def head_block(eyebrow, icon, title, sub, h_id):
+    return f'<div class="pd-head"><span class="eyebrow">{I(icon, "i s12")}{esc(eyebrow)}</span><h2 class="h2" id="{h_id}">{title}</h2><p class="sub">{esc(sub)}</p></div>'
+
+
+def caps(items):
+    out = []
+    for ic, title, line, plan in items:
+        tag = f'<span class="tag tag--green">{esc(plan)}</span>' if plan else ""
+        out.append(f'<div class="ix-cap"><div class="ix-cap__top">{I(ic)}<h3>{esc(title)}</h3>{tag}</div><p>{esc(line)}</p></div>')
+    return f'<div class="ix-caps">{"".join(out)}</div>'
+
+
+def faq(items):
+    plus = '<svg aria-hidden="true"><use href="#i-plus"/></svg>'
+    qa = "".join(f"<details><summary>{esc(q)} {plus}</summary><p>{esc(a)}</p></details>" for q, a in items)
+    return f"""  <div class="frame ix-faq">
+    <section class="pd-sec" aria-labelledby="faq-h">
+      <div class="faq">
+        <div class="faq__head">
+          <h2 class="h2" id="faq-h">Questions</h2>
+          <p class="lead">Something else? <a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></p>
+        </div>
+        <div class="qa">{qa}</div>
+      </div>
+    </section>
+  </div>
+"""
+
+
+SCRIPT_TAG = '<script src="https://app.tryclaritia.com/forms/v1.js" async></script>'
+EMBED = '<claritia-form form-id="FORM_ID"></claritia-form>'
 SITE = shell.SITE
 CHEV = I("chev-r")
 ARROW = I("arrow")
@@ -263,7 +296,7 @@ TOOLS = {
             ("Add an Embed element", "In Webflow, drop an Embed element where the form goes and paste the snippet."),
             ("Publish your site", "Fills land in Claritia and go on to your CRM, sheets and Slack."),
         ],
-        "vis": lambda: f'<pre class="px-code"><code>{esc(px.SCRIPT_TAG + chr(10) + px.EMBEDS[0][2])}</code></pre>',
+        "vis": lambda: f'<pre class="ix-code"><code>{esc(SCRIPT_TAG + chr(10) + EMBED)}</code></pre>',
         "faq": [
             ("How do I add a Claritia form to Webflow?", "Drop an Embed element where the form goes, paste the snippet from the form's Share tab, then publish."),
             ("Can I make a multi-step form in Webflow?", "Yes. Build the steps and show-if logic in Claritia and embed it. No custom code in Webflow."),
@@ -360,7 +393,7 @@ def page(path, title, desc, main, extra_ld=""):
     extra = (f'<link rel="stylesheet" href="{tpl.FONTS_URL}">\n<link rel="stylesheet" href="/assets/forms.css?v={tpl.CSS_V}">\n'
              f'<link rel="stylesheet" href="/assets/themes.css?v={tpl.CSS_V}">\n<link rel="stylesheet" href="/assets/products.css?v={px.PX_V}">\n'
              f'<link rel="stylesheet" href="/assets/integrations.css?v={IX_V}">\n' + extra_ld)
-    return shell.head(title, desc, path, extra) + "\n" + shell.body(main, f'<script src="/assets/products.js?v={px.PX_V}" defer></script>\n')
+    return shell.head(title, desc, path, extra) + "\n" + shell.body(main)
 
 
 def tool_page(k):
@@ -369,41 +402,28 @@ def tool_page(k):
     plan = t["plan"]
     plan_line = "On every plan, Free included" if plan == "Free" else f"On {plan} and up"
     crumb = f"""<nav class="ix-crumb" aria-label="Breadcrumb"><a href="/integrations">Integrations</a>{CHEV}<a href="/integrations#{t["group"].lower()}">{esc(t["group"])}</a>{CHEV}<span aria-current="page">{esc(t["name"])}</span></nav>"""
-    hero = f"""    <section class="px-hero px-hero--wide ix-hero" aria-labelledby="ix-h">
-      <div class="px-copy">
+    hero = f"""    <section class="pd-hero ix-hero" aria-labelledby="ix-h">
+      <div class="ix-copy">
         {crumb}
         <div class="ix-pair" aria-hidden="true"><span class="itl"><img src="/assets/brand/claritia-mark.svg" alt="" width="34" height="34"></span><span class="ix-pair__link"></span><span class="itl"><img src="/assets/logos/{t["logo"]}" alt="" width="34" height="34"></span></div>
         <h1 id="ix-h">{esc(t["h1"])}</h1>
         <p class="sub">{esc(t["sub"])}</p>
-        <div class="px-ctas">
+        <div class="pd-ctas">
           <a class="btn btn--primary btn--lg" href="{APP}">Connect {esc(t["name"])} {I("arrow", "i s14 arr")}</a>
           <a class="btn btn--ghost btn--lg" href="/integrations">All integrations</a>
         </div>
         <p class="ix-plan"><span class="tag tag--green">{esc(plan)}</span>{esc(plan_line)}. Free plan, no card needed.</p>
       </div>
     </section>"""
-    workflows = f"""    <section class="px-sec" aria-labelledby="wf-h">
+    workflows = f"""    <section class="pd-sec" aria-labelledby="wf-h">
       {head_block("Workflows", "flow", f"What you can do with {esc(t['name'])}", "Tags show the plan a workflow starts on.", "wf-h")}
       {caps(t["caps"])}
     </section>"""
     steps = "".join(f"<li><b>{esc(a)}</b><span>{esc(b)}</span></li>" for a, b in t["steps"])
-    connect = f"""    <section class="px-sec" aria-labelledby="how-h">
-      <div class="px-split">
-        <div class="px-copy" style="gap:18px">
-          <span class="eyebrow">{I("plug", "i s12")}Set up</span>
-          <h2 class="h2" id="how-h">Connect {esc(t["name"])} in a few minutes</h2>
-          <p class="sub" style="margin:0">One click to sign in. No API keys or code.</p>
-          <ol class="ix-steps" style="width:100%">{steps}</ol>
-        </div>
-        <div class="ix-vis" aria-hidden="true">{t["vis"]()}</div>
-      </div>
-    </section>"""
-    tpls = f"""    <section class="px-sec" aria-labelledby="tpl-h">
-      {head_block("Templates", "form", "Forms to start with", f"Each one is a real form you can fill in now, ready to send to {esc(t['name'])}." if kind == "form" else "Each one is a real form you can fill in now, with booking at the end.", "tpl-h")}
-      {shelf(t["tpls"], f"See all {len(tpl.T)} templates", "/templates")}
-    </section>"""
+    connect = px.how(f"Connect {esc(t['name'])} in a few minutes", t["steps"], f'<div class="ix-vis" aria-hidden="true">{t["vis"]()}</div>')
+    tpls = px.shelf("Forms to start with", f"Each one is a real form you can fill in now, ready to send to {t['name']}." if kind == "form" else "Each one is a real form you can fill in now, with booking at the end.", t["tpls"], f"See all {len(tpl.T)} templates", "/templates")
     others = "".join(tool_link(o) for o in ORDER if o != k)
-    more = f"""    <section class="px-sec" aria-labelledby="more-h">
+    more = f"""    <section class="pd-sec" aria-labelledby="more-h">
       {head_block("Integrations", "plug", "Works with the rest of your tools", "Every lead goes to Claritia first, then to each tool you connect.", "more-h")}
       <div class="ix-tools">{others}</div>
     </section>"""
@@ -422,18 +442,22 @@ def hub_page():
         pic = f'<img src="/assets/logos/{logo}" alt="" width="18" height="18" loading="lazy">' if logo else I("plug")
         return f"<li>{pic}{esc(n)}</li>"
     also = "".join(chip(n, logo) for n, logo in ALSO)
-    main = frame(f"""    <section class="px-hero px-hero--wide ix-hero" aria-labelledby="ix-h">
-      <div class="px-copy">
+    main = frame(f"""    <section class="pd-hero ix-hero" aria-labelledby="ix-h">
+      <div class="ix-copy">
         <span class="eyebrow">{I("plug", "i s12")}Integrations</span>
         <h1 id="ix-h">Connect Claritia to the tools you use</h1>
         <p class="sub">Send each lead to your CRM, book it on your calendar and tell your team in Slack. Every connection is one click.</p>
-        {px.ctas()}
+        <div class="pd-ctas">
+          <a class="btn btn--primary btn--lg" href="{APP}">Start free {I("arrow", "i s14 arr")}</a>
+          <a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a>
+        </div>
+        <p class="pd-note">Free plan. No card needed.</p>
       </div>
-    </section>""") + frame(f"""    <section class="px-sec" style="padding-top:72px" aria-label="Integrations by kind">
+    </section>""") + frame(f"""    <section class="pd-sec" style="padding-top:72px" aria-label="Integrations by kind">
       <div class="ix-groups">{"".join(groups)}</div>
-    </section>""") + frame(f"""    <section class="px-sec" aria-labelledby="also-h">
+    </section>""") + frame(f"""    <section class="pd-sec" aria-labelledby="also-h">
       {head_block("More", "plug", "Also works with", "Sheets, email lists, form and booking tools, and webhooks for anything else.", "also-h")}
-      <ul class="ix-also">{also}</ul>
+      <ul class="ix-also" style="margin-top:40px">{also}</ul>
     </section>""") + px.cta()
     desc = "Claritia integrations: HubSpot, Salesforce, Google Calendar, Outlook, Zoom, Slack, Webflow and Stripe, plus Google Sheets, Airtable, Notion, email lists and webhooks."
     lds = ld(crumbs_ld([("Integrations", "/integrations")]))

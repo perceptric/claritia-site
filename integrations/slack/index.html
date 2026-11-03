@@ -25,8 +25,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Bricolage+Grotesque:wght@400;600;800&amp;family=Fraunces:wght@400;600&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;600&amp;family=Nunito:wght@400;600;800&amp;family=Outfit:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Playfair+Display:wght@400;600&amp;family=Lora:wght@400;600&amp;display=swap">
 <link rel="stylesheet" href="/assets/forms.css?v=11">
 <link rel="stylesheet" href="/assets/themes.css?v=11">
-<link rel="stylesheet" href="/assets/products.css?v=1">
-<link rel="stylesheet" href="/assets/integrations.css?v=1">
+<link rel="stylesheet" href="/assets/products.css?v=2">
+<link rel="stylesheet" href="/assets/integrations.css?v=2">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Integrations", "item": "https://tryclaritia.com/integrations"}, {"@type": "ListItem", "position": 2, "name": "Slack", "item": "https://tryclaritia.com/integrations/slack"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which plan has the Slack integration?", "acceptedAnswer": {"@type": "Answer", "text": "Starter and up, from $15 a month. Speed-to-lead nudges for routed leads are on Pro."}}, {"@type": "Question", "name": "How do I connect Slack?", "acceptedAnswer": {"@type": "Answer", "text": "One click: Add to Slack in Settings, then Integrations. No webhook addresses to paste."}}, {"@type": "Question", "name": "How does /book work?", "acceptedAnswer": {"@type": "Answer", "text": "Type /book and the lead's email. Only you see the answer: a single-use booking link with the lead's owner, or with you when the lead has none."}}, {"@type": "Question", "name": "Who gets the direct message?", "acceptedAnswer": {"@type": "Answer", "text": "The rep Routing picks for the lead, found in Slack by their email."}}]}</script>
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
@@ -128,13 +128,13 @@
 
 <main id="main">
   <div class="frame">
-    <section class="px-hero px-hero--wide ix-hero" aria-labelledby="ix-h">
-      <div class="px-copy">
+    <section class="pd-hero ix-hero" aria-labelledby="ix-h">
+      <div class="ix-copy">
         <nav class="ix-crumb" aria-label="Breadcrumb"><a href="/integrations">Integrations</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><a href="/integrations#chat">Chat</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><span aria-current="page">Slack</span></nav>
         <div class="ix-pair" aria-hidden="true"><span class="itl"><img src="/assets/brand/claritia-mark.svg" alt="" width="34" height="34"></span><span class="ix-pair__link"></span><span class="itl"><img src="/assets/logos/slack.svg" alt="" width="34" height="34"></span></div>
         <h1 id="ix-h">Slack form integration</h1>
         <p class="sub">Post every new lead in Slack, message the rep who gets it, and book a meeting for any lead right from Slack with /book.</p>
-        <div class="px-ctas">
+        <div class="pd-ctas">
           <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com">Connect Slack <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
           <a class="btn btn--ghost btn--lg" href="/integrations">All integrations</a>
         </div>
@@ -144,26 +144,16 @@
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="px-sec" aria-labelledby="wf-h">
-      <div class="px-sec__head">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#flow"/></svg>Workflows</span>
-        <h2 class="h2" id="wf-h">What you can do with Slack</h2>
-        <p class="sub">Tags show the plan a workflow starts on.</p>
-      </div>
-      <div class="px-caps"><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#bolt"/></svg><h3>New lead alerts</h3><span class="tag tag--green">Starter</span></div><p>A team channel gets each fill as it comes in.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#user"/></svg><h3>A message to the rep</h3><span class="tag tag--green">Starter</span></div><p>The rep who gets the lead hears about it in Slack right away.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#check"/></svg><h3>Mark contacted</h3><span class="tag tag--green">Starter</span></div><p>Reps tap Mark contacted right in the message.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#cal"/></svg><h3>/book from Slack</h3><span class="tag tag--green">Starter</span></div><p>Type /book and an email to get a single-use booking link for that lead.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#flow"/></svg><h3>A Slack step in workflows</h3><span class="tag tag--green">Starter</span></div><p>Post to Slack from any workflow, like when a meeting is booked.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#clock"/></svg><h3>Speed-to-lead nudges</h3><span class="tag tag--green">Pro</span></div><p>A rep who hasn&#x27;t reached a routed lead yet gets a reminder.</p></div></div>
+    <section class="pd-sec" aria-labelledby="wf-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#flow"/></svg>Workflows</span><h2 class="h2" id="wf-h">What you can do with Slack</h2><p class="sub">Tags show the plan a workflow starts on.</p></div>
+      <div class="ix-caps"><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#bolt"/></svg><h3>New lead alerts</h3><span class="tag tag--green">Starter</span></div><p>A team channel gets each fill as it comes in.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#user"/></svg><h3>A message to the rep</h3><span class="tag tag--green">Starter</span></div><p>The rep who gets the lead hears about it in Slack right away.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#check"/></svg><h3>Mark contacted</h3><span class="tag tag--green">Starter</span></div><p>Reps tap Mark contacted right in the message.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#cal"/></svg><h3>/book from Slack</h3><span class="tag tag--green">Starter</span></div><p>Type /book and an email to get a single-use booking link for that lead.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#flow"/></svg><h3>A Slack step in workflows</h3><span class="tag tag--green">Starter</span></div><p>Post to Slack from any workflow, like when a meeting is booked.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#clock"/></svg><h3>Speed-to-lead nudges</h3><span class="tag tag--green">Pro</span></div><p>A rep who hasn&#x27;t reached a routed lead yet gets a reminder.</p></div></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="px-sec" aria-labelledby="how-h">
-      <div class="px-split">
-        <div class="px-copy" style="gap:18px">
-          <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#plug"/></svg>Set up</span>
-          <h2 class="h2" id="how-h">Connect Slack in a few minutes</h2>
-          <p class="sub" style="margin:0">One click to sign in. No API keys or code.</p>
-          <ol class="ix-steps" style="width:100%"><li><b>Add to Slack</b><span>Go to Settings, then Integrations, and click Add to Slack.</span></li><li><b>Pick what posts</b><span>Turn on alerts for a form, or add a Slack step to a workflow.</span></li><li><b>Work from Slack</b><span>Reps get their leads in Slack and book with /book.</span></li></ol>
-        </div>
-        <div class="ix-vis" aria-hidden="true"><div class="ix-panel">
+    <section class="pd-sec" aria-labelledby="how-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#flow"/></svg>How it works</span><h2 class="h2" id="how-h">Connect Slack in a few minutes</h2></div>
+      <div class="pd-how"><ol class="pd-steps"><li><b>01</b><h3>Add to Slack</h3><p>Go to Settings, then Integrations, and click Add to Slack.</p></li><li><b>02</b><h3>Pick what posts</h3><p>Turn on alerts for a form, or add a Slack step to a workflow.</p></li><li><b>03</b><h3>Work from Slack</h3><p>Reps get their leads in Slack and book with /book.</p></li></ol><div class="ix-vis" aria-hidden="true"><div class="ix-panel">
         <div class="ix-panel__head"><img src="/assets/logos/slack.svg" alt="" width="22" height="22"><b># inbound-leads</b><small>Example</small></div>
         <div class="ix-msg"><span class="av" style="background:var(--green-strong)"><svg class="i" aria-hidden="true"><use href="#mark"/></svg></span><div>
           <b>Claritia<small>10:31 AM</small></b>
@@ -171,36 +161,27 @@
           <div class="ix-btns"><span>Open lead</span><span class="on">Mark contacted</span></div>
         </div></div>
         <div class="ix-cmd">/book jonas@example.com demo</div>
-      </div></div>
-      </div>
+      </div></div></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="px-sec" aria-labelledby="tpl-h">
-      <div class="px-sec__head">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>Templates</span>
-        <h2 class="h2" id="tpl-h">Forms to start with</h2>
-        <p class="sub">Each one is a real form you can fill in now, ready to send to Slack.</p>
-      </div>
-      <div class="px-shelf"><a class="px-tpl" href="/templates/saas-demo-request"><span class="tp fth th-midnight" data-layout="card" data-input="box" data-shadow="soft" data-pattern="grid" data-dark data-own="midnight" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Demo request</b><span class="tp__intro">See it with your own data. Takes 30 minutes.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Job title</span><span class="tp__box"></span></span><span class="tp__btn">Next</span></span></span></span><span class="px-tpl__name"><b>Demo request</b><span>8 questions, 2 pages</span></span><p>Qualify demo requests and route them to a rep.</p></a><a class="px-tpl" href="/templates/general-contact-us"><span class="tp fth th-coral" data-layout="cover" data-input="box" data-shadow="soft" data-pattern="none" data-own="coral" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Contact us</b><span class="tp__intro">Send us a note and the right person will reply.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">What&#x27;s this about? *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__btn">Submit</span></span></span></span><span class="px-tpl__name"><b>Contact us</b><span>6 questions</span></span><p>A simple way for anyone to reach your team.</p></a><a class="px-tpl" href="/templates/general-callback-request"><span class="tp fth th-paper" data-layout="card" data-input="box" data-shadow="soft" data-pattern="dots" data-own="paper" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Callback request</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Phone *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Email</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Best time to call *</span><span class="tp__opt"><i class="tp__dot"></i>Morning</span><span class="tp__opt"><i class="tp__dot"></i>Afternoon</span><span class="tp__opt"><i class="tp__dot"></i>Evening</span></span><span class="tp__f"><span class="tp__l">What&#x27;s it about?</span><span class="tp__box"></span></span><span class="tp__btn">Request a call</span></span></span></span><span class="px-tpl__name"><b>Callback request</b><span>5 questions</span></span><p>Let people ask for a call at a good time.</p></a></div>
-      <div class="px-more"><a class="btn btn--ghost btn--lg" href="/templates">See all 435 templates <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+    <section class="pd-sec" aria-labelledby="tpl-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>Templates</span><h2 class="h2" id="tpl-h">Forms to start with</h2><p class="sub">Each one is a real form you can fill in now, ready to send to Slack.</p></div>
+      <div class="pd-shelf"><a class="pd-tpl" href="/templates/saas-demo-request"><span class="tp fth th-midnight" data-layout="card" data-input="box" data-shadow="soft" data-pattern="grid" data-dark data-own="midnight" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Demo request</b><span class="tp__intro">See it with your own data. Takes 30 minutes.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Job title</span><span class="tp__box"></span></span><span class="tp__btn">Next</span></span></span></span><b>Demo request</b><span class="pd-meta">8 questions, 2 pages</span></a><a class="pd-tpl" href="/templates/general-contact-us"><span class="tp fth th-coral" data-layout="cover" data-input="box" data-shadow="soft" data-pattern="none" data-own="coral" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Contact us</b><span class="tp__intro">Send us a note and the right person will reply.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">What&#x27;s this about? *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__btn">Submit</span></span></span></span><b>Contact us</b><span class="pd-meta">6 questions</span></a><a class="pd-tpl" href="/templates/general-callback-request"><span class="tp fth th-paper" data-layout="card" data-input="box" data-shadow="soft" data-pattern="dots" data-own="paper" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Callback request</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Phone *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Email</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Best time to call *</span><span class="tp__opt"><i class="tp__dot"></i>Morning</span><span class="tp__opt"><i class="tp__dot"></i>Afternoon</span><span class="tp__opt"><i class="tp__dot"></i>Evening</span></span><span class="tp__f"><span class="tp__l">What&#x27;s it about?</span><span class="tp__box"></span></span><span class="tp__btn">Request a call</span></span></span></span><b>Callback request</b><span class="pd-meta">5 questions</span></a></div>
+      <div class="pd-more"><a class="btn btn--ghost btn--lg" href="/templates">See all 435 templates <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="px-sec" aria-labelledby="more-h">
-      <div class="px-sec__head">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#plug"/></svg>Integrations</span>
-        <h2 class="h2" id="more-h">Works with the rest of your tools</h2>
-        <p class="sub">Every lead goes to Claritia first, then to each tool you connect.</p>
-      </div>
+    <section class="pd-sec" aria-labelledby="more-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#plug"/></svg>Integrations</span><h2 class="h2" id="more-h">Works with the rest of your tools</h2><p class="sub">Every lead goes to Claritia first, then to each tool you connect.</p></div>
       <div class="ix-tools"><a class="ix-tool" href="/integrations/hubspot"><span class="ix-logo"><img src="/assets/logos/hubspot.svg" alt="" width="22" height="22" loading="lazy"></span><b>HubSpot</b><span>Contacts, owners and booking</span></a><a class="ix-tool" href="/integrations/salesforce"><span class="ix-logo"><img src="/assets/logos/salesforce.svg" alt="" width="22" height="22" loading="lazy"></span><b>Salesforce</b><span>Leads, contacts and owners</span></a><a class="ix-tool" href="/integrations/google-calendar"><span class="ix-logo"><img src="/assets/logos/calendar.svg" alt="" width="22" height="22" loading="lazy"></span><b>Google Calendar</b><span>Busy times and Meet links</span></a><a class="ix-tool" href="/integrations/outlook"><span class="ix-logo"><img src="/assets/logos/outlook.jpg" alt="" width="22" height="22" loading="lazy"></span><b>Outlook</b><span>Busy times and Teams links</span></a><a class="ix-tool" href="/integrations/zoom"><span class="ix-logo"><img src="/assets/logos/zoom.svg" alt="" width="22" height="22" loading="lazy"></span><b>Zoom</b><span>A link for each meeting</span></a><a class="ix-tool" href="/integrations/webflow"><span class="ix-logo"><img src="/assets/logos/webflow.svg" alt="" width="22" height="22" loading="lazy"></span><b>Webflow</b><span>Embeds and your own forms</span></a><a class="ix-tool" href="/integrations/stripe"><span class="ix-logo"><img src="/assets/logos/stripe.svg" alt="" width="22" height="22" loading="lazy"></span><b>Stripe</b><span>Payments and paid meetings</span></a></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
-  <div class="frame px-faq">
-    <section class="px-sec" aria-labelledby="faq-h">
+  <div class="frame ix-faq">
+    <section class="pd-sec" aria-labelledby="faq-h">
       <div class="faq">
         <div class="faq__head">
           <h2 class="h2" id="faq-h">Questions</h2>
@@ -252,6 +233,5 @@
 </footer>
 
 <script src="/assets/site.js?v=8" defer></script>
-<script src="/assets/products.js?v=1" defer></script>
 </body>
 </html>

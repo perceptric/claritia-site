@@ -25,8 +25,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Bricolage+Grotesque:wght@400;600;800&amp;family=Fraunces:wght@400;600&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;600&amp;family=Nunito:wght@400;600;800&amp;family=Outfit:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Playfair+Display:wght@400;600&amp;family=Lora:wght@400;600&amp;display=swap">
 <link rel="stylesheet" href="/assets/forms.css?v=11">
 <link rel="stylesheet" href="/assets/themes.css?v=11">
-<link rel="stylesheet" href="/assets/products.css?v=1">
-<link rel="stylesheet" href="/assets/integrations.css?v=1">
+<link rel="stylesheet" href="/assets/products.css?v=2">
+<link rel="stylesheet" href="/assets/integrations.css?v=2">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Integrations", "item": "https://tryclaritia.com/integrations"}, {"@type": "ListItem", "position": 2, "name": "Outlook", "item": "https://tryclaritia.com/integrations/outlook"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the Outlook integration free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, on every plan, Free included. Free connects 1 calendar per host, Starter 3, Pro 10 and Business as many as you like."}}, {"@type": "Question", "name": "Does it work with a personal Outlook.com account?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for booking. Teams links need a work or school Microsoft 365 account, so personal accounts book without one."}}, {"@type": "Question", "name": "Can I use Zoom with Outlook?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Connect Zoom and pick it as the meeting's location. The Zoom link goes on the Outlook event."}}, {"@type": "Question", "name": "Do guests need Outlook?", "acceptedAnswer": {"@type": "Answer", "text": "No. Guests book from any browser and get a calendar invite that works in Outlook, Google and Apple Calendar."}}]}</script>
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
@@ -128,13 +128,13 @@
 
 <main id="main">
   <div class="frame">
-    <section class="px-hero px-hero--wide ix-hero" aria-labelledby="ix-h">
-      <div class="px-copy">
+    <section class="pd-hero ix-hero" aria-labelledby="ix-h">
+      <div class="ix-copy">
         <nav class="ix-crumb" aria-label="Breadcrumb"><a href="/integrations">Integrations</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><a href="/integrations#calendars">Calendars</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><span aria-current="page">Outlook</span></nav>
         <div class="ix-pair" aria-hidden="true"><span class="itl"><img src="/assets/brand/claritia-mark.svg" alt="" width="34" height="34"></span><span class="ix-pair__link"></span><span class="itl"><img src="/assets/logos/outlook.jpg" alt="" width="34" height="34"></span></div>
         <h1 id="ix-h">Outlook scheduling integration</h1>
         <p class="sub">Connect Outlook or Microsoft 365 in one click. Leads book only open times, and each meeting lands on your calendar with a Teams link.</p>
-        <div class="px-ctas">
+        <div class="pd-ctas">
           <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com">Connect Outlook <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
           <a class="btn btn--ghost btn--lg" href="/integrations">All integrations</a>
         </div>
@@ -144,58 +144,39 @@
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="px-sec" aria-labelledby="wf-h">
-      <div class="px-sec__head">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#flow"/></svg>Workflows</span>
-        <h2 class="h2" id="wf-h">What you can do with Outlook</h2>
-        <p class="sub">Tags show the plan a workflow starts on.</p>
-      </div>
-      <div class="px-caps"><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#refresh"/></svg><h3>Busy times stay fresh</h3></div><p>Outlook tells Claritia the moment your calendar changes, so a taken time never shows.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#clock"/></svg><h3>Out of office counts</h3></div><p>Time you mark out of office is blocked too.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#video"/></svg><h3>Teams links</h3></div><p>Work and school accounts get a Microsoft Teams link on each meeting.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#grid"/></svg><h3>More than one calendar</h3><span class="tag tag--green">Starter</span></div><p>Count several calendars as busy, and pick where new meetings go.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#users"/></svg><h3>Team meetings</h3><span class="tag tag--green">Pro</span></div><p>Round robin and everyone-free meetings read each person&#x27;s Outlook calendar.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#mail"/></svg><h3>Invites done right</h3></div><p>Guests get Claritia&#x27;s invite. Co-hosts on your team get Outlook&#x27;s own invite and cancel notice.</p></div></div>
+    <section class="pd-sec" aria-labelledby="wf-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#flow"/></svg>Workflows</span><h2 class="h2" id="wf-h">What you can do with Outlook</h2><p class="sub">Tags show the plan a workflow starts on.</p></div>
+      <div class="ix-caps"><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#refresh"/></svg><h3>Busy times stay fresh</h3></div><p>Outlook tells Claritia the moment your calendar changes, so a taken time never shows.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#clock"/></svg><h3>Out of office counts</h3></div><p>Time you mark out of office is blocked too.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#video"/></svg><h3>Teams links</h3></div><p>Work and school accounts get a Microsoft Teams link on each meeting.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#grid"/></svg><h3>More than one calendar</h3><span class="tag tag--green">Starter</span></div><p>Count several calendars as busy, and pick where new meetings go.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#users"/></svg><h3>Team meetings</h3><span class="tag tag--green">Pro</span></div><p>Round robin and everyone-free meetings read each person&#x27;s Outlook calendar.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#mail"/></svg><h3>Invites done right</h3></div><p>Guests get Claritia&#x27;s invite. Co-hosts on your team get Outlook&#x27;s own invite and cancel notice.</p></div></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="px-sec" aria-labelledby="how-h">
-      <div class="px-split">
-        <div class="px-copy" style="gap:18px">
-          <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#plug"/></svg>Set up</span>
-          <h2 class="h2" id="how-h">Connect Outlook in a few minutes</h2>
-          <p class="sub" style="margin:0">One click to sign in. No API keys or code.</p>
-          <ol class="ix-steps" style="width:100%"><li><b>Connect Microsoft</b><span>Sign in with Microsoft from Meetings. Microsoft 365 and Outlook.com accounts both work.</span></li><li><b>Pick your calendars</b><span>Choose which calendars count as busy and which one gets new meetings.</span></li><li><b>Share your booking page</b><span>Put it in a form, on your site or in an email. Guests book open times only.</span></li></ol>
-        </div>
-        <div class="ix-vis" aria-hidden="true"><div class="ix-panel">
+    <section class="pd-sec" aria-labelledby="how-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#flow"/></svg>How it works</span><h2 class="h2" id="how-h">Connect Outlook in a few minutes</h2></div>
+      <div class="pd-how"><ol class="pd-steps"><li><b>01</b><h3>Connect Microsoft</h3><p>Sign in with Microsoft from Meetings. Microsoft 365 and Outlook.com accounts both work.</p></li><li><b>02</b><h3>Pick your calendars</h3><p>Choose which calendars count as busy and which one gets new meetings.</p></li><li><b>03</b><h3>Share your booking page</h3><p>Put it in a form, on your site or in an email. Guests book open times only.</p></li></ol><div class="ix-vis" aria-hidden="true"><div class="ix-panel">
         <div class="ix-panel__head"><img src="/assets/logos/outlook.jpg" alt="" width="22" height="22"><b>Outlook</b><small>Calendars</small></div>
         <div class="ix-rows"><div class="ix-row"><span><b style="font-weight:500">Check these for busy times</b></span></div><div class="ix-row"><span>Calendar</span><span class="ix-tog"></span></div><div class="ix-row"><span>Team calendar</span><span class="ix-tog"></span></div><div class="ix-row"><span>Birthdays</span><span class="ix-tog off"></span></div><div class="ix-row"><span>Add new meetings to</span><span class="ix-val"><svg class="i" aria-hidden="true"><use href="#cal"/></svg>Calendar</span></div><div class="ix-row"><span>Location</span><span class="ix-val"><svg class="i" aria-hidden="true"><use href="#video"/></svg>Microsoft Teams</span></div></div>
-      </div></div>
-      </div>
+      </div></div></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="px-sec" aria-labelledby="tpl-h">
-      <div class="px-sec__head">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>Templates</span>
-        <h2 class="h2" id="tpl-h">Forms to start with</h2>
-        <p class="sub">Each one is a real form you can fill in now, with booking at the end.</p>
-      </div>
-      <div class="px-shelf"><a class="px-tpl" href="/templates/general-book-a-call"><span class="tp fth th-lilac" data-layout="card" data-input="fill" data-shadow="soft" data-pattern="dots" data-own="lilac" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Book a call</b><span class="tp__intro">Tell us a little about you and pick a time that works.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Team size *</span><span class="tp__opt"><i class="tp__dot"></i>Just me</span><span class="tp__opt"><i class="tp__dot"></i>2–10</span><span class="tp__opt"><i class="tp__dot"></i>11–50</span></span><span class="tp__f"><span class="tp__l">What would you like to cover?</span><span class="tp__box tp__box--tall"></span></span><span class="tp__btn">Continue</span></span></span></span><span class="px-tpl__name"><b>Book a call</b><span>5 questions</span></span><p>Qualify the visitor, then let them pick a time.</p></a><a class="px-tpl" href="/templates/consulting-consultation"><span class="tp fth th-editorial" data-layout="plain" data-input="line" data-shadow="none" data-pattern="none" data-own="editorial" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Consultation request</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Job title</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">What challenge are you facing? *</span><span class="tp__box tp__box--tall"></span></span><span class="tp__btn">Submit</span></span></span></span><span class="px-tpl__name"><b>Consultation request</b><span>6 questions</span></span><p>Book first calls with a little context.</p></a><a class="px-tpl" href="/templates/education-info-session"><span class="tp fth th-sunrise" data-layout="cover" data-input="box" data-shadow="soft" data-pattern="none" data-own="sunrise" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Online info session registration</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">I am a *</span><span class="tp__opt"><i class="tp__dot"></i>Future student</span><span class="tp__opt"><i class="tp__dot"></i>Parent or guardian</span><span class="tp__opt"><i class="tp__dot"></i>School counselor</span></span><span class="tp__f"><span class="tp__l">Program you&#x27;re interested in *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__btn">Save my seat</span></span></span></span><span class="px-tpl__name"><b>Online info session registration</b><span>8 questions</span></span><p>Sign up future students for a live online info session.</p></a></div>
-      <div class="px-more"><a class="btn btn--ghost btn--lg" href="/templates">See all 435 templates <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+    <section class="pd-sec" aria-labelledby="tpl-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>Templates</span><h2 class="h2" id="tpl-h">Forms to start with</h2><p class="sub">Each one is a real form you can fill in now, with booking at the end.</p></div>
+      <div class="pd-shelf"><a class="pd-tpl" href="/templates/general-book-a-call"><span class="tp fth th-lilac" data-layout="card" data-input="fill" data-shadow="soft" data-pattern="dots" data-own="lilac" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Book a call</b><span class="tp__intro">Tell us a little about you and pick a time that works.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Team size *</span><span class="tp__opt"><i class="tp__dot"></i>Just me</span><span class="tp__opt"><i class="tp__dot"></i>2–10</span><span class="tp__opt"><i class="tp__dot"></i>11–50</span></span><span class="tp__f"><span class="tp__l">What would you like to cover?</span><span class="tp__box tp__box--tall"></span></span><span class="tp__btn">Continue</span></span></span></span><b>Book a call</b><span class="pd-meta">5 questions</span></a><a class="pd-tpl" href="/templates/consulting-consultation"><span class="tp fth th-editorial" data-layout="plain" data-input="line" data-shadow="none" data-pattern="none" data-own="editorial" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Consultation request</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Job title</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">What challenge are you facing? *</span><span class="tp__box tp__box--tall"></span></span><span class="tp__btn">Submit</span></span></span></span><b>Consultation request</b><span class="pd-meta">6 questions</span></a><a class="pd-tpl" href="/templates/education-info-session"><span class="tp fth th-sunrise" data-layout="cover" data-input="box" data-shadow="soft" data-pattern="none" data-own="sunrise" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Online info session registration</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">I am a *</span><span class="tp__opt"><i class="tp__dot"></i>Future student</span><span class="tp__opt"><i class="tp__dot"></i>Parent or guardian</span><span class="tp__opt"><i class="tp__dot"></i>School counselor</span></span><span class="tp__f"><span class="tp__l">Program you&#x27;re interested in *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__btn">Save my seat</span></span></span></span><b>Online info session registration</b><span class="pd-meta">8 questions</span></a></div>
+      <div class="pd-more"><a class="btn btn--ghost btn--lg" href="/templates">See all 435 templates <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="px-sec" aria-labelledby="more-h">
-      <div class="px-sec__head">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#plug"/></svg>Integrations</span>
-        <h2 class="h2" id="more-h">Works with the rest of your tools</h2>
-        <p class="sub">Every lead goes to Claritia first, then to each tool you connect.</p>
-      </div>
+    <section class="pd-sec" aria-labelledby="more-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#plug"/></svg>Integrations</span><h2 class="h2" id="more-h">Works with the rest of your tools</h2><p class="sub">Every lead goes to Claritia first, then to each tool you connect.</p></div>
       <div class="ix-tools"><a class="ix-tool" href="/integrations/hubspot"><span class="ix-logo"><img src="/assets/logos/hubspot.svg" alt="" width="22" height="22" loading="lazy"></span><b>HubSpot</b><span>Contacts, owners and booking</span></a><a class="ix-tool" href="/integrations/salesforce"><span class="ix-logo"><img src="/assets/logos/salesforce.svg" alt="" width="22" height="22" loading="lazy"></span><b>Salesforce</b><span>Leads, contacts and owners</span></a><a class="ix-tool" href="/integrations/google-calendar"><span class="ix-logo"><img src="/assets/logos/calendar.svg" alt="" width="22" height="22" loading="lazy"></span><b>Google Calendar</b><span>Busy times and Meet links</span></a><a class="ix-tool" href="/integrations/zoom"><span class="ix-logo"><img src="/assets/logos/zoom.svg" alt="" width="22" height="22" loading="lazy"></span><b>Zoom</b><span>A link for each meeting</span></a><a class="ix-tool" href="/integrations/slack"><span class="ix-logo"><img src="/assets/logos/slack.svg" alt="" width="22" height="22" loading="lazy"></span><b>Slack</b><span>Lead alerts and /book</span></a><a class="ix-tool" href="/integrations/webflow"><span class="ix-logo"><img src="/assets/logos/webflow.svg" alt="" width="22" height="22" loading="lazy"></span><b>Webflow</b><span>Embeds and your own forms</span></a><a class="ix-tool" href="/integrations/stripe"><span class="ix-logo"><img src="/assets/logos/stripe.svg" alt="" width="22" height="22" loading="lazy"></span><b>Stripe</b><span>Payments and paid meetings</span></a></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
-  <div class="frame px-faq">
-    <section class="px-sec" aria-labelledby="faq-h">
+  <div class="frame ix-faq">
+    <section class="pd-sec" aria-labelledby="faq-h">
       <div class="faq">
         <div class="faq__head">
           <h2 class="h2" id="faq-h">Questions</h2>
@@ -247,6 +228,5 @@
 </footer>
 
 <script src="/assets/site.js?v=8" defer></script>
-<script src="/assets/products.js?v=1" defer></script>
 </body>
 </html>
