@@ -7,7 +7,7 @@ Each plan is priced per seat. A seat is a teammate people can book a meeting wit
 | | Free | Starter | Pro | Business |
 |---|---|---|---|---|
 | **Plan** | | | | |
-| Price per seat a month | $0 | $15 ($12 yearly) | $39 ($31 yearly) | $79 ($63 yearly) |
+| Price per seat/month | $0 | $15 ($12 yearly) | $39 ($31 yearly) | $79 ($63 yearly) |
 | Seats | 1 | Unlimited | Unlimited | Unlimited |
 | AI form builder | Unlimited | Unlimited | Unlimited | Unlimited |
 | Submissions | 250 | 2,000 | 5,000 | Unlimited |
@@ -40,7 +40,7 @@ Each plan is priced per seat. A seat is a teammate people can book a meeting wit
 | Ad pixels (soon) | – | – | – | Yes |
 | Your own domain for forms and booking pages | – | – | – | Yes |
 | **Meetings** | | | | |
-| Calendars per seat | 1 | 3 | 10 | Unlimited |
+| Calendars per seat | 1 | 6 | 6 | 6 |
 | Meeting types | 1 | Unlimited | Unlimited | Unlimited |
 | Google Calendar and Outlook | Yes | Yes | Yes | Yes |
 | Google Meet, Teams and Zoom links | Yes | Yes | Yes | Yes |
@@ -77,7 +77,7 @@ Each plan is priced per seat. A seat is a teammate people can book a meeting wit
 | Follow-up the next day until they book | – | Yes | Yes | Yes |
 | Thank-you after a held meeting | – | – | Yes | Yes |
 | No-show follow-up with the reschedule link | – | – | Yes | Yes |
-| SMS reminders (soon) | – | – | 100 a month | 300 a month |
+| SMS reminders (soon) | – | – | 100/month | 300/month |
 | **Routing** | | | | |
 | Route by any answer to a meeting and a person | – | – | Yes | Yes |
 | Route by past answers | – | – | Yes | Yes |

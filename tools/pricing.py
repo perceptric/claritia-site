@@ -7,20 +7,20 @@ import shell  # noqa: E402
 
 esc = shell.esc
 
-# The plans. Prices are dollars per seat a month; yearly is the monthly price with 20% off, billed once a year.
+# The plans. Prices are dollars per seat per month; yearly is the monthly price with 20% off, billed once a year.
 PLANS = [
     {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"),
-     "top": ["Unlimited forms", "250 submissions a month", "1 calendar per seat", "100 AI credits", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and step skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
+     "top": ["Unlimited forms", "250 submissions/month", "1 calendar per seat", "100 AI credits/month", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and step skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
     {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Free",
-     "top": ["Unlimited forms", "2,000 submissions a month", "3 calendars per seat", "500 AI credits", "Unlimited meeting types", "e-Signatures", "Stripe payment", "Custom brand", "Redirect on completion", "Booking pages for each person and the team", "Group meetings with a guest limit", "Meeting polls", "Paid meetings with Stripe"]},
+     "top": ["Unlimited forms", "2,000 submissions/month", "6 calendars per seat", "500 AI credits/month", "Unlimited meeting types", "e-Signatures", "Stripe payment", "Custom brand", "Redirect on completion", "Booking pages for each person and the team", "Group meetings with a guest limit", "Meeting polls", "Paid meetings with Stripe"]},
     {"id": "pro", "name": "Pro", "for": "For teams that share leads", "m": 39, "y": 31, "pick": True,
      "btn": ("Start free", "https://app.tryclaritia.com", "primary"), "plus": "Starter",
-     "top": ["5,000 submissions a month", "10 calendars per seat", "2,000 AI credits", "Follow-up emails from your own domain", "Remove Claritia branding", "Round robin with weights and priority", "Meetings with everyone free", "Team pools", "Daily and weekly limits for each person", "No-show follow-up with the reschedule link"]},
+     "top": ["5,000 submissions/month", "2,000 AI credits/month", "Follow-up emails from your own domain", "Remove Claritia branding", "Round robin with weights and priority", "Meetings with everyone free", "Team pools", "Daily and weekly limits for each person", "No-show follow-up with the reschedule link"]},
     {"id": "business", "name": "Business", "for": "For busy teams with lots of leads", "m": 79, "y": 63,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Pro",
-     "top": ["Unlimited submissions", "Unlimited calendars per seat", "5,000 AI credits", "Your own domain for forms and booking pages", "Partial answers", "Drop-off by question", "Owner first (the person's owner in your CRM)", "Double round robin (one from each of two teams)", "Salesforce", "Chat help"]},
+     "top": ["Unlimited submissions", "5,000 AI credits/month", "Your own domain for forms and booking pages", "Partial answers", "Drop-off by question", "Owner first (the person's owner in your CRM)", "Double round robin (one from each of two teams)", "Salesforce", "Chat help"]},
 ]
 
 Y, N = True, False
@@ -30,7 +30,7 @@ SOON = "soon"
 # add SOON as a third item for a feature that isn't built yet.
 GROUPS = [
     ("Plan", [
-        ("Price per seat a month", ["$0", ("$15", "$12"), ("$39", "$31"), ("$79", "$63")]),
+        ("Price per seat/month", ["$0", ("$15", "$12"), ("$39", "$31"), ("$79", "$63")]),
         ("Seats", ["1", "Unlimited", "Unlimited", "Unlimited"]),
         ("AI form builder", ["Unlimited", "Unlimited", "Unlimited", "Unlimited"]),
         ("Submissions", ["250", "2,000", "5,000", "Unlimited"]),
@@ -65,7 +65,7 @@ GROUPS = [
         ("Your own domain for forms and booking pages", [N, N, N, Y]),
     ]),
     ("Meetings", [
-        ("Calendars per seat", ["1", "3", "10", "Unlimited"]),
+        ("Calendars per seat", ["1", "6", "6", "6"]),
         ("Meeting types", ["1", "Unlimited", "Unlimited", "Unlimited"]),
         ("Google Calendar and Outlook", [Y, Y, Y, Y]),
         ("Google Meet, Teams and Zoom links", [Y, Y, Y, Y]),
@@ -104,7 +104,7 @@ GROUPS = [
         ("Follow-up the next day until they book", [N, Y, Y, Y]),
         ("Thank-you after a held meeting", [N, N, Y, Y]),
         ("No-show follow-up with the reschedule link", [N, N, Y, Y]),
-        ("SMS reminders", [N, N, "100 a month", "300 a month"], SOON),
+        ("SMS reminders", [N, N, "100/month", "300/month"], SOON),
     ]),
     ("Routing", [
         ("Route by any answer to a meeting and a person", [N, N, Y, Y]),
@@ -219,7 +219,7 @@ SCRIPT = """<script>
       if (!t) return;
       if (n === 1 || extra === "") { t.classList.toggle("on", n > 1 && extra === ""); t.textContent = n > 1 ? "1 seat only" : ""; return; }
       t.classList.add("on");
-      t.textContent = money(n * base) + " a month for " + n + " seats";
+      t.textContent = money(n * base) + "/month for " + n + " seats";
     });
   }
   less.addEventListener("click", function () { if (n > 1) { n--; draw(); } });
@@ -253,7 +253,7 @@ def cell(v, pick):
 def card(p):
     pick = p.get("pick")
     label, href, kind = p["btn"]
-    per = "per seat a month" if p["m"] else "a month"
+    per = "/seat/month" if p["m"] else "/month"
     host = '<p class="plan__host">For each teammate who takes calls</p>' if p["m"] else '<p class="plan__host">1 seat. No card needed.</p>'
     heading = f'<h3>Everything in {p["plus"]}, plus</h3>' if p.get("plus") else "<h3>All the basics</h3>"
     items = "".join(f"<li>{CHECK}{esc(t)}</li>" for t in p["top"])
@@ -273,7 +273,7 @@ def card(p):
 
 def table():
     head = "".join(
-        f'<th scope="col"{" class=\"pick\"" if p.get("pick") else ""}>{p["name"]}<small>{price(p["m"], p["y"])} a month</small></th>'
+        f'<th scope="col"{" class=\"pick\"" if p.get("pick") else ""}>{p["name"]}<small>{price(p["m"], p["y"])}{"/seat/month" if p["m"] else "/month"}</small></th>'
         for p in PLANS)
     rows = []
     for name, items in GROUPS:
@@ -353,7 +353,7 @@ def page():
 
 {cta()}"""
     title = "Pricing · Claritia"
-    desc = "Free for one person. Starter $15, Pro $39 and Business $79 per seat a month. Teammates who only build forms are free. Unlimited forms on every plan."
+    desc = "Free for one person. Starter $15, Pro $39 and Business $79 per seat/month. Teammates who only build forms are free. Unlimited forms on every plan."
     return shell.head(title, desc, "/pricing", STYLE) + "\n" + shell.body(main, SCRIPT)
 
 
