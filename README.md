@@ -11,7 +11,7 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 | Path | What |
 |---|---|
 | `index.html` | The home page: hero with the prompt, why, how it works, compare, tools, integrations, templates, numbers, pricing, questions and the last prompt. It also holds the header, phone menu and footer every page shares. |
-| `products/` | The product pages: `/products`, Forms, Meetings and Routing. Open layouts built around demos that run: Tia building real templates in any style, a price that adds up, the embed code for every way, a booking calendar on real dates, the reminder line, a router and a round robin. Each links to its best templates. Written by `tools/products.py`; the demos are `assets/products.js` and the styles `assets/products.css` (raise `PX_V` in the tool after changing either). |
+| `products/` | The product pages: `/products`, Forms, Meetings and Routing, laid out like Arrowsterr's platform pages: the app drawn in HTML, the tools it works with, before and with Claritia, four features beside parts of the app, how it works and templates. Static. Written by `tools/products.py`, styled by `assets/products.css` (raise `PX_V` after changing it). |
 | `pricing/` | The pricing page: plans, the host count, every feature side by side, questions. Written by `tools/pricing.py`, which also holds the plan data. |
 | `404.html`, `privacy/`, `terms/` | Page not found and the legal pages. Written by `tools/legal.py`. |
 | `assets/site.css` | Tokens, type, buttons, chips, tags, the header, phone menu, footer, and every home section. |
