@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Routing · Claritia</title>
-<meta name="description" content="Claritia Routing: route each lead by its answers to the right meeting and person, with round robin, team pools, owner first and a log of every decision.">
+<meta name="description" content="Claritia Routing: each lead&#x27;s answers pick the meeting and the person, with round robin, team pools, owner first and a log of every decision. Try the live router.">
 <link rel="canonical" href="https://tryclaritia.com/products/routing">
 <meta property="og:site_name" content="Claritia">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Routing · Claritia">
-<meta property="og:description" content="Claritia Routing: route each lead by its answers to the right meeting and person, with round robin, team pools, owner first and a log of every decision.">
+<meta property="og:description" content="Claritia Routing: each lead&#x27;s answers pick the meeting and the person, with round robin, team pools, owner first and a log of every decision. Try the live router.">
 <meta property="og:url" content="https://tryclaritia.com/products/routing">
 <meta property="og:image" content="https://tryclaritia.com/assets/brand/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -22,73 +22,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=9">
-<style>
-.pp-hero{padding:120px var(--frame-pad) 72px;text-align:center}
-.pp-hero .display{margin:24px auto 0;max-width:880px}
-.pp-hero .sub{margin:20px auto 0;max-width:560px}
-.pp-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:32px}
-.pp-stage{position:relative;margin-top:56px;padding:40px;border-radius:var(--r-3xl);background:var(--green-100);text-align:left}
-.pp-stage__in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;max-width:980px;margin:0 auto}
-.pp-card{min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest),0 30px 60px -24px rgba(8,60,40,.18)}
-.pp-card h4{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px;font-weight:500;color:var(--ink)}
-.pp-card h4 small{margin-left:auto;font-size:13px;font-weight:400;color:var(--meta)}
-.pp-card .fcard{max-width:none;padding:0;box-shadow:none}
-.pp-card .rules,.pp-card .flow{max-width:none}
-.pp-card .rule{box-shadow:0 0 0 1px rgba(0,0,0,.06)}
-.pp-stack{display:flex;flex-direction:column;gap:16px;min-width:0}
-.pp-sec{padding:112px var(--frame-pad) 40px}
-.pp-sec .shead{margin-bottom:48px}
-.pp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.pp-f{display:flex;flex-direction:column;gap:10px;min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest)}
-.pp-f__top{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.pp-f h3{font-size:16px;line-height:22px;font-weight:500;color:var(--ink)}
-.pp-f p{font-size:15px;line-height:22px;color:var(--body);text-wrap:pretty}
-.pp-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:56px;padding:96px var(--frame-pad) 40px}
-.pp-row--flip .pp-row__text{order:2}
-.pp-row__text{display:flex;flex-direction:column;align-items:flex-start;gap:20px;min-width:0}
-.pp-row__text .sub{margin-top:-6px}
-.pp-list{display:flex;flex-direction:column;gap:10px;margin-top:4px}
-.pp-list li{display:flex;align-items:flex-start;gap:10px;font-size:15px;line-height:22px;color:var(--text)}
-.pp-list svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--green)}
-.pp-vis{min-width:0;padding:28px;border-radius:var(--r-2xl);background:var(--surface-3);box-shadow:0 0 0 1px rgba(0,0,0,.06);background-image:radial-gradient(circle at 1px 1px,#d9d9d4 1px,transparent 1.2px);background-size:12px 12px}
-.pp-vis .pp-card{box-shadow:var(--sh-rest)}
-.pp-cal{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px;margin-top:14px}
-.pp-cal .cal7{margin-top:0}
-.pp-times{display:flex;flex-direction:column;gap:6px}
-.pp-times b{font-size:13px;font-weight:500;color:var(--text)}
-.pp-times button{height:34px;border-radius:var(--r-sm);background:var(--surface);box-shadow:var(--sh-input);font-size:13px;color:var(--text)}
-.pp-times button.on{background:var(--green-strong);color:#fff;box-shadow:var(--sh-green)}
-.pp-types{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.pp-type{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--r-md);box-shadow:0 0 0 1px rgba(0,0,0,.06);font-size:14px;color:var(--text)}
-.pp-type .grow{flex:1;min-width:120px}
-.pp-type small{color:var(--meta);font-size:13px}
-.pp-log{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.pp-log div{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;color:var(--text)}
-.pp-log svg{width:14px;height:14px;color:var(--green)}
-.pp-bars{display:flex;flex-direction:column;gap:12px;margin-top:14px}
-.pp-bar{display:grid;grid-template-columns:120px minmax(0,1fr) 44px;align-items:center;gap:10px;font-size:13px;color:var(--text)}
-.pp-bar i{display:block;height:8px;border-radius:999px;background:var(--surface-2);overflow:hidden}
-.pp-bar i::before{content:"";display:block;height:100%;width:var(--w);border-radius:999px;background:var(--green)}
-.pp-bar span:last-child{color:var(--meta);text-align:right;font-variant-numeric:tabular-nums}
-.pp-next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.pp-next a{display:flex;flex-direction:column;gap:10px;min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest);transition:box-shadow var(--fast) var(--ease)}
-.pp-next a:hover{box-shadow:var(--sh-hover)}
-.pp-next b{font-size:16px;font-weight:500;color:var(--ink)}
-.pp-next span{font-size:15px;line-height:22px;color:var(--body)}
-.pp-next em{margin-top:auto;font-style:normal;font-size:14px;color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line-strong)}
-.pp-faq .faq{grid-template-columns:minmax(0,1fr)}
-@media (min-width:900px){.pp-faq .faq{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}}
-@media (max-width:1100px){.pp-grid,.pp-next{grid-template-columns:repeat(2,minmax(0,1fr))}.pp-row{gap:32px}}
-@media (max-width:900px){
-.pp-hero{padding-top:96px}
-.pp-stage{padding:16px;margin-top:40px}
-.pp-stage__in,.pp-row,.pp-cal{grid-template-columns:minmax(0,1fr)}
-.pp-row--flip .pp-row__text{order:0}
-.pp-grid,.pp-next{grid-template-columns:minmax(0,1fr)}
-.pp-vis{padding:16px}
-}
-@media (max-width:560px){.pp-hero .display{font-size:40px;line-height:42px}.pp-bar{grid-template-columns:90px minmax(0,1fr) 36px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Bricolage+Grotesque:wght@400;600;800&amp;family=Fraunces:wght@400;600&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;600&amp;family=Nunito:wght@400;600;800&amp;family=Outfit:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Playfair+Display:wght@400;600&amp;family=Lora:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/forms.css?v=11">
+<link rel="stylesheet" href="/assets/themes.css?v=11">
+<link rel="stylesheet" href="/assets/products.css?v=1">
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
 </head>
 <body>
@@ -187,120 +124,118 @@
 
 <main id="main">
   <div class="frame">
-    <section class="pp-hero" aria-labelledby="pp-h">
-      <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#route"/></svg>Routing</span>
-      <h1 class="display" id="pp-h">The right person every time</h1>
-      <p class="sub">Send each lead to the right meeting and the right person from what they wrote, then share the work fairly across your team.</p>
-      <div class="pp-cta">
+    <section class="px-hero px-hero--wide" aria-labelledby="pp-h">
+      <div class="px-copy">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#route"/></svg>Routing</span>
+        <h1 id="pp-h">The right person, every time</h1>
+        <p class="sub">Each answer picks the meeting and the person, then the team takes turns fairly. Answer like a lead below and watch the rules decide.</p>
+        <div class="px-ctas">
         <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com">Start free <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
         <a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a>
       </div>
-      <div class="pp-stage" aria-hidden="true"><div class="pp-stage__in"><div class="pp-card"><h4>On submission<small>Demo request</small></h4>
-  <div class="rules" style="margin-top:14px">
-    <div class="rule"><span class="w">If</span> Team size <span class="w">is</span> <span class="tag tag--kind">51 or more</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Book <span class="tag tag--green">Enterprise demo</span></div>
-    <div class="rule"><span class="w">If</span> Country <span class="w">is</span> <span class="tag tag--kind">Germany</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Book with <span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span></div>
-    <div class="rule"><span class="w">If</span> Budget <span class="w">is under</span> <span class="tag tag--kind">$1,000</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Send <span class="tag tag--purple">Starter guide</span></div>
-    <div class="rule"><span class="w">Everyone else</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg><span class="tag tag--gray">Sales team, round robin</span></div>
-    <div class="rule"><span class="w">Always</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Add to <span class="tag tag--orange">HubSpot</span></div>
-  </div></div><div class="pp-stack"><div class="pp-card"><h4>Why Lena got this lead</h4>
-  <div class="pp-log">
-    <div><svg class="i" aria-hidden="true"><use href="#check"/></svg>Country is Germany</div>
-    <div><svg class="i" aria-hidden="true"><use href="#check"/></svg>Rule 2 picked <span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span></div>
-    <div><svg class="i" aria-hidden="true"><use href="#check"/></svg>Free at 10:30 on Tue, Nov 10</div>
-    <div><svg class="i" aria-hidden="true"><use href="#check"/></svg>3 of 8 meetings this week</div>
-  </div></div><div class="pp-card"><h4>Sales team<small>Round robin this week</small></h4>
-  <div class="pp-bars">
-    <div class="pp-bar"><span>Maya Ortiz</span><i style="--w:62%"></i><span>5 of 8</span></div>
-    <div class="pp-bar"><span>Lena Koch</span><i style="--w:38%"></i><span>3 of 8</span></div>
-    <div class="pp-bar"><span>Sam Brooks</span><i style="--w:50%"></i><span>4 of 8</span></div>
-    <div class="pp-bar"><span>Rae Jin</span><i style="--w:0%"></i><span>Away</span></div>
-  </div></div></div></div></div>
+      <p class="px-note">Free plan. No card needed.</p>
+      </div>
+      <div class="px-rt" data-route-demo>
+        <script type="application/json" data-people>{"MO": ["#0c8c5e", "Maya Ortiz"], "LK": ["#3b6fd8", "Lena Koch"], "SB": ["#c2410c", "Sam Brooks"], "RJ": ["#7c3aed", "Rae Jin"]}</script>
+        <div class="px-rt__lead">
+          <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#user"/></svg>The lead's answers</span>
+          <div class="px-q"><span class="px-label">How big is your team?</span><div class="px-chips" role="group" aria-label="How big is your team?" data-q="size"><button type="button" data-v="solo" aria-pressed="false">Just me</button><button type="button" data-v="small" aria-pressed="true">2 to 10</button><button type="button" data-v="mid" aria-pressed="false">11 to 50</button><button type="button" data-v="large" aria-pressed="false">51 or more</button></div></div>
+          <div class="px-q"><span class="px-label">Where are you based?</span><div class="px-chips" role="group" aria-label="Where are you based?" data-q="country"><button type="button" data-v="us" aria-pressed="true">United States</button><button type="button" data-v="de" aria-pressed="false">Germany</button><button type="button" data-v="uk" aria-pressed="false">United Kingdom</button></div></div>
+          <div class="px-q"><span class="px-label">What&#x27;s your budget?</span><div class="px-chips" role="group" aria-label="What&#x27;s your budget?" data-q="budget"><button type="button" data-v="low" aria-pressed="false">Under $1,000</button><button type="button" data-v="mid" aria-pressed="true">$1,000 to $10,000</button><button type="button" data-v="high" aria-pressed="false">Over $10,000</button></div></div>
+          <div class="px-ctas" data-js><button type="button" class="btn btn--primary btn--lg" data-send>Send this lead <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></button></div>
+        </div>
+        <div>
+          <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#route"/></svg>On submission</span>
+          <div class="px-rules" style="margin-top:16px">
+            <div class="px-rule is-miss" data-rule><span class="n">1</span><span class="w">If</span>Team size <span class="w">is</span><span class="tag tag--kind">51 or more</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg>Book <span class="tag tag--green">Enterprise demo</span><span class="w">with the enterprise team</span></div>
+            <div class="px-rule is-miss" data-rule><span class="n">2</span><span class="w">If</span>Country <span class="w">is</span><span class="tag tag--kind">Germany</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg>Book with <span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span></div>
+            <div class="px-rule is-miss" data-rule><span class="n">3</span><span class="w">If</span>Budget <span class="w">is</span><span class="tag tag--kind">Under $1,000</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg>Send the <span class="tag tag--purple">Starter guide</span></div>
+            <div class="px-rule is-hit" data-rule><span class="n">4</span><span class="w">Everyone else</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg>Book <span class="tag tag--green">Sales demo</span><span class="w">and the sales team takes turns</span></div>
+            <div class="px-rule px-rule--always"><span class="n"><svg class="i" aria-hidden="true"><use href="#check"/></svg></span><span class="w">Always</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg>Add to <span class="tag tag--orange">HubSpot</span></div>
+          </div>
+          <div class="px-out" aria-live="polite">
+            <span class="px-label">This lead</span>
+            <p class="px-out__what" data-result>Books Sales demo with <span class="person"><span class="av" style="background:#c2410c">SB</span>Sam Brooks</span></p>
+            <p class="px-out__why" data-why>No rule above matched, so the sales team takes turns. Sam Brooks has the fewest meetings this week, and Rae is away.</p>
+          </div>
+          <div class="px-run" data-js>
+            <div><span class="px-label">Sales team this week</span><ul class="px-team" data-team style="margin-top:8px"></ul></div>
+            <div><span class="px-label">Leads you sent</span><ul class="px-log" data-log style="margin-top:8px"></ul></div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
-
   <div class="frame">
-    <section class="pp-sec" aria-labelledby="feat-h">
-      <div class="shead">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#check"/></svg>What you get</span>
+    <section class="px-sec" aria-labelledby="rr-h">
+      <div class="px-sec__head">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#users"/></svg>Round robin</span>
+        <h2 class="h2" id="rr-h">Taking turns, fairly</h2>
+        <p class="sub">Give someone a bigger share, mark someone away, then send leads. The person most due gets the next one.</p>
+      </div>
+      <div class="px-rr" data-rr data-js>
+        <div class="px-rep" data-rep>
+          <span><span class="person"><span class="av" style="background:#0c8c5e">MO</span>Maya Ortiz</span></span>
+          <span class="px-step" role="group" aria-label="Maya Ortiz's weight"><button type="button" data-wless aria-label="Lower weight">&minus;</button><output data-w>1</output><button type="button" data-wmore aria-label="Higher weight">+</button></span>
+          <button type="button" data-away aria-pressed="false">Away</button>
+          <span class="px-bar"><i data-fill></i></span>
+          <span data-n>0</span>
+        </div><div class="px-rep" data-rep>
+          <span><span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span></span>
+          <span class="px-step" role="group" aria-label="Lena Koch's weight"><button type="button" data-wless aria-label="Lower weight">&minus;</button><output data-w>1</output><button type="button" data-wmore aria-label="Higher weight">+</button></span>
+          <button type="button" data-away aria-pressed="false">Away</button>
+          <span class="px-bar"><i data-fill></i></span>
+          <span data-n>0</span>
+        </div><div class="px-rep" data-rep>
+          <span><span class="person"><span class="av" style="background:#c2410c">SB</span>Sam Brooks</span></span>
+          <span class="px-step" role="group" aria-label="Sam Brooks's weight"><button type="button" data-wless aria-label="Lower weight">&minus;</button><output data-w>1</output><button type="button" data-wmore aria-label="Higher weight">+</button></span>
+          <button type="button" data-away aria-pressed="false">Away</button>
+          <span class="px-bar"><i data-fill></i></span>
+          <span data-n>0</span>
+        </div><div class="px-rep" data-rep>
+          <span><span class="person"><span class="av" style="background:#7c3aed">RJ</span>Rae Jin</span></span>
+          <span class="px-step" role="group" aria-label="Rae Jin's weight"><button type="button" data-wless aria-label="Lower weight">&minus;</button><output data-w>1</output><button type="button" data-wmore aria-label="Higher weight">+</button></span>
+          <button type="button" data-away aria-pressed="false">Away</button>
+          <span class="px-bar"><i data-fill></i></span>
+          <span data-n>0</span>
+        </div>
+        <div class="px-rr__acts">
+          <button type="button" class="btn btn--primary" data-send20>Send 20 leads</button>
+          <button type="button" class="btn btn--ghost" data-send1>Send 1</button>
+          <button type="button" class="btn btn--plain" data-reset>Reset</button>
+          <span>Sent <b data-total>0</b></span>
+        </div>
+      </div>
+      <p class="px-nojs">Weights from 1 to 10 give someone a bigger share. Away days and caps skip them. The person most due gets the next lead.</p>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="px-sec" aria-labelledby="feat-h">
+      <div class="px-sec__head">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#check"/></svg>Everything</span>
         <h2 class="h2" id="feat-h">Everything in Routing</h2>
         <p class="sub">Tags show the plan a feature starts on. The rest is on every plan, Free included.</p>
       </div>
-      <div class="pp-grid"><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#route"/></svg></span><span class="tag tag--green">Pro</span></div><h3>Route by any answer</h3><p>Pick the meeting and the person from team size, country, budget or anything else.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#refresh"/></svg></span><span class="tag tag--green">Pro</span></div><h3>Route by past fills</h3><p>Someone who filled a form before goes to the same person.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#users"/></svg></span><span class="tag tag--green">Pro</span></div><h3>Round robin</h3><p>Even, weighted or by who&#x27;s free first, with priority tiers.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#grid"/></svg></span><span class="tag tag--green">Pro</span></div><h3>Team pools</h3><p>Teams in one place, reused by every meeting that needs them.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#user"/></svg></span><span class="tag tag--green">Business</span></div><h3>Owner first</h3><p>A known lead books with their owner in your CRM, else the pool.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#users"/></svg></span><span class="tag tag--green">Business</span></div><h3>Two teams at once</h3><p>Double round robin books one person from each of two teams.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#clock"/></svg></span><span class="tag tag--green">Pro</span></div><h3>Caps and away days</h3><p>Limits for a day and a week, and a backup when someone is out.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#search"/></svg></span><span class="tag tag--green">Pro</span></div><h3>A log of every decision</h3><p>See which rule picked each person, and why.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#plug"/></svg></span></div><h3>Always do</h3><p>Add every lead to HubSpot, send a guide or post in Slack.</p></article></div>
-    </section>
-  </div>
-  <div class="band"><div class="frame"></div></div>
-
-  <div class="frame">
-    <section class="pp-row" aria-labelledby="row-0">
-      <div class="pp-row__text">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#route"/></svg>Rules</span>
-        <h2 class="h2" id="row-0">The form picks the meeting</h2>
-        <p class="sub">Rules read the answers in order. The first that matches decides the meeting, the person or the next step.</p>
-        <ul class="pp-list"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Is, is not, filled and empty on any field</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Book, book with a person, or send something</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Everyone else goes to a team</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Always do runs for every lead</li></ul>
-      </div>
-      <div class="pp-vis" aria-hidden="true"><div class="pp-card"><h4>On submission<small>Demo request</small></h4>
-  <div class="rules" style="margin-top:14px">
-    <div class="rule"><span class="w">If</span> Team size <span class="w">is</span> <span class="tag tag--kind">51 or more</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Book <span class="tag tag--green">Enterprise demo</span></div>
-    <div class="rule"><span class="w">If</span> Country <span class="w">is</span> <span class="tag tag--kind">Germany</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Book with <span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span></div>
-    <div class="rule"><span class="w">If</span> Budget <span class="w">is under</span> <span class="tag tag--kind">$1,000</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Send <span class="tag tag--purple">Starter guide</span></div>
-    <div class="rule"><span class="w">Everyone else</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg><span class="tag tag--gray">Sales team, round robin</span></div>
-    <div class="rule"><span class="w">Always</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Add to <span class="tag tag--orange">HubSpot</span></div>
-  </div></div></div>
+      <div class="px-caps"><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#route"/></svg><h3>Route by any answer</h3><span class="tag tag--green">Pro</span></div><p>Pick the meeting and the person from team size, country, budget or anything else.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#refresh"/></svg><h3>Route by past fills</h3><span class="tag tag--green">Pro</span></div><p>Someone who filled a form before goes to the same person.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#users"/></svg><h3>Round robin</h3><span class="tag tag--green">Pro</span></div><p>Even, weighted or by who&#x27;s free first, with priority tiers.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#grid"/></svg><h3>Team pools</h3><span class="tag tag--green">Pro</span></div><p>Teams in one place, reused by every meeting that needs them.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#user"/></svg><h3>Owner first</h3><span class="tag tag--green">Business</span></div><p>A known lead books with their owner in your CRM, else the pool.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#hook"/></svg><h3>Two teams at once</h3><span class="tag tag--green">Business</span></div><p>Double round robin books one person from each of two teams.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#clock"/></svg><h3>Caps and away days</h3><span class="tag tag--green">Pro</span></div><p>Limits for a day and a week, and a backup when someone is out.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#search"/></svg><h3>A log of every decision</h3><span class="tag tag--green">Pro</span></div><p>See which rule picked each person, and why.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#plug"/></svg><h3>Always do</h3></div><p>Add every lead to HubSpot, send a guide or post in Slack.</p></div></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="pp-row pp-row--flip" aria-labelledby="row-1">
-      <div class="pp-row__text">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#users"/></svg>Teams</span>
-        <h2 class="h2" id="row-1">The meeting picks the person</h2>
-        <p class="sub">A team meeting takes turns fairly, and skips anyone who&#x27;s away or at their cap.</p>
-        <ul class="pp-list"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Weights from 1 to 10 and priority tiers</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Flexible shows every free time, strict shows the next in line</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Caps for a day and a week</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Away days with a backup</li></ul>
+    <section class="px-sec" aria-labelledby="tpl-h">
+      <div class="px-sec__head">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>Templates</span>
+        <h2 class="h2" id="tpl-h">Forms built to qualify</h2>
+        <p class="sub">Each asks what routing needs, then books the right meeting. Open one and try it.</p>
       </div>
-      <div class="pp-vis" aria-hidden="true"><div class="pp-card"><h4>Sales team<small>Round robin this week</small></h4>
-  <div class="pp-bars">
-    <div class="pp-bar"><span>Maya Ortiz</span><i style="--w:62%"></i><span>5 of 8</span></div>
-    <div class="pp-bar"><span>Lena Koch</span><i style="--w:38%"></i><span>3 of 8</span></div>
-    <div class="pp-bar"><span>Sam Brooks</span><i style="--w:50%"></i><span>4 of 8</span></div>
-    <div class="pp-bar"><span>Rae Jin</span><i style="--w:0%"></i><span>Away</span></div>
-  </div></div></div>
+      <div class="px-shelf"><a class="px-tpl" href="/templates/saas-enterprise-demo"><span class="tp fth th-tide" data-layout="cover" data-input="box" data-shadow="soft" data-pattern="none" data-own="tide" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Enterprise demo request</b><span class="tp__intro">Tell us about your rollout and we&#x27;ll shape the demo around it.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Job title *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__btn">Next</span></span></span></span><span class="px-tpl__name"><b>Enterprise demo request</b><span>21 questions, 5 pages</span></span><p>Qualify large accounts on seats, security needs and timing.</p></a><a class="px-tpl" href="/templates/saas-contact-sales"><span class="tp fth th-terminal" data-layout="card" data-input="box" data-shadow="none" data-pattern="grid" data-dark data-own="terminal" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Contact sales</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">How many seats?</span><span class="tp__box"></span></span><span class="tp__btn">Submit</span></span></span></span><span class="px-tpl__name"><b>Contact sales</b><span>8 questions</span></span><p>For buyers ready to talk pricing and seats.</p></a><a class="px-tpl" href="/templates/agency-project-inquiry"><span class="tp fth th-poster" data-layout="card" data-input="box" data-shadow="hard" data-pattern="none" data-own="poster" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Project inquiry</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Website</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">What do you need help with? *</span><span class="tp__opt"><i class="tp__sq"></i>Brand and design</span><span class="tp__opt"><i class="tp__sq"></i>Website</span><span class="tp__opt"><i class="tp__sq"></i>SEO</span></span><span class="tp__btn">Submit</span></span></span></span><span class="px-tpl__name"><b>Project inquiry</b><span>9 questions</span></span><p>Qualify new projects before the first call.</p></a><a class="px-tpl" href="/templates/real-estate-buyer-inquiry"><span class="tp fth th-editorial" data-layout="plain" data-input="line" data-shadow="none" data-pattern="none" data-own="editorial" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Buyer inquiry</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Budget *</span><span class="tp__opt"><i class="tp__dot"></i>Under $300k</span><span class="tp__opt"><i class="tp__dot"></i>$300k–$500k</span><span class="tp__opt"><i class="tp__dot"></i>$500k–$800k</span></span><span class="tp__f"><span class="tp__l">Areas you like *</span><span class="tp__box"></span></span><span class="tp__btn">Submit</span></span></span></span><span class="px-tpl__name"><b>Buyer inquiry</b><span>8 questions</span></span><p>Qualify buyers by budget, area and timing.</p></a><a class="px-tpl" href="/templates/saas-data-maturity-scorecard"><span class="tp fth th-tide" data-layout="cover" data-input="box" data-shadow="soft" data-pattern="none" data-own="tide" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Data maturity scorecard</b><span class="tp__intro">Six questions. Get a score and the next step for your team.</span><span class="tp__f"><span class="tp__l">Where does your customer data live? *</span><span class="tp__opt"><i class="tp__dot"></i>Spreadsheets and inboxes</span><span class="tp__opt"><i class="tp__dot"></i>A few tools that don&#x27;t connect</span><span class="tp__opt"><i class="tp__dot"></i>Connected tools with some gaps</span></span><span class="tp__f"><span class="tp__l">How do you build reports? *</span><span class="tp__opt"><i class="tp__dot"></i>By hand, when someone asks</span><span class="tp__opt"><i class="tp__dot"></i>By hand, on a schedule</span><span class="tp__opt"><i class="tp__dot"></i>Dashboards that often need fixing</span></span><span class="tp__f"><span class="tp__l">How much do leaders trust the numbers? *</span><span class="tp__opt"><i class="tp__dot"></i>Not much</span><span class="tp__opt"><i class="tp__dot"></i>Some of the time</span><span class="tp__opt"><i class="tp__dot"></i>Most of the time</span></span><span class="tp__f"><span class="tp__l">Who owns data quality? *</span><span class="tp__opt"><i class="tp__dot"></i>No one</span><span class="tp__opt"><i class="tp__dot"></i>Whoever has time</span><span class="tp__opt"><i class="tp__dot"></i>One person, part time</span></span><span class="tp__f"><span class="tp__l">How fast can you answer a new question with data? *</span><span class="tp__opt"><i class="tp__dot"></i>Weeks</span><span class="tp__opt"><i class="tp__dot"></i>Days</span><span class="tp__opt"><i class="tp__dot"></i>Hours</span></span><span class="tp__btn">Next</span></span></span></span><span class="px-tpl__name"><b>Data maturity scorecard</b><span>10 questions, 2 pages</span></span><p>Score a team&#x27;s data maturity and book a walkthrough of the gaps.</p></a><a class="px-tpl" href="/templates/coaching-discovery-call"><span class="tp fth th-grove" data-layout="split" data-input="box" data-shadow="soft" data-pattern="none" data-own="grove" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Coaching discovery call</b><span class="tp__intro">A free 30-minute call to see if we&#x27;re a good fit.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">What kind of coaching are you looking for? *</span><span class="tp__opt"><i class="tp__dot"></i>Career</span><span class="tp__opt"><i class="tp__dot"></i>Leadership</span><span class="tp__opt"><i class="tp__dot"></i>Business</span></span><span class="tp__f"><span class="tp__l">What would you like to be different six months from now? *</span><span class="tp__box tp__box--tall"></span></span><span class="tp__btn">Continue</span></span></span></span><span class="px-tpl__name"><b>Coaching discovery call</b><span>8 questions</span></span><p>Learn a prospect&#x27;s goals and budget before a free first call.</p></a></div>
+      <div class="px-more"><a class="btn btn--ghost btn--lg" href="/templates/category/qualify">See all qualification templates <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
-  <div class="frame">
-    <section class="pp-row" aria-labelledby="row-2">
-      <div class="pp-row__text">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#search"/></svg>Trust</span>
-        <h2 class="h2" id="row-2">See why, every time</h2>
-        <p class="sub">Every lead keeps a short log of the rule that matched and the person it picked.</p>
-        <ul class="pp-list"><li><svg aria-hidden="true"><use href="#i-check"/></svg>On the meeting&#x27;s own page</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>A Slack note to the host</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>A reminder when a routed lead hasn&#x27;t booked</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Fix a rule and the next lead follows it</li></ul>
-      </div>
-      <div class="pp-vis" aria-hidden="true"><div class="pp-card"><h4>Why Lena got this lead</h4>
-  <div class="pp-log">
-    <div><svg class="i" aria-hidden="true"><use href="#check"/></svg>Country is Germany</div>
-    <div><svg class="i" aria-hidden="true"><use href="#check"/></svg>Rule 2 picked <span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span></div>
-    <div><svg class="i" aria-hidden="true"><use href="#check"/></svg>Free at 10:30 on Tue, Nov 10</div>
-    <div><svg class="i" aria-hidden="true"><use href="#check"/></svg>3 of 8 meetings this week</div>
-  </div></div></div>
-    </section>
-  </div>
-  <div class="band"><div class="frame"></div></div>
-
-  <div class="frame">
-    <section class="pp-sec" aria-labelledby="next-h">
-      <div class="shead">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#bolt"/></svg>One product</span>
-        <h2 class="h2" id="next-h">Works with the rest of Claritia</h2>
-        <p class="sub">Forms, meetings and routing share one record for every lead.</p>
-      </div>
-      <div class="pp-next"><a href="/products/forms"><span class="itile"><svg class="i" aria-hidden="true"><use href="#form"/></svg></span><b>Forms</b><span>Steps, logic and prices</span><em>See Forms</em></a><a href="/products/meetings"><span class="itile"><svg class="i" aria-hidden="true"><use href="#cal"/></svg></span><b>Meetings</b><span>Booking pages and team pools</span><em>See Meetings</em></a><a href="/pricing"><span class="itile"><svg class="i" aria-hidden="true"><use href="#card"/></svg></span><b>Pricing</b><span>Free for one host. Pay for hosts, not seats.</span><em>See pricing</em></a></div>
-    </section>
-  </div>
-  <div class="band"><div class="frame"></div></div>
-
-  <div class="frame pp-faq">
-    <section class="pp-sec" aria-labelledby="faq-h">
+  <div class="frame px-faq">
+    <section class="px-sec" aria-labelledby="faq-h">
       <div class="faq">
         <div class="faq__head">
           <h2 class="h2" id="faq-h">Questions</h2>
@@ -310,7 +245,6 @@
       </div>
     </section>
   </div>
-
 <!-- The last prompt, on dark -->
   <div class="dark">
     <div class="band"><div class="frame"></div></div>
@@ -353,5 +287,6 @@
 </footer>
 
 <script src="/assets/site.js?v=8" defer></script>
+<script src="/assets/products.js?v=1" defer></script>
 </body>
 </html>

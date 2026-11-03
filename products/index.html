@@ -22,73 +22,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=9">
-<style>
-.pp-hero{padding:120px var(--frame-pad) 72px;text-align:center}
-.pp-hero .display{margin:24px auto 0;max-width:880px}
-.pp-hero .sub{margin:20px auto 0;max-width:560px}
-.pp-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:32px}
-.pp-stage{position:relative;margin-top:56px;padding:40px;border-radius:var(--r-3xl);background:var(--green-100);text-align:left}
-.pp-stage__in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;max-width:980px;margin:0 auto}
-.pp-card{min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest),0 30px 60px -24px rgba(8,60,40,.18)}
-.pp-card h4{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px;font-weight:500;color:var(--ink)}
-.pp-card h4 small{margin-left:auto;font-size:13px;font-weight:400;color:var(--meta)}
-.pp-card .fcard{max-width:none;padding:0;box-shadow:none}
-.pp-card .rules,.pp-card .flow{max-width:none}
-.pp-card .rule{box-shadow:0 0 0 1px rgba(0,0,0,.06)}
-.pp-stack{display:flex;flex-direction:column;gap:16px;min-width:0}
-.pp-sec{padding:112px var(--frame-pad) 40px}
-.pp-sec .shead{margin-bottom:48px}
-.pp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.pp-f{display:flex;flex-direction:column;gap:10px;min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest)}
-.pp-f__top{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.pp-f h3{font-size:16px;line-height:22px;font-weight:500;color:var(--ink)}
-.pp-f p{font-size:15px;line-height:22px;color:var(--body);text-wrap:pretty}
-.pp-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:56px;padding:96px var(--frame-pad) 40px}
-.pp-row--flip .pp-row__text{order:2}
-.pp-row__text{display:flex;flex-direction:column;align-items:flex-start;gap:20px;min-width:0}
-.pp-row__text .sub{margin-top:-6px}
-.pp-list{display:flex;flex-direction:column;gap:10px;margin-top:4px}
-.pp-list li{display:flex;align-items:flex-start;gap:10px;font-size:15px;line-height:22px;color:var(--text)}
-.pp-list svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--green)}
-.pp-vis{min-width:0;padding:28px;border-radius:var(--r-2xl);background:var(--surface-3);box-shadow:0 0 0 1px rgba(0,0,0,.06);background-image:radial-gradient(circle at 1px 1px,#d9d9d4 1px,transparent 1.2px);background-size:12px 12px}
-.pp-vis .pp-card{box-shadow:var(--sh-rest)}
-.pp-cal{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px;margin-top:14px}
-.pp-cal .cal7{margin-top:0}
-.pp-times{display:flex;flex-direction:column;gap:6px}
-.pp-times b{font-size:13px;font-weight:500;color:var(--text)}
-.pp-times button{height:34px;border-radius:var(--r-sm);background:var(--surface);box-shadow:var(--sh-input);font-size:13px;color:var(--text)}
-.pp-times button.on{background:var(--green-strong);color:#fff;box-shadow:var(--sh-green)}
-.pp-types{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.pp-type{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--r-md);box-shadow:0 0 0 1px rgba(0,0,0,.06);font-size:14px;color:var(--text)}
-.pp-type .grow{flex:1;min-width:120px}
-.pp-type small{color:var(--meta);font-size:13px}
-.pp-log{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.pp-log div{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;color:var(--text)}
-.pp-log svg{width:14px;height:14px;color:var(--green)}
-.pp-bars{display:flex;flex-direction:column;gap:12px;margin-top:14px}
-.pp-bar{display:grid;grid-template-columns:120px minmax(0,1fr) 44px;align-items:center;gap:10px;font-size:13px;color:var(--text)}
-.pp-bar i{display:block;height:8px;border-radius:999px;background:var(--surface-2);overflow:hidden}
-.pp-bar i::before{content:"";display:block;height:100%;width:var(--w);border-radius:999px;background:var(--green)}
-.pp-bar span:last-child{color:var(--meta);text-align:right;font-variant-numeric:tabular-nums}
-.pp-next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.pp-next a{display:flex;flex-direction:column;gap:10px;min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest);transition:box-shadow var(--fast) var(--ease)}
-.pp-next a:hover{box-shadow:var(--sh-hover)}
-.pp-next b{font-size:16px;font-weight:500;color:var(--ink)}
-.pp-next span{font-size:15px;line-height:22px;color:var(--body)}
-.pp-next em{margin-top:auto;font-style:normal;font-size:14px;color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line-strong)}
-.pp-faq .faq{grid-template-columns:minmax(0,1fr)}
-@media (min-width:900px){.pp-faq .faq{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}}
-@media (max-width:1100px){.pp-grid,.pp-next{grid-template-columns:repeat(2,minmax(0,1fr))}.pp-row{gap:32px}}
-@media (max-width:900px){
-.pp-hero{padding-top:96px}
-.pp-stage{padding:16px;margin-top:40px}
-.pp-stage__in,.pp-row,.pp-cal{grid-template-columns:minmax(0,1fr)}
-.pp-row--flip .pp-row__text{order:0}
-.pp-grid,.pp-next{grid-template-columns:minmax(0,1fr)}
-.pp-vis{padding:16px}
-}
-@media (max-width:560px){.pp-hero .display{font-size:40px;line-height:42px}.pp-bar{grid-template-columns:90px minmax(0,1fr) 36px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Bricolage+Grotesque:wght@400;600;800&amp;family=Fraunces:wght@400;600&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;600&amp;family=Nunito:wght@400;600;800&amp;family=Outfit:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Playfair+Display:wght@400;600&amp;family=Lora:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/forms.css?v=11">
+<link rel="stylesheet" href="/assets/themes.css?v=11">
+<link rel="stylesheet" href="/assets/products.css?v=1">
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
 </head>
 <body>
@@ -187,32 +124,33 @@
 
 <main id="main">
   <div class="frame">
-    <section class="pp-hero" aria-labelledby="pp-h">
-      <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#grid"/></svg>Product</span>
-      <h1 class="display" id="pp-h">From first click to booked call</h1>
-      <p class="sub">Forms that turn visitors into leads, meetings that book them with the right person, and routing that picks who.</p>
-      <div class="pp-cta">
+    <section class="px-hero px-hero--wide" aria-labelledby="pp-h">
+      <div class="px-copy">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#grid"/></svg>Product</span>
+        <h1 id="pp-h">From first click to booked call</h1>
+        <p class="sub">Three parts that share one record for every lead. Each page has a demo you can use right now.</p>
+        <div class="px-ctas">
         <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com">Start free <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
         <a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a>
       </div>
-      <div class="pp-next" style="margin-top:56px;text-align:left"><a href="/products/forms"><span class="itile"><svg class="i" aria-hidden="true"><use href="#form"/></svg></span><b>Forms</b><span>Describe the form you need and Tia builds it in your brand. Steps, logic, prices and payments, with the meeting booked before they leave.</span><em>See Forms</em></a><a href="/products/meetings"><span class="itile"><svg class="i" aria-hidden="true"><use href="#cal"/></svg></span><b>Meetings</b><span>Booking pages, team meetings and booking right inside your forms, on Google and Outlook calendars, with reminders that go out on their own.</span><em>See Meetings</em></a><a href="/products/routing"><span class="itile"><svg class="i" aria-hidden="true"><use href="#route"/></svg></span><b>Routing</b><span>Send each lead to the right meeting and the right person from what they wrote, then share the work fairly across your team.</span><em>See Routing</em></a></div>
-      <div class="pp-stage" aria-hidden="true"><div class="pp-stage__in"><div class="pp-card"><div class="fcard">
-  <h4>Book a demo</h4>
-  <div class="q">How big is your team?</div>
-  <div class="opts"><span class="opt"><i></i>Just me</span><span class="opt on"><i></i>2 to 10</span><span class="opt"><i></i>11 to 50</span><span class="opt"><i></i>51 or more</span></div>
-  <div class="q">Pick a time</div>
-  <div class="slots2"><span class="btn btn--ghost">9:00</span><span class="btn btn--ghost">10:30</span><span class="btn btn--ghost">13:00</span><span class="btn btn--ghost">15:30</span></div>
-</div></div><div class="pp-card"><h4>On submission<small>Demo request</small></h4>
-  <div class="rules" style="margin-top:14px">
-    <div class="rule"><span class="w">If</span> Team size <span class="w">is</span> <span class="tag tag--kind">51 or more</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Book <span class="tag tag--green">Enterprise demo</span></div>
-    <div class="rule"><span class="w">If</span> Country <span class="w">is</span> <span class="tag tag--kind">Germany</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Book with <span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span></div>
-    <div class="rule"><span class="w">If</span> Budget <span class="w">is under</span> <span class="tag tag--kind">$1,000</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Send <span class="tag tag--purple">Starter guide</span></div>
-    <div class="rule"><span class="w">Everyone else</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg><span class="tag tag--gray">Sales team, round robin</span></div>
-    <div class="rule"><span class="w">Always</span><svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg>Add to <span class="tag tag--orange">HubSpot</span></div>
-  </div></div></div></div>
+      <p class="px-note">Free plan. No card needed.</p>
+      </div>
+      <div class="px-trio" style="text-align:left"><a href="/products/forms"><b>01</b><h2>Forms</h2><p>Say what you need and Tia builds it in your brand, with steps, logic, prices and payments.</p><em>Build a form <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></em></a><a href="/products/meetings"><b>02</b><h2>Meetings</h2><p>Booking pages, team meetings and a calendar inside your forms, with reminders built in.</p><em>Book a meeting <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></em></a><a href="/products/routing"><b>03</b><h2>Routing</h2><p>Each answer picks the meeting and the person, and the team takes turns fairly.</p><em>Route a lead <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></em></a></div>
     </section>
   </div>
-
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="px-sec" aria-labelledby="tpl-h">
+      <div class="px-sec__head">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>Templates</span>
+        <h2 class="h2" id="tpl-h">Or start from a template</h2>
+        <p class="sub">Real forms you can fill in now.</p>
+      </div>
+      <div class="px-shelf"><a class="px-tpl" href="/templates/saas-demo-request"><span class="tp fth th-midnight" data-layout="card" data-input="box" data-shadow="soft" data-pattern="grid" data-dark data-own="midnight" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Demo request</b><span class="tp__intro">See it with your own data. Takes 30 minutes.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Job title</span><span class="tp__box"></span></span><span class="tp__btn">Next</span></span></span></span><span class="px-tpl__name"><b>Demo request</b><span>8 questions, 2 pages</span></span><p>Qualify demo requests and route them to a rep.</p></a><a class="px-tpl" href="/templates/food-catering-calculator"><span class="tp fth th-retro" data-layout="cover" data-input="box" data-shadow="hard" data-pattern="none" data-own="retro" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Catering price calculator</b><span class="tp__intro">Build your menu and see an estimate right away.</span><span class="tp__f"><span class="tp__l">Event date *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Number of guests *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Menu *</span><span class="tp__opt"><i class="tp__dot"></i>Boxed lunches, $16 per guest</span><span class="tp__opt"><i class="tp__dot"></i>Hot buffet, $26 per guest</span><span class="tp__opt"><i class="tp__dot"></i>Plated dinner, $42 per guest</span></span><span class="tp__f"><span class="tp__l">Add for every guest</span><span class="tp__opt"><i class="tp__sq"></i>Appetizers, $6</span><span class="tp__opt"><i class="tp__sq"></i>Dessert, $5</span><span class="tp__opt"><i class="tp__sq"></i>Drinks, $3</span></span><span class="tp__f"><span class="tp__l">Service *</span><span class="tp__opt"><i class="tp__dot"></i>Drop-off</span><span class="tp__opt"><i class="tp__dot"></i>Setup and cleanup, $150</span><span class="tp__opt"><i class="tp__dot"></i>Full staff, $450</span></span><span class="tp__btn">Next</span></span></span></span><span class="px-tpl__name"><b>Catering price calculator</b><span>13 questions, 2 pages</span></span><p>Price a catered event per guest and hold the date with a deposit.</p></a><a class="px-tpl" href="/templates/general-book-a-call"><span class="tp fth th-lilac" data-layout="card" data-input="fill" data-shadow="soft" data-pattern="dots" data-own="lilac" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Book a call</b><span class="tp__intro">Tell us a little about you and pick a time that works.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Team size *</span><span class="tp__opt"><i class="tp__dot"></i>Just me</span><span class="tp__opt"><i class="tp__dot"></i>2–10</span><span class="tp__opt"><i class="tp__dot"></i>11–50</span></span><span class="tp__f"><span class="tp__l">What would you like to cover?</span><span class="tp__box tp__box--tall"></span></span><span class="tp__btn">Continue</span></span></span></span><span class="px-tpl__name"><b>Book a call</b><span>5 questions</span></span><p>Qualify the visitor, then let them pick a time.</p></a></div>
+      <div class="px-more"><a class="btn btn--ghost btn--lg" href="/templates">See all 435 templates <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
 <!-- The last prompt, on dark -->
   <div class="dark">
     <div class="band"><div class="frame"></div></div>
@@ -255,5 +193,6 @@
 </footer>
 
 <script src="/assets/site.js?v=8" defer></script>
+<script src="/assets/products.js?v=1" defer></script>
 </body>
 </html>

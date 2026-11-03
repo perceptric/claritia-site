@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meetings · Claritia</title>
-<meta name="description" content="Claritia Meetings: booking pages, round robin, group meetings, polls and booking inside forms, on Google and Outlook, with reminders built in. Free to start.">
+<meta name="description" content="Claritia Meetings: booking pages, round robin, group meetings, polls and booking inside forms, on Google and Outlook, with reminders built in. Try the live calendar.">
 <link rel="canonical" href="https://tryclaritia.com/products/meetings">
 <meta property="og:site_name" content="Claritia">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Meetings · Claritia">
-<meta property="og:description" content="Claritia Meetings: booking pages, round robin, group meetings, polls and booking inside forms, on Google and Outlook, with reminders built in. Free to start.">
+<meta property="og:description" content="Claritia Meetings: booking pages, round robin, group meetings, polls and booking inside forms, on Google and Outlook, with reminders built in. Try the live calendar.">
 <meta property="og:url" content="https://tryclaritia.com/products/meetings">
 <meta property="og:image" content="https://tryclaritia.com/assets/brand/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -22,73 +22,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=9">
-<style>
-.pp-hero{padding:120px var(--frame-pad) 72px;text-align:center}
-.pp-hero .display{margin:24px auto 0;max-width:880px}
-.pp-hero .sub{margin:20px auto 0;max-width:560px}
-.pp-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:32px}
-.pp-stage{position:relative;margin-top:56px;padding:40px;border-radius:var(--r-3xl);background:var(--green-100);text-align:left}
-.pp-stage__in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;max-width:980px;margin:0 auto}
-.pp-card{min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest),0 30px 60px -24px rgba(8,60,40,.18)}
-.pp-card h4{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px;font-weight:500;color:var(--ink)}
-.pp-card h4 small{margin-left:auto;font-size:13px;font-weight:400;color:var(--meta)}
-.pp-card .fcard{max-width:none;padding:0;box-shadow:none}
-.pp-card .rules,.pp-card .flow{max-width:none}
-.pp-card .rule{box-shadow:0 0 0 1px rgba(0,0,0,.06)}
-.pp-stack{display:flex;flex-direction:column;gap:16px;min-width:0}
-.pp-sec{padding:112px var(--frame-pad) 40px}
-.pp-sec .shead{margin-bottom:48px}
-.pp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.pp-f{display:flex;flex-direction:column;gap:10px;min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest)}
-.pp-f__top{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.pp-f h3{font-size:16px;line-height:22px;font-weight:500;color:var(--ink)}
-.pp-f p{font-size:15px;line-height:22px;color:var(--body);text-wrap:pretty}
-.pp-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:56px;padding:96px var(--frame-pad) 40px}
-.pp-row--flip .pp-row__text{order:2}
-.pp-row__text{display:flex;flex-direction:column;align-items:flex-start;gap:20px;min-width:0}
-.pp-row__text .sub{margin-top:-6px}
-.pp-list{display:flex;flex-direction:column;gap:10px;margin-top:4px}
-.pp-list li{display:flex;align-items:flex-start;gap:10px;font-size:15px;line-height:22px;color:var(--text)}
-.pp-list svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--green)}
-.pp-vis{min-width:0;padding:28px;border-radius:var(--r-2xl);background:var(--surface-3);box-shadow:0 0 0 1px rgba(0,0,0,.06);background-image:radial-gradient(circle at 1px 1px,#d9d9d4 1px,transparent 1.2px);background-size:12px 12px}
-.pp-vis .pp-card{box-shadow:var(--sh-rest)}
-.pp-cal{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px;margin-top:14px}
-.pp-cal .cal7{margin-top:0}
-.pp-times{display:flex;flex-direction:column;gap:6px}
-.pp-times b{font-size:13px;font-weight:500;color:var(--text)}
-.pp-times button{height:34px;border-radius:var(--r-sm);background:var(--surface);box-shadow:var(--sh-input);font-size:13px;color:var(--text)}
-.pp-times button.on{background:var(--green-strong);color:#fff;box-shadow:var(--sh-green)}
-.pp-types{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.pp-type{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--r-md);box-shadow:0 0 0 1px rgba(0,0,0,.06);font-size:14px;color:var(--text)}
-.pp-type .grow{flex:1;min-width:120px}
-.pp-type small{color:var(--meta);font-size:13px}
-.pp-log{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.pp-log div{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;color:var(--text)}
-.pp-log svg{width:14px;height:14px;color:var(--green)}
-.pp-bars{display:flex;flex-direction:column;gap:12px;margin-top:14px}
-.pp-bar{display:grid;grid-template-columns:120px minmax(0,1fr) 44px;align-items:center;gap:10px;font-size:13px;color:var(--text)}
-.pp-bar i{display:block;height:8px;border-radius:999px;background:var(--surface-2);overflow:hidden}
-.pp-bar i::before{content:"";display:block;height:100%;width:var(--w);border-radius:999px;background:var(--green)}
-.pp-bar span:last-child{color:var(--meta);text-align:right;font-variant-numeric:tabular-nums}
-.pp-next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.pp-next a{display:flex;flex-direction:column;gap:10px;min-width:0;padding:20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--sh-rest);transition:box-shadow var(--fast) var(--ease)}
-.pp-next a:hover{box-shadow:var(--sh-hover)}
-.pp-next b{font-size:16px;font-weight:500;color:var(--ink)}
-.pp-next span{font-size:15px;line-height:22px;color:var(--body)}
-.pp-next em{margin-top:auto;font-style:normal;font-size:14px;color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line-strong)}
-.pp-faq .faq{grid-template-columns:minmax(0,1fr)}
-@media (min-width:900px){.pp-faq .faq{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}}
-@media (max-width:1100px){.pp-grid,.pp-next{grid-template-columns:repeat(2,minmax(0,1fr))}.pp-row{gap:32px}}
-@media (max-width:900px){
-.pp-hero{padding-top:96px}
-.pp-stage{padding:16px;margin-top:40px}
-.pp-stage__in,.pp-row,.pp-cal{grid-template-columns:minmax(0,1fr)}
-.pp-row--flip .pp-row__text{order:0}
-.pp-grid,.pp-next{grid-template-columns:minmax(0,1fr)}
-.pp-vis{padding:16px}
-}
-@media (max-width:560px){.pp-hero .display{font-size:40px;line-height:42px}.pp-bar{grid-template-columns:90px minmax(0,1fr) 36px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Bricolage+Grotesque:wght@400;600;800&amp;family=Fraunces:wght@400;600&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;600&amp;family=Nunito:wght@400;600;800&amp;family=Outfit:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Playfair+Display:wght@400;600&amp;family=Lora:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/forms.css?v=11">
+<link rel="stylesheet" href="/assets/themes.css?v=11">
+<link rel="stylesheet" href="/assets/products.css?v=1">
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
 </head>
 <body>
@@ -187,114 +124,115 @@
 
 <main id="main">
   <div class="frame">
-    <section class="pp-hero" aria-labelledby="pp-h">
-      <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#cal"/></svg>Meetings</span>
-      <h1 class="display" id="pp-h">Meetings that book themselves</h1>
-      <p class="sub">Booking pages, team meetings and booking right inside your forms, on Google and Outlook calendars, with reminders that go out on their own.</p>
-      <div class="pp-cta">
+    <section class="px-hero" aria-labelledby="pp-h">
+      <div class="px-copy">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#cal"/></svg>Meetings</span>
+        <h1 id="pp-h">Meetings that book themselves</h1>
+        <p class="sub">Booking pages, team meetings and booking right inside your forms, on Google and Outlook. Go ahead, book one. These are real dates in your time zone.</p>
+        <div class="px-ctas">
         <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com">Start free <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
-        <a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a>
+        <a class="btn btn--ghost btn--lg" href="/templates/group/booking">See booking templates</a>
       </div>
-      <div class="pp-stage" aria-hidden="true"><div class="pp-stage__in"><div class="pp-card"><h4>Sales demo<small>30 min, Google Meet</small></h4>
-  <div class="pp-cal">
-    <div class="cal7"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
-      <b>2</b><b>3</b><b class="av2">4</b><b class="av2">5</b><b class="av2">6</b><b>7</b><b>8</b>
-      <b class="av2">9</b><b class="sel">10</b><b class="av2">11</b><b>12</b><b class="av2">13</b><b>14</b><b>15</b>
-      <b class="av2">16</b><b class="av2">17</b><b>18</b><b class="av2">19</b><b class="av2">20</b><b>21</b><b>22</b></div>
-    <div class="pp-times"><b>Tue, Nov 10</b><button type="button" tabindex="-1">9:00 AM</button><button type="button" class="on" tabindex="-1">10:30 AM</button><button type="button" tabindex="-1">1:00 PM</button><button type="button" tabindex="-1">3:30 PM</button></div>
-  </div></div><div class="pp-card"><h4>Meeting types</h4>
-  <div class="pp-types">
-    <div class="pp-type"><span class="grow">Intro call<br><small>One person, 15 min</small></span><span class="person"><span class="av" style="background:#0c8c5e">MO</span>Maya Ortiz</span></div>
-    <div class="pp-type"><span class="grow">Sales demo<br><small>Round robin, 30 min</small></span><span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span><span class="person"><span class="av" style="background:#c2410c">SB</span>Sam Brooks</span></div>
-    <div class="pp-type"><span class="grow">Onboarding<br><small>Everyone free, 45 min</small></span><span class="person"><span class="av" style="background:#0c8c5e">MO</span>Maya Ortiz</span><span class="person"><span class="av" style="background:#7c3aed">RJ</span>Rae Jin</span></div>
-    <div class="pp-type"><span class="grow">Weekly group demo<br><small>Group, 20 seats</small></span><span class="tag tag--green">12 booked</span></div>
-  </div></div></div></div>
+      <p class="px-note">Free plan. No card needed.</p>
+      </div>
+      <div class="px-build" data-book-demo>
+        <div class="px-chips" role="group" aria-label="Kind of meeting" data-js>
+          <button type="button" data-kind="one" aria-pressed="true"><svg class="i" aria-hidden="true"><use href="#user"/></svg>One person</button>
+          <button type="button" data-kind="rr" aria-pressed="false"><svg class="i" aria-hidden="true"><use href="#users"/></svg>Round robin</button>
+          <button type="button" data-kind="group" aria-pressed="false"><svg class="i" aria-hidden="true"><use href="#grid"/></svg>Group</button>
+        </div>
+        <div class="px-bk">
+          <script type="application/json" data-people>{"MO": ["#0c8c5e", "Maya Ortiz"], "LK": ["#3b6fd8", "Lena Koch"], "SB": ["#c2410c", "Sam Brooks"], "RJ": ["#7c3aed", "Rae Jin"]}</script>
+          <script type="application/json" data-kinds>{"one": {"name": "Intro call", "line": "15 min on Google Meet, with Maya", "hosts": ["MO"]}, "rr": {"name": "Sales demo", "line": "30 min on Google Meet, with Lena or Sam, whoever is free", "hosts": ["LK", "SB"]}, "group": {"name": "Weekly group demo", "line": "60 min on Zoom, up to 20 people", "hosts": ["MO"], "group": true}}</script>
+          <div class="px-bk__head" data-head data-js></div>
+          <div class="px-bk__pickwrap" data-step="pick" data-js>
+            <div class="px-bk__pick"><div class="px-bk__cal" data-cal></div><div class="px-bk__times" data-times></div></div>
+            <div class="px-bk__zones" data-zones role="group" aria-label="Time zone"></div>
+          </div>
+          <form data-step="details" hidden novalidate>
+            <p class="px-bk__when" data-when></p>
+            <label class="px-in">Name<input name="name" autocomplete="name"></label>
+            <label class="px-in">Email<input name="email" type="email" autocomplete="email"></label>
+            <p class="px-err" data-err hidden>Add your name and an email address.</p>
+            <div class="px-row"><button type="button" class="btn btn--ghost" data-back>Back</button><button type="submit" class="btn btn--green">Book it</button></div>
+          </form>
+          <div class="px-bk__done" data-step="done" hidden role="status">
+            <h3><svg class="i" aria-hidden="true"><use href="#check"/></svg>You're booked</h3>
+            <p class="px-bk__when" data-done-when></p>
+            <ol class="px-tl" data-done-line></ol>
+            <p class="px-demo-note">This is a demo, so nothing was booked or sent.</p>
+            <div class="px-row"><button type="button" class="btn btn--ghost" data-again>Book another</button><a class="btn btn--primary" href="https://app.tryclaritia.com">Set up yours <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+          <p class="px-nojs">Pick a day and a time, add a name and an email, and the meeting lands on both calendars with a video link.</p>
+        </div>
+      </div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
-
   <div class="frame">
-    <section class="pp-sec" aria-labelledby="feat-h">
-      <div class="shead">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#check"/></svg>What you get</span>
+    <section class="px-sec" aria-labelledby="line-h">
+      <div class="px-sec__head">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#mail"/></svg>Reminders</span>
+        <h2 class="h2" id="line-h">From booked to held, on its own</h2>
+        <p class="sub">Confirmations and reminders go out the moment a call is booked, and stop if it moves or is canceled.</p>
+      </div>
+      <div class="px-line" data-inview><div class="px-stop"><b>Mon, 9:12 AM</b><span>Booked</span><small>It lands on both calendars with a video link.</small></div><div class="px-stop"><b>Right away</b><span>Confirmation</span><small>The invite and the link, in their inbox.</small></div><div class="px-stop"><b>A day before</b><span>Reminder</span><small>With a link to move or cancel.</small></div><div class="px-stop"><b>An hour before</b><span>Reminder</span><small>So the call starts on time.</small></div><div class="px-stop"><b>Tue, 10:30 AM</b><span>The meeting</span><small>Mark it held or a no-show.</small></div><div class="px-stop"><b>After</b><span>Follow-up</span><small>A thank-you, or the reschedule link after a no-show.</small></div></div>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="px-sec" aria-labelledby="inform-h">
+      <div class="px-split px-top">
+        <div class="px-copy">
+          <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>In the form</span>
+          <h2 class="h2" id="inform-h">The calendar is the last step</h2>
+          <p class="sub">Most leads leave before they book. Put the calendar inside the form and they pick a time while they're still here. Fill this one in to see.</p>
+          <ul class="px-list"><li><svg class="i" aria-hidden="true"><use href="#check"/></svg>Name and email filled in for them</li><li><svg class="i" aria-hidden="true"><use href="#check"/></svg>The form picks the meeting, the meeting picks the person</li><li><svg class="i" aria-hidden="true"><use href="#check"/></svg>No second page, no second tool</li></ul>
+        </div>
+        <div class="px-live"><div class="fth th-lilac" data-layout="card" data-input="fill" data-shadow="soft" data-pattern="dots" data-tpl="general-book-a-call" data-own="lilac">
+          <div class="fth__card"><div class="fart" aria-hidden="true"></div><div class="fth__body">
+          <form class="cf" novalidate data-cf>
+  <div class="cf__head"><h2 class="cf__title">Book a call</h2><p class="cf__intro">Tell us a little about you and pick a time that works.</p></div>
+  
+  
+  <fieldset class="cf__page" data-page="0"><legend class="sr-only">Step 1</legend><div class="cf__fields"><div class="cf__f" data-key="name" data-kind="name" data-req><label class="cf__label" for="xae1f-f-name">Name<span class="cf__req" aria-hidden="true"> *</span></label><span class="cf__grid2"><input class="cf__in" id="xae1f-f-name" name="name.first" autocomplete="given-name" placeholder="First name" aria-label="First name"><input class="cf__in" name="name.last" autocomplete="family-name" placeholder="Last name" aria-label="Last name"></span><p class="cf__err" id="xae1f-f-name-e" hidden></p></div><div class="cf__f" data-key="email" data-kind="email" data-req><label class="cf__label" for="xae1f-f-email">Work email<span class="cf__req" aria-hidden="true"> *</span></label><input class="cf__in" id="xae1f-f-email" name="email" type="email" autocomplete="email"><p class="cf__err" id="xae1f-f-email-e" hidden></p></div><div class="cf__f cf__f--half" data-key="company" data-kind="short_text" data-req><label class="cf__label" for="xae1f-f-company">Company<span class="cf__req" aria-hidden="true"> *</span></label><input class="cf__in" id="xae1f-f-company" name="company" type="text" autocomplete="organization"><p class="cf__err" id="xae1f-f-company-e" hidden></p></div><div class="cf__f" data-key="team_size" data-kind="single" data-req><p class="cf__label" id="xae1f-f-team_size-l">Team size<span class="cf__req" aria-hidden="true"> *</span></p><div class="cf__opts cf__opts--2" role="radiogroup" aria-labelledby="xae1f-f-team_size-l"><label class="cf__opt"><input type="radio" name="team_size" value="Just me"><span class="cf__mark cf__mark--radio"></span><span>Just me</span></label><label class="cf__opt"><input type="radio" name="team_size" value="2–10"><span class="cf__mark cf__mark--radio"></span><span>2–10</span></label><label class="cf__opt"><input type="radio" name="team_size" value="11–50"><span class="cf__mark cf__mark--radio"></span><span>11–50</span></label><label class="cf__opt"><input type="radio" name="team_size" value="51–200"><span class="cf__mark cf__mark--radio"></span><span>51–200</span></label><label class="cf__opt"><input type="radio" name="team_size" value="201–1,000"><span class="cf__mark cf__mark--radio"></span><span>201–1,000</span></label><label class="cf__opt"><input type="radio" name="team_size" value="1,000+"><span class="cf__mark cf__mark--radio"></span><span>1,000+</span></label></div><p class="cf__err" id="xae1f-f-team_size-e" hidden></p></div><div class="cf__f" data-key="what_would_you_like_to" data-kind="long_text"><label class="cf__label" for="xae1f-f-what_would_you_like_to">What would you like to cover?</label><textarea class="cf__in cf__in--area" id="xae1f-f-what_would_you_like_to" name="what_would_you_like_to" rows="4" placeholder="A sentence or two is plenty."></textarea><p class="cf__err" id="xae1f-f-what_would_you_like_to-e" hidden></p></div></div></fieldset>
+  <div class="cf__acts"><button type="button" class="cf__btn cf__btn--ghost" data-back hidden>Back</button><button type="button" class="cf__btn" data-next data-submit-label="Continue">Continue</button></div>
+  
+  <p class="cf__notice">We'll use your details to reply and may email you about related products. You can unsubscribe at any time.</p>
+  <div class="cf__end" hidden role="status"><span class="cf__end-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></span><h3 class="cf__end-t">Pick a time</h3><div class="cf__score" hidden></div><p class="cf__end-p">Choose a slot that suits you. You&#x27;ll get an invite right away.</p><div class="cf__book" data-book><div class="cf__days" role="group" aria-label="Day"></div><div class="cf__times" role="group" aria-label="Time"><button type="button">9:00 am</button><button type="button">10:30 am</button><button type="button">1:00 pm</button><button type="button">3:30 pm</button></div><p class="cf__book-note" hidden>Sample times. In the live form this books the meeting on your calendar.</p></div><p class="cf__demo">This is a preview, so nothing was sent. <a href="https://app.tryclaritia.com/forms/templates/general-book-a-call">Use this form template</a> to take real answers.</p><button type="button" class="cf__restart">Start over</button></div>
+  <script type="application/json" class="cf__data">{"schema": {"v": 1, "title": "Book a call", "intro": "Tell us a little about you and pick a time that works.", "pages": [{"fields": [{"key": "name", "kind": "name", "label": "Name", "required": true, "map": "name"}, {"key": "email", "kind": "email", "label": "Work email", "required": true, "map": "email"}, {"key": "company", "kind": "short_text", "label": "Company", "map": "company", "required": true, "half": true}, {"key": "team_size", "kind": "single", "label": "Team size", "options": ["Just me", "2–10", "11–50", "51–200", "201–1,000", "1,000+"], "required": true, "half": true, "map": "f.team_size"}, {"key": "what_would_you_like_to", "kind": "long_text", "label": "What would you like to cover?", "placeholder": "A sentence or two is plenty."}]}], "submit": "Continue", "end": {"title": "Pick a time", "text": "Choose a slot that suits you. You'll get an invite right away.", "booking": true}}, "use": "https://app.tryclaritia.com/forms/templates/general-book-a-call"}</script>
+</form>
+          </div></div>
+        </div></div>
+      </div>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="px-sec" aria-labelledby="feat-h">
+      <div class="px-sec__head">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#check"/></svg>Everything</span>
         <h2 class="h2" id="feat-h">Everything in Meetings</h2>
         <p class="sub">Tags show the plan a feature starts on. The rest is on every plan, Free included.</p>
       </div>
-      <div class="pp-grid"><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#cal"/></svg></span></div><h3>Google and Outlook</h3><p>Connect a calendar in one click. Busy times stay fresh on every calendar you pick.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#video"/></svg></span></div><h3>Video links</h3><p>Google Meet, Microsoft Teams or Zoom links added to every meeting.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#form"/></svg></span></div><h3>Booking inside forms</h3><p>The form picks the meeting, so leads book before they leave the page.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#users"/></svg></span><span class="tag tag--green">Pro</span></div><h3>Team meetings</h3><p>Round robin with weights, or everyone needed in one meeting.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#grid"/></svg></span><span class="tag tag--green">Starter</span></div><h3>Group meetings</h3><p>One host, many guests and a seat limit, like a weekly demo.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#check"/></svg></span><span class="tag tag--green">Starter</span></div><h3>Polls and one-off times</h3><p>Offer a few times to a group and book the one that works.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#card"/></svg></span><span class="tag tag--green">Starter</span></div><h3>Paid meetings</h3><p>Guests pay with Stripe to book.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#clock"/></svg></span></div><h3>Hours that fit</h3><p>Buffers, notice, a booking window, daily and weekly caps and away days.</p></article><article class="pp-f"><div class="pp-f__top"><span class="itile"><svg class="i" aria-hidden="true"><use href="#mail"/></svg></span></div><h3>Reminders built in</h3><p>A confirmation with the invite, then reminders a day and an hour before.</p></article></div>
-    </section>
-  </div>
-  <div class="band"><div class="frame"></div></div>
-
-  <div class="frame">
-    <section class="pp-row" aria-labelledby="row-0">
-      <div class="pp-row__text">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#cal"/></svg>Book</span>
-        <h2 class="h2" id="row-0">A booking page that looks like you</h2>
-        <p class="sub">Each person and each team gets a page. Times show in the visitor&#x27;s own time zone and language.</p>
-        <ul class="pp-list"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Pages for each person and the whole team</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Secret meeting types shared only by link</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Single-use links for one lead</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Copy open times into an email</li></ul>
-      </div>
-      <div class="pp-vis" aria-hidden="true"><div class="pp-card"><h4>Onboarding<small>45 min, Zoom</small></h4>
-  <div class="pp-cal">
-    <div class="cal7"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
-      <b>2</b><b>3</b><b class="av2">4</b><b class="av2">5</b><b class="av2">6</b><b>7</b><b>8</b>
-      <b class="av2">9</b><b class="sel">10</b><b class="av2">11</b><b>12</b><b class="av2">13</b><b>14</b><b>15</b>
-      <b class="av2">16</b><b class="av2">17</b><b>18</b><b class="av2">19</b><b class="av2">20</b><b>21</b><b>22</b></div>
-    <div class="pp-times"><b>Tue, Nov 10</b><button type="button" tabindex="-1">9:00 AM</button><button type="button" class="on" tabindex="-1">10:30 AM</button><button type="button" tabindex="-1">1:00 PM</button><button type="button" tabindex="-1">3:30 PM</button></div>
-  </div></div></div>
+      <div class="px-caps"><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#cal"/></svg><h3>Google and Outlook</h3></div><p>Connect a calendar in one click. Busy times stay fresh on every calendar you pick.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#video"/></svg><h3>Video links</h3></div><p>Google Meet, Microsoft Teams or Zoom links on every meeting.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#globe"/></svg><h3>Their time zone and language</h3></div><p>Times and dates show the way the visitor reads them.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#users"/></svg><h3>Team meetings</h3><span class="tag tag--green">Pro</span></div><p>Round robin with weights, or everyone needed in one meeting.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#grid"/></svg><h3>Group meetings</h3><span class="tag tag--green">Starter</span></div><p>One host, many guests and a seat limit, like a weekly demo.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#check"/></svg><h3>Polls and one-off times</h3><span class="tag tag--green">Starter</span></div><p>Offer a few times to a group and book the one that works.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#card"/></svg><h3>Paid meetings</h3><span class="tag tag--green">Starter</span></div><p>Guests pay with Stripe to book.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#clock"/></svg><h3>Hours that fit</h3></div><p>Buffers, notice, a booking window, daily and weekly caps and away days.</p></div><div class="px-cap"><div class="px-cap__top"><svg class="i" aria-hidden="true"><use href="#hook"/></svg><h3>Pages and links</h3><span class="tag tag--green">Starter</span></div><p>A page for each person and the team, secret types and single-use links.</p></div></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
   <div class="frame">
-    <section class="pp-row pp-row--flip" aria-labelledby="row-1">
-      <div class="pp-row__text">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#users"/></svg>Types</span>
-        <h2 class="h2" id="row-1">Every kind of meeting</h2>
-        <p class="sub">One person, round robin, everyone free, owner first or a group. Pick the length, place and questions.</p>
-        <ul class="pp-list"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Lengths the guest can pick from</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Google Meet, Teams, Zoom, phone or in person</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Questions on the booking page, skipped when the form asked</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Reschedule with the same host or anyone in the pool</li></ul>
+    <section class="px-sec" aria-labelledby="tpl-h">
+      <div class="px-sec__head">
+        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>Templates</span>
+        <h2 class="h2" id="tpl-h">Forms that book a meeting</h2>
+        <p class="sub">Each one ends on the calendar. Open one and book a time to see.</p>
       </div>
-      <div class="pp-vis" aria-hidden="true"><div class="pp-card"><h4>Meeting types</h4>
-  <div class="pp-types">
-    <div class="pp-type"><span class="grow">Intro call<br><small>One person, 15 min</small></span><span class="person"><span class="av" style="background:#0c8c5e">MO</span>Maya Ortiz</span></div>
-    <div class="pp-type"><span class="grow">Sales demo<br><small>Round robin, 30 min</small></span><span class="person"><span class="av" style="background:#3b6fd8">LK</span>Lena Koch</span><span class="person"><span class="av" style="background:#c2410c">SB</span>Sam Brooks</span></div>
-    <div class="pp-type"><span class="grow">Onboarding<br><small>Everyone free, 45 min</small></span><span class="person"><span class="av" style="background:#0c8c5e">MO</span>Maya Ortiz</span><span class="person"><span class="av" style="background:#7c3aed">RJ</span>Rae Jin</span></div>
-    <div class="pp-type"><span class="grow">Weekly group demo<br><small>Group, 20 seats</small></span><span class="tag tag--green">12 booked</span></div>
-  </div></div></div>
+      <div class="px-shelf"><a class="px-tpl" href="/templates/general-book-a-call"><span class="tp fth th-lilac" data-layout="card" data-input="fill" data-shadow="soft" data-pattern="dots" data-own="lilac" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Book a call</b><span class="tp__intro">Tell us a little about you and pick a time that works.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Team size *</span><span class="tp__opt"><i class="tp__dot"></i>Just me</span><span class="tp__opt"><i class="tp__dot"></i>2–10</span><span class="tp__opt"><i class="tp__dot"></i>11–50</span></span><span class="tp__f"><span class="tp__l">What would you like to cover?</span><span class="tp__box tp__box--tall"></span></span><span class="tp__btn">Continue</span></span></span></span><span class="px-tpl__name"><b>Book a call</b><span>5 questions</span></span><p>Qualify the visitor, then let them pick a time.</p></a><a class="px-tpl" href="/templates/wellness-new-patient"><span class="tp fth th-grove" data-layout="split" data-input="box" data-shadow="soft" data-pattern="none" data-own="grove" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">New patient booking</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Reason for visit *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__f"><span class="tp__l">Insurance provider</span><span class="tp__box"></span></span><span class="tp__btn">Submit</span></span></span></span><span class="px-tpl__name"><b>New patient booking</b><span>6 questions</span></span><p>Book new dental or wellness patients.</p></a><a class="px-tpl" href="/templates/education-course-inquiry"><span class="tp fth th-retro" data-layout="cover" data-input="box" data-shadow="hard" data-pattern="none" data-own="retro" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Course inquiry</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Program *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__f"><span class="tp__l">Start term *</span><span class="tp__opt"><i class="tp__dot"></i>Spring</span><span class="tp__opt"><i class="tp__dot"></i>Summer</span><span class="tp__opt"><i class="tp__dot"></i>Fall</span></span><span class="tp__btn">Submit</span></span></span></span><span class="px-tpl__name"><b>Course inquiry</b><span>7 questions</span></span><p>Capture prospective students by program and term.</p></a><a class="px-tpl" href="/templates/beauty-spa-day"><span class="tp fth th-noir" data-layout="plain" data-input="line" data-shadow="none" data-pattern="none" data-dark data-own="noir" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Spa day booking</b><span class="tp__f"><span class="tp__l">Package *</span><span class="tp__opt"><i class="tp__dot"></i>Relax: massage and facial, $180</span><span class="tp__opt"><i class="tp__dot"></i>Renew: massage, facial and body scrub, $260</span><span class="tp__opt"><i class="tp__dot"></i>Half day: four treatments and lunch, $340</span></span><span class="tp__f"><span class="tp__l">Guests *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Add-ons for each guest</span><span class="tp__opt"><i class="tp__sq"></i>Scalp massage, $30</span><span class="tp__opt"><i class="tp__sq"></i>Hot stones, $25</span><span class="tp__opt"><i class="tp__sq"></i>Manicure, $40</span></span><span class="tp__f"><span class="tp__l">Estimated total</span><span class="tp__box tp__box--total"></span></span><span class="tp__f"><span class="tp__l">Date *</span><span class="tp__box"></span></span><span class="tp__btn">Check availability</span></span></span></span><span class="px-tpl__name"><b>Spa day booking</b><span>9 questions</span></span><p>Book spa packages for one guest or a group, with a live price.</p></a><a class="px-tpl" href="/templates/legal-consultation-booking"><span class="tp fth th-noir" data-layout="plain" data-input="line" data-shadow="none" data-pattern="none" data-dark data-own="noir" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Consultation booking</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Practice area *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__f"><span class="tp__l">Short summary *</span><span class="tp__box tp__box--tall"></span></span><span class="tp__btn">Continue</span></span></span></span><span class="px-tpl__name"><b>Consultation booking</b><span>5 questions</span></span><p>Book paid or free consultations.</p></a><a class="px-tpl" href="/templates/hospitality-group-booking"><span class="tp fth th-clay" data-layout="split" data-input="box" data-shadow="soft" data-pattern="none" data-own="clay" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Group booking / event inquiry</b><span class="tp__f"><span class="tp__l">Type of event *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__f"><span class="tp__l">Date *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Guests *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Budget</span><span class="tp__opt"><i class="tp__dot"></i>Under $2,000</span><span class="tp__opt"><i class="tp__dot"></i>$2,000–$10,000</span><span class="tp__opt"><i class="tp__dot"></i>$10,000–$50,000</span></span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__btn">Submit</span></span></span></span><span class="px-tpl__name"><b>Group booking / event inquiry</b><span>8 questions</span></span><p>Private events and group bookings.</p></a></div>
+      <div class="px-more"><a class="btn btn--ghost btn--lg" href="/templates/group/booking">See all booking templates <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
     </section>
   </div>
   <div class="band"><div class="frame"></div></div>
-  <div class="frame">
-    <section class="pp-row" aria-labelledby="row-2">
-      <div class="pp-row__text">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#mail"/></svg>Remind</span>
-        <h2 class="h2" id="row-2">No more no-shows</h2>
-        <p class="sub">Confirmations and reminders go out the moment a call is booked, and stop if it moves or is canceled.</p>
-        <ul class="pp-list"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Your own wording and times on Starter and up</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>A follow-up after the meeting</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>A no-show email with the reschedule link on Pro</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Workflows for anything else</li></ul>
-      </div>
-      <div class="pp-vis" aria-hidden="true"><div class="pp-card"><h4>After booking</h4>
-  <div class="flow" style="margin-top:14px">
-    <div class="node"><span class="itile" style="width:26px;height:26px"><svg class="i s14" aria-hidden="true"><use href="#cal"/></svg></span>A meeting is booked<small>Start</small></div><div class="link"></div>
-    <div class="node"><svg class="i" aria-hidden="true"><use href="#mail"/></svg>Confirmation with the invite<small>Now</small></div><div class="link"></div>
-    <div class="node"><svg class="i" aria-hidden="true"><use href="#clock"/></svg>Reminder<small>1 day before</small></div><div class="link"></div>
-    <div class="node"><svg class="i" aria-hidden="true"><use href="#clock"/></svg>Reminder<small>1 hour before</small></div>
-  </div></div></div>
-    </section>
-  </div>
-  <div class="band"><div class="frame"></div></div>
-
-  <div class="frame">
-    <section class="pp-sec" aria-labelledby="next-h">
-      <div class="shead">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#bolt"/></svg>One product</span>
-        <h2 class="h2" id="next-h">Works with the rest of Claritia</h2>
-        <p class="sub">Forms, meetings and routing share one record for every lead.</p>
-      </div>
-      <div class="pp-next"><a href="/products/forms"><span class="itile"><svg class="i" aria-hidden="true"><use href="#form"/></svg></span><b>Forms</b><span>Steps, logic and prices</span><em>See Forms</em></a><a href="/products/routing"><span class="itile"><svg class="i" aria-hidden="true"><use href="#route"/></svg></span><b>Routing</b><span>The right person every time</span><em>See Routing</em></a><a href="/pricing"><span class="itile"><svg class="i" aria-hidden="true"><use href="#card"/></svg></span><b>Pricing</b><span>Free for one host. Pay for hosts, not seats.</span><em>See pricing</em></a></div>
-    </section>
-  </div>
-  <div class="band"><div class="frame"></div></div>
-
-  <div class="frame pp-faq">
-    <section class="pp-sec" aria-labelledby="faq-h">
+  <div class="frame px-faq">
+    <section class="px-sec" aria-labelledby="faq-h">
       <div class="faq">
         <div class="faq__head">
           <h2 class="h2" id="faq-h">Questions</h2>
@@ -304,7 +242,7 @@
       </div>
     </section>
   </div>
-
+<script type="application/json" id="px-themes">{"paper": {"layout": "card", "input": "box", "shadow": "soft", "pattern": "dots", "dark": false}, "midnight": {"layout": "card", "input": "box", "shadow": "soft", "pattern": "grid", "dark": true}, "coral": {"layout": "cover", "input": "box", "shadow": "soft", "pattern": "none", "dark": false}, "grove": {"layout": "split", "input": "box", "shadow": "soft", "pattern": "none", "dark": false}, "editorial": {"layout": "plain", "input": "line", "shadow": "none", "pattern": "none", "dark": false}, "terminal": {"layout": "card", "input": "box", "shadow": "none", "pattern": "grid", "dark": true}, "bubblegum": {"layout": "cover", "input": "fill", "shadow": "soft", "pattern": "dots", "dark": false}, "tide": {"layout": "cover", "input": "box", "shadow": "soft", "pattern": "none", "dark": false}, "poster": {"layout": "card", "input": "box", "shadow": "hard", "pattern": "none", "dark": false}, "gilded": {"layout": "split", "input": "box", "shadow": "none", "pattern": "none", "dark": true}, "lilac": {"layout": "card", "input": "fill", "shadow": "soft", "pattern": "dots", "dark": false}, "clay": {"layout": "split", "input": "box", "shadow": "soft", "pattern": "none", "dark": false}, "studio": {"layout": "split", "input": "box", "shadow": "none", "pattern": "none", "dark": false}, "harbor": {"layout": "cover", "input": "box", "shadow": "soft", "pattern": "none", "dark": false}, "mint": {"layout": "card", "input": "box", "shadow": "soft", "pattern": "dots", "dark": false}, "retro": {"layout": "cover", "input": "box", "shadow": "hard", "pattern": "none", "dark": false}, "noir": {"layout": "plain", "input": "line", "shadow": "none", "pattern": "none", "dark": true}, "sunrise": {"layout": "cover", "input": "box", "shadow": "soft", "pattern": "none", "dark": false}}</script>
 <!-- The last prompt, on dark -->
   <div class="dark">
     <div class="band"><div class="frame"></div></div>
@@ -347,5 +285,7 @@
 </footer>
 
 <script src="/assets/site.js?v=8" defer></script>
+<script src="/assets/forms.js?v=11" defer></script>
+<script src="/assets/products.js?v=1" defer></script>
 </body>
 </html>
