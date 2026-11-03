@@ -104,7 +104,7 @@ TOOLS = {
     "hubspot": {
         "name": "HubSpot", "logo": "hubspot.svg", "group": "CRM", "plan": "Starter",
         "h1": "HubSpot form integration",
-        "desc": "Connect Claritia forms to HubSpot: each fill becomes a HubSpot contact with fields mapped and no duplicates, then the lead books with the right rep. On Starter, from $15 per user a month.",
+        "desc": "Connect Claritia forms to HubSpot: each fill becomes a HubSpot contact with fields mapped and no duplicates, then the lead books with the right rep. On Starter, from $15 per seat a month.",
         "sub": "Send every form fill to HubSpot as a contact, with fields mapped and no duplicates. Then each lead books a meeting with the right rep before leaving the page.",
         "caps": [
             ("user", "Create or update a contact", "Each fill makes a HubSpot contact, or updates the one with that email.", "Starter"),
@@ -121,7 +121,7 @@ TOOLS = {
         ],
         "vis": lambda: crm_panel("HubSpot", "hubspot.svg"),
         "faq": [
-            ("Which plan has the HubSpot integration?", "Starter and up, from $15 per user a month. Booking with the contact owner is on Business. On Free, fills can go out by webhook or CSV."),
+            ("Which plan has the HubSpot integration?", "Starter and up, from $15 per seat a month. Booking with the contact owner is on Business. On Free, fills can go out by webhook or CSV."),
             ("Does it make duplicate contacts?", "No. Claritia matches each fill to HubSpot by email. You pick whether a match is updated or left as it is."),
             ("Can I route HubSpot form leads to the contact owner?", "Yes, on Business. A lead HubSpot knows books with their owner first, and anyone new goes to the team's round robin."),
             ("Can I keep my HubSpot forms?", "Yes. Add the Claritia script to the page and point it at your HubSpot form. When the form sends, the calendar opens and the lead books."),
@@ -150,7 +150,7 @@ TOOLS = {
         ],
         "vis": lambda: crm_panel("Salesforce", "salesforce.svg", row("Make them as", seg(["Leads", "Contacts"], "Leads"))),
         "faq": [
-            ("Which plan has the Salesforce integration?", "Business, at $79 per user a month, or $63 billed yearly."),
+            ("Which plan has the Salesforce integration?", "Business, at $79 per seat a month, or $63 billed yearly."),
             ("Can a Claritia form replace a Salesforce web-to-lead form?", "Yes. It sends the same lead to Salesforce, and adds steps, show-if logic, spam checks and a meeting booked at the end."),
             ("Does it make duplicate leads?", "No. When Salesforce already has the email, the fill links to that lead or contact. Only new emails make new records."),
             ("Can Salesforce assignment rules pick the owner?", "Yes. Pick Salesforce decides, and its assignment rules run on each new record."),
@@ -246,7 +246,7 @@ TOOLS = {
     "slack": {
         "name": "Slack", "logo": "slack.svg", "group": "Chat", "plan": "Starter",
         "h1": "Slack form integration",
-        "desc": "Connect Claritia to Slack: post new form leads in a channel, message the rep who gets each lead, and book a meeting for any lead with /book. On Starter, from $15 per user a month.",
+        "desc": "Connect Claritia to Slack: post new form leads in a channel, message the rep who gets each lead, and book a meeting for any lead with /book. On Starter, from $15 per seat a month.",
         "sub": "Post every new lead in Slack, message the rep who gets it, and book a meeting for any lead right from Slack with /book.",
         "caps": [
             ("bolt", "New lead alerts", "A team channel gets each fill as it comes in.", "Starter"),
@@ -271,7 +271,7 @@ TOOLS = {
         <div class="ix-cmd">/book jonas@example.com demo</div>
       </div>""",
         "faq": [
-            ("Which plan has the Slack integration?", "Starter and up, from $15 per user a month. Speed-to-lead nudges for routed leads are on Pro."),
+            ("Which plan has the Slack integration?", "Starter and up, from $15 per seat a month. Speed-to-lead nudges for routed leads are on Pro."),
             ("How do I connect Slack?", "One click: Add to Slack in Settings, then Integrations. No webhook addresses to paste."),
             ("How does /book work?", "Type /book and the lead's email. Only you see the answer: a single-use booking link with the lead's owner, or with you when the lead has none."),
             ("Who gets the direct message?", "The rep Routing picks for the lead, found in Slack by their email."),
@@ -309,7 +309,7 @@ TOOLS = {
     "stripe": {
         "name": "Stripe", "logo": "stripe.svg", "group": "Payments", "plan": "Starter",
         "h1": "Stripe form integration",
-        "desc": "Connect Stripe to Claritia: take payments and deposits in forms and charge for meetings, paid straight to your own Stripe account. On Starter, from $15 per user a month.",
+        "desc": "Connect Stripe to Claritia: take payments and deposits in forms and charge for meetings, paid straight to your own Stripe account. On Starter, from $15 per seat a month.",
         "sub": "Take payments and deposits in your forms, and charge for meetings, with the money paid straight to your own Stripe account.",
         "caps": [
             ("card", "Payments in forms", "Take a full payment or a deposit at the end of a form.", "Starter"),
@@ -332,7 +332,7 @@ TOOLS = {
         <div class="ix-pay">Pay $400</div>
       </div>""",
         "faq": [
-            ("Which plan has Stripe payments?", "Starter and up, from $15 per user a month. Price calculations work on every plan, Free included."),
+            ("Which plan has Stripe payments?", "Starter and up, from $15 per seat a month. Price calculations work on every plan, Free included."),
             ("Who holds the money?", "You do. Guests pay your own Stripe account directly, and Stripe's fees are yours."),
             ("Can I take a deposit?", "Yes. Charge the full amount or a part of it, like 20% now."),
             ("What if a paid time gets taken?", "The time is held for 10 minutes while the guest pays. If it's gone anyway, the payment is refunded at once."),

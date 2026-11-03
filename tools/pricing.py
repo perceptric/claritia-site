@@ -1,4 +1,4 @@
-"""Builds /pricing/index.html: the plans, a user count that prices every plan, every feature side by side and questions. The plans follow docs/pricing.md in the app repo (dev-arrowsterr/claritia). Run: python3 tools/pricing.py"""
+"""Builds /pricing/index.html: the plans, a seat count that prices every plan, every feature side by side and questions. The plans follow docs/pricing.md in the app repo (dev-arrowsterr/claritia). Run: python3 tools/pricing.py"""
 import pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -7,20 +7,20 @@ import shell  # noqa: E402
 
 esc = shell.esc
 
-# The plans. Prices are dollars per user a month; yearly is the monthly price with 20% off, billed once a year.
+# The plans. Prices are dollars per seat a month; yearly is the monthly price with 20% off, billed once a year.
 PLANS = [
     {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"),
-     "top": ["Unlimited forms", "250 form answers a month", "1 calendar per user", "100 AI credits a month", "1 meeting type", "435 form templates", "Google Calendar or Outlook", "Forms built by Tia from one sentence", "Booking inside your forms", "Email reminders before every call", "Spam blocking"]},
+     "top": ["Unlimited forms", "250 submissions a month", "1 calendar per seat", "100 AI credits", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and step skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
     {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Free",
-     "top": ["Unlimited forms", "2,000 form answers a month", "3 calendars per user", "500 AI credits a month", "Unlimited meeting types", "Payments and deposits with Stripe", "Signatures", "Paid meetings", "Group meetings and polls", "HubSpot, Google Sheets, Slack and more", "Reminder emails in your own words"]},
+     "top": ["Unlimited forms", "2,000 submissions a month", "3 calendars per seat", "500 AI credits", "Unlimited meeting types", "e-Signatures", "Stripe payment", "Custom brand", "Redirect on completion", "Booking pages for each person and the team", "Group meetings with a guest limit", "Meeting polls", "Paid meetings with Stripe"]},
     {"id": "pro", "name": "Pro", "for": "For teams that share leads", "m": 39, "y": 31, "pick": True,
      "btn": ("Start free", "https://app.tryclaritia.com", "primary"), "plus": "Starter",
-     "top": ["5,000 form answers a month", "10 calendars per user", "2,000 AI credits a month", "Routing by answer", "Round robin across your team", "Meetings with everyone free", "Follow-ups after every call and no-show", "No Claritia badge", "Emails from your own domain", "A brief from Tia before each call"]},
+     "top": ["5,000 submissions a month", "10 calendars per seat", "2,000 AI credits", "Follow-up emails from your own domain", "Remove Claritia branding", "Round robin with weights and priority", "Meetings with everyone free", "Team pools", "Daily and weekly limits for each person", "No-show follow-up with the reschedule link"]},
     {"id": "business", "name": "Business", "for": "For busy teams with lots of leads", "m": 79, "y": 63,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Pro",
-     "top": ["Unlimited form answers", "Unlimited calendars per user", "5,000 AI credits a month", "Owner first from your CRM", "Double round robin", "Salesforce", "Your own domain for forms and booking pages", "Partial answers from people who didn't finish", "Priority chat help"]},
+     "top": ["Unlimited submissions", "Unlimited calendars per seat", "5,000 AI credits", "Your own domain for forms and booking pages", "Partial answers", "Drop-off by question", "Owner first (the person's owner in your CRM)", "Double round robin (one from each of two teams)", "Salesforce", "Chat help"]},
 ]
 
 Y, N = True, False
@@ -30,21 +30,20 @@ SOON = "soon"
 # add SOON as a third item for a feature that isn't built yet.
 GROUPS = [
     ("Plan", [
-        ("Price per user a month", ["$0", ("$15", "$12"), ("$39", "$31"), ("$79", "$63")]),
-        ("Users", ["1", "Unlimited", "Unlimited", "Unlimited"]),
-        ("Editors", ["Unlimited"] * 4),
-        ("Form answers a month", ["250", "2,000", "5,000", "Unlimited"]),
-        ("Extra form answers", ["–", "$5 per 1,000", "$5 per 1,000", "–"]),
-        ("AI credits a month", ["100", "500", "2,000", "5,000"]),
+        ("Price per seat a month", ["$0", ("$15", "$12"), ("$39", "$31"), ("$79", "$63")]),
+        ("Seats", ["1", "Unlimited", "Unlimited", "Unlimited"]),
+        ("AI form builder", ["Unlimited", "Unlimited", "Unlimited", "Unlimited"]),
+        ("Submissions", ["250", "2,000", "5,000", "Unlimited"]),
+        ("Additional form submissions", [N, "$5 per 1,000", "$5 per 1,000", N]),
+        ("AI credits", ["100", "500", "2,000", "5,000"]),
     ]),
     ("Forms", [
-        ("Unlimited forms and questions", [Y, Y, Y, Y]),
-        ("Multi-page forms with a progress bar", [Y, Y, Y, Y]),
+        ("Unlimited forms", [Y, Y, Y, Y]),
+        ("Multi-page forms + progress bar", [Y, Y, Y, Y]),
         ("15 field types", [Y, Y, Y, Y]),
         ("File uploads", [Y, Y, Y, Y]),
-        ("Show-if logic and step skips", [Y, Y, Y, Y]),
-        ("Answer piping", [Y, Y, Y, Y]),
-        ("Calculations and prices", [Y, Y, Y, Y]),
+        ("Conditional logic and step skips", [Y, Y, Y, Y]),
+        ("Calculations and formulas", [Y, Y, Y, Y]),
         ("Hidden fields (UTM tags, page, referrer)", [Y, Y, Y, Y]),
         ("Pre-fill from the link", [Y, Y, Y, Y]),
         ("Checks on every field", [Y, Y, Y, Y]),
@@ -52,42 +51,25 @@ GROUPS = [
         ("18 form styles", [Y, Y, Y, Y]),
         ("435 form templates", [Y, Y, Y, Y]),
         ("Works on phones and by keyboard", [Y, Y, Y, Y]),
-        ("Signatures", [N, Y, Y, Y]),
-        ("Payments with Stripe", [N, Y, Y, Y]),
-        ("Custom endings by answer", [N, Y, Y, Y]),
+        ("e-Signatures", [N, Y, Y, Y]),
+        ("Stripe payment", [N, Y, Y, Y]),
         ("Redirect on completion", [N, Y, Y, Y]),
-        ("Your logo, colors and fonts", [N, Y, Y, Y]),
-        ("Copy of the answers to the person", [N, Y, Y, Y]),
-        ("Full style control", [N, N, Y, Y]),
-        ("Your site's look copied in", [N, N, Y, Y]),
-        ("Emails from your own domain", [N, N, Y, Y]),
-        ("Form languages", [N, N, Y, Y], SOON),
+        ("Custom brand", [N, Y, Y, Y]),
+        ("Follow-up emails from your own domain", [N, N, Y, Y]),
+        ("Form translation", [N, N, Y, Y], SOON),
         ("Block duplicate answers", [N, N, Y, Y], SOON),
         ("Partial answers", [N, N, N, Y]),
         ("Drop-off by question", [N, N, N, Y]),
-        ("A/B tests", [N, N, N, Y], SOON),
+        ("A/B testing", [N, N, N, Y], SOON),
         ("Ad pixels", [N, N, N, Y], SOON),
         ("Your own domain for forms and booking pages", [N, N, N, Y]),
     ]),
-    ("Sharing", [
-        ("Share link", [Y, Y, Y, Y]),
-        ("Embed with one script tag", [Y, Y, Y, Y]),
-        ("Popup embed", [Y, Y, Y, Y]),
-        ("QR code", [Y, Y, Y, Y]),
-        ("Claritia badge", ["Full", "Small", "None", "None"]),
-    ]),
-    ("Spam and consent", [
-        ("Cloudflare Turnstile", [Y, Y, Y, Y]),
-        ("Honeypot and rate limit", [Y, Y, Y, Y]),
-        ("Disposable email blocking", [Y, Y, Y, Y]),
-        ("Consent wording by region", [Y, Y, Y, Y]),
-    ]),
     ("Meetings", [
-        ("Calendars per user", ["1", "3", "10", "Unlimited"]),
+        ("Calendars per seat", ["1", "3", "10", "Unlimited"]),
         ("Meeting types", ["1", "Unlimited", "Unlimited", "Unlimited"]),
         ("Google Calendar and Outlook", [Y, Y, Y, Y]),
         ("Google Meet, Teams and Zoom links", [Y, Y, Y, Y]),
-        ("Booking inside the form", [Y, Y, Y, Y]),
+        ("Meeting booking inside forms", [Y, Y, Y, Y]),
         ("Working hours, buffers, notice and daily caps", [Y, Y, Y, Y]),
         ("The visitor's time zone and language", [Y, Y, Y, Y]),
         ("Reschedule and cancel links", [Y, Y, Y, Y]),
@@ -107,12 +89,14 @@ GROUPS = [
         ("Owner first (the person's owner in your CRM)", [N, N, N, Y]),
         ("Double round robin (one from each of two teams)", [N, N, N, Y]),
     ]),
-    ("Routing", [
-        ("Route by any answer to a meeting and a person", [N, N, Y, Y]),
-        ("Route by past answers", [N, N, Y, Y]),
-        ("A log of why each lead went where", [N, N, Y, Y]),
+    ("Sharing", [
+        ("Share form by link", [Y, Y, Y, Y]),
+        ("Embed form with one script tag", [Y, Y, Y, Y]),
+        ("Popup embed", [Y, Y, Y, Y]),
+        ("QR code", [Y, Y, Y, Y]),
+        ("Remove Claritia branding", [N, N, Y, Y]),
     ]),
-    ("Workflows", [
+    ("Automation workflows", [
         ("Confirmation email with a calendar invite", [Y, Y, Y, Y]),
         ("Email reminders a day and an hour before", [Y, Y, Y, Y]),
         ("Emails when a meeting moves or is canceled", [Y, Y, Y, Y]),
@@ -122,11 +106,15 @@ GROUPS = [
         ("No-show follow-up with the reschedule link", [N, N, Y, Y]),
         ("SMS reminders", [N, N, "100 a month", "300 a month"], SOON),
     ]),
-    ("Tia, the AI", [
-        ("Write a form from one sentence", [Y, Y, Y, Y]),
+    ("Routing", [
+        ("Route by any answer to a meeting and a person", [N, N, Y, Y]),
+        ("Route by past answers", [N, N, Y, Y]),
+        ("Routing log", [N, N, Y, Y]),
+    ]),
+    ("Tia, the AI form builder", [
+        ("Build a form from plain language sentence", [Y, Y, Y, Y]),
         ("Add and fix questions", [Y, Y, Y, Y]),
         ("Write a meeting's text", [Y, Y, Y, Y]),
-        ("A brief before each call", [N, N, Y, Y]),
     ]),
     ("Integrations", [
         ("Webhooks", [Y, Y, Y, Y]),
@@ -138,6 +126,12 @@ GROUPS = [
         ("Mailchimp, Klaviyo, ActiveCampaign, Brevo, Kit and MailerLite", [N, Y, Y, Y]),
         ("Answers and bookings from Typeform, Tally, Webflow, Calendly and Cal.com", [N, Y, Y, Y]),
         ("Salesforce", [N, N, N, Y]),
+    ]),
+    ("Security & Compliance", [
+        ("Cloudflare spam protection", [Y, Y, Y, Y]),
+        ("Honeypot and rate limit", [Y, Y, Y, Y]),
+        ("Disposable email blocking", [Y, Y, Y, Y]),
+        ("GDPR wording", [Y, Y, Y, Y]),
     ]),
     ("Results", [
         ("Every answer and booking saved", [Y, Y, Y, Y]),
@@ -152,10 +146,10 @@ GROUPS = [
 ]
 
 FAQ = [
-    ("Who counts as a user?", "A user is a teammate people can book a meeting with. Teammates who only build forms, edit workflows or read results are free, so you only pay for the people who take calls."),
-    ("What happens after 250 form answers on Free?", "Your forms keep working and every answer is saved. Answers past 250 show once you upgrade, or on the 1st of the next month. No lead is lost."),
+    ("What is a seat?", "A seat is a teammate people can book a meeting with. Teammates who only build forms, edit workflows or read results are free, so you only pay for the people who take calls."),
+    ("What happens after 250 submissions on Free?", "Your forms keep working and every submission is saved. Submissions past 250 show once you upgrade, or on the 1st of the next month. No lead is lost."),
     ("What is an AI credit?", "One thing Tia does for you, like writing a form or adding questions. A small change is 1 credit and a whole new form is 10. When credits run out, Tia waits for the next month. Your forms, meetings and reminders keep running."),
-    ("What if a paid plan passes its form answers?", "Every answer is saved and shows right away. Extra answers are $5 per 1,000 on Starter and Pro. Business has no limit."),
+    ("What if a paid plan passes its submissions?", "Every submission is saved and shows right away. Additional form submissions are $5 per 1,000 on Starter and Pro. Business has no limit."),
     ("How does yearly billing work?", "Pay for the year up front and save 20%. Monthly plans renew each month."),
     ("Can I change or cancel my plan?", "Yes, any time from Settings. An upgrade starts right away. A cancel takes effect at the end of the period you paid for."),
     ("What does Soon mean?", "The feature is being built. It joins your plan when it ships, at no extra cost."),
@@ -223,9 +217,9 @@ SCRIPT = """<script>
       var t = p.querySelector(".plan__total");
       var base = +p.getAttribute(yearly ? "data-y" : "data-m"), extra = p.getAttribute(yearly ? "data-hy" : "data-hm");
       if (!t) return;
-      if (n === 1 || extra === "") { t.classList.toggle("on", n > 1 && extra === ""); t.textContent = n > 1 ? "1 user only" : ""; return; }
+      if (n === 1 || extra === "") { t.classList.toggle("on", n > 1 && extra === ""); t.textContent = n > 1 ? "1 seat only" : ""; return; }
       t.classList.add("on");
-      t.textContent = money(n * base) + " a month for " + n + " users";
+      t.textContent = money(n * base) + " a month for " + n + " seats";
     });
   }
   less.addEventListener("click", function () { if (n > 1) { n--; draw(); } });
@@ -259,8 +253,8 @@ def cell(v, pick):
 def card(p):
     pick = p.get("pick")
     label, href, kind = p["btn"]
-    per = "per user a month" if p["m"] else "a month"
-    host = '<p class="plan__host">For each teammate who takes calls</p>' if p["m"] else '<p class="plan__host">1 user. No card needed.</p>'
+    per = "per seat a month" if p["m"] else "a month"
+    host = '<p class="plan__host">For each teammate who takes calls</p>' if p["m"] else '<p class="plan__host">1 seat. No card needed.</p>'
     heading = f'<h3>Everything in {p["plus"]}, plus</h3>' if p.get("plus") else "<h3>All the basics</h3>"
     items = "".join(f"<li>{CHECK}{esc(t)}</li>" for t in p["top"])
     tag = '<span class="tag tag--green">Most picked</span>' if pick else ""
@@ -311,18 +305,18 @@ def page():
   <div class="frame">
     <section class="pr-hero" aria-labelledby="price-h">
       <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#card"/></svg>Pricing</span>
-      <h1 class="display" id="price-h">Start free. Pay per user as you grow.</h1>
+      <h1 class="display" id="price-h">Start free. Pay per seat as you grow.</h1>
       <p class="sub">Pay for each teammate who takes calls. Teammates who only build forms or read answers are always free.</p>
       <div class="pr-tools">
         <div class="bill js-only" data-bill role="group" aria-label="Billing period">
           <button type="button" data-bill-to="monthly" aria-pressed="true">Monthly</button>
           <button type="button" data-bill-to="yearly" aria-pressed="false">Yearly <em>Save 20%</em></button>
         </div>
-        <div class="hosts js-only" data-hosts role="group" aria-label="Number of users">
-          Users
-          <button type="button" data-less aria-label="One less user">&minus;</button>
+        <div class="hosts js-only" data-hosts role="group" aria-label="Number of seats">
+          Seats
+          <button type="button" data-less aria-label="One less seat">&minus;</button>
           <output aria-live="polite">1</output>
-          <button type="button" data-more aria-label="One more user">+</button>
+          <button type="button" data-more aria-label="One more seat">+</button>
         </div>
       </div>
       <div class="plans">
@@ -359,7 +353,7 @@ def page():
 
 {cta()}"""
     title = "Pricing · Claritia"
-    desc = "Free for one person. Starter $15, Pro $39 and Business $79 per user a month. Teammates who only build forms are free. Unlimited forms on every plan."
+    desc = "Free for one person. Starter $15, Pro $39 and Business $79 per seat a month. Teammates who only build forms are free. Unlimited forms on every plan."
     return shell.head(title, desc, "/pricing", STYLE) + "\n" + shell.body(main, SCRIPT)
 
 
@@ -373,8 +367,48 @@ def home_cards():
     home.write_text(text[:i] + f'<div class="plans">\n        {cards}\n      </div>\n      ' + text[j:])
 
 
+def md_cell(v):
+    if v is True:
+        return "Yes"
+    if v is False or v == "–":
+        return "–"
+    if isinstance(v, tuple):
+        return f"{v[0]} ({v[1]} yearly)"
+    return str(v)
+
+
+def markdown():
+    """pricing.md, the plain-text copy of this page, from the same data."""
+    lines = [
+        "# Claritia pricing", "",
+        "Claritia is forms, meetings and workflows: forms that turn visitors into leads, meetings that book them with the right person, and workflows that send the reminders and follow-ups.", "",
+        "Each plan is priced per seat. A seat is a teammate people can book a meeting with. Teammates who only build forms, edit workflows or read results are free.", "",
+        "| | " + " | ".join(p["name"] for p in PLANS) + " |",
+        "|---|" + "---|" * len(PLANS),
+    ]
+    for name, items in GROUPS:
+        lines.append(f"| **{name}** |" + " |" * len(PLANS))
+        for it in items:
+            label = it[0] + (" (soon)" if len(it) > 2 else "")
+            lines.append(f"| {label} | " + " | ".join(md_cell(v) for v in it[1]) + " |")
+    lines += [
+        "",
+        "- Billed monthly. Pay yearly and save 20%. Change or cancel any time from Settings.",
+        "- Past 250 submissions on Free, forms keep working and every submission is saved. Submissions past 250 show after an upgrade or on the 1st.",
+        "- An AI credit is one thing Tia, the AI form builder, does: a small change is 1 credit, a whole new form is 10.",
+        '- "Soon" features join the plan when they ship, at no extra cost.',
+        "- Suite bundle: run two or more of Arrowsterr, Claritia and Omniscient and save 20%.",
+        "",
+        "Full page: https://tryclaritia.com/pricing",
+        "Start free: https://app.tryclaritia.com",
+        "",
+    ]
+    (ROOT / "pricing.md").write_text("\n".join(lines))
+
+
 if __name__ == "__main__":
     home_cards()
+    markdown()
     out = ROOT / "pricing" / "index.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(page())

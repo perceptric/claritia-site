@@ -31,7 +31,7 @@
 - [Slack](https://tryclaritia.com/integrations/slack): new lead alerts, a message to the rep and /book (Starter)
 - [Webflow](https://tryclaritia.com/integrations/webflow): Claritia forms on Webflow with one Embed element, or keep your Webflow form
 - [Stripe](https://tryclaritia.com/integrations/stripe): payments and deposits in forms, and paid meetings, on your own Stripe account (Starter)
-- [Pricing](https://tryclaritia.com/pricing): Free, Starter $15, Pro $39 and Business $79 per user a month ([Markdown](https://tryclaritia.com/pricing.md))
+- [Pricing](https://tryclaritia.com/pricing): Free, Starter $15, Pro $39 and Business $79 per seat a month ([Markdown](https://tryclaritia.com/pricing.md))
 - [Form templates](https://tryclaritia.com/templates): 150 free forms for 24 industries (demo requests, quotes, intake, applications, surveys, quizzes), each with its own page to try it and use it
 - [App](https://app.tryclaritia.com): sign in and start
 
