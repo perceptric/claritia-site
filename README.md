@@ -24,7 +24,8 @@ meeting, all in about twenty seconds. The look is the same family as tryomniscie
 | `tools/feats.py` | Writes `assets/img/feat-*.svg`. |
 | `templates/` | The form template gallery: `/templates`, one page per industry and one per template (150), each with the form to try. Written by `tools/templates.py`. |
 | `tools/templates.py`, `tools/templates.json` | Writes `templates/` and its lines in `sitemap.xml` from the template data, which comes from the app (`node scripts/export-templates.ts` in `dev-arrowsterr/claritia`). |
-| `assets/forms.css`, `assets/forms.js` | The gallery's search and filters, and the live forms: pages, show-if logic, checks and the end screen. |
+| `assets/forms.css`, `assets/forms.js` | The gallery's search and filters, the style menu and Shuffle, and the live forms: pages, show-if logic, checks and the end screen. |
+| `assets/themes.css`, `assets/form-art/` | The 18 form styles and their drawings. Written by `tools/templates.py` from the app's `src/lib/forms/themes.ts`. |
 | `llms.txt`, `pricing.md` | Short guides for AI tools. |
 | `.htaccess` | https and www redirects, the 404 page, app links, cache times. |
 
