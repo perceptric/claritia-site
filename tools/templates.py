@@ -470,7 +470,7 @@ def rail(current) -> str:
 
 # The filters worked out from each form, as chips: within a menu they widen, across menus they narrow.
 CHIP_MENUS = [("does", DATA["does"]), ("feature", DATA["features"]), ("layout", DATA["layouts"]), ("length", DATA["lengths"])]
-CHIP_SKIP = {("does", "routes"), ("does", "follow-up"), ("feature", "booking"), ("feature", "score"), ("layout", "one"), ("feature", "hidden")}
+CHIP_SKIP = {("does", "follow-up"), ("feature", "booking"), ("feature", "score"), ("layout", "one"), ("feature", "hidden")}
 
 
 def chips_for(items) -> str:
@@ -794,6 +794,7 @@ def template_page(t):
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>It can sync to HubSpot, Salesforce or Omniscient.</li>
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>The thank-you screen opens your booking link, with the name and email filled in.</li>' if s["end"].get("booking") else ""}
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>Each person sees their score and what it means.</li>' if s["end"].get("score") else ""}
+            {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>It comes with a follow-up email, ready for you to read and turn on.</li>' if "follow-up" in t["does"] else ""}
           </ul>
         </div>
         <a class="btn btn--primary tbox__cta" href="{use}?theme={t["theme"]}" data-use="{use}">Use template <span class="nudge" aria-hidden="true">&rarr;</span></a>
