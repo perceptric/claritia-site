@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 8, 8
+CSS_V, JS_V = 9, 9
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -152,17 +152,6 @@ def style_bar(current: str, own: bool = False) -> str:
         <button type="button" class="tsty__shuffle" data-shuffle aria-label="Try another style"><svg aria-hidden="true"><use href="#i-shuffle"/></svg><span>Shuffle</span></button>
         <script type="application/json" class="tsty__data">{data}</script>
       </div>"""
-
-
-def brand_bar() -> str:
-    """See it in your brand: the visitor's site, read by the app with no AI, over every form on the page."""
-    return f"""<form class="tbrand" data-brand data-api="{APP}/api/templates/brand">
-        <label class="sr-only" for="tbrand-in">Your website</label>
-        <input id="tbrand-in" class="tbrand__in" name="site" placeholder="yoursite.com" autocomplete="url" inputmode="url">
-        <button type="submit" class="tbrand__go">See it in your brand</button>
-        <span class="tbrand__on" hidden><span class="tbrand__dot" aria-hidden="true"></span><span data-brand-name></span><button type="button" class="tbrand__x" data-brand-reset aria-label="Back to the styles">Reset</button></span>
-        <span class="tbrand__err" role="status" data-brand-err></span>
-      </form>"""
 
 
 # Shared page parts, copied from the home page so the header, menu and footer stay one --------------------------
@@ -483,7 +472,7 @@ def gallery(current, items) -> str:
           <div class="chips" role="group" aria-label="Filters">{chips_for(items)}</div>
         </div>
         {jump(current)}
-        <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> form templates</p>{brand_bar()}{style_bar("paper", own=True)}</div>
+        <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> form templates</p>{style_bar("paper", own=True)}</div>
         <div class="tgrid" data-grid>{"".join(card(t) for t in items)}</div>
         <div class="tnone" hidden data-none><p>No matches.</p><button type="button" class="more" data-clear>Clear the search</button></div>
         {describe_box()}
@@ -838,7 +827,7 @@ def template_page(t):
   <section class="tpl" id="try">
     <div class="wrap tpl__in">
       <div class="tpl__main">
-        <div class="tbar tbar--tpl">{style_bar(t["theme"])}{brand_bar()}</div>
+        <div class="tbar tbar--tpl">{style_bar(t["theme"])}</div>
         {stage(t, t["theme"])}
       </div>
       <aside class="tpl__side">

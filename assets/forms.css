@@ -416,17 +416,6 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
 .tdesc__picks { display: flex; flex-wrap: wrap; gap: 6px; }
 .tdesc__picks .chip { display: inline-flex; align-items: center; }
 
-/* See it in your brand */
-.tbrand { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
-.tbrand__in { width: 170px; height: 36px; padding: 0 12px; box-shadow: var(--sh-input); border-radius: 999px; background: #fff; font: inherit; font-size: 14px; color: var(--ink); }
-.tbrand__in:focus { outline: none; box-shadow: var(--sh-focus); }
-.tbrand__go { height: 36px; padding: 0 14px; border-radius: 999px; background: var(--btn); box-shadow: var(--sh-primary); color: #fff; font-size: 13.5px; font-weight: 500; }
-.tbrand__on { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 6px 0 12px; background: var(--surface); box-shadow: var(--sh-chip); border-radius: 999px; font-size: 13.5px; font-weight: 500; }
-.tbrand__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--signal, #10b981); }
-.tbrand__x { height: 26px; padding: 0 10px; border-radius: 999px; font-size: 12.5px; color: var(--muted); }
-.tbrand__x:hover { background: var(--hover); color: var(--ink); }
-.tbrand__err { flex-basis: 100%; font-size: 12.5px; color: var(--muted); }
-.tbrand__err:empty { display: none; }
 .tbar--tpl { margin-bottom: 14px; }
 .cf__logo { width: auto; max-width: 140px; height: 28px; object-fit: contain; object-position: left center; margin-bottom: 6px; }
 

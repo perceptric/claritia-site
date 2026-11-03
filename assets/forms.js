@@ -61,64 +61,6 @@
   apply();
 })();
 
-// See it in your brand: the visitor's button color, font, corners and logo over every form on the page, kept in this
-// browser so the template pages show it too. --------------------------------------------------------------------------
-(function () {
-  var boxes = Array.prototype.slice.call(document.querySelectorAll("[data-brand]"));
-  if (!boxes.length) return;
-  var KEY = "clr-brand";
-  var read = function () { try { return JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) { return null; } };
-  var keep = function (p) { try { p ? localStorage.setItem(KEY, JSON.stringify(p)) : localStorage.removeItem(KEY); } catch (e) {} };
-  var VARS = ["--f-accent", "--f-accent-ink", "--f-btn-radius", "--f-font", "--f-head"];
-  function paint(p) {
-    if (p && p.fontUrl && !document.querySelector('link[data-brand-font]')) {
-      var l = document.createElement("link"); l.rel = "stylesheet"; l.href = p.fontUrl; l.setAttribute("data-brand-font", ""); document.head.appendChild(l);
-    }
-    var font = p && p.font ? '"' + p.font.replace(/"/g, "") + '", ui-sans-serif, system-ui, sans-serif' : "";
-    Array.prototype.forEach.call(document.querySelectorAll(".fth"), function (el) {
-      VARS.forEach(function (v) { el.style.removeProperty(v); });
-      if (!p) return;
-      if (p.accent) { el.style.setProperty("--f-accent", p.accent); el.style.setProperty("--f-accent-ink", p.accentInk || "#ffffff"); }
-      if (p.radius != null) el.style.setProperty("--f-btn-radius", p.radius + "px");
-      if (font) { el.style.setProperty("--f-font", font); el.style.setProperty("--f-head", font); }
-    });
-    Array.prototype.forEach.call(document.querySelectorAll(".cf__head"), function (h) {
-      var img = h.querySelector(".cf__logo");
-      if (!p || !p.logo) { if (img) img.remove(); return; }
-      if (!img) { img = document.createElement("img"); img.className = "cf__logo"; img.alt = ""; h.insertBefore(img, h.firstChild); }
-      img.src = p.logo;
-      img.onerror = function () { img.remove(); };
-    });
-    boxes.forEach(function (b) {
-      b.querySelector(".tbrand__on").hidden = !p;
-      b.querySelector("[data-brand-name]").textContent = p ? p.name : "";
-      b.querySelector(".tbrand__in").hidden = !!p;
-      b.querySelector(".tbrand__go").hidden = !!p;
-    });
-  }
-  boxes.forEach(function (b) {
-    var err = b.querySelector("[data-brand-err]");
-    b.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var site = b.querySelector(".tbrand__in").value.trim();
-      if (!site) return;
-      err.textContent = "Reading your site…";
-      fetch(b.getAttribute("data-api") + "?site=" + encodeURIComponent(site))
-        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
-        .then(function (x) {
-          if (!x.ok) { err.textContent = x.j.error || "Couldn't read that site."; return; }
-          err.textContent = x.j.accent || x.j.font ? "" : "Couldn't find your colors on that site.";
-          keep(x.j);
-          paint(x.j);
-        })
-        .catch(function () { err.textContent = "Couldn't read that site. Try again."; });
-    });
-    b.querySelector("[data-brand-reset]").addEventListener("click", function () { keep(null); paint(null); err.textContent = ""; });
-  });
-  var saved = read();
-  if (saved) paint(saved);
-})();
-
 // Describe your form: the words find the closest templates on the page first; Build with AI opens the app. ---------
 (function () {
   var box = document.querySelector("[data-desc]");
