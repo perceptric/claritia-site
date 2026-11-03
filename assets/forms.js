@@ -571,6 +571,7 @@
       function open(on) {
         dd.classList.toggle("is-open", on);
         btn.setAttribute("aria-expanded", on ? "true" : "false");
+        if (on) keepInView(dd.querySelector(".cf__dd-list"));
         if (on) { active = Math.max(0, items.findIndex(function (li) { return li.getAttribute("aria-selected") === "true"; })); mark(); }
       }
       function mark() {
@@ -637,6 +638,15 @@
   document.querySelectorAll("form[data-cf]").forEach(setup);
 })();
 
+// A menu that just opened slides sideways until it sits fully on screen, 12px from each edge.
+function keepInView(el) {
+  el.style.transform = "";
+  var r = el.getBoundingClientRect(), vw = document.documentElement.clientWidth, dx = 0;
+  if (r.right > vw - 12) dx = vw - 12 - r.right;
+  if (r.left + dx < 12) dx = 12 - r.left;
+  if (dx) el.style.transform = "translateX(" + Math.round(dx) + "px)";
+}
+
 // Styles: the style menu, Shuffle and the style tiles ------------------------------------------------------------
 (function () {
   var bars = Array.prototype.slice.call(document.querySelectorAll("[data-styles]"));
@@ -694,7 +704,7 @@
     function open(on) {
       bar.classList.toggle("is-open", on);
       btn.setAttribute("aria-expanded", on ? "true" : "false");
-      if (on) { active = Math.max(0, items.findIndex(function (li) { return li.getAttribute("data-theme") === current; })); mark(); }
+      if (on) { keepInView(list); active = Math.max(0, items.findIndex(function (li) { return li.getAttribute("data-theme") === current; })); mark(); }
     }
     function mark() {
       items.forEach(function (li, i) { li.classList.toggle("is-active", i === active); });

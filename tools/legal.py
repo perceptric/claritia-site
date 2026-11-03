@@ -244,7 +244,7 @@ NOT_FOUND = f"""<div class="reading">
   <p class="eyebrow">404</p>
   <h1 class="h2">This page isn't here.</h1>
   <p class="lead">The link may be old. Start from the home page or browse the form templates.</p>
-  <div class="close__ctas" style="justify-content:flex-start"><a class="btn btn--primary btn--lg" href="/">Go home</a><a class="btn btn--ghost btn--lg" href="/templates">Browse templates</a></div>
+  <div class="close__ctas" style="justify-content:flex-start"><a class="btn btn--primary btn--lg" href="/">Go home</a><a class="btn btn--ghost btn--lg" href="/templates">Browse form templates</a></div>
 </div>"""
 (ROOT / "404.html").write_text(shell.head("Page not found · Claritia", "This page isn't here.", "/404", '<meta name="robots" content="noindex">\n', og=False) + "\n" + shell.body(NOT_FOUND))
 print("wrote 404")

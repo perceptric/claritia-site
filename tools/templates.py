@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 7, 7
+CSS_V, JS_V = 8, 8
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -138,11 +138,11 @@ def style_bar(current: str, own: bool = False) -> str:
     data = json.dumps({x["id"]: {k: x[k] for k in ("name", "layout", "input", "shadow", "pattern", "dark")} for x in THEMES}).replace("</", "<\\/")
     opts = []
     if own:
-        opts.append(f'<li role="option" data-theme="" aria-selected="true"><span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><span><b>Each template&#39;s own</b><small>Every card in its own style</small></span></li>')
+        opts.append(f'<li role="option" data-theme="" aria-selected="true"><span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><span><b>Each form&#39;s own</b><small>Every card in its own style</small></span></li>')
     for x in THEMES:
         sel = "true" if (x["id"] == current and not own) else "false"
         opts.append(f'<li role="option" data-theme="{x["id"]}" aria-selected="{sel}">{swatch(x["id"])}<span><b>{esc(x["name"])}</b><small>{esc(x["mood"])}</small></span></li>')
-    shown = '<span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><b>Each template&#39;s own</b>' if own else f'{swatch(current)}<b>{esc(TH[current]["name"])}</b>'
+    shown = '<span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><b>Each form&#39;s own</b>' if own else f'{swatch(current)}<b>{esc(TH[current]["name"])}</b>'
     return f"""<div class="tsty" data-styles{" data-own" if own else ""}>
         <span class="tsty__l">Style</span>
         <div class="tsty__dd">
@@ -379,7 +379,7 @@ def live_form(t) -> str:
   {"".join(pages)}
   <div class="cf__acts"><button type="button" class="cf__btn cf__btn--ghost" data-back hidden>Back</button><button type="button" class="cf__btn" data-next data-submit-label="{esc(s["submit"])}">{esc(s["submit"] if not multi else "Next")}</button></div>
   {notice}
-  <div class="cf__end" hidden role="status"><span class="cf__end-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></span><h3 class="cf__end-t">{esc(end["title"])}</h3><div class="cf__score" hidden></div>{f'<p class="cf__end-p">{esc(end["text"])}</p>' if end.get("text") else ""}{'<div class="cf__book" data-book><div class="cf__days" role="group" aria-label="Day"></div><div class="cf__times" role="group" aria-label="Time"><button type="button">9:00 am</button><button type="button">10:30 am</button><button type="button">1:00 pm</button><button type="button">3:30 pm</button></div><p class="cf__book-note" hidden>Sample times. In the live form this books the meeting on your calendar.</p></div>' if end.get("booking") else ""}<p class="cf__demo">This is a preview, so nothing was sent. <a href="{APP}/forms/templates/{t['slug']}">Use this template</a> to take real answers.</p><button type="button" class="cf__restart">Start over</button></div>
+  <div class="cf__end" hidden role="status"><span class="cf__end-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></span><h3 class="cf__end-t">{esc(end["title"])}</h3><div class="cf__score" hidden></div>{f'<p class="cf__end-p">{esc(end["text"])}</p>' if end.get("text") else ""}{'<div class="cf__book" data-book><div class="cf__days" role="group" aria-label="Day"></div><div class="cf__times" role="group" aria-label="Time"><button type="button">9:00 am</button><button type="button">10:30 am</button><button type="button">1:00 pm</button><button type="button">3:30 pm</button></div><p class="cf__book-note" hidden>Sample times. In the live form this books the meeting on your calendar.</p></div>' if end.get("booking") else ""}<p class="cf__demo">This is a preview, so nothing was sent. <a href="{APP}/forms/templates/{t['slug']}">Use this form template</a> to take real answers.</p><button type="button" class="cf__restart">Start over</button></div>
   <script type="application/json" class="cf__data">{data}</script>
 </form>"""
 
@@ -425,8 +425,8 @@ def rail(current) -> str:
     menu = lambda title, rows, open_: f'<details class="trail__m"{" open" if open_ else ""}><summary class="trail__h">{title}<svg aria-hidden="true"><use href="#i-chev"/></svg></summary>{"".join(rows)}</details>'
     all_on = kind == "all"
     return (
-        '<nav class="trail" aria-label="Template menus">'
-        f'<a class="trail__i{" is-on" if all_on else ""}" href="/templates"{" aria-current=\"page\"" if all_on else ""}><span>All templates</span><small>{len(T)}</small></a>'
+        '<nav class="trail" aria-label="Form template menus">'
+        f'<a class="trail__i{" is-on" if all_on else ""}" href="/templates"{" aria-current=\"page\"" if all_on else ""}><span>All form templates</span><small>{len(T)}</small></a>'
         + menu("Category", cat_rows, True)
         + menu("Industry", ind_rows, True)
         + menu("Team", team_rows, kind == "team" or all_on)
@@ -454,14 +454,14 @@ def chips_for(items) -> str:
 
 def jump(current) -> str:
     kind, cur = current
-    here = "All templates" if kind == "all" else label_of(kind, cur)
+    here = "All form templates" if kind == "all" else label_of(kind, cur)
     group = lambda title, links: f'<p class="tjump__h">{title}</p>' + "".join(f'<a href="{path_of(k, v)}">{esc(label_of(k, v))}</a>' for k, v in links)
     fams = [("family", f) for f in HAS_PAGE["family"]]
     fam_open = cur if kind == "family" else CAT_FAM.get(cur) if kind == "category" else None
     cats = [("category", c) for c in HAS_PAGE["category"] if CAT_FAM[c] == fam_open] if fam_open else []
     inds = [("industry", i) for i in HAS_PAGE["industry"] if COUNT.get(i, 0) >= MIN]
     teams = [("team", x) for x in HAS_PAGE["team"]]
-    body = '<a href="/templates">All templates</a>' + group("Category", fams + cats) + group("Industry", inds) + group("Team", teams)
+    body = '<a href="/templates">All form templates</a>' + group("Category", fams + cats) + group("Industry", inds) + group("Team", teams)
     return f'<details class="tjump"><summary>{esc(here)} <svg aria-hidden="true"><use href="#i-chev"/></svg></summary><div class="tjump__list">{body}</div></details>'
 
 
@@ -479,11 +479,11 @@ def gallery(current, items) -> str:
       {rail(current)}
       <div class="tgal__main">
         <div class="tfilter">
-          <label class="tsearch"><span class="sr-only">Search templates</span><svg aria-hidden="true"><use href="#i-search"/></svg><input type="search" placeholder="Search {len(items)} templates" data-search></label>
+          <label class="tsearch"><span class="sr-only">Search form templates</span><svg aria-hidden="true"><use href="#i-search"/></svg><input type="search" placeholder="Search {len(items)} form templates" data-search></label>
           <div class="chips" role="group" aria-label="Filters">{chips_for(items)}</div>
         </div>
         {jump(current)}
-        <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> templates</p>{brand_bar()}{style_bar("paper", own=True)}</div>
+        <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> form templates</p>{brand_bar()}{style_bar("paper", own=True)}</div>
         <div class="tgrid" data-grid>{"".join(card(t) for t in items)}</div>
         <div class="tnone" hidden data-none><p>No matches.</p><button type="button" class="more" data-clear>Clear the search</button></div>
         {describe_box()}
@@ -615,17 +615,17 @@ def combo_page(c: str, i: str, items) -> None:
     path = combo_path(c, i)
     who = "any business" if i == "general" else low(IND_LABEL[i])
     title = f"{cat_title(c)} for {who}"
-    intro = f"{len(items)} free {low(CAT_LABEL[c])} templates for {who}, like {and_list([t['name'] for t in items[:3]])}."
+    intro = f"{len(items)} free {low(CAT_LABEL[c])} form templates for {who}, like {and_list([t['name'] for t in items[:3]])}."
     body = f"""<section class="thero thero--sm">
     <div class="wrap"><div class="thero__in">
-      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Templates</a><span aria-hidden="true">/</span><a href="{path_of("category", c)}">{esc(CAT_LABEL[c])}</a><span aria-hidden="true">/</span><span>{esc(IND_LABEL[i])}</span></nav>
+      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Form templates</a><span aria-hidden="true">/</span><a href="{path_of("category", c)}">{esc(CAT_LABEL[c])}</a><span aria-hidden="true">/</span><span>{esc(IND_LABEL[i])}</span></nav>
       <h1 class="h2 reveal" data-delay="1">{esc(title)}</h1>
       <p class="lead reveal" data-delay="2">{esc(intro)} Try each one, then use it in a click.</p>
     </div></div>
   </section>
   {gallery(("category", c), items)}
   {CLOSE(esc(title) + ".", "Live on your site in a click.", APP, "Start free")}"""
-    page(path, f"{title} | Claritia", intro, body, [crumbs([("Templates", "/templates"), (CAT_LABEL[c], path_of("category", c)), (IND_LABEL[i], path)])])
+    page(path, f"{title} | Claritia", intro, body, [crumbs([("Form templates", "/templates"), (CAT_LABEL[c], path_of("category", c)), (IND_LABEL[i], path)])])
 
 
 def kit_strip(industry: str) -> str:
@@ -643,7 +643,7 @@ def kit_page(k) -> None:
     use = f"{APP}/forms/templates?kit={k['id']}"
     body = f"""<section class="thero thero--sm">
     <div class="wrap"><div class="thero__in">
-      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Templates</a><span aria-hidden="true">/</span><a href="{path_of("industry", ind)}">{esc(IND_LABEL[ind])}</a><span aria-hidden="true">/</span><span>Starter kit</span></nav>
+      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Form templates</a><span aria-hidden="true">/</span><a href="{path_of("industry", ind)}">{esc(IND_LABEL[ind])}</a><span aria-hidden="true">/</span><span>Starter kit</span></nav>
       <h1 class="h2 reveal" data-delay="1">{esc(k["name"])}</h1>
       <p class="lead reveal" data-delay="2">The {len(items)} forms to start with: {esc(and_list([x["name"] for x in items]))}. Add them all in one click, in one style, each with its follow-up ready to turn on.</p>
       <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="{use}">Use all {len(items)} <span class="nudge" aria-hidden="true">&rarr;</span></a></div>
@@ -653,7 +653,7 @@ def kit_page(k) -> None:
     <div class="wrap"><div class="tgrid tgrid--3">{"".join(card(x) for x in items)}</div></div>
   </section>
   {CLOSE(esc(k["name"]) + ".", "Live on your site in a click.", use, f"Use all {len(items)}")}"""
-    page(path, f"{k['name']}: {len(items)} free form templates | Claritia", f"The {len(items)} forms to start with: {and_list([x['name'] for x in items])}. Free, ready to use in one click.", body, [crumbs([("Templates", "/templates"), (IND_LABEL[ind], path_of("industry", ind)), (k["name"], path)])])
+    page(path, f"{k['name']}: {len(items)} free form templates | Claritia", f"The {len(items)} forms to start with: {and_list([x['name'] for x in items])}. Free, ready to use in one click.", body, [crumbs([("Form templates", "/templates"), (IND_LABEL[ind], path_of("industry", ind)), (k["name"], path)])])
 
 
 def list_page(kind: str, v: str, title: str, intro: str, trail: list) -> None:
@@ -662,7 +662,7 @@ def list_page(kind: str, v: str, title: str, intro: str, trail: list) -> None:
     crumb = "".join(f'<a href="{p}">{esc(n)}</a><span aria-hidden="true">/</span>' for n, p in trail)
     body = f"""<section class="thero thero--sm">
     <div class="wrap"><div class="thero__in">
-      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Templates</a><span aria-hidden="true">/</span>{crumb}<span>{esc(label_of(kind, v))}</span></nav>
+      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Form templates</a><span aria-hidden="true">/</span>{crumb}<span>{esc(label_of(kind, v))}</span></nav>
       <h1 class="h2 reveal" data-delay="1">{esc(title)}</h1>
       <p class="lead reveal" data-delay="2">{esc(intro)} Try each one, then use it in a click.</p>
     </div></div>
@@ -671,18 +671,18 @@ def list_page(kind: str, v: str, title: str, intro: str, trail: list) -> None:
   {combo_links(v) if kind == "category" else ""}
   {gallery((kind, v), items)}
   {CLOSE(esc(title) + ".", "Live on your site in a click.", APP, "Start free")}"""
-    page(path, f"{title} | Claritia", f"{len(items)} free templates. {intro}", body, [crumbs([("Templates", "/templates")] + trail + [(label_of(kind, v), path)])])
+    page(path, f"{title} | Claritia", f"{len(items)} free form templates. {intro}", body, [crumbs([("Form templates", "/templates")] + trail + [(label_of(kind, v), path)])])
 
 
 def cat_title(c: str) -> str:
     lab = CAT_LABEL[c]
-    return f"{lab} templates" if re.search(r"(quiz|test|survey|form|check)$", lab.lower()) else f"{lab} form templates"
+    return f"{lab} templates" if lab.lower().endswith(" form") or lab.lower() == "form" else f"{lab} form templates"
 
 
 def cat_intro(c: str) -> str:
     items = items_of("category", c)
     names = [t["name"] for t in items[:3]]
-    return f"{len(items)} free {low(CAT_LABEL[c])} templates, like {and_list(names)}."
+    return f"{len(items)} free {low(CAT_LABEL[c])} form templates, like {and_list(names)}."
 
 
 
@@ -748,7 +748,7 @@ def feat_grid() -> str:
 
 def steps(use: str) -> str:
     return f"""<ol class="tsteps reveal" data-delay="1">
-        <li><span class="tsteps__n">01</span><h3 class="h3">Use the template</h3><p>It opens in Claritia ready to go, in the style you picked. Answers are linked to your contact fields and the form goes live.</p></li>
+        <li><span class="tsteps__n">01</span><h3 class="h3">Use the form template</h3><p>It opens in Claritia ready to go, in the style you picked. Answers are linked to your contact fields and the form goes live.</p></li>
         <li><span class="tsteps__n">02</span><h3 class="h3">Connect your tools</h3><p>Send answers to HubSpot, Salesforce or Omniscient, open your calendar after a booking form, and tell your team in Slack.</p></li>
         <li><span class="tsteps__n">03</span><h3 class="h3">Share it anywhere</h3><p>Send the link, or add one line to Webflow, WordPress, Framer or any page. Every answer lands as a contact.</p></li>
       </ol>"""
@@ -773,7 +773,7 @@ def and_list(xs):
 def describe(t) -> str:
     labs = short_labels(t)
     asks = f" It asks for {and_list(labs)}" + (f", plus {questions(t) - len(labs)} more questions" if questions(t) > len(labs) else "") + "." if labs else ""
-    return f"{t['blurb']}{asks} Use this free template as it is, or change any question, the style and the thank-you screen, then share it or put it on your site."
+    return f"{t['blurb']}{asks} Use this free form template as it is, or change any question, the style and the thank-you screen, then share it or put it on your site."
 
 
 def faqs(t):
@@ -784,8 +784,8 @@ def faqs(t):
         (f"Can I customize the {low} form?", f"Yes. Add, remove and reorder questions, change the wording and options, and set which ones are required. Pick one of {len(THEMES)} styles or your own color. Tailor can also rewrite the wording for your business from one sentence."),
         (f"What does the {low} form collect?", (f"It asks for {and_list(labs)}" + (f", plus {questions(t) - len(labs)} more questions" if questions(t) > len(labs) else "") + ". You can add or remove any of them.") if labs else f"It has {questions(t)} questions, listed on this page. You can add or remove any of them."),
         (f"Is the {low} form mobile-friendly?", "Yes. Every form fits phones, tablets and computers, and works with a keyboard and screen readers."),
-        (f"Is the {low} template free?", "Yes. Every template is free on every plan, including the free one. Use it, change it and share it as often as you like."),
-        ("Where do the answers go?", "Each answer becomes a contact in Claritia, with the company found from the work email and the page and campaign the visitor came from. From there it can sync to HubSpot, Salesforce or Omniscient."),
+        (f"Is the {low} form template free?", "Yes. Every form template is free on every plan, including the free one. Use it, change it and share it as often as you like."),
+        ("Where do the answers go?", "Each answer is saved in Claritia with the page and campaign the visitor came from. From there it can sync to HubSpot, Salesforce or Omniscient."),
         ("How do I put it on my website?", "Share the link, or paste one line of code where the form should show. It fits any website, including Webflow, WordPress, Framer and plain HTML."),
     ]
     if t["phi"]:
@@ -820,17 +820,18 @@ def template_page(t):
     looks = [t["theme"]] + others[(T.index(t) * 5) % len(others):][:5]
     looks += [x for x in others if x not in looks][: 6 - len(looks)]
     qa = faqs(t)
-    title_h = f"{t['name']} template" if not t["name"].lower().endswith("template") else t["name"]
+    nm = t["name"]
+    title_h = nm if nm.lower().endswith("template") else f"{nm} template" if nm.lower().endswith(" form") else f"{nm} form template"
     body = f"""<section class="thero thero--tpl">
     <div class="wrap">
-      <nav class="tcrumb" aria-label="Breadcrumb"><a href="/templates">Templates</a><span aria-hidden="true">/</span><a href="{ind_path}">{esc(t["industryLabel"])}</a><span aria-hidden="true">/</span><span>{esc(t["name"])}</span></nav>
+      <nav class="tcrumb" aria-label="Breadcrumb"><a href="/templates">Form templates</a><span aria-hidden="true">/</span><a href="{ind_path}">{esc(t["industryLabel"])}</a><span aria-hidden="true">/</span><span>{esc(t["name"])}</span></nav>
       <div class="tpl__top">
         <div class="tpl__copy">
           <h1 class="h2">{esc(title_h)}</h1>
           <p class="lead">{esc(describe(t))}</p>
           <div class="tpl__tags"><span class="tag tag--sig">Free</span>{tags}<span class="tag">{questions(t)} questions</span>{f'<span class="tag">{pages} pages</span>' if pages > 1 else ""}</div>
         </div>
-        <div class="tpl__ctas"><a class="btn btn--primary btn--lg" href="{use}?theme={t["theme"]}" data-use="{use}">Use template <span class="nudge" aria-hidden="true">&rarr;</span></a><a class="btn btn--ghost btn--lg" href="#try">Explore demo</a></div>
+        <div class="tpl__ctas"><a class="btn btn--primary btn--lg" href="{use}?theme={t["theme"]}" data-use="{use}">Use form template <span class="nudge" aria-hidden="true">&rarr;</span></a><a class="btn btn--ghost btn--lg" href="#try">Explore demo</a></div>
       </div>
     </div>
   </section>
@@ -848,7 +849,7 @@ def template_page(t):
         <div class="tbox">
           <h2 class="tbox__h">What happens to answers</h2>
           <ul class="checks tchecks">
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Each answer becomes a contact, with the company found from the email.</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Each answer is saved with the person who sent it.</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>The page, the campaign and the consent the visitor gave are saved with it.</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>It can sync to HubSpot, Salesforce or Omniscient.</li>
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>The thank-you screen opens your booking link, with the name and email filled in.</li>' if s["end"].get("booking") else ""}
@@ -856,7 +857,7 @@ def template_page(t):
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>It comes with a follow-up email, ready for you to read and turn on.</li>' if "follow-up" in t["does"] else ""}
           </ul>
         </div>
-        <a class="btn btn--primary tbox__cta" href="{use}?theme={t["theme"]}" data-use="{use}">Use template <span class="nudge" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn--primary tbox__cta" href="{use}?theme={t["theme"]}" data-use="{use}">Use form template <span class="nudge" aria-hidden="true">&rarr;</span></a>
       </aside>
     </div>
   </section>
@@ -883,23 +884,23 @@ def template_page(t):
   {faq_block(qa, "Frequently asked questions")}
   <section class="section section--tint">
     <div class="wrap">
-      <div class="trel__head"><h2 class="h2">Related templates</h2><span class="trel__more">{"".join(f'<a class="more" href="{path_of(k, v)}">{esc(label_of(k, v))} <span class="nudge" aria-hidden="true">&rarr;</span></a>' for k, v in [("category", c) for c in t["categories"] if c in PAGED["category"]][:2] + ([("industry", t["industry"])] if t["industry"] in PAGED["industry"] else []))}</span></div>
+      <div class="trel__head"><h2 class="h2">Related form templates</h2><span class="trel__more">{"".join(f'<a class="more" href="{path_of(k, v)}">{esc(label_of(k, v))} <span class="nudge" aria-hidden="true">&rarr;</span></a>' for k, v in [("category", c) for c in t["categories"] if c in PAGED["category"]][:2] + ([("industry", t["industry"])] if t["industry"] in PAGED["industry"] else []))}</span></div>
       <div class="tgrid tgrid--3">{"".join(card(x) for x in related)}</div>
     </div>
   </section>
-  {CLOSE("Make your first form in minutes.", "Start with this template.", f"{use}?theme={t['theme']}", "Use template")}"""
+  {CLOSE("Make your first form in minutes.", "Start with this form template.", f"{use}?theme={t['theme']}", "Use form template")}"""
     ld = [
-        crumbs([("Templates", "/templates"), (t["industryLabel"], ind_path), (t["name"], path)]),
+        crumbs([("Form templates", "/templates"), (t["industryLabel"], ind_path), (t["name"], path)]),
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]},
     ]
     page(path, f"{title_h} (free) | Claritia", f"{t['blurb']} A free {t['name'].lower()} form with {questions(t)} questions and {len(THEMES)} styles. Try it, then use it in a click.", body, ld)
 
 
 INDEX_QA = [
-    ("Are the templates free?", "Yes. Every template is free on every plan, including the free one."),
-    ("Can I change a template?", "Yes. Change any question, its wording and options, the order, the style and the thank-you screen. Tailor can rewrite the wording for your business from one sentence."),
+    ("Are the form templates free?", "Yes. Every form template is free on every plan, including the free one."),
+    ("Can I change a form template?", "Yes. Change any question, its wording and options, the order, the style and the thank-you screen. Tailor can rewrite the wording for your business from one sentence."),
     ("Can I match my brand?", f"Pick one of {len(THEMES)} styles, then set your own button color. Every style works on phones and with a keyboard."),
-    ("Where do the answers go?", "Each answer becomes a contact in Claritia, with the company found from the work email. It can sync to HubSpot, Salesforce or Omniscient."),
+    ("Where do the answers go?", "Each answer is saved in Claritia. It can sync to HubSpot, Salesforce or Omniscient."),
     ("How do I add a form to my website?", "Share the link, or paste one line of code where the form should show. It fits Webflow, WordPress, Framer and plain HTML."),
     ("Do the forms ask for consent?", "Yes. An opt-in box in the EU, the UK and other strict regions, and a short notice elsewhere. The exact words each person saw are saved."),
 ]
@@ -908,7 +909,7 @@ INDEX_QA = [
 def styles_strip() -> str:
     sample = next(x for x in T if x["id"] == "general.book-a-call")
     return '<div class="tlooks tlooks--all">' + "".join(
-        f'<button type="button" class="tlook" data-global="{x["id"]}" aria-label="Show every template in {esc(x["name"])}">{thumb(sample, x["id"]).replace(" data-own=", " data-fixed data-own=")}<span class="tlook__n">{swatch(x["id"])}<b>{esc(x["name"])}</b><small>{esc(x["mood"])}</small></span></button>'
+        f'<button type="button" class="tlook" data-global="{x["id"]}" aria-label="Show every form template in {esc(x["name"])}">{thumb(sample, x["id"]).replace(" data-own=", " data-fixed data-own=")}<span class="tlook__n">{swatch(x["id"])}<b>{esc(x["name"])}</b><small>{esc(x["mood"])}</small></span></button>'
         for x in THEMES
     ) + "</div>"
 
@@ -931,7 +932,7 @@ def index_page():
       <p class="eyebrow reveal">Form templates</p>
       <h1 class="display reveal" data-delay="1">Form templates<br><span class="two">for every industry.</span></h1>
       <p class="lead reveal" data-delay="2">{len(T)} ready forms for {len(HAS_PAGE["industry"])} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try any of them here. Use one and it goes live on your site in a click, with every answer saved as a contact.</p>
-      <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="#all">Browse templates</a><a class="btn btn--ghost btn--lg" href="{APP}">Start free</a></div>
+      <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="#all">Browse form templates</a><a class="btn btn--ghost btn--lg" href="{APP}">Start free</a></div>
     </div></div>
   </section>
   <div id="all"></div>
@@ -956,7 +957,7 @@ def index_page():
   </section>
   <section class="section">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">Built in</p><h2 class="h2">Everything a form needs.<br><span class="two">On every template.</span></h2></div>
+      <div class="sec-head reveal"><p class="eyebrow">Built in</p><h2 class="h2">Everything a form needs.<br><span class="two">On every form template.</span></h2></div>
       {feat_grid()}
     </div>
   </section>
@@ -974,7 +975,7 @@ def index_page():
         "Free form templates for every industry | Claritia",
         f"{len(T)} free form templates for {len(HAS_PAGE['industry'])} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try each one, then use it in a click.",
         body,
-        [crumbs([("Templates", "/templates")]), {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in INDEX_QA]}],
+        [crumbs([("Form templates", "/templates")]), {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in INDEX_QA]}],
     )
 
 
