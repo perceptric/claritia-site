@@ -404,3 +404,102 @@
 
   document.querySelectorAll("form[data-cf]").forEach(setup);
 })();
+
+// Styles: the style menu, Shuffle and the style tiles ------------------------------------------------------------
+(function () {
+  var bars = Array.prototype.slice.call(document.querySelectorAll("[data-styles]"));
+  if (!bars.length) return;
+  var meta = JSON.parse(bars[0].querySelector(".tsty__data").textContent);
+  var ids = Object.keys(meta);
+
+  function paint(el, id) {
+    var m = meta[id];
+    if (!m) return;
+    el.className = el.className.replace(/\bth-[a-z]+\b/, "th-" + id);
+    el.setAttribute("data-layout", m.layout);
+    el.setAttribute("data-input", m.input);
+    el.setAttribute("data-shadow", m.shadow);
+    el.setAttribute("data-pattern", m.pattern);
+    if (m.dark) el.setAttribute("data-dark", ""); else el.removeAttribute("data-dark");
+  }
+
+  function setup(bar) {
+    var own = bar.hasAttribute("data-own");
+    var btn = bar.querySelector(".tsty__btn");
+    var list = bar.querySelector(".tsty__list");
+    var items = Array.prototype.slice.call(list.querySelectorAll("li"));
+    var active = 0;
+    var current = (items.filter(function (li) { return li.getAttribute("aria-selected") === "true"; })[0] || items[0]).getAttribute("data-theme");
+
+    function apply(id, quiet) {
+      current = id;
+      items.forEach(function (li) { li.setAttribute("aria-selected", li.getAttribute("data-theme") === id ? "true" : "false"); });
+      var li = items.filter(function (x) { return x.getAttribute("data-theme") === id; })[0];
+      if (li) {
+        var sw = li.querySelector(".sw").cloneNode(true);
+        btn.innerHTML = "";
+        btn.appendChild(sw);
+        var b = document.createElement("b");
+        b.textContent = li.querySelector("b").textContent;
+        btn.appendChild(b);
+        btn.insertAdjacentHTML("beforeend", '<svg class="tsty__chev" aria-hidden="true"><use href="#i-chev"/></svg>');
+      }
+      if (own) {
+        document.querySelectorAll(".tcard .tp").forEach(function (tp) { paint(tp, id || tp.getAttribute("data-own")); });
+      } else {
+        var stage = document.querySelector("[data-stage]");
+        if (stage) paint(stage, id);
+        document.querySelectorAll("[data-use]").forEach(function (a) { a.href = a.getAttribute("data-use") + "?theme=" + id; });
+        document.querySelectorAll(".tlook[data-pick]").forEach(function (x) { x.classList.toggle("is-on", x.getAttribute("data-pick") === id); });
+      }
+      document.querySelectorAll(".tlook[data-global]").forEach(function (x) { x.classList.toggle("is-on", own && x.getAttribute("data-global") === id); });
+      if (!quiet) {
+        var u = new URL(location.href);
+        if (id && !(own && !id)) u.searchParams.set("style", id); else u.searchParams.delete("style");
+        history.replaceState(null, "", u.pathname + u.search + u.hash);
+      }
+    }
+    function open(on) {
+      bar.classList.toggle("is-open", on);
+      btn.setAttribute("aria-expanded", on ? "true" : "false");
+      if (on) { active = Math.max(0, items.findIndex(function (li) { return li.getAttribute("data-theme") === current; })); mark(); }
+    }
+    function mark() {
+      items.forEach(function (li, i) { li.classList.toggle("is-active", i === active); });
+      if (items[active]) items[active].scrollIntoView({ block: "nearest" });
+    }
+    btn.addEventListener("click", function () { open(!bar.classList.contains("is-open")); });
+    items.forEach(function (li, i) {
+      li.addEventListener("mousedown", function (e) { e.preventDefault(); });
+      li.addEventListener("click", function () { apply(li.getAttribute("data-theme")); open(false); btn.focus(); });
+      li.addEventListener("mouseenter", function () { active = i; mark(); });
+    });
+    btn.addEventListener("keydown", function (e) {
+      var isOpen = bar.classList.contains("is-open");
+      if (!isOpen && ["ArrowDown", "ArrowUp", "Enter", " "].indexOf(e.key) > -1) { e.preventDefault(); open(true); return; }
+      if (!isOpen) return;
+      if (e.key === "Escape" || e.key === "Tab") open(false);
+      else if (e.key === "ArrowDown") { e.preventDefault(); active = Math.min(items.length - 1, active + 1); mark(); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); active = Math.max(0, active - 1); mark(); }
+      else if (e.key === "Enter" || e.key === " ") { e.preventDefault(); apply(items[active].getAttribute("data-theme")); open(false); }
+    });
+    document.addEventListener("mousedown", function (e) { if (!bar.contains(e.target)) open(false); });
+    bar.querySelector("[data-shuffle]").addEventListener("click", function () {
+      var pool = ids.filter(function (x) { return x !== current; });
+      apply(pool[Math.floor(Math.random() * pool.length)]);
+    });
+
+    // Style tiles below: one switches the form above, or the whole gallery.
+    document.querySelectorAll(own ? ".tlook[data-global]" : ".tlook[data-pick]").forEach(function (x) {
+      x.addEventListener("click", function () {
+        apply(x.getAttribute(own ? "data-global" : "data-pick"));
+        var to = document.getElementById(own ? "all" : "try");
+        if (to) to.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      });
+    });
+
+    var want = new URLSearchParams(location.search).get("style");
+    if (want && meta[want]) apply(want, true);
+  }
+  bars.forEach(setup);
+})();

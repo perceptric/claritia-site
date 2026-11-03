@@ -167,6 +167,729 @@
   "statement": "Statement",
   "hidden": "Hidden"
  },
+ "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Bricolage+Grotesque:wght@400;600;800&family=Fraunces:wght@400;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&family=Nunito:wght@400;600;800&family=Outfit:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Playfair+Display:wght@400;600&family=Lora:wght@400;600&display=swap",
+ "themes": [
+  {
+   "id": "paper",
+   "name": "Paper",
+   "mood": "Clean and quiet",
+   "layout": "card",
+   "dark": false,
+   "pattern": "dots",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#f4f4f2",
+    "#ffffff",
+    "#0a0a0a"
+   ],
+   "vars": {
+    "--f-bg": "#f4f4f2",
+    "--f-pattern": "#d9d9d4",
+    "--f-card": "#ffffff",
+    "--f-text": "#0a0a0a",
+    "--f-muted": "#5f5f5b",
+    "--f-faint": "#a3a3a0",
+    "--f-border": "#d4d4d0",
+    "--f-hover": "#a8a8a4",
+    "--f-field": "#ffffff",
+    "--f-soft": "#f2f2f0",
+    "--f-accent": "#0a0a0a",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "6px",
+    "--f-btn-radius": "6px",
+    "--f-card-radius": "6px",
+    "--f-bw": "1px",
+    "--f-font": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "600",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#0a0a0a"
+   },
+   "art": ""
+  },
+  {
+   "id": "midnight",
+   "name": "Midnight",
+   "mood": "Dark and calm",
+   "layout": "card",
+   "dark": true,
+   "pattern": "grid",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#070b1a",
+    "#0f1630",
+    "#5b8cff"
+   ],
+   "vars": {
+    "--f-bg": "#070b1a",
+    "--f-pattern": "#141c3a",
+    "--f-card": "#0f1630",
+    "--f-text": "#f2f4ff",
+    "--f-muted": "#a3acd0",
+    "--f-faint": "#6a7399",
+    "--f-border": "#283259",
+    "--f-hover": "#4a5694",
+    "--f-field": "#0b1126",
+    "--f-soft": "#18224a",
+    "--f-accent": "#5b8cff",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "10px",
+    "--f-btn-radius": "10px",
+    "--f-card-radius": "18px",
+    "--f-bw": "1px",
+    "--f-font": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "700",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#5b8cff"
+   },
+   "art": ""
+  },
+  {
+   "id": "coral",
+   "name": "Coral",
+   "mood": "Warm and bold",
+   "layout": "cover",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#ffe5da",
+    "#ffffff",
+    "#ff5a36"
+   ],
+   "vars": {
+    "--f-bg": "#ffe5da",
+    "--f-pattern": "#ffd3c2",
+    "--f-card": "#ffffff",
+    "--f-text": "#2b1610",
+    "--f-muted": "#7a5a4f",
+    "--f-faint": "#b8998e",
+    "--f-border": "#f0cfc3",
+    "--f-hover": "#e2a693",
+    "--f-field": "#fff8f5",
+    "--f-soft": "#ffefe8",
+    "--f-accent": "#ff5a36",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "12px",
+    "--f-btn-radius": "999px",
+    "--f-card-radius": "22px",
+    "--f-bw": "1px",
+    "--f-font": "\"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "800",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#ffb199"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#ffb199\"/><circle cx=\"330\" cy=\"40\" r=\"120\" fill=\"#ff7a59\"/><circle cx=\"60\" cy=\"260\" r=\"130\" fill=\"#ffd166\"/><circle cx=\"220\" cy=\"190\" r=\"56\" fill=\"#ff5a36\"/><circle cx=\"130\" cy=\"70\" r=\"22\" fill=\"#ffd166\"/><circle cx=\"360\" cy=\"250\" r=\"14\" fill=\"#ff5a36\"/></svg>"
+  },
+  {
+   "id": "grove",
+   "name": "Grove",
+   "mood": "Natural and calm",
+   "layout": "split",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#1f3a2e",
+    "#f7f2e7",
+    "#2f6b4f"
+   ],
+   "vars": {
+    "--f-bg": "#1f3a2e",
+    "--f-pattern": "#264a3a",
+    "--f-card": "#f7f2e7",
+    "--f-text": "#1c2a21",
+    "--f-muted": "#5d6b60",
+    "--f-faint": "#9aa69c",
+    "--f-border": "#d9d2bf",
+    "--f-hover": "#a8a08a",
+    "--f-field": "#fffdf7",
+    "--f-soft": "#ece6d4",
+    "--f-accent": "#2f6b4f",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "8px",
+    "--f-btn-radius": "8px",
+    "--f-card-radius": "14px",
+    "--f-bw": "1px",
+    "--f-font": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Fraunces\", ui-serif, Georgia, serif",
+    "--f-head-weight": "600",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#c9dfb0"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#c9dfb0\"/><g transform=\"translate(-20 80) rotate(20) scale(1.3)\"><path d=\"M0 0 C40 -60 120 -60 160 0 C120 60 40 60 0 0Z\" fill=\"#2f6b4f\"/><path d=\"M8 0H150\" stroke=\"#1f3a2e\" stroke-width=\"2\" opacity=\".35\"/></g><g transform=\"translate(150 210) rotate(-30) scale(1.1)\"><path d=\"M0 0 C40 -60 120 -60 160 0 C120 60 40 60 0 0Z\" fill=\"#7fb38e\"/><path d=\"M8 0H150\" stroke=\"#1f3a2e\" stroke-width=\"2\" opacity=\".35\"/></g><g transform=\"translate(210 40) rotate(35) scale(0.9)\"><path d=\"M0 0 C40 -60 120 -60 160 0 C120 60 40 60 0 0Z\" fill=\"#2f6b4f\"/><path d=\"M8 0H150\" stroke=\"#1f3a2e\" stroke-width=\"2\" opacity=\".35\"/></g><g transform=\"translate(40 250) rotate(-10) scale(0.8)\"><path d=\"M0 0 C40 -60 120 -60 160 0 C120 60 40 60 0 0Z\" fill=\"#7fb38e\"/><path d=\"M8 0H150\" stroke=\"#1f3a2e\" stroke-width=\"2\" opacity=\".35\"/></g><g transform=\"translate(280 160) rotate(70) scale(0.7)\"><path d=\"M0 0 C40 -60 120 -60 160 0 C120 60 40 60 0 0Z\" fill=\"#1f3a2e\"/><path d=\"M8 0H150\" stroke=\"#1f3a2e\" stroke-width=\"2\" opacity=\".35\"/></g></svg>"
+  },
+  {
+   "id": "editorial",
+   "name": "Editorial",
+   "mood": "Big type, few lines",
+   "layout": "plain",
+   "dark": false,
+   "pattern": "none",
+   "input": "line",
+   "shadow": "none",
+   "swatch": [
+    "#f3eee4",
+    "#f3eee4",
+    "#141210"
+   ],
+   "vars": {
+    "--f-bg": "#f3eee4",
+    "--f-pattern": "#e6dfd1",
+    "--f-card": "#f3eee4",
+    "--f-text": "#141210",
+    "--f-muted": "#6b655c",
+    "--f-faint": "#a39c90",
+    "--f-border": "#bdb4a5",
+    "--f-hover": "#141210",
+    "--f-field": "transparent",
+    "--f-soft": "#e8e1d3",
+    "--f-accent": "#141210",
+    "--f-accent-ink": "#f3eee4",
+    "--f-radius": "0px",
+    "--f-btn-radius": "0px",
+    "--f-card-radius": "0px",
+    "--f-bw": "1px",
+    "--f-font": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Instrument Serif\", ui-serif, Georgia, serif",
+    "--f-head-weight": "400",
+    "--f-head-style": "italic",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#141210"
+   },
+   "art": ""
+  },
+  {
+   "id": "terminal",
+   "name": "Terminal",
+   "mood": "Code on black",
+   "layout": "card",
+   "dark": true,
+   "pattern": "grid",
+   "input": "box",
+   "shadow": "none",
+   "swatch": [
+    "#030504",
+    "#07100a",
+    "#3dff7a"
+   ],
+   "vars": {
+    "--f-bg": "#030504",
+    "--f-pattern": "#0d1f12",
+    "--f-card": "#07100a",
+    "--f-text": "#d7ffe0",
+    "--f-muted": "#7fbf8f",
+    "--f-faint": "#4f7a5a",
+    "--f-border": "#1c3a25",
+    "--f-hover": "#3dff7a",
+    "--f-field": "#040a06",
+    "--f-soft": "#0c2414",
+    "--f-accent": "#3dff7a",
+    "--f-accent-ink": "#03140a",
+    "--f-radius": "0px",
+    "--f-btn-radius": "0px",
+    "--f-card-radius": "0px",
+    "--f-bw": "1px",
+    "--f-font": "\"JetBrains Mono\", ui-monospace, Menlo, monospace",
+    "--f-head": "\"JetBrains Mono\", ui-monospace, Menlo, monospace",
+    "--f-head-weight": "600",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#3dff7a"
+   },
+   "art": ""
+  },
+  {
+   "id": "bubblegum",
+   "name": "Bubblegum",
+   "mood": "Playful and round",
+   "layout": "cover",
+   "dark": false,
+   "pattern": "dots",
+   "input": "fill",
+   "shadow": "soft",
+   "swatch": [
+    "#ffd7ee",
+    "#ffffff",
+    "#8b3dff"
+   ],
+   "vars": {
+    "--f-bg": "#ffd7ee",
+    "--f-pattern": "#ffc0e2",
+    "--f-card": "#ffffff",
+    "--f-text": "#3a0b45",
+    "--f-muted": "#7d5288",
+    "--f-faint": "#b897c0",
+    "--f-border": "#ecd0f2",
+    "--f-hover": "#c58ed4",
+    "--f-field": "#fdf6ff",
+    "--f-soft": "#f6e8ff",
+    "--f-accent": "#8b3dff",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "16px",
+    "--f-btn-radius": "999px",
+    "--f-card-radius": "28px",
+    "--f-bw": "1px",
+    "--f-font": "\"Nunito\", ui-rounded, system-ui, sans-serif",
+    "--f-head": "\"Nunito\", ui-rounded, system-ui, sans-serif",
+    "--f-head-weight": "800",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#ffe8f6"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#ffe8f6\"/><circle cx=\"239\" cy=\"90\" r=\"8\" fill=\"#ff8fd0\"/><rect x=\"395\" y=\"202\" width=\"13\" height=\"9\" rx=\"2\" fill=\"#8b3dff\" transform=\"rotate(82 395 202)\"/><path d=\"M30 299 l9 16 h-18z\" fill=\"#ffd166\" transform=\"rotate(25 30 299)\"/><circle cx=\"77\" cy=\"298\" r=\"4\" fill=\"#3ddcff\"/><rect x=\"154\" y=\"9\" width=\"9\" height=\"8\" rx=\"2\" fill=\"#ff8fd0\" transform=\"rotate(83 154 9)\"/><path d=\"M324 222 l9 16 h-18z\" fill=\"#8b3dff\" transform=\"rotate(8 324 222)\"/><circle cx=\"247\" cy=\"149\" r=\"5\" fill=\"#ffd166\"/><rect x=\"357\" y=\"21\" width=\"16\" height=\"6\" rx=\"2\" fill=\"#3ddcff\" transform=\"rotate(2 357 21)\"/><path d=\"M287 222 l9 16 h-18z\" fill=\"#ff8fd0\" transform=\"rotate(104 287 222)\"/><circle cx=\"327\" cy=\"251\" r=\"9\" fill=\"#8b3dff\"/><rect x=\"14\" y=\"102\" width=\"10\" height=\"8\" rx=\"2\" fill=\"#ffd166\" transform=\"rotate(34 14 102)\"/><path d=\"M120 237 l9 16 h-18z\" fill=\"#3ddcff\" transform=\"rotate(38 120 237)\"/><circle cx=\"350\" cy=\"167\" r=\"5\" fill=\"#ff8fd0\"/><rect x=\"185\" y=\"172\" width=\"12\" height=\"6\" rx=\"2\" fill=\"#8b3dff\" transform=\"rotate(76 185 172)\"/><path d=\"M240 106 l9 16 h-18z\" fill=\"#ffd166\" transform=\"rotate(86 240 106)\"/><circle cx=\"235\" cy=\"120\" r=\"8\" fill=\"#3ddcff\"/><rect x=\"95\" y=\"26\" width=\"14\" height=\"8\" rx=\"2\" fill=\"#ff8fd0\" transform=\"rotate(41 95 26)\"/><path d=\"M118 136 l9 16 h-18z\" fill=\"#8b3dff\" transform=\"rotate(10 118 136)\"/><circle cx=\"308\" cy=\"61\" r=\"5\" fill=\"#ffd166\"/><rect x=\"340\" y=\"181\" width=\"14\" height=\"10\" rx=\"2\" fill=\"#3ddcff\" transform=\"rotate(22 340 181)\"/><path d=\"M192 118 l9 16 h-18z\" fill=\"#ff8fd0\" transform=\"rotate(76 192 118)\"/><circle cx=\"272\" cy=\"69\" r=\"5\" fill=\"#8b3dff\"/><rect x=\"247\" y=\"0\" width=\"11\" height=\"9\" rx=\"2\" fill=\"#ffd166\" transform=\"rotate(69 247 0)\"/><path d=\"M173 110 l9 16 h-18z\" fill=\"#3ddcff\" transform=\"rotate(61 173 110)\"/><circle cx=\"102\" cy=\"88\" r=\"10\" fill=\"#ff8fd0\"/><rect x=\"113\" y=\"178\" width=\"9\" height=\"9\" rx=\"2\" fill=\"#8b3dff\" transform=\"rotate(62 113 178)\"/><path d=\"M179 52 l9 16 h-18z\" fill=\"#ffd166\" transform=\"rotate(99 179 52)\"/><circle cx=\"115\" cy=\"66\" r=\"7\" fill=\"#3ddcff\"/><rect x=\"310\" y=\"109\" width=\"8\" height=\"7\" rx=\"2\" fill=\"#ff8fd0\" transform=\"rotate(10 310 109)\"/><path d=\"M396 83 l9 16 h-18z\" fill=\"#8b3dff\" transform=\"rotate(69 396 83)\"/><circle cx=\"237\" cy=\"270\" r=\"9\" fill=\"#ffd166\"/><rect x=\"390\" y=\"77\" width=\"10\" height=\"7\" rx=\"2\" fill=\"#3ddcff\" transform=\"rotate(35 390 77)\"/><path d=\"M314 152 l9 16 h-18z\" fill=\"#ff8fd0\" transform=\"rotate(113 314 152)\"/><circle cx=\"312\" cy=\"151\" r=\"10\" fill=\"#8b3dff\"/><rect x=\"156\" y=\"175\" width=\"17\" height=\"7\" rx=\"2\" fill=\"#ffd166\" transform=\"rotate(30 156 175)\"/><path d=\"M298 270 l9 16 h-18z\" fill=\"#3ddcff\" transform=\"rotate(105 298 270)\"/><circle cx=\"72\" cy=\"74\" r=\"6\" fill=\"#ff8fd0\"/><rect x=\"20\" y=\"41\" width=\"15\" height=\"9\" rx=\"2\" fill=\"#8b3dff\" transform=\"rotate(21 20 41)\"/><path d=\"M221 86 l9 16 h-18z\" fill=\"#ffd166\" transform=\"rotate(22 221 86)\"/><circle cx=\"240\" cy=\"193\" r=\"10\" fill=\"#3ddcff\"/><rect x=\"365\" y=\"74\" width=\"15\" height=\"6\" rx=\"2\" fill=\"#ff8fd0\" transform=\"rotate(74 365 74)\"/><path d=\"M134 94 l9 16 h-18z\" fill=\"#8b3dff\" transform=\"rotate(83 134 94)\"/><circle cx=\"44\" cy=\"253\" r=\"6\" fill=\"#ffd166\"/><rect x=\"110\" y=\"184\" width=\"13\" height=\"8\" rx=\"2\" fill=\"#3ddcff\" transform=\"rotate(84 110 184)\"/><path d=\"M180 295 l9 16 h-18z\" fill=\"#ff8fd0\" transform=\"rotate(9 180 295)\"/><circle cx=\"234\" cy=\"195\" r=\"5\" fill=\"#8b3dff\"/></svg>"
+  },
+  {
+   "id": "tide",
+   "name": "Tide",
+   "mood": "Fresh and light",
+   "layout": "cover",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#e1f1ff",
+    "#ffffff",
+    "#0a72ef"
+   ],
+   "vars": {
+    "--f-bg": "#e1f1ff",
+    "--f-pattern": "#cfe6fb",
+    "--f-card": "#ffffff",
+    "--f-text": "#0b2540",
+    "--f-muted": "#4e6a86",
+    "--f-faint": "#93a9bf",
+    "--f-border": "#cfdeee",
+    "--f-hover": "#86aedb",
+    "--f-field": "#ffffff",
+    "--f-soft": "#e8f3ff",
+    "--f-accent": "#0a72ef",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "10px",
+    "--f-btn-radius": "10px",
+    "--f-card-radius": "18px",
+    "--f-bw": "1px",
+    "--f-font": "\"Outfit\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Outfit\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "700",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#bfe0ff"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#bfe0ff\"/><path d=\"M0 120 C80 90 160 150 240 120 S360 90 400 110 V300 H0Z\" fill=\"#7fbfff\"/><path d=\"M0 170 C90 140 170 200 260 170 S370 140 400 160 V300 H0Z\" fill=\"#3a95f5\"/><path d=\"M0 225 C100 195 180 255 280 225 S380 200 400 215 V300 H0Z\" fill=\"#0a72ef\"/><circle cx=\"320\" cy=\"60\" r=\"26\" fill=\"#ffffff\" opacity=\".85\"/></svg>"
+  },
+  {
+   "id": "poster",
+   "name": "Poster",
+   "mood": "Loud and graphic",
+   "layout": "card",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "hard",
+   "swatch": [
+    "#ffdf3d",
+    "#ffffff",
+    "#000000"
+   ],
+   "vars": {
+    "--f-bg": "#ffdf3d",
+    "--f-pattern": "#f5d22a",
+    "--f-card": "#ffffff",
+    "--f-text": "#000000",
+    "--f-muted": "#333333",
+    "--f-faint": "#777777",
+    "--f-border": "#000000",
+    "--f-hover": "#000000",
+    "--f-field": "#ffffff",
+    "--f-soft": "#fff3a8",
+    "--f-accent": "#000000",
+    "--f-accent-ink": "#ffdf3d",
+    "--f-radius": "0px",
+    "--f-btn-radius": "0px",
+    "--f-card-radius": "0px",
+    "--f-bw": "2px",
+    "--f-font": "\"Space Grotesk\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Space Grotesk\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "700",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "3px 3px 0 #000000",
+    "--f-art-bg": "#000000"
+   },
+   "art": ""
+  },
+  {
+   "id": "gilded",
+   "name": "Gilded",
+   "mood": "Black and gold",
+   "layout": "split",
+   "dark": true,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "none",
+   "swatch": [
+    "#0c0b09",
+    "#14120e",
+    "#d4af37"
+   ],
+   "vars": {
+    "--f-bg": "#0c0b09",
+    "--f-pattern": "#16140f",
+    "--f-card": "#14120e",
+    "--f-text": "#f6edd8",
+    "--f-muted": "#b9ab88",
+    "--f-faint": "#7c7158",
+    "--f-border": "#3b3326",
+    "--f-hover": "#d4af37",
+    "--f-field": "#0f0e0b",
+    "--f-soft": "#221d13",
+    "--f-accent": "#d4af37",
+    "--f-accent-ink": "#14120e",
+    "--f-radius": "2px",
+    "--f-btn-radius": "2px",
+    "--f-card-radius": "4px",
+    "--f-bw": "1px",
+    "--f-font": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Playfair Display\", ui-serif, Georgia, serif",
+    "--f-head-weight": "600",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#14120e"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#14120e\"/><path d=\"M200 300 L-220 300.00000000000006 L-217.9775852023227 258.8328010615846Z\" fill=\"#f6edd8\" opacity=\".55\"/><path d=\"M200 300 L-188.02940365474046 139.27295840666233 L-170.4069310263091 102.013370533081Z\" fill=\"#f6edd8\" opacity=\".55\"/><path d=\"M200 300 L-96.98484809835003 3.0151519016500856 L-66.4451793487313 -24.664390412349405Z\" fill=\"#f6edd8\" opacity=\".55\"/><path d=\"M200 300 L39.27295840666207 -88.02940365474035 L78.08043555312578 -101.91494100752772Z\" fill=\"#f6edd8\" opacity=\".55\"/><path d=\"M200 300 L199.99999999999991 -120 L241.16719893841525 -117.9775852023227Z\" fill=\"#f6edd8\" opacity=\".55\"/><path d=\"M200 300 L360.7270415933378 -88.0294036547404 L397.986629466919 -70.40693102630911Z\" fill=\"#f6edd8\" opacity=\".55\"/><path d=\"M200 300 L496.9848480983499 3.015151901649972 L524.6643904123496 33.55482065126898Z\" fill=\"#f6edd8\" opacity=\".55\"/><path d=\"M200 300 L588.0294036547403 139.27295840666204 L601.9149410075277 178.08043555312577Z\" fill=\"#f6edd8\" opacity=\".55\"/><circle cx=\"200\" cy=\"300\" r=\"120\" fill=\"#d4af37\"/><circle cx=\"200\" cy=\"300\" r=\"80\" fill=\"#8a6f22\"/></svg>"
+  },
+  {
+   "id": "lilac",
+   "name": "Lilac",
+   "mood": "Soft and friendly",
+   "layout": "card",
+   "dark": false,
+   "pattern": "dots",
+   "input": "fill",
+   "shadow": "soft",
+   "swatch": [
+    "#efeaff",
+    "#ffffff",
+    "#7c5cff"
+   ],
+   "vars": {
+    "--f-bg": "#efeaff",
+    "--f-pattern": "#ddd3ff",
+    "--f-card": "#ffffff",
+    "--f-text": "#251c3d",
+    "--f-muted": "#6b6188",
+    "--f-faint": "#a59cc0",
+    "--f-border": "#e2dbf5",
+    "--f-hover": "#b9a8f0",
+    "--f-field": "#f5f2ff",
+    "--f-soft": "#efe9ff",
+    "--f-accent": "#7c5cff",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "12px",
+    "--f-btn-radius": "12px",
+    "--f-card-radius": "22px",
+    "--f-bw": "1px",
+    "--f-font": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "700",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#7c5cff"
+   },
+   "art": ""
+  },
+  {
+   "id": "clay",
+   "name": "Clay",
+   "mood": "Earthy and warm",
+   "layout": "split",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#e7d4bd",
+    "#fbf6ee",
+    "#c0582f"
+   ],
+   "vars": {
+    "--f-bg": "#e7d4bd",
+    "--f-pattern": "#dcc6ab",
+    "--f-card": "#fbf6ee",
+    "--f-text": "#3b2719",
+    "--f-muted": "#7a6352",
+    "--f-faint": "#b39f8e",
+    "--f-border": "#e2d3c1",
+    "--f-hover": "#c79f80",
+    "--f-field": "#fffdf9",
+    "--f-soft": "#f3e8da",
+    "--f-accent": "#c0582f",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "6px",
+    "--f-btn-radius": "6px",
+    "--f-card-radius": "10px",
+    "--f-bw": "1px",
+    "--f-font": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Lora\", ui-serif, Georgia, serif",
+    "--f-head-weight": "600",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#e7d4bd"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#e7d4bd\"/><path d=\"M60 300 V180 A90 90 0 0 1 240 180 V300Z\" fill=\"#c0582f\"/><path d=\"M95 300 V185 A55 55 0 0 1 205 185 V300Z\" fill=\"#e39b6b\"/><path d=\"M250 300 V120 A70 70 0 0 1 390 120 V300Z\" fill=\"#7d4a2d\"/><path d=\"M280 300 V125 A40 40 0 0 1 360 125 V300Z\" fill=\"#e7d4bd\"/><circle cx=\"330\" cy=\"50\" r=\"22\" fill=\"#c0582f\"/></svg>"
+  },
+  {
+   "id": "studio",
+   "name": "Studio",
+   "mood": "Shapes and primary colors",
+   "layout": "split",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "none",
+   "swatch": [
+    "#ffffff",
+    "#ffffff",
+    "#ff4d00"
+   ],
+   "vars": {
+    "--f-bg": "#ffffff",
+    "--f-pattern": "#eeeeee",
+    "--f-card": "#ffffff",
+    "--f-text": "#111111",
+    "--f-muted": "#555555",
+    "--f-faint": "#999999",
+    "--f-border": "#d6d6d6",
+    "--f-hover": "#111111",
+    "--f-field": "#ffffff",
+    "--f-soft": "#fff0e8",
+    "--f-accent": "#ff4d00",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "4px",
+    "--f-btn-radius": "4px",
+    "--f-card-radius": "0px",
+    "--f-bw": "1px",
+    "--f-font": "\"Space Grotesk\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Space Grotesk\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "700",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#f2ede4"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#f2ede4\"/><circle cx=\"110\" cy=\"105\" r=\"70\" fill=\"#ff4d00\"/><rect x=\"200\" y=\"40\" width=\"130\" height=\"130\" fill=\"#1d4ed8\"/><path d=\"M40 300 A110 110 0 0 1 260 300Z\" fill=\"#ffc400\"/><path d=\"M290 300 L360 180 L400 260 V300Z\" fill=\"#111111\"/><rect x=\"250\" y=\"200\" width=\"36\" height=\"36\" fill=\"#111111\"/></svg>"
+  },
+  {
+   "id": "harbor",
+   "name": "Harbor",
+   "mood": "Trusted and clear",
+   "layout": "cover",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#eef3fb",
+    "#ffffff",
+    "#1e4fd8"
+   ],
+   "vars": {
+    "--f-bg": "#eef3fb",
+    "--f-pattern": "#dfe8f6",
+    "--f-card": "#ffffff",
+    "--f-text": "#0f1f3d",
+    "--f-muted": "#4f5f7c",
+    "--f-faint": "#94a1b8",
+    "--f-border": "#d3dceb",
+    "--f-hover": "#8ea6cf",
+    "--f-field": "#ffffff",
+    "--f-soft": "#e9f0fd",
+    "--f-accent": "#1e4fd8",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "6px",
+    "--f-btn-radius": "6px",
+    "--f-card-radius": "10px",
+    "--f-bw": "1px",
+    "--f-font": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "700",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#1e4fd8"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#1e4fd8\"/><path d=\"M0 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M40 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M80 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M120 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M160 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M200 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M240 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M280 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M320 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M360 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M400 0V300\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M0 0H400\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M0 40H400\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M0 80H400\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M0 120H400\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M0 160H400\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M0 200H400\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M0 240H400\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><path d=\"M0 280H400\" stroke=\"#3f6fe8\" stroke-width=\"1\"/><rect x=\"240\" y=\"40\" width=\"80\" height=\"80\" fill=\"#8fb0ff\"/><rect x=\"80\" y=\"160\" width=\"40\" height=\"40\" fill=\"#ffffff\"/><rect x=\"320\" y=\"200\" width=\"40\" height=\"40\" fill=\"#ffffff\" opacity=\".5\"/><circle cx=\"160\" cy=\"80\" r=\"40\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2\"/></svg>"
+  },
+  {
+   "id": "mint",
+   "name": "Mint",
+   "mood": "Bright and easy",
+   "layout": "card",
+   "dark": false,
+   "pattern": "dots",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#d9f6ea",
+    "#ffffff",
+    "#0c8c5e"
+   ],
+   "vars": {
+    "--f-bg": "#d9f6ea",
+    "--f-pattern": "#bfeeda",
+    "--f-card": "#ffffff",
+    "--f-text": "#0b3326",
+    "--f-muted": "#4b6d61",
+    "--f-faint": "#94b3a8",
+    "--f-border": "#cfe9de",
+    "--f-hover": "#7cc9a8",
+    "--f-field": "#f6fffb",
+    "--f-soft": "#e4f8ef",
+    "--f-accent": "#0c8c5e",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "999px",
+    "--f-btn-radius": "999px",
+    "--f-card-radius": "26px",
+    "--f-bw": "1px",
+    "--f-font": "\"Outfit\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Outfit\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "700",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#0c8c5e"
+   },
+   "art": ""
+  },
+  {
+   "id": "retro",
+   "name": "Retro",
+   "mood": "Chunky and sunny",
+   "layout": "cover",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "hard",
+   "swatch": [
+    "#f6ead3",
+    "#fffaf0",
+    "#e4572e"
+   ],
+   "vars": {
+    "--f-bg": "#f6ead3",
+    "--f-pattern": "#eddcbd",
+    "--f-card": "#fffaf0",
+    "--f-text": "#2d1b0e",
+    "--f-muted": "#6d5442",
+    "--f-faint": "#a99280",
+    "--f-border": "#2d1b0e",
+    "--f-hover": "#2d1b0e",
+    "--f-field": "#ffffff",
+    "--f-soft": "#fde3cf",
+    "--f-accent": "#e4572e",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "10px",
+    "--f-btn-radius": "10px",
+    "--f-card-radius": "16px",
+    "--f-bw": "2px",
+    "--f-font": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head-weight": "800",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "3px 3px 0 #2d1b0e",
+    "--f-art-bg": "#f6ead3"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#f6ead3\"/><g transform=\"rotate(-18 200 150)\"><rect x=\"-100\" y=\"170\" width=\"600\" height=\"34\" fill=\"#e4572e\"/><rect x=\"-100\" y=\"214\" width=\"600\" height=\"34\" fill=\"#f3a712\"/><rect x=\"-100\" y=\"258\" width=\"600\" height=\"34\" fill=\"#2a9d8f\"/></g><circle cx=\"300\" cy=\"90\" r=\"52\" fill=\"#f3a712\"/><circle cx=\"300\" cy=\"90\" r=\"52\" fill=\"none\" stroke=\"#2d1b0e\" stroke-width=\"3\"/></svg>"
+  },
+  {
+   "id": "noir",
+   "name": "Noir",
+   "mood": "Dark and elegant",
+   "layout": "plain",
+   "dark": true,
+   "pattern": "none",
+   "input": "line",
+   "shadow": "none",
+   "swatch": [
+    "#0e0e0e",
+    "#0e0e0e",
+    "#f4f4f4"
+   ],
+   "vars": {
+    "--f-bg": "#0e0e0e",
+    "--f-pattern": "#151515",
+    "--f-card": "#0e0e0e",
+    "--f-text": "#f4f4f4",
+    "--f-muted": "#a0a0a0",
+    "--f-faint": "#6a6a6a",
+    "--f-border": "#3a3a3a",
+    "--f-hover": "#f4f4f4",
+    "--f-field": "transparent",
+    "--f-soft": "#1b1b1b",
+    "--f-accent": "#f4f4f4",
+    "--f-accent-ink": "#0e0e0e",
+    "--f-radius": "0px",
+    "--f-btn-radius": "999px",
+    "--f-card-radius": "0px",
+    "--f-bw": "1px",
+    "--f-font": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--f-head": "\"Instrument Serif\", ui-serif, Georgia, serif",
+    "--f-head-weight": "400",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#f4f4f4"
+   },
+   "art": ""
+  },
+  {
+   "id": "sunrise",
+   "name": "Sunrise",
+   "mood": "Golden and upbeat",
+   "layout": "cover",
+   "dark": false,
+   "pattern": "none",
+   "input": "box",
+   "shadow": "soft",
+   "swatch": [
+    "#fff3d1",
+    "#ffffff",
+    "#e88a00"
+   ],
+   "vars": {
+    "--f-bg": "#fff3d1",
+    "--f-pattern": "#ffe9ad",
+    "--f-card": "#ffffff",
+    "--f-text": "#3a2700",
+    "--f-muted": "#7b6431",
+    "--f-faint": "#b8a477",
+    "--f-border": "#f1e2bb",
+    "--f-hover": "#e2b85a",
+    "--f-field": "#fffcf2",
+    "--f-soft": "#fff3cc",
+    "--f-accent": "#e88a00",
+    "--f-accent-ink": "#ffffff",
+    "--f-radius": "12px",
+    "--f-btn-radius": "12px",
+    "--f-card-radius": "20px",
+    "--f-bw": "1px",
+    "--f-font": "\"Nunito\", ui-rounded, system-ui, sans-serif",
+    "--f-head": "\"Nunito\", ui-rounded, system-ui, sans-serif",
+    "--f-head-weight": "800",
+    "--f-head-style": "normal",
+    "--f-shadow-hard": "none",
+    "--f-art-bg": "#fff3d1"
+   },
+   "art": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><rect width=\"400\" height=\"300\" fill=\"#fff3d1\"/><path d=\"M200 300 L-220 300.00000000000006 L-217.9775852023227 258.8328010615846Z\" fill=\"#ffd76a\" opacity=\".55\"/><path d=\"M200 300 L-188.02940365474046 139.27295840666233 L-170.4069310263091 102.013370533081Z\" fill=\"#ffd76a\" opacity=\".55\"/><path d=\"M200 300 L-96.98484809835003 3.0151519016500856 L-66.4451793487313 -24.664390412349405Z\" fill=\"#ffd76a\" opacity=\".55\"/><path d=\"M200 300 L39.27295840666207 -88.02940365474035 L78.08043555312578 -101.91494100752772Z\" fill=\"#ffd76a\" opacity=\".55\"/><path d=\"M200 300 L199.99999999999991 -120 L241.16719893841525 -117.9775852023227Z\" fill=\"#ffd76a\" opacity=\".55\"/><path d=\"M200 300 L360.7270415933378 -88.0294036547404 L397.986629466919 -70.40693102630911Z\" fill=\"#ffd76a\" opacity=\".55\"/><path d=\"M200 300 L496.9848480983499 3.015151901649972 L524.6643904123496 33.55482065126898Z\" fill=\"#ffd76a\" opacity=\".55\"/><path d=\"M200 300 L588.0294036547403 139.27295840666204 L601.9149410075277 178.08043555312577Z\" fill=\"#ffd76a\" opacity=\".55\"/><circle cx=\"200\" cy=\"300\" r=\"120\" fill=\"#ffb627\"/><circle cx=\"200\" cy=\"300\" r=\"80\" fill=\"#ff8a00\"/></svg>"
+  }
+ ],
  "templates": [
   {
    "id": "general.contact-us",
@@ -179,6 +902,7 @@
    "name": "Contact us",
    "blurb": "A simple way for anyone to reach your team.",
    "featured": true,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -258,6 +982,7 @@
    "name": "Newsletter sign-up",
    "blurb": "Grow your list with a short, friendly sign-up.",
    "featured": true,
+   "theme": "paper",
    "phi": false,
    "internal": false,
    "schema": {
@@ -314,6 +1039,7 @@
    "name": "Book a call",
    "blurb": "Qualify the visitor, then let them pick a time.",
    "featured": true,
+   "theme": "lilac",
    "phi": false,
    "internal": false,
    "schema": {
@@ -390,6 +1116,7 @@
    "name": "Customer feedback",
    "blurb": "Learn what customers love and what to fix.",
    "featured": true,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -454,6 +1181,7 @@
    "name": "NPS survey",
    "blurb": "The one-question loyalty score, with the reason behind it.",
    "featured": true,
+   "theme": "mint",
    "phi": false,
    "internal": false,
    "schema": {
@@ -515,6 +1243,7 @@
    "name": "Waitlist",
    "blurb": "Collect early interest before you launch.",
    "featured": true,
+   "theme": "retro",
    "phi": false,
    "internal": false,
    "schema": {
@@ -585,6 +1314,7 @@
    "name": "Referral",
    "blurb": "Let happy customers send friends your way.",
    "featured": false,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -657,6 +1387,7 @@
    "name": "Partner application",
    "blurb": "Screen agencies, resellers and tech partners.",
    "featured": false,
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
    "schema": {
@@ -753,6 +1484,7 @@
    "name": "Quote request",
    "blurb": "Get the details you need to price a job.",
    "featured": false,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -854,6 +1586,7 @@
    "name": "Callback request",
    "blurb": "Let people ask for a call at a good time.",
    "featured": false,
+   "theme": "paper",
    "phi": false,
    "internal": false,
    "schema": {
@@ -920,6 +1653,7 @@
    "name": "Email preferences",
    "blurb": "Let subscribers choose what they get and how often.",
    "featured": false,
+   "theme": "lilac",
    "phi": false,
    "internal": false,
    "schema": {
@@ -979,6 +1713,7 @@
    "name": "Testimonial request",
    "blurb": "Collect quotes you can use on your site.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1055,6 +1790,7 @@
    "name": "Cancellation survey",
    "blurb": "Learn why customers leave and what might keep them.",
    "featured": false,
+   "theme": "mint",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1126,6 +1862,7 @@
    "name": "Product feedback",
    "blurb": "Gather ideas and pain points by product area.",
    "featured": false,
+   "theme": "retro",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1198,6 +1935,7 @@
    "name": "Content download",
    "blurb": "Gate a guide or report behind a short form.",
    "featured": false,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1258,6 +1996,7 @@
    "name": "Webinar registration",
    "blurb": "Sign people up for a live session.",
    "featured": false,
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1321,6 +2060,7 @@
    "name": "Demo request",
    "blurb": "Qualify demo requests and route them to a rep.",
    "featured": true,
+   "theme": "midnight",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1435,6 +2175,7 @@
    "name": "Free trial sign-up",
    "blurb": "Start trials with the context sales needs later.",
    "featured": true,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1514,6 +2255,7 @@
    "name": "Contact sales",
    "blurb": "For buyers ready to talk pricing and seats.",
    "featured": true,
+   "theme": "terminal",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1612,6 +2354,7 @@
    "name": "Onboarding survey",
    "blurb": "Learn each new user's goal to personalize setup.",
    "featured": true,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1722,6 +2465,7 @@
    "name": "Pricing calculator lead",
    "blurb": "Turn pricing curiosity into a qualified lead.",
    "featured": false,
+   "theme": "lilac",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1804,6 +2548,7 @@
    "name": "Feature request",
    "blurb": "Collect and rank what customers ask for.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1869,6 +2614,7 @@
    "name": "Bug report",
    "blurb": "Get clear steps, screenshots and setup details.",
    "featured": false,
+   "theme": "midnight",
    "phi": false,
    "internal": false,
    "schema": {
@@ -1959,6 +2705,7 @@
    "name": "Beta program application",
    "blurb": "Pick the right testers for early features.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2040,6 +2787,7 @@
    "name": "Churn survey",
    "blurb": "Understand churn and offer a way back.",
    "featured": false,
+   "theme": "terminal",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2127,6 +2875,7 @@
    "name": "Integration request",
    "blurb": "Hear which tools customers want connected.",
    "featured": false,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2186,6 +2935,7 @@
    "name": "Customer advisory board",
    "blurb": "Invite power users to shape the roadmap.",
    "featured": false,
+   "theme": "lilac",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2268,6 +3018,7 @@
    "name": "Security review request",
    "blurb": "Take in security questionnaires from buyers.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2342,6 +3093,7 @@
    "name": "Product-market fit survey",
    "blurb": "Measure product-market fit the classic way.",
    "featured": false,
+   "theme": "midnight",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2406,6 +3158,7 @@
    "name": "Project inquiry",
    "blurb": "Qualify new projects before the first call.",
    "featured": true,
+   "theme": "poster",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2522,6 +3275,7 @@
    "name": "Client intake",
    "blurb": "Everything you need to kick off a new client.",
    "featured": true,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2638,6 +3392,7 @@
    "name": "Creative brief",
    "blurb": "A brief your creative team can work from.",
    "featured": true,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2725,6 +3480,7 @@
    "name": "SEO audit request",
    "blurb": "Offer a free audit to start the conversation.",
    "featured": false,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2787,6 +3543,7 @@
    "name": "Website project brief",
    "blurb": "Scope a new site or redesign.",
    "featured": false,
+   "theme": "noir",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2888,6 +3645,7 @@
    "name": "Monthly client check-in",
    "blurb": "A quick pulse on how each account feels.",
    "featured": false,
+   "theme": "poster",
    "phi": false,
    "internal": false,
    "schema": {
@@ -2949,6 +3707,7 @@
    "name": "Content approval",
    "blurb": "Get a clear yes or change request on a piece.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3012,6 +3771,7 @@
    "name": "Freelancer application",
    "blurb": "Build a bench of reliable freelancers.",
    "featured": false,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3094,6 +3854,7 @@
    "name": "Free marketing audit",
    "blurb": "Qualify leads with spend and channel data.",
    "featured": false,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3186,6 +3947,7 @@
    "name": "Consultation request",
    "blurb": "Book first calls with a little context.",
    "featured": true,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3261,6 +4023,7 @@
    "name": "Discovery questionnaire",
    "blurb": "Go into the first meeting already informed.",
    "featured": true,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3371,6 +4134,7 @@
    "name": "Proposal request",
    "blurb": "Collect scope, budget and timing for a proposal.",
    "featured": false,
+   "theme": "noir",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3452,6 +4216,7 @@
    "name": "Engagement feedback",
    "blurb": "Close every engagement with a score and a quote.",
    "featured": false,
+   "theme": "clay",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3527,6 +4292,7 @@
    "name": "Workshop registration",
    "blurb": "Sign people up for a workshop or training day.",
    "featured": false,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3600,6 +4366,7 @@
    "name": "Speaker request",
    "blurb": "Take requests for talks and keynotes.",
    "featured": false,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3683,6 +4450,7 @@
    "name": "Case evaluation",
    "blurb": "A free case review that captures the key facts.",
    "featured": true,
+   "theme": "gilded",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3779,6 +4547,7 @@
    "name": "New client intake",
    "blurb": "Collect contact details and matter facts.",
    "featured": false,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -3876,6 +4645,7 @@
    "name": "Conflict check",
    "blurb": "Clear conflicts before you take a matter.",
    "featured": false,
+   "theme": "harbor",
    "phi": false,
    "internal": true,
    "schema": {
@@ -3933,6 +4703,7 @@
    "name": "Consultation booking",
    "blurb": "Book paid or free consultations.",
    "featured": false,
+   "theme": "noir",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4007,6 +4778,7 @@
    "name": "Document request",
    "blurb": "Ask clients for the files you need.",
    "featured": false,
+   "theme": "gilded",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4082,6 +4854,7 @@
    "name": "Tax prep intake",
    "blurb": "Gather what you need to file a return.",
    "featured": true,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4201,6 +4974,7 @@
    "name": "Bookkeeping quote",
    "blurb": "Price monthly bookkeeping from a few answers.",
    "featured": false,
+   "theme": "mint",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4298,6 +5072,7 @@
    "name": "New business setup",
    "blurb": "Help founders pick and form the right entity.",
    "featured": false,
+   "theme": "paper",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4371,6 +5146,7 @@
    "name": "Year-end checklist",
    "blurb": "Close the books with every document in hand.",
    "featured": false,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4438,6 +5214,7 @@
    "name": "Financial review request",
    "blurb": "Book a first review with a qualified prospect.",
    "featured": true,
+   "theme": "gilded",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4530,6 +5307,7 @@
    "name": "Risk tolerance quiz",
    "blurb": "A short quiz that scores how much risk fits.",
    "featured": false,
+   "theme": "midnight",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4689,6 +5467,7 @@
    "name": "Loan pre-qualification",
    "blurb": "Pre-qualify borrowers before a full application.",
    "featured": false,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4788,6 +5567,7 @@
    "name": "Business funding application",
    "blurb": "Collect revenue, history and need for funding.",
    "featured": false,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4918,6 +5698,7 @@
    "name": "Retirement planning",
    "blurb": "Start a retirement plan from a few numbers.",
    "featured": false,
+   "theme": "gilded",
    "phi": false,
    "internal": false,
    "schema": {
@@ -4997,6 +5778,7 @@
    "name": "Insurance quote request",
    "blurb": "Quote requests with renewal dates and current carrier.",
    "featured": true,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5090,6 +5872,7 @@
    "name": "Claim report",
    "blurb": "Start a claim with the facts and photos.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5165,6 +5948,7 @@
    "name": "Business insurance intake",
    "blurb": "Scope commercial coverage in one pass.",
    "featured": false,
+   "theme": "mint",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5264,6 +6048,7 @@
    "name": "Policy review",
    "blurb": "Offer a free review of existing policies.",
    "featured": false,
+   "theme": "paper",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5336,6 +6121,7 @@
    "name": "Home valuation",
    "blurb": "A free valuation that captures sellers early.",
    "featured": true,
+   "theme": "clay",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5446,6 +6232,7 @@
    "name": "Buyer inquiry",
    "blurb": "Qualify buyers by budget, area and timing.",
    "featured": true,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5544,6 +6331,7 @@
    "name": "Showing request",
    "blurb": "Let buyers request a viewing.",
    "featured": false,
+   "theme": "grove",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5618,6 +6406,7 @@
    "name": "Open house sign-in",
    "blurb": "A tablet-friendly sign-in for open houses.",
    "featured": false,
+   "theme": "gilded",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5684,6 +6473,7 @@
    "name": "Rental application",
    "blurb": "Screen renters with income, references and ID.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5828,6 +6618,7 @@
    "name": "Maintenance request",
    "blurb": "Tenants report issues with photos and access.",
    "featured": false,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -5919,6 +6710,7 @@
    "name": "Commercial space inquiry",
    "blurb": "Qualify tenants for office, retail and industrial space.",
    "featured": false,
+   "theme": "clay",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6004,6 +6796,7 @@
    "name": "Seller listing intake",
    "blurb": "Everything you need to list a home.",
    "featured": false,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6085,6 +6878,7 @@
    "name": "Free estimate",
    "blurb": "Estimate requests with photos and an address.",
    "featured": true,
+   "theme": "poster",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6197,6 +6991,7 @@
    "name": "Service request",
    "blurb": "Fast service calls with urgency up front.",
    "featured": true,
+   "theme": "retro",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6290,6 +7085,7 @@
    "name": "Remodel planner",
    "blurb": "Scope a remodel by room, style and budget.",
    "featured": false,
+   "theme": "clay",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6415,6 +7211,7 @@
    "name": "Subcontractor application",
    "blurb": "Vet subs with license and insurance on file.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": true,
    "schema": {
@@ -6507,6 +7304,7 @@
    "name": "Job site safety check",
    "blurb": "A daily safety walk with sign-off.",
    "featured": false,
+   "theme": "poster",
    "phi": false,
    "internal": true,
    "schema": {
@@ -6578,6 +7376,7 @@
    "name": "Warranty claim",
    "blurb": "Take warranty claims with job details.",
    "featured": false,
+   "theme": "retro",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6651,6 +7450,7 @@
    "name": "Customer satisfaction",
    "blurb": "Ask for a rating after each job.",
    "featured": false,
+   "theme": "clay",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6715,6 +7515,7 @@
    "name": "Solar savings check",
    "blurb": "Qualify homeowners by bill, roof and ownership.",
    "featured": true,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6822,6 +7623,7 @@
    "name": "Commercial energy audit",
    "blurb": "Book energy audits for businesses.",
    "featured": false,
+   "theme": "mint",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6899,6 +7701,7 @@
    "name": "EV charger install",
    "blurb": "Quote home EV charger installs.",
    "featured": false,
+   "theme": "grove",
    "phi": false,
    "internal": false,
    "schema": {
@@ -6990,6 +7793,7 @@
    "name": "Appointment request",
    "blurb": "Let patients ask for an appointment.",
    "featured": true,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -7078,6 +7882,7 @@
    "name": "New patient intake",
    "blurb": "Medical history before the first visit.",
    "featured": false,
+   "theme": "mint",
    "phi": true,
    "internal": false,
    "schema": {
@@ -7207,6 +8012,7 @@
    "name": "Patient feedback",
    "blurb": "Hear how each visit went.",
    "featured": false,
+   "theme": "lilac",
    "phi": false,
    "internal": false,
    "schema": {
@@ -7274,6 +8080,7 @@
    "name": "Referral from provider",
    "blurb": "Take referrals from other providers.",
    "featured": false,
+   "theme": "paper",
    "phi": true,
    "internal": false,
    "schema": {
@@ -7352,6 +8159,7 @@
    "name": "Telehealth check-in",
    "blurb": "A short check-in before an online visit.",
    "featured": false,
+   "theme": "tide",
    "phi": true,
    "internal": false,
    "schema": {
@@ -7418,6 +8226,7 @@
    "name": "New patient booking",
    "blurb": "Book new dental or wellness patients.",
    "featured": true,
+   "theme": "grove",
    "phi": false,
    "internal": false,
    "schema": {
@@ -7498,6 +8307,7 @@
    "name": "Therapy consultation",
    "blurb": "A gentle first step for new therapy clients.",
    "featured": false,
+   "theme": "lilac",
    "phi": true,
    "internal": false,
    "schema": {
@@ -7580,6 +8390,7 @@
    "name": "Wellness assessment",
    "blurb": "A quick score that starts a conversation.",
    "featured": false,
+   "theme": "clay",
    "phi": false,
    "internal": false,
    "schema": {
@@ -7698,6 +8509,7 @@
    "name": "Consent and waiver",
    "blurb": "Signed consent before treatment.",
    "featured": false,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -7767,6 +8579,7 @@
    "name": "Free trial class",
    "blurb": "Turn curious visitors into first-time members.",
    "featured": true,
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
    "schema": {
@@ -7852,6 +8665,7 @@
    "name": "Personal training intake",
    "blurb": "Goals, injuries and schedule for new clients.",
    "featured": false,
+   "theme": "poster",
    "phi": true,
    "internal": false,
    "schema": {
@@ -7955,6 +8769,7 @@
    "name": "Membership sign-up",
    "blurb": "Sign up members with a plan and signature.",
    "featured": false,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8041,6 +8856,7 @@
    "name": "Salon booking",
    "blurb": "Book services with a stylist.",
    "featured": false,
+   "theme": "midnight",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8127,6 +8943,7 @@
    "name": "Liability waiver",
    "blurb": "Signed waivers before anyone trains.",
    "featured": false,
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8194,6 +9011,7 @@
    "name": "Course inquiry",
    "blurb": "Capture prospective students by program and term.",
    "featured": true,
+   "theme": "retro",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8287,6 +9105,7 @@
    "name": "Application",
    "blurb": "A full application with essay and documents.",
    "featured": true,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8407,6 +9226,7 @@
    "name": "Course feedback",
    "blurb": "End-of-course feedback on content and teaching.",
    "featured": false,
+   "theme": "lilac",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8479,6 +9299,7 @@
    "name": "Tutoring request",
    "blurb": "Match students with the right tutor.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8576,6 +9397,7 @@
    "name": "Corporate training request",
    "blurb": "Scope training for a team.",
    "featured": false,
+   "theme": "retro",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8656,6 +9478,7 @@
    "name": "Scholarship application",
    "blurb": "Collect need, essays and references.",
    "featured": false,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8729,6 +9552,7 @@
    "name": "Quiz / knowledge check",
    "blurb": "A scored quiz with instant results.",
    "featured": false,
+   "theme": "lilac",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8837,6 +9661,7 @@
    "name": "Wholesale inquiry",
    "blurb": "Vet wholesale buyers before sharing prices.",
    "featured": true,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -8933,6 +9758,7 @@
    "name": "Product quiz",
    "blurb": "Recommend products and grow your list.",
    "featured": false,
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9016,6 +9842,7 @@
    "name": "Return request",
    "blurb": "Start returns with order details and photos.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9100,6 +9927,7 @@
    "name": "Back-in-stock alert",
    "blurb": "Let shoppers know when an item returns.",
    "featured": false,
+   "theme": "editorial",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9147,6 +9975,7 @@
    "name": "Product review",
    "blurb": "Collect reviews with photos.",
    "featured": false,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9220,6 +10049,7 @@
    "name": "Influencer application",
    "blurb": "Find creators for collabs.",
    "featured": false,
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9306,6 +10136,7 @@
    "name": "Custom order request",
    "blurb": "Take custom orders with specs and a date.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9386,6 +10217,7 @@
    "name": "RFQ (request for quote)",
    "blurb": "Quotes with drawings, materials and volumes.",
    "featured": true,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9486,6 +10318,7 @@
    "name": "Distributor application",
    "blurb": "Screen new distributors by region and volume.",
    "featured": false,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9561,6 +10394,7 @@
    "name": "Sample request",
    "blurb": "Ship samples to qualified buyers.",
    "featured": false,
+   "theme": "terminal",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9636,6 +10470,7 @@
    "name": "Supplier onboarding",
    "blurb": "Collect tax, certifications and insurance.",
    "featured": false,
+   "theme": "poster",
    "phi": false,
    "internal": true,
    "schema": {
@@ -9717,6 +10552,7 @@
    "name": "Quality issue report",
    "blurb": "Log defects with photos and lot numbers.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9790,6 +10626,7 @@
    "name": "Freight quote",
    "blurb": "Lane, weight and date for a fast quote.",
    "featured": true,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -9888,6 +10725,7 @@
    "name": "Carrier onboarding",
    "blurb": "Onboard carriers with authority and insurance.",
    "featured": false,
+   "theme": "midnight",
    "phi": false,
    "internal": true,
    "schema": {
@@ -9970,6 +10808,7 @@
    "name": "Warehouse space inquiry",
    "blurb": "Size storage needs and services.",
    "featured": false,
+   "theme": "poster",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10055,6 +10894,7 @@
    "name": "Driver application",
    "blurb": "Hire drivers with license and experience.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10142,6 +10982,7 @@
    "name": "Test drive booking",
    "blurb": "Book test drives by model and time.",
    "featured": true,
+   "theme": "noir",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10221,6 +11062,7 @@
    "name": "Trade-in value",
    "blurb": "Estimate trade-ins with photos.",
    "featured": false,
+   "theme": "midnight",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10318,6 +11160,7 @@
    "name": "Service appointment",
    "blurb": "Book service by vehicle and job.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10394,6 +11237,7 @@
    "name": "Fleet inquiry",
    "blurb": "Qualify fleet buyers.",
    "featured": false,
+   "theme": "poster",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10477,6 +11321,7 @@
    "name": "Group booking / event inquiry",
    "blurb": "Private events and group bookings.",
    "featured": true,
+   "theme": "clay",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10571,6 +11416,7 @@
    "name": "Catering request",
    "blurb": "Menus, guest counts and dietary needs.",
    "featured": false,
+   "theme": "gilded",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10665,6 +11511,7 @@
    "name": "Guest feedback",
    "blurb": "Ratings and comments after each stay.",
    "featured": false,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10737,6 +11584,7 @@
    "name": "Travel inquiry",
    "blurb": "Plan trips from dates, budget and travelers.",
    "featured": false,
+   "theme": "grove",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10819,6 +11667,7 @@
    "name": "Reservation request",
    "blurb": "Table requests for busy nights.",
    "featured": false,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10895,6 +11744,7 @@
    "name": "Event registration",
    "blurb": "Tickets, roles and dietary needs in one form.",
    "featured": true,
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
    "schema": {
@@ -10985,6 +11835,7 @@
    "name": "Speaker application",
    "blurb": "A call for papers with abstracts and video.",
    "featured": true,
+   "theme": "noir",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11081,6 +11932,7 @@
    "name": "Sponsor inquiry",
    "blurb": "Qualify sponsors by level and goals.",
    "featured": false,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11168,6 +12020,7 @@
    "name": "Exhibitor sign-up",
    "blurb": "Booth size, power and contacts.",
    "featured": false,
+   "theme": "retro",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11248,6 +12101,7 @@
    "name": "Post-event survey",
    "blurb": "What worked and what to change next time.",
    "featured": false,
+   "theme": "midnight",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11318,6 +12172,7 @@
    "name": "Volunteer sign-up",
    "blurb": "Shifts, skills and shirt sizes.",
    "featured": false,
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11406,6 +12261,7 @@
    "name": "Meeting request at event",
    "blurb": "Book meetings at a conference.",
    "featured": false,
+   "theme": "noir",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11479,6 +12335,7 @@
    "name": "Volunteer application",
    "blurb": "Recruit and screen volunteers.",
    "featured": true,
+   "theme": "grove",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11565,6 +12422,7 @@
    "name": "Donation pledge",
    "blurb": "Pledges with amount and dedication.",
    "featured": false,
+   "theme": "sunrise",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11642,6 +12500,7 @@
    "name": "Grant application",
    "blurb": "Collect proposals and budgets.",
    "featured": false,
+   "theme": "coral",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11731,6 +12590,7 @@
    "name": "Program intake",
    "blurb": "Enroll people in services.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11799,6 +12659,7 @@
    "name": "Event RSVP",
    "blurb": "Simple RSVPs with guests and dietary needs.",
    "featured": false,
+   "theme": "grove",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11883,6 +12744,7 @@
    "name": "Job application",
    "blurb": "Collect resumes and the basics for any role.",
    "featured": true,
+   "theme": "lilac",
    "phi": false,
    "internal": false,
    "schema": {
@@ -11961,6 +12823,7 @@
    "name": "Employee onboarding",
    "blurb": "New-hire details before day one.",
    "featured": false,
+   "theme": "mint",
    "phi": false,
    "internal": true,
    "schema": {
@@ -12070,6 +12933,7 @@
    "name": "Employee engagement survey",
    "blurb": "An anonymous pulse on how people feel.",
    "featured": false,
+   "theme": "paper",
    "phi": false,
    "internal": true,
    "schema": {
@@ -12135,6 +12999,7 @@
    "name": "Exit interview",
    "blurb": "Learn why people leave.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": true,
    "schema": {
@@ -12194,6 +13059,7 @@
    "name": "Time-off request",
    "blurb": "Simple leave requests.",
    "featured": false,
+   "theme": "lilac",
    "phi": false,
    "internal": true,
    "schema": {
@@ -12262,6 +13128,7 @@
    "name": "360 feedback",
    "blurb": "Peer feedback on strengths and growth.",
    "featured": false,
+   "theme": "mint",
    "phi": false,
    "internal": true,
    "schema": {
@@ -12324,6 +13191,7 @@
    "name": "Interview feedback",
    "blurb": "Structured scorecards after interviews.",
    "featured": false,
+   "theme": "paper",
    "phi": false,
    "internal": true,
    "schema": {
@@ -12401,6 +13269,7 @@
    "name": "Employee referral",
    "blurb": "Let your team refer candidates.",
    "featured": false,
+   "theme": "tide",
    "phi": false,
    "internal": true,
    "schema": {
@@ -12468,6 +13337,7 @@
    "name": "IT assessment request",
    "blurb": "Qualify businesses for managed IT.",
    "featured": true,
+   "theme": "terminal",
    "phi": false,
    "internal": false,
    "schema": {
@@ -12557,6 +13427,7 @@
    "name": "Support ticket",
    "blurb": "Clear tickets with device and urgency.",
    "featured": false,
+   "theme": "midnight",
    "phi": false,
    "internal": false,
    "schema": {
@@ -12645,6 +13516,7 @@
    "name": "Security readiness quiz",
    "blurb": "A scored quiz that opens security conversations.",
    "featured": false,
+   "theme": "harbor",
    "phi": false,
    "internal": false,
    "schema": {
@@ -12776,6 +13648,7 @@
    "name": "Cloud migration intake",
    "blurb": "Scope a move to the cloud.",
    "featured": false,
+   "theme": "studio",
    "phi": false,
    "internal": false,
    "schema": {

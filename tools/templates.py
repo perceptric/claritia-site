@@ -14,7 +14,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 1, 1
+CSS_V, JS_V = 2, 2
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -27,6 +27,9 @@ def ind_slug(v: str) -> str:
     return "any-business" if v == "general" else v.replace("_", "-")
 
 
+THEMES = DATA["themes"]
+TH = {x["id"]: x for x in THEMES}
+FONTS_URL = DATA["fonts"].replace("&", "&amp;")
 IND_LABEL = {i["value"]: i["label"] for i in IND}
 COUNT = {i["value"]: sum(1 for t in T if t["industry"] == i["value"]) for i in IND}
 ORDERED = [t for t in T if t["featured"]] + [t for t in T if not t["featured"]]
@@ -38,6 +41,53 @@ def fields_of(t):
 
 def questions(t):
     return sum(1 for f in fields_of(t) if f["kind"] not in ("statement", "hidden"))
+
+
+# Styles: one class per style with its CSS variables, and a drawing file for the styles that have one ----------------
+
+
+def write_styles() -> None:
+    art = ROOT / "assets" / "form-art"
+    art.mkdir(parents=True, exist_ok=True)
+    rules = ["/* Form styles. Written by tools/templates.py from the app's src/lib/forms/themes.ts. */"]
+    for th in THEMES:
+        body = ";".join(f"{k}:{v}" for k, v in th["vars"].items())
+        rules.append(f".th-{th['id']}{{{body}}}")
+        if th["art"]:
+            (art / f"{th['id']}.svg").write_text(th["art"])
+            rules.append(f".th-{th['id']} .fart{{background-image:url(/assets/form-art/{th['id']}.svg?v={CSS_V})}}")
+    (ROOT / "assets" / "themes.css").write_text("\n".join(rules) + "\n")
+
+
+def th_attrs(tid: str) -> str:
+    """The class and flags that put a box in a style."""
+    th = TH[tid]
+    return f'class="fth th-{tid}" data-layout="{th["layout"]}" data-input="{th["input"]}" data-shadow="{th["shadow"]}" data-pattern="{th["pattern"]}"' + (" data-dark" if th["dark"] else "")
+
+
+def swatch(tid: str) -> str:
+    return '<span class="sw" aria-hidden="true">' + "".join(f'<i style="background:{c}"></i>' for c in TH[tid]["swatch"]) + "</span>"
+
+
+def style_bar(current: str, own: bool = False) -> str:
+    """The style menu: the form's own style or any of the others, and Shuffle."""
+    data = json.dumps({x["id"]: {k: x[k] for k in ("name", "layout", "input", "shadow", "pattern", "dark")} for x in THEMES}).replace("</", "<\\/")
+    opts = []
+    if own:
+        opts.append(f'<li role="option" data-theme="" aria-selected="true"><span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><span><b>Each template&#39;s own</b><small>Every card in its own style</small></span></li>')
+    for x in THEMES:
+        sel = "true" if (x["id"] == current and not own) else "false"
+        opts.append(f'<li role="option" data-theme="{x["id"]}" aria-selected="{sel}">{swatch(x["id"])}<span><b>{esc(x["name"])}</b><small>{esc(x["mood"])}</small></span></li>')
+    shown = '<span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><b>Each template&#39;s own</b>' if own else f'{swatch(current)}<b>{esc(TH[current]["name"])}</b>'
+    return f"""<div class="tsty" data-styles{" data-own" if own else ""}>
+        <span class="tsty__l">Style</span>
+        <div class="tsty__dd">
+          <button type="button" class="tsty__btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Form style">{shown}<svg class="tsty__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <ul class="tsty__list" role="listbox" aria-label="Form styles">{"".join(opts)}</ul>
+        </div>
+        <button type="button" class="tsty__shuffle" data-shuffle aria-label="Try another style"><svg aria-hidden="true"><use href="#i-shuffle"/></svg><span>Shuffle</span></button>
+        <script type="application/json" class="tsty__data">{data}</script>
+      </div>"""
 
 
 # Shared page parts, copied from the home page so the header, menu and footer stay one --------------------------
@@ -61,6 +111,7 @@ SPRITE = block('<svg width="0" height="0"', "</svg>\n").replace(
     '  <symbol id="i-search" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="m10.5 10.5 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>\n'
     '  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>\n'
     '  <symbol id="i-up" viewBox="0 0 16 16" fill="none"><path d="m4 10 4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>\n'
+    '  <symbol id="i-shuffle" viewBox="0 0 16 16" fill="none"><path d="M2 4.5h2.5c1.7 0 2.7.8 3.6 2.2l1 1.6c.9 1.4 1.9 2.2 3.6 2.2H14M2 11.5h2.5c1 0 1.8-.3 2.4-.9M10.3 5.4c.6-.6 1.4-.9 2.4-.9H14M12 2.5l2 2-2 2M12 9.5l2 2-2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>\n'
     "</svg>\n",
 )
 HEADER = absolute(block('<header class="site-header">', "</header>"))
@@ -94,8 +145,10 @@ def page(path: str, title: str, desc: str, body: str, ld: list) -> None:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="{FONTS_URL}">
 <link rel="stylesheet" href="/assets/site.css?v=7">
 <link rel="stylesheet" href="/assets/forms.css?v={CSS_V}">
+<link rel="stylesheet" href="/assets/themes.css?v={CSS_V}">
 <script>document.documentElement.classList.add("js");setTimeout(function(){{if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){{e.classList.add("is-in")}})}},2500);</script>
 {"".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
@@ -132,7 +185,8 @@ def crumbs(items):
 # Gallery card previews: a light drawing of the form's first questions ------------------------------------------
 
 
-def thumb(t) -> str:
+def thumb(t, tid: str | None = None) -> str:
+    tid = tid or t["theme"]
     s = t["schema"]
     parts = [f'<b class="tp__title">{esc(s["title"])}</b>']
     if s.get("intro"):
@@ -178,7 +232,8 @@ def thumb(t) -> str:
         parts.append(f'<span class="tp__f">{lab}{body}</span>')
     btn = s["submit"] if len(s["pages"]) == 1 else "Next"
     parts.append(f'<span class="tp__btn">{esc(btn)}</span>')
-    return f'<span class="tp" aria-hidden="true"><span class="tp__in">{"".join(parts)}</span></span>'
+    attrs = th_attrs(tid).replace('class="fth ', 'class="tp fth ')
+    return f'<span {attrs} data-own="{t["theme"]}" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in">{"".join(parts)}</span></span></span>'
 
 
 def card(t) -> str:
@@ -338,33 +393,12 @@ def gallery(current: str, items) -> str:
           <div class="chips" role="group" aria-label="Use">{chips}</div>
         </div>
         <details class="tjump"><summary>Industry: {esc("All" if current == "all" else IND_LABEL[current])} <svg aria-hidden="true"><use href="#i-chev"/></svg></summary><div class="tjump__list"><a href="/templates">All templates</a>{"".join(f'<a href="/templates/{ind_slug(i["value"])}">{esc(i["label"])}</a>' for i in IND)}</div></details>
-        <p class="tcount"><span data-count>{len(items)}</span> templates</p>
+        <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> templates</p>{style_bar("paper", own=True)}</div>
         <div class="tgrid" data-grid>{"".join(card(t) for t in items)}</div>
         <div class="tnone" hidden data-none><p>No matches.</p><button type="button" class="more" data-clear>Clear the search</button></div>
       </div>
     </div>
   </section>"""
-
-
-def index_page():
-    body = f"""<section class="thero">
-    <div class="wrap"><div class="thero__in">
-      <p class="eyebrow reveal">Form templates</p>
-      <h1 class="display reveal" data-delay="1">Form templates<br><span class="two">for every industry.</span></h1>
-      <p class="lead reveal" data-delay="2">{len(T)} ready forms for {len(IND)} industries: demo requests, quotes, intake, applications, surveys and quizzes. Try any of them here. Use one and it goes live on your site in a click, with every answer saved as a contact.</p>
-      <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="#all">Browse templates</a><a class="btn btn--ghost btn--lg" href="{APP}">Start free</a></div>
-    </div></div>
-  </section>
-  <div id="all"></div>
-  {gallery("all", ORDERED)}
-  {CLOSE("Pick a form. Catch the lead.", "Free plan, live in a click.", APP, "Start free")}"""
-    page(
-        "/templates",
-        "Free form templates for every industry | Claritia",
-        f"{len(T)} free form templates for {len(IND)} industries: demo requests, quotes, intake, applications, surveys and quizzes. Try each one, then use it in a click.",
-        body,
-        [crumbs([("Templates", "/templates")])],
-    )
 
 
 INTROS = {
@@ -417,12 +451,83 @@ def industry_page(i):
     )
 
 
+LOGOS = [("hubspot.svg", "HubSpot"), ("salesforce.svg", "Salesforce"), ("omniscient.svg", "Omniscient"), ("pipedrive.png", "Pipedrive"), ("attio.png", "Attio"),
+         ("slack.svg", "Slack"), ("gmail.svg", "Gmail"), ("outlook.jpg", "Outlook"), ("calendly.svg", "Calendly"), ("zoom.svg", "Zoom"), ("meet.svg", "Google Meet"),
+         ("stripe.svg", "Stripe"), ("zapier.svg", "Zapier"), ("webflow.svg", "Webflow"), ("wordpress.svg", "WordPress"), ("framer.svg", "Framer")]
+KINDS_SHOWN = ["short_text", "long_text", "email", "phone", "url", "number", "money", "single", "multi", "dropdown", "yes_no", "agree", "rating", "nps",
+               "scale", "ranking", "matrix", "date", "time", "date_range", "name", "address", "file", "signature", "statement", "hidden"]
+FEATS = [
+    ("Show-if logic", "Ask the next question only when an earlier answer calls for it."),
+    ("Pages and progress", "Split long forms into steps with a progress bar."),
+    ("Scores and results", "Turn answers into a score and show each person what it means."),
+    ("Files and signatures", "Take uploads up to 10 MB and signatures drawn on any screen."),
+    ("Booking", "Open your calendar on the thank-you screen, with name and email filled in."),
+    ("Consent by region", "An opt-in box where the law asks for one, a short notice everywhere else."),
+    ("Every answer a contact", "The company comes from the work email, the campaign from the link."),
+    ("Spam stays out", "A hidden trap, rate limits and temporary emails refused."),
+]
+
+
+def stage(t, tid: str) -> str:
+    return f"""<div {th_attrs(tid)} data-stage>
+          <div class="fth__card"><div class="fart" aria-hidden="true"></div><div class="fth__body">
+          {live_form(t)}
+          </div></div>
+        </div>"""
+
+
+def logos() -> str:
+    return '<ul class="tlogos">' + "".join(f'<li><img src="/assets/logos/{f}" alt="{esc(n)}" width="28" height="28" loading="lazy"></li>' for f, n in LOGOS) + "</ul>"
+
+
+def kinds_grid() -> str:
+    return '<ul class="tkinds">' + "".join(f"<li>{esc(KIND[k])}</li>" for k in KINDS_SHOWN) + "</ul>"
+
+
+def feat_grid() -> str:
+    return '<div class="tfeats">' + "".join(f'<div class="tfeat"><h3 class="h3">{esc(a)}</h3><p>{esc(b)}</p></div>' for a, b in FEATS) + "</div>"
+
+
+def steps(use: str) -> str:
+    return f"""<ol class="tsteps reveal" data-delay="1">
+        <li><span class="tsteps__n">01</span><h3 class="h3">Use the template</h3><p>It opens in Claritia ready to go, in the style you picked. Answers are linked to your contact fields and the form goes live.</p></li>
+        <li><span class="tsteps__n">02</span><h3 class="h3">Connect your tools</h3><p>Send answers to HubSpot, Salesforce or Omniscient, open your calendar after a booking form, and tell your team in Slack.</p></li>
+        <li><span class="tsteps__n">03</span><h3 class="h3">Share it anywhere</h3><p>Send the link, or add one line to Webflow, WordPress, Framer or any page. Every answer lands as a contact.</p></li>
+      </ol>"""
+
+
+def short_labels(t, n=4):
+    out = []
+    for f in fields_of(t):
+        lab = f["label"].strip()
+        if f["kind"] in ("statement", "hidden", "agree", "signature") or "?" in lab or len(lab.split()) > 3:
+            continue
+        out.append(lab[0].lower() + lab[1:] if not lab[:2].isupper() else lab)
+        if len(out) >= n:
+            break
+    return out
+
+
+def and_list(xs):
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
+
+
+def describe(t) -> str:
+    labs = short_labels(t)
+    asks = f" It asks for {and_list(labs)}" + (f", plus {questions(t) - len(labs)} more questions" if questions(t) > len(labs) else "") + "." if labs else ""
+    return f"{t['blurb']}{asks} Use this free template as it is, or change any question, the style and the thank-you screen, then share it or put it on your site."
+
+
 def faqs(t):
     name = t["name"]
+    low = name.lower()
+    labs = short_labels(t, 6)
     qa = [
-        (f"Is the {name.lower()} template free?", "Yes. Every template is free on every plan, including the free one. Use it, change it and share it as often as you like."),
-        ("Can I change the questions?", "Yes. Add, remove and reorder questions, change the wording and options, set which questions are required, and show a question only when an earlier answer calls for it. Tailor can also rewrite the wording for your business from one sentence."),
-        ("Where do the answers go?", "Each answer becomes a contact in Claritia, with the company found from the work email and the page the visitor came from. From there it can sync to HubSpot, Salesforce or Omniscient."),
+        (f"Can I customize the {low} form?", f"Yes. Add, remove and reorder questions, change the wording and options, and set which ones are required. Pick one of {len(THEMES)} styles or your own color. Tailor can also rewrite the wording for your business from one sentence."),
+        (f"What does the {low} form collect?", (f"It asks for {and_list(labs)}" + (f", plus {questions(t) - len(labs)} more questions" if questions(t) > len(labs) else "") + ". You can add or remove any of them.") if labs else f"It has {questions(t)} questions, listed on this page. You can add or remove any of them."),
+        (f"Is the {low} form mobile-friendly?", "Yes. Every form fits phones, tablets and computers, and works with a keyboard and screen readers."),
+        (f"Is the {low} template free?", "Yes. Every template is free on every plan, including the free one. Use it, change it and share it as often as you like."),
+        ("Where do the answers go?", "Each answer becomes a contact in Claritia, with the company found from the work email and the page and campaign the visitor came from. From there it can sync to HubSpot, Salesforce or Omniscient."),
         ("How do I put it on my website?", "Share the link, or paste one line of code where the form should show. It fits any website, including Webflow, WordPress, Framer and plain HTML."),
     ]
     if t["phi"]:
@@ -430,6 +535,15 @@ def faqs(t):
     else:
         qa.append(("Does it ask for consent?", "Yes. Visitors in the EU, the UK and other strict regions see an opt-in box; everyone else sees a short notice. Claritia saves the exact words each person saw."))
     return qa
+
+
+def faq_block(qa, head="Questions") -> str:
+    return f"""<section class="section">
+    <div class="wrap faq">
+      <div class="faq__head reveal"><h2 class="h2">{head}</h2><p class="lead">Something else? <a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></p></div>
+      <div class="qa reveal" data-delay="1">{"".join(f'<details><summary>{esc(q)} <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>{esc(a)}</p></details>' for q, a in qa)}</div>
+    </div>
+  </section>"""
 
 
 def template_page(t):
@@ -441,9 +555,12 @@ def template_page(t):
     asks = "".join(f'<li><span class="tasks__n">{n + 1}</span><span class="tasks__t">{esc(f["label"])}</span><span class="tasks__k">{esc(KIND[f["kind"]])}</span></li>' for n, f in enumerate(fl))
     pages = len(s["pages"])
     tags = "".join(f'<span class="tag">{esc(USE.get(x, x))}</span>' for x in t["tags"])
-    related = [x for x in ORDERED if x["industry"] == t["industry"] and x["id"] != t["id"]][:6]
-    if len(related) < 3:
-        related += [x for x in ORDERED if x["featured"] and x["id"] != t["id"] and x not in related][: 6 - len(related)]
+    same = [x for x in ORDERED if x["industry"] == t["industry"] and x["id"] != t["id"]]
+    alike = [x for x in ORDERED if x["industry"] != t["industry"] and set(x["tags"]) & set(t["tags"])]
+    related = (same + alike)[:12]
+    others = [x["id"] for x in THEMES if x["id"] != t["theme"]]
+    looks = [t["theme"]] + others[(T.index(t) * 5) % len(others):][:5]
+    looks += [x for x in others if x not in looks][: 6 - len(looks)]
     qa = faqs(t)
     title_h = f"{t['name']} template" if not t["name"].lower().endswith("template") else t["name"]
     body = f"""<section class="thero thero--tpl">
@@ -452,19 +569,18 @@ def template_page(t):
       <div class="tpl__top">
         <div class="tpl__copy">
           <h1 class="h2">{esc(title_h)}</h1>
-          <p class="lead">{esc(t["blurb"])} Try it below, then use it in a click.</p>
+          <p class="lead">{esc(describe(t))}</p>
           <div class="tpl__tags"><span class="tag tag--sig">Free</span>{tags}<span class="tag">{questions(t)} questions</span>{f'<span class="tag">{pages} pages</span>' if pages > 1 else ""}</div>
         </div>
-        <div class="tpl__ctas"><a class="btn btn--primary btn--lg" href="{use}">Use this template <span class="nudge" aria-hidden="true">&rarr;</span></a><a class="btn btn--ghost btn--lg" href="#try">Try it</a></div>
+        <div class="tpl__ctas"><a class="btn btn--primary btn--lg" href="{use}?theme={t["theme"]}" data-use="{use}">Use template <span class="nudge" aria-hidden="true">&rarr;</span></a><a class="btn btn--ghost btn--lg" href="#try">Explore demo</a></div>
       </div>
     </div>
   </section>
   <section class="tpl" id="try">
     <div class="wrap tpl__in">
-      <div class="tpl__stage">
-        <div class="tpl__frame brk"><span class="brk__b"></span>
-          {live_form(t)}
-        </div>
+      <div class="tpl__main">
+        {style_bar(t["theme"])}
+        {stage(t, t["theme"])}
       </div>
       <aside class="tpl__side">
         <div class="tbox">
@@ -481,38 +597,102 @@ def template_page(t):
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>Each person sees their score and what it means.</li>' if s["end"].get("score") else ""}
           </ul>
         </div>
-        <a class="btn btn--primary tbox__cta" href="{use}">Use this template <span class="nudge" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn--primary tbox__cta" href="{use}?theme={t["theme"]}" data-use="{use}">Use template <span class="nudge" aria-hidden="true">&rarr;</span></a>
       </aside>
     </div>
   </section>
   <section class="section section--tint">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">How it works</p><h2 class="h2">Live in a click.<br><span class="two">Yours in a minute.</span></h2></div>
-      <ol class="tsteps reveal" data-delay="1">
-        <li><span class="tsteps__n">01</span><h3 class="h3">Use this template</h3><p>It opens in Claritia ready to go. Answers are linked to your contact fields and the form goes live.</p></li>
-        <li><span class="tsteps__n">02</span><h3 class="h3">Make it yours</h3><p>Change the questions, the color and the thank-you screen. Or let Tailor rewrite the wording for your business.</p></li>
-        <li><span class="tsteps__n">03</span><h3 class="h3">Share it</h3><p>Send the link or add one line to your site. Every answer lands as a contact you can follow up on.</p></li>
-      </ol>
+      <div class="sec-head reveal"><p class="eyebrow">Styles</p><h2 class="h2">One form, {len(THEMES)} looks.<br><span class="two">Pick one, or bring your color.</span></h2></div>
+      <div class="tlooks reveal" data-delay="1">{"".join(f'<button type="button" class="tlook" data-pick="{x}" aria-label="Show the form in {esc(TH[x]["name"])}">{thumb(t, x).replace(" data-own=", " data-fixed data-own=")}<span class="tlook__n">{swatch(x)}<b>{esc(TH[x]["name"])}</b><small>{esc(TH[x]["mood"])}</small></span></button>' for x in looks)}</div>
     </div>
   </section>
   <section class="section">
-    <div class="wrap faq">
-      <div class="faq__head reveal"><h2 class="h2">Questions</h2><p class="lead">Something else? <a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></p></div>
-      <div class="qa reveal" data-delay="1">{"".join(f'<details><summary>{esc(q)} <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>{esc(a)}</p></details>' for q, a in qa)}</div>
+    <div class="wrap tsplit">
+      <div class="sec-head reveal"><p class="eyebrow">Customize in minutes</p><h2 class="h2">Make it yours.<br><span class="two">No code.</span></h2><p class="lead">Change any question, add your own from {len(KINDS_SHOWN)} question types, and show each one only when it matters.</p></div>
+      <div class="reveal" data-delay="1">{kinds_grid()}</div>
     </div>
+    <div class="wrap">{feat_grid()}</div>
   </section>
   <section class="section section--tint">
     <div class="wrap">
-      <div class="trel__head"><h2 class="h2">More forms for {esc(t["industryLabel"]) if t["industry"] != "general" else "any business"}</h2><a class="more" href="{ind_path}">See all <span class="nudge" aria-hidden="true">&rarr;</span></a></div>
+      <div class="sec-head reveal"><p class="eyebrow">Connect to any app</p><h2 class="h2">Answers go where you work.<br><span class="two">Live in a minute.</span></h2></div>
+      {steps(use)}
+      <div class="reveal" data-delay="2">{logos()}</div>
+    </div>
+  </section>
+  {faq_block(qa, "Frequently asked questions")}
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="trel__head"><h2 class="h2">Related templates</h2><a class="more" href="{ind_path}">More for {esc(t["industryLabel"]) if t["industry"] != "general" else "any business"} <span class="nudge" aria-hidden="true">&rarr;</span></a></div>
       <div class="tgrid tgrid--3">{"".join(card(x) for x in related)}</div>
     </div>
   </section>
-  {CLOSE(f"Use the {esc(t['name'].lower())} template.", "Live on your site in a click.", use, "Use this template")}"""
+  {CLOSE("Make your first form in minutes.", "Start with this template.", f"{use}?theme={t['theme']}", "Use template")}"""
     ld = [
         crumbs([("Templates", "/templates"), (t["industryLabel"], ind_path), (t["name"], path)]),
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]},
     ]
-    page(path, f"{title_h} (free) | Claritia", f"{t['blurb']} A free {t['name'].lower()} form with {questions(t)} questions. Try it, then use it in a click.", body, ld)
+    page(path, f"{title_h} (free) | Claritia", f"{t['blurb']} A free {t['name'].lower()} form with {questions(t)} questions and {len(THEMES)} styles. Try it, then use it in a click.", body, ld)
+
+
+INDEX_QA = [
+    ("Are the templates free?", "Yes. Every template is free on every plan, including the free one."),
+    ("Can I change a template?", "Yes. Change any question, its wording and options, the order, the style and the thank-you screen. Tailor can rewrite the wording for your business from one sentence."),
+    ("Can I match my brand?", f"Pick one of {len(THEMES)} styles, then set your own button color. Every style works on phones and with a keyboard."),
+    ("Where do the answers go?", "Each answer becomes a contact in Claritia, with the company found from the work email. It can sync to HubSpot, Salesforce or Omniscient."),
+    ("How do I add a form to my website?", "Share the link, or paste one line of code where the form should show. It fits Webflow, WordPress, Framer and plain HTML."),
+    ("Do the forms ask for consent?", "Yes. An opt-in box in the EU, the UK and other strict regions, and a short notice elsewhere. The exact words each person saw are saved."),
+]
+
+
+def styles_strip() -> str:
+    sample = next(x for x in T if x["id"] == "general.book-a-call")
+    return '<div class="tlooks tlooks--all">' + "".join(
+        f'<button type="button" class="tlook" data-global="{x["id"]}" aria-label="Show every template in {esc(x["name"])}">{thumb(sample, x["id"]).replace(" data-own=", " data-fixed data-own=")}<span class="tlook__n">{swatch(x["id"])}<b>{esc(x["name"])}</b><small>{esc(x["mood"])}</small></span></button>'
+        for x in THEMES
+    ) + "</div>"
+
+
+def index_page():
+    body = f"""<section class="thero">
+    <div class="wrap"><div class="thero__in">
+      <p class="eyebrow reveal">Form templates</p>
+      <h1 class="display reveal" data-delay="1">Form templates<br><span class="two">for every industry.</span></h1>
+      <p class="lead reveal" data-delay="2">{len(T)} ready forms for {len(IND)} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try any of them here. Use one and it goes live on your site in a click, with every answer saved as a contact.</p>
+      <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="#all">Browse templates</a><a class="btn btn--ghost btn--lg" href="{APP}">Start free</a></div>
+    </div></div>
+  </section>
+  <div id="all"></div>
+  {gallery("all", ORDERED)}
+  <section class="section section--tint" id="styles">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="eyebrow">Styles</p><h2 class="h2">{len(THEMES)} styles for every form.<br><span class="two">Tap one to see the whole gallery in it.</span></h2></div>
+      <div class="reveal" data-delay="1">{styles_strip()}</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="eyebrow">Built in</p><h2 class="h2">Everything a form needs.<br><span class="two">On every template.</span></h2></div>
+      {feat_grid()}
+    </div>
+  </section>
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="eyebrow">How it works</p><h2 class="h2">Pick it, connect it, share it.<br><span class="two">Live in a minute.</span></h2></div>
+      {steps(APP)}
+      <div class="reveal" data-delay="2">{logos()}</div>
+    </div>
+  </section>
+  {faq_block(INDEX_QA)}
+  {CLOSE("Make your first form in minutes.", "Free plan, live in a click.", APP, "Start free")}"""
+    page(
+        "/templates",
+        "Free form templates for every industry | Claritia",
+        f"{len(T)} free form templates for {len(IND)} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try each one, then use it in a click.",
+        body,
+        [crumbs([("Templates", "/templates")]), {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in INDEX_QA]}],
+    )
 
 
 def sitemap():
@@ -529,6 +709,7 @@ if __name__ == "__main__":
     slugs = [t["slug"] for t in T]
     assert len(set(slugs)) == len(slugs), "template slugs repeat"
     assert not set(slugs) & {ind_slug(i["value"]) for i in IND}, "a template and an industry share a slug"
+    write_styles()
     index_page()
     for i in IND:
         industry_page(i)
