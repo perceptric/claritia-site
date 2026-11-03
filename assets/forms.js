@@ -252,9 +252,18 @@
       });
       return { shown: shown, vals: vals };
     }
+    // The pages this person will see, in order: Next, or a page's paths by answer, then its skip; "end" stops.
     function livePages(v) {
-      var out = [];
-      s.pages.forEach(function (p, i) { if (p.fields.some(function (f) { return v.shown[f.key] && f.kind !== "hidden"; })) out.push(i); });
+      var out = [], i = 0, n = s.pages.length, guard = 0;
+      while (i < n && guard++ < 64) {
+        var p = s.pages[i];
+        if (p.fields.some(function (f) { return v.shown[f.key] && f.kind !== "hidden"; })) out.push(i);
+        var to = i + 1;
+        var j = (p.jumps || []).filter(function (x) { return meets(x.when, v.vals); })[0];
+        if (j) to = j.to;
+        else if (p.skip && meets(p.skip.when, v.vals)) to = p.skip.to;
+        i = to > i ? to : i + 1;
+      }
       return out.length ? out : [0];
     }
 
@@ -337,10 +346,12 @@
       return { v: v, lp: lp, i: i, last: last };
     }
 
+    // Checks the fields on these pages (a page number, or a list of the pages someone will see).
     function validate(onlyPage) {
       var st = view(), bad = null;
+      var on = function (pg) { return onlyPage == null || (Array.isArray(onlyPage) ? onlyPage.indexOf(pg) > -1 : pg === onlyPage); };
       all.forEach(function (x) {
-        if (!st.shown[x.f.key] || (onlyPage != null && x.page !== onlyPage)) return;
+        if (!st.shown[x.f.key] || !on(x.page)) return;
         var msg = check(x.f, value(x.f));
         showErr(x.f.key, msg);
         if (msg && !bad) bad = x;
@@ -423,7 +434,7 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var st = render();
-      var bad = validate(st.last ? null : at);
+      var bad = validate(st.last ? st.lp : at);
       if (bad) {
         if (bad.page !== at) { at = bad.page; render(); validate(at); }
         focus(bad);
@@ -434,6 +445,15 @@
     });
     next.type = "submit";
     back.addEventListener("click", function () { var st = render(); if (st.i > 0) { at = st.lp[st.i - 1]; render(); top(); } });
+    // A cover screen: the form waits behind it until Start.
+    var cover = form.querySelector("[data-cover]");
+    if (cover) {
+      form.classList.add("has-cover");
+      cover.querySelector("[data-start]").addEventListener("click", function () { form.classList.remove("has-cover"); render(); top(); });
+    }
+    // Save and finish later: on the live form it emails a link; here it says so.
+    var later = form.querySelector("[data-later]");
+    if (later) later.addEventListener("click", function () { var note = form.querySelector(".cf__later-note"); note.hidden = !note.hidden; });
     form.querySelector(".cf__restart").addEventListener("click", function () {
       form.reset();
       Object.keys(sigs).forEach(function (k) { sigs[k] = false; var c = form.querySelector('canvas[data-sig="' + k + '"]'); c.getContext("2d").clearRect(0, 0, c.width, c.height); });
@@ -443,6 +463,7 @@
       form.querySelectorAll(".is-bad").forEach(function (x) { x.classList.remove("is-bad"); });
       form.querySelectorAll(".cf__err").forEach(function (x) { x.hidden = true; });
       form.classList.remove("is-done");
+      if (cover) form.classList.add("has-cover");
       end.hidden = true;
       at = 0;
       render();

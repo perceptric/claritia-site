@@ -104,6 +104,8 @@
 .tasks { max-height: 360px; overflow-y: auto; }
 .tasks li { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; align-items: baseline; gap: 8px; padding: 9px 16px; border-bottom: 1px solid var(--line-light); font-size: 13.5px; }
 .tasks li:last-child { border-bottom: 0; }
+.tasks li.tasks__page { background: var(--surface-3); font-weight: 500; color: var(--ink); }
+.tasks li.tasks__page .tasks__n, .tasks li.tasks__page .tasks__k { color: var(--meta); }
 .tasks__n { font-size: 11px; color: var(--faint); }
 .tasks__k { font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
 .tchecks { margin: 0; padding: 14px 16px 16px; gap: 10px; }
@@ -378,6 +380,19 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
 .fth[data-shadow="hard"] .cf__btn { box-shadow: var(--f-shadow-hard); }
 .cf__btn--ghost { border-color: var(--f-border); background: transparent; color: var(--f-text); }
 .cf__btn[hidden] { display: none; }
+/* Multi-page: a cover screen before the first page, and Save and finish later beside Next. */
+.cf__cover { display: none; }
+.cf.has-cover .cf__cover { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 8px 0 4px; }
+.cf.has-cover .cf__page, .cf.has-cover .cf__acts, .cf.has-cover .cf__prog, .cf.has-cover .cf__notice, .cf.has-cover .cf__later-note { display: none !important; }
+.cf__cover-t { font-family: var(--f-head); font-size: 22px; line-height: 1.2; font-weight: var(--f-head-weight); letter-spacing: -0.015em; }
+.cf__cover-p { font-size: 15px; line-height: 1.55; color: var(--f-muted); }
+.cf__cover-n { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--f-muted); }
+.cf__cover .cf__btn { margin-top: 6px; }
+.cf__acts { flex-wrap: wrap; align-items: center; }
+.cf__later { margin-left: auto; height: 44px; padding: 0 6px; font: inherit; font-size: 14px; color: var(--f-muted); background: none; border: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.cf__later:hover { color: var(--f-text); }
+.cf__later + .cf__btn { margin-left: 0; }
+.cf__later-note { margin-top: -12px; font-size: 12.5px; line-height: 1.5; color: var(--f-muted); }
 .cf__notice { margin-top: -12px; font-size: 12px; line-height: 1.55; color: var(--f-muted); }
 .cf__end { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .cf__end[hidden] { display: none; }
@@ -441,3 +456,6 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
 .tcombo { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: -8px; margin-bottom: 8px; }
 .tcombo__l { margin-right: 4px; font-size: 13px; font-weight: 500; color: var(--meta); }
 .tcombo .chip { display: inline-flex; align-items: center; }
+
+/* The Multi-page shelf on the gallery */
+.tmore { display: flex; justify-content: center; margin-top: 28px; }

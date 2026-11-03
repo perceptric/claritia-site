@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 9, 9
+CSS_V, JS_V = 10, 10
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -62,6 +62,7 @@ def tally(key):
 
 
 N = {"family": tally("families"), "category": tally("categories"), "team": tally("teams"), "sub": tally("subs"), "industry": tally("industries")}
+N["layout"] = {"steps": sum(1 for t in T if t["layout"] == "steps")}
 COUNT = N["industry"]
 HAS_PAGE = {
     "family": [x["id"] for x in FAM if N["family"].get(x["id"], 0) >= MIN],
@@ -74,6 +75,8 @@ PAGED = {k: set(v) for k, v in HAS_PAGE.items()}
 
 
 def path_of(kind: str, v: str) -> str:
+    if kind == "layout":
+        return "/templates/multi-page"
     if kind == "family":
         return f"/templates/group/{v}"
     if kind == "category":
@@ -86,10 +89,12 @@ def path_of(kind: str, v: str) -> str:
 
 
 def label_of(kind: str, v: str) -> str:
-    return {"family": FAM_LABEL, "category": CAT_LABEL, "team": TEAM_LABEL, "sub": SUB_LABEL, "industry": IND_LABEL}[kind][v]
+    return {"family": FAM_LABEL, "category": CAT_LABEL, "team": TEAM_LABEL, "sub": SUB_LABEL, "industry": IND_LABEL, "layout": {"steps": "Multi-page"}}[kind][v]
 
 
 def items_of(kind: str, v: str):
+    if kind == "layout":
+        return [t for t in ORDERED if t["layout"] == v]
     key = {"family": "families", "category": "categories", "team": "teams", "sub": "subs", "industry": "industries"}[kind]
     return [t for t in ORDERED if v in t[key]]
 
@@ -352,6 +357,15 @@ def field(f) -> str:
     return ""
 
 
+def cover_html(s) -> str:
+    """A cover screen: a title, a line and Start. Without JS the form shows under it."""
+    c = s.get("cover")
+    if not c:
+        return ""
+    line = f'<p class="cf__cover-p">{esc(c["text"])}</p>' if c.get("text") else ""
+    return f'<div class="cf__cover" data-cover><h3 class="cf__cover-t">{esc(c["title"])}</h3>{line}<p class="cf__cover-n">{len(s["pages"])} pages</p><button type="button" class="cf__btn" data-start>{esc(c.get("button") or "Start")}</button></div>'
+
+
 def live_form(t) -> str:
     s = t["schema"]
     pages = []
@@ -365,8 +379,10 @@ def live_form(t) -> str:
     return f"""<form class="cf" novalidate data-cf>
   <div class="cf__head"><h2 class="cf__title">{esc(s["title"])}</h2>{f'<p class="cf__intro">{esc(s["intro"])}</p>' if s.get("intro") else ""}</div>
   {'<div class="cf__prog" hidden><span class="cf__prog-l"></span><span class="cf__prog-n"></span><span class="cf__bar"><i></i></span></div>' if multi else ""}
+  {cover_html(s)}
   {"".join(pages)}
-  <div class="cf__acts"><button type="button" class="cf__btn cf__btn--ghost" data-back hidden>Back</button><button type="button" class="cf__btn" data-next data-submit-label="{esc(s["submit"])}">{esc(s["submit"] if not multi else "Next")}</button></div>
+  <div class="cf__acts"><button type="button" class="cf__btn cf__btn--ghost" data-back hidden>Back</button>{'<button type="button" class="cf__later" data-later>Save and finish later</button>' if s.get("resume") else ""}<button type="button" class="cf__btn" data-next data-submit-label="{esc(s["submit"])}">{esc(s["submit"] if not multi else "Next")}</button></div>
+  {'<p class="cf__later-note" hidden>On the live form, this emails a link that opens the form where they stopped.</p>' if s.get("resume") else ""}
   {notice}
   <div class="cf__end" hidden role="status"><span class="cf__end-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></span><h3 class="cf__end-t">{esc(end["title"])}</h3><div class="cf__score" hidden></div>{f'<p class="cf__end-p">{esc(end["text"])}</p>' if end.get("text") else ""}{'<div class="cf__book" data-book><div class="cf__days" role="group" aria-label="Day"></div><div class="cf__times" role="group" aria-label="Time"><button type="button">9:00 am</button><button type="button">10:30 am</button><button type="button">1:00 pm</button><button type="button">3:30 pm</button></div><p class="cf__book-note" hidden>Sample times. In the live form this books the meeting on your calendar.</p></div>' if end.get("booking") else ""}<p class="cf__demo">This is a preview, so nothing was sent. <a href="{APP}/forms/templates/{t['slug']}">Use this form template</a> to take real answers.</p><button type="button" class="cf__restart">Start over</button></div>
   <script type="application/json" class="cf__data">{data}</script>
@@ -416,6 +432,7 @@ def rail(current) -> str:
     return (
         '<nav class="trail" aria-label="Form template menus">'
         f'<a class="trail__i{" is-on" if all_on else ""}" href="/templates"{" aria-current=\"page\"" if all_on else ""}><span>All form templates</span><small>{len(T)}</small></a>'
+        + rail_row("layout", "steps", kind == "layout")
         + menu("Category", cat_rows, True)
         + menu("Industry", ind_rows, True)
         + menu("Team", team_rows, kind == "team" or all_on)
@@ -450,7 +467,7 @@ def jump(current) -> str:
     cats = [("category", c) for c in HAS_PAGE["category"] if CAT_FAM[c] == fam_open] if fam_open else []
     inds = [("industry", i) for i in HAS_PAGE["industry"] if COUNT.get(i, 0) >= MIN]
     teams = [("team", x) for x in HAS_PAGE["team"]]
-    body = '<a href="/templates">All form templates</a>' + group("Category", fams + cats) + group("Industry", inds) + group("Team", teams)
+    body = '<a href="/templates">All form templates</a><a href="/templates/multi-page">Multi-page</a>' + group("Category", fams + cats) + group("Industry", inds) + group("Team", teams)
     return f'<details class="tjump"><summary>{esc(here)} <svg aria-hidden="true"><use href="#i-chev"/></svg></summary><div class="tjump__list">{body}</div></details>'
 
 
@@ -800,6 +817,18 @@ def template_page(t):
     s = t["schema"]
     fl = [f for f in fields_of(t) if f["kind"] != "hidden"]
     asks = "".join(f'<li><span class="tasks__n">{n + 1}</span><span class="tasks__t">{esc(f["label"])}</span><span class="tasks__k">{esc(KIND[f["kind"]])}</span></li>' for n, f in enumerate(fl))
+    if len(s["pages"]) > 1:
+        # Multi-page: the questions under each page's title, numbered straight through.
+        rows, n = [], 0
+        for i, pg in enumerate(s["pages"]):
+            qs = [f for f in pg["fields"] if f["kind"] not in ("statement", "hidden")]
+            if not qs:
+                continue
+            rows.append(f'<li class="tasks__page"><span class="tasks__n">{i + 1}</span><span class="tasks__t">{esc(pg.get("title") or f"Page {i + 1}")}</span><span class="tasks__k">{len(qs)}</span></li>')
+            for f in qs:
+                n += 1
+                rows.append(f'<li><span class="tasks__n">{n}</span><span class="tasks__t">{esc(f["label"])}</span><span class="tasks__k">{esc(KIND[f["kind"]])}</span></li>')
+        asks = "".join(rows)
     pages = len(s["pages"])
     tags = "".join(f'<a class="tag tag--link" href="{path_of("category", x)}">{esc(CAT_LABEL[x])}</a>' if x in PAGED["category"] else f'<span class="tag">{esc(CAT_LABEL[x])}</span>' for x in t["categories"])
     alike = [x for x in ORDERED if x["id"] != t["id"] and set(x["categories"]) & set(t["categories"])]
@@ -844,6 +873,9 @@ def template_page(t):
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>The thank-you screen opens your booking link, with the name and email filled in.</li>' if s["end"].get("booking") else ""}
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>Each person sees their score and what it means.</li>' if s["end"].get("score") else ""}
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>It comes with a follow-up email, ready for you to read and turn on.</li>' if "follow-up" in t["does"] else ""}
+            {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>People can save and finish later from a link sent by email.</li>' if s.get("resume") else ""}
+            {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>After sending, people can download a PDF copy of their answers.</li>' if s.get("copy") else ""}
+            {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>People skip the pages that don&#39;t apply to them.</li>' if any(p.get("skip") or p.get("jumps") for p in s["pages"]) else ""}
           </ul>
         </div>
         <a class="btn btn--primary tbox__cta" href="{use}?theme={t["theme"]}" data-use="{use}">Use form template <span class="nudge" aria-hidden="true">&rarr;</span></a>
@@ -915,6 +947,14 @@ def browse() -> str:
     return f'<div class="tcats reveal" data-delay="1">{"".join(cols)}</div>'
 
 
+# The Multi-page shelf: the longest form templates, 4 pages or more, newest first.
+LONG = sorted((t for t in T if len(t["schema"]["pages"]) >= 4), key=lambda t: (t.get("added") or "", len(t["schema"]["pages"])), reverse=True)
+
+
+def multipage_page():
+    list_page("layout", "steps", "Multi-page form templates", f"{N['layout']['steps']} form templates that take people through one page at a time, with a progress bar, skips past pages that don't apply and save and finish later on the long ones.", [])
+
+
 def index_page():
     body = f"""<section class="thero">
     <div class="wrap"><div class="thero__in">
@@ -926,6 +966,13 @@ def index_page():
   </section>
   <div id="all"></div>
   {gallery(("all", ""), ORDERED)}
+  <section class="section section--tint" id="multi-page">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="eyebrow">Multi-page</p><h2 class="h2">Long forms, one page at a time.<br><span class="two">{N["layout"]["steps"]} multi-page form templates.</span></h2></div>
+      <div class="tgrid tgrid--3 reveal" data-delay="1">{"".join(card(t) for t in LONG[:6])}</div>
+      <p class="tmore reveal" data-delay="2"><a class="btn btn--ghost" href="/templates/multi-page">See all multi-page form templates <span class="nudge" aria-hidden="true">&rarr;</span></a></p>
+    </div>
+  </section>
   <section class="section" id="categories">
     <div class="wrap">
       <div class="sec-head reveal"><p class="eyebrow">Categories</p><h2 class="h2">Every kind of form.<br><span class="two">{len(HAS_PAGE["category"])} categories in {len(HAS_PAGE["family"])} groups.</span></h2></div>
@@ -972,7 +1019,7 @@ def sitemap():
     sm = ROOT / "sitemap.xml"
     text = sm.read_text()
     text = re.sub(r"\s*<!-- templates:start -->.*?<!-- templates:end -->", "", text, flags=re.S)
-    urls = ["/templates"] + [path_of(k, v) for k in ("family", "category", "industry", "sub", "team") for v in HAS_PAGE[k]] + [f"/templates/kits/{k['id']}" for k in KITS] + [combo_path(c, i) for c, i, _ in combos()] + [f"/templates/{t['slug']}" for t in T]
+    urls = ["/templates", "/templates/multi-page"] + [path_of(k, v) for k in ("family", "category", "industry", "sub", "team") for v in HAS_PAGE[k]] + [f"/templates/kits/{k['id']}" for k in KITS] + [combo_path(c, i) for c, i, _ in combos()] + [f"/templates/{t['slug']}" for t in T]
     lines = "\n".join(f"  <url><loc>{SITE}{u}</loc></url>" for u in urls)
     text = text.replace("</urlset>", f"  <!-- templates:start -->\n{lines}\n  <!-- templates:end -->\n</urlset>")
     sm.write_text(text)
@@ -981,7 +1028,7 @@ def sitemap():
 if __name__ == "__main__":
     slugs = [t["slug"] for t in T]
     assert len(set(slugs)) == len(slugs), "template slugs repeat"
-    assert not set(slugs) & ({ind_slug(i["value"]) for i in IND} | {"group", "category", "team", "kits"}), "a template and a list page share a slug"
+    assert not set(slugs) & ({ind_slug(i["value"]) for i in IND} | {"group", "category", "team", "kits", "multi-page"}), "a template and a list page share a slug"
     write_styles()
     index_page()
     for i in IND:
@@ -995,6 +1042,7 @@ if __name__ == "__main__":
         category_page(c)
     for x in HAS_PAGE["team"]:
         team_page(x)
+    multipage_page()
     for k in KITS:
         kit_page(k)
     for c, i, items in combos():
