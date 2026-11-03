@@ -11,7 +11,7 @@ esc = shell.esc
 PLANS = [
     {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"),
-     "top": ["Unlimited forms", "250 submissions/month", "1 calendar per seat", "100 AI credits/month", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and step skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
+     "top": ["Unlimited forms", "250 submissions/month", "1 calendar per seat", "100 AI credits/month", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and page skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
     {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Free",
      "top": ["Unlimited forms", "2,000 submissions/month", "6 calendars per seat", "500 AI credits/month", "Unlimited meeting types", "e-Signatures", "Stripe payment", "Custom brand", "Redirect on completion", "Booking pages for each person and the team", "Group meetings with a guest limit", "Meeting polls", "Paid meetings with Stripe"]},
@@ -42,7 +42,7 @@ GROUPS = [
         ("Multi-page forms + progress bar", [Y, Y, Y, Y]),
         ("15 field types", [Y, Y, Y, Y]),
         ("File uploads", [Y, Y, Y, Y]),
-        ("Conditional logic and step skips", [Y, Y, Y, Y]),
+        ("Conditional logic and page skips", [Y, Y, Y, Y]),
         ("Calculations and formulas", [Y, Y, Y, Y]),
         ("Hidden fields (UTM tags, page, referrer)", [Y, Y, Y, Y]),
         ("Pre-fill from the link", [Y, Y, Y, Y]),

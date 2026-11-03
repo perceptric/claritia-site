@@ -18,7 +18,7 @@ Each plan is priced per seat. A seat is a teammate people can book a meeting wit
 | Multi-page forms + progress bar | Yes | Yes | Yes | Yes |
 | 15 field types | Yes | Yes | Yes | Yes |
 | File uploads | Yes | Yes | Yes | Yes |
-| Conditional logic and step skips | Yes | Yes | Yes | Yes |
+| Conditional logic and page skips | Yes | Yes | Yes | Yes |
 | Calculations and formulas | Yes | Yes | Yes | Yes |
 | Hidden fields (UTM tags, page, referrer) | Yes | Yes | Yes | Yes |
 | Pre-fill from the link | Yes | Yes | Yes | Yes |

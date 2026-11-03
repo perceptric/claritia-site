@@ -217,12 +217,12 @@ def forms_page():
              '<span class="pd-label">Embed</span><div class="pd-code">&lt;script src="https://app.tryclaritia.com/forms/v1.js" async&gt;&lt;/script&gt;\n&lt;claritia-form form-id="demo-request"&gt;&lt;/claritia-form&gt;</div>'
              '<span class="pd-label">Shows as</span><div class="pd-tabs"><span class="is-on">In the page</span><span>Popup</span><span>Slide in</span><span>Corner button</span><span>Side tab</span></div>')
     main = (
-        frame(hero("form", "Forms", "Forms that turn visitors into leads", "Describe the form you need and Tia builds it in your brand, with steps, logic, prices and payments, and the meeting booked at the end.", ("See all templates", "/templates"), shot))
+        frame(hero("form", "Forms", "Forms that turn visitors into leads", "Describe the form you need and Tia builds it in your brand, with pages, logic, prices and payments, and the meeting booked at the end.", ("See all templates", "/templates"), shot))
         + frame(then_now("Instead of a form tool, a scheduler and a spreadsheet, one place for every lead", "Each answer, booking and follow-up stays on the same record.",
                          [("form", "Build the form in one tool", "Copy and paste"), ("cal", "Send a booking link by email", "Half never book"), ("table", "Paste answers into a sheet", "By hand"), ("mail", "Write each follow-up", "Often late")],
-                         [("spark", "Tia builds the form", "In minutes"), ("cal", "The calendar is the last step", "Booked on the page"), ("table", "Every answer saved and synced", "On its own"), ("mail", "Follow-ups go out", "On time")]))
+                         [("spark", "Tia builds the form", "In minutes"), ("cal", "The calendar is the last page", "Booked on the page"), ("table", "Every answer saved and synced", "On its own"), ("mail", "Follow-ups go out", "On time")]))
         + frame(features("Everything you need to turn a visit into a lead", [
-            ("Describe it, and Tia builds it", "Say what the form is for. Tia asks what's missing, writes the questions and steps, links a meeting and drafts the follow-ups. Change anything by asking.", None, card("Tia", TIA)),
+            ("Describe it, and Tia builds it", "Say what the form is for. Tia asks what's missing, writes the questions and pages, links a meeting and drafts the follow-ups. Change anything by asking.", None, card("Tia", TIA)),
             ("Logic, prices and payments", "Show a question only when an earlier answer calls for it. Price every option as people answer, and take a payment or a deposit with Stripe.", "Payments on Starter", card("Catering quote", price, "Example")),
             ("It looks like your website", "Tia reads your site and copies its colors, fonts, buttons and fields. Or start from one of 18 styles.", None, card("Read from acme.com", brand)),
             ("Every answer, ready to use", "Each fill is saved with the page and campaign it came from, then sent to HubSpot, Salesforce, Google Sheets, Slack or your email list.", None, card("Submissions", hogan, "Example data")),
@@ -281,7 +281,7 @@ def meetings_page():
             ("Connect your calendar", "Google or Outlook in one click. Busy times stay fresh."),
             ("Set your hours", "Working hours, buffers, notice and daily caps."),
             ("Create a meeting type", "Who hosts it, how long it runs and where it happens."),
-            ("Share it, or add it to a form", "A booking page, a link in an email, or the last step of a form."),
+            ("Share it, or add it to a form", "A booking page, a link in an email, or the last page of a form."),
         ], card("Availability", hours)))
         + frame(shelf("Forms that book a meeting", "Each one ends on the calendar. Open one and try it.", ["general-book-a-call", "wellness-new-patient", "education-course-inquiry", "pets-grooming", "education-tutoring", "hospitality-group-booking"], "See all booking templates", "/templates/group/booking"))
         + cta()
@@ -334,7 +334,7 @@ def routing_page():
 # The index ------------------------------------------------------------------------------------------------------------
 
 def index_page():
-    items = [("01", "forms", "Forms", "Describe a form and Tia builds it in your brand, with steps, logic, prices and payments."),
+    items = [("01", "forms", "Forms", "Describe a form and Tia builds it in your brand, with pages, logic, prices and payments."),
              ("02", "meetings", "Meetings", "Booking pages, team meetings and a calendar inside your forms, with reminders built in."),
              ("03", "routing", "Routing", "Each answer picks the meeting and the person, and the team takes turns fairly.")]
     trio = "".join(f'<a href="/products/{k}"><b>{n}</b><h2>{t}</h2><p>{esc(line)}</p><em>See {t} {I("arrow", "i s14 arr")}</em></a>' for n, k, t, line in items)

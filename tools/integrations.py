@@ -141,7 +141,7 @@ TOOLS = {
             ("route", "Set the owner", "Use the person Routing picks, or let Salesforce assignment rules decide.", "Business"),
             ("cal", "Book with the record owner", "A lead Salesforce already knows books with its owner first. New leads go to the team's round robin.", "Business"),
             ("check", "Fills as tasks", "Each fill shows as a completed task on the lead or contact.", "Business"),
-            ("form", "More than web-to-lead", "Steps, logic, spam checks and a booked meeting, with the same lead landing in Salesforce.", "Business"),
+            ("form", "More than web-to-lead", "Pages, logic, spam checks and a booked meeting, with the same lead landing in Salesforce.", "Business"),
         ],
         "steps": [
             ("Connect Salesforce", "Go to Settings, then Integrations, and sign in with Salesforce. No API keys."),
@@ -151,7 +151,7 @@ TOOLS = {
         "vis": lambda: crm_panel("Salesforce", "salesforce.svg", row("Make them as", seg(["Leads", "Contacts"], "Leads"))),
         "faq": [
             ("Which plan has the Salesforce integration?", "Business, at $79/seat/month, or $63/seat/month billed yearly."),
-            ("Can a Claritia form replace a Salesforce web-to-lead form?", "Yes. It sends the same lead to Salesforce, and adds steps, show-if logic, spam checks and a meeting booked at the end."),
+            ("Can a Claritia form replace a Salesforce web-to-lead form?", "Yes. It sends the same lead to Salesforce, and adds pages, show-if logic, spam checks and a meeting booked at the end."),
             ("Does it make duplicate leads?", "No. When Salesforce already has the email, the fill links to that lead or contact. Only new emails make new records."),
             ("Can Salesforce assignment rules pick the owner?", "Yes. Pick Salesforce decides, and its assignment rules run on each new record."),
             ("What happens if Salesforce is down?", "Every fill is saved in Claritia first. The send to Salesforce tries again on its own with longer waits."),
@@ -281,12 +281,12 @@ TOOLS = {
     "webflow": {
         "name": "Webflow", "logo": "webflow.svg", "group": "Website", "plan": "Free",
         "h1": "Webflow form integration",
-        "desc": "Add Claritia forms to Webflow with one Embed element, or keep your Webflow form and book a meeting the moment it's sent. Multi-step forms and logic with no custom code.",
+        "desc": "Add Claritia forms to Webflow with one Embed element, or keep your Webflow form and book a meeting the moment it's sent. Multi-page forms and logic with no custom code.",
         "sub": "Put a Claritia form on your Webflow site with one Embed element, or keep your Webflow form and book a meeting the moment it's sent.",
         "caps": [
             ("globe", "One embed", "Paste one snippet into a Webflow Embed element. It works on every page and on phones.", None),
             ("form", "Keep your Webflow form", "Claritia hears your Webflow form send and opens the right calendar on the same page.", None),
-            ("route", "Multi-step forms and logic", "Steps, show-if logic and prices, with no custom code.", None),
+            ("route", "Multi-page forms and logic", "Pages, show-if logic and prices, with no custom code.", None),
             ("type", "Your site's look", "Tia reads your Webflow site and matches its fonts, colors and buttons.", "Pro"),
             ("hook", "Fills from Webflow forms", "Webflow form fills come into Claritia by webhook, so they book and follow up the same way.", "Starter"),
             ("eyeoff", "Spam stays out", "Cloudflare Turnstile and a hidden trap keep bots off your forms.", None),
@@ -299,7 +299,7 @@ TOOLS = {
         "vis": lambda: f'<pre class="ix-code"><code>{esc(SCRIPT_TAG + chr(10) + EMBED)}</code></pre>',
         "faq": [
             ("How do I add a Claritia form to Webflow?", "Drop an Embed element where the form goes, paste the snippet from the form's Share tab, then publish."),
-            ("Can I make a multi-step form in Webflow?", "Yes. Build the steps and show-if logic in Claritia and embed it. No custom code in Webflow."),
+            ("Can I make a multi-page form in Webflow?", "Yes. Build the pages and show-if logic in Claritia and embed it. No custom code in Webflow."),
             ("Can I keep my Webflow form?", "Yes. Add the Claritia script and point it at your Webflow form. When the form sends, the calendar opens and the lead books."),
             ("Will it slow my site down?", "No. The script loads after the page, so your Webflow page draws first."),
             ("Where do the answers go?", "Into Claritia first, then to the tools you connect: HubSpot, Salesforce, Google Sheets, Airtable, Notion, Slack, email lists and webhooks."),

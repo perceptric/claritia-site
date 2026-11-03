@@ -371,7 +371,7 @@ def live_form(t) -> str:
     pages = []
     for i, p in enumerate(s["pages"]):
         title = f'<p class="cf__ptitle">{esc(p["title"])}</p>' if p.get("title") else ""
-        pages.append(f'<fieldset class="cf__page" data-page="{i}"><legend class="sr-only">Step {i + 1}</legend>{title}<div class="cf__fields">{"".join(field(f) for f in p["fields"])}</div></fieldset>')
+        pages.append(f'<fieldset class="cf__page" data-page="{i}"><legend class="sr-only">Page {i + 1}</legend>{title}<div class="cf__fields">{"".join(field(f) for f in p["fields"])}</div></fieldset>')
     multi = len(s["pages"]) > 1
     notice = "" if t["internal"] else '<p class="cf__notice">We\'ll use your details to reply and may email you about related products. You can unsubscribe at any time.</p>'
     end = s["end"]
@@ -722,7 +722,7 @@ KINDS_SHOWN = ["short_text", "long_text", "email", "phone", "url", "number", "mo
                "scale", "ranking", "matrix", "date", "time", "date_range", "name", "address", "file", "signature", "statement", "hidden"]
 FEATS = [
     ("Show-if logic", "Ask the next question only when an earlier answer calls for it."),
-    ("Pages and progress", "Split long forms into steps with a progress bar."),
+    ("Pages and progress", "Split long forms into pages with a progress bar."),
     ("Scores and results", "Turn answers into a score and show each person what it means."),
     ("Files and signatures", "Take uploads up to 10 MB and signatures drawn on any screen."),
     ("Booking", "Open your calendar on the thank-you screen, with name and email filled in."),
