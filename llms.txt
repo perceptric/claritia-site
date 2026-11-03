@@ -22,6 +22,15 @@
 - [Forms](https://tryclaritia.com/products/forms): forms built from a sentence, with steps, logic, prices, payments and booking inside
 - [Meetings](https://tryclaritia.com/products/meetings): booking pages, team meetings, polls and reminders on Google and Outlook
 - [Routing](https://tryclaritia.com/products/routing): each lead to the right meeting and person, with round robin and a log of every decision
+- [Integrations](https://tryclaritia.com/integrations): every tool Claritia connects to, one click each
+- [HubSpot](https://tryclaritia.com/integrations/hubspot): form fills as HubSpot contacts, matched by email, with owners and booking (Starter)
+- [Salesforce](https://tryclaritia.com/integrations/salesforce): form fills as Salesforce leads or contacts, with owners and booking (Business)
+- [Google Calendar](https://tryclaritia.com/integrations/google-calendar): busy times, bookings and Google Meet links (every plan)
+- [Outlook](https://tryclaritia.com/integrations/outlook): Outlook and Microsoft 365 busy times, bookings and Teams links (every plan)
+- [Zoom](https://tryclaritia.com/integrations/zoom): a Zoom link for each booked meeting, on the host's own account (every plan)
+- [Slack](https://tryclaritia.com/integrations/slack): new lead alerts, a message to the rep and /book (Starter)
+- [Webflow](https://tryclaritia.com/integrations/webflow): Claritia forms on Webflow with one Embed element, or keep your Webflow form
+- [Stripe](https://tryclaritia.com/integrations/stripe): payments and deposits in forms, and paid meetings, on your own Stripe account (Starter)
 - [Pricing](https://tryclaritia.com/pricing): Free, Starter $15, Pro $39 and Business $79 a month with 1 host, then a price per extra host ([Markdown](https://tryclaritia.com/pricing.md))
 - [Form templates](https://tryclaritia.com/templates): 150 free forms for 24 industries (demo requests, quotes, intake, applications, surveys, quizzes), each with its own page to try it and use it
 - [App](https://app.tryclaritia.com): sign in and start
