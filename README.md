@@ -3,26 +3,22 @@
 Static site for Claritia. Plain HTML, CSS and a little JavaScript: no WordPress, no build step, no library.
 Push to `main` and Hostinger deploys it.
 
-The home page tells one story: Dana Lee from Acme visits Lumen's pricing page (Lumen is a Claritia customer).
-Claritia names her company, fills the form for her, scores and qualifies her, routes her to Sam and books the
-meeting, all in about twenty seconds. The look is the same family as tryomniscient.com (`BRAND.md`).
+The home page shows the product: forms, meetings, workflows and routing, a sample of the app, the tools it connects,
+form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 
 ## How it's laid out
 
 | Path | What |
 |---|---|
-| `index.html` | The home page: hero, tools strip, product tour, the nine tools, AI, try it, keep your stack, reliability, the suite, pricing, questions, closing band. |
-| `404.html` | Page not found. |
-| `assets/site.css` | Tokens, type, buttons, tags, header, phone menu, footer and every home section except the tour. |
-| `assets/tour.css`, `assets/tour.js` | The product tour (Capture, Qualify, Route, Book), played on a clock with tabs and controls. Same engine as tryomniscient.com. |
-| `assets/site.js` | Menus, phone menu, header line on scroll, scroll reveals, the pricing switch and Try it. |
-| `assets/img/feat-*.svg` | The nine animated product drawings. |
+| `index.html` | The home page: hero with the prompt, why, how it works, compare, tools, integrations, templates, numbers, pricing, questions and the last prompt. It also holds the header, phone menu and footer every page shares. |
+| `404.html`, `privacy/`, `terms/` | Page not found and the legal pages. Written by `tools/legal.py`. |
+| `assets/site.css` | Tokens, type, buttons, chips, tags, the header, phone menu, footer, and every home section. |
+| `assets/site.js` | Menus, the phone menu, scroll reveals and the pricing switch. |
+| `assets/home.js` | Home only: the blinking tiles, prompt suggestions, the How it works steps and the Compare switch. |
 | `assets/logos/` | Logos of the tools Claritia works with. |
 | `assets/brand/` | Mark, favicon, Apple touch icon and the share image (`og-image.png`). |
-| `tools/hero.py` | Writes the hero picture (the Catch) into `index.html`. |
-| `tools/tour.py` | Writes the product tour into `index.html`. Run after `tools/hero.py`. |
-| `tools/feats.py` | Writes `assets/img/feat-*.svg`. |
-| `templates/` | The form template gallery: `/templates`, one page per industry and one per template (150), each with the form to try. Written by `tools/templates.py`. |
+| `tools/shell.py` | Copies the sprite, header, phone menu and footer out of `index.html` and writes the shared `<head>`. |
+| `templates/` | The form template gallery: `/templates`, list pages and one page per template, each with the form to try. Written by `tools/templates.py`. |
 | `tools/templates.py`, `tools/templates.json` | Writes `templates/` and its lines in `sitemap.xml` from the template data, which comes from the app (`node scripts/export-templates.ts` in `dev-arrowsterr/claritia`). |
 | `assets/forms.css`, `assets/forms.js` | The gallery's search and filters, the style menu and Shuffle, and the live forms: pages, show-if logic, checks and the end screen. |
 | `assets/themes.css`, `assets/form-art/` | The 18 form styles and their drawings. Written by `tools/templates.py` from the app's `src/lib/forms/themes.ts`. |
@@ -31,10 +27,11 @@ meeting, all in about twenty seconds. The look is the same family as tryomniscie
 
 ## Editing
 
-- **Words outside the tour:** edit `index.html`.
-- **The tour or the hero picture:** edit `tools/tour.py` or `tools/hero.py`, then run
-  `python3 tools/hero.py && python3 tools/tour.py`. Don't edit between the `tour:` and `catch:` marks by hand.
-- **CSS or JS:** edit the file, then raise `?v=` on its link in `index.html` and `404.html`.
+- **Words on the home page:** edit `index.html`.
+- **The header, phone menu or footer:** edit them in `index.html`, then run `python3 tools/templates.py && python3 tools/legal.py`
+  so every page gets them.
+- **CSS or JS:** edit the file, then raise `?v=` on its link in `index.html` and `SITE_CSS_V` or `SITE_JS_V` in
+  `tools/shell.py`, and run the two tools above.
 - **Form templates:** templates are written in the app repo. To refresh the site, run
   `node scripts/export-templates.ts > ../claritia-site/tools/templates.json` there, then `python3 tools/templates.py` here.
   Don't edit `templates/` by hand. For `forms.css` or `forms.js`, raise `CSS_V` or `JS_V` in `tools/templates.py`.
@@ -45,5 +42,5 @@ Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 ## Running cost
 
 $0 added at Beta (50 teams) and at Growth (500 teams). The site is static on the existing Hostinger plan, and so are
-the 175 form template pages (about 6 MB).
+the 700 gallery pages.
 Fonts come from Google Fonts for free. No new paid service.

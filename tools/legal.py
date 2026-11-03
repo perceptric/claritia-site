@@ -1,67 +1,38 @@
 """Builds /privacy/index.html and /terms/index.html from the text below. Run: python3 tools/legal.py"""
-import html, re, pathlib
+import html, re, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 UPDATED = "October 30, 2026"
 
-HEAD = """<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} · Claritia</title>
-<meta name="description" content="{desc}">
-<link rel="canonical" href="https://tryclaritia.com/{slug}">
-<link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
-<link rel="icon" href="/assets/brand/claritia-mark.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
-<meta name="theme-color" content="#ffffff">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=7">
-<style>
-.legal{{width:100%;max-width:720px;margin-inline:auto;padding:96px 16px 112px;color:var(--ink-2);line-height:1.65}}
-.legal h1{{color:var(--ink);margin:8px 0 6px}}
-.legal .upd{{color:var(--muted);font-size:14px;margin:0 0 32px}}
-.legal h2{{color:var(--ink);font-size:20px;font-weight:600;letter-spacing:-.01em;margin:40px 0 10px}}
-.legal p,.legal li{{font-size:16px}}
-.legal ul{{padding-left:20px;display:flex;flex-direction:column;gap:6px}}
-.legal a{{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--light)}}
-.legal table{{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}}
-.legal th,.legal td{{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}}
-.legal th{{color:var(--muted);font-weight:500}}
-.legal .tbl{{overflow-x:auto}}
-.legal .note{{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--tint)}}
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import shell  # noqa: E402
+
+STYLE = """<style>
+.legal{width:calc(var(--frame) - 2 * var(--frame-pad));max-width:720px;margin-inline:auto;padding:72px 0 120px;color:var(--ink-2);line-height:1.65}
+.legal h1{margin:20px 0 6px}
+.legal .upd{color:var(--meta);font-size:14px;margin:0 0 32px}
+.legal h2{color:var(--ink);font-size:20px;font-weight:500;letter-spacing:-.01em;margin:40px 0 10px}
+.legal p,.legal li{font-size:16px}
+.legal p+p{margin-top:12px}
+.legal ul{padding-left:20px;list-style:disc;display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.legal a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line-strong)}
+.legal table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+.legal th,.legal td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.legal th{color:var(--meta);font-weight:500}
+.legal .tbl{overflow-x:auto;border-radius:12px;background:var(--surface);box-shadow:var(--sh-rest);margin:12px 0}
+.legal .note{border-radius:12px;padding:14px 16px;background:var(--surface);box-shadow:var(--sh-rest);margin:12px 0}
 </style>
-</head>
-<body>
-<header class="site-header">
-  <div class="wrap site-header__in">
-    <a class="logo" href="/" aria-label="Claritia home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0C8C5E"/><path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 16.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Claritia</a>
-    <div class="site-actions">
-      <a class="site-actions__signin" href="https://app.tryclaritia.com">Sign in</a>
-      <a class="btn btn--primary" href="https://app.tryclaritia.com">Start free <span aria-hidden="true">&rarr;</span></a>
-    </div>
-  </div>
-</header>
-<main class="legal">
+"""
+
+
+def legal_page(slug, title, desc, updated, body):
+    main = f"""<div class="legal">
 <p class="eyebrow">Legal</p>
 <h1 class="h2">{title}</h1>
 <p class="upd">Last updated: {updated}</p>
 {body}
-</main>
-<footer class="site-footer">
-  <div class="site-footer__base">
-    <div class="wrap site-footer__base-in">
-      <span>&copy; 2026 Perceptric. Claritia is a Perceptric product.</span>
-      <span><a href="/privacy">Privacy</a> &nbsp; <a href="/terms">Terms</a> &nbsp; <a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></span>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
-"""
+</div>"""
+    return shell.head(f"{title} · Claritia", desc, f"/{slug}", STYLE, og=False) + "\n" + shell.body(main)
 
 def md(text: str) -> str:
     """A tiny Markdown: ## headings, - lists, | tables |, > notes, **bold**, [links](url), paragraphs."""
@@ -264,5 +235,16 @@ Email [hello@tryclaritia.com](mailto:hello@tryclaritia.com).
 """
 
 for slug, title, desc, text in [("privacy", "Privacy Policy", "How Claritia collects, uses and protects personal data, including Google user data.", PRIVACY), ("terms", "Terms of Service", "The terms for using Claritia.", TERMS)]:
-    (ROOT / slug / "index.html").write_text(HEAD.format(title=title, desc=desc, slug=slug, updated=UPDATED, body=md(text)))
+    (ROOT / slug / "index.html").write_text(legal_page(slug, title, desc, UPDATED, md(text)))
     print("wrote", slug)
+
+# Page not found
+NOT_FOUND = f"""<div class="reading">
+  {shell.CLOSE_MARK}
+  <p class="eyebrow">404</p>
+  <h1 class="h2">This page isn't here.</h1>
+  <p class="lead">The link may be old. Start from the home page or browse the form templates.</p>
+  <div class="close__ctas" style="justify-content:flex-start"><a class="btn btn--primary btn--lg" href="/">Go home</a><a class="btn btn--ghost btn--lg" href="/templates">Browse templates</a></div>
+</div>"""
+(ROOT / "404.html").write_text(shell.head("Page not found · Claritia", "This page isn't here.", "/404", '<meta name="robots" content="noindex">\n', og=False) + "\n" + shell.body(NOT_FOUND))
+print("wrote 404")

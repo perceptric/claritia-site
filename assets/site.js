@@ -1,4 +1,4 @@
-// Header menus, the phone menu, the header line on scroll, and scroll reveals. No library.
+// Header menus, the phone menu, scroll reveals and the pricing switch. No library.
 (function () {
   // Scroll reveals. These run first and mark the page with rv-on; without it, a timer in the head shows everything.
   var reveals = document.querySelectorAll(".reveal");
@@ -110,59 +110,6 @@
       var yearly = b.getAttribute("data-bill-to") === "yearly";
       document.getElementById("pricing").classList.toggle("is-yearly", yearly);
       btns.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-    });
-  });
-})();
-
-// Try it: a work email builds a lead record, one row at a time. Nothing is sent.
-(function () {
-  var form = document.querySelector("[data-try]");
-  if (!form) return;
-  var rec = document.querySelector("[data-rec]");
-  var input = form.querySelector("input[type=email]");
-  var err = form.querySelector(".try__err");
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var free = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "icloud.com", "aol.com", "proton.me", "protonmail.com", "live.com", "me.com"];
-  var sizes = ["11–50", "51–200", "201–500", "501–1,000"];
-  var kinds = ["SaaS", "Fintech", "Health tech", "Marketplace", "Dev tools", "Security"];
-  var reps = [["Sam", "US team"], ["Lena", "EMEA team"], ["Omar", "Mid-market"], ["Priya", "Enterprise"]];
-  var days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-  function hash(s) { var h = 7; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; }
-  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
-  function set(key, v) { var el = rec.querySelector('[data-v="' + key + '"]'); if (el) el.textContent = v; }
-  var timers = [];
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var v = (input.value || "").trim().toLowerCase();
-    var m = v.match(/^([^@\s]+)@([a-z0-9-]+(\.[a-z0-9-]+)+)$/);
-    if (!m) { err.textContent = "Enter a work email, like dana@acme.com."; input.focus(); return; }
-    if (free.indexOf(m[2]) > -1) { err.textContent = "Use a work email. Personal addresses don't name a company."; input.focus(); return; }
-    err.textContent = "";
-    var h = hash(m[2]);
-    var name = m[1].split(/[._-]/).filter(Boolean).map(cap).join(" ");
-    var co = cap(m[2].split(".")[0]);
-    var rep = reps[h % reps.length];
-    var score = 72 + (h % 25);
-    var day = days[(h >> 3) % 5], hr = 9 + ((h >> 5) % 7);
-    var vals = {
-      name: name, co: m[2], av: name.charAt(0),
-      company: co, size: sizes[(h >> 2) % sizes.length], kind: kinds[(h >> 4) % kinds.length],
-      route: rep[0] + ", " + rep[1], times: day + " " + hr + ":00, " + day + " " + (hr + 1) + ":30",
-      book: day + " " + hr + ":00"
-    };
-    timers.forEach(clearTimeout); timers = [];
-    rec.classList.remove("is-wait");
-    var rows = Array.prototype.slice.call(rec.querySelectorAll("[data-row]"));
-    ["name", "co", "av"].forEach(function (k) { set(k, vals[k]); });
-    set("score", "0");
-    rows.forEach(function (r, i) {
-      if (!reduce) r.style.opacity = "0.25";
-      timers.push(setTimeout(function () {
-        r.querySelectorAll("[data-v]").forEach(function (el) { var k = el.getAttribute("data-v"); if (vals[k]) el.textContent = vals[k]; });
-        if (r.hasAttribute("data-score")) set("score", String(score));
-        r.style.opacity = "";
-        r.classList.remove("is-new"); void r.offsetWidth; r.classList.add("is-new");
-      }, reduce ? 0 : 260 + i * 320));
     });
   });
 })();

@@ -8,13 +8,16 @@ then run here:
 Every page works without JavaScript: the forms are real HTML, and assets/forms.js adds pages, show-if logic,
 checks, the end screen, search and filters on top.
 """
-import html, json, pathlib, re
+import html, json, pathlib, re, sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import shell  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 6, 6
+CSS_V, JS_V = 7, 7
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -164,83 +167,26 @@ def brand_bar() -> str:
 
 # Shared page parts, copied from the home page so the header, menu and footer stay one --------------------------
 
-INDEX = (ROOT / "index.html").read_text()
-
-
-def block(start: str, end: str) -> str:
-    i = INDEX.index(start)
-    j = INDEX.index(end, i) + len(end)
-    return INDEX[i:j]
-
-
-def absolute(s: str) -> str:
-    """Home-page anchors (href="#pricing") point back at the home page; icon references (<use href="#mark">) stay."""
-    return re.sub(r'(<a\b[^>]*?\bhref=")#', r"\1/#", s)
-
-
-SPRITE = block('<svg width="0" height="0"', "</svg>\n").replace(
+SPRITE = shell.SPRITE.replace(
     "</svg>\n",
     '  <symbol id="i-search" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="m10.5 10.5 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>\n'
     '  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>\n'
     '  <symbol id="i-up" viewBox="0 0 16 16" fill="none"><path d="m4 10 4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>\n'
     '  <symbol id="i-shuffle" viewBox="0 0 16 16" fill="none"><path d="M2 4.5h2.5c1.7 0 2.7.8 3.6 2.2l1 1.6c.9 1.4 1.9 2.2 3.6 2.2H14M2 11.5h2.5c1 0 1.8-.3 2.4-.9M10.3 5.4c.6-.6 1.4-.9 2.4-.9H14M12 2.5l2 2-2 2M12 9.5l2 2-2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>\n'
     "</svg>\n",
+    1,
 )
-HEADER = absolute(block('<header class="site-header">', "</header>"))
-SHEET = absolute(block('<div class="sheet">', '</div>\n</div>\n'))
-FOOTER = absolute(block('<footer class="site-footer">', "</footer>"))
-CLOSE_MARK = block('<svg class="close__mark"', "</svg>")
+CLOSE_MARK = shell.CLOSE_MARK
 
 
 def page(path: str, title: str, desc: str, body: str, ld: list) -> None:
-    url = f"{SITE}{path}"
-    out = f"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(title)}</title>
-<meta name="description" content="{esc(desc)}">
-<link rel="canonical" href="{url}">
-<meta property="og:site_name" content="Claritia">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{esc(title)}">
-<meta property="og:description" content="{esc(desc)}">
-<meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/assets/brand/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
-<link rel="icon" href="/assets/brand/claritia-mark.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
-<meta name="theme-color" content="#ffffff">
-<meta name="color-scheme" content="light">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;display=swap">
-<link rel="stylesheet" href="{FONTS_URL}">
-<link rel="stylesheet" href="/assets/site.css?v=7">
-<link rel="stylesheet" href="/assets/forms.css?v={CSS_V}">
-<link rel="stylesheet" href="/assets/themes.css?v={CSS_V}">
-<script>document.documentElement.classList.add("js");setTimeout(function(){{if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){{e.classList.add("is-in")}})}},2500);</script>
-{"".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-
-{SPRITE}
-{HEADER}
-{SHEET}
-<main id="main">
-{body}
-</main>
-
-{FOOTER}
-
-<script src="/assets/site.js?v=7" defer></script>
-<script src="/assets/forms.js?v={JS_V}" defer></script>
-</body>
-</html>
-"""
+    extra = (
+        f'<link rel="stylesheet" href="{FONTS_URL}">\n'
+        f'<link rel="stylesheet" href="/assets/forms.css?v={CSS_V}">\n'
+        f'<link rel="stylesheet" href="/assets/themes.css?v={CSS_V}">\n'
+        + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
+    )
+    out = shell.head(title, desc, path, extra) + "\n" + shell.body(body, f'<script src="/assets/forms.js?v={JS_V}" defer></script>\n').replace(shell.SPRITE, SPRITE, 1)
     dest = ROOT / path.strip("/") / "index.html"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(out)
@@ -445,7 +391,7 @@ CLOSE = lambda line1, line2, href, label: f"""<section class="close">
       {CLOSE_MARK}
       <h2 class="h2">{line1}<br><span class="two">{line2}</span></h2>
       <div class="close__ctas">
-        <a class="btn btn--primary btn--lg" href="{href}">{label} <span class="nudge" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn--green btn--lg" href="{href}">{label} <span class="nudge" aria-hidden="true">&rarr;</span></a>
         <a class="btn btn--ghost btn--lg" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
       </div>
       <p class="small">Free plan. No card needed.</p>
