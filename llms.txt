@@ -19,6 +19,9 @@
 ## Pages
 
 - [Home](https://tryclaritia.com/): what Claritia does
+- [Forms](https://tryclaritia.com/products/forms): forms built from a sentence, with steps, logic, prices, payments and booking inside
+- [Meetings](https://tryclaritia.com/products/meetings): booking pages, team meetings, polls and reminders on Google and Outlook
+- [Routing](https://tryclaritia.com/products/routing): each lead to the right meeting and person, with round robin and a log of every decision
 - [Pricing](https://tryclaritia.com/pricing): Free, Starter $15, Pro $39 and Business $79 a month with 1 host, then a price per extra host ([Markdown](https://tryclaritia.com/pricing.md))
 - [Form templates](https://tryclaritia.com/templates): 150 free forms for 24 industries (demo requests, quotes, intake, applications, surveys, quizzes), each with its own page to try it and use it
 - [App](https://app.tryclaritia.com): sign in and start

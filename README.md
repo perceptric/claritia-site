@@ -11,6 +11,7 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 | Path | What |
 |---|---|
 | `index.html` | The home page: hero with the prompt, why, how it works, compare, tools, integrations, templates, numbers, pricing, questions and the last prompt. It also holds the header, phone menu and footer every page shares. |
+| `products/` | The product pages: `/products`, Forms, Meetings and Routing, each with the product drawn in HTML, features with plan tags, three deep dives, links to the others and questions. Written by `tools/products.py`. |
 | `pricing/` | The pricing page: plans, the host count, every feature side by side, questions. Written by `tools/pricing.py`, which also holds the plan data. |
 | `404.html`, `privacy/`, `terms/` | Page not found and the legal pages. Written by `tools/legal.py`. |
 | `assets/site.css` | Tokens, type, buttons, chips, tags, the header, phone menu, footer, and every home section. |
@@ -29,7 +30,7 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 ## Editing
 
 - **Words on the home page:** edit `index.html`.
-- **The header, phone menu or footer:** edit them in `index.html`, then run `python3 tools/templates.py && python3 tools/legal.py && python3 tools/pricing.py`
+- **The header, phone menu or footer:** edit them in `index.html`, then run `python3 tools/templates.py && python3 tools/legal.py && python3 tools/pricing.py && python3 tools/products.py`
   so every page gets them.
 - **CSS or JS:** edit the file, then raise `?v=` on its link in `index.html` and `SITE_CSS_V` or `SITE_JS_V` in
   `tools/shell.py`, and run the two tools above.
