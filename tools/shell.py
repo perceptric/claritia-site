@@ -60,7 +60,7 @@ def head(title: str, desc: str, path: str, extra: str = "", og: bool = True) -> 
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{url}">
 {social}<link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
-<link rel="icon" href="/assets/brand/claritia-mark.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/brand/claritia-mark-small.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
 <meta name="theme-color" content="#fafaf5">
 <meta name="color-scheme" content="light">

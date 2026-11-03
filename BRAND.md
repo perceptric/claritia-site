@@ -11,8 +11,22 @@ and Claritia green as the one accent. Show the product itself, drawn in HTML, mo
 
 ## Mark
 
-The green tile (`#0C8C5E`) with four white corner brackets and a check. File: `assets/brand/claritia-mark.svg`. The
-wordmark is Inter 600 with tight tracking. Never recolor, outline or redraw it.
+The Slot: a green tile (`#0C8C5E`) holding six time slots, with one booked in solid white. A form that ends in a
+meeting, said in one shape. The name is Inter 600 at -0.03em.
+
+| File (`assets/brand/`) | Use |
+|---|---|
+| `claritia-mark.svg` | The mark, 20 px and up |
+| `claritia-mark-small.svg` | 16 to 19 px and the browser tab: four bigger slots |
+| `claritia-mark-ink.svg` | One-color printing and stamps |
+| `claritia-mark-white.svg` | On green or on photos |
+| `claritia-lockup.svg`, `claritia-lockup-on-dark.svg` | Mark and name as outlines, where text can't be live |
+| `claritia-app-icon.png`, `claritia-avatar.png` | App stores and social profiles (square, they round it) |
+| `favicon.ico`, `apple-touch-icon.png`, `og-image.png` | Browser, phone home screen, link previews |
+
+- In the lockup the gap is a third of the mark's height. Keep a quarter of its height clear on every side.
+- When there's no room for the name (a folded sidebar, a tab, an avatar), show the mark alone.
+- Never recolor the tile, move the booked slot, outline, rotate or shadow the mark, or set the name in another font.
 
 ## Color
 
