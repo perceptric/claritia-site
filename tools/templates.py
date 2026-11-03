@@ -14,7 +14,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 2, 2
+CSS_V, JS_V = 3, 3
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -31,8 +31,69 @@ THEMES = DATA["themes"]
 TH = {x["id"]: x for x in THEMES}
 FONTS_URL = DATA["fonts"].replace("&", "&amp;")
 IND_LABEL = {i["value"]: i["label"] for i in IND}
-COUNT = {i["value"]: sum(1 for t in T if t["industry"] == i["value"]) for i in IND}
 ORDERED = [t for t in T if t["featured"]] + [t for t in T if not t["featured"]]
+
+# The menus (the app's src/lib/forms/gallery/taxonomy.ts). A list page exists for a value with MIN or more templates;
+# the first 24 industries keep their pages whatever their count, so no old link breaks.
+MIN = DATA["minShown"]
+FAM = DATA["families"]
+FAM_LABEL = {x["id"]: x["label"] for x in FAM}
+CATS = DATA["categories"]
+CAT_LABEL = {x["id"]: x["label"] for x in CATS}
+CAT_FAM = {x["id"]: x["family"] for x in CATS}
+TEAMS = DATA["teams"]
+TEAM_LABEL = {x["id"]: x["label"] for x in TEAMS}
+SUBS = DATA["subs"]
+SUB_LABEL = {x["id"]: x["label"] for x in SUBS}
+SUB_PARENT = {x["id"]: x["parent"] for x in SUBS}
+FIRST_IND = {"general", "saas", "agency", "consulting", "legal", "accounting", "finance", "insurance", "real_estate", "construction", "solar", "healthcare",
+             "wellness", "fitness", "education", "ecommerce", "manufacturing", "logistics", "automotive", "hospitality", "events", "nonprofit", "hr", "it"}
+
+
+def tally(key):
+    out = {}
+    for t in T:
+        for v in t[key]:
+            out[v] = out.get(v, 0) + 1
+    return out
+
+
+N = {"family": tally("families"), "category": tally("categories"), "team": tally("teams"), "sub": tally("subs"), "industry": tally("industries")}
+COUNT = N["industry"]
+HAS_PAGE = {
+    "family": [x["id"] for x in FAM if N["family"].get(x["id"], 0) >= MIN],
+    "category": [x["id"] for x in CATS if N["category"].get(x["id"], 0) >= MIN],
+    "team": [x["id"] for x in TEAMS if N["team"].get(x["id"], 0) >= MIN],
+    "industry": [i["value"] for i in IND if i["value"] in FIRST_IND or COUNT.get(i["value"], 0) >= MIN],
+    "sub": [x["id"] for x in SUBS if N["sub"].get(x["id"], 0) >= MIN],
+}
+PAGED = {k: set(v) for k, v in HAS_PAGE.items()}
+
+
+def path_of(kind: str, v: str) -> str:
+    if kind == "family":
+        return f"/templates/group/{v}"
+    if kind == "category":
+        return f"/templates/category/{v}"
+    if kind == "team":
+        return f"/templates/team/{v}"
+    if kind == "sub":
+        return f"/templates/{ind_slug(SUB_PARENT[v])}/{v}"
+    return f"/templates/{ind_slug(v)}"
+
+
+def label_of(kind: str, v: str) -> str:
+    return {"family": FAM_LABEL, "category": CAT_LABEL, "team": TEAM_LABEL, "sub": SUB_LABEL, "industry": IND_LABEL}[kind][v]
+
+
+def items_of(kind: str, v: str):
+    key = {"family": "families", "category": "categories", "team": "teams", "sub": "subs", "industry": "industries"}[kind]
+    return [t for t in ORDERED if v in t[key]]
+
+
+def low(label: str) -> str:
+    """A label inside a sentence: lower case, except words that are all capitals (NPS, RSVP, IT, HR) and SaaS."""
+    return " ".join(w if (w.isupper() and len(w) > 1) or w == "SaaS" else w.lower() for w in label.split())
 
 
 def fields_of(t):
@@ -238,11 +299,11 @@ def thumb(t, tid: str | None = None) -> str:
 
 def card(t) -> str:
     tag = '<span class="tag tag--warn">Health</span>' if t["phi"] else ('<span class="tag">Popular</span>' if t["featured"] else "")
-    words = " ".join([t["name"], t["blurb"], t["industryLabel"], " ".join(USE.get(x, x) for x in t["tags"]), " ".join(f["label"] for f in fields_of(t))]).lower()
+    words = " ".join([t["name"], t["blurb"], t["industryLabel"], " ".join(CAT_LABEL[x] for x in t["categories"]), " ".join(FAM_LABEL[x] for x in t["families"]), " ".join(TEAM_LABEL[x] for x in t["teams"]), " ".join(SUB_LABEL[x] for x in t["subs"]), " ".join(f["label"] for f in fields_of(t))]).lower()
     pages = len(t["schema"]["pages"])
     meta = f'{questions(t)} questions' + (f", {pages} pages" if pages > 1 else "")
     return (
-        f'<a class="tcard" href="/templates/{t["slug"]}" data-tags="{" ".join(t["tags"])}" data-words="{esc(words)}">'
+        f'<a class="tcard" href="/templates/{t["slug"]}" data-does="{" ".join(t["does"])}" data-feature="{" ".join(t["features"])}" data-layout="{t["layout"]}" data-length="{t["length"]}" data-words="{esc(words)}">'
         f"{thumb(t)}"
         f'<span class="tcard__body"><span class="tcard__top"><b class="tcard__name">{esc(t["name"])}</b>{tag}</span>'
         f'<span class="tcard__blurb">{esc(t["blurb"])}</span>'
@@ -372,27 +433,82 @@ CLOSE = lambda line1, line2, href, label: f"""<section class="close">
   </section>"""
 
 
-def rail(current: str) -> str:
-    rows = [f'<a class="trail__i{" is-on" if current == "all" else ""}" href="/templates"{" aria-current=\"page\"" if current == "all" else ""}><span>All templates</span><small>{len(T)}</small></a>']
-    for i in IND:
-        on = current == i["value"]
-        rows.append(f'<a class="trail__i{" is-on" if on else ""}" href="/templates/{ind_slug(i["value"])}"{" aria-current=\"page\"" if on else ""}><span>{esc(i["label"])}</span><small>{COUNT[i["value"]]}</small></a>')
-    return f'<nav class="trail" aria-label="Industries"><p class="trail__h">Industry</p>{"".join(rows)}</nav>'
+def rail_row(kind: str, v: str, on: bool, sub: bool = False) -> str:
+    cls = "trail__i" + (" trail__i--sub" if sub else "") + (" is-on" if on else "")
+    return f'<a class="{cls}" href="{path_of(kind, v)}"{" aria-current=\"page\"" if on else ""}><span>{esc(label_of(kind, v))}</span><small>{N[kind].get(v, 0)}</small></a>'
 
 
-def gallery(current: str, items) -> str:
-    chips = '<button type="button" class="chip is-on" data-tag="all" aria-pressed="true">Any use</button>' + "".join(
-        f'<button type="button" class="chip" data-tag="{u["value"]}" aria-pressed="false">{esc(u["label"])}</button>' for u in DATA["useCases"] if any(u["value"] in t["tags"] for t in items)
+def rail(current) -> str:
+    """The menus as links: categories inside their group, sub-industries inside their industry, teams."""
+    kind, cur = current
+    fam_open = cur if kind == "family" else CAT_FAM.get(cur) if kind == "category" else None
+    ind_open = cur if kind == "industry" else SUB_PARENT.get(cur) if kind == "sub" else None
+    cat_rows = []
+    for f in HAS_PAGE["family"]:
+        cat_rows.append(rail_row("family", f, kind == "family" and cur == f))
+        if f == fam_open:
+            cat_rows += [rail_row("category", c, kind == "category" and cur == c, True) for c in HAS_PAGE["category"] if CAT_FAM[c] == f]
+    ind_rows = []
+    for i in HAS_PAGE["industry"]:
+        if COUNT.get(i, 0) < MIN and not (kind == "industry" and cur == i):
+            continue
+        ind_rows.append(rail_row("industry", i, kind == "industry" and cur == i))
+        if i == ind_open:
+            ind_rows += [rail_row("sub", x, kind == "sub" and cur == x, True) for x in HAS_PAGE["sub"] if SUB_PARENT[x] == i]
+    team_rows = [rail_row("team", x, kind == "team" and cur == x) for x in HAS_PAGE["team"]]
+    menu = lambda title, rows, open_: f'<details class="trail__m"{" open" if open_ else ""}><summary class="trail__h">{title}<svg aria-hidden="true"><use href="#i-chev"/></svg></summary>{"".join(rows)}</details>'
+    all_on = kind == "all"
+    return (
+        '<nav class="trail" aria-label="Template menus">'
+        f'<a class="trail__i{" is-on" if all_on else ""}" href="/templates"{" aria-current=\"page\"" if all_on else ""}><span>All templates</span><small>{len(T)}</small></a>'
+        + menu("Category", cat_rows, True)
+        + menu("Industry", ind_rows, True)
+        + menu("Team", team_rows, kind == "team" or all_on)
+        + "</nav>"
     )
+
+
+# The filters worked out from each form, as chips: within a menu they widen, across menus they narrow.
+CHIP_MENUS = [("does", DATA["does"]), ("feature", DATA["features"]), ("layout", DATA["layouts"]), ("length", DATA["lengths"])]
+CHIP_SKIP = {("does", "routes"), ("does", "follow-up"), ("feature", "booking"), ("feature", "score"), ("layout", "one"), ("feature", "hidden")}
+
+
+def chips_for(items) -> str:
+    out = []
+    for m, values in CHIP_MENUS:
+        key = {"does": "does", "feature": "features", "layout": "layout", "length": "length"}[m]
+        for v in values:
+            if (m, v["id"]) in CHIP_SKIP:
+                continue
+            n = sum(1 for t in items if (v["id"] in t[key] if isinstance(t[key], list) else t[key] == v["id"]))
+            if n >= 2 and n < len(items):
+                out.append(f'<button type="button" class="chip" data-m="{m}" data-v="{v["id"]}" aria-pressed="false">{esc(v["label"])}</button>')
+    return "".join(out)
+
+
+def jump(current) -> str:
+    kind, cur = current
+    here = "All templates" if kind == "all" else label_of(kind, cur)
+    group = lambda title, links: f'<p class="tjump__h">{title}</p>' + "".join(f'<a href="{path_of(k, v)}">{esc(label_of(k, v))}</a>' for k, v in links)
+    fams = [("family", f) for f in HAS_PAGE["family"]]
+    fam_open = cur if kind == "family" else CAT_FAM.get(cur) if kind == "category" else None
+    cats = [("category", c) for c in HAS_PAGE["category"] if CAT_FAM[c] == fam_open] if fam_open else []
+    inds = [("industry", i) for i in HAS_PAGE["industry"] if COUNT.get(i, 0) >= MIN]
+    teams = [("team", x) for x in HAS_PAGE["team"]]
+    body = '<a href="/templates">All templates</a>' + group("Category", fams + cats) + group("Industry", inds) + group("Team", teams)
+    return f'<details class="tjump"><summary>{esc(here)} <svg aria-hidden="true"><use href="#i-chev"/></svg></summary><div class="tjump__list">{body}</div></details>'
+
+
+def gallery(current, items) -> str:
     return f"""<section class="tgal">
     <div class="wrap tgal__in">
       {rail(current)}
       <div class="tgal__main">
         <div class="tfilter">
           <label class="tsearch"><span class="sr-only">Search templates</span><svg aria-hidden="true"><use href="#i-search"/></svg><input type="search" placeholder="Search {len(items)} templates" data-search></label>
-          <div class="chips" role="group" aria-label="Use">{chips}</div>
+          <div class="chips" role="group" aria-label="Filters">{chips_for(items)}</div>
         </div>
-        <details class="tjump"><summary>Industry: {esc("All" if current == "all" else IND_LABEL[current])} <svg aria-hidden="true"><use href="#i-chev"/></svg></summary><div class="tjump__list"><a href="/templates">All templates</a>{"".join(f'<a href="/templates/{ind_slug(i["value"])}">{esc(i["label"])}</a>' for i in IND)}</div></details>
+        {jump(current)}
         <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> templates</p>{style_bar("paper", own=True)}</div>
         <div class="tgrid" data-grid>{"".join(card(t) for t in items)}</div>
         <div class="tnone" hidden data-none><p>No matches.</p><button type="button" class="more" data-clear>Clear the search</button></div>
@@ -426,29 +542,112 @@ INTROS = {
     "nonprofit": "Volunteer sign-ups, pledges, grant applications and RSVPs for nonprofits.",
     "hr": "Job applications, onboarding, engagement surveys and reviews for HR teams.",
     "it": "IT assessments, support tickets and security quizzes for IT providers.",
+    "beauty": "Bookings, consultations and consent forms for salons, spas and studios.",
+    "food": "Reservations, catering requests and orders for restaurants, caterers and bakeries.",
+    "creative": "Inquiries, briefs and bookings for photographers, video makers and design studios.",
+    "coaching": "Discovery calls, intake and check-ins for coaches.",
+    "pets": "Appointments, intake and boarding forms for vets, groomers and pet sitters.",
+    "faith": "Sign-ups, prayer requests and volunteer forms for churches and faith groups.",
+    "sports": "Registrations, tryouts and waivers for clubs and leagues.",
+    "government": "Requests, permits and feedback for cities and public services.",
+    "media": "Pitches, subscriptions and reader surveys for publishers and podcasts.",
+    "retail": "Orders, returns and loyalty sign-ups for shops.",
+    "architecture": "Project inquiries and briefs for architects and interior designers.",
+    "security": "Quotes, site surveys and incident reports for security companies.",
+    "agriculture": "Orders, quotes and visit requests for farms and growers.",
+    "personal": "RSVPs, sign-ups and planners for life outside work.",
 }
+
+FAM_INTRO = {
+    "leads": "Contact forms, demo requests, quotes and consultations that turn visitors into leads.",
+    "booking": "Appointments, bookings, reservations and rentals that land on your calendar.",
+    "money": "Orders, payments, donations and calculators that show a price.",
+    "apply": "Applications, registrations, sign-ups and memberships with everything you need to say yes.",
+    "events": "Event registration, RSVPs, webinars and calls for speakers.",
+    "feedback": "Surveys, feedback, NPS and reviews that tell you what to fix and what to keep.",
+    "quizzes": "Quizzes, scorecards and product finders that score each answer and show a result.",
+    "intake": "Intake and onboarding forms that collect what you need before the first meeting.",
+    "operations": "Requests, reports, checklists and inspections for the work behind the scenes.",
+    "legal": "Consent forms, waivers and releases with a signature on file.",
+}
+
+TEAM_TITLE = {
+    "marketing": "Form templates for marketing teams", "sales": "Form templates for sales teams", "success": "Form templates for customer success teams",
+    "support": "Form templates for support teams", "hr": "Form templates for HR teams", "recruiting": "Form templates for recruiters",
+    "operations": "Form templates for operations teams", "finance": "Form templates for finance teams", "it": "Form templates for IT teams",
+    "product": "Form templates for product teams", "founders": "Form templates for founders and owners", "events": "Form templates for event organizers",
+    "teachers": "Form templates for teachers and trainers", "care": "Form templates for care staff", "volunteers": "Form templates for volunteer leads",
+    "personal": "Personal form templates",
+}
+TEAM_INTRO = {
+    "marketing": "Sign-ups, downloads, webinars and surveys that grow your list and show what people want.",
+    "sales": "Demo requests, quotes and consultations that qualify each lead and book the meeting.",
+    "success": "Onboarding, check-ins, NPS and feedback that keep customers happy.",
+    "support": "Tickets, bug reports and requests with the details you need to help.",
+    "hr": "Onboarding, time off, engagement surveys and reviews for your people.",
+    "recruiting": "Job applications, referrals and interview scorecards.",
+    "operations": "Intake, requests, checklists and reports that keep work moving.",
+    "finance": "Applications, intake and checklists for finance work.",
+    "it": "Support tickets, assessments and requests for IT teams.",
+    "product": "Feature requests, bug reports, beta sign-ups and research surveys.",
+    "founders": "The forms a small business needs first: contact, quotes, bookings and feedback.",
+    "events": "Registration, speakers, sponsors, volunteers and surveys after the event.",
+    "teachers": "Course inquiries, applications, feedback and quizzes.",
+    "care": "Appointments, intake, consent and feedback for patients and clients.",
+    "volunteers": "Volunteer sign-ups, RSVPs and applications.",
+    "personal": "RSVPs, sign-ups and planners for life outside work.",
+}
+
+
+def list_page(kind: str, v: str, title: str, intro: str, trail: list) -> None:
+    items = items_of(kind, v)
+    path = path_of(kind, v)
+    crumb = "".join(f'<a href="{p}">{esc(n)}</a><span aria-hidden="true">/</span>' for n, p in trail)
+    body = f"""<section class="thero thero--sm">
+    <div class="wrap"><div class="thero__in">
+      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Templates</a><span aria-hidden="true">/</span>{crumb}<span>{esc(label_of(kind, v))}</span></nav>
+      <h1 class="h2 reveal" data-delay="1">{esc(title)}</h1>
+      <p class="lead reveal" data-delay="2">{esc(intro)} Try each one, then use it in a click.</p>
+    </div></div>
+  </section>
+  {gallery((kind, v), items)}
+  {CLOSE(esc(title) + ".", "Live on your site in a click.", APP, "Start free")}"""
+    page(path, f"{title} | Claritia", f"{len(items)} free templates. {intro}", body, [crumbs([("Templates", "/templates")] + trail + [(label_of(kind, v), path)])])
+
+
+def cat_title(c: str) -> str:
+    lab = CAT_LABEL[c]
+    return f"{lab} templates" if re.search(r"(quiz|test|survey|form|check)$", lab.lower()) else f"{lab} form templates"
+
+
+def cat_intro(c: str) -> str:
+    items = items_of("category", c)
+    names = [t["name"] for t in items[:3]]
+    return f"{len(items)} free {low(CAT_LABEL[c])} templates, like {and_list(names)}."
+
 
 
 def industry_page(i):
     v = i["value"]
-    items = [t for t in ORDERED if t["industry"] == v]
-    path = f"/templates/{ind_slug(v)}"
-    body = f"""<section class="thero thero--sm">
-    <div class="wrap"><div class="thero__in">
-      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Templates</a><span aria-hidden="true">/</span><span>{esc(i["label"])}</span></nav>
-      <h1 class="h2 reveal" data-delay="1">{esc(i["label"])} form templates</h1>
-      <p class="lead reveal" data-delay="2">{esc(INTROS.get(v, ""))} Try each one, then use it in a click.</p>
-    </div></div>
-  </section>
-  {gallery(v, items)}
-  {CLOSE(f"Forms for {esc(i['label'].lower() if v != 'saas' else 'SaaS and software')}.", "Live on your site in a click.", APP, "Start free")}"""
-    page(
-        path,
-        f"{i['label']} form templates | Claritia",
-        f"{len(items)} free {i['label'].lower() if v != 'saas' else 'SaaS and software'} form templates. {INTROS.get(v, '')}",
-        body,
-        [crumbs([("Templates", "/templates"), (i["label"], path)])],
-    )
+    lab = i["label"]
+    list_page("industry", v, f"{lab} form templates", INTROS.get(v, f"Forms for {low(lab)}."), [])
+
+
+def sub_page(x: str):
+    par = SUB_PARENT[x]
+    list_page("sub", x, f"{SUB_LABEL[x]} form templates", f"Forms for {low(SUB_LABEL[x])}: {INTROS.get(par, '')[0].lower()}{INTROS.get(par, '')[1:]}", [(IND_LABEL[par], path_of("industry", par))])
+
+
+def family_page(f: str):
+    list_page("family", f, f"{FAM_LABEL[f]} form templates", FAM_INTRO[f], [])
+
+
+def category_page(c: str):
+    list_page("category", c, cat_title(c), cat_intro(c), [(FAM_LABEL[CAT_FAM[c]], path_of("family", CAT_FAM[c]))])
+
+
+def team_page(x: str):
+    list_page("team", x, TEAM_TITLE[x], TEAM_INTRO[x], [])
 
 
 LOGOS = [("hubspot.svg", "HubSpot"), ("salesforce.svg", "Salesforce"), ("omniscient.svg", "Omniscient"), ("pipedrive.png", "Pipedrive"), ("attio.png", "Attio"),
@@ -554,10 +753,10 @@ def template_page(t):
     fl = [f for f in fields_of(t) if f["kind"] != "hidden"]
     asks = "".join(f'<li><span class="tasks__n">{n + 1}</span><span class="tasks__t">{esc(f["label"])}</span><span class="tasks__k">{esc(KIND[f["kind"]])}</span></li>' for n, f in enumerate(fl))
     pages = len(s["pages"])
-    tags = "".join(f'<span class="tag">{esc(USE.get(x, x))}</span>' for x in t["tags"])
-    same = [x for x in ORDERED if x["industry"] == t["industry"] and x["id"] != t["id"]]
-    alike = [x for x in ORDERED if x["industry"] != t["industry"] and set(x["tags"]) & set(t["tags"])]
-    related = (same + alike)[:12]
+    tags = "".join(f'<a class="tag tag--link" href="{path_of("category", x)}">{esc(CAT_LABEL[x])}</a>' if x in PAGED["category"] else f'<span class="tag">{esc(CAT_LABEL[x])}</span>' for x in t["categories"])
+    alike = [x for x in ORDERED if x["id"] != t["id"] and set(x["categories"]) & set(t["categories"])]
+    same = [x for x in ORDERED if x["id"] != t["id"] and x["industry"] == t["industry"] and x not in alike]
+    related = (alike[:6] + same + alike[6:])[:12]
     others = [x["id"] for x in THEMES if x["id"] != t["theme"]]
     looks = [t["theme"]] + others[(T.index(t) * 5) % len(others):][:5]
     looks += [x for x in others if x not in looks][: 6 - len(looks)]
@@ -624,7 +823,7 @@ def template_page(t):
   {faq_block(qa, "Frequently asked questions")}
   <section class="section section--tint">
     <div class="wrap">
-      <div class="trel__head"><h2 class="h2">Related templates</h2><a class="more" href="{ind_path}">More for {esc(t["industryLabel"]) if t["industry"] != "general" else "any business"} <span class="nudge" aria-hidden="true">&rarr;</span></a></div>
+      <div class="trel__head"><h2 class="h2">Related templates</h2><span class="trel__more">{"".join(f'<a class="more" href="{path_of(k, v)}">{esc(label_of(k, v))} <span class="nudge" aria-hidden="true">&rarr;</span></a>' for k, v in [("category", c) for c in t["categories"] if c in PAGED["category"]][:2] + ([("industry", t["industry"])] if t["industry"] in PAGED["industry"] else []))}</span></div>
       <div class="tgrid tgrid--3">{"".join(card(x) for x in related)}</div>
     </div>
   </section>
@@ -654,17 +853,35 @@ def styles_strip() -> str:
     ) + "</div>"
 
 
+def browse() -> str:
+    cols = []
+    for f in HAS_PAGE["family"]:
+        cats = [c for c in HAS_PAGE["category"] if CAT_FAM[c] == f]
+        links = "".join(f'<li><a href="{path_of("category", c)}">{esc(CAT_LABEL[c])}</a><small>{N["category"][c]}</small></li>' for c in cats)
+        links += f'<li><a href="{path_of("family", f)}">All {esc(low(FAM_LABEL[f]))}</a><small>{N["family"][f]}</small></li>'
+        cols.append(f'<div class="tcats__g"><h3 class="h3"><a href="{path_of("family", f)}">{esc(FAM_LABEL[f])}</a></h3><ul>{links}</ul></div>')
+    teams = "".join(f'<li><a href="{path_of("team", x)}">{esc(TEAM_LABEL[x])}</a><small>{N["team"][x]}</small></li>' for x in HAS_PAGE["team"])
+    cols.append(f'<div class="tcats__g"><h3 class="h3">Teams</h3><ul>{teams}</ul></div>')
+    return f'<div class="tcats reveal" data-delay="1">{"".join(cols)}</div>'
+
+
 def index_page():
     body = f"""<section class="thero">
     <div class="wrap"><div class="thero__in">
       <p class="eyebrow reveal">Form templates</p>
       <h1 class="display reveal" data-delay="1">Form templates<br><span class="two">for every industry.</span></h1>
-      <p class="lead reveal" data-delay="2">{len(T)} ready forms for {len(IND)} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try any of them here. Use one and it goes live on your site in a click, with every answer saved as a contact.</p>
+      <p class="lead reveal" data-delay="2">{len(T)} ready forms for {len(HAS_PAGE["industry"])} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try any of them here. Use one and it goes live on your site in a click, with every answer saved as a contact.</p>
       <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="#all">Browse templates</a><a class="btn btn--ghost btn--lg" href="{APP}">Start free</a></div>
     </div></div>
   </section>
   <div id="all"></div>
-  {gallery("all", ORDERED)}
+  {gallery(("all", ""), ORDERED)}
+  <section class="section" id="categories">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="eyebrow">Categories</p><h2 class="h2">Every kind of form.<br><span class="two">{len(HAS_PAGE["category"])} categories in {len(HAS_PAGE["family"])} groups.</span></h2></div>
+      {browse()}
+    </div>
+  </section>
   <section class="section section--tint" id="styles">
     <div class="wrap">
       <div class="sec-head reveal"><p class="eyebrow">Styles</p><h2 class="h2">{len(THEMES)} styles for every form.<br><span class="two">Tap one to see the whole gallery in it.</span></h2></div>
@@ -689,7 +906,7 @@ def index_page():
     page(
         "/templates",
         "Free form templates for every industry | Claritia",
-        f"{len(T)} free form templates for {len(IND)} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try each one, then use it in a click.",
+        f"{len(T)} free form templates for {len(HAS_PAGE['industry'])} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try each one, then use it in a click.",
         body,
         [crumbs([("Templates", "/templates")]), {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in INDEX_QA]}],
     )
@@ -699,7 +916,7 @@ def sitemap():
     sm = ROOT / "sitemap.xml"
     text = sm.read_text()
     text = re.sub(r"\s*<!-- templates:start -->.*?<!-- templates:end -->", "", text, flags=re.S)
-    urls = ["/templates"] + [f"/templates/{ind_slug(i['value'])}" for i in IND] + [f"/templates/{t['slug']}" for t in T]
+    urls = ["/templates"] + [path_of(k, v) for k in ("family", "category", "industry", "sub", "team") for v in HAS_PAGE[k]] + [f"/templates/{t['slug']}" for t in T]
     lines = "\n".join(f"  <url><loc>{SITE}{u}</loc></url>" for u in urls)
     text = text.replace("</urlset>", f"  <!-- templates:start -->\n{lines}\n  <!-- templates:end -->\n</urlset>")
     sm.write_text(text)
@@ -708,12 +925,22 @@ def sitemap():
 if __name__ == "__main__":
     slugs = [t["slug"] for t in T]
     assert len(set(slugs)) == len(slugs), "template slugs repeat"
-    assert not set(slugs) & {ind_slug(i["value"]) for i in IND}, "a template and an industry share a slug"
+    assert not set(slugs) & ({ind_slug(i["value"]) for i in IND} | {"group", "category", "team"}), "a template and a list page share a slug"
     write_styles()
     index_page()
     for i in IND:
-        industry_page(i)
+        if i["value"] in PAGED["industry"]:
+            industry_page(i)
+    for x in HAS_PAGE["sub"]:
+        sub_page(x)
+    for f in HAS_PAGE["family"]:
+        family_page(f)
+    for c in HAS_PAGE["category"]:
+        category_page(c)
+    for x in HAS_PAGE["team"]:
+        team_page(x)
     for t in T:
         template_page(t)
     sitemap()
-    print(f"wrote /templates, {len(IND)} industry pages and {len(T)} template pages")
+    n = sum(len(v) for v in HAS_PAGE.values())
+    print(f"wrote /templates, {n} list pages ({', '.join(f'{len(v)} {k}' for k, v in HAS_PAGE.items())}) and {len(T)} template pages")

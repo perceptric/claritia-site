@@ -54,7 +54,11 @@
   },
   {
    "value": "fitness",
-   "label": "Fitness and beauty"
+   "label": "Fitness"
+  },
+  {
+   "value": "beauty",
+   "label": "Beauty and salons"
   },
   {
    "value": "education",
@@ -95,6 +99,58 @@
   {
    "value": "it",
    "label": "IT services"
+  },
+  {
+   "value": "food",
+   "label": "Restaurants and food"
+  },
+  {
+   "value": "creative",
+   "label": "Photography and creative"
+  },
+  {
+   "value": "coaching",
+   "label": "Coaching"
+  },
+  {
+   "value": "pets",
+   "label": "Veterinary and pets"
+  },
+  {
+   "value": "faith",
+   "label": "Faith communities"
+  },
+  {
+   "value": "sports",
+   "label": "Sports clubs"
+  },
+  {
+   "value": "government",
+   "label": "Government and public"
+  },
+  {
+   "value": "media",
+   "label": "Media and publishing"
+  },
+  {
+   "value": "retail",
+   "label": "Retail stores"
+  },
+  {
+   "value": "architecture",
+   "label": "Architecture and design"
+  },
+  {
+   "value": "security",
+   "label": "Security"
+  },
+  {
+   "value": "agriculture",
+   "label": "Agriculture"
+  },
+  {
+   "value": "personal",
+   "label": "Personal"
   }
  ],
  "useCases": [
@@ -139,6 +195,873 @@
    "label": "Order"
   }
  ],
+ "minShown": 4,
+ "families": [
+  {
+   "id": "leads",
+   "label": "Leads and sales"
+  },
+  {
+   "id": "booking",
+   "label": "Booking"
+  },
+  {
+   "id": "money",
+   "label": "Orders and payments"
+  },
+  {
+   "id": "apply",
+   "label": "Apply and join"
+  },
+  {
+   "id": "events",
+   "label": "Events"
+  },
+  {
+   "id": "feedback",
+   "label": "Feedback and surveys"
+  },
+  {
+   "id": "quizzes",
+   "label": "Quizzes and assessments"
+  },
+  {
+   "id": "intake",
+   "label": "Intake and onboarding"
+  },
+  {
+   "id": "operations",
+   "label": "Operations"
+  },
+  {
+   "id": "legal",
+   "label": "Consent and legal"
+  }
+ ],
+ "categories": [
+  {
+   "id": "contact",
+   "label": "Contact",
+   "family": "leads"
+  },
+  {
+   "id": "lead-generation",
+   "label": "Lead generation",
+   "family": "leads"
+  },
+  {
+   "id": "demo-request",
+   "label": "Demo request",
+   "family": "leads"
+  },
+  {
+   "id": "quote",
+   "label": "Quote",
+   "family": "leads"
+  },
+  {
+   "id": "estimate",
+   "label": "Estimate",
+   "family": "leads"
+  },
+  {
+   "id": "consultation",
+   "label": "Consultation",
+   "family": "leads"
+  },
+  {
+   "id": "qualify",
+   "label": "Qualification",
+   "family": "leads"
+  },
+  {
+   "id": "waitlist",
+   "label": "Waitlist",
+   "family": "leads"
+  },
+  {
+   "id": "referral",
+   "label": "Referral",
+   "family": "leads"
+  },
+  {
+   "id": "partner",
+   "label": "Partner application",
+   "family": "leads"
+  },
+  {
+   "id": "content-download",
+   "label": "Content download",
+   "family": "leads"
+  },
+  {
+   "id": "newsletter",
+   "label": "Newsletter",
+   "family": "leads"
+  },
+  {
+   "id": "appointment",
+   "label": "Appointment",
+   "family": "booking"
+  },
+  {
+   "id": "booking",
+   "label": "Booking",
+   "family": "booking"
+  },
+  {
+   "id": "reservation",
+   "label": "Reservation",
+   "family": "booking"
+  },
+  {
+   "id": "rental",
+   "label": "Rental",
+   "family": "booking"
+  },
+  {
+   "id": "class",
+   "label": "Class and lesson",
+   "family": "booking"
+  },
+  {
+   "id": "callback",
+   "label": "Callback",
+   "family": "booking"
+  },
+  {
+   "id": "order",
+   "label": "Order",
+   "family": "money"
+  },
+  {
+   "id": "payment",
+   "label": "Payment",
+   "family": "money"
+  },
+  {
+   "id": "donation",
+   "label": "Donation",
+   "family": "money"
+  },
+  {
+   "id": "deposit",
+   "label": "Deposit",
+   "family": "money"
+  },
+  {
+   "id": "subscription",
+   "label": "Subscription",
+   "family": "money"
+  },
+  {
+   "id": "sponsorship",
+   "label": "Sponsorship",
+   "family": "money"
+  },
+  {
+   "id": "calculator",
+   "label": "Calculator",
+   "family": "money"
+  },
+  {
+   "id": "application",
+   "label": "Application",
+   "family": "apply"
+  },
+  {
+   "id": "job-application",
+   "label": "Job application",
+   "family": "apply"
+  },
+  {
+   "id": "membership",
+   "label": "Membership",
+   "family": "apply"
+  },
+  {
+   "id": "enrollment",
+   "label": "Enrollment",
+   "family": "apply"
+  },
+  {
+   "id": "registration",
+   "label": "Registration",
+   "family": "apply"
+  },
+  {
+   "id": "signup",
+   "label": "Signup",
+   "family": "apply"
+  },
+  {
+   "id": "volunteer",
+   "label": "Volunteer",
+   "family": "apply"
+  },
+  {
+   "id": "grant",
+   "label": "Grant and scholarship",
+   "family": "apply"
+  },
+  {
+   "id": "tenant",
+   "label": "Tenant",
+   "family": "apply"
+  },
+  {
+   "id": "vendor",
+   "label": "Vendor",
+   "family": "apply"
+  },
+  {
+   "id": "event-registration",
+   "label": "Event registration",
+   "family": "events"
+  },
+  {
+   "id": "rsvp",
+   "label": "RSVP",
+   "family": "events"
+  },
+  {
+   "id": "party",
+   "label": "Party",
+   "family": "events"
+  },
+  {
+   "id": "wedding",
+   "label": "Wedding",
+   "family": "events"
+  },
+  {
+   "id": "webinar",
+   "label": "Webinar",
+   "family": "events"
+  },
+  {
+   "id": "speaker",
+   "label": "Speaker and call for talks",
+   "family": "events"
+  },
+  {
+   "id": "exhibitor",
+   "label": "Exhibitor",
+   "family": "events"
+  },
+  {
+   "id": "feedback",
+   "label": "Feedback",
+   "family": "feedback"
+  },
+  {
+   "id": "survey",
+   "label": "Survey",
+   "family": "feedback"
+  },
+  {
+   "id": "evaluation",
+   "label": "Evaluation",
+   "family": "feedback"
+  },
+  {
+   "id": "questionnaire",
+   "label": "Questionnaire",
+   "family": "feedback"
+  },
+  {
+   "id": "nps",
+   "label": "NPS",
+   "family": "feedback"
+  },
+  {
+   "id": "csat",
+   "label": "Customer satisfaction",
+   "family": "feedback"
+  },
+  {
+   "id": "product-feedback",
+   "label": "Product feedback",
+   "family": "feedback"
+  },
+  {
+   "id": "feature-request",
+   "label": "Feature request",
+   "family": "feedback"
+  },
+  {
+   "id": "bug-report",
+   "label": "Bug report",
+   "family": "feedback"
+  },
+  {
+   "id": "exit",
+   "label": "Exit and cancel",
+   "family": "feedback"
+  },
+  {
+   "id": "engagement",
+   "label": "Employee engagement",
+   "family": "feedback"
+  },
+  {
+   "id": "market-research",
+   "label": "Market research",
+   "family": "feedback"
+  },
+  {
+   "id": "poll",
+   "label": "Voting and polls",
+   "family": "feedback"
+  },
+  {
+   "id": "testimonial",
+   "label": "Testimonial and review",
+   "family": "feedback"
+  },
+  {
+   "id": "quiz",
+   "label": "Quiz",
+   "family": "quizzes"
+  },
+  {
+   "id": "personality",
+   "label": "Personality quiz",
+   "family": "quizzes"
+  },
+  {
+   "id": "knowledge",
+   "label": "Knowledge test",
+   "family": "quizzes"
+  },
+  {
+   "id": "scorecard",
+   "label": "Scorecard",
+   "family": "quizzes"
+  },
+  {
+   "id": "product-finder",
+   "label": "Product finder",
+   "family": "quizzes"
+  },
+  {
+   "id": "eligibility",
+   "label": "Eligibility check",
+   "family": "quizzes"
+  },
+  {
+   "id": "intake",
+   "label": "Intake",
+   "family": "intake"
+  },
+  {
+   "id": "client-onboarding",
+   "label": "Client onboarding",
+   "family": "intake"
+  },
+  {
+   "id": "employee-onboarding",
+   "label": "Employee onboarding",
+   "family": "intake"
+  },
+  {
+   "id": "patient-intake",
+   "label": "Patient intake",
+   "family": "intake"
+  },
+  {
+   "id": "brief",
+   "label": "Project brief",
+   "family": "intake"
+  },
+  {
+   "id": "offboarding",
+   "label": "Offboarding",
+   "family": "intake"
+  },
+  {
+   "id": "checklist",
+   "label": "Checklist",
+   "family": "operations"
+  },
+  {
+   "id": "inspection",
+   "label": "Inspection",
+   "family": "operations"
+  },
+  {
+   "id": "report",
+   "label": "Report",
+   "family": "operations"
+  },
+  {
+   "id": "request",
+   "label": "Request",
+   "family": "operations"
+  },
+  {
+   "id": "tracking",
+   "label": "Tracking",
+   "family": "operations"
+  },
+  {
+   "id": "incident",
+   "label": "Incident report",
+   "family": "operations"
+  },
+  {
+   "id": "time-off",
+   "label": "Time off",
+   "family": "operations"
+  },
+  {
+   "id": "it-request",
+   "label": "IT request",
+   "family": "operations"
+  },
+  {
+   "id": "purchase-request",
+   "label": "Purchase request",
+   "family": "operations"
+  },
+  {
+   "id": "expense",
+   "label": "Expense claim",
+   "family": "operations"
+  },
+  {
+   "id": "maintenance",
+   "label": "Maintenance request",
+   "family": "operations"
+  },
+  {
+   "id": "return",
+   "label": "Return and warranty",
+   "family": "operations"
+  },
+  {
+   "id": "consent",
+   "label": "Consent",
+   "family": "legal"
+  },
+  {
+   "id": "waiver",
+   "label": "Waiver",
+   "family": "legal"
+  },
+  {
+   "id": "release",
+   "label": "Photo release",
+   "family": "legal"
+  },
+  {
+   "id": "data-request",
+   "label": "Data request",
+   "family": "legal"
+  },
+  {
+   "id": "terms",
+   "label": "Terms agreement",
+   "family": "legal"
+  }
+ ],
+ "teams": [
+  {
+   "id": "marketing",
+   "label": "Marketing"
+  },
+  {
+   "id": "sales",
+   "label": "Sales"
+  },
+  {
+   "id": "success",
+   "label": "Customer success"
+  },
+  {
+   "id": "support",
+   "label": "Support"
+  },
+  {
+   "id": "hr",
+   "label": "HR"
+  },
+  {
+   "id": "recruiting",
+   "label": "Recruiting"
+  },
+  {
+   "id": "operations",
+   "label": "Operations"
+  },
+  {
+   "id": "finance",
+   "label": "Finance"
+  },
+  {
+   "id": "it",
+   "label": "IT"
+  },
+  {
+   "id": "product",
+   "label": "Product"
+  },
+  {
+   "id": "founders",
+   "label": "Founders and owners"
+  },
+  {
+   "id": "events",
+   "label": "Event organizers"
+  },
+  {
+   "id": "teachers",
+   "label": "Teachers and trainers"
+  },
+  {
+   "id": "care",
+   "label": "Care staff"
+  },
+  {
+   "id": "volunteers",
+   "label": "Volunteer leads"
+  },
+  {
+   "id": "personal",
+   "label": "Personal"
+  }
+ ],
+ "subs": [
+  {
+   "id": "cleaning",
+   "label": "Cleaning",
+   "parent": "construction"
+  },
+  {
+   "id": "hvac",
+   "label": "HVAC",
+   "parent": "construction"
+  },
+  {
+   "id": "plumbing",
+   "label": "Plumbing",
+   "parent": "construction"
+  },
+  {
+   "id": "electrical",
+   "label": "Electrical",
+   "parent": "construction"
+  },
+  {
+   "id": "roofing",
+   "label": "Roofing",
+   "parent": "construction"
+  },
+  {
+   "id": "landscaping",
+   "label": "Landscaping",
+   "parent": "construction"
+  },
+  {
+   "id": "pest-control",
+   "label": "Pest control",
+   "parent": "construction"
+  },
+  {
+   "id": "moving",
+   "label": "Moving",
+   "parent": "construction"
+  },
+  {
+   "id": "clinics",
+   "label": "Clinics",
+   "parent": "healthcare"
+  },
+  {
+   "id": "physical-therapy",
+   "label": "Physical therapy",
+   "parent": "healthcare"
+  },
+  {
+   "id": "home-care",
+   "label": "Home care",
+   "parent": "healthcare"
+  },
+  {
+   "id": "pharmacy",
+   "label": "Pharmacy",
+   "parent": "healthcare"
+  },
+  {
+   "id": "dental",
+   "label": "Dental",
+   "parent": "wellness"
+  },
+  {
+   "id": "therapy",
+   "label": "Therapy and counseling",
+   "parent": "wellness"
+  },
+  {
+   "id": "chiropractic",
+   "label": "Chiropractic",
+   "parent": "wellness"
+  },
+  {
+   "id": "massage",
+   "label": "Massage",
+   "parent": "wellness"
+  },
+  {
+   "id": "nutrition",
+   "label": "Nutrition",
+   "parent": "wellness"
+  },
+  {
+   "id": "gyms",
+   "label": "Gyms",
+   "parent": "fitness"
+  },
+  {
+   "id": "studios",
+   "label": "Yoga and studios",
+   "parent": "fitness"
+  },
+  {
+   "id": "personal-training",
+   "label": "Personal training",
+   "parent": "fitness"
+  },
+  {
+   "id": "salons",
+   "label": "Salons",
+   "parent": "beauty"
+  },
+  {
+   "id": "spas",
+   "label": "Spas",
+   "parent": "beauty"
+  },
+  {
+   "id": "tattoo",
+   "label": "Tattoo and piercing",
+   "parent": "beauty"
+  },
+  {
+   "id": "schools",
+   "label": "Schools",
+   "parent": "education"
+  },
+  {
+   "id": "tutoring",
+   "label": "Tutoring",
+   "parent": "education"
+  },
+  {
+   "id": "online-courses",
+   "label": "Online courses",
+   "parent": "education"
+  },
+  {
+   "id": "childcare",
+   "label": "Childcare",
+   "parent": "education"
+  },
+  {
+   "id": "hotels",
+   "label": "Hotels",
+   "parent": "hospitality"
+  },
+  {
+   "id": "tours",
+   "label": "Tours and travel",
+   "parent": "hospitality"
+  },
+  {
+   "id": "vacation-rentals",
+   "label": "Vacation rentals",
+   "parent": "hospitality"
+  },
+  {
+   "id": "restaurants",
+   "label": "Restaurants",
+   "parent": "food"
+  },
+  {
+   "id": "catering",
+   "label": "Catering",
+   "parent": "food"
+  },
+  {
+   "id": "bakeries",
+   "label": "Bakeries",
+   "parent": "food"
+  },
+  {
+   "id": "weddings",
+   "label": "Weddings",
+   "parent": "events"
+  },
+  {
+   "id": "conferences",
+   "label": "Conferences",
+   "parent": "events"
+  },
+  {
+   "id": "venues",
+   "label": "Venues",
+   "parent": "events"
+  },
+  {
+   "id": "residential",
+   "label": "Homes",
+   "parent": "real_estate"
+  },
+  {
+   "id": "commercial",
+   "label": "Commercial",
+   "parent": "real_estate"
+  },
+  {
+   "id": "property-management",
+   "label": "Property management",
+   "parent": "real_estate"
+  },
+  {
+   "id": "personal-injury",
+   "label": "Personal injury",
+   "parent": "legal"
+  },
+  {
+   "id": "family-law",
+   "label": "Family law",
+   "parent": "legal"
+  },
+  {
+   "id": "immigration",
+   "label": "Immigration",
+   "parent": "legal"
+  },
+  {
+   "id": "photography",
+   "label": "Photography",
+   "parent": "creative"
+  },
+  {
+   "id": "video",
+   "label": "Video",
+   "parent": "creative"
+  },
+  {
+   "id": "design-studios",
+   "label": "Design studios",
+   "parent": "creative"
+  }
+ ],
+ "features": [
+  {
+   "id": "logic",
+   "label": "Logic"
+  },
+  {
+   "id": "calculator",
+   "label": "Calculator"
+  },
+  {
+   "id": "payment",
+   "label": "Payment"
+  },
+  {
+   "id": "booking",
+   "label": "Booking"
+  },
+  {
+   "id": "score",
+   "label": "Score"
+  },
+  {
+   "id": "file",
+   "label": "File upload"
+  },
+  {
+   "id": "signature",
+   "label": "Signature"
+  },
+  {
+   "id": "grid",
+   "label": "Grid"
+  },
+  {
+   "id": "ranking",
+   "label": "Ranking"
+  },
+  {
+   "id": "address",
+   "label": "Address"
+  },
+  {
+   "id": "hidden",
+   "label": "Hidden fields"
+  }
+ ],
+ "layouts": [
+  {
+   "id": "one",
+   "label": "One page"
+  },
+  {
+   "id": "steps",
+   "label": "Steps"
+  },
+  {
+   "id": "screens",
+   "label": "One question at a time"
+  }
+ ],
+ "lengths": [
+  {
+   "id": "quick",
+   "label": "Under 1 minute"
+  },
+  {
+   "id": "short",
+   "label": "1 to 3 minutes"
+  },
+  {
+   "id": "long",
+   "label": "Over 3 minutes"
+  }
+ ],
+ "does": [
+  {
+   "id": "meeting",
+   "label": "Books a meeting"
+  },
+  {
+   "id": "routes",
+   "label": "Routes to a teammate"
+  },
+  {
+   "id": "payment",
+   "label": "Takes payment"
+  },
+  {
+   "id": "price",
+   "label": "Shows a price"
+  },
+  {
+   "id": "score",
+   "label": "Shows a score"
+  },
+  {
+   "id": "follow-up",
+   "label": "Sends a follow-up"
+  },
+  {
+   "id": "anonymous",
+   "label": "Anonymous"
+  }
+ ],
  "kinds": {
   "short_text": "Short text",
   "long_text": "Long text",
@@ -165,7 +1088,9 @@
   "file": "File upload",
   "signature": "Signature",
   "statement": "Statement",
-  "hidden": "Hidden"
+  "hidden": "Hidden",
+  "calc": "Calculation",
+  "payment": "Payment"
  },
  "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Bricolage+Grotesque:wght@400;600;800&family=Fraunces:wght@400;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&family=Nunito:wght@400;600;800&family=Outfit:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Playfair+Display:wght@400;600&family=Lora:wght@400;600&display=swap",
  "themes": [
@@ -905,6 +1830,28 @@
    "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "contact",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "sales",
+    "founders"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 61,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Contact us",
@@ -985,6 +1932,27 @@
    "theme": "paper",
    "phi": false,
    "internal": false,
+   "categories": [
+    "newsletter",
+    "signup"
+   ],
+   "families": [
+    "leads",
+    "apply"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 20,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Newsletter sign-up",
@@ -1042,6 +2010,33 @@
    "theme": "lilac",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "appointment",
+    "lead-generation"
+   ],
+   "families": [
+    "leads",
+    "booking"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 55,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Book a call",
@@ -1119,6 +2114,29 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "feedback",
+    "csat"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "success",
+    "product"
+   ],
+   "features": [
+    "logic"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 69,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Customer feedback",
@@ -1184,6 +2202,29 @@
    "theme": "mint",
    "phi": false,
    "internal": false,
+   "categories": [
+    "nps",
+    "survey"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "success",
+    "product"
+   ],
+   "features": [
+    "logic"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 55,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "NPS survey",
@@ -1246,6 +2287,29 @@
    "theme": "retro",
    "phi": false,
    "internal": false,
+   "categories": [
+    "waitlist",
+    "signup"
+   ],
+   "families": [
+    "leads",
+    "apply"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "product",
+    "founders"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 53,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Waitlist",
@@ -1317,6 +2381,27 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "referral",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "sales"
+   ],
+   "features": [],
+   "layout": "steps",
+   "length": "short",
+   "does": [],
+   "seconds": 64,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Referral",
@@ -1390,6 +2475,32 @@
    "theme": "bubblegum",
    "phi": false,
    "internal": false,
+   "categories": [
+    "partner",
+    "application"
+   ],
+   "families": [
+    "leads",
+    "apply"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 72,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Partner application",
@@ -1487,6 +2598,29 @@
    "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 92,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Quote request",
@@ -1589,6 +2723,28 @@
    "theme": "paper",
    "phi": false,
    "internal": false,
+   "categories": [
+    "callback",
+    "contact"
+   ],
+   "families": [
+    "booking",
+    "leads"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "support"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 31,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Callback request",
@@ -1656,6 +2812,27 @@
    "theme": "lilac",
    "phi": false,
    "internal": false,
+   "categories": [
+    "newsletter",
+    "subscription"
+   ],
+   "families": [
+    "leads",
+    "money"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 19,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Email preferences",
@@ -1716,6 +2893,29 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "testimonial",
+    "feedback"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "success"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 78,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Testimonial request",
@@ -1793,6 +2993,29 @@
    "theme": "mint",
    "phi": false,
    "internal": false,
+   "categories": [
+    "exit",
+    "survey"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "success",
+    "product"
+   ],
+   "features": [
+    "logic"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 47,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Cancellation survey",
@@ -1865,6 +3088,29 @@
    "theme": "retro",
    "phi": false,
    "internal": false,
+   "categories": [
+    "product-feedback",
+    "feedback"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "product",
+    "success"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 65,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Product feedback",
@@ -1938,6 +3184,26 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "content-download",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 26,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Content download",
@@ -1999,6 +3265,29 @@
    "theme": "bubblegum",
    "phi": false,
    "internal": false,
+   "categories": [
+    "webinar",
+    "event-registration",
+    "registration"
+   ],
+   "families": [
+    "events",
+    "apply"
+   ],
+   "industries": [
+    "general"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "events"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 56,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Webinar registration",
@@ -2063,6 +3352,32 @@
    "theme": "midnight",
    "phi": false,
    "internal": false,
+   "categories": [
+    "demo-request",
+    "lead-generation",
+    "qualify"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "marketing"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 73,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Demo request",
@@ -2178,6 +3493,27 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "signup",
+    "registration"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "product"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 33,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Free trial sign-up",
@@ -2258,6 +3594,31 @@
    "theme": "terminal",
    "phi": false,
    "internal": false,
+   "categories": [
+    "contact",
+    "lead-generation",
+    "qualify"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 71,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Contact sales",
@@ -2357,6 +3718,29 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "client-onboarding",
+    "survey",
+    "questionnaire"
+   ],
+   "families": [
+    "intake",
+    "feedback"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "success",
+    "product"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 34,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Onboarding survey",
@@ -2468,6 +3852,27 @@
    "theme": "lilac",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "marketing"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 35,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Pricing calculator lead",
@@ -2551,6 +3956,29 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "feature-request",
+    "product-feedback"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "product",
+    "success"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 67,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Feature request",
@@ -2617,6 +4045,30 @@
    "theme": "midnight",
    "phi": false,
    "internal": false,
+   "categories": [
+    "bug-report",
+    "report"
+   ],
+   "families": [
+    "feedback",
+    "operations"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "product",
+    "support"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 132,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Bug report",
@@ -2708,6 +4160,26 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "application",
+    "signup"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "product"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 64,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Beta program application",
@@ -2790,6 +4262,29 @@
    "theme": "terminal",
    "phi": false,
    "internal": false,
+   "categories": [
+    "exit",
+    "survey"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "success",
+    "product"
+   ],
+   "features": [
+    "logic"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 49,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Churn survey",
@@ -2878,6 +4373,28 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "feature-request",
+    "request"
+   ],
+   "families": [
+    "feedback",
+    "operations"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "product",
+    "success"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 47,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Integration request",
@@ -2938,6 +4455,30 @@
    "theme": "lilac",
    "phi": false,
    "internal": false,
+   "categories": [
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "product",
+    "success"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 39,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Customer advisory board",
@@ -3021,6 +4562,28 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "request"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "it"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 54,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Security review request",
@@ -3096,6 +4659,27 @@
    "theme": "midnight",
    "phi": false,
    "internal": false,
+   "categories": [
+    "survey",
+    "market-research"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "saas"
+   ],
+   "subs": [],
+   "teams": [
+    "product",
+    "founders"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 101,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Product-market fit survey",
@@ -3161,6 +4745,32 @@
    "theme": "poster",
    "phi": false,
    "internal": false,
+   "categories": [
+    "lead-generation",
+    "quote",
+    "qualify"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 80,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Project inquiry",
@@ -3278,6 +4888,29 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "client-onboarding",
+    "intake"
+   ],
+   "families": [
+    "intake"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "operations",
+    "success"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "steps",
+   "length": "long",
+   "does": [],
+   "seconds": 184,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Client intake",
@@ -3395,6 +5028,28 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "brief"
+   ],
+   "families": [
+    "intake"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 136,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Creative brief",
@@ -3483,6 +5138,28 @@
    "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "lead-generation",
+    "request"
+   ],
+   "families": [
+    "leads",
+    "operations"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "sales"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 32,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "SEO audit request",
@@ -3546,6 +5223,32 @@
    "theme": "noir",
    "phi": false,
    "internal": false,
+   "categories": [
+    "brief",
+    "quote"
+   ],
+   "families": [
+    "intake",
+    "leads"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "operations"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 80,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Website project brief",
@@ -3648,6 +5351,26 @@
    "theme": "poster",
    "phi": false,
    "internal": false,
+   "categories": [
+    "feedback",
+    "survey"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "success"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 76,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Monthly client check-in",
@@ -3710,6 +5433,28 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "request"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "operations"
+   ],
+   "features": [
+    "logic"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 32,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Content approval",
@@ -3774,6 +5519,28 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "application",
+    "job-application",
+    "vendor"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "recruiting",
+    "operations"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 38,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Freelancer application",
@@ -3857,6 +5624,31 @@
    "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "lead-generation",
+    "qualify"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "agency"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 38,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Free marketing audit",
@@ -3950,6 +5742,31 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "consulting"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 61,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Consultation request",
@@ -4026,6 +5843,33 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "questionnaire",
+    "intake",
+    "client-onboarding"
+   ],
+   "families": [
+    "feedback",
+    "intake"
+   ],
+   "industries": [
+    "consulting"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 130,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Discovery questionnaire",
@@ -4137,6 +5981,29 @@
    "theme": "noir",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote",
+    "request"
+   ],
+   "families": [
+    "leads",
+    "operations"
+   ],
+   "industries": [
+    "consulting"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 81,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Proposal request",
@@ -4219,6 +6086,30 @@
    "theme": "clay",
    "phi": false,
    "internal": false,
+   "categories": [
+    "feedback",
+    "evaluation",
+    "testimonial"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "consulting"
+   ],
+   "subs": [],
+   "teams": [
+    "success",
+    "founders"
+   ],
+   "features": [
+    "grid"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 62,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Engagement feedback",
@@ -4295,6 +6186,30 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "registration",
+    "event-registration",
+    "class"
+   ],
+   "families": [
+    "apply",
+    "events",
+    "booking"
+   ],
+   "industries": [
+    "consulting"
+   ],
+   "subs": [],
+   "teams": [
+    "teachers",
+    "events"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 37,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Workshop registration",
@@ -4369,6 +6284,28 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "speaker",
+    "request"
+   ],
+   "families": [
+    "events",
+    "operations"
+   ],
+   "industries": [
+    "consulting"
+   ],
+   "subs": [],
+   "teams": [
+    "events",
+    "marketing"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 48,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Speaker request",
@@ -4453,6 +6390,35 @@
    "theme": "gilded",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "intake",
+    "lead-generation"
+   ],
+   "families": [
+    "leads",
+    "intake"
+   ],
+   "industries": [
+    "legal"
+   ],
+   "subs": [
+    "personal-injury"
+   ],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 68,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Case evaluation",
@@ -4550,6 +6516,30 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "intake",
+    "client-onboarding"
+   ],
+   "families": [
+    "intake"
+   ],
+   "industries": [
+    "legal"
+   ],
+   "subs": [],
+   "teams": [
+    "operations",
+    "founders"
+   ],
+   "features": [
+    "file",
+    "address"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [],
+   "seconds": 103,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "New client intake",
@@ -4648,6 +6638,29 @@
    "theme": "harbor",
    "phi": false,
    "internal": true,
+   "categories": [
+    "checklist",
+    "intake"
+   ],
+   "families": [
+    "operations",
+    "intake"
+   ],
+   "industries": [
+    "legal"
+   ],
+   "subs": [],
+   "teams": [
+    "operations"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "anonymous"
+   ],
+   "seconds": 54,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Conflict check",
@@ -4706,6 +6719,33 @@
    "theme": "noir",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "appointment",
+    "booking"
+   ],
+   "families": [
+    "leads",
+    "booking"
+   ],
+   "industries": [
+    "legal"
+   ],
+   "subs": [],
+   "teams": [
+    "founders",
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 55,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Consultation booking",
@@ -4781,6 +6821,27 @@
    "theme": "gilded",
    "phi": false,
    "internal": false,
+   "categories": [
+    "request"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "legal"
+   ],
+   "subs": [],
+   "teams": [
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 75,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Document request",
@@ -4857,6 +6918,31 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "intake",
+    "questionnaire"
+   ],
+   "families": [
+    "intake",
+    "feedback"
+   ],
+   "industries": [
+    "accounting"
+   ],
+   "subs": [],
+   "teams": [
+    "finance",
+    "operations"
+   ],
+   "features": [
+    "logic",
+    "file"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [],
+   "seconds": 110,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Tax prep intake",
@@ -4977,6 +7063,31 @@
    "theme": "mint",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote",
+    "estimate"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "accounting"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 40,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Bookkeeping quote",
@@ -5075,6 +7186,32 @@
    "theme": "paper",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "intake"
+   ],
+   "families": [
+    "leads",
+    "intake"
+   ],
+   "industries": [
+    "accounting"
+   ],
+   "subs": [],
+   "teams": [
+    "founders",
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 36,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "New business setup",
@@ -5149,6 +7286,28 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "checklist"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "accounting"
+   ],
+   "subs": [],
+   "teams": [
+    "finance",
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 70,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Year-end checklist",
@@ -5217,6 +7376,30 @@
    "theme": "gilded",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "finance"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 38,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Financial review request",
@@ -5310,6 +7493,33 @@
    "theme": "midnight",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quiz",
+    "scorecard"
+   ],
+   "families": [
+    "quizzes"
+   ],
+   "industries": [
+    "finance"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "marketing"
+   ],
+   "features": [
+    "booking",
+    "score"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting",
+    "score"
+   ],
+   "seconds": 36,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Risk tolerance quiz",
@@ -5470,6 +7680,28 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "eligibility",
+    "application"
+   ],
+   "families": [
+    "quizzes",
+    "apply"
+   ],
+   "industries": [
+    "finance"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "finance"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 44,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Loan pre-qualification",
@@ -5570,6 +7802,31 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "finance"
+   ],
+   "subs": [],
+   "teams": [
+    "finance",
+    "sales"
+   ],
+   "features": [
+    "booking",
+    "file"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 77,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Business funding application",
@@ -5701,6 +7958,31 @@
    "theme": "gilded",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "questionnaire"
+   ],
+   "families": [
+    "leads",
+    "feedback"
+   ],
+   "industries": [
+    "finance"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 59,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Retirement planning",
@@ -5781,6 +8063,26 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "insurance"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 51,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Insurance quote request",
@@ -5875,6 +8177,29 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "report",
+    "incident"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "insurance"
+   ],
+   "subs": [],
+   "teams": [
+    "support",
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 82,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Claim report",
@@ -5951,6 +8276,31 @@
    "theme": "mint",
    "phi": false,
    "internal": false,
+   "categories": [
+    "intake",
+    "quote"
+   ],
+   "families": [
+    "intake",
+    "leads"
+   ],
+   "industries": [
+    "insurance"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 50,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Business insurance intake",
@@ -6051,6 +8401,31 @@
    "theme": "paper",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "insurance"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "success"
+   ],
+   "features": [
+    "booking",
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 75,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Policy review",
@@ -6124,6 +8499,31 @@
    "theme": "clay",
    "phi": false,
    "internal": false,
+   "categories": [
+    "estimate",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "real_estate"
+   ],
+   "subs": [
+    "residential"
+   ],
+   "teams": [
+    "sales",
+    "marketing"
+   ],
+   "features": [
+    "address"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 60,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Home valuation",
@@ -6235,6 +8635,32 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "lead-generation",
+    "qualify"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "real_estate"
+   ],
+   "subs": [
+    "residential"
+   ],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 47,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Buyer inquiry",
@@ -6334,6 +8760,28 @@
    "theme": "grove",
    "phi": false,
    "internal": false,
+   "categories": [
+    "appointment",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "real_estate"
+   ],
+   "subs": [
+    "residential"
+   ],
+   "teams": [
+    "sales"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 37,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Showing request",
@@ -6409,6 +8857,30 @@
    "theme": "gilded",
    "phi": false,
    "internal": false,
+   "categories": [
+    "event-registration",
+    "signup"
+   ],
+   "families": [
+    "events",
+    "apply"
+   ],
+   "industries": [
+    "real_estate"
+   ],
+   "subs": [
+    "residential"
+   ],
+   "teams": [
+    "sales",
+    "events"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 28,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Open house sign-in",
@@ -6476,6 +8948,35 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "tenant",
+    "application",
+    "rental"
+   ],
+   "families": [
+    "apply",
+    "booking"
+   ],
+   "industries": [
+    "real_estate"
+   ],
+   "subs": [
+    "property-management"
+   ],
+   "teams": [
+    "operations"
+   ],
+   "features": [
+    "logic",
+    "file",
+    "signature",
+    "address"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [],
+   "seconds": 157,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Rental application",
@@ -6621,6 +9122,31 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "maintenance",
+    "request"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "real_estate"
+   ],
+   "subs": [
+    "property-management"
+   ],
+   "teams": [
+    "operations",
+    "support"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 83,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Maintenance request",
@@ -6713,6 +9239,31 @@
    "theme": "clay",
    "phi": false,
    "internal": false,
+   "categories": [
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "real_estate"
+   ],
+   "subs": [
+    "commercial"
+   ],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 48,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Commercial space inquiry",
@@ -6799,6 +9350,34 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "intake",
+    "client-onboarding"
+   ],
+   "families": [
+    "intake"
+   ],
+   "industries": [
+    "real_estate"
+   ],
+   "subs": [
+    "residential"
+   ],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking",
+    "file",
+    "address"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 101,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Seller listing intake",
@@ -6881,6 +9460,34 @@
    "theme": "poster",
    "phi": false,
    "internal": false,
+   "categories": [
+    "estimate",
+    "quote",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "construction"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "founders"
+   ],
+   "features": [
+    "booking",
+    "file",
+    "address"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 105,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Free estimate",
@@ -6994,6 +9601,30 @@
    "theme": "retro",
    "phi": false,
    "internal": false,
+   "categories": [
+    "request",
+    "appointment"
+   ],
+   "families": [
+    "operations",
+    "booking"
+   ],
+   "industries": [
+    "construction"
+   ],
+   "subs": [],
+   "teams": [
+    "operations",
+    "support"
+   ],
+   "features": [
+    "address"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 80,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Service request",
@@ -7088,6 +9719,35 @@
    "theme": "clay",
    "phi": false,
    "internal": false,
+   "categories": [
+    "estimate",
+    "questionnaire",
+    "brief"
+   ],
+   "families": [
+    "leads",
+    "feedback",
+    "intake"
+   ],
+   "industries": [
+    "construction"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking",
+    "file",
+    "address"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 108,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Remodel planner",
@@ -7214,6 +9874,28 @@
    "theme": "studio",
    "phi": false,
    "internal": true,
+   "categories": [
+    "vendor",
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "construction"
+   ],
+   "subs": [],
+   "teams": [
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 63,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Subcontractor application",
@@ -7307,6 +9989,31 @@
    "theme": "poster",
    "phi": false,
    "internal": true,
+   "categories": [
+    "inspection",
+    "checklist"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "construction"
+   ],
+   "subs": [],
+   "teams": [
+    "operations"
+   ],
+   "features": [
+    "file",
+    "signature"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "anonymous"
+   ],
+   "seconds": 80,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Job site safety check",
@@ -7379,6 +10086,28 @@
    "theme": "retro",
    "phi": false,
    "internal": false,
+   "categories": [
+    "return",
+    "request"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "construction"
+   ],
+   "subs": [],
+   "teams": [
+    "support"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 82,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Warranty claim",
@@ -7453,6 +10182,27 @@
    "theme": "clay",
    "phi": false,
    "internal": false,
+   "categories": [
+    "csat",
+    "feedback"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "construction"
+   ],
+   "subs": [],
+   "teams": [
+    "success",
+    "founders"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 48,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Customer satisfaction",
@@ -7518,6 +10268,34 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "estimate",
+    "eligibility",
+    "lead-generation"
+   ],
+   "families": [
+    "leads",
+    "quizzes"
+   ],
+   "industries": [
+    "solar"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "marketing"
+   ],
+   "features": [
+    "booking",
+    "address"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 63,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Solar savings check",
@@ -7626,6 +10404,31 @@
    "theme": "mint",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "solar"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking",
+    "address"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 58,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Commercial energy audit",
@@ -7704,6 +10507,31 @@
    "theme": "grove",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "solar"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking",
+    "file",
+    "address"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 76,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "EV charger install",
@@ -7796,6 +10624,29 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "appointment",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "healthcare"
+   ],
+   "subs": [
+    "clinics"
+   ],
+   "teams": [
+    "care",
+    "operations"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 41,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Appointment request",
@@ -7885,6 +10736,32 @@
    "theme": "mint",
    "phi": true,
    "internal": false,
+   "categories": [
+    "patient-intake",
+    "intake"
+   ],
+   "families": [
+    "intake"
+   ],
+   "industries": [
+    "healthcare"
+   ],
+   "subs": [
+    "clinics"
+   ],
+   "teams": [
+    "care"
+   ],
+   "features": [
+    "file",
+    "signature",
+    "address"
+   ],
+   "layout": "steps",
+   "length": "long",
+   "does": [],
+   "seconds": 192,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "New patient intake",
@@ -8015,6 +10892,29 @@
    "theme": "lilac",
    "phi": false,
    "internal": false,
+   "categories": [
+    "feedback",
+    "csat"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "healthcare"
+   ],
+   "subs": [],
+   "teams": [
+    "care",
+    "success"
+   ],
+   "features": [
+    "grid"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 59,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Patient feedback",
@@ -8083,6 +10983,30 @@
    "theme": "paper",
    "phi": true,
    "internal": false,
+   "categories": [
+    "referral",
+    "request"
+   ],
+   "families": [
+    "leads",
+    "operations"
+   ],
+   "industries": [
+    "healthcare"
+   ],
+   "subs": [],
+   "teams": [
+    "care",
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 79,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Referral from provider",
@@ -8162,6 +11086,31 @@
    "theme": "tide",
    "phi": true,
    "internal": false,
+   "categories": [
+    "questionnaire",
+    "intake"
+   ],
+   "families": [
+    "feedback",
+    "intake"
+   ],
+   "industries": [
+    "healthcare"
+   ],
+   "subs": [],
+   "teams": [
+    "care"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 54,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Telehealth check-in",
@@ -8229,6 +11178,33 @@
    "theme": "grove",
    "phi": false,
    "internal": false,
+   "categories": [
+    "appointment",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "wellness"
+   ],
+   "subs": [
+    "dental"
+   ],
+   "teams": [
+    "care",
+    "marketing"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 36,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "New patient booking",
@@ -8310,6 +11286,33 @@
    "theme": "lilac",
    "phi": true,
    "internal": false,
+   "categories": [
+    "consultation",
+    "intake"
+   ],
+   "families": [
+    "leads",
+    "intake"
+   ],
+   "industries": [
+    "wellness"
+   ],
+   "subs": [
+    "therapy"
+   ],
+   "teams": [
+    "care"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 63,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Therapy consultation",
@@ -8393,6 +11396,33 @@
    "theme": "clay",
    "phi": false,
    "internal": false,
+   "categories": [
+    "scorecard",
+    "quiz"
+   ],
+   "families": [
+    "quizzes"
+   ],
+   "industries": [
+    "wellness"
+   ],
+   "subs": [],
+   "teams": [
+    "care",
+    "marketing"
+   ],
+   "features": [
+    "booking",
+    "score"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting",
+    "score"
+   ],
+   "seconds": 26,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Wellness assessment",
@@ -8512,6 +11542,29 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consent",
+    "waiver"
+   ],
+   "families": [
+    "legal"
+   ],
+   "industries": [
+    "wellness"
+   ],
+   "subs": [],
+   "teams": [
+    "care",
+    "operations"
+   ],
+   "features": [
+    "signature"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 62,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Consent and waiver",
@@ -8571,7 +11624,7 @@
    "id": "fitness.trial-class",
    "slug": "fitness-trial-class",
    "industry": "fitness",
-   "industryLabel": "Fitness and beauty",
+   "industryLabel": "Fitness",
    "tags": [
     "booking",
     "lead"
@@ -8582,6 +11635,29 @@
    "theme": "bubblegum",
    "phi": false,
    "internal": false,
+   "categories": [
+    "class",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "fitness"
+   ],
+   "subs": [
+    "gyms"
+   ],
+   "teams": [
+    "marketing",
+    "sales"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 35,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Free trial class",
@@ -8657,7 +11733,7 @@
    "id": "fitness.pt-intake",
    "slug": "fitness-pt-intake",
    "industry": "fitness",
-   "industryLabel": "Fitness and beauty",
+   "industryLabel": "Fitness",
    "tags": [
     "intake",
     "lead"
@@ -8668,6 +11744,35 @@
    "theme": "poster",
    "phi": true,
    "internal": false,
+   "categories": [
+    "intake",
+    "questionnaire"
+   ],
+   "families": [
+    "intake",
+    "feedback"
+   ],
+   "industries": [
+    "fitness"
+   ],
+   "subs": [
+    "personal-training"
+   ],
+   "teams": [
+    "teachers",
+    "sales"
+   ],
+   "features": [
+    "logic",
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 59,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Personal training intake",
@@ -8761,7 +11866,7 @@
    "id": "fitness.membership",
    "slug": "fitness-membership",
    "industry": "fitness",
-   "industryLabel": "Fitness and beauty",
+   "industryLabel": "Fitness",
    "tags": [
     "registration",
     "order"
@@ -8772,6 +11877,31 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "membership",
+    "signup"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "fitness"
+   ],
+   "subs": [
+    "gyms"
+   ],
+   "teams": [
+    "sales",
+    "operations"
+   ],
+   "features": [
+    "signature"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 49,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Membership sign-up",
@@ -8848,17 +11978,39 @@
   {
    "id": "fitness.salon-booking",
    "slug": "fitness-salon-booking",
-   "industry": "fitness",
-   "industryLabel": "Fitness and beauty",
+   "industry": "beauty",
+   "industryLabel": "Beauty and salons",
    "tags": [
     "booking"
    ],
    "name": "Salon booking",
    "blurb": "Book services with a stylist.",
    "featured": false,
-   "theme": "midnight",
+   "theme": "bubblegum",
    "phi": false,
    "internal": false,
+   "categories": [
+    "appointment",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "beauty"
+   ],
+   "subs": [
+    "salons"
+   ],
+   "teams": [
+    "operations"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 42,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Salon booking",
@@ -8936,16 +12088,40 @@
    "id": "fitness.waiver",
    "slug": "fitness-waiver",
    "industry": "fitness",
-   "industryLabel": "Fitness and beauty",
+   "industryLabel": "Fitness",
    "tags": [
     "intake"
    ],
    "name": "Liability waiver",
    "blurb": "Signed waivers before anyone trains.",
    "featured": false,
-   "theme": "bubblegum",
+   "theme": "midnight",
    "phi": false,
    "internal": false,
+   "categories": [
+    "waiver",
+    "consent"
+   ],
+   "families": [
+    "legal"
+   ],
+   "industries": [
+    "fitness"
+   ],
+   "subs": [
+    "gyms"
+   ],
+   "teams": [
+    "operations"
+   ],
+   "features": [
+    "signature"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 38,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Liability waiver",
@@ -9014,6 +12190,32 @@
    "theme": "retro",
    "phi": false,
    "internal": false,
+   "categories": [
+    "lead-generation",
+    "enrollment"
+   ],
+   "families": [
+    "leads",
+    "apply"
+   ],
+   "industries": [
+    "education"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "teachers"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 65,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Course inquiry",
@@ -9108,6 +12310,33 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "application",
+    "enrollment"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "education"
+   ],
+   "subs": [
+    "schools"
+   ],
+   "teams": [
+    "teachers",
+    "operations"
+   ],
+   "features": [
+    "file",
+    "signature",
+    "address"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [],
+   "seconds": 132,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Application",
@@ -9229,6 +12458,28 @@
    "theme": "lilac",
    "phi": false,
    "internal": false,
+   "categories": [
+    "evaluation",
+    "feedback"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "education"
+   ],
+   "subs": [],
+   "teams": [
+    "teachers"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "anonymous"
+   ],
+   "seconds": 78,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Course feedback",
@@ -9302,6 +12553,33 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "class",
+    "request"
+   ],
+   "families": [
+    "booking",
+    "operations"
+   ],
+   "industries": [
+    "education"
+   ],
+   "subs": [
+    "tutoring"
+   ],
+   "teams": [
+    "teachers"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 68,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Tutoring request",
@@ -9400,6 +12678,32 @@
    "theme": "retro",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote",
+    "class"
+   ],
+   "families": [
+    "leads",
+    "booking"
+   ],
+   "industries": [
+    "education"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "teachers"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 42,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Corporate training request",
@@ -9481,6 +12785,31 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "grant",
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "education"
+   ],
+   "subs": [
+    "schools"
+   ],
+   "teams": [
+    "teachers",
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 106,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Scholarship application",
@@ -9555,6 +12884,30 @@
    "theme": "lilac",
    "phi": false,
    "internal": false,
+   "categories": [
+    "knowledge",
+    "quiz"
+   ],
+   "families": [
+    "quizzes"
+   ],
+   "industries": [
+    "education"
+   ],
+   "subs": [],
+   "teams": [
+    "teachers"
+   ],
+   "features": [
+    "score"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "score"
+   ],
+   "seconds": 21,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Quiz / knowledge check",
@@ -9664,6 +13017,29 @@
    "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "application",
+    "lead-generation"
+   ],
+   "families": [
+    "apply",
+    "leads"
+   ],
+   "industries": [
+    "ecommerce"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 62,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Wholesale inquiry",
@@ -9761,6 +13137,26 @@
    "theme": "bubblegum",
    "phi": false,
    "internal": false,
+   "categories": [
+    "product-finder",
+    "quiz"
+   ],
+   "families": [
+    "quizzes"
+   ],
+   "industries": [
+    "ecommerce"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 29,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Product quiz",
@@ -9845,6 +13241,29 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "return",
+    "request"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "ecommerce"
+   ],
+   "subs": [],
+   "teams": [
+    "support"
+   ],
+   "features": [
+    "logic",
+    "file"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 38,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Return request",
@@ -9930,6 +13349,27 @@
    "theme": "editorial",
    "phi": false,
    "internal": false,
+   "categories": [
+    "waitlist",
+    "signup"
+   ],
+   "families": [
+    "leads",
+    "apply"
+   ],
+   "industries": [
+    "ecommerce"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 18,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Back-in-stock alert",
@@ -9978,6 +13418,29 @@
    "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "testimonial",
+    "feedback"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "ecommerce"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing",
+    "success"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 79,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Product review",
@@ -10052,6 +13515,27 @@
    "theme": "bubblegum",
    "phi": false,
    "internal": false,
+   "categories": [
+    "application",
+    "partner"
+   ],
+   "families": [
+    "apply",
+    "leads"
+   ],
+   "industries": [
+    "ecommerce"
+   ],
+   "subs": [],
+   "teams": [
+    "marketing"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 45,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Influencer application",
@@ -10139,6 +13623,30 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "order",
+    "request"
+   ],
+   "families": [
+    "money",
+    "operations"
+   ],
+   "industries": [
+    "ecommerce"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 87,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Custom order request",
@@ -10220,6 +13728,29 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote",
+    "request"
+   ],
+   "families": [
+    "leads",
+    "operations"
+   ],
+   "industries": [
+    "manufacturing"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 98,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "RFQ (request for quote)",
@@ -10321,6 +13852,31 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "partner",
+    "application"
+   ],
+   "families": [
+    "leads",
+    "apply"
+   ],
+   "industries": [
+    "manufacturing"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 68,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Distributor application",
@@ -10397,6 +13953,29 @@
    "theme": "terminal",
    "phi": false,
    "internal": false,
+   "categories": [
+    "request",
+    "order"
+   ],
+   "families": [
+    "operations",
+    "money"
+   ],
+   "industries": [
+    "manufacturing"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "address"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 81,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Sample request",
@@ -10473,6 +14052,28 @@
    "theme": "poster",
    "phi": false,
    "internal": true,
+   "categories": [
+    "vendor"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "manufacturing"
+   ],
+   "subs": [],
+   "teams": [
+    "operations",
+    "finance"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 74,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Supplier onboarding",
@@ -10555,6 +14156,28 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "report",
+    "incident"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "manufacturing"
+   ],
+   "subs": [],
+   "teams": [
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 79,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Quality issue report",
@@ -10629,6 +14252,25 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "logistics"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 53,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Freight quote",
@@ -10728,6 +14370,28 @@
    "theme": "midnight",
    "phi": false,
    "internal": true,
+   "categories": [
+    "vendor",
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "logistics"
+   ],
+   "subs": [],
+   "teams": [
+    "operations"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 64,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Carrier onboarding",
@@ -10811,6 +14475,30 @@
    "theme": "poster",
    "phi": false,
    "internal": false,
+   "categories": [
+    "lead-generation",
+    "quote"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "logistics"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 44,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Warehouse space inquiry",
@@ -10897,6 +14585,28 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "job-application",
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "logistics"
+   ],
+   "subs": [],
+   "teams": [
+    "recruiting"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 58,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Driver application",
@@ -10985,6 +14695,26 @@
    "theme": "noir",
    "phi": false,
    "internal": false,
+   "categories": [
+    "appointment",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "automotive"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 40,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Test drive booking",
@@ -11065,6 +14795,27 @@
    "theme": "midnight",
    "phi": false,
    "internal": false,
+   "categories": [
+    "estimate"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "automotive"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 67,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Trade-in value",
@@ -11163,6 +14914,27 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "appointment",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "automotive"
+   ],
+   "subs": [],
+   "teams": [
+    "operations",
+    "support"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 40,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Service appointment",
@@ -11240,6 +15012,29 @@
    "theme": "poster",
    "phi": false,
    "internal": false,
+   "categories": [
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "automotive"
+   ],
+   "subs": [],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 42,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Fleet inquiry",
@@ -11324,6 +15119,32 @@
    "theme": "clay",
    "phi": false,
    "internal": false,
+   "categories": [
+    "reservation",
+    "party"
+   ],
+   "families": [
+    "booking",
+    "events"
+   ],
+   "industries": [
+    "hospitality"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "events"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 71,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Group booking / event inquiry",
@@ -11407,8 +15228,8 @@
   {
    "id": "hospitality.catering",
    "slug": "hospitality-catering",
-   "industry": "hospitality",
-   "industryLabel": "Hospitality and travel",
+   "industry": "food",
+   "industryLabel": "Restaurants and food",
    "tags": [
     "request",
     "order"
@@ -11416,9 +15237,33 @@
    "name": "Catering request",
    "blurb": "Menus, guest counts and dietary needs.",
    "featured": false,
-   "theme": "gilded",
+   "theme": "clay",
    "phi": false,
    "internal": false,
+   "categories": [
+    "order",
+    "request"
+   ],
+   "families": [
+    "money",
+    "operations"
+   ],
+   "industries": [
+    "food"
+   ],
+   "subs": [
+    "catering"
+   ],
+   "teams": [
+    "sales",
+    "operations"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 49,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Catering request",
@@ -11511,9 +15356,34 @@
    "name": "Guest feedback",
    "blurb": "Ratings and comments after each stay.",
    "featured": false,
-   "theme": "coral",
+   "theme": "gilded",
    "phi": false,
    "internal": false,
+   "categories": [
+    "feedback",
+    "csat"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "hospitality"
+   ],
+   "subs": [
+    "hotels"
+   ],
+   "teams": [
+    "success",
+    "operations"
+   ],
+   "features": [
+    "grid"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 67,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Guest feedback",
@@ -11584,9 +15454,35 @@
    "name": "Travel inquiry",
    "blurb": "Plan trips from dates, budget and travelers.",
    "featured": false,
-   "theme": "grove",
+   "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "quote",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "hospitality"
+   ],
+   "subs": [
+    "tours"
+   ],
+   "teams": [
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 47,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Travel inquiry",
@@ -11659,17 +15555,39 @@
   {
    "id": "hospitality.reservation",
    "slug": "hospitality-reservation",
-   "industry": "hospitality",
-   "industryLabel": "Hospitality and travel",
+   "industry": "food",
+   "industryLabel": "Restaurants and food",
    "tags": [
     "booking"
    ],
    "name": "Reservation request",
    "blurb": "Table requests for busy nights.",
    "featured": false,
-   "theme": "sunrise",
+   "theme": "retro",
    "phi": false,
    "internal": false,
+   "categories": [
+    "reservation",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "food"
+   ],
+   "subs": [
+    "restaurants"
+   ],
+   "teams": [
+    "operations"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 42,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Reservation request",
@@ -11747,6 +15665,27 @@
    "theme": "bubblegum",
    "phi": false,
    "internal": false,
+   "categories": [
+    "event-registration",
+    "registration"
+   ],
+   "families": [
+    "events",
+    "apply"
+   ],
+   "industries": [
+    "events"
+   ],
+   "subs": [],
+   "teams": [
+    "events"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 38,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Event registration",
@@ -11838,6 +15777,29 @@
    "theme": "noir",
    "phi": false,
    "internal": false,
+   "categories": [
+    "speaker",
+    "application"
+   ],
+   "families": [
+    "events",
+    "apply"
+   ],
+   "industries": [
+    "events"
+   ],
+   "subs": [],
+   "teams": [
+    "events"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 123,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Speaker application",
@@ -11935,6 +15897,32 @@
    "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "sponsorship",
+    "lead-generation"
+   ],
+   "families": [
+    "money",
+    "leads"
+   ],
+   "industries": [
+    "events"
+   ],
+   "subs": [],
+   "teams": [
+    "events",
+    "sales"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 69,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Sponsor inquiry",
@@ -12023,6 +16011,27 @@
    "theme": "retro",
    "phi": false,
    "internal": false,
+   "categories": [
+    "exhibitor",
+    "registration"
+   ],
+   "families": [
+    "events",
+    "apply"
+   ],
+   "industries": [
+    "events"
+   ],
+   "subs": [],
+   "teams": [
+    "events"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 39,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Exhibitor sign-up",
@@ -12104,6 +16113,29 @@
    "theme": "midnight",
    "phi": false,
    "internal": false,
+   "categories": [
+    "feedback",
+    "survey",
+    "evaluation"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "events"
+   ],
+   "subs": [],
+   "teams": [
+    "events"
+   ],
+   "features": [
+    "grid"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 66,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Post-event survey",
@@ -12175,6 +16207,27 @@
    "theme": "bubblegum",
    "phi": false,
    "internal": false,
+   "categories": [
+    "volunteer",
+    "signup"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "events"
+   ],
+   "subs": [],
+   "teams": [
+    "volunteers",
+    "events"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 41,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Volunteer sign-up",
@@ -12264,6 +16317,33 @@
    "theme": "noir",
    "phi": false,
    "internal": false,
+   "categories": [
+    "appointment",
+    "booking"
+   ],
+   "families": [
+    "booking"
+   ],
+   "industries": [
+    "events"
+   ],
+   "subs": [
+    "conferences"
+   ],
+   "teams": [
+    "sales",
+    "events"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 37,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Meeting request at event",
@@ -12338,6 +16418,26 @@
    "theme": "grove",
    "phi": false,
    "internal": false,
+   "categories": [
+    "volunteer",
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "nonprofit"
+   ],
+   "subs": [],
+   "teams": [
+    "volunteers"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 68,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Volunteer application",
@@ -12425,6 +16525,28 @@
    "theme": "sunrise",
    "phi": false,
    "internal": false,
+   "categories": [
+    "donation"
+   ],
+   "families": [
+    "money"
+   ],
+   "industries": [
+    "nonprofit"
+   ],
+   "subs": [],
+   "teams": [
+    "founders",
+    "marketing"
+   ],
+   "features": [
+    "logic"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 31,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Donation pledge",
@@ -12503,6 +16625,29 @@
    "theme": "coral",
    "phi": false,
    "internal": false,
+   "categories": [
+    "grant",
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "nonprofit"
+   ],
+   "subs": [],
+   "teams": [
+    "operations",
+    "finance"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [],
+   "seconds": 90,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Grant application",
@@ -12593,6 +16738,30 @@
    "theme": "tide",
    "phi": false,
    "internal": false,
+   "categories": [
+    "intake",
+    "enrollment"
+   ],
+   "families": [
+    "intake",
+    "apply"
+   ],
+   "industries": [
+    "nonprofit"
+   ],
+   "subs": [],
+   "teams": [
+    "operations",
+    "care"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 75,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Program intake",
@@ -12662,6 +16831,29 @@
    "theme": "grove",
    "phi": false,
    "internal": false,
+   "categories": [
+    "rsvp",
+    "event-registration"
+   ],
+   "families": [
+    "events"
+   ],
+   "industries": [
+    "nonprofit"
+   ],
+   "subs": [],
+   "teams": [
+    "events",
+    "volunteers"
+   ],
+   "features": [
+    "logic"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 24,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Event RSVP",
@@ -12747,6 +16939,29 @@
    "theme": "lilac",
    "phi": false,
    "internal": false,
+   "categories": [
+    "job-application",
+    "application"
+   ],
+   "families": [
+    "apply"
+   ],
+   "industries": [
+    "hr"
+   ],
+   "subs": [],
+   "teams": [
+    "recruiting",
+    "hr"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 88,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Job application",
@@ -12826,6 +17041,27 @@
    "theme": "mint",
    "phi": false,
    "internal": true,
+   "categories": [
+    "employee-onboarding"
+   ],
+   "families": [
+    "intake"
+   ],
+   "industries": [
+    "hr"
+   ],
+   "subs": [],
+   "teams": [
+    "hr"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "steps",
+   "length": "short",
+   "does": [],
+   "seconds": 93,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Employee onboarding",
@@ -12936,6 +17172,30 @@
    "theme": "paper",
    "phi": false,
    "internal": true,
+   "categories": [
+    "engagement",
+    "survey"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "hr"
+   ],
+   "subs": [],
+   "teams": [
+    "hr"
+   ],
+   "features": [
+    "grid"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "anonymous"
+   ],
+   "seconds": 54,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Employee engagement survey",
@@ -13002,6 +17262,30 @@
    "theme": "tide",
    "phi": false,
    "internal": true,
+   "categories": [
+    "exit",
+    "offboarding",
+    "survey"
+   ],
+   "families": [
+    "feedback",
+    "intake"
+   ],
+   "industries": [
+    "hr"
+   ],
+   "subs": [],
+   "teams": [
+    "hr"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "anonymous"
+   ],
+   "seconds": 41,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Exit interview",
@@ -13062,6 +17346,26 @@
    "theme": "lilac",
    "phi": false,
    "internal": true,
+   "categories": [
+    "time-off",
+    "request"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "hr"
+   ],
+   "subs": [],
+   "teams": [
+    "hr"
+   ],
+   "features": [],
+   "layout": "one",
+   "length": "quick",
+   "does": [],
+   "seconds": 33,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Time-off request",
@@ -13131,6 +17435,30 @@
    "theme": "mint",
    "phi": false,
    "internal": true,
+   "categories": [
+    "evaluation",
+    "feedback"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "hr"
+   ],
+   "subs": [],
+   "teams": [
+    "hr"
+   ],
+   "features": [
+    "grid"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "anonymous"
+   ],
+   "seconds": 82,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "360 feedback",
@@ -13194,6 +17522,29 @@
    "theme": "paper",
    "phi": false,
    "internal": true,
+   "categories": [
+    "evaluation"
+   ],
+   "families": [
+    "feedback"
+   ],
+   "industries": [
+    "hr"
+   ],
+   "subs": [],
+   "teams": [
+    "recruiting"
+   ],
+   "features": [
+    "grid"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "anonymous"
+   ],
+   "seconds": 63,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Interview feedback",
@@ -13272,6 +17623,30 @@
    "theme": "tide",
    "phi": false,
    "internal": true,
+   "categories": [
+    "referral",
+    "job-application"
+   ],
+   "families": [
+    "leads",
+    "apply"
+   ],
+   "industries": [
+    "hr"
+   ],
+   "subs": [],
+   "teams": [
+    "recruiting",
+    "hr"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 76,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Employee referral",
@@ -13340,6 +17715,31 @@
    "theme": "terminal",
    "phi": false,
    "internal": false,
+   "categories": [
+    "consultation",
+    "lead-generation"
+   ],
+   "families": [
+    "leads"
+   ],
+   "industries": [
+    "it"
+   ],
+   "subs": [],
+   "teams": [
+    "sales",
+    "it"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 50,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "IT assessment request",
@@ -13430,6 +17830,29 @@
    "theme": "midnight",
    "phi": false,
    "internal": false,
+   "categories": [
+    "it-request",
+    "request"
+   ],
+   "families": [
+    "operations"
+   ],
+   "industries": [
+    "it"
+   ],
+   "subs": [],
+   "teams": [
+    "it",
+    "support"
+   ],
+   "features": [
+    "file"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [],
+   "seconds": 80,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Support ticket",
@@ -13519,6 +17942,33 @@
    "theme": "harbor",
    "phi": false,
    "internal": false,
+   "categories": [
+    "scorecard",
+    "quiz"
+   ],
+   "families": [
+    "quizzes"
+   ],
+   "industries": [
+    "it"
+   ],
+   "subs": [],
+   "teams": [
+    "it",
+    "sales"
+   ],
+   "features": [
+    "booking",
+    "score"
+   ],
+   "layout": "one",
+   "length": "quick",
+   "does": [
+    "meeting",
+    "score"
+   ],
+   "seconds": 27,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Security readiness quiz",
@@ -13651,6 +18101,31 @@
    "theme": "studio",
    "phi": false,
    "internal": false,
+   "categories": [
+    "questionnaire",
+    "intake"
+   ],
+   "families": [
+    "feedback",
+    "intake"
+   ],
+   "industries": [
+    "it"
+   ],
+   "subs": [],
+   "teams": [
+    "it"
+   ],
+   "features": [
+    "booking"
+   ],
+   "layout": "one",
+   "length": "short",
+   "does": [
+    "meeting"
+   ],
+   "seconds": 67,
+   "added": "",
    "schema": {
     "v": 1,
     "title": "Cloud migration intake",

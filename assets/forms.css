@@ -24,6 +24,13 @@
 .trail__i small { font-family: var(--mono); font-size: 11.5px; color: var(--faint); }
 .trail__i:hover { background: var(--hover); color: var(--ink); }
 .trail__i.is-on { background: var(--hover); color: var(--ink); font-weight: 500; }
+.trail__i--sub { padding-left: 22px; font-size: 13.5px; }
+.trail__m { margin-top: 10px; }
+.trail__m > summary { display: flex; align-items: center; justify-content: space-between; padding-top: 6px; cursor: pointer; list-style: none; }
+.trail__m > summary::-webkit-details-marker { display: none; }
+.trail__m > summary svg { width: 12px; height: 12px; transition: transform var(--normal) var(--ease-out); }
+.trail__m:not([open]) > summary svg { transform: rotate(-90deg); }
+.trail__m > summary:hover { color: var(--ink); }
 
 .tgal__main { display: flex; min-width: 0; flex-direction: column; gap: 16px; }
 .tfilter { display: none; flex-direction: column; gap: 12px; }
@@ -46,6 +53,17 @@
 .tjump__list { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 4px 8px 10px; border-top: 1px solid var(--line); }
 .tjump__list a { padding: 8px 6px; border-radius: var(--r-sm); font-size: 14px; color: var(--muted); }
 .tjump__list a:hover { background: var(--hover); color: var(--ink); }
+.tjump__h { grid-column: 1 / -1; padding: 12px 6px 2px; font-family: var(--mono); font-size: 11.5px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); }
+.tag--link:hover { background: var(--line); color: var(--ink); }
+.trel__more { display: flex; flex-wrap: wrap; gap: 16px; }
+.tcats { display: grid; gap: 28px 24px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.tcats__g h3 { margin-bottom: 10px; }
+.tcats__g h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.tcats__g ul { display: flex; flex-direction: column; gap: 2px; }
+.tcats__g li { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.tcats__g li a { padding: 4px 0; font-size: 14.5px; color: var(--muted); }
+.tcats__g li a:hover { color: var(--ink); }
+.tcats__g small { font-family: var(--mono); font-size: 11.5px; color: var(--faint); }
 .tcount { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
 .tnone { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 64px 16px; border: 1px dashed var(--line-strong); border-radius: var(--r-lg); text-align: center; color: var(--muted); }
 

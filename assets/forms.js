@@ -1,25 +1,33 @@
 // The form template gallery and the live forms on each template page (tools/templates.py). No library.
 // Without this file every form still shows in full and every card still links to its page.
 
-// Gallery: search words and use-case chips, in place --------------------------------------------------------------
+// Gallery: search words and filter chips, in place. Chips in one menu widen the results; two menus narrow them. ---
 (function () {
   var grid = document.querySelector("[data-grid]");
   var search = document.querySelector("[data-search]");
   if (!grid || !search) return;
   var cards = Array.prototype.slice.call(grid.querySelectorAll(".tcard"));
-  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip[data-m]"));
   var count = document.querySelector("[data-count]");
   var none = document.querySelector("[data-none]");
-  var tag = "all";
+  var on = {};
   var q = new URLSearchParams(location.search);
   if (q.get("q")) search.value = q.get("q");
 
+  function fits(c) {
+    for (var m in on) {
+      if (!on[m].length) continue;
+      var have = " " + (c.getAttribute("data-" + m) || "") + " ";
+      if (!on[m].some(function (v) { return have.indexOf(" " + v + " ") > -1; })) return false;
+    }
+    return true;
+  }
   function apply() {
     var words = search.value.toLowerCase().split(/\s+/).filter(Boolean);
     var n = 0;
     cards.forEach(function (c) {
       var hay = c.getAttribute("data-words");
-      var ok = (tag === "all" || (" " + c.getAttribute("data-tags") + " ").indexOf(" " + tag + " ") > -1) && words.every(function (w) { return hay.indexOf(w) > -1; });
+      var ok = fits(c) && words.every(function (w) { return hay.indexOf(w) > -1; });
       c.hidden = !ok;
       if (ok) n++;
     });
@@ -29,13 +37,27 @@
   search.addEventListener("input", apply);
   chips.forEach(function (ch) {
     ch.addEventListener("click", function () {
-      tag = ch.getAttribute("data-tag");
-      chips.forEach(function (x) { var on = x === ch; x.classList.toggle("is-on", on); x.setAttribute("aria-pressed", on ? "true" : "false"); });
+      var m = ch.getAttribute("data-m");
+      var v = ch.getAttribute("data-v");
+      var list = on[m] || (on[m] = []);
+      var i = list.indexOf(v);
+      if (i > -1) list.splice(i, 1);
+      else list.push(v);
+      var pressed = i < 0;
+      ch.classList.toggle("is-on", pressed);
+      ch.setAttribute("aria-pressed", pressed ? "true" : "false");
       apply();
     });
   });
   var clear = document.querySelector("[data-clear]");
-  if (clear) clear.addEventListener("click", function () { search.value = ""; chips[0] && chips[0].click(); apply(); search.focus(); });
+  if (clear)
+    clear.addEventListener("click", function () {
+      search.value = "";
+      on = {};
+      chips.forEach(function (x) { x.classList.remove("is-on"); x.setAttribute("aria-pressed", "false"); });
+      apply();
+      search.focus();
+    });
   apply();
 })();
 

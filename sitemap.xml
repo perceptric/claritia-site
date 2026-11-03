@@ -5,6 +5,38 @@
   <url><loc>https://tryclaritia.com/terms</loc></url>
   <!-- templates:start -->
   <url><loc>https://tryclaritia.com/templates</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/leads</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/booking</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/money</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/apply</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/events</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/feedback</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/quizzes</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/intake</loc></url>
+  <url><loc>https://tryclaritia.com/templates/group/operations</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/lead-generation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/estimate</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/consultation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/qualify</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/appointment</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/booking</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/class</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/application</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/job-application</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/registration</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/vendor</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/event-registration</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/feedback</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/survey</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/evaluation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/questionnaire</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/csat</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quiz</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/intake</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/client-onboarding</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/request</loc></url>
   <url><loc>https://tryclaritia.com/templates/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/agency</loc></url>
@@ -29,6 +61,21 @@
   <url><loc>https://tryclaritia.com/templates/nonprofit</loc></url>
   <url><loc>https://tryclaritia.com/templates/hr</loc></url>
   <url><loc>https://tryclaritia.com/templates/it</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate/residential</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/marketing</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/sales</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/success</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/support</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/recruiting</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/operations</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/finance</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/it</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/product</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/founders</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/events</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/teachers</loc></url>
+  <url><loc>https://tryclaritia.com/templates/team/care</loc></url>
   <url><loc>https://tryclaritia.com/templates/general-contact-us</loc></url>
   <url><loc>https://tryclaritia.com/templates/general-newsletter</loc></url>
   <url><loc>https://tryclaritia.com/templates/general-book-a-call</loc></url>
