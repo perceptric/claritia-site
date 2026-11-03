@@ -2,18 +2,18 @@
 
 Claritia is forms, meetings and workflows: forms that turn visitors into leads, meetings that book them with the right person, and workflows that send the reminders and follow-ups.
 
-Each plan has 1 host in its price, then a price for each extra host. A host is anyone people can book. Everyone who builds forms, edits workflows or reads results is free.
+Each plan comes with 1 seat, then a small price for each extra seat. A seat is a teammate people can book a meeting with. Teammates who only build forms, edit workflows or read answers are free.
 
 | | Free | Starter | Pro | Business |
 |---|---|---|---|---|
 | Price a month | $0 | $15 | $39 | $79 |
 | Price a month, billed yearly | $0 | $12 | $31 | $63 |
 | **Plan** | | | | |
-| Hosts included | 1 | 1 | 1 | 1 |
-| Each extra host | – | $8 ($6 yearly) | $15 ($12 yearly) | $25 ($20 yearly) |
+| Seats included | 1 | 1 | 1 | 1 |
+| Each extra seat | – | $8 ($6 yearly) | $15 ($12 yearly) | $25 ($20 yearly) |
 | Editors | Unlimited | Unlimited | Unlimited | Unlimited |
-| Submissions a month | 250 | 2,000 | 5,000 | Unlimited |
-| Extra submissions | – | $5 per 1,000 | $5 per 1,000 | – |
+| Form answers a month | 250 | 2,000 | 5,000 | Unlimited |
+| Extra form answers | – | $5 per 1,000 | $5 per 1,000 | – |
 | AI credits a month | 100 | 500 | 2,000 | 5,000 |
 | **Forms** | | | | |
 | Unlimited forms and questions | Yes | Yes | Yes | Yes |
@@ -58,7 +58,7 @@ Each plan has 1 host in its price, then a price for each extra host. A host is a
 | Disposable email blocking | Yes | Yes | Yes | Yes |
 | Consent wording by region | Yes | Yes | Yes | Yes |
 | **Meetings** | | | | |
-| Calendars per host | 1 | 3 | 10 | Unlimited |
+| Calendars per seat | 1 | 3 | 10 | Unlimited |
 | Meeting types | 1 | Unlimited | Unlimited | Unlimited |
 | Google Calendar and Outlook | Yes | Yes | Yes | Yes |
 | Google Meet, Teams and Zoom links | Yes | Yes | Yes | Yes |
@@ -77,7 +77,7 @@ Each plan has 1 host in its price, then a price for each extra host. A host is a
 | Round robin with weights and priority | – | – | Yes | Yes |
 | Collective meetings (everyone free) | – | – | Yes | Yes |
 | Team pools | – | – | Yes | Yes |
-| Caps per host for a day and a week | – | – | Yes | Yes |
+| Daily and weekly limits for each person | – | – | Yes | Yes |
 | Away days | – | – | Yes | Yes |
 | Owner first (the person's owner in your CRM) | – | – | – | Yes |
 | Double round robin (one from each of two teams) | – | – | – | Yes |
@@ -98,7 +98,7 @@ Each plan has 1 host in its price, then a price for each extra host. A host is a
 | Write a form from one sentence | Yes | Yes | Yes | Yes |
 | Add and fix questions | Yes | Yes | Yes | Yes |
 | Write a meeting's text | Yes | Yes | Yes | Yes |
-| A brief for the host before the meeting | – | – | Yes | Yes |
+| A brief before each call | – | – | Yes | Yes |
 | **Integrations** | | | | |
 | Webhooks | Yes | Yes | Yes | Yes |
 | CSV export | Yes | Yes | Yes | Yes |
@@ -119,7 +119,7 @@ Each plan has 1 host in its price, then a price for each extra host. A host is a
 | Chat help | – | – | – | Yes |
 
 - Billed monthly. Pay yearly and save 20%. Change or cancel any time from Settings.
-- Past 250 submissions on Free, forms keep working and every submission is saved. Answers past 250 show after an upgrade or on the 1st.
+- Past 250 form answers on Free, forms keep working and every answer is saved. Answers past 250 show after an upgrade or on the 1st.
 - An AI credit is one thing Tia, the AI, does: a small change is 1 credit, a whole new form is 10.
 - "Soon" features join the plan when they ship, at no extra cost.
 - Suite bundle: run two or more of Arrowsterr, Claritia and Omniscient and save 20%.
