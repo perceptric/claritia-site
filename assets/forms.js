@@ -61,9 +61,160 @@
   apply();
 })();
 
+// See it in your brand: the visitor's button color, font, corners and logo over every form on the page, kept in this
+// browser so the template pages show it too. --------------------------------------------------------------------------
+(function () {
+  var boxes = Array.prototype.slice.call(document.querySelectorAll("[data-brand]"));
+  if (!boxes.length) return;
+  var KEY = "clr-brand";
+  var read = function () { try { return JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) { return null; } };
+  var keep = function (p) { try { p ? localStorage.setItem(KEY, JSON.stringify(p)) : localStorage.removeItem(KEY); } catch (e) {} };
+  var VARS = ["--f-accent", "--f-accent-ink", "--f-btn-radius", "--f-font", "--f-head"];
+  function paint(p) {
+    if (p && p.fontUrl && !document.querySelector('link[data-brand-font]')) {
+      var l = document.createElement("link"); l.rel = "stylesheet"; l.href = p.fontUrl; l.setAttribute("data-brand-font", ""); document.head.appendChild(l);
+    }
+    var font = p && p.font ? '"' + p.font.replace(/"/g, "") + '", ui-sans-serif, system-ui, sans-serif' : "";
+    Array.prototype.forEach.call(document.querySelectorAll(".fth"), function (el) {
+      VARS.forEach(function (v) { el.style.removeProperty(v); });
+      if (!p) return;
+      if (p.accent) { el.style.setProperty("--f-accent", p.accent); el.style.setProperty("--f-accent-ink", p.accentInk || "#ffffff"); }
+      if (p.radius != null) el.style.setProperty("--f-btn-radius", p.radius + "px");
+      if (font) { el.style.setProperty("--f-font", font); el.style.setProperty("--f-head", font); }
+    });
+    Array.prototype.forEach.call(document.querySelectorAll(".cf__head"), function (h) {
+      var img = h.querySelector(".cf__logo");
+      if (!p || !p.logo) { if (img) img.remove(); return; }
+      if (!img) { img = document.createElement("img"); img.className = "cf__logo"; img.alt = ""; h.insertBefore(img, h.firstChild); }
+      img.src = p.logo;
+      img.onerror = function () { img.remove(); };
+    });
+    boxes.forEach(function (b) {
+      b.querySelector(".tbrand__on").hidden = !p;
+      b.querySelector("[data-brand-name]").textContent = p ? p.name : "";
+      b.querySelector(".tbrand__in").hidden = !!p;
+      b.querySelector(".tbrand__go").hidden = !!p;
+    });
+  }
+  boxes.forEach(function (b) {
+    var err = b.querySelector("[data-brand-err]");
+    b.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var site = b.querySelector(".tbrand__in").value.trim();
+      if (!site) return;
+      err.textContent = "Reading your site…";
+      fetch(b.getAttribute("data-api") + "?site=" + encodeURIComponent(site))
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (x) {
+          if (!x.ok) { err.textContent = x.j.error || "Couldn't read that site."; return; }
+          err.textContent = x.j.accent || x.j.font ? "" : "Couldn't find your colors on that site.";
+          keep(x.j);
+          paint(x.j);
+        })
+        .catch(function () { err.textContent = "Couldn't read that site. Try again."; });
+    });
+    b.querySelector("[data-brand-reset]").addEventListener("click", function () { keep(null); paint(null); err.textContent = ""; });
+  });
+  var saved = read();
+  if (saved) paint(saved);
+})();
+
+// Describe your form: the words find the closest templates on the page first; Build with AI opens the app. ---------
+(function () {
+  var box = document.querySelector("[data-desc]");
+  if (!box) return;
+  var input = box.querySelector("input");
+  var out = box.querySelector("[data-desc-picks]");
+  var cards = Array.prototype.slice.call(document.querySelectorAll("[data-grid] .tcard"));
+  var STOP = " a an the for and or to of my our we need want form forms that with from in on is are be can people who where when they their it so like some get let make ";
+  var t;
+  input.addEventListener("input", function () {
+    clearTimeout(t);
+    t = setTimeout(function () {
+      var words = input.value.toLowerCase().replace(/[^a-z0-9\s-]/g, " ").split(/\s+/).filter(function (w) { return w.length > 2 && STOP.indexOf(" " + w + " ") < 0; });
+      var best = words.length
+        ? cards
+            .map(function (c, i) { var h = c.getAttribute("data-words"); return { c: c, i: i, n: words.filter(function (w) { return h.indexOf(w) > -1; }).length }; })
+            .filter(function (x) { return x.n >= Math.min(2, words.length); })
+            .sort(function (a, b) { return b.n - a.n || a.i - b.i; })
+            .slice(0, 3)
+        : [];
+      out.innerHTML = "";
+      best.forEach(function (x) {
+        var a = document.createElement("a");
+        a.className = "chip";
+        a.href = x.c.getAttribute("href");
+        a.textContent = "Start from " + x.c.querySelector(".tcard__name").textContent;
+        out.appendChild(a);
+      });
+      out.hidden = !best.length;
+    }, 250);
+  });
+})();
+
 // Live forms ---------------------------------------------------------------------------------------------------
 (function () {
   var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Calculations: the app's small formula language (numbers, + - * /, comparisons, and, or, min, max, sum, round,
+  // ceil, floor, abs, if, ifempty, other answers as {key}). Read by this parser, never eval. An empty answer is null and
+  // null carries through, the same as in the app.
+  function calc(src, get) {
+    var toks = (src.match(/\s+|\d+(?:\.\d+)?|\.\d+|\{[^}]*\}|[a-z]+|<=|>=|==|!=|[-+*\/(),<>]|./gi) || []).filter(function (t) { return t.trim(); });
+    var i = 0;
+    var peek = function () { return toks[i]; };
+    var take = function () { return toks[i++]; };
+    var num = function (x) { return x == null || !isFinite(x) ? null : x; };
+    var both = function (a, b, fn) { return a == null || b == null ? null : num(fn(a, b)); };
+    function bin(next, ops, fn) {
+      return function () {
+        var a = next();
+        while (ops.indexOf(String(peek()).toLowerCase()) > -1) { var op = take().toLowerCase(); a = fn(op, a, next()); }
+        return a;
+      };
+    }
+    function primary() {
+      var t = take();
+      if (t === undefined) throw 0;
+      if (t === "(") { var x = orx(); take(); return x; }
+      if (t === "-") { var y = primary(); return y == null ? null : -y; }
+      if (/^[\d.]/.test(t)) return Number(t);
+      if (t[0] === "{") return get(t.slice(1, -1));
+      var name = t.toLowerCase();
+      take();
+      var args = [];
+      if (peek() !== ")") { args.push(orx()); while (peek() === ",") { take(); args.push(orx()); } }
+      take();
+      var nums = args.filter(function (a) { return a != null; });
+      switch (name) {
+        case "min": return nums.length ? Math.min.apply(null, nums) : null;
+        case "max": return nums.length ? Math.max.apply(null, nums) : null;
+        case "sum": return nums.reduce(function (a, b) { return a + b; }, 0);
+        case "round": return args[0] == null ? null : Math.round(args[0] * Math.pow(10, args[1] || 0)) / Math.pow(10, args[1] || 0);
+        case "ceil": return args[0] == null ? null : Math.ceil(args[0]);
+        case "floor": return args[0] == null ? null : Math.floor(args[0]);
+        case "abs": return args[0] == null ? null : Math.abs(args[0]);
+        case "if": return args[0] == null ? null : args[0] ? args[1] : args[2];
+        case "ifempty": return args[0] == null ? args[1] : args[0];
+        default: throw 0;
+      }
+    }
+    var mul = bin(primary, ["*", "/"], function (op, a, b) { return both(a, b, function (x, y) { return op === "*" ? x * y : y === 0 ? NaN : x / y; }); });
+    var add = bin(mul, ["+", "-"], function (op, a, b) { return both(a, b, function (x, y) { return op === "+" ? x + y : x - y; }); });
+    var cmp = bin(add, ["<", ">", "<=", ">=", "==", "!="], function (op, a, b) {
+      return both(a, b, function (x, y) { return { "<": x < y, ">": x > y, "<=": x <= y, ">=": x >= y, "==": x === y, "!=": x !== y }[op] ? 1 : 0; });
+    });
+    var andx = bin(cmp, ["and"], function (op, a, b) { return both(a, b, function (x, y) { return x && y ? 1 : 0; }); });
+    var orx = bin(andx, ["or"], function (op, a, b) { return both(a, b, function (x, y) { return x || y ? 1 : 0; }); });
+    try { var out = orx(); return i < toks.length ? null : num(out); } catch (e) { return null; }
+  }
+  var SYM = { USD: "$", EUR: "€", GBP: "£", CAD: "$", AUD: "$", NZD: "$" };
+  function shown(n, format, cur) {
+    if (n == null) return format === "money" ? (SYM[cur] || "") + "0" : "0";
+    if (format === "money") return (SYM[cur] || cur + " ") + Math.round(n).toLocaleString("en-US");
+    if (format === "percent") return (Math.round(n * 10) / 10).toLocaleString("en-US") + "%";
+    return (Math.round(n * 100) / 100).toLocaleString("en-US");
+  }
 
   function setup(form) {
     var data = JSON.parse(form.querySelector(".cf__data").textContent);
@@ -194,8 +345,38 @@
       if (e) { e.textContent = msg; e.hidden = !msg; }
     }
 
+    // An answer as a number for a formula: a choice reads its points, pick many adds them up, numbers read as numbers.
+    function numOf(f, a, calcs) {
+      if (f.kind === "calc") return calcs[f.key] == null ? null : calcs[f.key];
+      if (a == null) return null;
+      var pts = function (p) { var i = (f.options || []).findIndex(function (o) { return o.toLowerCase() === String(p).toLowerCase(); }); return i > -1 && f.points ? f.points[i] || 0 : isFinite(Number(p)) ? Number(p) : null; };
+      if (Array.isArray(a)) return a.reduce(function (t, p) { var n = pts(p); return t + (n || 0); }, 0);
+      if (typeof a === "boolean") return f.points ? f.points[a ? 0 : 1] || 0 : a ? 1 : 0;
+      if (typeof a === "number") return a;
+      if (f.kind === "single" || f.kind === "dropdown") return pts(a);
+      var n = Number(String(a).replace(/[,\s$€£]/g, ""));
+      return isFinite(n) ? n : null;
+    }
+    function calcs(v) {
+      var out = {};
+      all.forEach(function (x) {
+        if (x.f.kind !== "calc") return;
+        out[x.f.key] = calc(x.f.formula || "0", function (k) {
+          var src = all.find(function (y) { return y.f.key === k; });
+          return src && v.shown[k] ? numOf(src.f, v.vals[k], out) : null;
+        });
+      });
+      Array.prototype.forEach.call(form.querySelectorAll("[data-calc]"), function (o) { o.textContent = shown(out[o.getAttribute("data-calc")], o.getAttribute("data-format"), o.getAttribute("data-cur")); });
+      Array.prototype.forEach.call(form.querySelectorAll("[data-pay]"), function (o) {
+        var fixed = o.getAttribute("data-amount");
+        o.textContent = shown(fixed ? Number(fixed) : out[o.getAttribute("data-pay")], "money", o.getAttribute("data-cur"));
+      });
+      return out;
+    }
+
     function render() {
       var v = view();
+      calcs(v);
       all.forEach(function (x) { var el = wrapOf(x.f.key); if (el) el.hidden = !v.shown[x.f.key]; });
       var lp = livePages(v);
       if (lp.indexOf(at) < 0) at = lp.filter(function (p) { return p < at; }).pop() || lp[0];
@@ -247,7 +428,36 @@
       return any ? { total: total, max: max } : null;
     }
 
+    // Booking templates: a sample calendar on the end screen, the next three weekdays.
+    function booking() {
+      var b = form.querySelector("[data-book]");
+      if (!b) return;
+      var days = b.querySelector(".cf__days");
+      days.innerHTML = "";
+      var d = new Date();
+      var n = 0;
+      while (n < 3) {
+        d.setDate(d.getDate() + 1);
+        if (d.getDay() === 0 || d.getDay() === 6) continue;
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+        if (!n) btn.className = "is-on";
+        days.appendChild(btn);
+        n++;
+      }
+      b.querySelector(".cf__book-note").hidden = true;
+      Array.prototype.forEach.call(b.querySelectorAll(".cf__times button"), function (x) { x.classList.remove("is-on"); });
+    }
+    form.addEventListener("click", function (e) {
+      var btn = e.target.closest && e.target.closest(".cf__days button, .cf__times button");
+      if (!btn) return;
+      Array.prototype.forEach.call(btn.parentNode.children, function (x) { x.classList.toggle("is-on", x === btn); });
+      if (btn.parentNode.classList.contains("cf__times")) form.querySelector(".cf__book-note").hidden = false;
+    });
+
     function finish() {
+      booking();
       var v = view();
       var sc = score(v), box = form.querySelector(".cf__score");
       box.hidden = true;

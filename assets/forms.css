@@ -398,3 +398,56 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
 @media (prefers-reduced-motion: reduce) {
   .tcard, .tlook, .cf__bar i, .tpl .fth { transition: none; }
 }
+
+/* Calculations and payments in the live forms */
+.cf__calc, .cf__pay { padding: 14px 16px; border: var(--f-bw, 1px) solid var(--f-border); border-radius: var(--f-radius); background: var(--f-soft); }
+.cf__total { display: block; font-family: var(--f-head, inherit); font-size: 28px; font-weight: 600; line-height: 1.2; color: var(--f-text); font-variant-numeric: tabular-nums; }
+.cf__pay-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.cf__pay-card { padding: 4px 10px; border: 1px solid var(--f-border); border-radius: var(--f-btn-radius); font-size: 12px; color: var(--f-muted); }
+.tp__box--total { height: 18px; background: var(--f-soft); }
+
+/* Describe your form */
+.tdesc { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; padding: 20px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--panel); }
+.tdesc__l { font-size: 15px; font-weight: 500; color: var(--ink); }
+.tdesc__row { display: flex; flex-wrap: wrap; gap: 8px; }
+.tdesc__in { flex: 1; min-width: 220px; height: 44px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: var(--r-md, 8px); background: #fff; font: inherit; font-size: 15px; color: var(--ink); }
+.tdesc__in:focus { outline: none; border-color: var(--ink); }
+.tdesc__picks { display: flex; flex-wrap: wrap; gap: 6px; }
+.tdesc__picks .chip { display: inline-flex; align-items: center; }
+
+/* See it in your brand */
+.tbrand { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.tbrand__in { width: 170px; height: 36px; padding: 0 12px; border: 1px solid var(--line-strong); border-radius: 999px; background: #fff; font: inherit; font-size: 14px; color: var(--ink); }
+.tbrand__in:focus { outline: none; border-color: var(--ink); }
+.tbrand__go { height: 36px; padding: 0 14px; border: 1px solid var(--ink); border-radius: 999px; background: var(--ink); color: #fff; font-size: 13.5px; font-weight: 500; }
+.tbrand__on { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 6px 0 12px; border: 1px solid var(--line-strong); border-radius: 999px; font-size: 13.5px; font-weight: 500; }
+.tbrand__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--signal, #10b981); }
+.tbrand__x { height: 26px; padding: 0 10px; border-radius: 999px; font-size: 12.5px; color: var(--muted); }
+.tbrand__x:hover { background: var(--hover); color: var(--ink); }
+.tbrand__err { flex-basis: 100%; font-size: 12.5px; color: var(--muted); }
+.tbrand__err:empty { display: none; }
+.tbar--tpl { margin-bottom: 14px; }
+.cf__logo { width: auto; max-width: 140px; height: 28px; object-fit: contain; object-position: left center; margin-bottom: 6px; }
+
+/* The sample booking step on a template's end screen */
+.cf__book { display: flex; flex-direction: column; gap: 10px; width: 100%; margin-top: 4px; text-align: left; }
+.cf__days, .cf__times { display: flex; flex-wrap: wrap; gap: 6px; }
+.cf__days button, .cf__times button { height: 36px; padding: 0 12px; border: var(--f-bw, 1px) solid var(--f-border); border-radius: var(--f-btn-radius); background: var(--f-field); color: var(--f-text); font: inherit; font-size: 14px; }
+.cf__days button:hover, .cf__times button:hover { border-color: var(--f-hover); }
+.cf__days button.is-on, .cf__times button.is-on { border-color: var(--f-accent); background: var(--f-accent); color: var(--f-accent-ink); }
+.cf__book-note { font-size: 13px; color: var(--f-muted); }
+
+/* Starter kits */
+.tkit { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 4px 16px; padding: 16px 18px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--panel); transition: border-color var(--fast) var(--ease-out); }
+.tkit:hover { border-color: var(--ink); }
+.tkit__l { grid-row: 1 / 3; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); }
+.tkit b { font-size: 15px; font-weight: 500; color: var(--ink); }
+.tkit__t { grid-column: 2; font-size: 13.5px; color: var(--muted); }
+.tkit__go { grid-row: 1 / 3; grid-column: 3; font-size: 14px; font-weight: 500; color: var(--ink); white-space: nowrap; }
+.tkit__wrap { margin-top: -8px; margin-bottom: 8px; }
+.tkits { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); }
+@media (max-width: 640px) { .tkit { grid-template-columns: 1fr; } .tkit__l, .tkit__go, .tkit__t { grid-row: auto; grid-column: auto; } }
+
+.tcombo { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: -8px; margin-bottom: 8px; }
+.tcombo__l { margin-right: 4px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); }
+.tcombo .chip { display: inline-flex; align-items: center; }

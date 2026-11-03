@@ -14,7 +14,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 3, 3
+CSS_V, JS_V = 6, 6
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -149,6 +149,17 @@ def style_bar(current: str, own: bool = False) -> str:
         <button type="button" class="tsty__shuffle" data-shuffle aria-label="Try another style"><svg aria-hidden="true"><use href="#i-shuffle"/></svg><span>Shuffle</span></button>
         <script type="application/json" class="tsty__data">{data}</script>
       </div>"""
+
+
+def brand_bar() -> str:
+    """See it in your brand: the visitor's site, read by the app with no AI, over every form on the page."""
+    return f"""<form class="tbrand" data-brand data-api="{APP}/api/templates/brand">
+        <label class="sr-only" for="tbrand-in">Your website</label>
+        <input id="tbrand-in" class="tbrand__in" name="site" placeholder="yoursite.com" autocomplete="url" inputmode="url">
+        <button type="submit" class="tbrand__go">See it in your brand</button>
+        <span class="tbrand__on" hidden><span class="tbrand__dot" aria-hidden="true"></span><span data-brand-name></span><button type="button" class="tbrand__x" data-brand-reset aria-label="Back to the styles">Reset</button></span>
+        <span class="tbrand__err" role="status" data-brand-err></span>
+      </form>"""
 
 
 # Shared page parts, copied from the home page so the header, menu and footer stay one --------------------------
@@ -287,6 +298,10 @@ def thumb(t, tid: str | None = None) -> str:
             body = f'<span class="tp__opt tp__opt--plain"><i class="tp__sq"></i>{esc(f["label"])}</span>'
         elif k == "ranking":
             body = "".join(f'<span class="tp__opt">{esc(o)}</span>' for o in f.get("options", [])[:3])
+        elif k in ("calc", "payment"):
+            if f.get("visible") is False:
+                continue
+            body = '<span class="tp__box tp__box--total"></span>'
         else:  # statement
             lab = f'<span class="tp__l">{esc(f["label"])}</span>'
             body = ""
@@ -338,6 +353,11 @@ def field(f) -> str:
         return f'<div class="cf__f cf__f--note" {attrs}><p class="cf__note-h">{esc(f["label"])}</p>{"<p>" + esc(f["help"]) + "</p>" if f.get("help") else ""}</div>'
     if k == "hidden":
         return ""
+    if k == "calc":
+        return f'<div class="cf__f cf__calc" {attrs}{" hidden data-off" if f.get("visible") is False else ""}><p class="cf__label">{esc(f["label"])}</p><output class="cf__total" data-calc="{key}" data-format="{f.get("format", "number")}" data-cur="{f.get("currency", "USD")}">0</output></div>'
+    if k == "payment":
+        amt = f' data-amount="{f["amount"]}"' if f.get("amount") else ""
+        return f'<div class="cf__f cf__pay" {attrs}><p class="cf__label">{esc(f["label"])}</p><p class="cf__pay-row"><output class="cf__total" data-pay="{esc(f.get("from", ""))}"{amt} data-format="money" data-cur="{f.get("currency", "USD")}">0</output><span class="cf__pay-card">Card</span></p><p class="cf__help">Card payment opens after the form is sent.</p></div>'
     if k in ("short_text", "email", "phone", "url"):
         typ = {"email": "email", "phone": "tel", "url": "url"}.get(k, "text")
         ac = {"email": "email", "phone": "tel", "url": "url"}.get(k, "organization" if f.get("map") == "company" else "off")
@@ -413,7 +433,7 @@ def live_form(t) -> str:
   {"".join(pages)}
   <div class="cf__acts"><button type="button" class="cf__btn cf__btn--ghost" data-back hidden>Back</button><button type="button" class="cf__btn" data-next data-submit-label="{esc(s["submit"])}">{esc(s["submit"] if not multi else "Next")}</button></div>
   {notice}
-  <div class="cf__end" hidden role="status"><span class="cf__end-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></span><h3 class="cf__end-t">{esc(end["title"])}</h3><div class="cf__score" hidden></div>{f'<p class="cf__end-p">{esc(end["text"])}</p>' if end.get("text") else ""}<p class="cf__demo">This is a preview, so nothing was sent. <a href="{APP}/forms/templates/{t['slug']}">Use this template</a> to take real answers.</p><button type="button" class="cf__restart">Start over</button></div>
+  <div class="cf__end" hidden role="status"><span class="cf__end-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></span><h3 class="cf__end-t">{esc(end["title"])}</h3><div class="cf__score" hidden></div>{f'<p class="cf__end-p">{esc(end["text"])}</p>' if end.get("text") else ""}{'<div class="cf__book" data-book><div class="cf__days" role="group" aria-label="Day"></div><div class="cf__times" role="group" aria-label="Time"><button type="button">9:00 am</button><button type="button">10:30 am</button><button type="button">1:00 pm</button><button type="button">3:30 pm</button></div><p class="cf__book-note" hidden>Sample times. In the live form this books the meeting on your calendar.</p></div>' if end.get("booking") else ""}<p class="cf__demo">This is a preview, so nothing was sent. <a href="{APP}/forms/templates/{t['slug']}">Use this template</a> to take real answers.</p><button type="button" class="cf__restart">Start over</button></div>
   <script type="application/json" class="cf__data">{data}</script>
 </form>"""
 
@@ -499,6 +519,14 @@ def jump(current) -> str:
     return f'<details class="tjump"><summary>{esc(here)} <svg aria-hidden="true"><use href="#i-chev"/></svg></summary><div class="tjump__list">{body}</div></details>'
 
 
+def describe_box() -> str:
+    return f"""<form class="tdesc" action="{APP}/forms/new" method="get" data-desc>
+          <label class="tdesc__l" for="tdesc-in">Need something else? Describe the form you need.</label>
+          <div class="tdesc__row"><input id="tdesc-in" class="tdesc__in" name="ask" maxlength="300" placeholder="A deposit form for custom cake orders" autocomplete="off"><button class="btn btn--primary" type="submit">Build with AI</button></div>
+          <div class="tdesc__picks" hidden data-desc-picks></div>
+        </form>"""
+
+
 def gallery(current, items) -> str:
     return f"""<section class="tgal">
     <div class="wrap tgal__in">
@@ -509,9 +537,10 @@ def gallery(current, items) -> str:
           <div class="chips" role="group" aria-label="Filters">{chips_for(items)}</div>
         </div>
         {jump(current)}
-        <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> templates</p>{style_bar("paper", own=True)}</div>
+        <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> templates</p>{brand_bar()}{style_bar("paper", own=True)}</div>
         <div class="tgrid" data-grid>{"".join(card(t) for t in items)}</div>
         <div class="tnone" hidden data-none><p>No matches.</p><button type="button" class="more" data-clear>Clear the search</button></div>
+        {describe_box()}
       </div>
     </div>
   </section>"""
@@ -599,6 +628,88 @@ TEAM_INTRO = {
 }
 
 
+KITS = DATA.get("kits", [])
+KIT_OF = {k["industry"]: k for k in KITS}
+BY_ID = {t["id"]: t for t in T}
+
+
+# A category inside one industry ("Quote form templates for construction"), when 3 or more templates fit.
+COMBO_MIN = 3
+
+
+_COMBOS = None
+
+
+def combos():
+    global _COMBOS
+    if _COMBOS is not None:
+        return _COMBOS
+    out = []
+    for c in HAS_PAGE["category"]:
+        for i in HAS_PAGE["industry"]:
+            items = [t for t in ORDERED if c in t["categories"] and i in t["industries"]]
+            if len(items) >= COMBO_MIN and len(items) < N["category"][c]:
+                out.append((c, i, items))
+    _COMBOS = out
+    return out
+
+
+def combo_links(c: str) -> str:
+    links = [(i, items) for cc, i, items in combos() if cc == c]
+    if not links:
+        return ""
+    return '<div class="wrap tcombo"><span class="tcombo__l">By industry</span>' + "".join(f'<a class="chip" href="{combo_path(c, i)}">{esc(IND_LABEL[i])}</a>' for i, _ in links) + "</div>"
+
+
+def combo_path(c: str, i: str) -> str:
+    return f"/templates/category/{c}/{ind_slug(i)}"
+
+
+def combo_page(c: str, i: str, items) -> None:
+    path = combo_path(c, i)
+    who = "any business" if i == "general" else low(IND_LABEL[i])
+    title = f"{cat_title(c)} for {who}"
+    intro = f"{len(items)} free {low(CAT_LABEL[c])} templates for {who}, like {and_list([t['name'] for t in items[:3]])}."
+    body = f"""<section class="thero thero--sm">
+    <div class="wrap"><div class="thero__in">
+      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Templates</a><span aria-hidden="true">/</span><a href="{path_of("category", c)}">{esc(CAT_LABEL[c])}</a><span aria-hidden="true">/</span><span>{esc(IND_LABEL[i])}</span></nav>
+      <h1 class="h2 reveal" data-delay="1">{esc(title)}</h1>
+      <p class="lead reveal" data-delay="2">{esc(intro)} Try each one, then use it in a click.</p>
+    </div></div>
+  </section>
+  {gallery(("category", c), items)}
+  {CLOSE(esc(title) + ".", "Live on your site in a click.", APP, "Start free")}"""
+    page(path, f"{title} | Claritia", intro, body, [crumbs([("Templates", "/templates"), (CAT_LABEL[c], path_of("category", c)), (IND_LABEL[i], path)])])
+
+
+def kit_strip(industry: str) -> str:
+    k = KIT_OF.get(industry)
+    if not k:
+        return ""
+    names = and_list([BY_ID[x]["name"] for x in k["templates"]])
+    return f'<a class="tkit" href="/templates/kits/{k["id"]}"><span class="tkit__l">Starter kit</span><b>{esc(k["name"])}</b><span class="tkit__t">{esc(names)}</span><span class="tkit__go">See the kit <span class="nudge" aria-hidden="true">&rarr;</span></span></a>'
+
+
+def kit_page(k) -> None:
+    items = [BY_ID[x] for x in k["templates"]]
+    path = f"/templates/kits/{k['id']}"
+    ind = k["industry"]
+    use = f"{APP}/forms/templates?kit={k['id']}"
+    body = f"""<section class="thero thero--sm">
+    <div class="wrap"><div class="thero__in">
+      <nav class="tcrumb reveal" aria-label="Breadcrumb"><a href="/templates">Templates</a><span aria-hidden="true">/</span><a href="{path_of("industry", ind)}">{esc(IND_LABEL[ind])}</a><span aria-hidden="true">/</span><span>Starter kit</span></nav>
+      <h1 class="h2 reveal" data-delay="1">{esc(k["name"])}</h1>
+      <p class="lead reveal" data-delay="2">The {len(items)} forms to start with: {esc(and_list([x["name"] for x in items]))}. Add them all in one click, in one style, each with its follow-up ready to turn on.</p>
+      <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="{use}">Use all {len(items)} <span class="nudge" aria-hidden="true">&rarr;</span></a></div>
+    </div></div>
+  </section>
+  <section class="section">
+    <div class="wrap"><div class="tgrid tgrid--3">{"".join(card(x) for x in items)}</div></div>
+  </section>
+  {CLOSE(esc(k["name"]) + ".", "Live on your site in a click.", use, f"Use all {len(items)}")}"""
+    page(path, f"{k['name']}: {len(items)} free form templates | Claritia", f"The {len(items)} forms to start with: {and_list([x['name'] for x in items])}. Free, ready to use in one click.", body, [crumbs([("Templates", "/templates"), (IND_LABEL[ind], path_of("industry", ind)), (k["name"], path)])])
+
+
 def list_page(kind: str, v: str, title: str, intro: str, trail: list) -> None:
     items = items_of(kind, v)
     path = path_of(kind, v)
@@ -610,6 +721,8 @@ def list_page(kind: str, v: str, title: str, intro: str, trail: list) -> None:
       <p class="lead reveal" data-delay="2">{esc(intro)} Try each one, then use it in a click.</p>
     </div></div>
   </section>
+  {f'<div class="wrap tkit__wrap">{kit_strip(v)}</div>' if kind == "industry" and v in KIT_OF else ""}
+  {combo_links(v) if kind == "category" else ""}
   {gallery((kind, v), items)}
   {CLOSE(esc(title) + ".", "Live on your site in a click.", APP, "Start free")}"""
     page(path, f"{title} | Claritia", f"{len(items)} free templates. {intro}", body, [crumbs([("Templates", "/templates")] + trail + [(label_of(kind, v), path)])])
@@ -778,7 +891,7 @@ def template_page(t):
   <section class="tpl" id="try">
     <div class="wrap tpl__in">
       <div class="tpl__main">
-        {style_bar(t["theme"])}
+        <div class="tbar tbar--tpl">{style_bar(t["theme"])}{brand_bar()}</div>
         {stage(t, t["theme"])}
       </div>
       <aside class="tpl__side">
@@ -883,6 +996,12 @@ def index_page():
       {browse()}
     </div>
   </section>
+  <section class="section section--tint" id="kits">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="eyebrow">Starter kits</p><h2 class="h2">The forms to start with.<br><span class="two">{len(KITS)} kits, added in one click.</span></h2></div>
+      <div class="tkits reveal" data-delay="1">{"".join(kit_strip(k["industry"]) for k in KITS)}</div>
+    </div>
+  </section>
   <section class="section section--tint" id="styles">
     <div class="wrap">
       <div class="sec-head reveal"><p class="eyebrow">Styles</p><h2 class="h2">{len(THEMES)} styles for every form.<br><span class="two">Tap one to see the whole gallery in it.</span></h2></div>
@@ -917,7 +1036,7 @@ def sitemap():
     sm = ROOT / "sitemap.xml"
     text = sm.read_text()
     text = re.sub(r"\s*<!-- templates:start -->.*?<!-- templates:end -->", "", text, flags=re.S)
-    urls = ["/templates"] + [path_of(k, v) for k in ("family", "category", "industry", "sub", "team") for v in HAS_PAGE[k]] + [f"/templates/{t['slug']}" for t in T]
+    urls = ["/templates"] + [path_of(k, v) for k in ("family", "category", "industry", "sub", "team") for v in HAS_PAGE[k]] + [f"/templates/kits/{k['id']}" for k in KITS] + [combo_path(c, i) for c, i, _ in combos()] + [f"/templates/{t['slug']}" for t in T]
     lines = "\n".join(f"  <url><loc>{SITE}{u}</loc></url>" for u in urls)
     text = text.replace("</urlset>", f"  <!-- templates:start -->\n{lines}\n  <!-- templates:end -->\n</urlset>")
     sm.write_text(text)
@@ -926,7 +1045,7 @@ def sitemap():
 if __name__ == "__main__":
     slugs = [t["slug"] for t in T]
     assert len(set(slugs)) == len(slugs), "template slugs repeat"
-    assert not set(slugs) & ({ind_slug(i["value"]) for i in IND} | {"group", "category", "team"}), "a template and a list page share a slug"
+    assert not set(slugs) & ({ind_slug(i["value"]) for i in IND} | {"group", "category", "team", "kits"}), "a template and a list page share a slug"
     write_styles()
     index_page()
     for i in IND:
@@ -940,8 +1059,12 @@ if __name__ == "__main__":
         category_page(c)
     for x in HAS_PAGE["team"]:
         team_page(x)
+    for k in KITS:
+        kit_page(k)
+    for c, i, items in combos():
+        combo_page(c, i, items)
     for t in T:
         template_page(t)
     sitemap()
-    n = sum(len(v) for v in HAS_PAGE.values())
+    n = sum(len(v) for v in HAS_PAGE.values()) + len(KITS) + len(combos())
     print(f"wrote /templates, {n} list pages ({', '.join(f'{len(v)} {k}' for k, v in HAS_PAGE.items())}) and {len(T)} template pages")
