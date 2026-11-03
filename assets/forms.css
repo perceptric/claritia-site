@@ -383,7 +383,7 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
 /* Multi-page: a cover screen before the first page, and Save and finish later beside Next. */
 .cf__cover { display: none; }
 .cf.has-cover .cf__cover { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 8px 0 4px; }
-.cf.has-cover .cf__page, .cf.has-cover .cf__acts, .cf.has-cover .cf__prog, .cf.has-cover .cf__notice, .cf.has-cover .cf__later-note { display: none !important; }
+.cf.has-cover .cf__head, .cf.has-cover .cf__page, .cf.has-cover .cf__acts, .cf.has-cover .cf__prog, .cf.has-cover .cf__notice, .cf.has-cover .cf__later-note { display: none !important; }
 .cf__cover-t { font-family: var(--f-head); font-size: 22px; line-height: 1.2; font-weight: var(--f-head-weight); letter-spacing: -0.015em; }
 .cf__cover-p { font-size: 15px; line-height: 1.55; color: var(--f-muted); }
 .cf__cover-n { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--f-muted); }

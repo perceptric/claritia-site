@@ -146,6 +146,7 @@
   <url><loc>https://tryclaritia.com/templates/construction/landscaping</loc></url>
   <url><loc>https://tryclaritia.com/templates/healthcare/clinics</loc></url>
   <url><loc>https://tryclaritia.com/templates/fitness/gyms</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness/personal-training</loc></url>
   <url><loc>https://tryclaritia.com/templates/beauty/salons</loc></url>
   <url><loc>https://tryclaritia.com/templates/education/schools</loc></url>
   <url><loc>https://tryclaritia.com/templates/education/tutoring</loc></url>
@@ -215,10 +216,13 @@
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/agency</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/consulting</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/lead-generation/insurance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/real-estate</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/solar</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/demo-request/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/insurance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/hospitality</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/creative</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/estimate/construction</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/consultation/legal</loc></url>
@@ -245,6 +249,7 @@
   <url><loc>https://tryclaritia.com/templates/category/deposit/food</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/subscription/construction</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/calculator/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/application/finance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/real-estate</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/education</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/nonprofit</loc></url>
@@ -262,6 +267,7 @@
   <url><loc>https://tryclaritia.com/templates/category/exhibitor/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/feedback/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/feedback/hospitality</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/survey/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/survey/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/survey/hr</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/evaluation/hr</loc></url>
@@ -273,10 +279,12 @@
   <url><loc>https://tryclaritia.com/templates/category/quiz/education</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/knowledge/education</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/intake/legal</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/intake/accounting</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/intake/healthcare</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/intake/wellness</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/client-onboarding/legal</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/patient-intake/healthcare</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/patient-intake/wellness</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/inspection/construction</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/request/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/request/manufacturing</loc></url>
@@ -706,5 +714,16 @@
   <url><loc>https://tryclaritia.com/templates/fitness-gym-membership</loc></url>
   <url><loc>https://tryclaritia.com/templates/general-invoice-payment</loc></url>
   <url><loc>https://tryclaritia.com/templates/education-summer-camp</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-mortgage-prequal</loc></url>
+  <url><loc>https://tryclaritia.com/templates/insurance-auto-quote</loc></url>
+  <url><loc>https://tryclaritia.com/templates/insurance-home-quote</loc></url>
+  <url><loc>https://tryclaritia.com/templates/wellness-therapy-intake</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-fitness-assessment</loc></url>
+  <url><loc>https://tryclaritia.com/templates/accounting-bookkeeping-onboarding</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-kitchen-remodel-estimate</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-adoption-application</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-franchise-inquiry</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-in-depth-feedback</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hospitality-trip-planner</loc></url>
   <!-- templates:end -->
 </urlset>
