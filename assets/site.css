@@ -599,8 +599,8 @@ button.tabb { cursor: pointer; }
 .plan__for { margin-top: -8px; font-size: 14px; color: var(--meta); }
 .plan .btn { width: 100%; }
 .plan ul { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line); }
-.plan li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text); }
-.plan li svg { width: 16px; height: 16px; flex: none; color: var(--green); }
+.plan li { display: flex; align-items: flex-start; gap: 8px; line-height: 20px; font-size: 14px; color: var(--text); }
+.plan li svg { width: 16px; height: 16px; flex: none; margin-top: 2px; color: var(--green); }
 .plan__host { margin-top: -8px; font-size: 13px; line-height: 18px; color: var(--meta); }
 .plan__total { display: none; margin-top: -6px; font-size: 13px; color: var(--green-ink); }
 .js .plan__total.on { display: block; }
