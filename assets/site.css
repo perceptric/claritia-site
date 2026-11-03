@@ -601,6 +601,13 @@ button.tabb { cursor: pointer; }
 .plan ul { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line); }
 .plan li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text); }
 .plan li svg { width: 16px; height: 16px; flex: none; color: var(--green); }
+.plan__host { margin-top: -8px; font-size: 13px; line-height: 18px; color: var(--meta); }
+.plan__total { display: none; margin-top: -6px; font-size: 13px; color: var(--green-ink); }
+.js .plan__total.on { display: block; }
+.plan h3 { padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; font-weight: 500; color: var(--meta); }
+.plan h3 + ul { padding-top: 0; border-top: 0; }
+.plan__all { margin-top: auto; padding-top: 4px; font-size: 14px; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line-strong); }
+.onlink { display: flex; justify-content: center; margin-top: 32px; }
 [data-yearly] { display: none; }
 .is-yearly [data-yearly] { display: inline; }
 .is-yearly [data-monthly] { display: none; }

@@ -11,6 +11,7 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 | Path | What |
 |---|---|
 | `index.html` | The home page: hero with the prompt, why, how it works, compare, tools, integrations, templates, numbers, pricing, questions and the last prompt. It also holds the header, phone menu and footer every page shares. |
+| `pricing/` | The pricing page: plans, the host count, every feature side by side, 10 hosts against other tools, questions. Written by `tools/pricing.py`, which also holds the plan data. |
 | `404.html`, `privacy/`, `terms/` | Page not found and the legal pages. Written by `tools/legal.py`. |
 | `assets/site.css` | Tokens, type, buttons, chips, tags, the header, phone menu, footer, and every home section. |
 | `assets/site.js` | Menus, the phone menu, scroll reveals and the pricing switch. |
@@ -28,14 +29,15 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 ## Editing
 
 - **Words on the home page:** edit `index.html`.
-- **The header, phone menu or footer:** edit them in `index.html`, then run `python3 tools/templates.py && python3 tools/legal.py`
+- **The header, phone menu or footer:** edit them in `index.html`, then run `python3 tools/templates.py && python3 tools/legal.py && python3 tools/pricing.py`
   so every page gets them.
 - **CSS or JS:** edit the file, then raise `?v=` on its link in `index.html` and `SITE_CSS_V` or `SITE_JS_V` in
   `tools/shell.py`, and run the two tools above.
 - **Form templates:** templates are written in the app repo. To refresh the site, run
   `node scripts/export-templates.ts > ../claritia-site/tools/templates.json` there, then `python3 tools/templates.py` here.
   Don't edit `templates/` by hand. For `forms.css` or `forms.js`, raise `CSS_V` or `JS_V` in `tools/templates.py`.
-- **Prices:** the plans in `index.html` and `pricing.md` follow `docs/pricing.md` in the app repo.
+- **Prices:** edit the plans and features in `tools/pricing.py` (they follow `docs/pricing.md` in the app repo), then run
+  `python3 tools/pricing.py`. The home page cards and `pricing.md` are written from the same data; update them to match.
 
 Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 
