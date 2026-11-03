@@ -41,11 +41,11 @@ Each plan has 1 host in its price, then a price for each extra host. A host is a
 | Emails from your own domain | – | – | Yes | Yes |
 | Form languages (soon) | – | – | Yes | Yes |
 | Prevent duplicate fills (soon) | – | – | Yes | Yes |
-| Partial submissions (soon) | – | – | – | Yes |
-| Drop-off by question (soon) | – | – | – | Yes |
+| Partial submissions | – | – | – | Yes |
+| Drop-off by question | – | – | – | Yes |
 | A/B tests (soon) | – | – | – | Yes |
 | Ad pixels (soon) | – | – | – | Yes |
-| Custom domain (soon) | – | – | – | Yes |
+| Custom domain | – | – | – | Yes |
 | **Sharing** | | | | |
 | Share link | Yes | Yes | Yes | Yes |
 | Embed with one script tag | Yes | Yes | Yes | Yes |
