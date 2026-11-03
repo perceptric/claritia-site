@@ -40,18 +40,18 @@ Each plan comes with 1 seat, then a small price for each extra seat. A seat is a
 | Your site's look copied in | – | – | Yes | Yes |
 | Emails from your own domain | – | – | Yes | Yes |
 | Form languages (soon) | – | – | Yes | Yes |
-| Prevent duplicate fills (soon) | – | – | Yes | Yes |
-| Partial submissions | – | – | – | Yes |
+| Block duplicate answers (soon) | – | – | Yes | Yes |
+| Partial answers | – | – | – | Yes |
 | Drop-off by question | – | – | – | Yes |
 | A/B tests (soon) | – | – | – | Yes |
 | Ad pixels (soon) | – | – | – | Yes |
-| Custom domain | – | – | – | Yes |
+| Your own domain for forms and booking pages | – | – | – | Yes |
 | **Sharing** | | | | |
 | Share link | Yes | Yes | Yes | Yes |
 | Embed with one script tag | Yes | Yes | Yes | Yes |
 | Popup embed | Yes | Yes | Yes | Yes |
 | QR code | Yes | Yes | Yes | Yes |
-| Claritia branding | Badge | Small badge | None | None |
+| Claritia badge | Full | Small | None | None |
 | **Spam and consent** | | | | |
 | Cloudflare Turnstile | Yes | Yes | Yes | Yes |
 | Honeypot and rate limit | Yes | Yes | Yes | Yes |
@@ -67,7 +67,7 @@ Each plan comes with 1 seat, then a small price for each extra seat. A seat is a
 | The visitor's time zone and language | Yes | Yes | Yes | Yes |
 | Reschedule and cancel links | Yes | Yes | Yes | Yes |
 | Booking pages for each person and the team | – | Yes | Yes | Yes |
-| Group meetings with a seat limit | – | Yes | Yes | Yes |
+| Group meetings with a guest limit | – | Yes | Yes | Yes |
 | One-off meetings and single-use links | – | Yes | Yes | Yes |
 | Secret meeting types | – | Yes | Yes | Yes |
 | Meeting polls | – | Yes | Yes | Yes |
@@ -75,7 +75,7 @@ Each plan comes with 1 seat, then a small price for each extra seat. A seat is a
 | Questions on the booking page | – | Yes | Yes | Yes |
 | Copy open times into an email | – | Yes | Yes | Yes |
 | Round robin with weights and priority | – | – | Yes | Yes |
-| Collective meetings (everyone free) | – | – | Yes | Yes |
+| Meetings with everyone free | – | – | Yes | Yes |
 | Team pools | – | – | Yes | Yes |
 | Daily and weekly limits for each person | – | – | Yes | Yes |
 | Away days | – | – | Yes | Yes |
@@ -83,7 +83,7 @@ Each plan comes with 1 seat, then a small price for each extra seat. A seat is a
 | Double round robin (one from each of two teams) | – | – | – | Yes |
 | **Routing** | | | | |
 | Route by any answer to a meeting and a person | – | – | Yes | Yes |
-| Route by past fills | – | – | Yes | Yes |
+| Route by past answers | – | – | Yes | Yes |
 | A log of why each lead went where | – | – | Yes | Yes |
 | **Workflows** | | | | |
 | Confirmation email with a calendar invite | Yes | Yes | Yes | Yes |
@@ -107,12 +107,12 @@ Each plan comes with 1 seat, then a small price for each extra seat. A seat is a
 | Slack | – | Yes | Yes | Yes |
 | Google Sheets, Airtable and Notion | – | Yes | Yes | Yes |
 | Mailchimp, Klaviyo, ActiveCampaign, Brevo, Kit and MailerLite | – | Yes | Yes | Yes |
-| Fills from Typeform, Tally, Webflow, Calendly and Cal.com | – | Yes | Yes | Yes |
+| Answers and bookings from Typeform, Tally, Webflow, Calendly and Cal.com | – | Yes | Yes | Yes |
 | Salesforce | – | – | – | Yes |
 | **Results** | | | | |
-| Every fill and booking saved | Yes | Yes | Yes | Yes |
+| Every answer and booking saved | Yes | Yes | Yes | Yes |
 | Repeat people merged by email | Yes | Yes | Yes | Yes |
-| Views, starts and fills for each form | Yes | Yes | Yes | Yes |
+| Views, starts and answers for each form | Yes | Yes | Yes | Yes |
 | **Help** | | | | |
 | Help center | Yes | Yes | Yes | Yes |
 | Email help | Yes | Within 1 business day | Priority | Priority |

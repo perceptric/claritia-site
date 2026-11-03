@@ -11,16 +11,16 @@ esc = shell.esc
 PLANS = [
     {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0, "host_m": None, "host_y": None,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"),
-     "top": ["Make as many forms as you want", "Get 250 form answers a month", "Tia, your AI helper, builds forms from one sentence", "Pick from 435 ready-made templates", "Your own booking page on Google or Outlook", "People book a call right inside your form", "Email reminders go out before every call", "Spam is blocked for you"]},
+     "top": ["Unlimited forms", "250 form answers a month", "1 calendar per seat", "100 AI credits a month", "1 meeting type", "435 form templates", "Google Calendar or Outlook", "Forms built by Tia from one sentence", "Booking inside your forms", "Email reminders before every call", "Spam blocking"]},
     {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12, "host_m": 8, "host_y": 6,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Free",
-     "top": ["Get 2,000 form answers a month", "Take payments and deposits with Stripe", "Collect signatures in your forms", "Unlimited meeting types, plus group calls and polls", "Charge people to book a meeting", "Send answers to HubSpot, Google Sheets, Slack and more", "Write reminder emails in your own words", "Connect up to 3 calendars each", "500 AI credits a month"]},
+     "top": ["2,000 form answers a month", "3 calendars per seat", "500 AI credits a month", "Unlimited meeting types", "Payments and deposits with Stripe", "Signatures", "Paid meetings", "Group meetings and polls", "HubSpot, Google Sheets, Slack and more", "Reminder emails in your own words"]},
     {"id": "pro", "name": "Pro", "for": "For teams that share leads", "m": 39, "y": 31, "host_m": 15, "host_y": 12, "pick": True,
      "btn": ("Start free", "https://app.tryclaritia.com", "primary"), "plus": "Starter",
-     "top": ["Get 5,000 form answers a month", "Send each lead to the right person based on their answers", "Share meetings fairly across your team", "Team calls where everyone joins", "Follow-up emails after every call and every no-show", "Remove the Claritia logo", "Send emails from your own domain", "Tia writes a short brief before each call", "2,000 AI credits a month"]},
+     "top": ["5,000 form answers a month", "10 calendars per seat", "2,000 AI credits a month", "Routing by answer", "Round robin across your team", "Meetings with everyone free", "Follow-ups after every call and no-show", "No Claritia badge", "Emails from your own domain", "A brief from Tia before each call"]},
     {"id": "business", "name": "Business", "for": "For busy teams with lots of leads", "m": 79, "y": 63, "host_m": 25, "host_y": 20,
      "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Pro",
-     "top": ["Unlimited form answers", "Known leads book with their owner in your CRM", "Book one person from each of two teams", "Connect Salesforce", "Use your own web address for forms and booking pages", "See who started a form but didn't finish", "Connect as many calendars as you want", "Priority chat help", "5,000 AI credits a month"]},
+     "top": ["Unlimited form answers", "Unlimited calendars per seat", "5,000 AI credits a month", "Owner first from your CRM", "Double round robin", "Salesforce", "Your own domain for forms and booking pages", "Partial answers from people who didn't finish", "Priority chat help"]},
 ]
 
 Y, N = True, False
@@ -62,19 +62,19 @@ GROUPS = [
         ("Your site's look copied in", [N, N, Y, Y]),
         ("Emails from your own domain", [N, N, Y, Y]),
         ("Form languages", [N, N, Y, Y], SOON),
-        ("Prevent duplicate fills", [N, N, Y, Y], SOON),
-        ("Partial submissions", [N, N, N, Y]),
+        ("Block duplicate answers", [N, N, Y, Y], SOON),
+        ("Partial answers", [N, N, N, Y]),
         ("Drop-off by question", [N, N, N, Y]),
         ("A/B tests", [N, N, N, Y], SOON),
         ("Ad pixels", [N, N, N, Y], SOON),
-        ("Custom domain", [N, N, N, Y]),
+        ("Your own domain for forms and booking pages", [N, N, N, Y]),
     ]),
     ("Sharing", [
         ("Share link", [Y, Y, Y, Y]),
         ("Embed with one script tag", [Y, Y, Y, Y]),
         ("Popup embed", [Y, Y, Y, Y]),
         ("QR code", [Y, Y, Y, Y]),
-        ("Claritia branding", ["Badge", "Small badge", "None", "None"]),
+        ("Claritia badge", ["Full", "Small", "None", "None"]),
     ]),
     ("Spam and consent", [
         ("Cloudflare Turnstile", [Y, Y, Y, Y]),
@@ -92,7 +92,7 @@ GROUPS = [
         ("The visitor's time zone and language", [Y, Y, Y, Y]),
         ("Reschedule and cancel links", [Y, Y, Y, Y]),
         ("Booking pages for each person and the team", [N, Y, Y, Y]),
-        ("Group meetings with a seat limit", [N, Y, Y, Y]),
+        ("Group meetings with a guest limit", [N, Y, Y, Y]),
         ("One-off meetings and single-use links", [N, Y, Y, Y]),
         ("Secret meeting types", [N, Y, Y, Y]),
         ("Meeting polls", [N, Y, Y, Y]),
@@ -100,7 +100,7 @@ GROUPS = [
         ("Questions on the booking page", [N, Y, Y, Y]),
         ("Copy open times into an email", [N, Y, Y, Y]),
         ("Round robin with weights and priority", [N, N, Y, Y]),
-        ("Collective meetings (everyone free)", [N, N, Y, Y]),
+        ("Meetings with everyone free", [N, N, Y, Y]),
         ("Team pools", [N, N, Y, Y]),
         ("Daily and weekly limits for each person", [N, N, Y, Y]),
         ("Away days", [N, N, Y, Y]),
@@ -109,7 +109,7 @@ GROUPS = [
     ]),
     ("Routing", [
         ("Route by any answer to a meeting and a person", [N, N, Y, Y]),
-        ("Route by past fills", [N, N, Y, Y]),
+        ("Route by past answers", [N, N, Y, Y]),
         ("A log of why each lead went where", [N, N, Y, Y]),
     ]),
     ("Workflows", [
@@ -136,17 +136,17 @@ GROUPS = [
         ("Slack", [N, Y, Y, Y]),
         ("Google Sheets, Airtable and Notion", [N, Y, Y, Y]),
         ("Mailchimp, Klaviyo, ActiveCampaign, Brevo, Kit and MailerLite", [N, Y, Y, Y]),
-        ("Fills from Typeform, Tally, Webflow, Calendly and Cal.com", [N, Y, Y, Y]),
+        ("Answers and bookings from Typeform, Tally, Webflow, Calendly and Cal.com", [N, Y, Y, Y]),
         ("Salesforce", [N, N, N, Y]),
     ]),
     ("Results", [
-        ("Every fill and booking saved", [Y, Y, Y, Y]),
+        ("Every answer and booking saved", [Y, Y, Y, Y]),
         ("Repeat people merged by email", [Y, Y, Y, Y]),
-        ("Views, starts and fills for each form", [Y, Y, Y, Y]),
+        ("Views, starts and answers for each form", [Y, Y, Y, Y]),
     ]),
     ("Help", [
         ("Help center", [Y, Y, Y, Y]),
-        ("Email help", ["Yes", "Within 1 business day", "Priority", "Priority"]),
+        ("Email help", [Y, "Within 1 business day", "Priority", "Priority"]),
         ("Chat help", [N, N, N, Y]),
     ]),
 ]
@@ -260,7 +260,7 @@ def card(p):
     pick = p.get("pick")
     label, href, kind = p["btn"]
     host = (f'<p class="plan__host">1 seat included. Each extra seat is <span data-monthly>${p["host_m"]}</span>'
-            f'<span data-yearly>${p["host_y"]}</span> a month.</p>') if p["host_m"] else '<p class="plan__host">No card needed</p>'
+            f'<span data-yearly>${p["host_y"]}</span> a month.</p>') if p["host_m"] else '<p class="plan__host">1 seat included. No card needed.</p>'
     heading = f'<h3>Everything in {p["plus"]}, plus</h3>' if p.get("plus") else "<h3>All the basics</h3>"
     items = "".join(f"<li>{CHECK}{esc(t)}</li>" for t in p["top"])
     tag = '<span class="tag tag--green">Most picked</span>' if pick else ""
@@ -363,7 +363,18 @@ def page():
     return shell.head(title, desc, "/pricing", STYLE) + "\n" + shell.body(main, SCRIPT)
 
 
+def home_cards():
+    """The home page's plan cards are the same cards, so the two never drift apart."""
+    home = ROOT / "index.html"
+    text = home.read_text()
+    i = text.index('<div class="plans">')
+    j = text.index('<p class="onlink">', i)
+    cards = "\n        ".join(card(p).replace('href="#features"', 'href="/pricing#features"') for p in PLANS)
+    home.write_text(text[:i] + f'<div class="plans">\n        {cards}\n      </div>\n      ' + text[j:])
+
+
 if __name__ == "__main__":
+    home_cards()
     out = ROOT / "pricing" / "index.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(page())
