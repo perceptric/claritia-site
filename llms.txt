@@ -20,6 +20,7 @@
 
 - [Home](https://tryclaritia.com/): what Claritia does
 - [Pricing](https://tryclaritia.com/pricing.md): plans, hosts, contacts and emails, in Markdown
+- [Form templates](https://tryclaritia.com/templates): 150 free forms for 24 industries (demo requests, quotes, intake, applications, surveys, quizzes), each with its own page to try it and use it
 - [App](https://app.tryclaritia.com): sign in and start
 
 ## Contact

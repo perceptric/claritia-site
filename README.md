@@ -22,6 +22,9 @@ meeting, all in about twenty seconds. The look is the same family as tryomniscie
 | `tools/hero.py` | Writes the hero picture (the Catch) into `index.html`. |
 | `tools/tour.py` | Writes the product tour into `index.html`. Run after `tools/hero.py`. |
 | `tools/feats.py` | Writes `assets/img/feat-*.svg`. |
+| `templates/` | The form template gallery: `/templates`, one page per industry and one per template (150), each with the form to try. Written by `tools/templates.py`. |
+| `tools/templates.py`, `tools/templates.json` | Writes `templates/` and its lines in `sitemap.xml` from the template data, which comes from the app (`node scripts/export-templates.ts` in `dev-arrowsterr/claritia`). |
+| `assets/forms.css`, `assets/forms.js` | The gallery's search and filters, and the live forms: pages, show-if logic, checks and the end screen. |
 | `llms.txt`, `pricing.md` | Short guides for AI tools. |
 | `.htaccess` | https and www redirects, the 404 page, app links, cache times. |
 
@@ -31,11 +34,15 @@ meeting, all in about twenty seconds. The look is the same family as tryomniscie
 - **The tour or the hero picture:** edit `tools/tour.py` or `tools/hero.py`, then run
   `python3 tools/hero.py && python3 tools/tour.py`. Don't edit between the `tour:` and `catch:` marks by hand.
 - **CSS or JS:** edit the file, then raise `?v=` on its link in `index.html` and `404.html`.
+- **Form templates:** templates are written in the app repo. To refresh the site, run
+  `node scripts/export-templates.ts > ../claritia-site/tools/templates.json` there, then `python3 tools/templates.py` here.
+  Don't edit `templates/` by hand. For `forms.css` or `forms.js`, raise `CSS_V` or `JS_V` in `tools/templates.py`.
 - **Prices:** the plans in `index.html` and `pricing.md` follow `docs/pricing.md` in the app repo.
 
 Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 
 ## Running cost
 
-$0 added at Beta (50 teams) and at Growth (500 teams). The site is static on the existing Hostinger plan.
+$0 added at Beta (50 teams) and at Growth (500 teams). The site is static on the existing Hostinger plan, and so are
+the 175 form template pages (about 6 MB).
 Fonts come from Google Fonts for free. No new paid service.
