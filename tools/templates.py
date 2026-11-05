@@ -17,13 +17,26 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 11, 11
+CSS_V, JS_V = 12, 12
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
 USE = {u["value"]: u["label"] for u in DATA["useCases"]}
 IND = [i for i in DATA["industries"]]
 esc = lambda s: html.escape(str(s), quote=True)
+COUNTRIES = DATA.get("countries", [])
+BIRTH = re.compile(r"\b(date of birth|birth ?date|birthday|dob)\b", re.I)
+
+
+def as_shown(f):
+    """A question as Form Studio draws it: a country answer is the Country list."""
+    if f["kind"] == "short_text" and f.get("map") == "country" and COUNTRIES:
+        return {**f, "kind": "dropdown", "options": COUNTRIES, "placeholder": f.get("placeholder") or "Choose a country"}
+    return f
+
+
+def shown_schema(s):
+    return {**s, "pages": [{**p, "fields": [as_shown(f) for f in p["fields"]]} for p in s["pages"]]}
 
 
 def ind_slug(v: str) -> str:
@@ -211,6 +224,8 @@ def thumb(t, tid: str | None = None) -> str:
             body = '<span class="tp__box"></span>'
         elif k == "long_text":
             body = '<span class="tp__box tp__box--tall"></span>'
+        elif k == "group":
+            body = '<span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span>'
         elif k in ("name", "date_range"):
             body = '<span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span>'
         elif k == "address":
@@ -300,7 +315,7 @@ def field(f) -> str:
         return f'<div class="cf__f cf__pay" {attrs}><p class="cf__label">{esc(f["label"])}</p><p class="cf__pay-row"><output class="cf__total" data-pay="{esc(f.get("from", ""))}"{amt} data-format="money" data-cur="{f.get("currency", "USD")}">0</output><span class="cf__pay-card">Card</span></p><p class="cf__help">Card payment opens after the form is sent.</p></div>'
     if k in ("short_text", "email", "phone", "url"):
         typ = {"email": "email", "phone": "tel", "url": "url"}.get(k, "text")
-        ac = {"email": "email", "phone": "tel", "url": "url"}.get(k, "organization" if f.get("map") == "company" else "off")
+        ac = {"email": "email", "phone": "tel", "url": "url"}.get(k, {"company": "organization", "title": "organization-title", "country": "country-name"}.get(f.get("map"), "off"))
         return wrap(label, f'<input class="cf__in" id="{fid}" name="{key}" type="{typ}" autocomplete="{ac}"{ph}>')
     if k == "long_text":
         return wrap(label, f'<textarea class="cf__in cf__in--area" id="{fid}" name="{key}" rows="4"{ph}></textarea>')
@@ -308,7 +323,19 @@ def field(f) -> str:
         pre = f'<span class="cf__pre">{CUR.get(f.get("currency", "USD"), "$")}</span>' if k == "money" else ""
         return wrap(label, f'<span class="cf__money">{pre}<input class="cf__in{" cf__in--pre" if pre else ""}" id="{fid}" name="{key}" type="text" inputmode="decimal"{ph}></span>')
     if k in ("date", "time"):
-        return wrap(label, f'<input class="cf__in cf__in--short" id="{fid}" name="{key}" type="{k}">')
+        bday = ' autocomplete="bday"' if k == "date" and BIRTH.search(f["label"]) else ""
+        return wrap(label, f'<input class="cf__in cf__in--short" id="{fid}" name="{key}" type="{k}"{bday}>')
+    if k == "group":
+        # Form Studio's Repeating group: a row of small questions, and a button for one more row up to the most.
+        parts = f.get("parts") or [{"label": f["label"], "type": "text"}]
+        typ = {"email": "email", "phone": "tel", "number": "text", "date": "date"}
+        cells = []
+        for i, p in enumerate(parts):
+            extra = ' inputmode="decimal"' if p["type"] == "number" else ""
+            first = f' id="{fid}"' if i == 0 else ""
+            cells.append(f'<input class="cf__in" name="{key}.0.{i}" type="{typ.get(p["type"], "text")}"{extra} placeholder="{esc(p["label"])}" aria-label="{esc(p["label"])}, row 1"{first}>')
+        add = esc(f.get("add") or "Add another")
+        return wrap(group, f'<div class="cf__rows" data-max="{f.get("max", 10)}"><div class="cf__row" style="--n:{len(parts)}">{"".join(cells)}</div></div><button type="button" class="cf__add" data-add>{add}</button>')
     if k == "date_range":
         return wrap(label, f'<span class="cf__row"><input class="cf__in cf__in--short" id="{fid}" name="{key}.from" type="date" aria-label="From"><span class="cf__to">to</span><input class="cf__in cf__in--short" name="{key}.to" type="date" aria-label="To"></span>')
     if k == "name":
@@ -367,7 +394,7 @@ def cover_html(s) -> str:
 
 
 def live_form(t) -> str:
-    s = t["schema"]
+    s = shown_schema(t["schema"])
     pages = []
     for i, p in enumerate(s["pages"]):
         title = f'<p class="cf__ptitle">{esc(p["title"])}</p>' if p.get("title") else ""

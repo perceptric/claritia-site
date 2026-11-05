@@ -1501,11 +1501,261 @@
   "address": "Address",
   "file": "File upload",
   "signature": "Signature",
+  "group": "Repeating group",
   "statement": "Statement",
   "hidden": "Hidden",
   "calc": "Calculation",
   "payment": "Payment"
  },
+ "countries": [
+  "Afghanistan",
+  "Åland Islands",
+  "Albania",
+  "Algeria",
+  "American Samoa",
+  "Andorra",
+  "Angola",
+  "Anguilla",
+  "Antarctica",
+  "Antigua & Barbuda",
+  "Argentina",
+  "Armenia",
+  "Aruba",
+  "Australia",
+  "Austria",
+  "Azerbaijan",
+  "Bahamas",
+  "Bahrain",
+  "Bangladesh",
+  "Barbados",
+  "Belarus",
+  "Belgium",
+  "Belize",
+  "Benin",
+  "Bermuda",
+  "Bhutan",
+  "Bolivia",
+  "Bosnia & Herzegovina",
+  "Botswana",
+  "Brazil",
+  "British Indian Ocean Territory",
+  "British Virgin Islands",
+  "Brunei",
+  "Bulgaria",
+  "Burkina Faso",
+  "Burundi",
+  "Cambodia",
+  "Cameroon",
+  "Canada",
+  "Cape Verde",
+  "Caribbean Netherlands",
+  "Cayman Islands",
+  "Central African Republic",
+  "Chad",
+  "Chile",
+  "China",
+  "Christmas Island",
+  "Cocos (Keeling) Islands",
+  "Colombia",
+  "Comoros",
+  "Congo - Brazzaville",
+  "Congo - Kinshasa",
+  "Cook Islands",
+  "Costa Rica",
+  "Côte d’Ivoire",
+  "Croatia",
+  "Cuba",
+  "Curaçao",
+  "Cyprus",
+  "Czechia",
+  "Denmark",
+  "Djibouti",
+  "Dominica",
+  "Dominican Republic",
+  "Ecuador",
+  "Egypt",
+  "El Salvador",
+  "Equatorial Guinea",
+  "Eritrea",
+  "Estonia",
+  "Eswatini",
+  "Ethiopia",
+  "Falkland Islands",
+  "Faroe Islands",
+  "Fiji",
+  "Finland",
+  "France",
+  "French Guiana",
+  "French Polynesia",
+  "Gabon",
+  "Gambia",
+  "Georgia",
+  "Germany",
+  "Ghana",
+  "Gibraltar",
+  "Greece",
+  "Greenland",
+  "Grenada",
+  "Guadeloupe",
+  "Guam",
+  "Guatemala",
+  "Guernsey",
+  "Guinea",
+  "Guinea-Bissau",
+  "Guyana",
+  "Haiti",
+  "Honduras",
+  "Hong Kong SAR China",
+  "Hungary",
+  "Iceland",
+  "India",
+  "Indonesia",
+  "Iran",
+  "Iraq",
+  "Ireland",
+  "Isle of Man",
+  "Israel",
+  "Italy",
+  "Jamaica",
+  "Japan",
+  "Jersey",
+  "Jordan",
+  "Kazakhstan",
+  "Kenya",
+  "Kiribati",
+  "Kosovo",
+  "Kuwait",
+  "Kyrgyzstan",
+  "Laos",
+  "Latvia",
+  "Lebanon",
+  "Lesotho",
+  "Liberia",
+  "Libya",
+  "Liechtenstein",
+  "Lithuania",
+  "Luxembourg",
+  "Macao SAR China",
+  "Madagascar",
+  "Malawi",
+  "Malaysia",
+  "Maldives",
+  "Mali",
+  "Malta",
+  "Marshall Islands",
+  "Martinique",
+  "Mauritania",
+  "Mauritius",
+  "Mayotte",
+  "Mexico",
+  "Micronesia",
+  "Moldova",
+  "Monaco",
+  "Mongolia",
+  "Montenegro",
+  "Montserrat",
+  "Morocco",
+  "Mozambique",
+  "Myanmar (Burma)",
+  "Namibia",
+  "Nauru",
+  "Nepal",
+  "Netherlands",
+  "New Caledonia",
+  "New Zealand",
+  "Nicaragua",
+  "Niger",
+  "Nigeria",
+  "Niue",
+  "Norfolk Island",
+  "North Korea",
+  "North Macedonia",
+  "Northern Mariana Islands",
+  "Norway",
+  "Oman",
+  "Pakistan",
+  "Palau",
+  "Palestinian Territories",
+  "Panama",
+  "Papua New Guinea",
+  "Paraguay",
+  "Peru",
+  "Philippines",
+  "Pitcairn Islands",
+  "Poland",
+  "Portugal",
+  "Puerto Rico",
+  "Qatar",
+  "Réunion",
+  "Romania",
+  "Russia",
+  "Rwanda",
+  "Samoa",
+  "San Marino",
+  "São Tomé & Príncipe",
+  "Saudi Arabia",
+  "Senegal",
+  "Serbia",
+  "Seychelles",
+  "Sierra Leone",
+  "Singapore",
+  "Sint Maarten",
+  "Slovakia",
+  "Slovenia",
+  "Solomon Islands",
+  "Somalia",
+  "South Africa",
+  "South Georgia & South Sandwich Islands",
+  "South Korea",
+  "South Sudan",
+  "Spain",
+  "Sri Lanka",
+  "St. Barthélemy",
+  "St. Helena",
+  "St. Kitts & Nevis",
+  "St. Lucia",
+  "St. Martin",
+  "St. Pierre & Miquelon",
+  "St. Vincent & Grenadines",
+  "Sudan",
+  "Suriname",
+  "Svalbard & Jan Mayen",
+  "Sweden",
+  "Switzerland",
+  "Syria",
+  "Taiwan",
+  "Tajikistan",
+  "Tanzania",
+  "Thailand",
+  "Timor-Leste",
+  "Togo",
+  "Tokelau",
+  "Tonga",
+  "Trinidad & Tobago",
+  "Tunisia",
+  "Türkiye",
+  "Turkmenistan",
+  "Turks & Caicos Islands",
+  "Tuvalu",
+  "U.S. Outlying Islands",
+  "U.S. Virgin Islands",
+  "Uganda",
+  "Ukraine",
+  "United Arab Emirates",
+  "United Kingdom",
+  "United States",
+  "Uruguay",
+  "Uzbekistan",
+  "Vanuatu",
+  "Vatican City",
+  "Venezuela",
+  "Vietnam",
+  "Wallis & Futuna",
+  "Western Sahara",
+  "Yemen",
+  "Zambia",
+  "Zimbabwe"
+ ],
  "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Bricolage+Grotesque:wght@400;600;800&family=Fraunces:wght@400;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&family=Nunito:wght@400;600;800&family=Outfit:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Playfair+Display:wght@400;600&family=Lora:wght@400;600&display=swap",
  "themes": [
   {
@@ -12643,9 +12893,21 @@
        },
        {
         "key": "medicines_and_doses",
-        "kind": "long_text",
+        "kind": "group",
         "label": "Medicines and doses",
-        "placeholder": "Include vitamins and supplements",
+        "parts": [
+         {
+          "label": "Medicine",
+          "type": "text"
+         },
+         {
+          "label": "Dose",
+          "type": "text"
+         }
+        ],
+        "max": 10,
+        "help": "Include vitamins and supplements.",
+        "add": "Add a medicine",
         "show": {
          "key": "do_you_take_any_medicines",
          "op": "is",
@@ -16578,7 +16840,7 @@
    "layout": "steps",
    "length": "long",
    "does": [],
-   "seconds": 250,
+   "seconds": 238,
    "added": "",
    "schema": {
     "v": 1,
@@ -16721,28 +16983,6 @@
         }
        },
        {
-        "key": "routing_number",
-        "kind": "short_text",
-        "label": "Routing number",
-        "half": true,
-        "show": {
-         "key": "how_would_you_like_to",
-         "op": "not",
-         "value": "Check"
-        }
-       },
-       {
-        "key": "account_number",
-        "kind": "short_text",
-        "label": "Account number",
-        "half": true,
-        "show": {
-         "key": "how_would_you_like_to",
-         "op": "not",
-         "value": "Check"
-        }
-       },
-       {
         "key": "voided_check_or_bank_letter",
         "kind": "file",
         "label": "Voided check or bank letter",
@@ -16768,12 +17008,6 @@
      {
       "title": "Tax and insurance",
       "fields": [
-       {
-        "key": "tax_id",
-        "kind": "short_text",
-        "label": "Tax ID",
-        "required": true
-       },
        {
         "key": "w_9_or_equivalent",
         "kind": "file",
@@ -19524,7 +19758,7 @@
    "layout": "steps",
    "length": "long",
    "does": [],
-   "seconds": 468,
+   "seconds": 482,
    "added": "",
    "schema": {
     "v": 1,
@@ -19562,9 +19796,10 @@
         "required": true
        },
        {
-        "key": "tax_id_or_registration_number",
-        "kind": "short_text",
-        "label": "Tax ID or registration number"
+        "key": "proof_of_nonprofit_or_charity",
+        "kind": "file",
+        "label": "Proof of nonprofit or charity status",
+        "maxFiles": 1
        },
        {
         "key": "your_mission",
@@ -23902,9 +24137,17 @@
        },
        {
         "key": "names_of_all_guests",
-        "kind": "long_text",
+        "kind": "group",
         "label": "Names of all guests",
-        "required": true
+        "parts": [
+         {
+          "label": "Full name",
+          "type": "text"
+         }
+        ],
+        "max": 20,
+        "required": true,
+        "add": "Add a guest"
        },
        {
         "key": "photo_id_of_the_main",
@@ -51739,7 +51982,7 @@
        {
         "key": "an_email_from_your_bank",
         "kind": "single",
-        "label": "An email from your bank asks you to confirm your password through a link. What should you do?",
+        "label": "An email from your bank asks you to sign in through its link to check your account. What should you do?",
         "options": [
          "Click the link and confirm",
          "Reply with your password",
@@ -56191,9 +56434,25 @@
         "required": true
        },
        {
-        "key": "other_childrens_names_birth_dates",
-        "kind": "long_text",
-        "label": "Other children's names, birth dates and programs",
+        "key": "other_children",
+        "kind": "group",
+        "label": "Other children",
+        "parts": [
+         {
+          "label": "Full name",
+          "type": "text"
+         },
+         {
+          "label": "Date of birth",
+          "type": "date"
+         },
+         {
+          "label": "Program",
+          "type": "text"
+         }
+        ],
+        "max": 8,
+        "add": "Add a child",
         "show": {
          "key": "children",
          "op": "is",
@@ -56727,8 +56986,20 @@
       "fields": [
        {
         "key": "current_medicines",
-        "kind": "long_text",
-        "label": "Current medicines"
+        "kind": "group",
+        "label": "Current medicines",
+        "parts": [
+         {
+          "label": "Medicine",
+          "type": "text"
+         },
+         {
+          "label": "Dose",
+          "type": "text"
+         }
+        ],
+        "max": 10,
+        "add": "Add a medicine"
        },
        {
         "key": "allergies",
@@ -57230,8 +57501,20 @@
        },
        {
         "key": "medicines_you_take",
-        "kind": "long_text",
-        "label": "Medicines you take"
+        "kind": "group",
+        "label": "Medicines you take",
+        "parts": [
+         {
+          "label": "Medicine",
+          "type": "text"
+         },
+         {
+          "label": "Dose",
+          "type": "text"
+         }
+        ],
+        "max": 10,
+        "add": "Add a medicine"
        },
        {
         "key": "allergies",
@@ -58184,9 +58467,25 @@
         "max": 20
        },
        {
-        "key": "childrens_names_birth_dates_and",
-        "kind": "long_text",
-        "label": "Children's names, birth dates and where they live",
+        "key": "children",
+        "kind": "group",
+        "label": "Children",
+        "parts": [
+         {
+          "label": "Full name",
+          "type": "text"
+         },
+         {
+          "label": "Date of birth",
+          "type": "date"
+         },
+         {
+          "label": "Where they live",
+          "type": "text"
+         }
+        ],
+        "max": 10,
+        "add": "Add a child",
         "show": {
          "key": "number_of_children",
          "op": "gte",
@@ -58195,8 +58494,24 @@
        },
        {
         "key": "parents_children_or_siblings_who",
-        "kind": "long_text",
-        "label": "Parents, children or siblings who are US citizens or green card holders"
+        "kind": "group",
+        "label": "Parents, children or siblings who are US citizens or green card holders",
+        "parts": [
+         {
+          "label": "Full name",
+          "type": "text"
+         },
+         {
+          "label": "Relationship",
+          "type": "text"
+         },
+         {
+          "label": "Citizen or green card",
+          "type": "text"
+         }
+        ],
+        "max": 10,
+        "add": "Add a relative"
        }
       ]
      },
@@ -60566,9 +60881,25 @@
       "title": "Dependents and signature",
       "fields": [
        {
-        "key": "dependents_name_date_of_birth",
-        "kind": "long_text",
-        "label": "Dependents (name, date of birth, relationship)",
+        "key": "dependents",
+        "kind": "group",
+        "label": "Dependents",
+        "parts": [
+         {
+          "label": "Full name",
+          "type": "text"
+         },
+         {
+          "label": "Date of birth",
+          "type": "date"
+         },
+         {
+          "label": "Relationship",
+          "type": "text"
+         }
+        ],
+        "max": 10,
+        "add": "Add a dependent",
         "show": {
          "key": "coverage_for",
          "op": "not",
@@ -65325,8 +65656,24 @@
        },
        {
         "key": "medicines_to_take_at_camp",
-        "kind": "long_text",
-        "label": "Medicines to take at camp"
+        "kind": "group",
+        "label": "Medicines to take at camp",
+        "parts": [
+         {
+          "label": "Medicine",
+          "type": "text"
+         },
+         {
+          "label": "Dose",
+          "type": "text"
+         },
+         {
+          "label": "When to take it",
+          "type": "text"
+         }
+        ],
+        "max": 10,
+        "add": "Add a medicine"
        },
        {
         "key": "health_conditions_staff_should_know",
@@ -65689,7 +66036,7 @@
        {
         "key": "cards",
         "kind": "money",
-        "label": "Credit card minimum payments a month",
+        "label": "Minimum card payments a month",
         "currency": "USD"
        },
        {
@@ -66703,8 +67050,20 @@
        },
        {
         "key": "which_medicines_and_doses",
-        "kind": "long_text",
+        "kind": "group",
         "label": "Which medicines and doses?",
+        "parts": [
+         {
+          "label": "Medicine",
+          "type": "text"
+         },
+         {
+          "label": "Dose",
+          "type": "text"
+         }
+        ],
+        "max": 10,
+        "add": "Add a medicine",
         "show": {
          "key": "are_you_taking_any_medicines",
          "op": "is",
@@ -67280,9 +67639,9 @@
         "half": true
        },
        {
-        "key": "business_credit_cards",
+        "key": "company_cards_credit_or_charge",
         "kind": "number",
-        "label": "Business credit cards",
+        "label": "Company cards (credit or charge)",
         "min": 0,
         "max": 30,
         "half": true

@@ -207,6 +207,19 @@
         case "ranking": return Array.prototype.map.call(el.querySelectorAll("li"), function (li) { return li.getAttribute("data-value"); });
         case "file": { var fi = q("input"); return fi.files && fi.files.length ? Array.prototype.slice.call(fi.files) : undefined; }
         case "signature": return sigs[k] ? true : undefined;
+        case "group": {
+          // Each row that has an answer, by its questions' labels.
+          var rowsOut = [];
+          Array.prototype.forEach.call(el.querySelectorAll(".cf__row"), function (row) {
+            var o = {}, any = false;
+            Array.prototype.forEach.call(row.querySelectorAll("input"), function (x, i) {
+              var v = x.value.trim();
+              if (v) { o[f.parts && f.parts[i] ? f.parts[i].label : String(i)] = v; any = true; }
+            });
+            if (any) rowsOut.push(o);
+          });
+          return rowsOut.length ? rowsOut : undefined;
+        }
         case "statement": return undefined;
         default: { var t = named(k); return t || undefined; }
       }
@@ -451,6 +464,25 @@
       form.classList.add("has-cover");
       cover.querySelector("[data-start]").addEventListener("click", function () { form.classList.remove("has-cover"); render(); top(); });
     }
+    // Repeating groups: one more row, up to the most the question allows.
+    form.querySelectorAll("[data-add]").forEach(function (btn) {
+      var rows = btn.closest(".cf__f").querySelector(".cf__rows");
+      var most = Number(rows.getAttribute("data-max")) || 10;
+      btn.addEventListener("click", function () {
+        var list = rows.querySelectorAll(".cf__row");
+        if (list.length >= most) return;
+        var n = list.length, row = list[0].cloneNode(true);
+        row.querySelectorAll("input").forEach(function (x) {
+          x.value = "";
+          x.removeAttribute("id");
+          x.name = x.name.replace(/\.\d+\.(\d+)$/, "." + n + ".$1");
+          x.setAttribute("aria-label", x.getAttribute("placeholder") + ", row " + (n + 1));
+        });
+        rows.appendChild(row);
+        btn.hidden = n + 1 >= most;
+        row.querySelector("input").focus();
+      });
+    });
     // Save and finish later: on the live form it emails a link; here it says so.
     var later = form.querySelector("[data-later]");
     if (later) later.addEventListener("click", function () { var note = form.querySelector(".cf__later-note"); note.hidden = !note.hidden; });
@@ -459,6 +491,8 @@
       Object.keys(sigs).forEach(function (k) { sigs[k] = false; var c = form.querySelector('canvas[data-sig="' + k + '"]'); c.getContext("2d").clearRect(0, 0, c.width, c.height); });
       form.querySelectorAll(".cf__files").forEach(function (u) { u.innerHTML = ""; });
       form.querySelectorAll(".cf__dd").forEach(resetDd);
+      form.querySelectorAll(".cf__rows").forEach(function (r) { Array.prototype.slice.call(r.querySelectorAll(".cf__row"), 1).forEach(function (x) { x.remove(); }); });
+      form.querySelectorAll("[data-add]").forEach(function (b) { b.hidden = false; });
       form.querySelectorAll(".cf__stars").forEach(paintStars);
       form.querySelectorAll(".is-bad").forEach(function (x) { x.classList.remove("is-bad"); });
       form.querySelectorAll(".cf__err").forEach(function (x) { x.hidden = true; });
