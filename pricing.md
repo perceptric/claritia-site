@@ -117,4 +117,4 @@ Each plan is priced per seat. A seat is a teammate people can book a meeting wit
 - Suite bundle: run two or more of Arrowsterr, Claritia and Omniscient and save 20%.
 
 Full page: https://tryclaritia.com/pricing
-Start free: https://app.tryclaritia.com
+Start free: https://app.tryclaritia.com/signup

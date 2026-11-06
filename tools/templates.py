@@ -630,7 +630,7 @@ def combo_page(c: str, i: str, items) -> None:
     </div></div>
   </section>
   {gallery(("category", c), items)}
-  {CLOSE(esc(title) + ".", "Live on your site in a click.", APP, "Start free")}"""
+  {CLOSE(esc(title) + ".", "Live on your site in a click.", APP + "/signup", "Start free")}"""
     page(path, f"{title} | Claritia", intro, body, [crumbs([("Form templates", "/templates"), (CAT_LABEL[c], path_of("category", c)), (IND_LABEL[i], path)])])
 
 
@@ -676,7 +676,7 @@ def list_page(kind: str, v: str, title: str, intro: str, trail: list) -> None:
   {f'<div class="wrap tkit__wrap">{kit_strip(v)}</div>' if kind == "industry" and v in KIT_OF else ""}
   {combo_links(v) if kind == "category" else ""}
   {gallery((kind, v), items)}
-  {CLOSE(esc(title) + ".", "Live on your site in a click.", APP, "Start free")}"""
+  {CLOSE(esc(title) + ".", "Live on your site in a click.", APP + "/signup", "Start free")}"""
     page(path, f"{title} | Claritia", f"{len(items)} free form templates. {intro}", body, [crumbs([("Form templates", "/templates")] + trail + [(label_of(kind, v), path)])])
 
 
@@ -961,7 +961,7 @@ def index_page():
       <p class="eyebrow reveal">Form templates</p>
       <h1 class="display reveal" data-delay="1">Form templates<br><span class="two">for every industry.</span></h1>
       <p class="lead reveal" data-delay="2">{len(T)} ready forms for {len(HAS_PAGE["industry"])} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try any of them here. Use one and it goes live on your site in a click, with every answer saved as a contact.</p>
-      <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="#all">Browse form templates</a><a class="btn btn--ghost btn--lg" href="{APP}">Start free</a></div>
+      <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="#all">Browse form templates</a><a class="btn btn--ghost btn--lg" href="{APP}/signup">Start free</a></div>
     </div></div>
   </section>
   <div id="all"></div>
@@ -1005,7 +1005,7 @@ def index_page():
     </div>
   </section>
   {faq_block(INDEX_QA)}
-  {CLOSE("Make your first form in minutes.", "Free plan, live in a click.", APP, "Start free")}"""
+  {CLOSE("Make your first form in minutes.", "Free plan, live in a click.", APP + "/signup", "Start free")}"""
     page(
         "/templates",
         "Free form templates for every industry | Claritia",

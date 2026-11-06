@@ -10,16 +10,16 @@ esc = shell.esc
 # The plans. Prices are dollars per seat per month; yearly is the monthly price with 20% off, billed once a year.
 PLANS = [
     {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0,
-     "btn": ("Start free", "https://app.tryclaritia.com", "ghost"),
+     "btn": ("Start free", "https://app.tryclaritia.com/signup", "ghost"),
      "top": ["Unlimited forms", "250 submissions/month", "1 calendar per seat", "100 AI credits/month", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and page skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
     {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12,
-     "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Free",
+     "btn": ("Start free", "https://app.tryclaritia.com/signup", "ghost"), "plus": "Free",
      "top": ["Unlimited forms", "2,000 submissions/month", "6 calendars per seat", "500 AI credits/month", "Unlimited meeting types", "e-Signatures", "Stripe payment", "Custom brand", "Redirect on completion", "Booking pages for each person and the team", "Group meetings with a guest limit", "Meeting polls", "Paid meetings with Stripe"]},
     {"id": "pro", "name": "Pro", "for": "For teams that share leads", "m": 39, "y": 31, "pick": True,
-     "btn": ("Start free", "https://app.tryclaritia.com", "primary"), "plus": "Starter",
+     "btn": ("Start free", "https://app.tryclaritia.com/signup", "primary"), "plus": "Starter",
      "top": ["5,000 submissions/month", "2,000 AI credits/month", "Follow-up emails from your own domain", "Remove Claritia branding", "Round robin with weights and priority", "Meetings with everyone free", "Team pools", "Daily and weekly limits for each person", "No-show follow-up with the reschedule link"]},
     {"id": "business", "name": "Business", "for": "For busy teams with lots of leads", "m": 79, "y": 63,
-     "btn": ("Start free", "https://app.tryclaritia.com", "ghost"), "plus": "Pro",
+     "btn": ("Start free", "https://app.tryclaritia.com/signup", "ghost"), "plus": "Pro",
      "top": ["Unlimited submissions", "5,000 AI credits/month", "Your own domain for forms and booking pages", "Partial answers", "Drop-off by question", "Owner first (the person's owner in your CRM)", "Double round robin (one from each of two teams)", "Salesforce", "Chat help"]},
 ]
 
@@ -400,7 +400,7 @@ def markdown():
         "- Suite bundle: run two or more of Arrowsterr, Claritia and Omniscient and save 20%.",
         "",
         "Full page: https://tryclaritia.com/pricing",
-        "Start free: https://app.tryclaritia.com",
+        "Start free: https://app.tryclaritia.com/signup",
         "",
     ]
     (ROOT / "pricing.md").write_text("\n".join(lines))

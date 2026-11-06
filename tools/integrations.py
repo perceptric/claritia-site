@@ -409,7 +409,7 @@ def tool_page(k):
         <h1 id="ix-h">{esc(t["h1"])}</h1>
         <p class="sub">{esc(t["sub"])}</p>
         <div class="pd-ctas">
-          <a class="btn btn--primary btn--lg" href="{APP}">Connect {esc(t["name"])} {I("arrow", "i s14 arr")}</a>
+          <a class="btn btn--primary btn--lg" href="{APP}/signup">Connect {esc(t["name"])} {I("arrow", "i s14 arr")}</a>
           <a class="btn btn--ghost btn--lg" href="/integrations">All integrations</a>
         </div>
         <p class="ix-plan"><span class="tag tag--green">{esc(plan)}</span>{esc(plan_line)}. Free plan, no card needed.</p>
@@ -448,7 +448,7 @@ def hub_page():
         <h1 id="ix-h">Connect Claritia to the tools you use</h1>
         <p class="sub">Send each lead to your CRM, book it on your calendar and tell your team in Slack. Every connection is one click.</p>
         <div class="pd-ctas">
-          <a class="btn btn--primary btn--lg" href="{APP}">Start free {I("arrow", "i s14 arr")}</a>
+          <a class="btn btn--primary btn--lg" href="{APP}/signup">Start free {I("arrow", "i s14 arr")}</a>
           <a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a>
         </div>
         <p class="pd-note">Free plan. No card needed.</p>

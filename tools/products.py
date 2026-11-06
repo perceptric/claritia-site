@@ -116,7 +116,7 @@ def hero(icon, name, title, sub, second, shot):
       <h1 id="pp-h">{esc(title)}</h1>
       <p class="sub">{esc(sub)}</p>
       <div class="pd-ctas">
-        <a class="btn btn--primary btn--lg" href="{APP}">Start free {I("arrow", "i s14 arr")}</a>
+        <a class="btn btn--primary btn--lg" href="{APP}/signup">Start free {I("arrow", "i s14 arr")}</a>
         <a class="btn btn--ghost btn--lg" href="{second[1]}">{esc(second[0])}</a>
       </div>
       <p class="pd-note">Free plan. No card needed.</p>
@@ -342,7 +342,7 @@ def index_page():
       <span class="eyebrow">{I("grid", "i s12")}Product</span>
       <h1 id="pp-h">From first click to booked call</h1>
       <p class="sub">Forms, meetings and routing that share one record for every lead.</p>
-      <div class="pd-ctas"><a class="btn btn--primary btn--lg" href="{APP}">Start free {I("arrow", "i s14 arr")}</a><a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a></div>
+      <div class="pd-ctas"><a class="btn btn--primary btn--lg" href="{APP}/signup">Start free {I("arrow", "i s14 arr")}</a><a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a></div>
       <p class="pd-note">Free plan. No card needed.</p>
       <div class="pd-trio">{trio}</div>
     </section>""") + cta()
