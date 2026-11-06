@@ -1,0 +1,128 @@
+<!doctype html>
+<!-- The blog's cover template (1200 x 630, the size link previews use). tools/blog-cover.mjs fills it from JSON in the
+     address's hash: {title, category, kind, logo, name} and draws a PNG. Brand v4: the off-white page with its rails,
+     Inter at 500, the Slot mark, the Catch's corner brackets around a small scene for the post's kind, green as the
+     one signal. Kinds: form, meeting, workflow, integration, check. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=block">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=block">
+<style>
+  :root { --paper: #fafaf5; --rail: #ebebe6; --ink: #0f0f0f; --text: #171717; --muted: #737373; --faint: #a3a3a3; --line: #ebebeb; --line2: #d4d4d4; --green: #0c8c5e; --green-soft: #e3f4ec; --green-ink: #086444; --mint: #18e299; --brand: #333333; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; background: var(--paper); font-family: Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; color: var(--ink); }
+  .cover { position: relative; width: 1200px; height: 630px; }
+  /* The website's framed rails */
+  .rail { position: absolute; background: var(--rail); }
+  .rail.v { top: 0; bottom: 0; width: 1px; } .rail.h { left: 0; right: 0; height: 1px; }
+  .copy { position: absolute; left: 72px; top: 64px; bottom: 60px; width: 560px; display: flex; flex-direction: column; }
+  .lockup { display: flex; align-items: center; gap: 12px; font-size: 26px; font-weight: 600; letter-spacing: -0.03em; }
+  .lockup svg { width: 38px; height: 38px; }
+  .mid { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 22px; }
+  .chip { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 16px; border-radius: 999px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.06); font-size: 17px; font-weight: 500; color: #3a3a38; }
+  .chip i { width: 8px; height: 8px; border-radius: 99px; background: var(--green); }
+  h1 { font-size: 64px; line-height: 1.04; font-weight: 500; letter-spacing: -0.04em; color: var(--ink); text-wrap: balance; }
+  .foot { display: flex; align-items: center; font-size: 18px; color: var(--muted); }
+  .foot b { font-weight: 500; color: var(--text); }
+  /* The Catch: a dotted field, a dashed square, four corner brackets and their labels */
+  .stage { position: absolute; left: 676px; top: 40px; width: 484px; height: 550px; }
+  .grid { position: absolute; inset: 0; background-image: radial-gradient(circle, #dedeD8 1.1px, transparent 1.3px); background-size: 22px 22px; background-position: 11px 11px; -webkit-mask-image: radial-gradient(ellipse 72% 70% at 50% 50%, #000 55%, transparent 100%); mask-image: radial-gradient(ellipse 72% 70% at 50% 50%, #000 55%, transparent 100%); }
+  .frame { position: absolute; left: 62px; top: 95px; width: 360px; height: 360px; border: 1.5px dashed var(--line2); }
+  .bk { position: absolute; width: 52px; height: 52px; border: 0 solid var(--ink); }
+  .bk.tl { left: -2px; top: -2px; border-top-width: 2.5px; border-left-width: 2.5px; }
+  .bk.tr { right: -2px; top: -2px; border-top-width: 2.5px; border-right-width: 2.5px; }
+  .bk.br { right: -2px; bottom: -2px; border-bottom-width: 2.5px; border-right-width: 2.5px; }
+  .bk.bl { left: -2px; bottom: -2px; border-bottom-width: 2.5px; border-left-width: 2.5px; }
+  .sq { position: absolute; width: 14px; height: 14px; background: #fff; border: 1.5px solid var(--line2); }
+  .sq.on { background: var(--ink); border-color: var(--ink); }
+  .sq.tl { left: -8px; top: -8px; } .sq.tr { right: -8px; top: -8px; } .sq.br { right: -8px; bottom: -8px; } .sq.bl { left: -8px; bottom: -8px; }
+  .lab { position: absolute; font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: var(--faint); white-space: nowrap; }
+  .lab u { text-decoration: none; font: 500 12px "JetBrains Mono", monospace; letter-spacing: .06em; opacity: .7; margin-right: 6px; }
+  .lab.on { color: var(--ink); }
+  .lab.tl { right: calc(100% + 18px); bottom: calc(100% + 12px); } .lab.tr { left: calc(100% + 18px); bottom: calc(100% + 12px); }
+  .lab.br { left: calc(100% + 18px); top: calc(100% + 12px); } .lab.bl { right: calc(100% + 18px); top: calc(100% + 12px); }
+  .dot { position: absolute; width: 7px; height: 7px; border-radius: 99px; background: var(--line2); }
+  .dot.g { width: 8px; height: 8px; background: var(--green); }
+  /* The scene inside the brackets */
+  .scene { position: absolute; inset: 34px; display: grid; place-items: center; }
+  .card { width: 100%; border-radius: 16px; background: #fff; box-shadow: 0 24px 24px -12px rgba(0,0,0,.05), 0 12px 12px -6px rgba(0,0,0,.03), 0 3px 3px -1.5px rgba(0,0,0,.06), 0 0 0 1px rgba(0,0,0,.07); padding: 22px; }
+  .card h3 { font-size: 19px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 14px; }
+  .fl { font-size: 13px; font-weight: 500; color: var(--muted); margin: 10px 0 6px; }
+  .in { height: 36px; border-radius: 8px; background: #fafafa; box-shadow: 0 0 0 1px var(--line); display: flex; align-items: center; padding: 0 12px; font-size: 14px; color: var(--text); }
+  .in.focus { box-shadow: 0 0 0 1.5px var(--green), 0 0 0 5px rgba(12,140,94,.14); background: #fff; }
+  .pill { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 18px; border-radius: 999px; background: var(--brand); color: #fff; font-size: 14px; font-weight: 500; box-shadow: 0 0 0 1px rgba(0,0,0,.8), 0 1px 3px rgba(0,0,0,.4), 1px 4px 8px rgba(0,0,0,.12); }
+  .pill i { width: 7px; height: 7px; border-radius: 99px; background: var(--mint); }
+  .row { display: flex; gap: 8px; }
+  .slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 4px 0 16px; }
+  .slot { height: 38px; border-radius: 999px; display: grid; place-items: center; font-size: 14px; font-weight: 500; color: var(--text); background: #fff; box-shadow: 0 0 0 1px var(--line); }
+  .slot.on { background: var(--green-soft); color: var(--green-ink); box-shadow: 0 0 0 1.5px var(--green); }
+  .slot.off { color: var(--faint); text-decoration: line-through; box-shadow: 0 0 0 1px #f0f0f0; }
+  .step { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 12px; background: #fff; box-shadow: 0 0 0 1px var(--line); font-size: 14.5px; font-weight: 500; }
+  .step .ic { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; background: #f5f5f5; color: var(--muted); }
+  .step .ic svg, .ok svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .step small { margin-left: auto; font-size: 12.5px; font-weight: 500; color: var(--faint); }
+  .step.done small { color: var(--green-ink); }
+  .step.done .ic { background: var(--green-soft); color: var(--green); }
+  .link { width: 2px; height: 14px; margin: 3px 0 3px 26px; background: repeating-linear-gradient(var(--line2) 0 4px, transparent 4px 7px); }
+  .pair { display: flex; align-items: center; gap: 14px; }
+  .tile { width: 92px; height: 92px; border-radius: 22px; background: #fff; display: grid; place-items: center; box-shadow: 0 12px 20px -10px rgba(0,0,0,.12), 0 0 0 1px rgba(0,0,0,.07); }
+  .tile img, .tile svg { width: 52px; height: 52px; object-fit: contain; }
+  .wire { position: relative; width: 74px; height: 2px; background: repeating-linear-gradient(90deg, var(--line2) 0 5px, transparent 5px 9px); }
+  .wire i { position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 99px; background: var(--green); box-shadow: 0 0 0 5px rgba(12,140,94,.15); }
+  .cap { margin-top: 22px; text-align: center; font-size: 15px; font-weight: 500; color: var(--muted); }
+  .check { width: 150px; height: 150px; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <span class="rail v" style="left:40px"></span><span class="rail v" style="right:40px"></span>
+  <span class="rail h" style="top:40px"></span><span class="rail h" style="bottom:40px"></span>
+  <div class="copy">
+    <div class="lockup"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="13" fill="#0C8C5E"/><rect x="9" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="9" y="20.5" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="20.5" width="13" height="7" rx="3.5" fill="#fff"/><rect x="9" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/></svg>Claritia</div>
+    <div class="mid"><span class="chip"><i></i><span id="cat"></span></span><h1 id="title"></h1></div>
+    <div class="foot"><b>tryclaritia.com</b>/blog</div>
+  </div>
+  <div class="stage">
+    <div class="grid"></div>
+    <div class="frame" id="frame">
+      <span class="bk tl"></span><span class="bk tr"></span><span class="bk br"></span><span class="bk bl"></span>
+      <span class="sq tl on"></span><span class="sq tr"></span><span class="sq br"></span><span class="sq bl"></span>
+      <span class="lab tl on"><u>01</u>Capture</span><span class="lab tr"><u>02</u>Know</span><span class="lab br"><u>03</u>Route</span><span class="lab bl"><u>04</u>Book</span>
+      <div class="scene" id="scene"></div>
+    </div>
+  </div>
+</div>
+<script>
+  const D = JSON.parse(decodeURIComponent(location.hash.slice(1) || "%7B%7D"));
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  document.getElementById("title").textContent = D.title || "Forms that book the meeting";
+  document.getElementById("cat").textContent = D.category || "Guides";
+  const ICON = {
+    form: '<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>',
+    clock: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>',
+    mail: '<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
+    check: '<svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>',
+  };
+  const MARK = document.querySelector(".lockup svg").outerHTML;
+  const scenes = {
+    form: () => `<div class="card"><h3>${esc(D.form || "Book a demo")}</h3><div class="fl">Work email</div><div class="in focus">ada@acme.com</div><div class="fl">Team size</div><div class="row"><div class="slot" style="flex:1">1–10</div><div class="slot on" style="flex:1">11–50</div><div class="slot" style="flex:1">51+</div></div><div style="margin-top:18px" class="pill">Continue</div></div>`,
+    meeting: () => `<div class="card"><h3>Thu, Nov 12</h3><div class="slots"><div class="slot off">9:00</div><div class="slot">9:30</div><div class="slot on">10:00</div><div class="slot">10:30</div><div class="slot off">11:00</div><div class="slot">11:30</div></div><div class="pill"><i></i>Booked for Thu 10:00</div></div>`,
+    workflow: () => `<div style="width:100%"><div class="step"><span class="ic">${ICON.form}</span>Form filled<small>Now</small></div><div class="link"></div><div class="step"><span class="ic">${ICON.clock}</span>Wait 1 hour<small>Done</small></div><div class="link"></div><div class="step done"><span class="ic">${ICON.mail}</span>Follow-up sent<small>Sent</small></div></div>`,
+    integration: () => `<div><div class="pair"><div class="tile">${MARK}</div><div class="wire"><i></i></div><div class="tile">${D.logo ? `<img src="${esc(D.logo)}" alt="">` : MARK}</div></div><div class="cap">${esc(D.name ? "Claritia + " + D.name : "Connected")}</div></div>`,
+    check: () => `<svg class="check" viewBox="0 0 100 100"><path d="M24 52 L42 70 L77 32" fill="none" stroke="#0c8c5e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  };
+  document.getElementById("scene").innerHTML = (scenes[D.kind] || scenes.check)();
+  // A few visitors drifting in from outside the brackets; the ones that fit are green.
+  const stage = document.querySelector(".stage");
+  for (const [x, y, g] of [[24, 200, 0], [458, 196, 0], [20, 392, 0], [462, 262, 1], [150, 28, 0], [330, 524, 0], [206, 512, 0], [352, 30, 0], [26, 300, 1], [460, 372, 0]]) {
+    const d = document.createElement("span"); d.className = g ? "dot g" : "dot"; d.style.left = x + "px"; d.style.top = y + "px"; stage.append(d);
+  }
+  // The title shrinks until it fits its box, from 64px down to 44px.
+  const t = document.getElementById("title"), mid = document.querySelector(".mid");
+  let size = 64;
+  while (size > 44 && (t.scrollHeight > 300 || mid.scrollHeight > mid.clientHeight)) { size -= 2; t.style.fontSize = size + "px"; }
+  document.fonts.ready.then(() => { document.body.dataset.ready = "1"; });
+</script>
+</body>
+</html>

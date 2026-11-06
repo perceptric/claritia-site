@@ -36,16 +36,16 @@ CLOSE_MARK = (
 )
 
 
-def head(title: str, desc: str, path: str, extra: str = "", og: bool = True) -> str:
+def head(title: str, desc: str, path: str, extra: str = "", og: bool = True, og_image: str | None = None, og_type: str = "website") -> str:
     """Everything from <!doctype> to </head>. `extra` is more <link>, <style> or <script> lines."""
     url = f"{SITE}{path}"
     social = (
         f"""<meta property="og:site_name" content="Claritia">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{og_type}">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/assets/brand/og-image.png">
+<meta property="og:image" content="{og_image or SITE + "/assets/brand/og-image.png"}">
 <meta name="twitter:card" content="summary_large_image">
 """
         if og

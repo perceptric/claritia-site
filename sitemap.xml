@@ -84,6 +84,9 @@
   <!-- integrations:end -->
   <url><loc>https://tryclaritia.com/privacy</loc></url>
   <url><loc>https://tryclaritia.com/terms</loc></url>
+  <!-- blog:start -->
+  <url><loc>https://tryclaritia.com/blog</loc><lastmod>2026-11-06</lastmod></url>
+  <!-- blog:end -->
   <!-- templates:start -->
   <url><loc>https://tryclaritia.com/templates</loc></url>
   <url><loc>https://tryclaritia.com/templates/multi-page</loc></url>
