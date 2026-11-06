@@ -6,7 +6,7 @@ kind: form
 date: 2026-10-31
 ---
 
-A lead generation form has one job. It turns a visitor into a lead you can follow up with. The best ones keep the form short, catch where the visitor came from, and move the lead to the next step while they still care.
+A lead generation form has one job. It turns a visitor into a lead you can follow up with. The best ones keep the form short and move the lead to the next step while they still care.
 
 This post is for small teams choosing a lead generation form builder. Look past the field types. Ask what happens in the minute after someone hits submit. Does the lead land in your CRM? Can they book a call right away? Those two answers shape how many leads turn into conversations.
 
@@ -33,7 +33,7 @@ This post is for small teams choosing a lead generation form builder. Look past 
 
 ## 1. Claritia
 
-Claritia is forms, meetings and workflows for small teams. A visitor fills in your form and books a meeting in the same flow, then gets a confirmation email with a calendar invite. Workflows send reminders a day and an hour before, so the lead hears from you before the call.
+Claritia is a forms and meetings tool for small teams, with workflows that follow up. A visitor fills in your form and books a meeting in the same flow, then gets a confirmation email with a calendar invite. Workflows send reminders a day and an hour before, so the lead hears from you before the call.
 
 **Best for:** Small teams that want each good lead to book a meeting before they leave the page.
 
@@ -47,7 +47,7 @@ Claritia is forms, meetings and workflows for small teams. A visitor fills in yo
 - Claritia is a newer tool, so its app marketplace and community are smaller than the big names.
 - It is built for small teams more than large enterprises.
 
-**Pricing:** Free at $0. Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
+**Pricing:** Free is $0, Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
 
 ## 2. HubSpot forms
 
@@ -207,4 +207,4 @@ Claritia connects to HubSpot on Starter. Fillout, Jotform, Paperform and Typefor
 
 ## Get started
 
-Set up a lead form that books meetings on the free plan. [Start free](https://app.tryclaritia.com/signup), browse [form templates](/templates), or see how [Claritia meetings](/products/meetings) work with your forms.
+Set up a lead form that books meetings on the free plan. [Start free](https://app.tryclaritia.com/signup). You can also browse [form templates](/templates) or see how [Claritia meetings](/products/meetings) work with your forms.

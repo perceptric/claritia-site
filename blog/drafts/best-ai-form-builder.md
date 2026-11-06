@@ -12,7 +12,7 @@ This post is for small teams comparing AI form builders. Every tool on this list
 
 ## How we picked
 
-- **What the AI really does.** We checked each vendor's own pages for the AI features they list.
+- **What the AI really does.** The AI features each vendor lists on its own pages.
 - **Edits after the first draft.** A good AI builder lets you keep shaping the form.
 - **The form under the AI.** Logic and integrations still matter once the draft is done.
 - **AI limits by plan.** How many AI uses each plan includes.
@@ -33,7 +33,7 @@ This post is for small teams comparing AI form builders. Every tool on this list
 
 ## 1. Claritia
 
-Claritia is forms, meetings and workflows for small teams. Tia, its AI form builder, builds a form from a plain sentence. The form it builds comes with the rest of Claritia behind it, from conditional logic to meeting booking inside the form.
+Claritia is a forms and meetings tool for small teams, with workflows that follow up. Tia, its AI form builder, builds a form from a plain sentence. The form it builds comes with the rest of Claritia behind it, from conditional logic to meeting booking inside the form.
 
 **Best for:** Teams that want an AI-built form to turn into booked meetings.
 
@@ -47,7 +47,7 @@ Claritia is forms, meetings and workflows for small teams. Tia, its AI form buil
 - Claritia is a newer tool, so its app marketplace and community are smaller than the big names.
 - There is no native mobile app.
 
-**Pricing:** Free at $0. Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
+**Pricing:** Free is $0, Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
 
 ## 2. Typeform
 
@@ -207,4 +207,4 @@ Look past the first draft. Check how many AI uses your plan includes and what ha
 
 ## Get started
 
-Describe your form in one sentence and let Tia build it. [Start free](https://app.tryclaritia.com/signup), see [Claritia forms](/products/forms), or compare plans on the [pricing page](/pricing).
+Describe your form in one sentence and let Tia build it. [Start free](https://app.tryclaritia.com/signup). You can also see [Claritia forms](/products/forms) or compare plans on the [pricing page](/pricing).

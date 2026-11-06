@@ -33,7 +33,7 @@ This post is for small teams picking a form builder with conditional logic this 
 
 ## 1. Claritia
 
-Claritia is forms, meetings and workflows for small teams. Its forms come with conditional logic and step skips on the free plan, plus calculations and formulas. When the logic decides a visitor is a fit, the same form can book them into a meeting with the right person.
+Claritia is a forms and meetings tool for small teams, with workflows that follow up. Its forms come with conditional logic and step skips on the free plan, plus calculations and formulas. When the logic decides a visitor is a fit, the same form can book them into a meeting with the right person.
 
 **Best for:** Teams that want the logic to end in a booked meeting.
 
@@ -47,7 +47,7 @@ Claritia is forms, meetings and workflows for small teams. Its forms come with c
 - Claritia is a newer tool, so its app marketplace and community are smaller than the big names.
 - Zapier and Make apps are on the way and are yet to be listed.
 
-**Pricing:** Free at $0. Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
+**Pricing:** Free is $0, Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
 
 ## 2. Typeform
 
@@ -93,7 +93,7 @@ Jotform is one of the oldest form builders, and its logic shows that age in a go
 
 **What stands out:**
 - Conditional logic on the free Starter plan.
-- Plenty of rule types for fields, pages and emails.
+- Rule types for fields and whole pages.
 - An AI form generator that is free to use.
 - AI Agents on every plan, with limits by tier.
 
@@ -207,4 +207,4 @@ Yes. In Claritia, Pro plans route by any answer to a meeting and a person. A qua
 
 ## Get started
 
-Build your first branching form on the free plan in a few minutes. [Start free](https://app.tryclaritia.com/signup), see how [Claritia forms](/products/forms) handle logic, or learn how [routing](/products/routing) sends each lead to the right person.
+Build your first branching form on the free plan in a few minutes. [Start free](https://app.tryclaritia.com/signup). You can also see how [Claritia forms](/products/forms) handle logic, or learn how [routing](/products/routing) sends each lead to the right person.
