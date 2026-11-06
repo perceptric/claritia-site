@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excel Online form integration · Claritia</title>
+<meta name="description" content="Connect Claritia forms to Excel Online: each fill lands as a new row in the workbook you pick, and new questions add their own columns. On Starter, from $15/seat/month.">
+<link rel="canonical" href="https://tryclaritia.com/integrations/excel-online">
+<meta property="og:site_name" content="Claritia">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Excel Online form integration · Claritia">
+<meta property="og:description" content="Connect Claritia forms to Excel Online: each fill lands as a new row in the workbook you pick, and new questions add their own columns. On Starter, from $15/seat/month.">
+<meta property="og:url" content="https://tryclaritia.com/integrations/excel-online">
+<meta property="og:image" content="https://tryclaritia.com/assets/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/claritia-mark-small.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#fafaf5">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=11">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Bricolage+Grotesque:wght@400;600;800&amp;family=Fraunces:wght@400;600&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;600&amp;family=Nunito:wght@400;600;800&amp;family=Outfit:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Playfair+Display:wght@400;600&amp;family=Lora:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/forms.css?v=11">
+<link rel="stylesheet" href="/assets/themes.css?v=11">
+<link rel="stylesheet" href="/assets/products.css?v=2">
+<link rel="stylesheet" href="/assets/integrations.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Integrations", "item": "https://tryclaritia.com/integrations"}, {"@type": "ListItem", "position": 2, "name": "Excel Online", "item": "https://tryclaritia.com/integrations/excel-online"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which plan has the Excel Online integration?", "acceptedAnswer": {"@type": "Answer", "text": "Starter and up, from $15/seat/month. On Free, fills can go out as a CSV."}}, {"@type": "Question", "name": "What happens when I add a question?", "acceptedAnswer": {"@type": "Answer", "text": "Each fill goes in a ClaritiaFills table on its own sheet, so your other sheets stay as they are."}}, {"@type": "Question", "name": "Can I use a workbook I already have?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Pick a workbook from the list or paste its link."}}]}</script>
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#0C8C5E"/><rect x="9" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="9" y="20.5" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="20.5" width="13" height="7" rx="3.5" fill="#fff"/><rect x="9" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16" fill="none"><path d="m3.5 8.5 3 3 6-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 16 16" fill="none"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7z" fill="currentColor"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+  <symbol id="chev-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></symbol>
+  <symbol id="grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="bolt" viewBox="0 0 24 24"><path d="M13 3L5 13h6l-1 8 8-10h-6l1-8z"/></symbol>
+  <symbol id="form" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+  <symbol id="flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v3a3 3 0 0 0 3 3h6.5"/><path d="M13 12l2.5 2.5L13 17"/></symbol>
+  <symbol id="route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H14a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h5.5"/></symbol>
+  <symbol id="table" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 10h16M10 10v10"/></symbol>
+  <symbol id="sort" viewBox="0 0 24 24"><path d="M7 4v16M4 17l3 3 3-3M17 20V4M14 7l3-3 3 3"/></symbol>
+  <symbol id="filter" viewBox="0 0 24 24"><path d="M4 5h16l-6 7.5V19l-4 1v-7.5L4 5z"/></symbol>
+  <symbol id="eyeoff" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 8.5 4.5 9.5 6a16 16 0 0 1-2.6 3.2M6.6 6.6C4.5 8 3.1 10.1 2.5 12c1 1.5 4.5 6 9.5 6a9.6 9.6 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+  <symbol id="type" viewBox="0 0 24 24"><path d="M5 6V4h14v2M12 4v16M9 20h6"/></symbol>
+  <symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/><path d="M19 15.5c.2 1.6.9 2.3 2.5 2.5-1.6.2-2.3.9-2.5 2.5-.2-1.6-.9-2.3-2.5-2.5 1.6-.2 2.3-.9 2.5-2.5z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.2l2.4 2.4 4.6-5"/></symbol>
+  <symbol id="home" viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="side" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M9.5 5v14"/></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.5 3.5 5.3 3.5 8.5s-1.1 6-3.5 8.5c-2.4-2.5-3.5-5.3-3.5-8.5s1.1-6 3.5-8.5z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4 7l8 6 8-6"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="desk" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20h8M12 16.5V20"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/></symbol>
+  <symbol id="plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"/></symbol>
+  <symbol id="card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h3"/></symbol>
+  <symbol id="video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 5.8a3 3 0 0 1 0 5.4M18 14a5.5 5.5 0 0 1 2.5 5"/></symbol>
+  <symbol id="lang" viewBox="0 0 24 24"><path d="M4 6h9M8.5 4v2M6 6c.5 3 2.6 5.6 5 7M11 6c-.5 3-2.6 5.6-5 7M13 20l4-9 4 9M14.5 17h5"/></symbol>
+  <symbol id="hook" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><circle cx="12" cy="6" r="2.5"/><path d="M10.8 8.2L7.3 14.8M13.2 8.2l3.5 6.6M8.5 17h7"/></symbol>
+  <symbol id="sign" viewBox="0 0 24 24"><path d="M4 18c3-1 4.5-4 6-8 1-2.6 2.5-3.5 3.5-2.5S13 11 11 14c-1.6 2.4 0 3.5 2 2l2-1.6c1-.8 2-.4 2.2.6.2 1 1 1.5 2.8 1"/><path d="M4 21h16"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="site-header__bar">
+    <a class="logo" href="/" aria-label="Claritia home"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="nav">
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Product <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--sm">
+            <div class="menu menu--one">
+              <a class="menu__item" href="/products/forms"><span class="itile"><svg class="i" aria-hidden="true"><use href="#form"/></svg></span><span><b>Forms</b><small>Pages, logic and prices</small></span></a><a class="menu__item" href="/products/meetings"><span class="itile"><svg class="i" aria-hidden="true"><use href="#cal"/></svg></span><span><b>Meetings</b><small>Booking pages and team pools</small></span></a><a class="menu__item" href="/#workflows"><span class="itile"><svg class="i" aria-hidden="true"><use href="#flow"/></svg></span><span><b>Workflows</b><small>Reminders and follow-ups</small></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Form templates <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--wide">
+            <div class="menu-head"><b>By industry</b><a href="/templates">See all 435 templates <svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+            <div class="menu-links"><a href="/templates/any-business">Any business</a><a href="/templates/saas">SaaS and software</a><a href="/templates/agency">Agencies</a><a href="/templates/consulting">Consulting</a><a href="/templates/legal">Legal</a><a href="/templates/accounting">Accounting and tax</a><a href="/templates/finance">Financial services</a><a href="/templates/insurance">Insurance</a><a href="/templates/real-estate">Real estate</a><a href="/templates/construction">Construction and home services</a><a href="/templates/solar">Solar and energy</a><a href="/templates/healthcare">Healthcare</a><a href="/templates/wellness">Dental, wellness and therapy</a><a href="/templates/fitness">Fitness</a><a href="/templates/beauty">Beauty and salons</a><a href="/templates/education">Education and training</a><a href="/templates/ecommerce">Ecommerce and retail</a><a href="/templates/manufacturing">Manufacturing</a><a href="/templates/logistics">Logistics and transport</a><a href="/templates/automotive">Automotive</a><a href="/templates/hospitality">Hospitality and travel</a><a href="/templates/events">Events</a><a href="/templates/nonprofit">Nonprofits</a><a href="/templates/hr">HR and recruiting</a><a href="/templates/it">IT services</a><a href="/templates/food">Restaurants and food</a><a href="/templates/creative">Photography and creative</a><a href="/templates/coaching">Coaching</a><a href="/templates/pets">Veterinary and pets</a><a href="/templates/faith">Faith communities</a><a href="/templates/sports">Sports clubs</a><a href="/templates/government">Government and public</a><a href="/templates/media">Media and publishing</a><a href="/templates/retail">Retail stores</a><a href="/templates/architecture">Architecture and design</a><a href="/templates/security">Security</a><a href="/templates/agriculture">Agriculture</a><a href="/templates/personal">Personal</a></div>
+          </div>
+        </li>
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Integrations <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--tools">
+            <div class="menu menu--tools">
+              <a class="menu__item" href="/integrations/hubspot"><span class="itile"><img src="/assets/logos/hubspot.svg" alt="" width="18" height="18"></span><span><b>HubSpot</b><small>Contacts, owners and booking</small></span></a><a class="menu__item" href="/integrations/salesforce"><span class="itile"><img src="/assets/logos/salesforce.svg" alt="" width="18" height="18"></span><span><b>Salesforce</b><small>Leads, contacts and owners</small></span></a><a class="menu__item" href="/integrations/google-calendar"><span class="itile"><img src="/assets/logos/calendar.svg" alt="" width="18" height="18"></span><span><b>Google Calendar</b><small>Busy times and Meet links</small></span></a><a class="menu__item" href="/integrations/outlook"><span class="itile"><img src="/assets/logos/outlook.jpg" alt="" width="18" height="18"></span><span><b>Outlook</b><small>Busy times and Teams links</small></span></a><a class="menu__item" href="/integrations/zoom"><span class="itile"><img src="/assets/logos/zoom.svg" alt="" width="18" height="18"></span><span><b>Zoom</b><small>A link for each meeting</small></span></a><a class="menu__item" href="/integrations/slack"><span class="itile"><img src="/assets/logos/slack.svg" alt="" width="18" height="18"></span><span><b>Slack</b><small>Lead alerts and /book</small></span></a><a class="menu__item" href="/integrations/webflow"><span class="itile"><img src="/assets/logos/webflow.svg" alt="" width="18" height="18"></span><span><b>Webflow</b><small>Embeds and your own forms</small></span></a><a class="menu__item" href="/integrations/stripe"><span class="itile"><img src="/assets/logos/stripe.svg" alt="" width="18" height="18"></span><span><b>Stripe</b><small>Payments and paid meetings</small></span></a>
+            </div>
+            <div class="menu-foot"><a href="/integrations">All integrations <svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+        <li><a class="nav__link" href="/pricing">Pricing</a></li>
+        <li><a class="nav__link nav__link--wide" href="/#faq">Questions</a></li>
+      </ul>
+    </nav>
+    <div class="site-actions">
+      <a class="site-actions__signin" href="https://app.tryclaritia.com/signin">Sign in</a>
+      <a class="btn btn--primary" href="https://app.tryclaritia.com/signup">Start free <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-label="Open menu">
+        <svg class="i-open" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="i-close" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="sheet">
+  <div class="sheet__body">
+    <span class="sheet__label">Product</span>
+    <a href="/products/forms">Forms</a>
+    <a href="/products/meetings">Meetings</a>
+    <a href="/#workflows">Workflows</a>
+    <a href="/templates">Form templates</a>
+    <a href="/integrations">Integrations</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/#faq">Questions</a>
+  </div>
+  <div class="sheet__foot">
+    <a class="btn btn--ghost btn--lg" href="https://app.tryclaritia.com/signin">Sign in</a>
+    <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com/signup">Start free</a>
+  </div>
+</div>
+
+<main id="main">
+  <div class="frame">
+    <section class="pd-hero ix-hero" aria-labelledby="ix-h">
+      <div class="ix-copy">
+        <nav class="ix-crumb" aria-label="Breadcrumb"><a href="/integrations">Integrations</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><a href="/integrations#sheets">Sheets</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><span aria-current="page">Excel Online</span></nav>
+        <div class="ix-pair" aria-hidden="true"><span class="itl"><img src="/assets/brand/claritia-mark.svg" alt="" width="34" height="34"></span><span class="ix-pair__link"></span><span class="itl"><img src="/assets/logos/excel.png" alt="" width="34" height="34"></span></div>
+        <h1 id="ix-h">Excel Online form integration</h1>
+        <p class="sub">Every form fill lands as a new row in Excel Online. Add a question later and its column shows up on its own.</p>
+        <div class="pd-ctas">
+          <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com/signup">Connect Excel Online <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="/integrations">All integrations</a>
+        </div>
+        <p class="ix-plan"><span class="tag tag--green">Starter</span>On Starter and up. Free plan, no card needed.</p>
+      </div>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="pd-sec" aria-labelledby="wf-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#flow"/></svg>Workflows</span><h2 class="h2" id="wf-h">What you can do with Excel Online</h2><p class="sub">Tags show the plan a workflow starts on.</p></div>
+      <div class="ix-caps"><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#table"/></svg><h3>A row per fill</h3><span class="tag tag--green">Starter</span></div><p>Each fill adds one row to the workbook you pick.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#grid"/></svg><h3>New questions, new columns</h3><span class="tag tag--green">Starter</span></div><p>Each fill goes in a ClaritiaFills table on its own sheet, so your other sheets stay as they are.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#check"/></svg><h3>Never twice</h3><span class="tag tag--green">Starter</span></div><p>A send that runs again finds its row first, so nothing is added twice.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#clock"/></svg><h3>When and which fill</h3><span class="tag tag--green">Starter</span></div><p>Each row starts with when it was sent, the fill&#x27;s id and the form.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#refresh"/></svg><h3>Never lost</h3><span class="tag tag--green">Starter</span></div><p>Every fill is saved in Claritia first. If Excel Online is busy, the send tries again on its own.</p></div><div class="ix-cap"><div class="ix-cap__top"><svg class="i" aria-hidden="true"><use href="#cal"/></svg><h3>Bookings too</h3></div><p>Forms that end in a meeting still add the fill, with the booking after it.</p></div></div>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="pd-sec" aria-labelledby="how-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#flow"/></svg>How it works</span><h2 class="h2" id="how-h">Connect Excel Online in a few minutes</h2></div>
+      <div class="pd-how"><ol class="pd-steps"><li><b>01</b><h3>Connect Excel Online</h3><p>Go to Settings, then Integrations, and sign in with Excel Online.</p></li><li><b>02</b><h3>Pick the workbook</h3><p>Open the form&#x27;s Sync tab, add Excel Online and pick a workbook, or make a new one.</p></li><li><b>03</b><h3>Publish</h3><p>New fills land in Excel Online as they come in.</p></li></ol><div class="ix-vis" aria-hidden="true"><div class="ix-panel">
+        <div class="ix-panel__head"><img src="/assets/logos/excel.png" alt="" width="22" height="22"><b>Add to Excel Online</b><small>Event registration</small></div>
+        <div class="ix-rows"><div class="ix-row"><span>Workbook</span><span class="ix-val"><svg class="i" aria-hidden="true"><use href="#table"/></svg>Registrations</span></div><div class="ix-row"><div class="ix-map"><span>Name</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg><span>Name</span></div></div><div class="ix-row"><div class="ix-map"><span>Email</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg><span>Email</span></div></div><div class="ix-row"><div class="ix-map"><span>Session</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg><span>Session</span></div></div><div class="ix-row"><div class="ix-map"><span>Sent at</span><svg class="i" aria-hidden="true"><use href="#arrow"/></svg><span>Sent at</span></div></div></div>
+      </div></div></div>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="pd-sec" aria-labelledby="tpl-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#form"/></svg>Templates</span><h2 class="h2" id="tpl-h">Forms to start with</h2><p class="sub">Each one is a real form you can fill in now, ready to send to Excel Online.</p></div>
+      <div class="pd-shelf"><a class="pd-tpl" href="/templates/events-registration"><span class="tp fth th-bubblegum" data-layout="cover" data-input="fill" data-shadow="soft" data-pattern="dots" data-own="bubblegum" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Event registration</b><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Work email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Job title</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Ticket *</span><span class="tp__opt"><i class="tp__dot"></i>General admission</span><span class="tp__opt"><i class="tp__dot"></i>VIP</span><span class="tp__opt"><i class="tp__dot"></i>Student</span></span><span class="tp__btn">Register</span></span></span></span><b>Event registration</b><span class="pd-meta">7 questions</span></a><a class="pd-tpl" href="/templates/general-contact-us"><span class="tp fth th-coral" data-layout="cover" data-input="box" data-shadow="soft" data-pattern="none" data-own="coral" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Contact us</b><span class="tp__intro">Send us a note and the right person will reply.</span><span class="tp__f"><span class="tp__l">Name *</span><span class="tp__row"><span class="tp__box"></span><span class="tp__box"></span></span></span><span class="tp__f"><span class="tp__l">Email *</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Company</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">Phone</span><span class="tp__box"></span></span><span class="tp__f"><span class="tp__l">What&#x27;s this about? *</span><span class="tp__box tp__box--dd"></span></span><span class="tp__btn">Submit</span></span></span></span><b>Contact us</b><span class="pd-meta">6 questions</span></a><a class="pd-tpl" href="/templates/general-customer-feedback"><span class="tp fth th-tide" data-layout="cover" data-input="box" data-shadow="soft" data-pattern="none" data-own="tide" aria-hidden="true"><span class="fth__card"><span class="fart"></span><span class="tp__in"><b class="tp__title">Customer feedback</b><span class="tp__f"><span class="tp__l">How would you rate your experience? *</span><span class="tp__stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span></span><span class="tp__f"><span class="tp__l">What went well?</span><span class="tp__box tp__box--tall"></span></span><span class="tp__f"><span class="tp__l">What could we do better?</span><span class="tp__box tp__box--tall"></span></span><span class="tp__f"><span class="tp__l">May we follow up with you?</span><span class="tp__row"><span class="tp__opt"><i class="tp__dot"></i>Yes</span><span class="tp__opt"><i class="tp__dot"></i>No</span></span></span><span class="tp__f"><span class="tp__l">Email</span><span class="tp__box"></span></span><span class="tp__btn">Submit</span></span></span></span><b>Customer feedback</b><span class="pd-meta">5 questions</span></a></div>
+      <div class="pd-more"><a class="btn btn--ghost btn--lg" href="/templates">See all 435 templates <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="pd-sec" aria-labelledby="more-h">
+      <div class="pd-head"><span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#plug"/></svg>Integrations</span><h2 class="h2" id="more-h">Works with the rest of your tools</h2><p class="sub">Every lead goes to Claritia first, then to each tool you connect.</p></div>
+      <div class="ix-tools"><a class="ix-tool" href="/integrations/google-sheets"><span class="ix-logo"><img src="/assets/logos/googlesheets.svg" alt="" width="22" height="22" loading="lazy"></span><b>Google Sheets</b><span>A row per fill</span></a><a class="ix-tool" href="/integrations/airtable"><span class="ix-logo"><img src="/assets/logos/airtable.svg" alt="" width="22" height="22" loading="lazy"></span><b>Airtable</b><span>A record per fill</span></a><a class="ix-tool" href="/integrations/notion"><span class="ix-logo"><img src="/assets/logos/notion.svg" alt="" width="22" height="22" loading="lazy"></span><b>Notion</b><span>A database entry per fill</span></a><a class="ix-tool" href="/integrations/postgresql"><span class="ix-logo"><img src="/assets/logos/postgresql.svg" alt="" width="22" height="22" loading="lazy"></span><b>PostgreSQL</b><span>A row per fill</span></a><a class="ix-tool" href="/integrations/mysql"><span class="ix-logo"><img src="/assets/logos/mysql.svg" alt="" width="22" height="22" loading="lazy"></span><b>MySQL</b><span>A row per fill</span></a><a class="ix-tool" href="/integrations/hubspot"><span class="ix-logo"><img src="/assets/logos/hubspot.svg" alt="" width="22" height="22" loading="lazy"></span><b>HubSpot</b><span>Contacts, owners and booking</span></a><a class="ix-tool" href="/integrations/salesforce"><span class="ix-logo"><img src="/assets/logos/salesforce.svg" alt="" width="22" height="22" loading="lazy"></span><b>Salesforce</b><span>Leads, contacts and owners</span></a><a class="ix-tool" href="/integrations/google-calendar"><span class="ix-logo"><img src="/assets/logos/calendar.svg" alt="" width="22" height="22" loading="lazy"></span><b>Google Calendar</b><span>Busy times and Meet links</span></a><a class="ix-tool" href="/integrations/outlook"><span class="ix-logo"><img src="/assets/logos/outlook.jpg" alt="" width="22" height="22" loading="lazy"></span><b>Outlook</b><span>Busy times and Teams links</span></a><a class="ix-tool" href="/integrations/zoom"><span class="ix-logo"><img src="/assets/logos/zoom.svg" alt="" width="22" height="22" loading="lazy"></span><b>Zoom</b><span>A link for each meeting</span></a><a class="ix-tool" href="/integrations/slack"><span class="ix-logo"><img src="/assets/logos/slack.svg" alt="" width="22" height="22" loading="lazy"></span><b>Slack</b><span>Lead alerts and /book</span></a><a class="ix-tool" href="/integrations/webflow"><span class="ix-logo"><img src="/assets/logos/webflow.svg" alt="" width="22" height="22" loading="lazy"></span><b>Webflow</b><span>Embeds and your own forms</span></a></div>
+    </section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame ix-faq">
+    <section class="pd-sec" aria-labelledby="faq-h">
+      <div class="faq">
+        <div class="faq__head">
+          <h2 class="h2" id="faq-h">Questions</h2>
+          <p class="lead">Something else? <a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></p>
+        </div>
+        <div class="qa"><details><summary>Which plan has the Excel Online integration? <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Starter and up, from $15/seat/month. On Free, fills can go out as a CSV.</p></details><details><summary>What happens when I add a question? <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Each fill goes in a ClaritiaFills table on its own sheet, so your other sheets stay as they are.</p></details><details><summary>Can I use a workbook I already have? <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Yes. Pick a workbook from the list or paste its link.</p></details></div>
+      </div>
+    </section>
+  </div>
+<!-- The last prompt, on dark -->
+  <div class="dark">
+    <div class="band"><div class="frame"></div></div>
+    <div class="frame">
+      <section class="cta" aria-labelledby="cta-h">
+        <div class="ghostapp" aria-hidden="true"><div class="gbar"><span class="sq"><svg class="i s14"><use href="#home"/></svg></span>Lead intake<div class="end"><span>Share</span><span>Publish</span></div></div></div>
+        <h2 id="cta-h">What form do you need?</h2>
+        <form class="dprompt" action="https://app.tryclaritia.com/forms/new" method="get"><div class="in">
+          <label class="sr-only" for="ask2">Describe the form you need</label>
+          <textarea id="ask2" name="ask" maxlength="300" placeholder="Build a catering quote with a price calculator and a deposit"></textarea>
+          <div class="pbar">
+            <span class="logos"><img src="/assets/logos/calendar.svg" alt="" width="22" height="22"><img src="/assets/logos/outlook.jpg" alt="" width="22" height="22"><img src="/assets/logos/hubspot.svg" alt="" width="22" height="22"></span>
+            <span class="small">Free plan. No card needed.</span>
+            <span class="grow"></span>
+            <button class="btn btn--green" type="submit">Get started <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></button>
+          </div>
+        </div></form>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__frame">
+    <div class="site-footer__in">
+      <div class="site-footer__brand">
+        <a class="logo" href="/" aria-label="Claritia home"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</a>
+        <p>Forms that book the meeting</p>
+      </div>
+      <div class="site-footer__col"><h2>Product</h2><ul><li><a href="/products/forms">Forms</a></li><li><a href="/products/meetings">Meetings</a></li><li><a href="/products/routing">Routing</a></li><li><a href="/#workflows">Workflows</a></li><li><a href="/integrations">Integrations</a></li></ul></div>
+      <div class="site-footer__col"><h2>Form templates</h2><ul><li><a href="/templates">All form templates</a></li><li><a href="/templates/group/leads">Leads and sales</a></li><li><a href="/templates/group/booking">Booking</a></li><li><a href="/templates/group/money">Orders and payments</a></li><li><a href="/templates/group/events">Events</a></li></ul></div>
+      <div class="site-footer__col"><h2>Company</h2><ul><li><a href="/pricing">Pricing</a></li><li><a href="/#faq">Questions</a></li><li><a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a></li><li><a href="mailto:hello@tryclaritia.com">Contact</a></li></ul></div>
+      <div class="site-footer__col"><h2>Resources</h2><ul><li><a href="https://app.tryclaritia.com/signin">Sign in</a></li><li><a href="/llms.txt">llms.txt</a></li><li><a href="/pricing.md">Pricing.md</a></li></ul></div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Perceptric. Claritia is a Perceptric product.</span>
+      <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js?v=8" defer></script>
+</body>
+</html>

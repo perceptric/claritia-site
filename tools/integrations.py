@@ -340,15 +340,26 @@ TOOLS = {
         "tpls": ["food-catering-calculator", "general-invoice-payment", "fitness-private-session"],
     },
 }
-ORDER = ["hubspot", "salesforce", "google-calendar", "outlook", "zoom", "slack", "webflow", "stripe"]
-GROUPS = ["CRM", "Calendars", "Video", "Chat", "Payments", "Website"]
+FIRST = ["hubspot", "salesforce", "google-calendar", "outlook", "zoom", "slack", "webflow", "stripe"]
+import integrations_more as more  # noqa: E402
+GROUPS = ["CRM", "Calendars", "Video", "Chat", "Email", "Sheets", "Work tools", "Documents", "Files", "Payments", "Texts", "Analytics", "Ads", "Forms and booking", "Website", "Developers"]
 GROUP_LINE = {
     "CRM": "Every fill becomes a contact, and each lead books with its owner.",
     "Calendars": "Busy times stay fresh, and every booking lands on the calendar.",
     "Video": "A meeting link made for each booking.",
     "Chat": "New leads where your team already talks.",
+    "Email": "New leads join your lists, and emails go from your own inbox.",
+    "Sheets": "A row for each fill, in the sheet or database you pick.",
+    "Work tools": "Each fill becomes a ticket, task or card for your team.",
+    "Documents": "Each fill makes a document from your template, or sends it to sign.",
+    "Files": "Uploads copied into a folder for each fill.",
     "Payments": "Payments and deposits, paid to your own account.",
+    "Texts": "Text and WhatsApp reminders, only to people who said yes.",
+    "Analytics": "Every fill as an event, tied to the person.",
+    "Ads": "Fills and bookings counted in your ad and analytics tools.",
+    "Forms and booking": "Keep the tools you have; their answers and bookings come in.",
     "Website": "Forms on your site with one line, or keep the ones you have.",
+    "Developers": "A signed webhook for anything else.",
 }
 SHORT = {
     "hubspot": "Contacts, owners and booking",
@@ -360,13 +371,13 @@ SHORT = {
     "webflow": "Embeds and your own forms",
     "stripe": "Payments and paid meetings",
 }
-# Built and on the pricing page, without their own page yet (Tier 2 and 3 in the keyword plan).
-ALSO = [
-    ("Omniscient", "omniscient.svg"), ("Google Sheets", None), ("Airtable", None), ("Notion", None), ("Mailchimp", None),
-    ("Klaviyo", None), ("ActiveCampaign", None), ("Brevo", None), ("Kit", None), ("MailerLite", None),
-    ("Google Meet", "meet.svg"), ("Microsoft Teams", "teams.png"), ("Typeform", "typeform.svg"), ("Tally", None),
-    ("Calendly", "calendly.svg"), ("Cal.com", None), ("Webhooks", None),
-]
+# The rest of the tools, from tools/integrations_more.py: every page in one list, the first eight first.
+TOOLS.update(more.build({"panel": panel, "row": row, "seg": seg, "tog": tog, "val": val, "maps": maps, "SCRIPT_TAG": SCRIPT_TAG, "EMBED": EMBED}))
+for k, t in TOOLS.items():
+    if "short" in t:
+        SHORT[k] = t["short"]
+ORDER = FIRST + [k for k in TOOLS if k not in FIRST]
+# Zapier and Make get pages once their app listings are public.
 
 
 def tool_link(k):
@@ -422,7 +433,8 @@ def tool_page(k):
     steps = "".join(f"<li><b>{esc(a)}</b><span>{esc(b)}</span></li>" for a, b in t["steps"])
     connect = px.how(f"Connect {esc(t['name'])} in a few minutes", t["steps"], f'<div class="ix-vis" aria-hidden="true">{t["vis"]()}</div>')
     tpls = px.shelf("Forms to start with", f"Each one is a real form you can fill in now, ready to send to {t['name']}." if kind == "form" else "Each one is a real form you can fill in now, with booking at the end.", t["tpls"], f"See all {len(tpl.T)} templates", "/templates")
-    others = "".join(tool_link(o) for o in ORDER if o != k)
+    near = [o for o in ORDER if o != k and TOOLS[o]["group"] == t["group"]] + [o for o in FIRST if o != k and TOOLS[o]["group"] != t["group"]]
+    others = "".join(tool_link(o) for o in near[:12])
     more = f"""    <section class="pd-sec" aria-labelledby="more-h">
       {head_block("Integrations", "plug", "Works with the rest of your tools", "Every lead goes to Claritia first, then to each tool you connect.", "more-h")}
       <div class="ix-tools">{others}</div>
@@ -438,10 +450,6 @@ def hub_page():
     for g in GROUPS:
         keys = [k for k in ORDER if TOOLS[k]["group"] == g]
         groups.append(f"""<div class="ix-group" id="{g.lower()}"><h2>{esc(g)}</h2><p class="sub" style="margin:-8px 0 18px">{esc(GROUP_LINE[g])}</p><div class="ix-tools">{"".join(tool_link(k) for k in keys)}</div></div>""")
-    def chip(n, logo):
-        pic = f'<img src="/assets/logos/{logo}" alt="" width="18" height="18" loading="lazy">' if logo else I("plug")
-        return f"<li>{pic}{esc(n)}</li>"
-    also = "".join(chip(n, logo) for n, logo in ALSO)
     main = frame(f"""    <section class="pd-hero ix-hero" aria-labelledby="ix-h">
       <div class="ix-copy">
         <span class="eyebrow">{I("plug", "i s12")}Integrations</span>
@@ -455,11 +463,8 @@ def hub_page():
       </div>
     </section>""") + frame(f"""    <section class="pd-sec" style="padding-top:72px" aria-label="Integrations by kind">
       <div class="ix-groups">{"".join(groups)}</div>
-    </section>""") + frame(f"""    <section class="pd-sec" aria-labelledby="also-h">
-      {head_block("More", "plug", "Also works with", "Sheets, email lists, form and booking tools, and webhooks for anything else.", "also-h")}
-      <ul class="ix-also" style="margin-top:40px">{also}</ul>
     </section>""") + px.cta()
-    desc = "Claritia integrations: HubSpot, Salesforce, Google Calendar, Outlook, Zoom, Slack, Webflow and Stripe, plus Google Sheets, Airtable, Notion, email lists and webhooks."
+    desc = f"Claritia integrations: {len(ORDER)} tools, from HubSpot, Salesforce, Google Calendar, Outlook, Zoom and Slack to Google Sheets, Mailchimp, Teams, Twilio and webhooks."
     lds = ld(crumbs_ld([("Integrations", "/integrations")]))
     return page("/integrations", "Integrations · Claritia", desc, main, lds)
 

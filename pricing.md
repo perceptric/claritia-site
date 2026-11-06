@@ -89,11 +89,23 @@ Each plan is priced per seat. A seat is a teammate people can book a meeting wit
 | **Integrations** | | | | |
 | Webhooks | Yes | Yes | Yes | Yes |
 | CSV export | Yes | Yes | Yes | Yes |
+| Embeds on WordPress, Webflow, Framer, Shopify and Squarespace | Yes | Yes | Yes | Yes |
+| Google Analytics, Google Tag Manager, Meta Pixel and Google Ads tags | Yes | Yes | Yes | Yes |
+| Google Forms import | Yes | Yes | Yes | Yes |
 | HubSpot | – | Yes | Yes | Yes |
 | Omniscient | – | Yes | Yes | Yes |
-| Slack | – | Yes | Yes | Yes |
-| Google Sheets, Airtable and Notion | – | Yes | Yes | Yes |
+| Pipedrive, Attio, Close, Zoho CRM, Dynamics 365, GoHighLevel, Freshsales, Copper, Keap and monday CRM | – | Yes | Yes | Yes |
+| Slack, Microsoft Teams and Discord | – | Yes | Yes | Yes |
+| Google Sheets, Airtable, Notion, Excel Online, PostgreSQL and MySQL | – | Yes | Yes | Yes |
 | Mailchimp, Klaviyo, ActiveCampaign, Brevo, Kit and MailerLite | – | Yes | Yes | Yes |
+| Emails from your own Gmail or Outlook | – | Yes | Yes | Yes |
+| Linear, Trello, ClickUp, monday.com, SmartSuite, Zendesk, Freshdesk and Intercom | – | Yes | Yes | Yes |
+| Google Docs, DocuSign and PandaDoc | – | Yes | Yes | Yes |
+| Files to Google Drive, OneDrive, Dropbox, Box and Amazon S3 | – | Yes | Yes | Yes |
+| Segment, PostHog, Mixpanel and Amplitude | – | Yes | Yes | Yes |
+| Meta Conversions API and Google Ads offline conversions | – | Yes | Yes | Yes |
+| Text and WhatsApp messages on your own Twilio | – | Yes | Yes | Yes |
+| Webex and Whereby links, PayPal and Square payments | – | Yes | Yes | Yes |
 | Answers and bookings from Typeform, Tally, Webflow, Calendly and Cal.com | – | Yes | Yes | Yes |
 | Salesforce | – | – | – | Yes |
 | **Security & Compliance** | | | | |
