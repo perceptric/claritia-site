@@ -6,7 +6,7 @@ A post is a Markdown file in blog/posts/<slug>.md that starts with a few lines b
     title: How to route demo requests to the right rep
     description: One or two sentences for search results and link previews.
     category: Routing
-    kind: meeting            # the cover's scene: form, meeting, workflow, integration or check
+    kind: meeting            # the cover's scene: form, meeting, workflow, integration or responses
     date: 2026-11-06
     author: Vincent Nguyen
     logo: /assets/logos/hubspot.svg   # integration covers only
@@ -100,7 +100,7 @@ def read(path: pathlib.Path) -> dict:
     body, heads = md(m.group(2))
     words = len(re.sub(r"<[^>]+>", " ", body).split())
     return {**meta, "slug": path.stem, "body": body, "heads": heads, "minutes": max(1, round(words / 230)),
-            "category": meta.get("category", "Guides"), "kind": meta.get("kind", "check"),
+            "category": meta.get("category", "Guides"), "kind": meta.get("kind", "responses"),
             "day": datetime.date.fromisoformat(meta["date"])}
 
 
