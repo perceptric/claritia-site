@@ -5,7 +5,7 @@ import html, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://tryclaritia.com"
-SITE_CSS_V = 13
+SITE_CSS_V = 14
 SITE_JS_V = 8
 FONT_CSS = "https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap"
 

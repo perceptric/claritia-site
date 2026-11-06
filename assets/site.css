@@ -740,3 +740,11 @@ button.tabb { cursor: pointer; }
 .mlinks2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 4px; }
 .mlinks2 a { padding: 7px 8px; border-radius: var(--r-sm); font-size: 14px; line-height: 20px; color: var(--text); transition: background-color var(--fast) var(--ease); }
 .mlinks2 a:hover { background: var(--surface-3); color: var(--ink); }
+
+/* Wider than a phone menu: the menu links sit in the middle of the bar, and every menu opens centered under it. */
+@media (min-width: 901px) {
+  .site-nav { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; margin: 0; }
+  .nav__trigger, .nav__link { white-space: nowrap; }
+  .site-actions { margin-left: auto; }
+  .nav__group { position: static; }
+}
