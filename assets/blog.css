@@ -65,3 +65,8 @@
 }
 @media (max-width: 560px) { .bl-grid { grid-template-columns: minmax(0, 1fr); } .bl-body { font-size: 17px; } }
 @media (prefers-reduced-motion: reduce) { .bl-card__img img { transition: none; } .bl-card:hover .bl-card__img img { transform: none; } }
+.bl-table { overflow-x: auto; border-radius: var(--r-lg); box-shadow: var(--sh-rest); background: var(--surface); }
+.bl-table table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.45; }
+.bl-table th { padding: 12px 14px; text-align: left; font-weight: 500; color: var(--ink); background: var(--surface-3); border-bottom: 1px solid var(--line); white-space: nowrap; }
+.bl-table td { padding: 12px 14px; vertical-align: top; border-top: 1px solid var(--line); color: var(--text); }
+.bl-table tr:first-child td { border-top: 0; }

@@ -24,7 +24,7 @@ import products as px  # noqa: E402
 
 esc, I, frame = px.esc, px.I, px.frame
 SITE = shell.SITE
-BLOG_V = 1
+BLOG_V = 2
 POSTS = ROOT / "blog" / "posts"
 
 
@@ -54,10 +54,25 @@ def md(text: str):
             out.append(f"<{tag}>" + "".join(f"<li>{inline(i)}</li>" for i in items) + f"</{tag}>")
             lst = None
 
-    for raw in text.splitlines():
-        line = raw.rstrip()
+    lines = text.splitlines()
+    k = 0
+    while k < len(lines):
+        line = lines[k].rstrip()
+        k += 1
         if not line.strip():
             flush(); continue
+        # A table: a | row, a |---| row, then more | rows.
+        if line.lstrip().startswith("|") and k < len(lines) and re.match(r"^\s*\|?\s*:?-{2,}", lines[k]):
+            flush()
+            cells = lambda l: [c.strip() for c in l.strip().strip("|").split("|")]
+            head = cells(line)
+            k += 1
+            body = []
+            while k < len(lines) and lines[k].lstrip().startswith("|"):
+                body.append(cells(lines[k])); k += 1
+            out.append('<div class="bl-table"><table><thead><tr>' + "".join(f"<th>{inline(c)}</th>" for c in head) + "</tr></thead><tbody>"
+                       + "".join("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>" for r in body) + "</tbody></table></div>")
+            continue
         m = re.match(r"^(#{2,4})\s+(.*)$", line)
         if m:
             flush()
@@ -196,6 +211,19 @@ def sitemap(posts: list):
 if __name__ == "__main__":
     POSTS.mkdir(parents=True, exist_ok=True)
     posts = sorted((read(f) for f in POSTS.glob("*.md")), key=lambda p: p["day"], reverse=True)
+    if "--drafts" in sys.argv:
+        # Preview drafts locally: blog/drafts/<slug>.md to blog/preview/<slug>/ (not published; preview/ is ignored).
+        DRAFTS = ROOT / "blog" / "drafts"
+        drafts = sorted((read(f) for f in DRAFTS.glob("*.md")), key=lambda p: p["day"], reverse=True)
+        for p in drafts:
+            p["cover"] = cover(p)
+        for p in drafts:
+            out = ROOT / "blog" / "preview" / p["slug"]
+            out.mkdir(parents=True, exist_ok=True)
+            (out / "index.html").write_text(post_page(p, [o for o in drafts if o is not p]))
+        (ROOT / "blog" / "preview" / "index.html").write_text(index(drafts))
+        print(f"previewed {len(drafts)} drafts in blog/preview/")
+        sys.exit(0)
     for p in posts:
         p["cover"] = cover(p)
     (ROOT / "blog" / "index.html").write_text(index(posts))
