@@ -722,3 +722,21 @@ button.tabb { cursor: pointer; }
   .js .reveal { opacity: 1; filter: none; transform: none; }
   .js .close__mark .b, .js .close__mark .c { stroke-dashoffset: 0; }
 }
+
+/* Mega menus: Form templates and Integrations, in columns */
+.nav__panel--prod { width: 560px; }
+.nav__panel--prod .menu { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.nav__panel--mega { width: min(720px, calc(100vw - 48px)); padding: 14px 14px 10px; }
+.mcols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px 12px; }
+.mcols--ix { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+.mcol { display: flex; flex-direction: column; min-width: 0; }
+.mcol__h { padding: 4px 8px 6px; font-size: 12px; font-weight: 500; color: var(--meta); }
+.mcol > a { padding: 6px 8px; border-radius: var(--r-sm); font-size: 14px; line-height: 20px; color: var(--text); transition: background-color var(--fast) var(--ease); }
+.mcol > a:hover, .mtool:hover { background: var(--surface-3); color: var(--ink); }
+.mtools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 8px; }
+.mtool { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 7px 8px; border-radius: var(--r-sm); font-size: 14px; line-height: 20px; color: var(--text); transition: background-color var(--fast) var(--ease); }
+.mtool img { flex: none; width: 18px; height: 18px; object-fit: contain; }
+.mcols--ix { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.mlinks2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 4px; }
+.mlinks2 a { padding: 7px 8px; border-radius: var(--r-sm); font-size: 14px; line-height: 20px; color: var(--text); transition: background-color var(--fast) var(--ease); }
+.mlinks2 a:hover { background: var(--surface-3); color: var(--ink); }

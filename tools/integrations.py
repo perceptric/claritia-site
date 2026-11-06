@@ -12,7 +12,7 @@ import shell  # noqa: E402
 import templates as tpl  # noqa: E402
 import products as px  # noqa: E402
 
-IX_V = 2
+IX_V = 3
 LASTMOD = "2026-11-03"
 esc, I, APP, frame = px.esc, px.I, px.APP, px.frame
 
@@ -380,6 +380,10 @@ ORDER = FIRST + [k for k in TOOLS if k not in FIRST]
 # Zapier and Make get pages once their app listings are public.
 
 
+def gid(g):
+    return g.lower().replace(" ", "-")
+
+
 def tool_link(k):
     t = TOOLS[k]
     return (f'<a class="ix-tool" href="/integrations/{k}"><span class="ix-logo"><img src="/assets/logos/{t["logo"]}" alt="" width="22" height="22" loading="lazy"></span>'
@@ -412,7 +416,7 @@ def tool_page(k):
     kind = t.get("kind", "form")
     plan = t["plan"]
     plan_line = "On every plan, Free included" if plan == "Free" else f"On {plan} and up"
-    crumb = f"""<nav class="ix-crumb" aria-label="Breadcrumb"><a href="/integrations">Integrations</a>{CHEV}<a href="/integrations#{t["group"].lower()}">{esc(t["group"])}</a>{CHEV}<span aria-current="page">{esc(t["name"])}</span></nav>"""
+    crumb = f"""<nav class="ix-crumb" aria-label="Breadcrumb"><a href="/integrations">Integrations</a>{CHEV}<a href="/integrations#{gid(t["group"])}">{esc(t["group"])}</a>{CHEV}<span aria-current="page">{esc(t["name"])}</span></nav>"""
     hero = f"""    <section class="pd-hero ix-hero" aria-labelledby="ix-h">
       <div class="ix-copy">
         {crumb}
@@ -445,25 +449,40 @@ def tool_page(k):
     return page(f"/integrations/{k}", title, t["desc"], main, lds)
 
 
+POPULAR = ["hubspot", "salesforce", "google-calendar", "outlook", "zoom", "slack", "google-sheets", "stripe"]
+
+
 def hub_page():
-    groups = []
-    for g in GROUPS:
-        keys = [k for k in ORDER if TOOLS[k]["group"] == g]
-        groups.append(f"""<div class="ix-group" id="{g.lower()}"><h2>{esc(g)}</h2><p class="sub" style="margin:-8px 0 18px">{esc(GROUP_LINE[g])}</p><div class="ix-tools">{"".join(tool_link(k) for k in keys)}</div></div>""")
-    main = frame(f"""    <section class="pd-hero ix-hero" aria-labelledby="ix-h">
+    """The hub: search and kinds on the left; popular tools, then each kind as an even grid of cards."""
+    side = "".join(f'<a href="#{gid(g)}" data-ix-kind="{gid(g)}">{esc(g)}<span>{sum(1 for k in ORDER if TOOLS[k]["group"] == g)}</span></a>' for g in GROUPS)
+    def card(k):
+        t = TOOLS[k]
+        return (f'<a class="ix-card" href="/integrations/{k}" data-ix-name="{esc(t["name"].lower())} {esc(t["group"].lower())}">'
+                f'<span class="ix-logo"><img src="/assets/logos/{t["logo"]}" alt="" width="24" height="24" loading="lazy"></span>'
+                f'<span class="ix-card__t"><b>{esc(t["name"])}</b><span>{esc(SHORT[k])}</span></span></a>')
+    popular = f'<section class="ix-kind" id="popular" aria-labelledby="pop-h"><h2 id="pop-h">Popular</h2><div class="ix-grid">{"".join(card(k) for k in POPULAR)}</div></section>'
+    kinds = "".join(
+        f'<section class="ix-kind" id="{gid(g)}" aria-labelledby="k-{gid(g)}"><h2 id="k-{gid(g)}">{esc(g)}</h2><p>{esc(GROUP_LINE[g])}</p>'
+        f'<div class="ix-grid">{"".join(card(k) for k in ORDER if TOOLS[k]["group"] == g)}</div></section>' for g in GROUPS)
+    search = (f'<label class="ix-search">{I("search", "i s14")}<input type="search" placeholder="Search {len(ORDER)} integrations" aria-label="Search integrations" data-ix-q></label>')
+    script = """<script>(function(){var q=document.querySelector('[data-ix-q]');if(!q)return;var pop=document.getElementById('popular');var none=document.querySelector('[data-ix-none]');
+q.addEventListener('input',function(){var v=q.value.trim().toLowerCase(),any=false;pop.hidden=!!v;
+document.querySelectorAll('.ix-kind:not(#popular)').forEach(function(sec){var n=0;sec.querySelectorAll('.ix-card').forEach(function(c){var ok=!v||c.getAttribute('data-ix-name').indexOf(v)>-1;c.hidden=!ok;if(ok)n++;});sec.hidden=!n;if(n)any=true;
+var l=document.querySelector('[data-ix-kind="'+sec.id+'"]');if(l)l.hidden=!n;});none.hidden=any;});})();</script>"""
+    main = frame(f"""    <section class="pd-hero ix-hero ix-hero--hub" aria-labelledby="ix-h">
       <div class="ix-copy">
         <span class="eyebrow">{I("plug", "i s12")}Integrations</span>
         <h1 id="ix-h">Connect Claritia to the tools you use</h1>
-        <p class="sub">Send each lead to your CRM, book it on your calendar and tell your team in Slack. Every connection is one click.</p>
+        <p class="sub">Send each lead to your CRM, book it on your calendar and tell your team where they already work. {len(ORDER)} tools, most of them one click.</p>
         <div class="pd-ctas">
           <a class="btn btn--primary btn--lg" href="{APP}/signup">Start free {I("arrow", "i s14 arr")}</a>
           <a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a>
         </div>
-        <p class="pd-note">Free plan. No card needed.</p>
       </div>
-    </section>""") + frame(f"""    <section class="pd-sec" style="padding-top:72px" aria-label="Integrations by kind">
-      <div class="ix-groups">{"".join(groups)}</div>
-    </section>""") + px.cta()
+    </section>""") + frame(f"""    <div class="ix-dir">
+      <aside class="ix-side" aria-label="Kinds of integrations">{search}<nav class="ix-kinds">{side}</nav></aside>
+      <div class="ix-main">{popular}{kinds}<p class="ix-none" data-ix-none hidden>No integration by that name. <a href="mailto:hello@tryclaritia.com">Tell us what you use</a>.</p></div>
+    </div>""") + px.cta() + script
     desc = f"Claritia integrations: {len(ORDER)} tools, from HubSpot, Salesforce, Google Calendar, Outlook, Zoom and Slack to Google Sheets, Mailchimp, Teams, Twilio and webhooks."
     lds = ld(crumbs_ld([("Integrations", "/integrations")]))
     return page("/integrations", "Integrations · Claritia", desc, main, lds)
