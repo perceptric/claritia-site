@@ -1,0 +1,1782 @@
+{
+ "general-contact-us-welcome": {
+  "from": "burst",
+  "id": "woman-works-at-desk",
+  "page": "https://burst.shopify.com/photos/woman-works-at-desk",
+  "photographer": "",
+  "photographer_url": "",
+  "alt": "A person working at a laptop on a bright desk",
+  "template": "general.contact-us",
+  "slot": "general.contact-us:cover"
+ },
+ "general-newsletter-welcome": {
+  "from": "burst",
+  "id": "person-in-a-floral-dress-holds-a-large-book-open",
+  "page": "https://burst.shopify.com/photos/person-in-a-floral-dress-holds-a-large-book-open",
+  "photographer": "",
+  "photographer_url": "",
+  "alt": "A person reading an open book",
+  "template": "general.newsletter",
+  "slot": "general.newsletter:cover"
+ },
+ "general-book-a-call-welcome": {
+  "from": "stocksnap",
+  "id": "a855e250-3e03-4e2e-8bb0-a8f7ce1dc630",
+  "page": "https://stocksnap.io/photo/browsing-smartphone-IQOOYW0MYZ",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "A woman at her desk with her phone",
+  "template": "general.book-a-call",
+  "slot": "general.book-a-call:cover"
+ },
+ "general-waitlist-welcome": {
+  "from": "stocksnap",
+  "id": "d784fb4f-1269-4b74-8b06-9c641a10219a",
+  "page": "https://stocksnap.io/photo/girl-people-CGGPSBLSA2",
+  "photographer": "Carlos R",
+  "photographer_url": "https://stocksnap.io/author/34790",
+  "alt": "A person checking their phone by a sunny window",
+  "template": "general.waitlist",
+  "slot": "general.waitlist:cover"
+ },
+ "general-referral-welcome": {
+  "from": "stocksnap",
+  "id": "bc629205-a072-4efb-a6a7-e87878cc61e0",
+  "page": "https://stocksnap.io/photo/friends-fun-TK55STNQN8",
+  "photographer": "Matt Moloney",
+  "photographer_url": "https://mjmolo.com",
+  "alt": "Two friends smiling together outdoors",
+  "template": "general.referral",
+  "slot": "general.referral:cover"
+ },
+ "general-partner-application-welcome": {
+  "from": "stocksnap",
+  "id": "258657f8-c9f4-4ea8-947b-fa9dad20ad52",
+  "page": "https://stocksnap.io/photo/work-business-J5LXKNDREC",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "Two people shaking hands over a desk",
+  "template": "general.partner-application",
+  "slot": "general.partner-application:cover"
+ },
+ "general-quote-request-welcome": {
+  "from": "stocksnap",
+  "id": "2cd0354a-9be1-44cd-b018-dd6fce39b30b",
+  "page": "https://stocksnap.io/photo/floorplan-workshop-N3BPNPN0FY",
+  "photographer": "JESHOOTS.com",
+  "photographer_url": "https://jeshoots.com",
+  "alt": "Building plans and tools on a table",
+  "template": "general.quote-request",
+  "slot": "general.quote-request:cover"
+ },
+ "general-callback-request-welcome": {
+  "from": "stocksnap",
+  "id": "40b50ec1-240b-4710-b9d9-3b080eb42617",
+  "page": "https://stocksnap.io/photo/headphones-headset-7GXEM17E34",
+  "photographer": "Michael Mroczek",
+  "photographer_url": "https://stocksnap.io/author/40340",
+  "alt": "A hand holding a pair of headphones",
+  "template": "general.callback-request",
+  "slot": "general.callback-request:cover"
+ },
+ "general-email-preferences-welcome": {
+  "from": "stocksnap",
+  "id": "6719ca0a-0c23-4fde-a74f-769f514516b5",
+  "page": "https://stocksnap.io/photo/woman-laptop-C7ARZC9TPU",
+  "photographer": "Burst",
+  "photographer_url": "https://burst.shopify.com",
+  "alt": "A woman with a laptop and a cup of coffee",
+  "template": "general.email-preferences",
+  "slot": "general.email-preferences:cover"
+ },
+ "general-content-download-welcome": {
+  "from": "stocksnap",
+  "id": "9733e196-1433-473e-8f0c-4a7b2243a4bd",
+  "page": "https://stocksnap.io/photo/business-man-6NYVPE6NEB",
+  "photographer": "Direct Media",
+  "photographer_url": "https://stocksnap.io/author/145556",
+  "alt": "A man reading on a tablet in an office",
+  "template": "general.content-download",
+  "slot": "general.content-download:cover"
+ },
+ "saas-demo-request-welcome": {
+  "from": "stocksnap",
+  "id": "95bf2589-66c6-444f-b1df-acc5461f00c6",
+  "page": "https://stocksnap.io/photo/macbook-laptop-LEJ7HJ5BEA",
+  "photographer": "Startup Stock Photos",
+  "photographer_url": "https://startupstockphotos.com",
+  "alt": "People working on laptops at a shared table",
+  "template": "saas.demo-request",
+  "slot": "saas.demo-request:cover"
+ },
+ "saas-contact-sales-welcome": {
+  "from": "stocksnap",
+  "id": "7e9853cb-93fb-4acc-82a2-c22d853e011d",
+  "page": "https://stocksnap.io/photo/conferenceroom-meeting-GVUWVKUHZE",
+  "photographer": "Christina Morillo",
+  "photographer_url": "https://www.christinamorillo.com",
+  "alt": "A team meeting around a table with laptops",
+  "template": "saas.contact-sales",
+  "slot": "saas.contact-sales:cover"
+ },
+ "saas-pricing-lead-welcome": {
+  "from": "stocksnap",
+  "id": "47a7eabb-60b1-41ed-ae63-43211b4e07f8",
+  "page": "https://stocksnap.io/photo/team-meeting-84GOP2OAKR",
+  "photographer": "Startup Stock Photos",
+  "photographer_url": "https://startupstockphotos.com",
+  "alt": "A team planning with notes on a table",
+  "template": "saas.pricing-lead",
+  "slot": "saas.pricing-lead:cover"
+ },
+ "agency-project-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "4235df1f-8a2e-4c3f-a8f5-e8d4ebc9cc62",
+  "page": "https://stocksnap.io/photo/artist-studio-0SHBIHYBNJ",
+  "photographer": "Bruce Mars",
+  "photographer_url": "https://stocksnap.io/author/brucemars",
+  "alt": "A designer smiling at her desk in a studio",
+  "template": "agency.project-inquiry",
+  "slot": "agency.project-inquiry:cover"
+ },
+ "agency-seo-audit-welcome": {
+  "from": "stocksnap",
+  "id": "80ca15c3-1efe-400d-8f19-2733f083cce5",
+  "page": "https://stocksnap.io/photo/seo-computer-959IURDRGJ",
+  "photographer": "Serpstat",
+  "photographer_url": "https://serpstat.com/ru",
+  "alt": "A computer showing charts on a white desk",
+  "template": "agency.seo-audit",
+  "slot": "agency.seo-audit:cover"
+ },
+ "agency-website-brief-welcome": {
+  "from": "stocksnap",
+  "id": "af6bbb92-618c-4fa6-ba9f-5a1bacc99047",
+  "page": "https://stocksnap.io/photo/sketch-drawing-UM62EOZSRC",
+  "photographer": "Wilfred Iven",
+  "photographer_url": "https://firmbee.com",
+  "alt": "Hands sketching a website layout on paper",
+  "template": "agency.website-brief",
+  "slot": "agency.website-brief:cover"
+ },
+ "agency-marketing-audit-welcome": {
+  "from": "stocksnap",
+  "id": "6ee90d19-ecd8-4981-83c1-e80bd5489bb6",
+  "page": "https://stocksnap.io/photo/business-team-V8NHXQVQ70",
+  "photographer": "Direct Media",
+  "photographer_url": "https://stocksnap.io/author/145556",
+  "alt": "A team talking around a table",
+  "template": "agency.marketing-audit",
+  "slot": "agency.marketing-audit:cover"
+ },
+ "consulting-consultation-welcome": {
+  "from": "stocksnap",
+  "id": "3248eb62-cbcf-4d04-bfbc-e7449790cea3",
+  "page": "https://stocksnap.io/photo/work-papers-FL8F0JKTMA",
+  "photographer": "Matt Moloney",
+  "photographer_url": "https://mjmolo.com",
+  "alt": "Two people talking across a desk",
+  "template": "consulting.consultation",
+  "slot": "consulting.consultation:cover"
+ },
+ "consulting-proposal-request-welcome": {
+  "from": "stocksnap",
+  "id": "b3be6880-561e-4926-bc94-de401f44d115",
+  "page": "https://stocksnap.io/photo/office-work-UP9J4EZYNJ",
+  "photographer": "Ch%E2u%20Th%F4ng%20Phan",
+  "photographer_url": "https://stocksnap.io/author/31913",
+  "alt": "A signed document and a pen on a table",
+  "template": "consulting.proposal-request",
+  "slot": "consulting.proposal-request:cover"
+ },
+ "legal-case-evaluation-welcome": {
+  "from": "stocksnap",
+  "id": "baa17735-8446-4bf5-88ec-b05f7054ae95",
+  "page": "https://stocksnap.io/photo/books-bookshelf-0SP70JWWOK",
+  "photographer": "Startup Stock Photos",
+  "photographer_url": "https://startupstockphotos.com",
+  "alt": "Shelves full of books",
+  "template": "legal.case-evaluation",
+  "slot": "legal.case-evaluation:cover"
+ },
+ "legal-consultation-booking-welcome": {
+  "from": "stocksnap",
+  "id": "445d88b3-e141-4eca-9ec9-08459c1cd712",
+  "page": "https://stocksnap.io/photo/office-startup-FF93I0N2C1",
+  "photographer": "Startup Stock Photos",
+  "photographer_url": "https://startupstockphotos.com",
+  "alt": "An empty office with tall windows",
+  "template": "legal.consultation-booking",
+  "slot": "legal.consultation-booking:cover"
+ },
+ "accounting-bookkeeping-quote-welcome": {
+  "from": "stocksnap",
+  "id": "cb251e7e-6a2c-4217-bc06-8afbaa5a1f7a",
+  "page": "https://stocksnap.io/photo/calculator-calendar-RFVHCUGML3",
+  "photographer": "Tevarak",
+  "photographer_url": "https://stocksnap.io/account",
+  "alt": "Hands working through numbers with a calculator",
+  "template": "accounting.bookkeeping-quote",
+  "slot": "accounting.bookkeeping-quote:cover"
+ },
+ "accounting-new-business-welcome": {
+  "from": "stocksnap",
+  "id": "e3896383-5c15-4b3d-b10c-87e2b90413d5",
+  "page": "https://stocksnap.io/photo/shop-store-I93PW8NE0F",
+  "photographer": "Mike Petrucci",
+  "photographer_url": "https://stocksnap.io/author/11559",
+  "alt": "An Open sign in a shop window",
+  "template": "accounting.new-business",
+  "slot": "accounting.new-business:cover"
+ },
+ "finance-review-request-welcome": {
+  "from": "stocksnap",
+  "id": "4d1148cc-bfb7-4c0c-ad66-250fff032b50",
+  "page": "https://stocksnap.io/photo/finance-flatlay-LPD3QR7VQG",
+  "photographer": "Artsy Crafty",
+  "photographer_url": "https://stocksnap.io/author/132198",
+  "alt": "A notebook, a pen and a calculator",
+  "template": "finance.review-request",
+  "slot": "finance.review-request:cover"
+ },
+ "finance-retirement-welcome": {
+  "from": "stocksnap",
+  "id": "1ece8733-fc16-458f-8db8-d5419ae7af73",
+  "page": "https://stocksnap.io/photo/senior-couple-LUHEPRCJZH",
+  "photographer": "Senior Living",
+  "photographer_url": "https://stocksnap.io/author/148922",
+  "alt": "An older couple walking along the shore",
+  "template": "finance.retirement",
+  "slot": "finance.retirement:cover"
+ },
+ "insurance-quote-welcome": {
+  "from": "stocksnap",
+  "id": "2df71071-47ff-4dc6-925e-d127141dd0fb",
+  "page": "https://stocksnap.io/photo/family-playing-CKT87YHJH0",
+  "photographer": "Direct Media",
+  "photographer_url": "https://stocksnap.io/author/145556",
+  "alt": "A family playing together at home",
+  "template": "insurance.quote",
+  "slot": "insurance.quote:cover"
+ },
+ "insurance-business-intake-welcome": {
+  "from": "wordpress",
+  "id": "871be834-494b-4375-ae65-bc76e55d6f8f",
+  "page": "https://wordpress.org/photos/photo/63562a7aea/",
+  "photographer": "mdburnette",
+  "photographer_url": "https://mburnette.com",
+  "alt": "A small flower shop's storefront",
+  "template": "insurance.business-intake",
+  "slot": "insurance.business-intake:cover"
+ },
+ "insurance-policy-review-welcome": {
+  "from": "stocksnap",
+  "id": "b3be6880-561e-4926-bc94-de401f44d115",
+  "page": "https://stocksnap.io/photo/office-work-UP9J4EZYNJ",
+  "photographer": "Ch%E2u%20Th%F4ng%20Phan",
+  "photographer_url": "https://stocksnap.io/author/31913",
+  "alt": "A document and a pen on a table",
+  "template": "insurance.policy-review",
+  "slot": "insurance.policy-review:cover"
+ },
+ "real-estate-home-valuation-welcome": {
+  "from": "stocksnap",
+  "id": "77d72470-723c-4be9-b0e3-d61d733c1754",
+  "page": "https://stocksnap.io/photo/house-home-L9VZ6SOGBB",
+  "photographer": "Binyamin Mellish",
+  "photographer_url": "https://stocksnap.io/author/32212",
+  "alt": "A house with a front yard",
+  "template": "real_estate.home-valuation",
+  "slot": "real_estate.home-valuation:cover"
+ },
+ "real-estate-buyer-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "f960be87-46fc-4ecb-b381-f38a0b5d20d5",
+  "page": "https://stocksnap.io/photo/young-couple-X3PELUE3US",
+  "photographer": "Living Together",
+  "photographer_url": "https://stocksnap.io/author/149729",
+  "alt": "A couple relaxing at home",
+  "template": "real_estate.buyer-inquiry",
+  "slot": "real_estate.buyer-inquiry:cover"
+ },
+ "real-estate-commercial-space-welcome": {
+  "from": "stocksnap",
+  "id": "0aa6ba6c-1a2b-440f-ad71-460a1bbffd40",
+  "page": "https://stocksnap.io/photo/interior-dining-VMJ6JJFFWR",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "A bright, empty room with white walls",
+  "template": "real_estate.commercial-space",
+  "slot": "real_estate.commercial-space:cover"
+ },
+ "construction-free-estimate-welcome": {
+  "from": "stocksnap",
+  "id": "50b6db32-0770-4f22-9cd2-aad9688d26c1",
+  "page": "https://stocksnap.io/photo/construction-builder-A5Q1BUP3OF",
+  "photographer": "Michal Jarmoluk",
+  "photographer_url": "https://stocksnap.io/author/34629",
+  "alt": "A builder looking at a new house",
+  "template": "construction.free-estimate",
+  "slot": "construction.free-estimate:cover"
+ },
+ "construction-remodel-planner-welcome": {
+  "from": "stocksnap",
+  "id": "ab2997e5-f264-474a-a933-63cf94045cba",
+  "page": "https://stocksnap.io/photo/interior-design-HIH67XC5G0",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "A bright living room with a white sofa",
+  "template": "construction.remodel-planner",
+  "slot": "construction.remodel-planner:cover"
+ },
+ "solar-savings-check-welcome": {
+  "from": "stocksnap",
+  "id": "0fe4049a-e2d4-4dcb-9008-6dab91712ca0",
+  "page": "https://stocksnap.io/photo/solar-panels-EFYB8VJXNT",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "Solar panels under a blue sky",
+  "template": "solar.savings-check",
+  "slot": "solar.savings-check:cover"
+ },
+ "solar-commercial-audit-welcome": {
+  "from": "stocksnap",
+  "id": "ae8e2344-a22b-48bc-bdc4-c94c7bef2615",
+  "page": "https://stocksnap.io/photo/glass-wall-GID9EW0L7Z",
+  "photographer": "The Building Envelope",
+  "photographer_url": "https://stocksnap.io/author/129953",
+  "alt": "A glass office building",
+  "template": "solar.commercial-audit",
+  "slot": "solar.commercial-audit:cover"
+ },
+ "healthcare-provider-referral-welcome": {
+  "from": "stocksnap",
+  "id": "e7d58d39-6f6e-454a-a195-e82dfa5a6f79",
+  "page": "https://stocksnap.io/photo/stethoscope-medical-9M1HWW2JFV",
+  "photographer": "Negative Space",
+  "photographer_url": "https://stocksnap.io/author/4440",
+  "alt": "A stethoscope on a desk",
+  "template": "healthcare.provider-referral",
+  "slot": "healthcare.provider-referral:cover"
+ },
+ "wellness-therapy-consultation-welcome": {
+  "from": "wordpress",
+  "id": "395b3054-d1df-477a-90e1-f059ab993671",
+  "page": "https://wordpress.org/photos/photo/72067d80e4/",
+  "photographer": "Nilo Velez",
+  "photographer_url": "https://www.nilovelez.com",
+  "alt": "A yellow armchair in a quiet room",
+  "template": "wellness.therapy-consultation",
+  "slot": "wellness.therapy-consultation:cover"
+ },
+ "education-course-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "ee13ad9b-aa00-465c-bfd9-d577fb320c69",
+  "page": "https://stocksnap.io/photo/books-library-GTWPBBTRRN",
+  "photographer": "Suzy Hazelwood",
+  "photographer_url": "https://twitter.com/SuzyHazelwood",
+  "alt": "Library shelves full of books",
+  "template": "education.course-inquiry",
+  "slot": "education.course-inquiry:cover"
+ },
+ "education-corporate-training-welcome": {
+  "from": "stocksnap",
+  "id": "4af20257-fe95-4fee-b4c7-3e41cc142e41",
+  "page": "https://stocksnap.io/photo/math-equation-GQ1ZPF01BL",
+  "photographer": "Snufkin",
+  "photographer_url": "https://stocksnap.io/author/34675",
+  "alt": "An open notebook and a pen",
+  "template": "education.corporate-training",
+  "slot": "education.corporate-training:cover"
+ },
+ "ecommerce-wholesale-welcome": {
+  "from": "stocksnap",
+  "id": "98343795-453a-4d7c-ad3a-9d3d7512cff9",
+  "page": "https://stocksnap.io/photo/pictures-photos-TP3GQ9C2S3",
+  "photographer": "Joanna Kosinska",
+  "photographer_url": "https://stocksnap.io/author/13160",
+  "alt": "Wrapped parcels on a table",
+  "template": "ecommerce.wholesale",
+  "slot": "ecommerce.wholesale:cover"
+ },
+ "ecommerce-back-in-stock-welcome": {
+  "from": "stocksnap",
+  "id": "9b85f4f2-259b-4373-9243-310043bddfc9",
+  "page": "https://stocksnap.io/photo/ceramics-pottery-SWDR6XR7YS",
+  "photographer": "Barn Images",
+  "photographer_url": "https://barnimages.com",
+  "alt": "Shelves of bowls and cups in a shop",
+  "template": "ecommerce.back-in-stock",
+  "slot": "ecommerce.back-in-stock:cover"
+ },
+ "ecommerce-influencer-welcome": {
+  "from": "stocksnap",
+  "id": "d58b1785-831f-49dd-9ee4-761a517f6fe7",
+  "page": "https://stocksnap.io/photo/photographer-camera-LWKE5NGA77",
+  "photographer": "Leeroy",
+  "photographer_url": "https://www.lifeofpix.com",
+  "alt": "A creator filming with a camera",
+  "template": "ecommerce.influencer",
+  "slot": "ecommerce.influencer:cover"
+ },
+ "manufacturing-rfq-welcome": {
+  "from": "stocksnap",
+  "id": "bc23c9c7-84cf-42be-8f51-befdd8701c0a",
+  "page": "https://stocksnap.io/photo/grungy-industrial-P9JQOTXA1R",
+  "photographer": "Tim Sullivan",
+  "photographer_url": "https://www.secretagencygroup.com",
+  "alt": "Close-up of metal machine parts",
+  "template": "manufacturing.rfq",
+  "slot": "manufacturing.rfq:cover"
+ },
+ "logistics-freight-quote-welcome": {
+  "from": "stocksnap",
+  "id": "0ad7b580-f7d1-4ce7-b912-f987ca79557d",
+  "page": "https://stocksnap.io/photo/highway-road-AOEI2XN99G",
+  "photographer": "Markus Spiske",
+  "photographer_url": "https://freeforcommercialuse.net",
+  "alt": "A truck on the highway",
+  "template": "logistics.freight-quote",
+  "slot": "logistics.freight-quote:cover"
+ },
+ "automotive-trade-in-welcome": {
+  "from": "stocksnap",
+  "id": "b50c2f3d-6325-4a90-a5aa-57f2db6a8438",
+  "page": "https://stocksnap.io/photo/car-automotive-Y0YKYAY0VN",
+  "photographer": "Alan Cruk",
+  "photographer_url": "https://stocksnap.io/author/13147",
+  "alt": "A car parked in a sunny field",
+  "template": "automotive.trade-in",
+  "slot": "automotive.trade-in:cover"
+ },
+ "automotive-fleet-welcome": {
+  "from": "stocksnap",
+  "id": "7402e78e-92bc-4049-8fc0-669b40a91613",
+  "page": "https://stocksnap.io/photo/transportation-van-6PV7L7ZC8F",
+  "photographer": "Matt Jones",
+  "photographer_url": "https://stocksnap.io/author/30203",
+  "alt": "A van parked in front of a house",
+  "template": "automotive.fleet",
+  "slot": "automotive.fleet:cover"
+ },
+ "hospitality-travel-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "dff4062b-a005-43d7-8913-819164a18c29",
+  "page": "https://stocksnap.io/photo/cliff-clouds-IZB4SE5SRJ",
+  "photographer": "Sergei Gussev",
+  "photographer_url": "https://www.flickr.com/sergeigussev",
+  "alt": "A green coastline with a waterfall",
+  "template": "hospitality.travel-inquiry",
+  "slot": "hospitality.travel-inquiry:cover"
+ },
+ "events-sponsor-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "15406615-14a3-4c8c-9522-1ed789adfc84",
+  "page": "https://stocksnap.io/photo/business-conference-1CA9B8B930",
+  "photographer": "Daria Nepriakhina",
+  "photographer_url": "https://epicantus.tumblr.com",
+  "alt": "A conference hall with stage lights",
+  "template": "events.sponsor-inquiry",
+  "slot": "events.sponsor-inquiry:cover"
+ },
+ "it-assessment-welcome": {
+  "from": "stocksnap",
+  "id": "0bf9d87a-9cda-4929-944c-9147f6c38bed",
+  "page": "https://stocksnap.io/photo/computer-ram-52KJ8KZGWY",
+  "photographer": "Charlie Belvin Designs",
+  "photographer_url": "https://charliebelvindesigns.blogspot.com",
+  "alt": "Close-up of a computer circuit board",
+  "template": "it.assessment",
+  "slot": "it.assessment:cover"
+ },
+ "beauty-color-consultation-welcome": {
+  "from": "stocksnap",
+  "id": "570a0bb8-1b93-4333-b450-ddd741f4ec79",
+  "page": "https://stocksnap.io/photo/beauty-salon-0AA03E91E8",
+  "photographer": "Leeroy",
+  "photographer_url": "https://www.lifeofpix.com",
+  "alt": "Chairs and mirrors in a hair salon",
+  "template": "beauty.color-consultation",
+  "slot": "beauty.color-consultation:cover"
+ },
+ "beauty-tattoo-consultation-welcome": {
+  "from": "stocksnap",
+  "id": "95152d89-10ef-4739-927c-32a13a7b889f",
+  "page": "https://stocksnap.io/photo/tattoo-ink-6D408625FE",
+  "photographer": "Little Visuals",
+  "photographer_url": "https://littlevisuals.co",
+  "alt": "A colorful tattoo on an arm",
+  "template": "beauty.tattoo-consultation",
+  "slot": "beauty.tattoo-consultation:cover"
+ },
+ "hospitality-group-rate-callback-welcome": {
+  "from": "stocksnap",
+  "id": "6d48c5bd-3a4c-46f6-8ed8-0ededcd67c50",
+  "page": "https://stocksnap.io/photo/hotel-architecture-BBB7761BC2",
+  "photographer": "Daria Nepriakhina",
+  "photographer_url": "https://epicantus.tumblr.com",
+  "alt": "The front of a grand hotel",
+  "template": "hospitality.group-rate-callback",
+  "slot": "hospitality.group-rate-callback:cover"
+ },
+ "fitness-trainer-callback-welcome": {
+  "from": "stocksnap",
+  "id": "0d8091eb-f7e0-4ea2-8506-fbbaf38af61d",
+  "page": "https://stocksnap.io/photo/people-senior-RM3X5RQPVY",
+  "photographer": "Direct Media",
+  "photographer_url": "https://stocksnap.io/author/145556",
+  "alt": "A trainer going over a plan with a client",
+  "template": "fitness.trainer-callback",
+  "slot": "fitness.trainer-callback:cover"
+ },
+ "events-venue-tour-welcome": {
+  "from": "stocksnap",
+  "id": "8a654264-a6b7-4d61-b891-f07c6210cd39",
+  "page": "https://stocksnap.io/photo/events-venue-5K1C2ZXZZP",
+  "photographer": "Sweet Ice Cream Photography",
+  "photographer_url": "https://stocksnap.io/author/28403",
+  "alt": "A long hall set with tables for an event",
+  "template": "events.venue-tour",
+  "slot": "events.venue-tour:cover"
+ },
+ "finance-advisor-callback-welcome": {
+  "from": "stocksnap",
+  "id": "19f89def-c920-4e19-bc37-c20a2dedaa5a",
+  "page": "https://stocksnap.io/photo/laptop-desk-JCXQS3IVWD",
+  "photographer": "Lisa Fotios",
+  "photographer_url": "https://lisafotiosphotography.co.uk",
+  "alt": "A tidy desk with a laptop and a plant",
+  "template": "finance.advisor-callback",
+  "slot": "finance.advisor-callback:cover"
+ },
+ "events-wedding-planner-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "5c6017c7-8eae-41ee-8b3c-fe533394bc8b",
+  "page": "https://stocksnap.io/photo/wedding-celebration-MLZK9UI7Y7",
+  "photographer": "Ivan",
+  "photographer_url": "https://stocksnap.io/author/38245",
+  "alt": "A wedding table with flowers",
+  "template": "events.wedding-planner-inquiry",
+  "slot": "events.wedding-planner-inquiry:cover"
+ },
+ "events-venue-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "63b5c782-5217-4d72-87f8-0e560ecea041",
+  "page": "https://stocksnap.io/photo/winter-lights-ZAXS7YB4DG",
+  "photographer": "Altered Reality",
+  "photographer_url": "https://stocksnap.io/author/177206",
+  "alt": "Warm string lights at dusk",
+  "template": "events.venue-inquiry",
+  "slot": "events.venue-inquiry:cover"
+ },
+ "education-info-session-welcome": {
+  "from": "stocksnap",
+  "id": "7f0cd475-ee7f-48c5-add5-7c688f3820ca",
+  "page": "https://stocksnap.io/photo/working-typing-0E0M5W9O3V",
+  "photographer": "Bench Accounting",
+  "photographer_url": "https://stocksnap.io/author/17216",
+  "alt": "A student at a laptop by a window",
+  "template": "education.info-session",
+  "slot": "education.info-session:cover"
+ },
+ "saas-product-webinar-welcome": {
+  "from": "stocksnap",
+  "id": "7ebd5dd0-7dce-45f4-b6d3-3d5006226bd8",
+  "page": "https://stocksnap.io/photo/business-presenting-XDAR6MIG75",
+  "photographer": "Direct Media",
+  "photographer_url": "https://stocksnap.io/author/145556",
+  "alt": "A presenter talking to a small group",
+  "template": "saas.product-webinar",
+  "slot": "saas.product-webinar:cover"
+ },
+ "coaching-masterclass-welcome": {
+  "from": "stocksnap",
+  "id": "0f3fa551-f20f-44a2-8130-8c42a122cf15",
+  "page": "https://stocksnap.io/photo/notebook-notes-C5ANFS4K5J",
+  "photographer": "David Bares",
+  "photographer_url": "https://stocksnap.io/author/34860",
+  "alt": "Handwritten notes beside a coffee",
+  "template": "coaching.masterclass",
+  "slot": "coaching.masterclass:cover"
+ },
+ "construction-house-cleaning-price-welcome": {
+  "from": "stocksnap",
+  "id": "1fff238c-735c-43cb-aa89-d60ebb34b001",
+  "page": "https://stocksnap.io/photo/kitchen-sink-L07UXRLREE",
+  "photographer": "The Pic Pac",
+  "photographer_url": "https://stocksnap.io/author/13723",
+  "alt": "A clean, bright kitchen",
+  "template": "construction.house-cleaning-price",
+  "slot": "construction.house-cleaning-price:cover"
+ },
+ "construction-office-cleaning-quote-welcome": {
+  "from": "stocksnap",
+  "id": "eca87561-e243-42b7-87de-dc2a57e8c962",
+  "page": "https://stocksnap.io/photo/minimal-office-SNJ2HCU9HX",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "A clean white desk with a plant",
+  "template": "construction.office-cleaning-quote",
+  "slot": "construction.office-cleaning-quote:cover"
+ },
+ "construction-water-heater-quote-welcome": {
+  "from": "wordpress",
+  "id": "e780db97-663d-4c84-91d9-5e71dde90ce9",
+  "page": "https://wordpress.org/photos/photo/97691878f6/",
+  "photographer": "Topher",
+  "photographer_url": "https://topher.how",
+  "alt": "A plumber at work on pipes",
+  "template": "construction.water-heater-quote",
+  "slot": "construction.water-heater-quote:cover"
+ },
+ "construction-roof-inspection-welcome": {
+  "from": "stocksnap",
+  "id": "eb7955da-6bee-4a3c-be4e-3ba440733412",
+  "page": "https://stocksnap.io/photo/house-roof-KJMQM11A8G",
+  "photographer": "Oliur Rahman",
+  "photographer_url": "https://stocksnap.io/author/34607",
+  "alt": "A house with a dark pitched roof",
+  "template": "construction.roof-inspection",
+  "slot": "construction.roof-inspection:cover"
+ },
+ "construction-roof-cost-calculator-welcome": {
+  "from": "stocksnap",
+  "id": "154e5641-155c-4c32-b4da-be2bbe7338fd",
+  "page": "https://stocksnap.io/photo/tile-roof-JKPSQFD1JX",
+  "photographer": "Bob Richards",
+  "photographer_url": "https://stocksnap.io/author/112960",
+  "alt": "A tiled roof with a small window",
+  "template": "construction.roof-cost-calculator",
+  "slot": "construction.roof-cost-calculator:cover"
+ },
+ "construction-landscape-design-welcome": {
+  "from": "stocksnap",
+  "id": "ffe88262-cb99-411a-b228-2a91ab20824d",
+  "page": "https://stocksnap.io/photo/patio-furniture-ZIU3AC46X4",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "Two garden chairs on a patio",
+  "template": "construction.landscape-design",
+  "slot": "construction.landscape-design:cover"
+ },
+ "construction-panel-upgrade-estimate-welcome": {
+  "from": "stocksnap",
+  "id": "383e78cf-a33a-46ef-a2f3-8a9fa93ea180",
+  "page": "https://stocksnap.io/photo/electrician-electricity-5OFPE51CY7",
+  "photographer": "Michal Jarmoluk",
+  "photographer_url": "https://stocksnap.io/author/34629",
+  "alt": "An electrician wiring a breaker panel",
+  "template": "construction.panel-upgrade-estimate",
+  "slot": "construction.panel-upgrade-estimate:cover"
+ },
+ "construction-lighting-install-price-welcome": {
+  "from": "stocksnap",
+  "id": "a4602c39-95d2-4b31-9da0-640f140f269c",
+  "page": "https://stocksnap.io/photo/light-lamp-59EKVT8ZF3",
+  "photographer": "Burak Kebapci",
+  "photographer_url": "https://stocksnap.io/author/26874",
+  "alt": "A single bulb hanging in a dark room",
+  "template": "construction.lighting-install-price",
+  "slot": "construction.lighting-install-price:cover"
+ },
+ "construction-moving-cost-calculator-welcome": {
+  "from": "stocksnap",
+  "id": "6d8c6f90-6e4b-4998-a456-79afaba3e4ef",
+  "page": "https://stocksnap.io/photo/box-boxes-WP1KHDXGOY",
+  "photographer": "Bench Accounting",
+  "photographer_url": "https://stocksnap.io/author/17216",
+  "alt": "Someone packing a moving box",
+  "template": "construction.moving-cost-calculator",
+  "slot": "construction.moving-cost-calculator:cover"
+ },
+ "general-email-digest-welcome": {
+  "from": "stocksnap",
+  "id": "17641c27-1c23-42ed-b759-4d3f44acefbf",
+  "page": "https://stocksnap.io/photo/browsing-smartphone-QBV7MANABA",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "Hands holding a phone next to a coffee",
+  "template": "general.email-digest",
+  "slot": "general.email-digest:cover"
+ },
+ "general-report-download-welcome": {
+  "from": "stocksnap",
+  "id": "bb7d1cde-8ca3-45fd-a9c4-2585174aba3e",
+  "page": "https://stocksnap.io/photo/business-reports-LABXT2BYKU",
+  "photographer": "Wilfred Iven",
+  "photographer_url": "https://firmbee.com",
+  "alt": "Printed charts and phones on a desk",
+  "template": "general.report-download",
+  "slot": "general.report-download:cover"
+ },
+ "saas-enterprise-demo-welcome": {
+  "from": "stocksnap",
+  "id": "faae88da-e973-4c6a-8280-cbbd88cba9ed",
+  "page": "https://stocksnap.io/photo/business-people-TUH3TB1WYX",
+  "photographer": "Sherwin Torres",
+  "photographer_url": "https://sherwintorres.com",
+  "alt": "A man standing in a boardroom",
+  "template": "saas.enterprise-demo",
+  "slot": "saas.enterprise-demo:cover"
+ },
+ "saas-quick-demo-welcome": {
+  "from": "stocksnap",
+  "id": "19f89def-c920-4e19-bc37-c20a2dedaa5a",
+  "page": "https://stocksnap.io/photo/laptop-desk-JCXQS3IVWD",
+  "photographer": "Lisa Fotios",
+  "photographer_url": "https://lisafotiosphotography.co.uk",
+  "alt": "A laptop and a plant on a white desk",
+  "template": "saas.quick-demo",
+  "slot": "saas.quick-demo:cover"
+ },
+ "saas-partner-program-welcome": {
+  "from": "stocksnap",
+  "id": "6b0cac86-a9b4-429a-a470-02eba1369608",
+  "page": "https://stocksnap.io/photo/coworker-working-QEUHCFGQNP",
+  "photographer": "Burst",
+  "photographer_url": "https://burst.shopify.com",
+  "alt": "Two colleagues working on laptops together",
+  "template": "saas.partner-program",
+  "slot": "saas.partner-program:cover"
+ },
+ "saas-early-access-welcome": {
+  "from": "stocksnap",
+  "id": "11cd1d83-581a-46ba-b047-3f04abd3dc74",
+  "page": "https://stocksnap.io/photo/mobile-smartphone-DLITZEAVJJ",
+  "photographer": "JESHOOTS.com",
+  "photographer_url": "https://jeshoots.com",
+  "alt": "Hands holding a phone and a coffee",
+  "template": "saas.early-access",
+  "slot": "saas.early-access:cover"
+ },
+ "agency-growth-call-welcome": {
+  "from": "stocksnap",
+  "id": "4f7416d8-83d8-4e08-b11e-c076e5877671",
+  "page": "https://stocksnap.io/photo/business-team-W6PNBNYHM6",
+  "photographer": "Direct Media",
+  "photographer_url": "https://stocksnap.io/author/145556",
+  "alt": "A team meeting in an office",
+  "template": "agency.growth-call",
+  "slot": "agency.growth-call:cover"
+ },
+ "agency-referral-partner-welcome": {
+  "from": "stocksnap",
+  "id": "56af3e05-2c26-4319-b198-1e83fcbc2007",
+  "page": "https://stocksnap.io/photo/home-office-D3OTBIDS9X",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "A bright desk by a window",
+  "template": "agency.referral-partner",
+  "slot": "agency.referral-partner:cover"
+ },
+ "consulting-client-referral-welcome": {
+  "from": "stocksnap",
+  "id": "f7033903-d0b9-438d-abf0-5c9ece758f85",
+  "page": "https://stocksnap.io/photo/coffee-cafe-8C35014CE3",
+  "photographer": "Jeff Sheldon",
+  "photographer_url": "https://stocksnap.io/author/345",
+  "alt": "People talking in a busy cafe",
+  "template": "consulting.client-referral",
+  "slot": "consulting.client-referral:cover"
+ },
+ "consulting-benchmark-report-welcome": {
+  "from": "stocksnap",
+  "id": "29ee634e-b040-49a2-b106-3a32ace9e84f",
+  "page": "https://stocksnap.io/photo/office-work-WRO65AZI5C",
+  "photographer": "WDnet Studio",
+  "photographer_url": "https://stocksnap.io/author/30770",
+  "alt": "Printed reports with charts on a desk",
+  "template": "consulting.benchmark-report",
+  "slot": "consulting.benchmark-report:cover"
+ },
+ "it-managed-it-quote-welcome": {
+  "from": "stocksnap",
+  "id": "f628df35-94f6-4b47-ab47-ff71d069c220",
+  "page": "https://stocksnap.io/photo/macbook-computer-6UHHE19YG7",
+  "photographer": "Negative Space",
+  "photographer_url": "https://stocksnap.io/author/4440",
+  "alt": "A laptop with code on screen beside a coffee",
+  "template": "it.managed-it-quote",
+  "slot": "it.managed-it-quote:cover"
+ },
+ "coaching-discovery-call-welcome": {
+  "from": "stocksnap",
+  "id": "d71714c6-0850-4f80-af61-90ee4ec8313b",
+  "page": "https://stocksnap.io/photo/men-fitness-Q9DNPMZNQT",
+  "photographer": "Direct Media",
+  "photographer_url": "https://stocksnap.io/author/145556",
+  "alt": "A coach working with a client outdoors",
+  "template": "coaching.discovery-call",
+  "slot": "coaching.discovery-call:cover"
+ },
+ "coaching-program-waitlist-welcome": {
+  "from": "stocksnap",
+  "id": "a17a1902-c656-459c-bb54-64cb13087222",
+  "page": "https://stocksnap.io/photo/group-friends-YBGQFVYDDC",
+  "photographer": "Helena Lopes",
+  "photographer_url": "https://instagram.com/helena_wlt",
+  "alt": "A small group laughing together",
+  "template": "coaching.program-waitlist",
+  "slot": "coaching.program-waitlist:cover"
+ },
+ "creative-photography-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "1185bfe5-9287-467c-ae90-e86ec408d77b",
+  "page": "https://stocksnap.io/photo/black-camera-ZE94OW561P",
+  "photographer": "Steve Johnson",
+  "photographer_url": "https://instagram.com/artbystevej",
+  "alt": "Close-up of a camera lens",
+  "template": "creative.photography-inquiry",
+  "slot": "creative.photography-inquiry:cover"
+ },
+ "creative-video-quote-welcome": {
+  "from": "stocksnap",
+  "id": "75033bd5-34e8-4fb8-8248-2174e08a55b9",
+  "page": "https://stocksnap.io/photo/film-production-1AZJAEK56X",
+  "photographer": "Jakob Owens",
+  "photographer_url": "https://stocksnap.io/author/29351",
+  "alt": "A film clapperboard on set",
+  "template": "creative.video-quote",
+  "slot": "creative.video-quote:cover"
+ },
+ "architecture-project-consultation-welcome": {
+  "from": "stocksnap",
+  "id": "ab2997e5-f264-474a-a933-63cf94045cba",
+  "page": "https://stocksnap.io/photo/interior-design-HIH67XC5G0",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "A bright, modern living room",
+  "template": "architecture.project-consultation",
+  "slot": "architecture.project-consultation:cover"
+ },
+ "architecture-fee-estimate-welcome": {
+  "from": "stocksnap",
+  "id": "9cb4e397-fe0b-4b4a-a1c0-02d7ba97b969",
+  "page": "https://stocksnap.io/photo/architectural-design-2XJ1VEE57Q",
+  "photographer": "Karol Dach",
+  "photographer_url": "https://stocksnap.io/author/55882",
+  "alt": "An architect's sketch on paper",
+  "template": "architecture.fee-estimate",
+  "slot": "architecture.fee-estimate:cover"
+ },
+ "architecture-planning-guide-welcome": {
+  "from": "stocksnap",
+  "id": "fa3f1723-8882-4b36-ae42-cd6e1522f922",
+  "page": "https://stocksnap.io/photo/modern-design-APYMC719T1",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "The roofline of a modern house against the sky",
+  "template": "architecture.planning-guide",
+  "slot": "architecture.planning-guide:cover"
+ },
+ "security-system-quote-welcome": {
+  "from": "stocksnap",
+  "id": "2bb58921-c168-41fd-86a1-ca122ad854a9",
+  "page": "https://stocksnap.io/photo/concrete-wall-70GQNT6XZM",
+  "photographer": "Scott Webb",
+  "photographer_url": "https://stocksnap.io/author/5007",
+  "alt": "Security cameras on a wall",
+  "template": "security.system-quote",
+  "slot": "security.system-quote:cover"
+ },
+ "security-guard-services-welcome": {
+  "from": "stocksnap",
+  "id": "a7f0154c-d1f4-440b-8d90-efe0f38af32c",
+  "page": "https://stocksnap.io/photo/staircase-interior-CIMIPMHUXZ",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "A bright lobby with stairs",
+  "template": "security.guard-services",
+  "slot": "security.guard-services:cover"
+ },
+ "security-camera-demo-welcome": {
+  "from": "stocksnap",
+  "id": "df6ba15b-cfd9-4814-a1bf-393bd2819284",
+  "page": "https://stocksnap.io/photo/technology-gadgets-SYRSHXD59H",
+  "photographer": "WDnet Studio",
+  "photographer_url": "https://stocksnap.io/author/30770",
+  "alt": "Two security cameras against a blue sky",
+  "template": "security.camera-demo",
+  "slot": "security.camera-demo:cover"
+ },
+ "agriculture-equipment-demo-welcome": {
+  "from": "stocksnap",
+  "id": "236a8ee9-3720-4ac4-a0dd-62aba1544f6a",
+  "page": "https://stocksnap.io/photo/tractor-vehicle-FGB346J1FS",
+  "photographer": "Emiel Molenaar",
+  "photographer_url": "https://stocksnap.io/author/40733",
+  "alt": "A tractor working a green field",
+  "template": "agriculture.equipment-demo",
+  "slot": "agriculture.equipment-demo:cover"
+ },
+ "agriculture-market-report-welcome": {
+  "from": "stocksnap",
+  "id": "edab2a5d-e9b8-4a07-aa3c-3734a12edc5d",
+  "page": "https://stocksnap.io/photo/wheat-background-WUDNIZG6H4",
+  "photographer": "Travel Photographer",
+  "photographer_url": "https://stocksnap.io",
+  "alt": "A field of ripe wheat",
+  "template": "agriculture.market-report",
+  "slot": "agriculture.market-report:cover"
+ },
+ "media-advertising-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "ffd0307b-2f9b-4584-b5a4-2d31fe7caf41",
+  "page": "https://stocksnap.io/photo/books-magazines-FSNR47RARE",
+  "photographer": "Marcin Czaja",
+  "photographer_url": "https://stocksnap.io/author/16087",
+  "alt": "Open magazines on a table",
+  "template": "media.advertising-inquiry",
+  "slot": "media.advertising-inquiry:cover"
+ },
+ "government-business-contact-welcome": {
+  "from": "wordpress",
+  "id": "bbc4be80-2a10-46f1-8ff5-704cdbc3a171",
+  "page": "https://wordpress.org/photos/photo/48161eb2d0/",
+  "photographer": "Jennifer Bourn",
+  "photographer_url": "https://jenniferbourn.com",
+  "alt": "A small-town main street with shops",
+  "template": "government.business-contact",
+  "slot": "government.business-contact:cover"
+ },
+ "retail-vip-list-welcome": {
+  "from": "stocksnap",
+  "id": "6585f909-513f-42e4-bab0-c74a9296ec48",
+  "page": "https://stocksnap.io/photo/people-girl-IA1A0DATOJ",
+  "photographer": "Matthew Henry",
+  "photographer_url": "https://stocksnap.io/author/200",
+  "alt": "A woman browsing a clothing rack",
+  "template": "retail.vip-list",
+  "slot": "retail.vip-list:cover"
+ },
+ "pets-puppy-waitlist-welcome": {
+  "from": "stocksnap",
+  "id": "5b029739-ac49-4f15-b029-2ed74f9aff80",
+  "page": "https://stocksnap.io/photo/animals-puppy-OOH59BAHBL",
+  "photographer": "Torsten Dettlaff",
+  "photographer_url": "https://stocksnap.io/author/30771",
+  "alt": "A puppy sitting on a white floor",
+  "template": "pets.puppy-waitlist",
+  "slot": "pets.puppy-waitlist:cover"
+ },
+ "sports-club-sponsorship-welcome": {
+  "from": "stocksnap",
+  "id": "7857d5a2-209d-4f84-9648-caff3ade7fde",
+  "page": "https://stocksnap.io/photo/soccer-ball-FN9W4V6TK5",
+  "photographer": "Michal Jarmoluk",
+  "photographer_url": "https://stocksnap.io/author/34629",
+  "alt": "A soccer stadium on a bright day",
+  "template": "sports.club-sponsorship",
+  "slot": "sports.club-sponsorship:cover"
+ },
+ "faith-contact-us-welcome": {
+  "from": "stocksnap",
+  "id": "4f7416d8-83d8-4e08-b11e-c076e5877671",
+  "page": "https://stocksnap.io/photo/business-team-W6PNBNYHM6",
+  "photographer": "Direct Media",
+  "photographer_url": "https://stocksnap.io/author/145556",
+  "alt": "People gathered around a table talking",
+  "template": "faith.contact-us",
+  "slot": "faith.contact-us:cover"
+ },
+ "food-wholesale-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "1aedd0a4-8a8b-4919-981a-4b280b3c8fc8",
+  "page": "https://stocksnap.io/photo/bakery-cakes-JBIML0PF2C",
+  "photographer": "Lisa Fotios",
+  "photographer_url": "https://lisafotiosphotography.co.uk",
+  "alt": "Fresh pastries on a bakery counter",
+  "template": "food.wholesale-inquiry",
+  "slot": "food.wholesale-inquiry:cover"
+ },
+ "saas-data-maturity-scorecard-welcome": {
+  "from": "stocksnap",
+  "id": "4c3060f8-2264-4647-b1bb-6fdaa0b13e76",
+  "page": "https://stocksnap.io/photo/samsung-galaxy-QVKE96OD36",
+  "photographer": "Wilfred Iven",
+  "photographer_url": "https://firmbee.com",
+  "alt": "Charts and a tablet on a desk",
+  "template": "saas.data-maturity-scorecard",
+  "slot": "saas.data-maturity-scorecard:cover"
+ },
+ "agency-marketing-scorecard-welcome": {
+  "from": "stocksnap",
+  "id": "830c25c3-92a8-4b48-86ae-6f7c64b2b18d",
+  "page": "https://stocksnap.io/photo/whiteboard-post-itnotes-YR89OQFMT1",
+  "photographer": "Startup Stock Photos",
+  "photographer_url": "https://startupstockphotos.com",
+  "alt": "A planning board with weeks and notes",
+  "template": "agency.marketing-scorecard",
+  "slot": "agency.marketing-scorecard:cover"
+ },
+ "real-estate-buying-readiness-welcome": {
+  "from": "stocksnap",
+  "id": "35b702e1-40c9-42f8-98d9-6417cd131199",
+  "page": "https://stocksnap.io/photo/woman-working-ZIEZYD149O",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "Someone browsing homes on a laptop",
+  "template": "real_estate.buying-readiness",
+  "slot": "real_estate.buying-readiness:cover"
+ },
+ "legal-divorce-eligibility-welcome": {
+  "from": "stocksnap",
+  "id": "4a2ae3ff-7500-4547-aba0-8daa19691569",
+  "page": "https://stocksnap.io/photo/office-desk-N7FUTW0RY5",
+  "photographer": "Bench Accounting",
+  "photographer_url": "https://stocksnap.io/author/17216",
+  "alt": "A quiet desk in a white room",
+  "template": "legal.divorce-eligibility",
+  "slot": "legal.divorce-eligibility:cover"
+ },
+ "coaching-program-application-welcome": {
+  "from": "stocksnap",
+  "id": "f2723057-5e49-496c-be2a-e6a0849277ca",
+  "page": "https://stocksnap.io/photo/work-bag-96E1A8F1CB",
+  "photographer": "Alejandro Escamilla",
+  "photographer_url": "https://stocksnap.io/author/7",
+  "alt": "Two people talking over coffee",
+  "template": "coaching.program-application",
+  "slot": "coaching.program-application:cover"
+ },
+ "creative-video-brief-welcome": {
+  "from": "stocksnap",
+  "id": "4f15b657-d847-4722-9b5c-2de16851bb06",
+  "page": "https://stocksnap.io/photo/people-man-6DID58WECI",
+  "photographer": "Glenn Carstens-Peters",
+  "photographer_url": "https://stocksnap.io/author/32960",
+  "alt": "Someone editing a video at a desk",
+  "template": "creative.video-brief",
+  "slot": "creative.video-brief:cover"
+ },
+ "healthcare-home-care-assessment-welcome": {
+  "from": "stocksnap",
+  "id": "b459a3f4-5a46-4ba1-970c-1c48394874f6",
+  "page": "https://stocksnap.io/photo/coffee-tea-4VHE7E68OE",
+  "photographer": "Lia Leslie",
+  "photographer_url": "https://stocksnap.io/author/26765",
+  "alt": "A cup of tea on an open book",
+  "template": "healthcare.home-care-assessment",
+  "slot": "healthcare.home-care-assessment:cover"
+ },
+ "legal-family-law-intake-welcome": {
+  "from": "stocksnap",
+  "id": "e6e0c6c0-3dbb-4f70-ad1e-17bfc1abdf50",
+  "page": "https://stocksnap.io/photo/office-work-HZCASACP3N",
+  "photographer": "Charles Forerunner",
+  "photographer_url": "https://stocksnap.io/author/29066",
+  "alt": "An office with tall windows",
+  "template": "legal.family-law-intake",
+  "slot": "legal.family-law-intake:cover"
+ },
+ "solar-savings-calculator-welcome": {
+  "from": "stocksnap",
+  "id": "b01fd50e-4ff3-46a4-b728-14fdf7833f90",
+  "page": "https://stocksnap.io/photo/solar-panels-VZK8YEAJDO",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "Rows of solar panels on a hillside",
+  "template": "solar.savings-calculator",
+  "slot": "solar.savings-calculator:cover"
+ },
+ "saas-roi-calculator-welcome": {
+  "from": "stocksnap",
+  "id": "a5ec16c6-17e7-4835-afe0-2333ab7cd178",
+  "page": "https://stocksnap.io/photo/calculator-numbers-VVXW9WBTB8",
+  "photographer": "Martin Vorel",
+  "photographer_url": "https://libreshot.com",
+  "alt": "A calculator and a pencil on a desk",
+  "template": "saas.roi-calculator",
+  "slot": "saas.roi-calculator:cover"
+ },
+ "insurance-auto-quote-welcome": {
+  "from": "stocksnap",
+  "id": "9a60a076-fd91-4250-97ea-31e25b454e52",
+  "page": "https://stocksnap.io/photo/road-highway-66X7POV7YQ",
+  "photographer": "Kaique Rocha",
+  "photographer_url": "https://stocksnap.io/author/24615",
+  "alt": "A winding road through green hills",
+  "template": "insurance.auto-quote",
+  "slot": "insurance.auto-quote:cover"
+ },
+ "insurance-home-quote-welcome": {
+  "from": "stocksnap",
+  "id": "2b739227-2ec6-4440-99db-9f5df808d1e3",
+  "page": "https://stocksnap.io/photo/house-home-LJ515CPAKI",
+  "photographer": "Binyamin Mellish",
+  "photographer_url": "https://stocksnap.io/author/32212",
+  "alt": "A house with its lights on at dusk",
+  "template": "insurance.home-quote",
+  "slot": "insurance.home-quote:cover"
+ },
+ "construction-kitchen-remodel-estimate-welcome": {
+  "from": "stocksnap",
+  "id": "c6b1bca4-7448-44c9-bddc-0459ddc4739a",
+  "page": "https://stocksnap.io/photo/kitchen-interior-3ZX53UFU8B",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "A bright white kitchen",
+  "template": "construction.kitchen-remodel-estimate",
+  "slot": "construction.kitchen-remodel-estimate:cover"
+ },
+ "general-franchise-inquiry-welcome": {
+  "from": "stocksnap",
+  "id": "55d4cdd2-e5b5-463b-b957-5e83de4296c0",
+  "page": "https://stocksnap.io/photo/restaurant-store-JQECRTOLPK",
+  "photographer": "vedanti",
+  "photographer_url": "https://stocksnap.io/author/38115",
+  "alt": "A busy cafe counter",
+  "template": "general.franchise-inquiry",
+  "slot": "general.franchise-inquiry:cover"
+ },
+ "hospitality-trip-planner-welcome": {
+  "from": "stocksnap",
+  "id": "3943b473-c181-4636-8ffb-190d809feb69",
+  "page": "https://stocksnap.io/photo/map-navigation-AMU2E63PAH",
+  "photographer": "Milada Vigerova",
+  "photographer_url": "https://stocksnap.io/author/2501",
+  "alt": "A hand pointing at a map",
+  "template": "hospitality.trip-planner",
+  "slot": "hospitality.trip-planner:cover"
+ },
+ "real-estate-commercial-space-space-type-0": {
+  "from": "stocksnap",
+  "id": "00e22ea9-f840-488f-a710-d0cb3ad356dc",
+  "page": "https://stocksnap.io/photo/glass-wall-J8WYKE9Y2E",
+  "photographer": "The Building Envelope",
+  "photographer_url": "https://stocksnap.io/author/129953",
+  "alt": "An office building",
+  "template": "real_estate.commercial-space",
+  "slot": "real_estate.commercial-space:Space type:0"
+ },
+ "real-estate-commercial-space-space-type-1": {
+  "from": "stocksnap",
+  "id": "54e7fbae-849b-4b94-94e3-9d19448509f9",
+  "page": "https://stocksnap.io/photo/book-shop-XDBV4DKSFN",
+  "photographer": "Tuur Tisseghem",
+  "photographer_url": "https://tuurtisseghem.be",
+  "alt": "A shop window at night",
+  "template": "real_estate.commercial-space",
+  "slot": "real_estate.commercial-space:Space type:1"
+ },
+ "real-estate-commercial-space-space-type-2": {
+  "from": "stocksnap",
+  "id": "56e76cff-b651-437a-8f24-44937f626d1b",
+  "page": "https://stocksnap.io/photo/architecture-buildings-EB1C4YD25X",
+  "photographer": "Hieu Vu Minh",
+  "photographer_url": "https://stocksnap.io/author/29537",
+  "alt": "An empty industrial building inside",
+  "template": "real_estate.commercial-space",
+  "slot": "real_estate.commercial-space:Space type:2"
+ },
+ "real-estate-commercial-space-space-type-3": {
+  "from": "stocksnap",
+  "id": "a39fca40-6831-4594-a47a-acf6383fe68d",
+  "page": "https://stocksnap.io/photo/people-meeting-ZBMXGQYOGI",
+  "photographer": "Kristin Hardwick",
+  "photographer_url": "https://www.kristinhardwick.com",
+  "alt": "People working together at a shared desk",
+  "template": "real_estate.commercial-space",
+  "slot": "real_estate.commercial-space:Space type:3"
+ },
+ "real-estate-commercial-space-space-type-4": {
+  "from": "stocksnap",
+  "id": "430a92c2-d195-4354-aa57-a010b1eedaa0",
+  "page": "https://stocksnap.io/photo/places-restaurant-P8Q51D175I",
+  "photographer": "Michael Browning",
+  "photographer_url": "https://stocksnap.io/author/4439",
+  "alt": "Set tables in a restaurant",
+  "template": "real_estate.commercial-space",
+  "slot": "real_estate.commercial-space:Space type:4"
+ },
+ "solar-ev-charger-parking-0": {
+  "from": "stocksnap",
+  "id": "ad3a084b-e906-42b9-8cff-a8a27e3cf064",
+  "page": "https://stocksnap.io/photo/volkswagen-vintage-NZ3I1GXJC1",
+  "photographer": "adrian",
+  "photographer_url": "https://stocksnap.io/author/38505",
+  "alt": "A car parked in a home garage",
+  "template": "solar.ev-charger",
+  "slot": "solar.ev-charger:Parking:0"
+ },
+ "solar-ev-charger-parking-1": {
+  "from": "stocksnap",
+  "id": "f424811b-6a7e-4fd3-ac81-aea45eaf4660",
+  "page": "https://stocksnap.io/photo/cars-vintage-5JFB8N1XI1",
+  "photographer": "Martha Dominguez",
+  "photographer_url": "https://marthadominguez.wordpress.com",
+  "alt": "A car parked in a driveway",
+  "template": "solar.ev-charger",
+  "slot": "solar.ev-charger:Parking:1"
+ },
+ "solar-ev-charger-parking-2": {
+  "from": "stocksnap",
+  "id": "a7d076a1-c8bb-49fc-9941-485d3dd2c2cd",
+  "page": "https://stocksnap.io/photo/street-parking-0375F1B476",
+  "photographer": "Jay Mantri",
+  "photographer_url": "https://jaymantri.com",
+  "alt": "Cars parked along a street",
+  "template": "solar.ev-charger",
+  "slot": "solar.ev-charger:Parking:2"
+ },
+ "hospitality-travel-inquiry-interests-0": {
+  "from": "stocksnap",
+  "id": "d64bf86c-b73d-40c9-898a-316360987fe4",
+  "page": "https://stocksnap.io/photo/tropical-beach-4ASM8GQGNN",
+  "photographer": "Matt Moloney",
+  "photographer_url": "https://mjmolo.com",
+  "alt": "A sunny beach with palm trees",
+  "template": "hospitality.travel-inquiry",
+  "slot": "hospitality.travel-inquiry:Interests:0"
+ },
+ "hospitality-travel-inquiry-interests-1": {
+  "from": "stocksnap",
+  "id": "f30bc290-4d8e-4e8f-b8cd-a72d30e2c05e",
+  "page": "https://stocksnap.io/photo/city-architecture-AFJ2YJAZUK",
+  "photographer": "Sergei Gussev",
+  "photographer_url": "https://www.flickr.com/sergeigussev",
+  "alt": "Old town rooftops",
+  "template": "hospitality.travel-inquiry",
+  "slot": "hospitality.travel-inquiry:Interests:1"
+ },
+ "hospitality-travel-inquiry-interests-2": {
+  "from": "stocksnap",
+  "id": "defea093-df99-42f0-996c-8840958ea5d8",
+  "page": "https://stocksnap.io/photo/guy-man-HGWAXJFSVV",
+  "photographer": "Erik Scheel",
+  "photographer_url": "https://stocksnap.io/author/30656",
+  "alt": "Fruit at a street market",
+  "template": "hospitality.travel-inquiry",
+  "slot": "hospitality.travel-inquiry:Interests:2"
+ },
+ "hospitality-travel-inquiry-interests-3": {
+  "from": "stocksnap",
+  "id": "cae88703-7e39-4a06-bb4a-33fa3e749f68",
+  "page": "https://stocksnap.io/photo/guy-man-9RZJVHG39A",
+  "photographer": "Danka & Peter",
+  "photographer_url": "https://stocksnap.io/author/115",
+  "alt": "A hiker on a mountain top",
+  "template": "hospitality.travel-inquiry",
+  "slot": "hospitality.travel-inquiry:Interests:3"
+ },
+ "hospitality-travel-inquiry-interests-4": {
+  "from": "stocksnap",
+  "id": "89b3bebb-81d5-4108-9616-2d0eafd2db38",
+  "page": "https://stocksnap.io/photo/spa-wellness-PL9R5H2KKH",
+  "photographer": "Healthy Living",
+  "photographer_url": "https://stocksnap.io",
+  "alt": "Spa towels and stones",
+  "template": "hospitality.travel-inquiry",
+  "slot": "hospitality.travel-inquiry:Interests:4"
+ },
+ "hospitality-travel-inquiry-interests-5": {
+  "from": "stocksnap",
+  "id": "7ec28190-41e9-461e-8b41-1a87849bef1c",
+  "page": "https://stocksnap.io/photo/people-family-Z59RZ5SREK",
+  "photographer": "Natalya Zaritskaya",
+  "photographer_url": "https://stocksnap.io/author/34828",
+  "alt": "A family walking into the sea",
+  "template": "hospitality.travel-inquiry",
+  "slot": "hospitality.travel-inquiry:Interests:5"
+ },
+ "events-venue-tour-spaces-you-d-like-to-see-0": {
+  "from": "stocksnap",
+  "id": "d43efa34-f580-44d4-be7e-9daa831c6dec",
+  "page": "https://stocksnap.io/photo/dining-seating-LYZ6SGASGV",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "A banquet room with round tables",
+  "template": "events.venue-tour",
+  "slot": "events.venue-tour:Spaces you'd like to see:0"
+ },
+ "events-venue-tour-spaces-you-d-like-to-see-1": {
+  "from": "stocksnap",
+  "id": "6a789fc3-1af5-49ba-b020-e7c3ba01e812",
+  "page": "https://stocksnap.io/photo/garden-shrubs-77AD8564CC",
+  "photographer": "Daria Nepriakhina",
+  "photographer_url": "https://epicantus.tumblr.com",
+  "alt": "A garden with a white table and chairs",
+  "template": "events.venue-tour",
+  "slot": "events.venue-tour:Spaces you'd like to see:1"
+ },
+ "events-venue-tour-spaces-you-d-like-to-see-2": {
+  "from": "stocksnap",
+  "id": "92de545b-0f67-4663-874e-b786c258a060",
+  "page": "https://stocksnap.io/photo/rooftops-terrace-6DC285B76C",
+  "photographer": "Leeroy",
+  "photographer_url": "https://www.lifeofpix.com",
+  "alt": "A rooftop terrace over the city",
+  "template": "events.venue-tour",
+  "slot": "events.venue-tour:Spaces you'd like to see:2"
+ },
+ "events-venue-tour-spaces-you-d-like-to-see-3": {
+  "from": "stocksnap",
+  "id": "4f74cd8b-6e0c-4a7f-8c19-07e3826faa9d",
+  "page": "https://stocksnap.io/photo/dining-room-DYTXNUKGP2",
+  "photographer": "Kelly Ishmael",
+  "photographer_url": "https://mindingmynest.com",
+  "alt": "A cozy dining room",
+  "template": "events.venue-tour",
+  "slot": "events.venue-tour:Spaces you'd like to see:3"
+ },
+ "construction-roof-cost-calculator-material-0": {
+  "from": "stocksnap",
+  "id": "0b83e8bf-5dda-4dea-8e94-79ad2389066b",
+  "page": "https://stocksnap.io/photo/roof-shingle-RIUJONCXNY",
+  "photographer": "Bernard Spragg",
+  "photographer_url": "https://www.flickr.com/photos/volvob12b",
+  "alt": "Dark roof shingles",
+  "template": "construction.roof-cost-calculator",
+  "slot": "construction.roof-cost-calculator:Material:0"
+ },
+ "construction-roof-cost-calculator-material-1": {
+  "from": "stocksnap",
+  "id": "027c00ff-3c9b-4c75-8321-78ea75756c8f",
+  "page": "https://stocksnap.io/photo/glass-roof-TME06XKYC0",
+  "photographer": "Bob Richards",
+  "photographer_url": "https://stocksnap.io/author/112960",
+  "alt": "A metal roof",
+  "template": "construction.roof-cost-calculator",
+  "slot": "construction.roof-cost-calculator:Material:1"
+ },
+ "construction-roof-cost-calculator-material-2": {
+  "from": "stocksnap",
+  "id": "5eb163d9-60bd-45bd-841a-5db7405545f8",
+  "page": "https://stocksnap.io/photo/roof-tile-CHVBSJ555N",
+  "photographer": "Bob Richards",
+  "photographer_url": "https://stocksnap.io/author/112960",
+  "alt": "Red clay roof tiles",
+  "template": "construction.roof-cost-calculator",
+  "slot": "construction.roof-cost-calculator:Material:2"
+ },
+ "construction-roof-cost-calculator-material-3": {
+  "from": "wordpress",
+  "id": "0468c151-ea84-43b2-8aad-0df908af9f3f",
+  "page": "https://wordpress.org/photos/photo/118698b719/",
+  "photographer": "sweekar7",
+  "photographer_url": "https://wordpress.org/photos/author/sweekar7/",
+  "alt": "A building with a flat roof",
+  "template": "construction.roof-cost-calculator",
+  "slot": "construction.roof-cost-calculator:Material:3"
+ },
+ "construction-moving-cost-calculator-type-of-home-0": {
+  "from": "stocksnap",
+  "id": "aca46997-793d-4e51-a38a-e32b54f90cf7",
+  "page": "https://stocksnap.io/photo/suburban-street-JDQIGEGDBB",
+  "photographer": "Mike Moloney",
+  "photographer_url": "https://filtergrade.com",
+  "alt": "A quiet suburban street",
+  "template": "construction.moving-cost-calculator",
+  "slot": "construction.moving-cost-calculator:Type of home:0"
+ },
+ "construction-moving-cost-calculator-type-of-home-1": {
+  "from": "stocksnap",
+  "id": "f8df7448-1140-4e77-bc23-8e860b453815",
+  "page": "https://stocksnap.io/photo/apartment-building-VWKJCVGD8F",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "An apartment building",
+  "template": "construction.moving-cost-calculator",
+  "slot": "construction.moving-cost-calculator:Type of home:1"
+ },
+ "construction-moving-cost-calculator-type-of-home-2": {
+  "from": "stocksnap",
+  "id": "10b8b93b-ad1b-4fe5-a42d-356e9fafb3c7",
+  "page": "https://stocksnap.io/photo/neighborhood-houses-E1WPGCLOC3",
+  "photographer": "Qusai Akoud",
+  "photographer_url": "https://stocksnap.io/author/28219",
+  "alt": "A row of colorful townhouses",
+  "template": "construction.moving-cost-calculator",
+  "slot": "construction.moving-cost-calculator:Type of home:2"
+ },
+ "food-wholesale-inquiry-products-you-re-interested-in-0": {
+  "from": "stocksnap",
+  "id": "8a5e52b1-d400-47eb-a255-501f577251ab",
+  "page": "https://stocksnap.io/photo/baking-bread-XXNL0MZLOR",
+  "photographer": "Igor Trepeshchenok",
+  "photographer_url": "https://stocksnap.io/author/4027",
+  "alt": "A loaf of bread on a board",
+  "template": "food.wholesale-inquiry",
+  "slot": "food.wholesale-inquiry:Products you're interested in:0"
+ },
+ "food-wholesale-inquiry-products-you-re-interested-in-1": {
+  "from": "stocksnap",
+  "id": "06dbfe4f-0902-47ae-9f57-8cc46bc992c7",
+  "page": "https://stocksnap.io/photo/croissants-pastries-3D35639910",
+  "photographer": "Daria Nepriakhina",
+  "photographer_url": "https://epicantus.tumblr.com",
+  "alt": "A pile of croissants",
+  "template": "food.wholesale-inquiry",
+  "slot": "food.wholesale-inquiry:Products you're interested in:1"
+ },
+ "food-wholesale-inquiry-products-you-re-interested-in-2": {
+  "from": "stocksnap",
+  "id": "e6d5b938-8da7-4623-9fcf-59819f0b10cc",
+  "page": "https://stocksnap.io/photo/white-cake-UDBNOU3RSU",
+  "photographer": "Daria Shevtsova",
+  "photographer_url": "https://instagram.com/dash.shevtsova",
+  "alt": "A layer cake with fresh berries",
+  "template": "food.wholesale-inquiry",
+  "slot": "food.wholesale-inquiry:Products you're interested in:2"
+ },
+ "food-wholesale-inquiry-products-you-re-interested-in-3": {
+  "from": "stocksnap",
+  "id": "4354e4f9-2b24-409e-beac-8683ff791123",
+  "page": "https://stocksnap.io/photo/bake-biscuits-KP6AY3TFMK",
+  "photographer": "Freestocks.org",
+  "photographer_url": "https://stocksnap.io/author/20064",
+  "alt": "Cookies on a baking tray",
+  "template": "food.wholesale-inquiry",
+  "slot": "food.wholesale-inquiry:Products you're interested in:3"
+ },
+ "food-wholesale-inquiry-products-you-re-interested-in-4": {
+  "from": "stocksnap",
+  "id": "d375cc5c-3bf2-4b73-8650-c7dbc9d2634f",
+  "page": "https://stocksnap.io/photo/baked-muffins-FQ5PQADGZ2",
+  "photographer": "Foodie Girl",
+  "photographer_url": "https://stocksnap.io/author/121423",
+  "alt": "Muffins with seeds on top",
+  "template": "food.wholesale-inquiry",
+  "slot": "food.wholesale-inquiry:Products you're interested in:4"
+ },
+ "food-wholesale-inquiry-products-you-re-interested-in-5": {
+  "from": "stocksnap",
+  "id": "ea853c48-78b7-478b-baf0-3528311f6c50",
+  "page": "https://stocksnap.io/photo/homemade-pie-TUKUBAALHJ",
+  "photographer": "Foodie Girl",
+  "photographer_url": "https://stocksnap.io/author/121423",
+  "alt": "A pie with a golden crust",
+  "template": "food.wholesale-inquiry",
+  "slot": "food.wholesale-inquiry:Products you're interested in:5"
+ },
+ "retail-vip-list-what-do-you-shop-for-0": {
+  "from": "stocksnap",
+  "id": "2b481c96-7041-43e0-97fa-e6c142a52df4",
+  "page": "https://stocksnap.io/photo/dress-people-VGN66GTUT0",
+  "photographer": "Flaunter .com",
+  "photographer_url": "https://stocksnap.io/author/49425",
+  "alt": "A woman in a flowing dress",
+  "template": "retail.vip-list",
+  "slot": "retail.vip-list:What do you shop for?:0"
+ },
+ "retail-vip-list-what-do-you-shop-for-1": {
+  "from": "stocksnap",
+  "id": "dfdd6ac2-b999-4968-a021-901e03ca3a4d",
+  "page": "https://stocksnap.io/photo/suit-tie-OERP9XI9YB",
+  "photographer": "Michal Kulesza",
+  "photographer_url": "https://stocksnap.io/author/5384",
+  "alt": "A man buttoning a blue suit",
+  "template": "retail.vip-list",
+  "slot": "retail.vip-list:What do you shop for?:1"
+ },
+ "retail-vip-list-what-do-you-shop-for-2": {
+  "from": "stocksnap",
+  "id": "5ac84beb-6cfd-4423-b27b-f4a7403e5830",
+  "page": "https://stocksnap.io/photo/autumn-outdoors-SVJE4G0VUO",
+  "photographer": "Dana Tentis",
+  "photographer_url": "http://www.mancare-greceasca.eu",
+  "alt": "A child playing in autumn leaves",
+  "template": "retail.vip-list",
+  "slot": "retail.vip-list:What do you shop for?:2"
+ },
+ "retail-vip-list-what-do-you-shop-for-3": {
+  "from": "stocksnap",
+  "id": "7c8b458e-41e5-4408-a89d-4688472faee2",
+  "page": "https://stocksnap.io/photo/decor-interiordesign-9ORZU6QN7S",
+  "photographer": "Breather",
+  "photographer_url": "https://stocksnap.io/author/746",
+  "alt": "A living room with a dark sofa",
+  "template": "retail.vip-list",
+  "slot": "retail.vip-list:What do you shop for?:3"
+ },
+ "retail-vip-list-what-do-you-shop-for-4": {
+  "from": "stocksnap",
+  "id": "8e4362a7-dc88-432b-8abb-4d2b3089faee",
+  "page": "https://stocksnap.io/photo/gift-box-QYVIUVMVSA",
+  "photographer": "Bruce Mars",
+  "photographer_url": "https://stocksnap.io/author/brucemars",
+  "alt": "Wrapped gifts on a table",
+  "template": "retail.vip-list",
+  "slot": "retail.vip-list:What do you shop for?:4"
+ },
+ "retail-vip-list-what-do-you-shop-for-5": {
+  "from": "stocksnap",
+  "id": "c2dacd39-addc-468a-ac05-59f2740f2e45",
+  "page": "https://stocksnap.io/photo/cufflinks-tie-FSD2YR09H1",
+  "photographer": "Patryk Dziejma",
+  "photographer_url": "https://stocksnap.io/author/5623",
+  "alt": "A watch and a tie on a table",
+  "template": "retail.vip-list",
+  "slot": "retail.vip-list:What do you shop for?:5"
+ },
+ "pets-puppy-waitlist-your-home-0": {
+  "from": "stocksnap",
+  "id": "ffe4498e-ead6-46dd-8344-1bc232b4d3cf",
+  "page": "https://stocksnap.io/photo/patio-backyard-F1AFB213E7",
+  "photographer": "Jay Mantri",
+  "photographer_url": "https://jaymantri.com",
+  "alt": "A backyard with a fence",
+  "template": "pets.puppy-waitlist",
+  "slot": "pets.puppy-waitlist:Your home:0"
+ },
+ "pets-puppy-waitlist-your-home-1": {
+  "from": "stocksnap",
+  "id": "0b2bd03c-6ae8-417a-9627-365347ec1e75",
+  "page": "https://stocksnap.io/photo/beautiful-landscape-970HTFRR9U",
+  "photographer": "Ghost Presenter",
+  "photographer_url": "https://stocksnap.io/author/55737",
+  "alt": "An open green lawn",
+  "template": "pets.puppy-waitlist",
+  "slot": "pets.puppy-waitlist:Your home:1"
+ },
+ "pets-puppy-waitlist-your-home-2": {
+  "from": "stocksnap",
+  "id": "901ee435-0675-4150-a757-8800895ec071",
+  "page": "https://stocksnap.io/photo/architecture-buildings-XVS8FFEABO",
+  "photographer": "J%E1n%20Jakub%20Nani%u0161ta",
+  "photographer_url": "https://stocksnap.io/author/34606",
+  "alt": "Apartment balconies",
+  "template": "pets.puppy-waitlist",
+  "slot": "pets.puppy-waitlist:Your home:2"
+ },
+ "pets-puppy-waitlist-your-home-3": {
+  "from": "stocksnap",
+  "id": "a924a357-2809-455e-902d-acb8cea21c01",
+  "page": "https://stocksnap.io/photo/wood-fence-UOOZ8X87MB",
+  "photographer": "Julie Perry",
+  "photographer_url": "https://stocksnap.io/author/5030",
+  "alt": "A farm gate in the countryside",
+  "template": "pets.puppy-waitlist",
+  "slot": "pets.puppy-waitlist:Your home:3"
+ },
+ "logistics-freight-quote-mode-0": {
+  "from": "stocksnap",
+  "id": "65eb5f4f-999f-464e-96c3-26ecd467b138",
+  "page": "https://stocksnap.io/photo/road-truck-U02UKEL04U",
+  "photographer": "Robson Hatsukami Morgan",
+  "photographer_url": "https://stocksnap.io/author/35918",
+  "alt": "A truck on an open road",
+  "template": "logistics.freight-quote",
+  "slot": "logistics.freight-quote:Mode:0"
+ },
+ "logistics-freight-quote-mode-2": {
+  "from": "stocksnap",
+  "id": "62d569b8-1723-4c04-a2e8-912b15a8e3ad",
+  "page": "https://stocksnap.io/photo/overground-trains-C97ID8B0EF",
+  "photographer": "Burst",
+  "photographer_url": "https://burst.shopify.com",
+  "alt": "A train coming into a city",
+  "template": "logistics.freight-quote",
+  "slot": "logistics.freight-quote:Mode:2"
+ },
+ "logistics-freight-quote-mode-3": {
+  "from": "stocksnap",
+  "id": "fc41601a-8c1d-458c-8f7c-404284aec685",
+  "page": "https://stocksnap.io/photo/airplane-blue-7YY0E14ENJ",
+  "photographer": "Tomasz%20Gaw%u0142owski",
+  "photographer_url": "https://stocksnap.io/author/5216",
+  "alt": "A plane flying through the clouds",
+  "template": "logistics.freight-quote",
+  "slot": "logistics.freight-quote:Mode:3"
+ },
+ "logistics-freight-quote-mode-4": {
+  "from": "stocksnap",
+  "id": "1c619ef2-7704-4555-a049-db94fa0e5617",
+  "page": "https://stocksnap.io/photo/container-stack-NDCVBXJMDJ",
+  "photographer": "Bob Richards",
+  "photographer_url": "https://stocksnap.io/author/112960",
+  "alt": "Stacked shipping containers",
+  "template": "logistics.freight-quote",
+  "slot": "logistics.freight-quote:Mode:4"
+ },
+ "architecture-fee-estimate-project-type-0": {
+  "from": "stocksnap",
+  "id": "c734d757-c275-41fc-8aca-dd58bc0f7e27",
+  "page": "https://stocksnap.io/photo/woodpaneling-house-582053B25E",
+  "photographer": "Jay Mantri",
+  "photographer_url": "https://jaymantri.com",
+  "alt": "A new modern house among trees",
+  "template": "architecture.fee-estimate",
+  "slot": "architecture.fee-estimate:Project type:0"
+ },
+ "architecture-fee-estimate-project-type-1": {
+  "from": "stocksnap",
+  "id": "3059ba00-32ba-466f-bdcb-bed563a4a099",
+  "page": "https://stocksnap.io/photo/construction-zone-6EAB6C3900",
+  "photographer": "Leeroy",
+  "photographer_url": "https://www.lifeofpix.com",
+  "alt": "A builder at work on a site",
+  "template": "architecture.fee-estimate",
+  "slot": "architecture.fee-estimate:Project type:1"
+ },
+ "architecture-fee-estimate-project-type-2": {
+  "from": "stocksnap",
+  "id": "e5bb1517-b835-4b9f-b0e4-848b0b18a36d",
+  "page": "https://stocksnap.io/photo/construction-renovation-MF4PFAS13H",
+  "photographer": "Nolan Issac",
+  "photographer_url": "https://stocksnap.io/author/13560",
+  "alt": "A room in the middle of a renovation",
+  "template": "architecture.fee-estimate",
+  "slot": "architecture.fee-estimate:Project type:2"
+ },
+ "architecture-fee-estimate-project-type-3": {
+  "from": "stocksnap",
+  "id": "6a8148f6-1ab7-4b0c-b150-1acee8d5f036",
+  "page": "https://stocksnap.io/photo/buildings-architecture-O6ZKFPOHXN",
+  "photographer": "Matthew Henry",
+  "photographer_url": "https://stocksnap.io/author/200",
+  "alt": "Office buildings seen from below",
+  "template": "architecture.fee-estimate",
+  "slot": "architecture.fee-estimate:Project type:3"
+ },
+ "agriculture-equipment-demo-where-would-you-like-the-demo-0": {
+  "from": "stocksnap",
+  "id": "3e2acdfb-9155-49db-b279-14e490f400e7",
+  "page": "https://stocksnap.io/photo/tractor-field-OYF2RHMKWN",
+  "photographer": "Ian Livesey",
+  "photographer_url": "https://www.flickr.com/photos/ianlivesey",
+  "alt": "Rows in a farm field",
+  "template": "agriculture.equipment-demo",
+  "slot": "agriculture.equipment-demo:Where would you like the demo?:0"
+ },
+ "agriculture-equipment-demo-where-would-you-like-the-demo-1": {
+  "from": "stocksnap",
+  "id": "57c23cce-f335-4a3f-9b1a-3cf1c8e1b13a",
+  "page": "https://stocksnap.io/photo/red-tractor-9E3726EB2A",
+  "photographer": "Skitter Photo",
+  "photographer_url": "https://skitterphoto.com",
+  "alt": "A red tractor",
+  "template": "agriculture.equipment-demo",
+  "slot": "agriculture.equipment-demo:Where would you like the demo?:1"
+ },
+ "agriculture-equipment-demo-where-would-you-like-the-demo-2": {
+  "from": "stocksnap",
+  "id": "8b6323a9-48d5-4f27-933d-e653dc927099",
+  "page": "https://stocksnap.io/photo/tree-field-ONV344KX9K",
+  "photographer": "Negative Space",
+  "photographer_url": "https://stocksnap.io/author/4440",
+  "alt": "A sunny field with a tree",
+  "template": "agriculture.equipment-demo",
+  "slot": "agriculture.equipment-demo:Where would you like the demo?:2"
+ },
+ "construction-kitchen-remodel-estimate-home-type-0": {
+  "from": "stocksnap",
+  "id": "aca46997-793d-4e51-a38a-e32b54f90cf7",
+  "page": "https://stocksnap.io/photo/suburban-street-JDQIGEGDBB",
+  "photographer": "Mike Moloney",
+  "photographer_url": "https://filtergrade.com",
+  "alt": "A quiet suburban street",
+  "template": "construction.kitchen-remodel-estimate",
+  "slot": "construction.kitchen-remodel-estimate:Home type:0"
+ },
+ "construction-kitchen-remodel-estimate-home-type-1": {
+  "from": "stocksnap",
+  "id": "158d1f34-a7d3-41fa-a526-9148339dc57c",
+  "page": "https://stocksnap.io/photo/apartment-condo-BNH9766JSL",
+  "photographer": "Jimmy Chang",
+  "photographer_url": "https://stocksnap.io/author/7926",
+  "alt": "A tall condo building",
+  "template": "construction.kitchen-remodel-estimate",
+  "slot": "construction.kitchen-remodel-estimate:Home type:1"
+ },
+ "construction-kitchen-remodel-estimate-home-type-2": {
+  "from": "stocksnap",
+  "id": "10b8b93b-ad1b-4fe5-a42d-356e9fafb3c7",
+  "page": "https://stocksnap.io/photo/neighborhood-houses-E1WPGCLOC3",
+  "photographer": "Qusai Akoud",
+  "photographer_url": "https://stocksnap.io/author/28219",
+  "alt": "A row of colorful townhouses",
+  "template": "construction.kitchen-remodel-estimate",
+  "slot": "construction.kitchen-remodel-estimate:Home type:2"
+ },
+ "solar-savings-calculator-type-of-home-0": {
+  "from": "stocksnap",
+  "id": "2b739227-2ec6-4440-99db-9f5df808d1e3",
+  "page": "https://stocksnap.io/photo/house-home-LJ515CPAKI",
+  "photographer": "Binyamin Mellish",
+  "photographer_url": "https://stocksnap.io/author/32212",
+  "alt": "A family house at dusk",
+  "template": "solar.savings-calculator",
+  "slot": "solar.savings-calculator:Type of home:0"
+ },
+ "solar-savings-calculator-type-of-home-1": {
+  "from": "stocksnap",
+  "id": "10b8b93b-ad1b-4fe5-a42d-356e9fafb3c7",
+  "page": "https://stocksnap.io/photo/neighborhood-houses-E1WPGCLOC3",
+  "photographer": "Qusai Akoud",
+  "photographer_url": "https://stocksnap.io/author/28219",
+  "alt": "A row of colorful townhouses",
+  "template": "solar.savings-calculator",
+  "slot": "solar.savings-calculator:Type of home:1"
+ },
+ "solar-savings-calculator-type-of-home-2": {
+  "from": "stocksnap",
+  "id": "366c3402-4715-4559-a7b2-408c4200e433",
+  "page": "https://stocksnap.io/photo/buildings-houses-P4XQ42OMNY",
+  "photographer": "Vikram Mudaliar",
+  "photographer_url": "https://www.facebook.com/PicturScape",
+  "alt": "A condo building",
+  "template": "solar.savings-calculator",
+  "slot": "solar.savings-calculator:Type of home:2"
+ },
+ "solar-savings-calculator-type-of-home-3": {
+  "from": "stocksnap",
+  "id": "a10fe8d7-1b57-4b5c-ad74-e7225951fdd7",
+  "page": "https://stocksnap.io/photo/nature-landscape-D2INGQN2HP",
+  "photographer": "Binyamin Mellish",
+  "photographer_url": "https://stocksnap.io/author/32212",
+  "alt": "A trailer home in the desert",
+  "template": "solar.savings-calculator",
+  "slot": "solar.savings-calculator:Type of home:3"
+ },
+ "events-venue-inquiry-spaces-you-d-like-to-see-0": {
+  "from": "stocksnap",
+  "id": "d43efa34-f580-44d4-be7e-9daa831c6dec",
+  "page": "https://stocksnap.io/photo/dining-seating-LYZ6SGASGV",
+  "photographer": "Matt Bango",
+  "photographer_url": "https://mattbango.photo",
+  "alt": "A banquet room with round tables",
+  "template": "events.venue-inquiry",
+  "slot": "events.venue-inquiry:Spaces you'd like to see:0"
+ },
+ "events-venue-inquiry-spaces-you-d-like-to-see-1": {
+  "from": "stocksnap",
+  "id": "6a789fc3-1af5-49ba-b020-e7c3ba01e812",
+  "page": "https://stocksnap.io/photo/garden-shrubs-77AD8564CC",
+  "photographer": "Daria Nepriakhina",
+  "photographer_url": "https://epicantus.tumblr.com",
+  "alt": "A garden with a white table and chairs",
+  "template": "events.venue-inquiry",
+  "slot": "events.venue-inquiry:Spaces you'd like to see:1"
+ },
+ "events-venue-inquiry-spaces-you-d-like-to-see-2": {
+  "from": "stocksnap",
+  "id": "68023f35-57ad-4915-aad8-ac9b5f91fc39",
+  "page": "https://stocksnap.io/photo/tables-chairs-P15VNVN9KB",
+  "photographer": "Leeroy",
+  "photographer_url": "https://www.lifeofpix.com",
+  "alt": "A terrace with a table and chairs",
+  "template": "events.venue-inquiry",
+  "slot": "events.venue-inquiry:Spaces you'd like to see:2"
+ },
+ "events-venue-inquiry-spaces-you-d-like-to-see-3": {
+  "from": "stocksnap",
+  "id": "4f74cd8b-6e0c-4a7f-8c19-07e3826faa9d",
+  "page": "https://stocksnap.io/photo/dining-room-DYTXNUKGP2",
+  "photographer": "Kelly Ishmael",
+  "photographer_url": "https://mindingmynest.com",
+  "alt": "A cozy dining room",
+  "template": "events.venue-inquiry",
+  "slot": "events.venue-inquiry:Spaces you'd like to see:3"
+ },
+ "events-venue-inquiry-spaces-you-d-like-to-see-4": {
+  "from": "stocksnap",
+  "id": "8a654264-a6b7-4d61-b891-f07c6210cd39",
+  "page": "https://stocksnap.io/photo/events-venue-5K1C2ZXZZP",
+  "photographer": "Sweet Ice Cream Photography",
+  "photographer_url": "https://stocksnap.io/author/28403",
+  "alt": "A long hall set for an event",
+  "template": "events.venue-inquiry",
+  "slot": "events.venue-inquiry:Spaces you'd like to see:4"
+ }
+}
