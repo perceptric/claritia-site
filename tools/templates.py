@@ -200,6 +200,14 @@ def crumbs(items):
 def thumb(t, tid: str | None = None) -> str:
     tid = tid or t["theme"]
     s = t["schema"]
+    ph = (s.get("cover") or {}).get("photo")
+    if ph:
+        # A welcome photo: the welcome screen as it opens, the photo on its side.
+        attrs = th_attrs(tid).replace('class="fth ', 'class="tp tp--cover fth ')
+        right = " tp__cv--right" if ph.get("layout") == "right" else ""
+        img = photo_img({**ph, "alt": ""}, "tp__ph", "200px")
+        return (f'<span {attrs} data-own="{t["theme"]}" aria-hidden="true"><span class="fth__card"><span class="tp__cv{right}">{img}'
+                f'<span class="tp__in"><b class="tp__title">{esc(s["cover"]["title"])}</b><span class="tp__btn">{esc(s["cover"].get("button") or "Start")}</span></span></span></span></span>')
     parts = [f'<b class="tp__title">{esc(s["title"])}</b>']
     if s.get("intro"):
         parts.append(f'<span class="tp__intro">{esc(s["intro"])}</span>')
@@ -357,13 +365,28 @@ def field(f) -> str:
     return ""
 
 
+def photo_img(ph: dict, cls: str, sizes: str) -> str:
+    """A starter photo (assets/form-photos), in the widths it has, with its words and the spot kept in view."""
+    n = ph["name"]
+    focus = " ".join(f"{x}%" for x in (ph.get("focus") or "50,50").split(","))
+    return (f'<img class="{cls}" src="/assets/form-photos/{n}-1280.webp" srcset="/assets/form-photos/{n}-640.webp 640w, /assets/form-photos/{n}-1280.webp 1280w, '
+            f'/assets/form-photos/{n}-1920.webp 1920w" sizes="{sizes}" alt="{esc(ph.get("alt", ""))}" style="object-position:{focus}" loading="lazy" decoding="async">')
+
+
 def cover_html(s) -> str:
-    """A cover screen: a title, a line and Start. Without JS the form shows under it."""
+    """A cover screen: a title, a line and Start, with its photo beside, on top or behind. Without JS the form shows under it."""
     c = s.get("cover")
     if not c:
         return ""
     line = f'<p class="cf__cover-p">{esc(c["text"])}</p>' if c.get("text") else ""
-    return f'<div class="cf__cover" data-cover><h3 class="cf__cover-t">{esc(c["title"])}</h3>{line}<p class="cf__cover-n">{len(s["pages"])} pages</p><button type="button" class="cf__btn" data-start>{esc(c.get("button") or "Start")}</button></div>'
+    pages = f'<p class="cf__cover-n">{len(s["pages"])} pages</p>' if len(s["pages"]) > 1 else ""
+    words = f'<h3 class="cf__cover-t">{esc(c["title"])}</h3>{line}{pages}<button type="button" class="cf__btn" data-start>{esc(c.get("button") or "Start")}</button>'
+    ph = c.get("photo")
+    if not ph:
+        return f'<div class="cf__cover" data-cover>{words}</div>'
+    lay = ph.get("layout", "right")
+    side = lay in ("left", "right")
+    return f'<div class="cf__cover cf__cover--{lay}" data-cover>{photo_img(ph, "cf__cover-img", "(min-width: 768px) 40vw, 100vw" if side else "100vw")}<div class="cf__cover-w">{words}</div></div>'
 
 
 def live_form(t) -> str:

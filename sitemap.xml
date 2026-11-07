@@ -84,6 +84,29 @@
   <!-- integrations:end -->
   <url><loc>https://tryclaritia.com/privacy</loc></url>
   <url><loc>https://tryclaritia.com/terms</loc></url>
+  <!-- blog:start -->
+  <url><loc>https://tryclaritia.com/blog</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-form-builder</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-form-builder-with-conditional-logic</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-calendly-alternatives</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-round-robin-scheduling-software</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-scheduling-software-small-business</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-free-form-builder</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-chili-piper-alternatives</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-appointment-scheduling-software</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-lead-generation-form-builders</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-typeform-alternatives</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-scheduling-software-for-sales-teams</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-free-scheduling-software</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-jotform-alternatives</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-lead-routing-software</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-ai-form-builder</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-cal-com-alternatives</loc><lastmod>2026-10-24</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-google-forms-alternatives</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-lead-follow-up-software</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-wordpress-form-builder</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://tryclaritia.com/blog/best-hubspot-forms-alternatives</loc><lastmod>2026-10-20</lastmod></url>
+  <!-- blog:end -->
   <!-- templates:start -->
   <url><loc>https://tryclaritia.com/templates</loc></url>
   <url><loc>https://tryclaritia.com/templates/multi-page</loc></url>
@@ -807,27 +830,4 @@
   <url><loc>https://tryclaritia.com/templates/general-in-depth-feedback</loc></url>
   <url><loc>https://tryclaritia.com/templates/hospitality-trip-planner</loc></url>
   <!-- templates:end -->
-  <!-- blog:start -->
-  <url><loc>https://tryclaritia.com/blog</loc><lastmod>2026-11-06</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-form-builder</loc><lastmod>2026-11-06</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-form-builder-with-conditional-logic</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-calendly-alternatives</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-round-robin-scheduling-software</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-scheduling-software-small-business</loc><lastmod>2026-11-03</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-free-form-builder</loc><lastmod>2026-11-02</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-chili-piper-alternatives</loc><lastmod>2026-11-01</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-appointment-scheduling-software</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-lead-generation-form-builders</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-typeform-alternatives</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-scheduling-software-for-sales-teams</loc><lastmod>2026-10-29</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-free-scheduling-software</loc><lastmod>2026-10-28</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-jotform-alternatives</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-lead-routing-software</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-ai-form-builder</loc><lastmod>2026-10-25</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-cal-com-alternatives</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-google-forms-alternatives</loc><lastmod>2026-10-23</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-lead-follow-up-software</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-wordpress-form-builder</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://tryclaritia.com/blog/best-hubspot-forms-alternatives</loc><lastmod>2026-10-20</lastmod></url>
-  <!-- blog:end -->
 </urlset>
