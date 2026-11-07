@@ -2633,6 +2633,16 @@
     "end": {
      "title": "Thank you",
      "text": "Your feedback helps us get better."
+    },
+    "cover": {
+     "title": "Customer feedback",
+     "text": "Learn what customers love and what to fix.",
+     "button": "Start",
+     "photo": {
+      "name": "general-customer-feedback-welcome",
+      "alt": "A latte on a cafe table",
+      "layout": "top"
+     }
     }
    }
   },
@@ -2718,6 +2728,16 @@
     "end": {
      "title": "Thanks for your score",
      "text": "We read every answer."
+    },
+    "cover": {
+     "title": "NPS survey",
+     "text": "The one-question loyalty score, with the reason behind it.",
+     "button": "Start",
+     "photo": {
+      "name": "general-nps-welcome",
+      "alt": "A woman with a big smile",
+      "layout": "top"
+     }
     }
    }
   },
@@ -3495,6 +3515,16 @@
     "end": {
      "title": "Thank you",
      "text": "We'll send you the final version before it goes live."
+    },
+    "cover": {
+     "title": "Testimonial request",
+     "text": "Collect quotes you can use on your site.",
+     "button": "Start",
+     "photo": {
+      "name": "general-testimonial-request-welcome",
+      "alt": "A bright cafe interior",
+      "layout": "top"
+     }
     }
    }
   },
@@ -3687,6 +3717,16 @@
     "end": {
      "title": "Thanks for the idea",
      "text": "Our product team reads every one."
+    },
+    "cover": {
+     "title": "Product feedback",
+     "text": "Gather ideas and pain points by product area.",
+     "button": "Start",
+     "photo": {
+      "name": "general-product-feedback-welcome",
+      "alt": "Small products laid out on a pink table",
+      "layout": "top"
+     }
     }
    }
   },
@@ -4121,6 +4161,16 @@
     "end": {
      "title": "Your trial is ready",
      "text": "Check your inbox for your sign-in link."
+    },
+    "cover": {
+     "title": "Free trial sign-up",
+     "text": "Start trials with the context sales needs later.",
+     "button": "Start",
+     "photo": {
+      "name": "saas-free-trial-welcome",
+      "alt": "A laptop and coffee on a wooden desk",
+      "layout": "right"
+     }
     }
    }
   },
@@ -4568,6 +4618,16 @@
     "end": {
      "title": "You're all set",
      "text": "We'll tailor your workspace to your goal. If you asked for a call, we'll email you a time."
+    },
+    "cover": {
+     "title": "Onboarding survey",
+     "text": "Learn each new user's goal to personalize setup.",
+     "button": "Start",
+     "photo": {
+      "name": "saas-onboarding-survey-welcome",
+      "alt": "A laptop and a plant on a table",
+      "layout": "left"
+     }
     }
    }
   },
@@ -4990,6 +5050,16 @@
     "end": {
      "title": "Application received",
      "text": "We'll pick testers within two weeks."
+    },
+    "cover": {
+     "title": "Beta program application",
+     "text": "Pick the right testers for early features.",
+     "button": "Start",
+     "photo": {
+      "name": "saas-beta-program-welcome",
+      "alt": "App icons on a phone screen",
+      "layout": "left"
+     }
     }
    }
   },
@@ -5292,6 +5362,16 @@
      "title": "Thanks for applying",
      "text": "We'll be in touch before the next session. Book a quick intro if you like.",
      "booking": true
+    },
+    "cover": {
+     "title": "Customer advisory board",
+     "text": "Invite power users to shape the roadmap.",
+     "button": "Start",
+     "photo": {
+      "name": "saas-advisory-board-welcome",
+      "alt": "A man at a boardroom table",
+      "layout": "right"
+     }
     }
    }
   },
@@ -5940,7 +6020,12 @@
     "cover": {
      "title": "Welcome aboard",
      "text": "About 10 minutes. Have your logo and brand files nearby.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "agency-client-intake-welcome",
+      "alt": "Paints and brushes on a table",
+      "layout": "right"
+     }
     },
     "copy": true
    }
@@ -6052,6 +6137,16 @@
     "end": {
      "title": "Brief received",
      "text": "We'll confirm scope and timing within one business day."
+    },
+    "cover": {
+     "title": "Creative brief",
+     "text": "A brief your creative team can work from.",
+     "button": "Start",
+     "photo": {
+      "name": "agency-creative-brief-welcome",
+      "alt": "A tablet and a sheet of paper on a desk",
+      "layout": "left"
+     }
     }
    }
   },
@@ -6562,6 +6657,16 @@
     "end": {
      "title": "Thanks for applying",
      "text": "We'll reach out when a project fits."
+    },
+    "cover": {
+     "title": "Freelancer application",
+     "text": "Build a bench of reliable freelancers.",
+     "button": "Start",
+     "photo": {
+      "name": "agency-freelancer-application-welcome",
+      "alt": "Hands typing on a laptop",
+      "layout": "left"
+     }
     }
    }
   },
@@ -6942,6 +7047,16 @@
      "title": "Thanks for the detail",
      "text": "Book your discovery call below.",
      "booking": true
+    },
+    "cover": {
+     "title": "Discovery questionnaire",
+     "text": "Go into the first meeting already informed.",
+     "button": "Start",
+     "photo": {
+      "name": "consulting-discovery-welcome",
+      "alt": "A flowchart drawn on a whiteboard",
+      "layout": "right"
+     }
     }
    }
   },
@@ -7259,6 +7374,16 @@
     "end": {
      "title": "You're registered",
      "text": "We'll send the details a week before."
+    },
+    "cover": {
+     "title": "Workshop registration",
+     "text": "Sign people up for a workshop or training day.",
+     "button": "Start",
+     "photo": {
+      "name": "consulting-workshop-registration-welcome",
+      "alt": "A person at a pottery wheel in a workshop",
+      "layout": "right"
+     }
     }
    }
   },
@@ -7364,6 +7489,16 @@
     "end": {
      "title": "Thanks, we got it",
      "text": "We'll get back to you about availability within two business days."
+    },
+    "cover": {
+     "title": "Speaker request",
+     "text": "Take requests for talks and keynotes.",
+     "button": "Start",
+     "photo": {
+      "name": "consulting-speaker-request-welcome",
+      "alt": "An audience facing stage lights",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -7840,6 +7975,16 @@
     "end": {
      "title": "Intake received",
      "text": "We'll be in touch to schedule your first meeting."
+    },
+    "cover": {
+     "title": "New client intake",
+     "text": "Collect contact details and matter facts.",
+     "button": "Start",
+     "photo": {
+      "name": "legal-new-client-intake-welcome",
+      "alt": "An open book on a table",
+      "layout": "left"
+     }
     }
    }
   },
@@ -8476,7 +8621,12 @@
     "cover": {
      "title": "Tax prep intake",
      "text": "About 10 minutes. Have your tax forms and last year's return nearby.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "accounting-tax-intake-welcome",
+      "alt": "Red binders on a shelf",
+      "layout": "right"
+     }
     },
     "resume": true,
     "copy": true
@@ -9130,7 +9280,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Risk tolerance quiz",
+     "text": "A short quiz that scores how much risk fits.",
+     "button": "Start",
+     "photo": {
+      "name": "finance-risk-quiz-welcome",
+      "alt": "A stock chart on a laptop screen",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -9253,6 +9414,16 @@
     "end": {
      "title": "Thanks, we're reviewing",
      "text": "A loan officer will call within one business day."
+    },
+    "cover": {
+     "title": "Loan pre-qualification",
+     "text": "Pre-qualify borrowers before a full application.",
+     "button": "Start",
+     "photo": {
+      "name": "finance-loan-prequal-welcome",
+      "alt": "A pile of old keys",
+      "layout": "right"
+     }
     }
    }
   },
@@ -9602,7 +9773,12 @@
     "cover": {
      "title": "Business funding application",
      "text": "About 10 minutes. Have your bank statements and tax returns ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "finance-business-funding-welcome",
+      "alt": "A laptop showing charts",
+      "layout": "left"
+     }
     },
     "resume": true,
     "copy": true
@@ -10572,6 +10748,16 @@
     "end": {
      "title": "Request sent",
      "text": "We'll confirm the time by text or email."
+    },
+    "cover": {
+     "title": "Showing request",
+     "text": "Let buyers request a viewing.",
+     "button": "Start",
+     "photo": {
+      "name": "real-estate-showing-request-welcome",
+      "alt": "A brick house with wooden doors",
+      "layout": "left"
+     }
     }
    }
   },
@@ -10666,6 +10852,16 @@
     "end": {
      "title": "Welcome",
      "text": "Enjoy the tour. We'll follow up with similar homes."
+    },
+    "cover": {
+     "title": "Open house sign-in",
+     "text": "A tablet-friendly sign-in for open houses.",
+     "button": "Start",
+     "photo": {
+      "name": "real-estate-open-house-welcome",
+      "alt": "A bright living room with a sofa",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -11030,7 +11226,12 @@
     "cover": {
      "title": "Rental application",
      "text": "About 10 minutes. Have your pay stubs and photo ID ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "real-estate-rental-application-welcome",
+      "alt": "A bright, furnished bedroom",
+      "layout": "right"
+     }
     },
     "resume": true,
     "copy": true
@@ -11389,6 +11590,16 @@
      "title": "Thanks",
      "text": "Book your listing walkthrough.",
      "booking": true
+    },
+    "cover": {
+     "title": "Seller listing intake",
+     "text": "Everything you need to list a home.",
+     "button": "Start",
+     "photo": {
+      "name": "real-estate-seller-intake-welcome",
+      "alt": "A porch looking out over the hills",
+      "layout": "left"
+     }
     }
    }
   },
@@ -11659,6 +11870,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll call you shortly to confirm a time."
+    },
+    "cover": {
+     "title": "Service request",
+     "text": "Fast service calls with urgency up front.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-service-request-welcome",
+      "alt": "A hard hat, gloves and tools",
+      "layout": "left"
+     }
     }
    }
   },
@@ -12219,6 +12440,16 @@
     "end": {
      "title": "Thank you",
      "text": "We appreciate your business."
+    },
+    "cover": {
+     "title": "Customer satisfaction",
+     "text": "Ask for a rating after each job.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-satisfaction-welcome",
+      "alt": "A living room with yellow chairs",
+      "layout": "top"
+     }
     }
    }
   },
@@ -12716,6 +12947,16 @@
     "end": {
      "title": "Request received",
      "text": "Our front desk will confirm your time."
+    },
+    "cover": {
+     "title": "Appointment request",
+     "text": "Let patients ask for an appointment.",
+     "button": "Start",
+     "photo": {
+      "name": "healthcare-appointment-welcome",
+      "alt": "A clean treatment room",
+      "layout": "right"
+     }
     }
    }
   },
@@ -13075,7 +13316,12 @@
     "cover": {
      "title": "New patient intake",
      "text": "About 10 minutes. Have your insurance card and medicine list ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "healthcare-patient-intake-welcome",
+      "alt": "A treatment room with equipment",
+      "layout": "right"
+     }
     },
     "resume": true,
     "copy": true
@@ -13169,6 +13415,16 @@
     "end": {
      "title": "Thank you",
      "text": "Your feedback helps us care for you better."
+    },
+    "cover": {
+     "title": "Patient feedback",
+     "text": "Hear how each visit went.",
+     "button": "Start",
+     "photo": {
+      "name": "healthcare-patient-feedback-welcome",
+      "alt": "A bright hospital corridor",
+      "layout": "top"
+     }
     }
    }
   },
@@ -13375,6 +13631,16 @@
      "title": "Thanks",
      "text": "Pick a time for your online visit.",
      "booking": true
+    },
+    "cover": {
+     "title": "Telehealth check-in",
+     "text": "A short check-in before an online visit.",
+     "button": "Start",
+     "photo": {
+      "name": "healthcare-telehealth-welcome",
+      "alt": "Hands holding a tablet",
+      "layout": "left"
+     }
     }
    }
   },
@@ -13484,6 +13750,16 @@
      "title": "Thanks",
      "text": "Pick a time for your first visit.",
      "booking": true
+    },
+    "cover": {
+     "title": "New patient booking",
+     "text": "Book new dental or wellness patients.",
+     "button": "Start",
+     "photo": {
+      "name": "wellness-new-patient-welcome",
+      "alt": "A bright, quiet room with a table",
+      "layout": "left"
+     }
     }
    }
   },
@@ -13753,7 +14029,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Wellness assessment",
+     "text": "A quick score that starts a conversation.",
+     "button": "Start",
+     "photo": {
+      "name": "wellness-assessment-welcome",
+      "alt": "Someone meditating at sunset",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -13954,6 +14241,16 @@
     "end": {
      "title": "You're booked in",
      "text": "We'll confirm your class by email."
+    },
+    "cover": {
+     "title": "Free trial class",
+     "text": "Turn curious visitors into first-time members.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-trial-class-welcome",
+      "alt": "A small yoga class",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -14088,6 +14385,16 @@
      "title": "Thanks",
      "text": "Book your first session.",
      "booking": true
+    },
+    "cover": {
+     "title": "Personal training intake",
+     "text": "Goals, injuries and schedule for new clients.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-pt-intake-welcome",
+      "alt": "Sneakers and small dumbbells",
+      "layout": "right"
+     }
     }
    }
   },
@@ -14351,7 +14658,17 @@
      "title": "Welcome",
      "text": "Your membership starts on the date you picked."
     },
-    "copy": true
+    "copy": true,
+    "cover": {
+     "title": "Membership sign-up",
+     "text": "Sign up members with a plan and signature.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-membership-welcome",
+      "alt": "A barbell on a wooden floor",
+      "layout": "right"
+     }
+    }
    }
   },
   {
@@ -14460,6 +14777,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll confirm your time by text."
+    },
+    "cover": {
+     "title": "Salon booking",
+     "text": "Book services with a stylist.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-salon-booking-welcome",
+      "alt": "A pair of salon scissors",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -15009,7 +15336,12 @@
     "cover": {
      "title": "Application",
      "text": "About 20 minutes. Have your transcripts and two references ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "education-application-welcome",
+      "alt": "A college building across a green lawn",
+      "layout": "left"
+     }
     },
     "resume": true,
     "copy": true
@@ -15107,6 +15439,16 @@
     "end": {
      "title": "Thank you",
      "text": "Your feedback improves the next course."
+    },
+    "cover": {
+     "title": "Course feedback",
+     "text": "End-of-course feedback on content and teaching.",
+     "button": "Start",
+     "photo": {
+      "name": "education-course-feedback-welcome",
+      "alt": "Pages of open books",
+      "layout": "top"
+     }
     }
    }
   },
@@ -15233,6 +15575,16 @@
      "title": "Thanks",
      "text": "Pick a time for a free first session.",
      "booking": true
+    },
+    "cover": {
+     "title": "Tutoring request",
+     "text": "Match students with the right tutor.",
+     "button": "Start",
+     "photo": {
+      "name": "education-tutoring-welcome",
+      "alt": "A child doing homework at a table",
+      "layout": "right"
+     }
     }
    }
   },
@@ -15606,7 +15958,12 @@
     "cover": {
      "title": "Scholarship application",
      "text": "About 15 minutes. Have your transcript and a reference ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "education-scholarship-welcome",
+      "alt": "Graduates in caps and gowns",
+      "layout": "right"
+     }
     },
     "resume": true,
     "copy": true
@@ -15741,7 +16098,18 @@
        "text": "Review the lesson and try again."
       }
      ]
-    }
+    },
+    "cover": {
+     "title": "Quiz / knowledge check",
+     "text": "A scored quiz with instant results.",
+     "button": "Start",
+     "photo": {
+      "name": "education-knowledge-check-welcome",
+      "alt": "The pages of an open book",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -15978,7 +16346,18 @@
     "end": {
      "title": "Your picks are on the way",
      "text": "Check your inbox for products chosen for you."
-    }
+    },
+    "cover": {
+     "title": "Product quiz",
+     "text": "Recommend products and grow your list.",
+     "button": "Start",
+     "photo": {
+      "name": "ecommerce-product-quiz-welcome",
+      "alt": "Makeup products laid out on a table",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -16420,6 +16799,16 @@
     "end": {
      "title": "Thanks for the review",
      "text": "It will appear once approved."
+    },
+    "cover": {
+     "title": "Product review",
+     "text": "Collect reviews with photos.",
+     "button": "Start",
+     "photo": {
+      "name": "ecommerce-review-welcome",
+      "alt": "A small wrapped package",
+      "layout": "top"
+     }
     }
    }
   },
@@ -16642,6 +17031,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll send a quote within two business days."
+    },
+    "cover": {
+     "title": "Custom order request",
+     "text": "Take custom orders with specs and a date.",
+     "button": "Start",
+     "photo": {
+      "name": "ecommerce-custom-order-welcome",
+      "alt": "Colorful woven baskets",
+      "layout": "top"
+     }
     }
    }
   },
@@ -16979,6 +17378,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll confirm shipping by email."
+    },
+    "cover": {
+     "title": "Sample request",
+     "text": "Ship samples to qualified buyers.",
+     "button": "Start",
+     "photo": {
+      "name": "manufacturing-sample-welcome",
+      "alt": "A fan of color swatches",
+      "layout": "top"
+     }
     }
    }
   },
@@ -17876,6 +18285,16 @@
     "end": {
      "title": "Application received",
      "text": "Our recruiter will call you."
+    },
+    "cover": {
+     "title": "Driver application",
+     "text": "Hire drivers with license and experience.",
+     "button": "Start",
+     "photo": {
+      "name": "logistics-driver-application-welcome",
+      "alt": "Hands on a steering wheel in the rain",
+      "layout": "left"
+     }
     }
    }
   },
@@ -17976,6 +18395,16 @@
     "end": {
      "title": "You're booked",
      "text": "We'll have the car ready."
+    },
+    "cover": {
+     "title": "Test drive booking",
+     "text": "Book test drives by model and time.",
+     "button": "Start",
+     "photo": {
+      "name": "automotive-test-drive-welcome",
+      "alt": "Inside a convertible car",
+      "layout": "left"
+     }
     }
    }
   },
@@ -18206,6 +18635,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll confirm your appointment."
+    },
+    "cover": {
+     "title": "Service appointment",
+     "text": "Book service by vehicle and job.",
+     "button": "Start",
+     "photo": {
+      "name": "automotive-service-welcome",
+      "alt": "Close-up of a car engine",
+      "layout": "right"
+     }
     }
    }
   },
@@ -18445,6 +18884,16 @@
      "title": "Thanks",
      "text": "Book a call with our events team.",
      "booking": true
+    },
+    "cover": {
+     "title": "Group booking / event inquiry",
+     "text": "Private events and group bookings.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-group-booking-welcome",
+      "alt": "Glasses of sparkling wine raised for a toast",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -18564,6 +19013,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll send menu options and a quote."
+    },
+    "cover": {
+     "title": "Catering request",
+     "text": "Menus, guest counts and dietary needs.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-catering-welcome",
+      "alt": "Small pastries on a platter",
+      "layout": "top"
+     }
     }
    }
   },
@@ -18662,6 +19121,16 @@
     "end": {
      "title": "Thank you",
      "text": "We hope to welcome you back soon."
+    },
+    "cover": {
+     "title": "Guest feedback",
+     "text": "Ratings and comments after each stay.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-guest-feedback-welcome",
+      "alt": "A quiet lobby with a bench",
+      "layout": "top"
+     }
     }
    }
   },
@@ -18889,6 +19358,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll confirm your table by text."
+    },
+    "cover": {
+     "title": "Reservation request",
+     "text": "Table requests for busy nights.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-reservation-welcome",
+      "alt": "A set table in a warm restaurant",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -19004,6 +19483,16 @@
     "end": {
      "title": "You're registered",
      "text": "Your ticket is on its way by email."
+    },
+    "cover": {
+     "title": "Event registration",
+     "text": "Tickets, roles and dietary needs in one form.",
+     "button": "Start",
+     "photo": {
+      "name": "events-registration-welcome",
+      "alt": "A crowd under stage lights",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -19124,6 +19613,16 @@
     "end": {
      "title": "Thanks for submitting",
      "text": "We'll announce speakers by email."
+    },
+    "cover": {
+     "title": "Speaker application",
+     "text": "A call for papers with abstracts and video.",
+     "button": "Start",
+     "photo": {
+      "name": "events-speaker-application-welcome",
+      "alt": "A microphone on an empty stage",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -19350,6 +19849,16 @@
     "end": {
      "title": "You're signed up",
      "text": "We'll send your exhibitor kit."
+    },
+    "cover": {
+     "title": "Exhibitor sign-up",
+     "text": "Booth size, power and contacts.",
+     "button": "Start",
+     "photo": {
+      "name": "events-exhibitor-welcome",
+      "alt": "A large hall with rows of seats",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -19445,6 +19954,16 @@
     "end": {
      "title": "Thank you",
      "text": "See you next time."
+    },
+    "cover": {
+     "title": "Post-event survey",
+     "text": "What worked and what to change next time.",
+     "button": "Start",
+     "photo": {
+      "name": "events-post-event-welcome",
+      "alt": "Stage lights at a concert",
+      "layout": "top"
+     }
     }
    }
   },
@@ -19554,6 +20073,16 @@
     "end": {
      "title": "Thanks for volunteering",
      "text": "We'll send your schedule a week before."
+    },
+    "cover": {
+     "title": "Volunteer sign-up",
+     "text": "Shifts, skills and shirt sizes.",
+     "button": "Start",
+     "photo": {
+      "name": "events-volunteer-welcome",
+      "alt": "A volunteer in an orange vest",
+      "layout": "right"
+     }
     }
    }
   },
@@ -19656,6 +20185,16 @@
      "title": "Thanks",
      "text": "Pick a slot at the event.",
      "booking": true
+    },
+    "cover": {
+     "title": "Meeting request at event",
+     "text": "Book meetings at a conference.",
+     "button": "Start",
+     "photo": {
+      "name": "events-meeting-request-welcome",
+      "alt": "An empty meeting room with a long table",
+      "layout": "left"
+     }
     }
    }
   },
@@ -19882,6 +20421,16 @@
     "end": {
      "title": "Thank you",
      "text": "Our volunteer team will be in touch."
+    },
+    "cover": {
+     "title": "Volunteer application",
+     "text": "Recruit and screen volunteers.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-volunteer-welcome",
+      "alt": "A woman reading to a child",
+      "layout": "left"
+     }
     }
    }
   },
@@ -19983,6 +20532,16 @@
     "end": {
      "title": "Thank you for your pledge",
      "text": "We'll send a receipt and how to complete your gift."
+    },
+    "cover": {
+     "title": "Donation pledge",
+     "text": "Pledges with amount and dedication.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-donation-pledge-welcome",
+      "alt": "A yellow donations bucket",
+      "layout": "top"
+     }
     }
    }
   },
@@ -20310,7 +20869,12 @@
     "cover": {
      "title": "Grant application",
      "text": "About 20 minutes. Have your budget and latest financial statement ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-grant-application-welcome",
+      "alt": "A field of sunflowers",
+      "layout": "right"
+     }
     },
     "resume": true,
     "copy": true
@@ -20406,6 +20970,16 @@
     "end": {
      "title": "Received",
      "text": "A caseworker will contact you."
+    },
+    "cover": {
+     "title": "Program intake",
+     "text": "Enroll people in services.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-program-intake-welcome",
+      "alt": "A city street lined with parked cars",
+      "layout": "left"
+     }
     }
    }
   },
@@ -20516,6 +21090,16 @@
     "end": {
      "title": "Thanks for letting us know",
      "text": "We'll send details before the event."
+    },
+    "cover": {
+     "title": "Event RSVP",
+     "text": "Simple RSVPs with guests and dietary needs.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-event-rsvp-welcome",
+      "alt": "People gathered at an outdoor event",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -20805,7 +21389,12 @@
     "cover": {
      "title": "Job application",
      "text": "About 10 minutes. Have your resume ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "hr-job-application-welcome",
+      "alt": "Hands at a laptop with notes",
+      "layout": "right"
+     }
     },
     "resume": true,
     "copy": true
@@ -22209,7 +22798,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Security readiness quiz",
+     "text": "A scored quiz that opens security conversations.",
+     "button": "Start",
+     "photo": {
+      "name": "it-security-quiz-welcome",
+      "alt": "An old padlock on a green door",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -22315,6 +22915,16 @@
      "title": "Thanks",
      "text": "Book a planning call.",
      "booking": true
+    },
+    "cover": {
+     "title": "Cloud migration intake",
+     "text": "Scope a move to the cloud.",
+     "button": "Start",
+     "photo": {
+      "name": "it-cloud-migration-welcome",
+      "alt": "A network cable plugged in",
+      "layout": "left"
+     }
     }
    }
   },
@@ -22670,6 +23280,16 @@
     "end": {
      "title": "Your date is on hold",
      "text": "We'll email your booking details within one business day."
+    },
+    "cover": {
+     "title": "Bridal hair and makeup",
+     "text": "Tell us about your day. You'll see a price before you pay the deposit.",
+     "button": "Start",
+     "photo": {
+      "name": "beauty-bridal-hair-makeup-welcome",
+      "alt": "A bride in her wedding dress",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -22822,6 +23442,16 @@
      "title": "Choose your arrival time",
      "text": "Pick a time and we'll hold your treatment rooms.",
      "booking": true
+    },
+    "cover": {
+     "title": "Spa day booking",
+     "text": "Book spa packages for one guest or a group, with a live price.",
+     "button": "Start",
+     "photo": {
+      "name": "beauty-spa-day-welcome",
+      "alt": "Rolled towels, stones and candles at a spa",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -22972,6 +23602,16 @@
      "title": "Pick a time",
      "text": "Choose a time for your massage.",
      "booking": true
+    },
+    "cover": {
+     "title": "Massage appointment",
+     "text": "Book massages with the type, pressure and health notes therapists need.",
+     "button": "Start",
+     "photo": {
+      "name": "beauty-massage-appointment-welcome",
+      "alt": "A woman relaxing during a massage",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -23292,6 +23932,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll text you to confirm your time. Please bring a photo ID."
+    },
+    "cover": {
+     "title": "Piercing appointment",
+     "text": "Book piercings with jewelry choice and an age check.",
+     "button": "Start",
+     "photo": {
+      "name": "beauty-piercing-appointment-welcome",
+      "alt": "An earring on an ear",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -23458,6 +24108,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll call to confirm a time. If your pet needs urgent care, please call us now."
+    },
+    "cover": {
+     "title": "Vet appointment request",
+     "text": "Let pet owners ask for a visit with the reason and records up front.",
+     "button": "Start",
+     "photo": {
+      "name": "pets-vet-appointment-welcome",
+      "alt": "A pug resting on a soft bed",
+      "layout": "right"
+     }
     }
    }
   },
@@ -23627,6 +24287,16 @@
      "title": "Pick a drop-off time",
      "text": "Choose a time. The final price depends on coat condition.",
      "booking": true
+    },
+    "cover": {
+     "title": "Grooming appointment",
+     "text": "Book grooms by size and service, with a price estimate.",
+     "button": "Start",
+     "photo": {
+      "name": "pets-grooming-welcome",
+      "alt": "A small dog being brushed",
+      "layout": "left"
+     }
     }
    }
   },
@@ -23795,6 +24465,16 @@
     "end": {
      "title": "Your stay is requested",
      "text": "We'll confirm your dates within one business day. The deposit goes toward your bill."
+    },
+    "cover": {
+     "title": "Pet boarding reservation",
+     "text": "Reserve boarding stays with vaccine records and a deposit.",
+     "button": "Start",
+     "photo": {
+      "name": "pets-boarding-welcome",
+      "alt": "A dog playing with a frisbee",
+      "layout": "right"
+     }
     }
    }
   },
@@ -23944,6 +24624,16 @@
      "title": "Book a free meet and greet",
      "text": "Pick a time for us to meet your pets before the first visit.",
      "booking": true
+    },
+    "cover": {
+     "title": "Pet sitting booking",
+     "text": "Book in-home pet sitting and set up a meet and greet.",
+     "button": "Start",
+     "photo": {
+      "name": "pets-pet-sitting-welcome",
+      "alt": "A cat stretched out on the grass",
+      "layout": "left"
+     }
     }
    }
   },
@@ -24075,6 +24765,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll email your confirmation and rate within a few hours."
+    },
+    "cover": {
+     "title": "Hotel room reservation",
+     "text": "Take room requests with dates, guests and special requests.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-room-reservation-welcome",
+      "alt": "A made bed in a bright hotel room",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -24348,6 +25048,16 @@
     "end": {
      "title": "Thanks for your inquiry",
      "text": "We'll check the calendar and send a quote within one business day."
+    },
+    "cover": {
+     "title": "Vacation rental inquiry",
+     "text": "Turn listing visitors into direct bookings with dates and guests.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-rental-inquiry-welcome",
+      "alt": "A small cabin in the woods",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -24477,6 +25187,16 @@
     "end": {
      "title": "You're checked in",
      "text": "We'll send the door code and directions the day before you arrive."
+    },
+    "cover": {
+     "title": "Rental guest check-in",
+     "text": "Collect guest names, ID and signed house rules before arrival.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-guest-check-in-welcome",
+      "alt": "A key in a front door",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -24638,6 +25358,16 @@
     "end": {
      "title": "Your request is in",
      "text": "We'll confirm the room and menu within one business day."
+    },
+    "cover": {
+     "title": "Private dining booking",
+     "text": "The deposit holds the room. If the date is taken, we refund it in full.",
+     "button": "Start",
+     "photo": {
+      "name": "food-private-dining-welcome",
+      "alt": "A long wooden table in a dining room",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -24790,6 +25520,16 @@
     "end": {
      "title": "You're in the class",
      "text": "Your receipt and the class details are on their way by email."
+    },
+    "cover": {
+     "title": "Cooking class booking",
+     "text": "Every class is $85 a seat and ends with dinner at the table.",
+     "button": "Start",
+     "photo": {
+      "name": "food-cooking-class-welcome",
+      "alt": "Fresh ingredients ready for cooking",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -24959,6 +25699,16 @@
     "end": {
      "title": "Your pack is ready",
      "text": "Your classes are on your account. Book your first one from the schedule."
+    },
+    "cover": {
+     "title": "Class pack purchase",
+     "text": "Sell class packs and gift cards with the waiver signed up front.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-class-pack-welcome",
+      "alt": "People out for a run",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -25109,6 +25859,16 @@
      "title": "Pick your first session",
      "text": "Choose a time with your instructor.",
      "booking": true
+    },
+    "cover": {
+     "title": "Private session booking",
+     "text": "Book private yoga and Pilates sessions at the studio, at home or online.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-private-session-welcome",
+      "alt": "A woman on a running track",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -25389,6 +26149,16 @@
     "end": {
      "title": "Thanks, we'll call you",
      "text": "A test prep advisor will call to plan the right course."
+    },
+    "cover": {
+     "title": "Test prep callback",
+     "text": "Get a call from an advisor to plan SAT, ACT or grad school test prep.",
+     "button": "Start",
+     "photo": {
+      "name": "education-test-prep-callback-welcome",
+      "alt": "Glasses resting on a practice test",
+      "layout": "left"
+     }
     }
    }
   },
@@ -25563,6 +26333,16 @@
      "title": "Pick a time for the first lesson",
      "text": "Choose a weekly slot and we'll match you with a teacher.",
      "booking": true
+    },
+    "cover": {
+     "title": "Music lesson booking",
+     "text": "Book weekly music lessons with a monthly price up front.",
+     "button": "Start",
+     "photo": {
+      "name": "education-music-lessons-welcome",
+      "alt": "Piano keys up close",
+      "layout": "right"
+     }
     }
    }
   },
@@ -25757,6 +26537,16 @@
     "end": {
      "title": "Your court is booked",
      "text": "We've emailed your receipt and court number."
+    },
+    "cover": {
+     "title": "Court booking",
+     "text": "Book and pay for courts by the hour, with gear rental.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-court-booking-welcome",
+      "alt": "An empty tennis court",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -25922,6 +26712,16 @@
      "title": "Pick your session time",
      "text": "Your retainer is in. Choose a time and we'll send a guide to prepare.",
      "booking": true
+    },
+    "cover": {
+     "title": "Photo session booking",
+     "text": "Book portrait, family and headshot sessions with a retainer.",
+     "button": "Start",
+     "photo": {
+      "name": "creative-photo-session-welcome",
+      "alt": "Someone taking a photo with a camera",
+      "layout": "right"
+     }
     }
    }
   },
@@ -26098,6 +26898,16 @@
     "end": {
      "title": "Reservation requested",
      "text": "We'll email your confirmation and pick-up details."
+    },
+    "cover": {
+     "title": "Car rental reservation",
+     "text": "Reserve rental cars with a daily rate, extras and a live total.",
+     "button": "Start",
+     "photo": {
+      "name": "automotive-car-rental-welcome",
+      "alt": "A car on a coastal road",
+      "layout": "left"
+     }
     }
    }
   },
@@ -26448,6 +27258,16 @@
     "end": {
      "title": "Your rental is reserved",
      "text": "We'll email a final invoice and delivery window within one business day."
+    },
+    "cover": {
+     "title": "Party rental order",
+     "text": "Rent tables, chairs and tents with a live total and deposit.",
+     "button": "Start",
+     "photo": {
+      "name": "events-party-rental-welcome",
+      "alt": "Bright balloons",
+      "layout": "right"
+     }
     }
    }
   },
@@ -26753,6 +27573,16 @@
     "end": {
      "title": "Thank you for your reply",
      "text": "We'll send the final details closer to the day."
+    },
+    "cover": {
+     "title": "Wedding RSVP",
+     "text": "Please reply by the date on your invitation.",
+     "button": "Start",
+     "photo": {
+      "name": "events-wedding-rsvp-welcome",
+      "alt": "A couple sitting by a lake at sunset",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -27262,6 +28092,16 @@
     "end": {
      "title": "Application received",
      "text": "We review applications each week and send an invoice to approved vendors."
+    },
+    "cover": {
+     "title": "Wedding show exhibitor application",
+     "text": "Vendor applications for a bridal show, with booth and vendor type.",
+     "button": "Start",
+     "photo": {
+      "name": "events-wedding-show-exhibitor-welcome",
+      "alt": "A wedding bouquet on the grass",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -27806,6 +28646,16 @@
     "end": {
      "title": "You're registered",
      "text": "Your receipt and tickets are on the way by email."
+    },
+    "cover": {
+     "title": "Conference registration with tickets",
+     "text": "Passes, add-ons and payment for a paid conference.",
+     "button": "Start",
+     "photo": {
+      "name": "events-conference-registration-welcome",
+      "alt": "People looking out over a city from a high window",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -28087,7 +28937,17 @@
      "title": "Proposal received",
      "text": "Our program team will email decisions after the review closes."
     },
-    "copy": true
+    "copy": true,
+    "cover": {
+     "title": "Call for proposals",
+     "text": "Session proposals with track, format, takeaways and past talks.",
+     "button": "Start",
+     "photo": {
+      "name": "events-call-for-proposals-welcome",
+      "alt": "A performer on a lit stage",
+      "layout": "behind"
+     }
+    }
    }
   },
   {
@@ -28241,6 +29101,16 @@
     "end": {
      "title": "Thanks, you're all set",
      "text": "We'll send your speaker guide two weeks before the event."
+    },
+    "cover": {
+     "title": "Speaker details",
+     "text": "Bios, headshots, stage needs and travel from booked speakers.",
+     "button": "Start",
+     "photo": {
+      "name": "events-speaker-details-welcome",
+      "alt": "A lecture hall with a stage",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -28557,6 +29427,16 @@
     "end": {
      "title": "You're in",
      "text": "We'll email your access link and a reminder the day before."
+    },
+    "cover": {
+     "title": "Virtual summit registration",
+     "text": "Sign people up for an online event and the sessions they want.",
+     "button": "Start",
+     "photo": {
+      "name": "events-virtual-summit-welcome",
+      "alt": "A dog on a video call screen",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -28674,6 +29554,16 @@
     "end": {
      "title": "Thanks for letting us know",
      "text": "We'll email any updates before the party."
+    },
+    "cover": {
+     "title": "Birthday party RSVP",
+     "text": "Replies, head counts and food needs for a birthday party.",
+     "button": "Start",
+     "photo": {
+      "name": "personal-birthday-rsvp-welcome",
+      "alt": "A birthday cake with candles",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -28799,6 +29689,16 @@
     "end": {
      "title": "Thank you",
      "text": "We'll email the address and gift registry soon."
+    },
+    "cover": {
+     "title": "Baby shower RSVP",
+     "text": "Replies, guest counts and a few fun guesses for the parents-to-be.",
+     "button": "Start",
+     "photo": {
+      "name": "personal-baby-shower-welcome",
+      "alt": "Flowers and a gift box",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -28955,6 +29855,16 @@
     "end": {
      "title": "Thanks for registering",
      "text": "We'll email the schedule and a list of who's coming."
+    },
+    "cover": {
+     "title": "Reunion registration",
+     "text": "Class or family reunion sign-ups with events and dinner tickets.",
+     "button": "Start",
+     "photo": {
+      "name": "personal-reunion-welcome",
+      "alt": "A picnic basket on the grass",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -29129,6 +30039,16 @@
     "end": {
      "title": "Thanks, you're on the list",
      "text": "The planner will share the plan and costs soon."
+    },
+    "cover": {
+     "title": "Bachelor or bachelorette weekend",
+     "text": "Plan a group weekend around who's in, dates, rooms and budget.",
+     "button": "Start",
+     "photo": {
+      "name": "personal-bachelor-weekend-welcome",
+      "alt": "Fireworks over the water",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -29434,6 +30354,16 @@
     "end": {
      "title": "You're registered",
      "text": "We'll email a packing list and the schedule before the retreat."
+    },
+    "cover": {
+     "title": "Retreat registration",
+     "text": "Retreat sign-ups with lodging, rides, a gift and payment.",
+     "button": "Start",
+     "photo": {
+      "name": "faith-retreat-registration-welcome",
+      "alt": "A waterfall in a green forest",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -29562,6 +30492,16 @@
     "end": {
      "title": "Application received",
      "text": "We'll confirm your space and how to pay within a week."
+    },
+    "cover": {
+     "title": "Craft fair vendor application",
+     "text": "Vendor sign-ups for a holiday craft fair or bazaar.",
+     "button": "Start",
+     "photo": {
+      "name": "faith-craft-fair-vendor-welcome",
+      "alt": "A ferris wheel at a fair",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -29746,6 +30686,16 @@
     "end": {
      "title": "Your team is entered",
      "text": "We'll email the schedule once the brackets are set."
+    },
+    "cover": {
+     "title": "Tournament team registration",
+     "text": "Team entries with division, roster and entry fee.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-tournament-registration-welcome",
+      "alt": "An outdoor basketball court",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -29888,6 +30838,16 @@
     "end": {
      "title": "Thanks for your reply",
      "text": "We'll email the time, place and parking details."
+    },
+    "cover": {
+     "title": "End-of-season banquet RSVP",
+     "text": "Banquet replies with family guests, meals and helpers.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-awards-banquet-welcome",
+      "alt": "A gold trophy",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -30175,6 +31135,16 @@
     "end": {
      "title": "Thanks for signing up",
      "text": "A teacher will reach out to set a date and time."
+    },
+    "cover": {
+     "title": "Career day speaker sign-up",
+     "text": "Recruit parents and local pros to speak to students.",
+     "button": "Start",
+     "photo": {
+      "name": "education-career-day-speaker-welcome",
+      "alt": "An apple on a stack of books",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -30298,6 +31268,16 @@
     "end": {
      "title": "You're registered",
      "text": "We'll email your table number and the schedule for the day."
+    },
+    "cover": {
+     "title": "Career fair employer registration",
+     "text": "Employers sign up for a table and list the roles they're hiring for.",
+     "button": "Start",
+     "photo": {
+      "name": "education-career-fair-employer-welcome",
+      "alt": "Two chairs ready for an interview",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -30463,6 +31443,16 @@
     "end": {
      "title": "Thank you, see you at the gala",
      "text": "Your receipt is on its way by email."
+    },
+    "cover": {
+     "title": "Gala tickets and tables",
+     "text": "Sell gala seats and tables, with an extra gift at checkout.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-gala-tickets-welcome",
+      "alt": "A chandelier in a grand hall",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -30651,6 +31641,16 @@
     "end": {
      "title": "You're registered",
      "text": "We'll email your bib number and packet pickup times."
+    },
+    "cover": {
+     "title": "Charity run registration",
+     "text": "5K and fun run sign-ups with shirt size, donation and waiver.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-charity-run-welcome",
+      "alt": "Runners in a road race",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -31070,6 +32070,16 @@
     "end": {
      "title": "Your seats are booked",
      "text": "Your receipt is on the way. We'll text you the day before."
+    },
+    "cover": {
+     "title": "Chef's tasting dinner tickets",
+     "text": "A seven course dinner from our chef. Dinner is $120 per seat.",
+     "button": "Start",
+     "photo": {
+      "name": "food-tasting-dinner-welcome",
+      "alt": "Wine glasses on a dinner table",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -31193,6 +32203,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll confirm your room at the group rate within one business day."
+    },
+    "cover": {
+     "title": "Wedding room block booking",
+     "text": "Wedding guests book rooms from the couple's hotel block.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-wedding-room-block-welcome",
+      "alt": "A hotel pool from above",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -31321,6 +32341,16 @@
     "end": {
      "title": "Thanks for the pitch",
      "text": "We read every one. If it's a fit, we'll email you to book a recording."
+    },
+    "cover": {
+     "title": "Podcast guest application",
+     "text": "Screen guest pitches with topics, background and past interviews.",
+     "button": "Start",
+     "photo": {
+      "name": "media-podcast-guest-welcome",
+      "alt": "A studio microphone",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -31816,6 +32846,16 @@
     "end": {
      "title": "Thank you",
      "text": "Your answers help us make the next order better."
+    },
+    "cover": {
+     "title": "Post-purchase survey",
+     "text": "Rate the order and delivery, and learn how buyers found you.",
+     "button": "Start",
+     "photo": {
+      "name": "ecommerce-post-purchase-welcome",
+      "alt": "A woman carrying shopping bags",
+      "layout": "top"
+     }
     }
    }
   },
@@ -32312,6 +33352,16 @@
     "end": {
      "title": "Thanks for the review",
      "text": "We'll let you know if we share it."
+    },
+    "cover": {
+     "title": "Tour review",
+     "text": "Collect reviews and photos from guests after each tour.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-tour-review-welcome",
+      "alt": "A road through a tall forest",
+      "layout": "top"
+     }
     }
    }
   },
@@ -32673,6 +33723,16 @@
     "end": {
      "title": "Thank you",
      "text": "We share what we learn and what we'll change at the next family meeting."
+    },
+    "cover": {
+     "title": "Parent satisfaction survey",
+     "text": "Hear from families on teaching, safety and school updates.",
+     "button": "Start",
+     "photo": {
+      "name": "education-parent-survey-welcome",
+      "alt": "A school sports field",
+      "layout": "top"
+     }
     }
    }
   },
@@ -33420,6 +34480,16 @@
     "end": {
      "title": "Thank you",
      "text": "Your answers shape what we cover next."
+    },
+    "cover": {
+     "title": "Reader survey",
+     "text": "Learn who reads you, what they want more of and what they pay for.",
+     "button": "Start",
+     "photo": {
+      "name": "media-reader-survey-welcome",
+      "alt": "An open book beside a coffee",
+      "layout": "top"
+     }
     }
    }
   },
@@ -33558,6 +34628,16 @@
     "end": {
      "title": "Thank you",
      "text": "See you next time."
+    },
+    "cover": {
+     "title": "In-store shopper survey",
+     "text": "Ask shoppers why they came in and how the visit went.",
+     "button": "Start",
+     "photo": {
+      "name": "retail-shopper-survey-welcome",
+      "alt": "A shopper browsing a bookstore",
+      "layout": "top"
+     }
     }
    }
   },
@@ -33675,6 +34755,16 @@
     "end": {
      "title": "Thanks for voting",
      "text": "The winning dishes join the menu next season."
+    },
+    "cover": {
+     "title": "New menu vote",
+     "text": "Let guests vote on dishes before they join the menu.",
+     "button": "Start",
+     "photo": {
+      "name": "food-menu-vote-welcome",
+      "alt": "A cafe menu on a chalkboard",
+      "layout": "top"
+     }
     }
    }
   },
@@ -33821,6 +34911,16 @@
     "end": {
      "title": "Thanks for a great season",
      "text": "We'll share sign-up dates for next season soon."
+    },
+    "cover": {
+     "title": "End-of-season survey",
+     "text": "Players and parents rate coaches, fields and the season.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-season-survey-welcome",
+      "alt": "A sports field on a clear day",
+      "layout": "top"
+     }
     }
    }
   },
@@ -34427,6 +35527,16 @@
     "end": {
      "title": "Thanks for telling us",
      "text": "We check every report and fix what we can."
+    },
+    "cover": {
+     "title": "Website feedback",
+     "text": "Let visitors flag broken links, typos and pages that don't work.",
+     "button": "Start",
+     "photo": {
+      "name": "general-website-feedback-welcome",
+      "alt": "Someone pointing at a website on a big screen",
+      "layout": "top"
+     }
     }
    }
   },
@@ -35147,6 +36257,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll confirm your date and time by text within one business day."
+    },
+    "cover": {
+     "title": "Cleaning appointment",
+     "text": "Book a home cleaning with access, pets and timing up front.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-cleaning-appointment-welcome",
+      "alt": "A mop cleaning a wooden floor",
+      "layout": "left"
+     }
     }
    }
   },
@@ -35301,6 +36421,16 @@
     "end": {
      "title": "Welcome to your plan",
      "text": "We'll email your schedule and the date of your first visit."
+    },
+    "cover": {
+     "title": "Recurring cleaning plan",
+     "text": "Sign clients up for weekly, biweekly or monthly cleanings.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-cleaning-plan-welcome",
+      "alt": "A tidy sofa with cushions",
+      "layout": "top"
+     }
     }
    }
   },
@@ -35604,6 +36734,16 @@
      "title": "Almost done",
      "text": "Pick a time for your tune-up.",
      "booking": true
+    },
+    "cover": {
+     "title": "HVAC tune-up booking",
+     "text": "Book seasonal heating and cooling tune-ups.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-hvac-tune-up-welcome",
+      "alt": "Air handling units on a roof",
+      "layout": "right"
+     }
     }
    }
   },
@@ -35927,6 +37067,16 @@
     "end": {
      "title": "Welcome to the plan",
      "text": "We'll call to book your first visit."
+    },
+    "cover": {
+     "title": "HVAC maintenance plan",
+     "text": "Sell yearly comfort plans with the price and payment in one form.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-hvac-maintenance-plan-welcome",
+      "alt": "Ventilation grilles on a wall",
+      "layout": "top"
+     }
     }
    }
   },
@@ -36058,6 +37208,16 @@
     "end": {
      "title": "We're on it",
      "text": "A technician will call you back shortly."
+    },
+    "cover": {
+     "title": "No heat or cooling callback",
+     "text": "Get a fast callback when the heat or air stops working.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-hvac-emergency-callback-welcome",
+      "alt": "A sunny room with a radiator under the window",
+      "layout": "left"
+     }
     }
    }
   },
@@ -36206,6 +37366,16 @@
      "title": "Thanks, one more step",
      "text": "Choose a time for the plumber to come out.",
      "booking": true
+    },
+    "cover": {
+     "title": "Plumbing appointment",
+     "text": "Book plumbing repairs with the problem and urgency up front.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-plumbing-appointment-welcome",
+      "alt": "A sink and faucet",
+      "layout": "right"
+     }
     }
    }
   },
@@ -36562,6 +37732,16 @@
      "title": "Thanks",
      "text": "Pick a time for your inspection.",
      "booking": true
+    },
+    "cover": {
+     "title": "Sewer camera inspection",
+     "text": "Book sewer line camera inspections for owners and buyers.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-sewer-camera-inspection-welcome",
+      "alt": "Pipes running along a wall",
+      "layout": "left"
+     }
     }
    }
   },
@@ -37201,6 +38381,16 @@
     "end": {
      "title": "We'll call you soon",
      "text": "A roofer will call to talk through next steps."
+    },
+    "cover": {
+     "title": "Roof leak callback",
+     "text": "Take urgent leak reports and call back with a plan.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-roof-leak-callback-welcome",
+      "alt": "The roofline of a house",
+      "layout": "right"
+     }
     }
    }
   },
@@ -37319,6 +38509,16 @@
     "end": {
      "title": "Thank you",
      "text": "Your feedback helps our crews do their best work."
+    },
+    "cover": {
+     "title": "Roofing job review",
+     "text": "Ask homeowners to rate the crew, cleanup and finished roof.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-roofing-review-welcome",
+      "alt": "A metal roof against a blue sky",
+      "layout": "top"
+     }
     }
    }
   },
@@ -37485,6 +38685,16 @@
     "end": {
      "title": "You're on the schedule",
      "text": "We'll confirm your first visit by email."
+    },
+    "cover": {
+     "title": "Lawn care plan",
+     "text": "Price and start a mowing plan by lawn size and visits.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-lawn-care-plan-welcome",
+      "alt": "Sneakers on a green lawn",
+      "layout": "top"
+     }
     }
    }
   },
@@ -37851,6 +39061,16 @@
     "end": {
      "title": "Your rental is reserved",
      "text": "We'll email your pickup details and the balance due."
+    },
+    "cover": {
+     "title": "Landscaping equipment rental",
+     "text": "Rent out equipment with a price and deposit up front.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-equipment-rental-welcome",
+      "alt": "A riding mower on a lawn",
+      "layout": "left"
+     }
     }
    }
   },
@@ -37982,6 +39202,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll text you to confirm the date and price."
+    },
+    "cover": {
+     "title": "Yard cleanup booking",
+     "text": "Book spring and fall cleanups with the work and yard size.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-yard-cleanup-welcome",
+      "alt": "Autumn leaves on the ground",
+      "layout": "right"
+     }
     }
    }
   },
@@ -38125,6 +39355,16 @@
      "title": "One more step",
      "text": "Pick a time for the electrician to come out.",
      "booking": true
+    },
+    "cover": {
+     "title": "Electrician appointment",
+     "text": "Book electrical repairs and installs with the job described.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-electrician-appointment-welcome",
+      "alt": "An electrician at a breaker panel",
+      "layout": "left"
+     }
     }
    }
   },
@@ -38761,6 +40001,16 @@
      "title": "Thanks",
      "text": "Pick a time for your free inspection.",
      "booking": true
+    },
+    "cover": {
+     "title": "Free pest inspection",
+     "text": "Book pest inspections with the pest, place and timing.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-pest-inspection-welcome",
+      "alt": "A window box on a blue house",
+      "layout": "right"
+     }
     }
    }
   },
@@ -38923,6 +40173,16 @@
     "end": {
      "title": "Your plan is set",
      "text": "We'll call to book your first treatment."
+    },
+    "cover": {
+     "title": "Pest control plan",
+     "text": "Price a year of pest control by home size and visits.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-pest-control-plan-welcome",
+      "alt": "Watering a garden with a hose",
+      "layout": "top"
+     }
     }
    }
   },
@@ -39532,6 +40792,16 @@
     "end": {
      "title": "Your truck is reserved",
      "text": "We'll email your pickup time and location."
+    },
+    "cover": {
+     "title": "Moving truck rental",
+     "text": "Reserve a moving truck with dates, miles and add-ons.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-moving-truck-rental-welcome",
+      "alt": "A classic red truck",
+      "layout": "left"
+     }
     }
    }
   },
@@ -39657,6 +40927,16 @@
     "end": {
      "title": "Thank you",
      "text": "If something was damaged, our claims team will contact you."
+    },
+    "cover": {
+     "title": "Moving day review",
+     "text": "Rate the crew, care with belongings and timing after a move.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-moving-review-welcome",
+      "alt": "Someone packing a moving box",
+      "layout": "top"
+     }
     }
    }
   },
@@ -45213,6 +46493,16 @@
     "end": {
      "title": "Thanks, we're ready to start",
      "text": "We'll send the first invoice and a kickoff time."
+    },
+    "cover": {
+     "title": "Client contract sign-off",
+     "text": "Check that the details match our proposal, then sign to start the project.",
+     "button": "Start",
+     "photo": {
+      "name": "creative-contract-signoff-welcome",
+      "alt": "Someone signing a document",
+      "layout": "right"
+     }
     }
    }
   },
@@ -45648,6 +46938,16 @@
     "end": {
      "title": "Thanks, you're signed in",
      "text": "Bring your ID on the day. A copy of the waiver is in your email."
+    },
+    "cover": {
+     "title": "Event participation waiver",
+     "text": "Everyone taking part signs before the event. A parent signs for anyone under 18.",
+     "button": "Start",
+     "photo": {
+      "name": "events-event-waiver-welcome",
+      "alt": "A crowd at an outdoor festival",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -46597,6 +47897,16 @@
     "end": {
      "title": "Request received",
      "text": "We'll email you to confirm before the account closes."
+    },
+    "cover": {
+     "title": "Account closure request",
+     "text": "Only an account owner can close an account. We'll confirm by email before anything is deleted.",
+     "button": "Start",
+     "photo": {
+      "name": "saas-account-closure-welcome",
+      "alt": "A hand on a keyboard",
+      "layout": "left"
+     }
     }
    }
   },
@@ -51506,7 +52816,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Leadership style quiz",
+     "text": "Five quick questions about how you lead. There are no wrong answers.",
+     "button": "Start",
+     "photo": {
+      "name": "coaching-leadership-style-quiz-welcome",
+      "alt": "A leader talking with a team",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -51700,6 +53021,16 @@
       }
      ],
      "booking": true
+    },
+    "cover": {
+     "title": "Workout style quiz",
+     "text": "Answer five questions and we'll match you with the classes that suit you.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-workout-style-quiz-welcome",
+      "alt": "A bright gym with equipment",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -51890,7 +53221,18 @@
        "text": "Your style differs from how our team works today. Read about each team before you apply."
       }
      ]
-    }
+    },
+    "cover": {
+     "title": "Culture fit quiz",
+     "text": "Six questions about how you like to work. There are no wrong answers.",
+     "button": "Start",
+     "photo": {
+      "name": "hr-culture-fit-quiz-welcome",
+      "alt": "A team working around a table",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -52049,7 +53391,18 @@
        "text": "You travel to rest. A good view and a quiet day are all you need."
       }
      ]
-    }
+    },
+    "cover": {
+     "title": "Travel style quiz",
+     "text": "Five questions. Compare your result with the people you travel with.",
+     "button": "Start",
+     "photo": {
+      "name": "personal-travel-style-quiz-welcome",
+      "alt": "A stack of old suitcases",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -52309,7 +53662,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Math placement quiz",
+     "text": "Eight questions. Work them out on paper, then pick the answer.",
+     "button": "Start",
+     "photo": {
+      "name": "education-math-placement-quiz-welcome",
+      "alt": "A blank chalkboard",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -52534,7 +53898,18 @@
        "text": "A beginner class will give you a strong start."
       }
      ]
-    }
+    },
+    "cover": {
+     "title": "English grammar quiz",
+     "text": "Eight questions. Pick the answer that is correct in standard English.",
+     "button": "Start",
+     "photo": {
+      "name": "education-grammar-quiz-welcome",
+      "alt": "A dictionary page up close",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -52739,7 +54114,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Money basics quiz",
+     "text": "Six questions on saving, credit and investing.",
+     "button": "Start",
+     "photo": {
+      "name": "finance-money-basics-quiz-welcome",
+      "alt": "A pile of coins",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -52983,7 +54369,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Phishing awareness quiz",
+     "text": "Seven questions. See how well you spot the tricks attackers use.",
+     "button": "Start",
+     "photo": {
+      "name": "it-phishing-quiz-welcome",
+      "alt": "A laptop glowing in a dark room",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -53681,7 +55078,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Coverage checkup",
+     "text": "Six questions. See where your coverage is strong and where it has gaps.",
+     "button": "Start",
+     "photo": {
+      "name": "insurance-coverage-checkup-welcome",
+      "alt": "Colorful umbrellas against the sky",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -54137,7 +55545,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "AI readiness scorecard",
+     "text": "Seven questions. Get a score and the next step for your business.",
+     "button": "Start",
+     "photo": {
+      "name": "consulting-ai-readiness-welcome",
+      "alt": "A small white robot",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -54317,7 +55736,18 @@
        "text": "Our plush mattress cushions shoulders and hips, the best match for side sleepers."
       }
      ]
-    }
+    },
+    "cover": {
+     "title": "Mattress finder",
+     "text": "Four questions about how you sleep. We'll match you with a mattress.",
+     "button": "Start",
+     "photo": {
+      "name": "ecommerce-mattress-finder-welcome",
+      "alt": "A bright bedroom with a made bed",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -54487,7 +55917,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Running shoe finder",
+     "text": "Three questions about how you run, then a few details for your fitting.",
+     "button": "Start",
+     "photo": {
+      "name": "retail-running-shoe-finder-welcome",
+      "alt": "A runner's feet on an open road",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -54675,7 +56116,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Skin type quiz",
+     "text": "Five questions about your skin. We'll suggest a facial and a routine.",
+     "button": "Start",
+     "photo": {
+      "name": "beauty-skin-type-quiz-welcome",
+      "alt": "A woman applying skincare",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -54849,7 +56301,18 @@
        "text": "Bright and fruity, best enjoyed black."
       }
      ]
-    }
+    },
+    "cover": {
+     "title": "Coffee finder",
+     "text": "Four questions about your taste. We'll pick a roast for you.",
+     "button": "Start",
+     "photo": {
+      "name": "food-coffee-finder-welcome",
+      "alt": "A cup of coffee on a cozy table",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -55039,7 +56502,18 @@
        "text": "Relaxed breeds like Cavaliers, Shih Tzus and Basset Hounds enjoy a slower pace."
       }
      ]
-    }
+    },
+    "cover": {
+     "title": "Dog breed finder",
+     "text": "Five questions about your home and routine.",
+     "button": "Start",
+     "photo": {
+      "name": "pets-breed-finder-welcome",
+      "alt": "A golden dog yawning",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -55515,7 +56989,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Solar eligibility check",
+     "text": "A few questions about your home. See if it's a fit for solar.",
+     "button": "Start",
+     "photo": {
+      "name": "solar-eligibility-check-welcome",
+      "alt": "Solar panels in a sunny field",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -55772,6 +57257,16 @@
        "text": "Your organization doesn't meet this cycle's criteria. We'll share other funding sources."
       }
      ]
+    },
+    "cover": {
+     "title": "Grant eligibility check",
+     "text": "Answer a few questions to see if your organization can apply this cycle.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-grant-eligibility-welcome",
+      "alt": "An open notebook and a pencil",
+      "layout": "left"
+     }
     }
    }
   },
@@ -56017,7 +57512,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "R&D tax credit check",
+     "text": "Six questions about your work. See if the R&D tax credit may apply.",
+     "button": "Start",
+     "photo": {
+      "name": "accounting-rd-credit-check-welcome",
+      "alt": "A model of a DNA strand",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -56175,6 +57681,16 @@
     "end": {
      "title": "Thanks, you're all set",
      "text": "Your coach will read this before your first session."
+    },
+    "cover": {
+     "title": "New client intake",
+     "text": "A few questions so our first session can start with you.",
+     "button": "Start",
+     "photo": {
+      "name": "coaching-new-client-intake-welcome",
+      "alt": "Someone writing in a journal",
+      "layout": "right"
+     }
     }
    }
   },
@@ -56664,6 +58180,16 @@
     "end": {
      "title": "Brief received",
      "text": "Your architect will review it before your first design meeting."
+    },
+    "cover": {
+     "title": "Home design brief",
+     "text": "Rooms, style and priorities for a new home or remodel.",
+     "button": "Start",
+     "photo": {
+      "name": "architecture-design-brief-welcome",
+      "alt": "A detailed floor plan drawing",
+      "layout": "left"
+     }
     }
    }
   },
@@ -56831,6 +58357,16 @@
      "title": "Thanks",
      "text": "Pick a time for a first call with our team.",
      "booking": true
+    },
+    "cover": {
+     "title": "Architecture project intake",
+     "text": "Qualify new projects by site, scope, budget and timing.",
+     "button": "Start",
+     "photo": {
+      "name": "architecture-project-intake-welcome",
+      "alt": "Notes on a clipboard",
+      "layout": "right"
+     }
     }
    }
   },
@@ -56970,6 +58506,16 @@
     "end": {
      "title": "Application received",
      "text": "Our editors review new contributors every two weeks."
+    },
+    "cover": {
+     "title": "Contributor application",
+     "text": "Find freelance writers by beat, samples and a first pitch.",
+     "button": "Start",
+     "photo": {
+      "name": "media-contributor-application-welcome",
+      "alt": "Someone writing in a notebook on the grass",
+      "layout": "right"
+     }
     }
    }
   },
@@ -57117,6 +58663,16 @@
      "title": "Thanks for the brief",
      "text": "Book a call to plan the campaign with our ad team.",
      "booking": true
+    },
+    "cover": {
+     "title": "Advertiser brief",
+     "text": "Take sponsor briefs with goals, audience, run dates and budget.",
+     "button": "Start",
+     "photo": {
+      "name": "media-advertiser-brief-welcome",
+      "alt": "Bright billboards in a city at night",
+      "layout": "top"
+     }
     }
    }
   },
@@ -57497,7 +59053,12 @@
     "cover": {
      "title": "Enroll your child",
      "text": "About 10 minutes. Have your child's doctor and immunization details ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "education-childcare-enrollment-welcome",
+      "alt": "Colorful wooden blocks",
+      "layout": "left"
+     }
     },
     "resume": true,
     "copy": true
@@ -57754,6 +59315,16 @@
     "end": {
      "title": "You're enrolled",
      "text": "Your receipt and course access are on the way by email."
+    },
+    "cover": {
+     "title": "Course enrollment",
+     "text": "Enroll students in a course and take payment in one step.",
+     "button": "Start",
+     "photo": {
+      "name": "education-course-enrollment-welcome",
+      "alt": "Rows of seats in a lecture hall",
+      "layout": "right"
+     }
     }
    }
   },
@@ -57901,6 +59472,16 @@
     "end": {
      "title": "Intake complete",
      "text": "Thank you. We'll see you and your child at the visit."
+    },
+    "cover": {
+     "title": "Pediatric patient intake",
+     "text": "Health history for a new child patient, filled in by a parent.",
+     "button": "Start",
+     "photo": {
+      "name": "healthcare-pediatric-intake-welcome",
+      "alt": "Colored pencils in a row",
+      "layout": "left"
+     }
     }
    }
   },
@@ -58066,6 +59647,16 @@
     "end": {
      "title": "Intake complete",
      "text": "Your therapist will review this before your first visit."
+    },
+    "cover": {
+     "title": "Physical therapy intake",
+     "text": "Pain, injury details and goals before the first therapy visit.",
+     "button": "Start",
+     "photo": {
+      "name": "healthcare-physical-therapy-intake-welcome",
+      "alt": "Someone stretching outdoors",
+      "layout": "right"
+     }
     }
    }
   },
@@ -58396,6 +59987,16 @@
     "end": {
      "title": "Thank you",
      "text": "Your history is on file. We'll see you at your visit."
+    },
+    "cover": {
+     "title": "Dental health history",
+     "text": "Medical and dental history from new patients before the visit.",
+     "button": "Start",
+     "photo": {
+      "name": "wellness-dental-history-welcome",
+      "alt": "A toothbrush with toothpaste",
+      "layout": "left"
+     }
     }
    }
   },
@@ -58552,6 +60153,16 @@
     "end": {
      "title": "Intake complete",
      "text": "Thanks. We'll go over this with you at your first visit."
+    },
+    "cover": {
+     "title": "Chiropractic intake",
+     "text": "Pain areas, causes and insurance for new chiropractic patients.",
+     "button": "Start",
+     "photo": {
+      "name": "wellness-chiropractic-intake-welcome",
+      "alt": "Folded towels on a shelf",
+      "layout": "right"
+     }
     }
    }
   },
@@ -58918,7 +60529,12 @@
     "cover": {
      "title": "Nutrition intake",
      "text": "About 8 minutes. Your dietitian reads this before your first session.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "wellness-nutrition-intake-welcome",
+      "alt": "Fresh fruit and herbs on a table",
+      "layout": "left"
+     }
     }
    }
   },
@@ -59436,7 +61052,12 @@
     "cover": {
      "title": "Immigration intake",
      "text": "About 10 minutes. Have your passport and any letters from immigration nearby.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "legal-immigration-intake-welcome",
+      "alt": "Two passports on a table",
+      "layout": "right"
+     }
     },
     "resume": true,
     "copy": true
@@ -59578,6 +61199,16 @@
     "end": {
      "title": "Welcome",
      "text": "Someone from our team will reach out this week."
+    },
+    "cover": {
+     "title": "Membership form",
+     "text": "Welcome new members with family details and ways to serve.",
+     "button": "Start",
+     "photo": {
+      "name": "faith-membership-welcome",
+      "alt": "A white church overlooking the sea",
+      "layout": "left"
+     }
     }
    }
   },
@@ -59753,6 +61384,16 @@
     "end": {
      "title": "Welcome to the club",
      "text": "Your receipt and member details are on the way by email."
+    },
+    "cover": {
+     "title": "Club membership",
+     "text": "Sign up club members, pick a plan and pay dues online.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-club-membership-welcome",
+      "alt": "A soccer field under lights at night",
+      "layout": "right"
+     }
     }
    }
   },
@@ -59895,6 +61536,16 @@
     "end": {
      "title": "Application received",
      "text": "Our coaching director will be in touch within a week."
+    },
+    "cover": {
+     "title": "Coach application",
+     "text": "Recruit paid and volunteer coaches with experience and checks.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-coach-application-welcome",
+      "alt": "A coach training with a client outdoors",
+      "layout": "left"
+     }
     }
    }
   },
@@ -60017,6 +61668,16 @@
     "end": {
      "title": "Request received",
      "text": "Requests stay private. We'll reply before registration closes."
+    },
+    "cover": {
+     "title": "Player fee assistance",
+     "text": "Let families ask for help with registration fees, in private.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-fee-assistance-welcome",
+      "alt": "A soccer ball on the grass",
+      "layout": "right"
+     }
     }
    }
   },
@@ -60178,6 +61839,16 @@
     "end": {
      "title": "Application received",
      "text": "We'll review it within 10 business days and email your permit or next steps."
+    },
+    "cover": {
+     "title": "Street vendor permit application",
+     "text": "License street and event vendors, with documents and the fee.",
+     "button": "Start",
+     "photo": {
+      "name": "government-vendor-permit-welcome",
+      "alt": "A food truck lit up at night",
+      "layout": "left"
+     }
     }
    }
   },
@@ -60335,6 +62006,16 @@
     "end": {
      "title": "Application received",
      "text": "We'll email you when the review panel has made its decision."
+    },
+    "cover": {
+     "title": "Small business grant application",
+     "text": "Take local business grant applications with plans and records.",
+     "button": "Start",
+     "photo": {
+      "name": "government-small-business-grant-welcome",
+      "alt": "An old shop doorway",
+      "layout": "right"
+     }
     }
    }
   },
@@ -60486,6 +62167,16 @@
     "end": {
      "title": "Application received",
      "text": "If you're a fit, we'll call to set up an interview."
+    },
+    "cover": {
+     "title": "Security officer application",
+     "text": "Hire security officers by license, shifts and experience.",
+     "button": "Start",
+     "photo": {
+      "name": "security-guard-application-welcome",
+      "alt": "A secure door with a keypad",
+      "layout": "left"
+     }
     }
    }
   },
@@ -60675,6 +62366,16 @@
     "end": {
      "title": "Application received",
      "text": "The market committee reviews vendors each month. We'll email you the decision."
+    },
+    "cover": {
+     "title": "Farmers market vendor application",
+     "text": "Review market vendors by products, farm practices and stall needs.",
+     "button": "Start",
+     "photo": {
+      "name": "agriculture-market-vendor-welcome",
+      "alt": "Fruit piled up at a market stall",
+      "layout": "right"
+     }
     }
    }
   },
@@ -60831,6 +62532,16 @@
     "end": {
      "title": "Application received",
      "text": "We'll review it and reply within three business days."
+    },
+    "cover": {
+     "title": "Commercial lease application",
+     "text": "Screen business tenants by use, terms and financials.",
+     "button": "Start",
+     "photo": {
+      "name": "real-estate-commercial-lease-welcome",
+      "alt": "Glass offices along a hallway",
+      "layout": "left"
+     }
     }
    }
   },
@@ -60985,6 +62696,16 @@
      "title": "Thanks",
      "text": "We'll email your agreement to sign. Book a tour in the meantime.",
      "booking": true
+    },
+    "cover": {
+     "title": "Coworking membership",
+     "text": "Sign up coworking members with a plan, add-ons and a monthly price.",
+     "button": "Start",
+     "photo": {
+      "name": "real-estate-coworking-membership-welcome",
+      "alt": "A woman working at a laptop",
+      "layout": "right"
+     }
     }
    }
   },
@@ -61129,6 +62850,16 @@
     "end": {
      "title": "Form received",
      "text": "We'll let you and the renter know once the application is reviewed."
+    },
+    "cover": {
+     "title": "Rental guarantor form",
+     "text": "Collect a co-signer's income, consent and signature for a rental.",
+     "button": "Start",
+     "photo": {
+      "name": "real-estate-guarantor-form-welcome",
+      "alt": "A modern apartment building",
+      "layout": "left"
+     }
     }
    }
   },
@@ -61279,6 +63010,16 @@
     "end": {
      "title": "Welcome aboard",
      "text": "Your member welcome pack is on its way by email."
+    },
+    "cover": {
+     "title": "Association membership",
+     "text": "Grow your member base and find people for committees.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-association-membership-welcome",
+      "alt": "A group meeting around a table",
+      "layout": "right"
+     }
     }
    }
   },
@@ -61425,6 +63166,16 @@
     "end": {
      "title": "Application received",
      "text": "The grants panel meets monthly. We'll email you the decision."
+    },
+    "cover": {
+     "title": "Community grant application",
+     "text": "Fund small community projects with a simple plan and budget.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-community-grant-welcome",
+      "alt": "Autumn trees in a neighborhood",
+      "layout": "left"
+     }
     }
    }
   },
@@ -61576,6 +63327,16 @@
     "end": {
      "title": "Application received",
      "text": "We review internship applications every two weeks."
+    },
+    "cover": {
+     "title": "Internship application",
+     "text": "Recruit interns with school, major, term and a short essay.",
+     "button": "Start",
+     "photo": {
+      "name": "hr-internship-application-welcome",
+      "alt": "A young man reading by a window",
+      "layout": "right"
+     }
     }
    }
   },
@@ -61952,6 +63713,16 @@
     "end": {
      "title": "Thanks, your order is in",
      "text": "We'll confirm the details within one business day."
+    },
+    "cover": {
+     "title": "Custom cake order",
+     "text": "Tell us about your cake. We confirm every order within one business day.",
+     "button": "Start",
+     "photo": {
+      "name": "food-custom-cake-order-welcome",
+      "alt": "A slice of rainbow layer cake",
+      "layout": "top"
+     }
     }
    }
   },
@@ -62148,6 +63919,16 @@
     "end": {
      "title": "Your date is on hold",
      "text": "We'll send your menu and final quote within one business day."
+    },
+    "cover": {
+     "title": "Catering price calculator",
+     "text": "Build your menu and see an estimate right away.",
+     "button": "Start",
+     "photo": {
+      "name": "food-catering-calculator-welcome",
+      "alt": "A breakfast spread with fruit and juice",
+      "layout": "top"
+     }
     }
    }
   },
@@ -62312,6 +64093,16 @@
     "end": {
      "title": "Thanks for your order",
      "text": "The gift card goes out within one business day. Your receipt is in your inbox."
+    },
+    "cover": {
+     "title": "Gift card order",
+     "text": "Sell restaurant gift cards by email or mail.",
+     "button": "Start",
+     "photo": {
+      "name": "food-gift-card-order-welcome",
+      "alt": "A greeting card and a pen",
+      "layout": "top"
+     }
     }
    }
   },
@@ -62454,6 +64245,16 @@
     "end": {
      "title": "Your item is on hold",
      "text": "We'll email your payment schedule and remind you before each payment."
+    },
+    "cover": {
+     "title": "Layaway plan",
+     "text": "Hold an item with a down payment and pay the rest over time.",
+     "button": "Start",
+     "photo": {
+      "name": "retail-layaway-plan-welcome",
+      "alt": "Someone carrying shopping bags",
+      "layout": "top"
+     }
     }
    }
   },
@@ -62635,6 +64436,16 @@
     "end": {
      "title": "You're subscribed",
      "text": "We'll confirm your first delivery by email."
+    },
+    "cover": {
+     "title": "Flower subscription",
+     "text": "Fresh flowers on your schedule. Change or pause anytime.",
+     "button": "Start",
+     "photo": {
+      "name": "retail-flower-subscription-welcome",
+      "alt": "A bunch of colorful tulips",
+      "layout": "top"
+     }
     }
    }
   },
@@ -62789,6 +64600,16 @@
     "end": {
      "title": "Your subscription has started",
      "text": "Your first box ships within three business days."
+    },
+    "cover": {
+     "title": "Subscribe and save",
+     "text": "Pick your box and how often. Prepay for more boxes and save.",
+     "button": "Start",
+     "photo": {
+      "name": "ecommerce-subscribe-and-save-welcome",
+      "alt": "A cup of coffee with beans",
+      "layout": "top"
+     }
     }
    }
   },
@@ -62975,6 +64796,16 @@
     "end": {
      "title": "Order request received",
      "text": "We'll send a proof and final price within one business day."
+    },
+    "cover": {
+     "title": "Custom merch order",
+     "text": "See your price as you go. Bigger orders cost less per item.",
+     "button": "Start",
+     "photo": {
+      "name": "ecommerce-custom-merch-order-welcome",
+      "alt": "Folded shirts and sunglasses",
+      "layout": "top"
+     }
     }
    }
   },
@@ -63139,6 +64970,16 @@
     "end": {
      "title": "Thank you for your gift",
      "text": "Your receipt is on its way by email."
+    },
+    "cover": {
+     "title": "Online donation",
+     "text": "Your gift goes straight to our programs.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-online-donation-welcome",
+      "alt": "Hands making a heart shape",
+      "layout": "top"
+     }
     }
    }
   },
@@ -63284,6 +65125,16 @@
     "end": {
      "title": "Thank you for sponsoring",
      "text": "We'll introduce your student by email within two weeks."
+    },
+    "cover": {
+     "title": "Student sponsorship",
+     "text": "Cover a student's school costs each month. You'll get updates through the year.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-student-sponsorship-welcome",
+      "alt": "A sign that says Back to school",
+      "layout": "top"
+     }
     }
    }
   },
@@ -63462,6 +65313,16 @@
     "end": {
      "title": "Thank you for your support",
      "text": "We'll confirm your sponsorship and send your benefits within two business days."
+    },
+    "cover": {
+     "title": "Gala sponsorship",
+     "text": "Support our annual gala and put your name in front of our guests.",
+     "button": "Start",
+     "photo": {
+      "name": "nonprofit-gala-sponsorship-welcome",
+      "alt": "Two glasses raised in a toast",
+      "layout": "top"
+     }
     }
    }
   },
@@ -63650,6 +65511,16 @@
     "end": {
      "title": "Your date is held",
      "text": "We'll send your contract and a planning guide within two business days."
+    },
+    "cover": {
+     "title": "Wedding photography package",
+     "text": "Build your wedding package and hold your date with a retainer.",
+     "button": "Start",
+     "photo": {
+      "name": "creative-wedding-photo-package-welcome",
+      "alt": "A camera resting on a wedding dress",
+      "layout": "top"
+     }
     }
    }
   },
@@ -63814,6 +65685,16 @@
     "end": {
      "title": "Your cleaning is booked",
      "text": "We'll text you the day before with your arrival time."
+    },
+    "cover": {
+     "title": "Carpet cleaning order",
+     "text": "Price your carpet cleaning and book it in one go.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-carpet-cleaning-order-welcome",
+      "alt": "A bright bedroom with a soft rug",
+      "layout": "top"
+     }
     }
    }
   },
@@ -64000,6 +65881,16 @@
     "end": {
      "title": "You're on the schedule",
      "text": "We'll confirm your start date and order materials within two business days."
+    },
+    "cover": {
+     "title": "Roofing estimate approval",
+     "text": "Approve your estimate, pick your colors and pay the deposit to get on the schedule.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-roofing-approval-welcome",
+      "alt": "Rows of dark roof tiles",
+      "layout": "top"
+     }
     }
    }
   },
@@ -64200,6 +66091,16 @@
     "end": {
      "title": "Your order is in",
      "text": "We'll confirm the delivery window by text the day before."
+    },
+    "cover": {
+     "title": "Mulch and stone order",
+     "text": "Tell us the area and we'll work out how much you need.",
+     "button": "Start",
+     "photo": {
+      "name": "construction-mulch-stone-order-welcome",
+      "alt": "A stone path through a garden",
+      "layout": "top"
+     }
     }
    }
   },
@@ -64929,6 +66830,16 @@
     "end": {
      "title": "Welcome to the farm",
      "text": "We'll email your pickup details before the first week."
+    },
+    "cover": {
+     "title": "CSA farm share",
+     "text": "Fresh produce from our farm every week of the season.",
+     "button": "Start",
+     "photo": {
+      "name": "agriculture-csa-share-welcome",
+      "alt": "A crate of fresh vegetables",
+      "layout": "top"
+     }
     }
    }
   },
@@ -65088,6 +66999,16 @@
     "end": {
      "title": "Your players are registered",
      "text": "We'll email team placements and the schedule before the season starts."
+    },
+    "cover": {
+     "title": "Season registration and fees",
+     "text": "Register your players and pay the season fees in one step.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-season-registration-welcome",
+      "alt": "A baseball game on a sunny field",
+      "layout": "left"
+     }
     }
    }
   },
@@ -65242,6 +67163,16 @@
     "end": {
      "title": "Thank you for supporting the club",
      "text": "We'll confirm where your logo goes and send a receipt."
+    },
+    "cover": {
+     "title": "Club sponsor sign-up",
+     "text": "Back our club and put your business in front of local families.",
+     "button": "Start",
+     "photo": {
+      "name": "sports-sponsor-signup-welcome",
+      "alt": "A stadium lit up at night",
+      "layout": "top"
+     }
     }
    }
   },
@@ -65378,6 +67309,16 @@
     "end": {
      "title": "Thank you for your gift",
      "text": "A receipt is on its way to your email."
+    },
+    "cover": {
+     "title": "Online giving",
+     "text": "Thank you for your generosity.",
+     "button": "Start",
+     "photo": {
+      "name": "faith-online-giving-welcome",
+      "alt": "Rows of lit candles",
+      "layout": "top"
+     }
     }
    }
   },
@@ -65550,6 +67491,16 @@
     "end": {
      "title": "You're subscribed",
      "text": "Check your email to set up your account and start reading."
+    },
+    "cover": {
+     "title": "Publication subscription",
+     "text": "Local news you can count on. Cancel anytime.",
+     "button": "Start",
+     "photo": {
+      "name": "media-subscription-signup-welcome",
+      "alt": "A newspaper and a cup of coffee",
+      "layout": "top"
+     }
     }
    }
   },
@@ -65726,6 +67677,16 @@
      "title": "Thanks, your package is saved",
      "text": "Pick a time with our partnerships team to finalize it.",
      "booking": true
+    },
+    "cover": {
+     "title": "Sponsorship package builder",
+     "text": "Build your package and see the price. We'll send a contract to sign.",
+     "button": "Start",
+     "photo": {
+      "name": "events-sponsorship-builder-welcome",
+      "alt": "A bright meeting room with white chairs",
+      "layout": "top"
+     }
     }
    }
   },
@@ -65905,6 +67866,16 @@
     "end": {
      "title": "Your dates are on hold",
      "text": "We'll confirm your stay and send check-in details a week before you arrive."
+    },
+    "cover": {
+     "title": "Vacation rental booking",
+     "text": "Check the price and hold your dates with a deposit.",
+     "button": "Start",
+     "photo": {
+      "name": "hospitality-rental-deposit-welcome",
+      "alt": "A deck with a view of the hills",
+      "layout": "behind"
+     }
     }
    }
   },
@@ -66086,6 +68057,16 @@
     "end": {
      "title": "Welcome to the gym",
      "text": "Your membership card and first visit details are in your inbox."
+    },
+    "cover": {
+     "title": "Gym membership sign-up",
+     "text": "Join online. Your first payment covers your first month.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-gym-membership-welcome",
+      "alt": "Blue dumbbells on a wooden floor",
+      "layout": "top"
+     }
     }
    }
   },
@@ -66197,6 +68178,16 @@
     "end": {
      "title": "Thank you",
      "text": "A receipt is on its way to your email."
+    },
+    "cover": {
+     "title": "Invoice payment",
+     "text": "Pay an invoice by card.",
+     "button": "Start",
+     "photo": {
+      "name": "general-invoice-payment-welcome",
+      "alt": "A hand holding a payment card",
+      "layout": "top"
+     }
     }
    }
   },
@@ -66616,7 +68607,12 @@
     "cover": {
      "title": "Summer camp sign-up",
      "text": "About 8 minutes. Pick your weeks, then hold your spot with a deposit.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "education-summer-camp-welcome",
+      "alt": "A child paddling a kayak on a lake",
+      "layout": "top"
+     }
     },
     "resume": true,
     "copy": true
@@ -67009,7 +69005,12 @@
     "cover": {
      "title": "Mortgage pre-qualification",
      "text": "About 8 minutes. Have your income and monthly debt payments handy.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "finance-mortgage-prequal-welcome",
+      "alt": "A cozy living room with bookshelves",
+      "layout": "right"
+     }
     },
     "resume": true,
     "copy": true
@@ -68020,7 +70021,12 @@
     "cover": {
      "title": "Therapy intake",
      "text": "About 10 minutes. You can save and come back to it.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "wellness-therapy-intake-welcome",
+      "alt": "A purple armchair",
+      "layout": "left"
+     }
     },
     "resume": true
    }
@@ -68348,7 +70354,18 @@
       }
      ],
      "booking": true
-    }
+    },
+    "cover": {
+     "title": "Fitness assessment",
+     "text": "Answer honestly. Your score shows where to start.",
+     "button": "Start",
+     "photo": {
+      "name": "fitness-fitness-assessment-welcome",
+      "alt": "People running across a bridge",
+      "layout": "behind"
+     }
+    },
+    "one": true
    }
   },
   {
@@ -68669,7 +70686,17 @@
      "title": "You're all set",
      "text": "Your bookkeeper will reach out to start on your books."
     },
-    "copy": true
+    "copy": true,
+    "cover": {
+     "title": "Bookkeeping onboarding",
+     "text": "Set up new bookkeeping clients: accounts, tools, volume and access.",
+     "button": "Start",
+     "photo": {
+      "name": "accounting-bookkeeping-onboarding-welcome",
+      "alt": "A calculator in someone's hand",
+      "layout": "right"
+     }
+    }
    }
   },
   {
@@ -69412,7 +71439,12 @@
     "cover": {
      "title": "Pet adoption application",
      "text": "About 10 minutes. Have two references' phone numbers ready.",
-     "button": "Start"
+     "button": "Start",
+     "photo": {
+      "name": "pets-adoption-application-welcome",
+      "alt": "A brown puppy looking up",
+      "layout": "left"
+     }
     },
     "resume": true
    }
