@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 11, 11
+CSS_V, JS_V = 12, 11
 
 T = DATA["templates"]
 KIND = DATA["kinds"]

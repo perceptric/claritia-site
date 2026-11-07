@@ -117,31 +117,18 @@
 .tsteps__n { font-size: 13px; font-weight: 500; color: var(--signal-text); }
 .tsteps p { font-size: 15px; line-height: 1.6; color: var(--muted); }
 
-/* ═══ Styles: a stage in one style (assets/themes.css sets the colors) ═══ */
-.fth { position: relative; display: block; background-color: var(--f-bg); color: var(--f-text); font-family: var(--f-font); }
-.fth[data-pattern="dots"] { background-image: radial-gradient(circle, var(--f-pattern) 1.2px, transparent 1.2px); background-size: 18px 18px; }
-.fth[data-pattern="grid"] { background-image: linear-gradient(var(--f-pattern) 1px, transparent 1px), linear-gradient(90deg, var(--f-pattern) 1px, transparent 1px); background-size: 28px 28px; }
+/* ═══ Styles: the form in one style (assets/themes.css sets the colors). The form fills its whole box in its own
+   color: no stage, pattern, drawing, card frame or shadow inside it. ═══ */
+.fth { position: relative; display: block; background-color: var(--f-card); color: var(--f-text); font-family: var(--f-font); }
 .fth[data-dark] { color-scheme: dark; }
-.fth__card { position: relative; display: flex; flex-direction: column; overflow: hidden; background: var(--f-card); border: var(--f-bw) solid var(--f-border); border-radius: var(--f-card-radius); }
-.fth[data-shadow="soft"] .fth__card { box-shadow: 0 24px 48px -28px rgb(10 10 10 / 0.35), 0 2px 6px rgb(10 10 10 / 0.05); }
-.fth[data-shadow="hard"] .fth__card { box-shadow: 6px 6px 0 var(--f-text); }
-.fth[data-layout="plain"] .fth__card { border-color: transparent; background: transparent; box-shadow: none; }
-.fart { display: none; background-color: var(--f-art-bg, var(--f-accent)); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.fth[data-layout="cover"] .fart { display: block; height: 140px; border-bottom: var(--f-bw) solid var(--f-border); }
-.fth[data-layout="split"] .fart { display: block; height: 140px; }
-@media (min-width: 900px) {
-  .fth[data-layout="split"] .fth__card { flex-direction: row; }
-  .fth[data-layout="split"] .fart { width: 38%; height: auto; flex-shrink: 0; background-size: 100% auto; background-position: center top; }
-}
+.fth__card { position: relative; display: flex; flex-direction: column; background: transparent; }
+.fart { display: none; }
 
-/* The stage on a template page */
-.tpl .fth { padding: 20px; border-radius: var(--r-2xl); box-shadow: var(--sh-rest); transition: background-color var(--slow) var(--ease-out); }
-@media (min-width: 768px) { .tpl .fth { padding: 48px 40px; } }
+/* The form on a template page: it fills the frame */
+.tpl .fth { overflow: hidden; border-radius: var(--r-2xl); box-shadow: var(--sh-rest); transition: background-color var(--slow) var(--ease-out); }
 .tpl .fth__card { max-width: 680px; margin-inline: auto; }
-.tpl .fth[data-layout="split"] .fth__card { max-width: 880px; }
 .tpl .fth__body { flex: 1; min-width: 0; padding: 28px 22px; }
-@media (min-width: 768px) { .tpl .fth__body { padding: 40px; } }
-.tpl .fth[data-layout="plain"] .fth__body { padding-inline: 4px; }
+@media (min-width: 768px) { .tpl .fth__body { padding: 48px 40px; } }
 
 /* The style menu */
 .tbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
@@ -169,19 +156,11 @@
 .sw i { flex: 1; }
 .sw--own i:nth-child(1) { background: #ff5a36; } .sw--own i:nth-child(2) { background: #5b8cff; } .sw--own i:nth-child(3) { background: #3dff7a; }
 
-/* Card previews: the first questions in the template's style */
-.tp { display: block; height: 214px; overflow: hidden; padding: 16px 16px 0; border-bottom: 1px solid var(--line); }
-.tp .fth__card { height: 100%; border-bottom: 0; border-radius: var(--f-card-radius) var(--f-card-radius) 0 0; }
-.tp[data-shadow="hard"] .fth__card { box-shadow: 4px 4px 0 var(--f-text); }
-.tp[data-shadow="soft"] .fth__card { box-shadow: 0 10px 24px -16px rgb(10 10 10 / 0.4); }
-.tp[data-layout="plain"] { padding-top: 10px; }
-.tp[data-layout="cover"] .fart { height: 46px; flex-shrink: 0; }
-.tp[data-layout="split"] .fth__card { flex-direction: row; }
-.tp[data-layout="split"] .fart { width: 34%; height: auto; flex-shrink: 0; background-size: auto 100%; }
-.tp__in { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 8px; padding: 14px 14px 0; overflow: hidden; }
-.tp[data-layout="plain"] .tp__in { padding-inline: 4px; }
+/* Card previews: the first questions, the form filling the card in the template's style */
+.tp { display: block; height: 214px; overflow: hidden; padding: 0; border-bottom: 1px solid var(--line); }
+.tp .fth__card { height: 100%; }
+.tp__in { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 8px; padding: 16px 16px 0; overflow: hidden; }
 .tp__title { font-family: var(--f-head); font-weight: var(--f-head-weight); font-style: var(--f-head-style); font-size: 13.5px; letter-spacing: -0.01em; line-height: 1.2; }
-.tp[data-layout="plain"] .tp__title { font-size: 17px; }
 .tp__intro { margin-top: -5px; font-size: 9.5px; line-height: 1.4; color: var(--f-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tp__f { display: flex; flex-direction: column; gap: 4px; }
 .tp__l { font-size: 9.5px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
