@@ -187,6 +187,7 @@
   <url><loc>https://tryclaritia.com/templates/category/employee-onboarding</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/patient-intake</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/brief</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/offboarding</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/checklist</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/inspection</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/report</loc></url>
@@ -316,6 +317,7 @@
   <url><loc>https://tryclaritia.com/templates/kits/architecture</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/agriculture</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/personal</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/contact/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/agency</loc></url>
@@ -324,76 +326,174 @@
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/real-estate</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/solar</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/demo-request/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/agency</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/insurance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/logistics</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/hospitality</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/food</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/creative</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/estimate/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/consultation/consulting</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/consultation/legal</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/consultation/finance</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/consultation/coaching</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/qualify/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/qualify/agency</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/qualify/coaching</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/waitlist/ecommerce</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/referral/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/partner/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/partner/agency</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/content-download/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/newsletter/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/appointment/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/appointment/healthcare</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/appointment/wellness</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/appointment/beauty</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/appointment/pets</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/booking/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/booking/wellness</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/booking/beauty</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/booking/automotive</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/reservation/hospitality</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/reservation/food</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/rental/hospitality</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/rental/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/class/fitness</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/class/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/callback/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/callback/insurance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/order/ecommerce</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/order/manufacturing</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/order/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/order/food</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/order/retail</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/payment/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/payment/education</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/payment/nonprofit</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/payment/food</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/payment/sports</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/donation/nonprofit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/donation/faith</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/deposit/food</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/deposit/creative</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/subscription/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/subscription/ecommerce</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/sponsorship/events</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/sponsorship/nonprofit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/sponsorship/sports</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/calculator/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/application/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/application/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/finance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/real-estate</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/application/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/nonprofit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/application/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/application/sports</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/job-application/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/membership/nonprofit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/membership/sports</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/enrollment/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/registration/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/registration/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/registration/sports</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/signup/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/signup/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/volunteer/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/volunteer/nonprofit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/volunteer/faith</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/grant/nonprofit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/vendor/manufacturing</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/event-registration/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/event-registration/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/event-registration/nonprofit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/rsvp/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/rsvp/personal</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/party/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/party/personal</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/wedding/events</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/wedding/personal</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/webinar/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/webinar/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/speaker/education</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/speaker/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/exhibitor/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/feedback/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/feedback/hospitality</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/survey/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/survey/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/survey/education</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/survey/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/evaluation/education</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/evaluation/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/questionnaire/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/nps/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/csat/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/csat/construction</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/product-feedback/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/product-feedback/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/feature-request/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/bug-report/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/bug-report/it</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/exit/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/exit/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/engagement/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/engagement/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/market-research/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/market-research/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/market-research/ecommerce</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/testimonial/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quiz/finance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quiz/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quiz/ecommerce</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/knowledge/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/product-finder/ecommerce</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/product-finder/retail</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/intake/agency</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/intake/consulting</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/intake/legal</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/intake/accounting</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/intake/healthcare</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/intake/wellness</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/client-onboarding/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/client-onboarding/agency</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/client-onboarding/consulting</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/client-onboarding/legal</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/client-onboarding/accounting</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/employee-onboarding/hr</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/patient-intake/healthcare</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/patient-intake/wellness</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/brief/agency</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/brief/creative</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/brief/media</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/offboarding/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/checklist/logistics</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/inspection/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/report/construction</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/request/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/request/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/request/agency</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/request/ecommerce</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/request/manufacturing</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/request/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/request/it</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/incident/manufacturing</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/time-off/hr</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/expense/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/return/ecommerce</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/return/retail</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/consent/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/waiver/fitness</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/waiver/sports</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/release/creative</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/data-request/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/data-request/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/terms/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/terms/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/terms/creative</loc></url>
   <url><loc>https://tryclaritia.com/templates/general-contact-us</loc></url>
   <url><loc>https://tryclaritia.com/templates/general-newsletter</loc></url>
   <url><loc>https://tryclaritia.com/templates/general-book-a-call</loc></url>
@@ -829,5 +929,310 @@
   <url><loc>https://tryclaritia.com/templates/general-franchise-inquiry</loc></url>
   <url><loc>https://tryclaritia.com/templates/general-in-depth-feedback</loc></url>
   <url><loc>https://tryclaritia.com/templates/hospitality-trip-planner</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-contact</loc></url>
+  <url><loc>https://tryclaritia.com/templates/legal-short-contact</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-ask-the-kitchen</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-talk-to-us</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-get-started</loc></url>
+  <url><loc>https://tryclaritia.com/templates/solar-free-roof-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-home-value-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-short-demo-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-product-tour-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/manufacturing-see-it-run</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-quote</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-fast-quote</loc></url>
+  <url><loc>https://tryclaritia.com/templates/logistics-freight-price-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-catering-quote-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-ballpark-estimate</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-repair-estimate-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/logistics-moving-estimate</loc></url>
+  <url><loc>https://tryclaritia.com/templates/consulting-free-consultation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/legal-quick-case-review</loc></url>
+  <url><loc>https://tryclaritia.com/templates/wellness-discovery-call</loc></url>
+  <url><loc>https://tryclaritia.com/templates/architecture-design-chat</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-fit-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-budget-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-quick-qualifier</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-join-the-waitlist</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-class-waitlist</loc></url>
+  <url><loc>https://tryclaritia.com/templates/retail-back-in-stock</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-refer-a-friend</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-send-a-referral</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-patient-referral-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-partner-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/ecommerce-wholesale-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/media-creator-collab</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-get-the-guide</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-free-checklist</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-course-syllabus</loc></url>
+  <url><loc>https://tryclaritia.com/templates/media-newsletter-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-updates-list</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-recipe-club</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-csat-survey-sections</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-product-feedback-feature-pages</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-bug-report-steps-environment</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-exit-interview-pages</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-engagement-survey-parts</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-market-research-survey</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-personality-quiz-parts</loc></url>
+  <url><loc>https://tryclaritia.com/templates/ecommerce-product-finder-follow-up</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-employee-onboarding-packet</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-offboarding-handover</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-detailed-project-brief</loc></url>
+  <url><loc>https://tryclaritia.com/templates/consulting-client-onboarding-access-billing</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-incident-investigation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-time-off-coverage</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-onboarding-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/manufacturing-equipment-inspection-area</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-data-request-identity-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-terms-acceptance-clauses</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-contact-with-routing</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-website-quote-with-scope</loc></url>
+  <url><loc>https://tryclaritia.com/templates/consulting-consultation-background-goals</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-partner-application-references</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-referral-program-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-group-class-booking</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hospitality-multi-room-reservation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/wellness-recurring-appointment-setup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-callback-with-case-details</loc></url>
+  <url><loc>https://tryclaritia.com/templates/manufacturing-bulk-order-delivery</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-sponsorship-order</loc></url>
+  <url><loc>https://tryclaritia.com/templates/ecommerce-subscription-setup-preferences</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-full-job-application</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-program-enrollment-guardian</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-membership-application-references</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-volunteer-application-availability</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-vendor-onboarding-documents</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-wedding-rsvp-meals-travel</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-webinar-series-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-speaker-submission-abstract</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-exhibitor-booth-extras</loc></url>
+  <url><loc>https://tryclaritia.com/templates/personal-party-planning-brief</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-two-minute-intake</loc></url>
+  <url><loc>https://tryclaritia.com/templates/coaching-new-client-basics</loc></url>
+  <url><loc>https://tryclaritia.com/templates/accounting-tax-intake-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-welcome-questions</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-setup-call-prep</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-new-client-checklist</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-first-day-details</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-laptop-preference</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-new-staff-basics</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-new-patient-basics</loc></url>
+  <url><loc>https://tryclaritia.com/templates/wellness-massage-intake-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-new-pet-basics</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-one-page-brief</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-design-brief-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/media-video-brief-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-exit-reason</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-return-my-equipment</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-client-wrap-up</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-checklist</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hospitality-room-turn-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/logistics-truck-pre-trip</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-spot-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-cooler-temp-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-move-out-walkthrough</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-end-of-day-report</loc></url>
+  <url><loc>https://tryclaritia.com/templates/retail-daily-sales-report</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-behavior-note</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-simple-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-status-update</loc></url>
+  <url><loc>https://tryclaritia.com/templates/government-service-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/faith-prayer-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-time-log</loc></url>
+  <url><loc>https://tryclaritia.com/templates/logistics-delivery-confirmation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-workout-log</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-near-miss</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-playground-incident</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hospitality-guest-incident</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-day-off-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-trade-a-shift</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-sub-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-password-reset</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-tool-access</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-something-is-broken</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-buy-this</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-classroom-supply-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-material-order-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-receipt-upload</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-mileage-claim</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-volunteer-reimbursement</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-fix-this</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-tenant-repair-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/manufacturing-machine-issue</loc></url>
+  <url><loc>https://tryclaritia.com/templates/ecommerce-quick-return</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-warranty-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/retail-exchange-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-simple-consent</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-text-reminder-consent</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-app-use-consent</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-waiver</loc></url>
+  <url><loc>https://tryclaritia.com/templates/sports-minor-waiver-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-activity-waiver</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-photo-ok</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-student-photo-ok</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-model-release-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-delete-my-data</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-copy-of-my-data</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-stop-marketing-emails</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-accept-the-terms</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-house-rules-ok</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-scope-sign-off</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-one-question-feedback</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-thumbs-up-or-down</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-rate-your-meal</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-rate-your-visit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-short-survey</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-parent-pulse-survey</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hospitality-guest-pulse</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-community-needs-survey</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-quick-course-evaluation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-session-rating</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-training-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-three-question-questionnaire</loc></url>
+  <url><loc>https://tryclaritia.com/templates/wellness-lifestyle-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-style-questionnaire</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-nps-with-one-reason</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-client-nps</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-member-nps</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-csat</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-ticket-satisfaction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-service-satisfaction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-quick-product-feedback</loc></url>
+  <url><loc>https://tryclaritia.com/templates/ecommerce-product-thoughts</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-new-dish-feedback</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-suggest-a-feature</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-idea-box</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-app-wishlist</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-report-a-problem</loc></url>
+  <url><loc>https://tryclaritia.com/templates/ecommerce-checkout-problem</loc></url>
+  <url><loc>https://tryclaritia.com/templates/media-website-glitch</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-why-you-left</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-cancel-reason</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-short-exit-survey</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-pulse-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-manager-check-in</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-staff-burnout-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-two-question-research</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-menu-idea-poll</loc></url>
+  <url><loc>https://tryclaritia.com/templates/retail-why-you-shop-here</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-two-question-poll</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-class-vote</loc></url>
+  <url><loc>https://tryclaritia.com/templates/faith-event-date-poll</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-leave-a-short-review</loc></url>
+  <url><loc>https://tryclaritia.com/templates/consulting-one-line-testimonial</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-happy-pet-story</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-three-question-quiz</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-money-habits-quiz</loc></url>
+  <url><loc>https://tryclaritia.com/templates/wellness-sleep-quiz</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-personality-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/beauty-quick-skin-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-which-pet-fits</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-pop-quiz</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-safety-quiz</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-reading-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-five-point-scorecard</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-website-scorecard</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-site-safety-score</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-finder</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-find-your-roast</loc></url>
+  <url><loc>https://tryclaritia.com/templates/sports-gear-finder</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-am-i-eligible</loc></url>
+  <url><loc>https://tryclaritia.com/templates/insurance-coverage-eligibility</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-trial-pre-screen</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-short-application</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-program-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-residency-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-account-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-express-interest-in-a-role</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-kitchen-job-quick-apply</loc></url>
+  <url><loc>https://tryclaritia.com/templates/retail-store-job-quick-apply</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-membership-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-gym-join-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-hoa-member-info</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-enroll-in-one-class</loc></url>
+  <url><loc>https://tryclaritia.com/templates/sports-camp-enrollment-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-program-enrollment</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-registration</loc></url>
+  <url><loc>https://tryclaritia.com/templates/sports-player-registration-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-program-registration</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-join-the-list</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-quick-trial-start</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-meetup-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-volunteer-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-event-day-helper</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-classroom-helper</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-grant-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-scholarship-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-artist-grant-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-viewing-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-renter-prequalify</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-tenant-contact-update</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-vendor-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-food-truck-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agriculture-market-stall-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-quick-event-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-open-house-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-user-meetup-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/sports-fun-run-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-quick-rsvp</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-team-lunch-rsvp</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-gala-rsvp</loc></url>
+  <url><loc>https://tryclaritia.com/templates/personal-party-headcount</loc></url>
+  <url><loc>https://tryclaritia.com/templates/personal-potluck-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-birthday-party-booking</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-wedding-song-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/personal-wedding-address-collector</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-wedding-date-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/saas-webinar-signup-short</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-money-class-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-health-talk-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-speaker-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/media-podcast-pitch</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-guest-lecture-offer</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-booth-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/faith-bazaar-table-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/manufacturing-trade-show-meeting</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-quick-appointment-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/beauty-salon-quick-book</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-new-visit-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-quick-vet-visit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-pick-a-time-window</loc></url>
+  <url><loc>https://tryclaritia.com/templates/coaching-book-a-session</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-mini-session</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-service-slot</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-table-for-tonight</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hospitality-quick-room-hold</loc></url>
+  <url><loc>https://tryclaritia.com/templates/sports-court-reservation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-rental-availability-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-party-rental-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-short-stay-inquiry</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-class-spot-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-trial-lesson</loc></url>
+  <url><loc>https://tryclaritia.com/templates/sports-swim-lesson-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-call-me-back</loc></url>
+  <url><loc>https://tryclaritia.com/templates/insurance-quick-callback</loc></url>
+  <url><loc>https://tryclaritia.com/templates/solar-call-me-about-solar</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-simple-order</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-bakery-preorder</loc></url>
+  <url><loc>https://tryclaritia.com/templates/ecommerce-reorder</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-pay-an-invoice</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-tuition-payment-notice</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-rent-payment-note</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-quick-donation</loc></url>
+  <url><loc>https://tryclaritia.com/templates/faith-offering-pledge</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-class-fund-gift</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-deposit-request</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-vehicle-hold</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-litter-deposit</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-pause-my-subscription</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-meal-box-signup</loc></url>
+  <url><loc>https://tryclaritia.com/templates/media-change-my-plan</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-sponsor-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/sports-team-sponsor-interest</loc></url>
+  <url><loc>https://tryclaritia.com/templates/nonprofit-sponsor-a-table</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-simple-price-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/solar-bill-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-loan-payment-check</loc></url>
   <!-- templates:end -->
 </urlset>
