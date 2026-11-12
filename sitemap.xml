@@ -249,10 +249,12 @@
   <url><loc>https://tryclaritia.com/templates/construction/electrical</loc></url>
   <url><loc>https://tryclaritia.com/templates/construction/roofing</loc></url>
   <url><loc>https://tryclaritia.com/templates/construction/landscaping</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction/moving</loc></url>
   <url><loc>https://tryclaritia.com/templates/healthcare/clinics</loc></url>
   <url><loc>https://tryclaritia.com/templates/fitness/gyms</loc></url>
   <url><loc>https://tryclaritia.com/templates/fitness/personal-training</loc></url>
   <url><loc>https://tryclaritia.com/templates/beauty/salons</loc></url>
+  <url><loc>https://tryclaritia.com/templates/beauty/spas</loc></url>
   <url><loc>https://tryclaritia.com/templates/education/schools</loc></url>
   <url><loc>https://tryclaritia.com/templates/education/tutoring</loc></url>
   <url><loc>https://tryclaritia.com/templates/education/online-courses</loc></url>
@@ -260,11 +262,13 @@
   <url><loc>https://tryclaritia.com/templates/hospitality/hotels</loc></url>
   <url><loc>https://tryclaritia.com/templates/hospitality/vacation-rentals</loc></url>
   <url><loc>https://tryclaritia.com/templates/food/restaurants</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food/catering</loc></url>
   <url><loc>https://tryclaritia.com/templates/events/weddings</loc></url>
   <url><loc>https://tryclaritia.com/templates/events/conferences</loc></url>
   <url><loc>https://tryclaritia.com/templates/real-estate/residential</loc></url>
   <url><loc>https://tryclaritia.com/templates/real-estate/property-management</loc></url>
   <url><loc>https://tryclaritia.com/templates/creative/photography</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative/video</loc></url>
   <url><loc>https://tryclaritia.com/templates/team/marketing</loc></url>
   <url><loc>https://tryclaritia.com/templates/team/sales</loc></url>
   <url><loc>https://tryclaritia.com/templates/team/success</loc></url>
@@ -299,6 +303,7 @@
   <url><loc>https://tryclaritia.com/templates/kits/education</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/ecommerce</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/manufacturing</loc></url>
+  <url><loc>https://tryclaritia.com/templates/kits/logistics</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/automotive</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/hospitality</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/events</loc></url>
@@ -315,6 +320,7 @@
   <url><loc>https://tryclaritia.com/templates/kits/media</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/retail</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/architecture</loc></url>
+  <url><loc>https://tryclaritia.com/templates/kits/security</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/agriculture</loc></url>
   <url><loc>https://tryclaritia.com/templates/kits/personal</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/contact/any-business</loc></url>
@@ -322,21 +328,31 @@
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/agency</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/consulting</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/lead-generation/finance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/insurance</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/real-estate</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/lead-generation/solar</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/demo-request/saas</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/agency</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/accounting</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/insurance</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/real-estate</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/construction</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/logistics</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/automotive</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/hospitality</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/food</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/quote/creative</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/quote/security</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/estimate/agency</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/estimate/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/estimate/automotive</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/consultation/consulting</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/consultation/legal</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/consultation/finance</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/consultation/beauty</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/consultation/coaching</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/qualify/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/qualify/agency</loc></url>
@@ -378,12 +394,31 @@
   <url><loc>https://tryclaritia.com/templates/category/donation/faith</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/deposit/food</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/deposit/creative</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/subscription/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/subscription/agency</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/subscription/construction</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/subscription/ecommerce</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/subscription/media</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/sponsorship/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/sponsorship/nonprofit</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/sponsorship/sports</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/any-business</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/agency</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/accounting</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/finance</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/real-estate</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/calculator/construction</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/solar</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/healthcare</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/education</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/logistics</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/automotive</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/events</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/it</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/food</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/creative</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/pets</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/calculator/retail</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/any-business</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/saas</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/application/finance</loc></url>
@@ -413,6 +448,7 @@
   <url><loc>https://tryclaritia.com/templates/category/rsvp/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/rsvp/personal</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/party/events</loc></url>
+  <url><loc>https://tryclaritia.com/templates/category/party/food</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/party/personal</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/wedding/events</loc></url>
   <url><loc>https://tryclaritia.com/templates/category/wedding/personal</loc></url>
@@ -1234,5 +1270,105 @@
   <url><loc>https://tryclaritia.com/templates/general-simple-price-check</loc></url>
   <url><loc>https://tryclaritia.com/templates/solar-bill-check</loc></url>
   <url><loc>https://tryclaritia.com/templates/finance-loan-payment-check</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-window-replacement-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-bathroom-remodel-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-basement-finishing-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-siding-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-deck-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-fence-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-concrete-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-countertop-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-cabinet-refacing-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-flooring-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-interior-painting-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-exterior-painting-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-epoxy-floor-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-garage-door-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-blinds-shutters-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-closet-system-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-insulation-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-gutter-install-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-artificial-turf-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-pool-installation-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-hvac-replacement-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-generator-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-ev-charger-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-panel-upgrade-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-water-treatment-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/security-home-security-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/security-smart-home-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/solar-battery-backup-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-repipe-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-septic-pumping-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-pool-service-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-window-cleaning-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-pressure-washing-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-gutter-cleaning-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-snow-removal-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-junk-removal-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-tree-service-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-sod-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-irrigation-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-commercial-landscaping-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-move-out-cleaning-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-office-cleaning-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-post-construction-cleaning-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-duct-cleaning-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/construction-handyman-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-detailing-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-ceramic-coating-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-car-wrap-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-window-tint-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-dent-repair-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-tire-package-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/automotive-fleet-washing-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-wedding-venue-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-bar-service-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-dj-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-photo-booth-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-party-rental-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-event-planner-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-wedding-florist-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/food-food-truck-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-wedding-video-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/events-bounce-house-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-website-cost-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-seo-pricing-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-ad-management-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/agency-social-media-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/accounting-bookkeeping-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/accounting-tax-prep-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-payroll-pricing-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hr-recruiting-fee-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-translation-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/creative-brand-package-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/retail-print-order-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/retail-sign-banner-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/logistics-office-move-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/general-shredding-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/it-app-development-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/insurance-business-insurance-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/fitness-personal-training-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-tutoring-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-daycare-tuition-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-summer-camp-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/education-driving-school-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-dog-boarding-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-dog-grooming-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/pets-dog-walking-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/healthcare-home-care-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/beauty-med-spa-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/beauty-laser-hair-removal-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/wellness-aligner-payment-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-seller-net-sheet</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-home-value-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-property-management-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/hospitality-rental-management-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/real-estate-home-staging-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-loan-payment-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/finance-refinance-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/insurance-life-insurance-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/retail-custom-framing-calculator</loc></url>
+  <url><loc>https://tryclaritia.com/templates/ecommerce-wholesale-order-calculator</loc></url>
   <!-- templates:end -->
 </urlset>
