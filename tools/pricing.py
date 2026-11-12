@@ -11,16 +11,16 @@ esc = shell.esc
 PLANS = [
     {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0,
      "btn": ("Start free", "https://app.tryclaritia.com/signup", "ghost"),
-     "top": ["Unlimited forms", "250 submissions/month", "1 calendar per seat", "100 AI credits/month", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and page skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
+     "top": ["Unlimited forms", "250 submissions/month", "1 calendar per seat", "100 AI credits/month", "1,000 workflow emails/month", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and page skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
     {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12,
      "btn": ("Start free", "https://app.tryclaritia.com/signup", "ghost"), "plus": "Free",
-     "top": ["Unlimited forms", "2,000 submissions/month", "6 calendars per seat", "500 AI credits/month", "Unlimited meeting types", "e-Signatures", "Stripe payment", "Custom brand", "Redirect on completion", "Booking pages for each person and the team", "Group meetings with a guest limit", "Meeting polls", "Paid meetings with Stripe"]},
+     "top": ["Unlimited forms", "2,000 submissions/month", "6 calendars per seat", "500 AI credits/month", "10,000 workflow emails/month", "Unlimited meeting types", "e-Signatures", "Stripe payment", "Custom brand", "Redirect on completion", "Booking pages for each person and the team", "Group meetings with a guest limit", "Meeting polls", "Paid meetings with Stripe"]},
     {"id": "pro", "name": "Pro", "for": "For teams that share leads", "m": 39, "y": 31, "pick": True,
      "btn": ("Start free", "https://app.tryclaritia.com/signup", "primary"), "plus": "Starter",
-     "top": ["5,000 submissions/month", "2,000 AI credits/month", "Follow-up emails from your own domain", "Remove Claritia branding", "Round robin with weights and priority", "Meetings with everyone free", "Team pools", "Daily and weekly limits for each person", "No-show follow-up with the reschedule link"]},
+     "top": ["5,000 submissions/month", "2,000 AI credits/month", "50,000 workflow emails/month", "Follow-up emails from your own domain", "Remove Claritia branding", "Round robin with weights and priority", "Meetings with everyone free", "Team pools", "Daily and weekly limits for each person", "No-show follow-up with the reschedule link"]},
     {"id": "business", "name": "Business", "for": "For busy teams with lots of leads", "m": 79, "y": 63,
      "btn": ("Start free", "https://app.tryclaritia.com/signup", "ghost"), "plus": "Pro",
-     "top": ["Unlimited submissions", "5,000 AI credits/month", "Your own domain for forms and booking pages", "Partial answers", "Drop-off by question", "Owner first (the person's owner in your CRM)", "Double round robin (one from each of two teams)", "Salesforce", "Chat help"]},
+     "top": ["Unlimited submissions", "5,000 AI credits/month", "200,000 workflow emails/month", "Your own domain for forms and booking pages", "Partial answers", "Drop-off by question", "Owner first (the person's owner in your CRM)", "Double round robin (one from each of two teams)", "Salesforce", "Chat help"]},
 ]
 
 Y, N = True, False
@@ -36,6 +36,7 @@ GROUPS = [
         ("Submissions", ["250", "2,000", "5,000", "Unlimited"]),
         ("Additional form submissions", [N, "$5 per 1,000", "$5 per 1,000", N]),
         ("AI credits", ["100", "500", "2,000", "5,000"]),
+        ("Workflow emails", ["1,000", "10,000", "50,000", "200,000"]),
     ]),
     ("Forms", [
         ("Unlimited forms", [Y, Y, Y, Y]),
