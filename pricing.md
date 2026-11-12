@@ -13,6 +13,7 @@ Each plan is priced per seat. A seat is a teammate people can book a meeting wit
 | Submissions | 250 | 2,000 | 5,000 | Unlimited |
 | Additional form submissions | – | $5 per 1,000 | $5 per 1,000 | – |
 | AI credits | 100 | 500 | 2,000 | 5,000 |
+| Workflow emails | 1,000 | 10,000 | 50,000 | 200,000 |
 | **Forms** | | | | |
 | Unlimited forms | Yes | Yes | Yes | Yes |
 | Multi-page forms + progress bar | Yes | Yes | Yes | Yes |
