@@ -99,7 +99,7 @@
   var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   // Calculations: the app's small formula language (numbers, + - * /, comparisons, and, or, min, max, sum, round,
-  // ceil, floor, abs, if, ifempty, other answers as {key}). Read by this parser, never eval. An empty answer is null and
+  // ceil, floor, abs, pow, if, ifempty, other answers as {key}). Read by this parser, never eval. An empty answer is null and
   // null carries through, the same as in the app.
   function calc(src, get) {
     var toks = (src.match(/\s+|\d+(?:\.\d+)?|\.\d+|\{[^}]*\}|[a-z]+|<=|>=|==|!=|[-+*\/(),<>]|./gi) || []).filter(function (t) { return t.trim(); });
@@ -136,6 +136,7 @@
         case "ceil": return args[0] == null ? null : Math.ceil(args[0]);
         case "floor": return args[0] == null ? null : Math.floor(args[0]);
         case "abs": return args[0] == null ? null : Math.abs(args[0]);
+        case "pow": return args[0] == null || args[1] == null || Math.abs(args[1]) > 1000 ? null : num(Math.pow(args[0], args[1]));
         case "if": return args[0] == null ? null : args[0] ? args[1] : args[2];
         case "ifempty": return args[0] == null ? args[1] : args[0];
         default: throw 0;
