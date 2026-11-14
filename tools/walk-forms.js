@@ -17,6 +17,9 @@ fs.writeFileSync(tmp, 'test');
     const errs = [];
     p.on('pageerror', (e) => errs.push(e.message));
     await p.goto(`${base}/templates/${job.slug}/`, { waitUntil: 'networkidle' });
+    // The cookie card sits at the bottom of the screen; answer it so it never covers a field.
+    const consent = p.locator('.consent [data-c="reject"]');
+    if (await consent.count()) await consent.click();
     const form = p.locator('form[data-cf]').first();
     const start = form.locator('[data-start]');
     if (await start.count() && (await start.isVisible())) await start.click();
@@ -28,7 +31,10 @@ fs.writeFileSync(tmp, 'test');
       seen.push(title);
       // Several passes: answering one question can show another below it.
       const filled = new Set();
-      for (let pass = 0; pass < 3; pass++) {
+      let lastGrow = 0;
+      for (let pass = 0; pass < 8; pass++) {
+      const before = filled.size;
+      if (pass > 0 && pass === lastGrow + 2) break; // nothing new showed up last pass
       const fields = page.locator('.cf__f:not([hidden])');
       const n = await fields.count();
       for (let i = 0; i < n; i++) {
@@ -89,6 +95,7 @@ fs.writeFileSync(tmp, 'test');
           await el.fill(v, { timeout: 2000 }).catch(() => {});
         }
       }
+      if (filled.size > before) lastGrow = pass;
       }
       await form.locator('[data-next]').click();
       await p.waitForTimeout(150);
