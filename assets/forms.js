@@ -295,6 +295,12 @@
       var e = el.querySelector(".cf__err");
       el.classList.toggle("is-bad", !!msg);
       if (e) { e.textContent = msg; e.hidden = !msg; }
+      // Screen readers: the field says it is invalid and reads its message.
+      Array.prototype.forEach.call(el.querySelectorAll('input:not([type="hidden"]), textarea, select, .cf__dd-btn, [role="radiogroup"], [role="group"]'), function (c) {
+        var ids = (c.getAttribute("aria-describedby") || "").split(" ").filter(function (x) { return x && (!e || x !== e.id); });
+        if (msg) { c.setAttribute("aria-invalid", "true"); if (e) ids.push(e.id); } else c.removeAttribute("aria-invalid");
+        if (ids.length) c.setAttribute("aria-describedby", ids.join(" ")); else c.removeAttribute("aria-describedby");
+      });
     }
 
     // An answer as a number for a formula: a choice reads its points, pick many adds them up, numbers read as numbers.
@@ -359,6 +365,12 @@
       });
       return bad;
     }
+    var live = document.createElement("p");
+    live.className = "sr-only";
+    live.setAttribute("role", "status");
+    live.setAttribute("aria-live", "polite");
+    form.appendChild(live);
+    function say(t) { live.textContent = ""; setTimeout(function () { live.textContent = t; }, 50); }
     function focus(x) {
       var el = wrapOf(x.f.key);
       if (!el) return;
@@ -438,6 +450,8 @@
       var bad = validate(st.last ? st.lp : at);
       if (bad) {
         if (bad.page !== at) { at = bad.page; render(); validate(at); }
+        var n = form.querySelectorAll(".cf__f.is-bad").length, w = wrapOf(bad.f.key), lab = w && w.querySelector(".cf__label"), msg = w && w.querySelector(".cf__err");
+        say((n > 1 ? n + " questions need a fix. " : "") + (lab ? lab.textContent.replace(/\s*\*$/, "") + ": " : "") + (msg ? msg.textContent : ""));
         focus(bad);
         return;
       }
@@ -448,6 +462,7 @@
     back.addEventListener("click", function () { var st = render(); if (st.i > 0) { at = st.lp[st.i - 1]; render(); top(); } });
     // A cover screen: the form waits behind it until Start.
     var cover = form.querySelector("[data-cover]");
+    if (cover && window.matchMedia("(max-width: 767px)").matches) cover = null;
     if (cover) {
       form.classList.add("has-cover");
       cover.querySelector("[data-start]").addEventListener("click", function () { form.classList.remove("has-cover"); render(); top(); });
@@ -708,4 +723,20 @@ function keepInView(el) {
     if (want && meta[want]) apply(want, true);
   }
   bars.forEach(setup);
+})();
+
+// Fonts: a template page loads only its own style's fonts at first. The rest load when a style menu, the style
+// previews or the related forms come near, so most visits never download them. ---
+(function () {
+  var all = document.querySelector("link[data-fonts-all]");
+  if (!all) return;
+  var done = false;
+  function load() { if (done) return; done = true; all.media = "all"; }
+  document.querySelectorAll("[data-styles]").forEach(function (b) {
+    ["pointerover", "focusin", "click"].forEach(function (ev) { b.addEventListener(ev, load, { once: true }); });
+  });
+  var near = document.querySelectorAll(".tlooks, .tgrid");
+  if (!("IntersectionObserver" in window)) { load(); return; }
+  var io = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { load(); io.disconnect(); } }, { rootMargin: "150px 0px" });
+  near.forEach(function (el) { io.observe(el); });
 })();

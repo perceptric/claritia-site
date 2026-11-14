@@ -25,7 +25,7 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 | `tools/shell.py` | Copies the sprite, header, phone menu and footer out of `index.html` and writes the shared `<head>`. |
 | `templates/` | The form template gallery: `/templates`, list pages and one page per template, each with the form to try. Written by `tools/templates.py`. |
 | `tools/templates.py`, `tools/templates.json` | Writes `templates/` and its lines in `sitemap.xml` from the template data, which comes from the app (`node scripts/export-templates.ts` in `dev-arrowsterr/claritia`). |
-| `assets/forms.css`, `assets/forms.js` | The gallery's search and filters, the style menu and Shuffle, and the live forms: pages, show-if logic, checks and the end screen. |
+| `assets/forms.css`, `assets/forms.js` | The gallery's search and filters, the style menu and Shuffle, and the live forms: pages, show-if logic, checks and the end screen. A template page loads only its own style's fonts; the rest load when the style menu, the style previews or the related forms come near. Errors are announced to screen readers, phones skip the cover screen, and the news opt-in box starts unchecked. |
 | `assets/themes.css`, `assets/form-art/` | The 18 form styles and their drawings. Written by `tools/templates.py` from the app's `src/lib/forms/themes.ts`. |
 | `llms.txt`, `pricing.md` | Short guides for AI tools. |
 | `.htaccess` | https and www redirects, the 404 page, app links, cache times. |

@@ -26,7 +26,7 @@ Each plan is priced per seat. A seat is a teammate people can book a meeting wit
 | Checks on every field | Yes | Yes | Yes | Yes |
 | Thank-you screen | Yes | Yes | Yes | Yes |
 | 18 form styles | Yes | Yes | Yes | Yes |
-| 435 form templates | Yes | Yes | Yes | Yes |
+| 840 form templates | Yes | Yes | Yes | Yes |
 | Works on phones and by keyboard | Yes | Yes | Yes | Yes |
 | e-Signatures | – | Yes | Yes | Yes |
 | Stripe payment | – | Yes | Yes | Yes |

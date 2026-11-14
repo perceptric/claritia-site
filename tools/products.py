@@ -228,7 +228,7 @@ def forms_page():
             ("Every answer, ready to use", "Each fill is saved with the page and campaign it came from, then sent to HubSpot, Salesforce, Google Sheets, Slack or your email list.", None, card("Submissions", hogan, "Example data")),
         ]))
         + frame(how("From one sentence to live in minutes", [
-            ("Describe the form", "Tell Tia who it's for and what it needs to ask. Or pick one of 435 templates."),
+            ("Describe the form", "Tell Tia who it's for and what it needs to ask. Or pick one of 840 templates."),
             ("Make it yours", "Your style, your logic, your thank-you screen and the meeting it books."),
             ("Share it or put it on your site", "A link, a QR code, or one line of code for any website."),
             ("Watch the leads come in", "Answers land in Submissions and in the tools you connect."),

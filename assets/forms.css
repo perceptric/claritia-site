@@ -466,3 +466,18 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
 
 /* The Multi-page shelf on the gallery */
 .tmore { display: flex; justify-content: center; margin-top: 28px; }
+
+/* Phones: fields at 16px so iPhones do not zoom in, and every option big enough for a thumb (44px) */
+@media (max-width: 767px) {
+  .cf__in, .cf textarea, .cf select, .cf__dd-btn { font-size: 16px; }
+  .cf__star { padding: 8px; }
+  .cf__stars { gap: 0; margin-inline: -8px; }
+  .cf__matrix td { padding: 0; }
+  .cf__cell { align-items: center; min-width: 44px; min-height: 44px; }
+  .cf__opt, .cf__agree { min-height: 44px; }
+}
+/* The opt-in box for news, under the form */
+.cf__optin { margin-top: 4px; font-size: 13px; color: var(--f-muted); }
+.cf__optin + .cf__notice { margin-top: 6px; }
+/* Buttons use a slightly deeper shade when a style's own color is too light for white text */
+.cf__btn:not(.cf__btn--ghost) { background: var(--f-btn, var(--f-accent)); border-color: var(--f-btn, var(--f-accent)); }

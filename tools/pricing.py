@@ -11,7 +11,7 @@ esc = shell.esc
 PLANS = [
     {"id": "free", "name": "Free", "for": "For one person who wants to try it", "m": 0, "y": 0,
      "btn": ("Start free", "https://app.tryclaritia.com/signup", "ghost"),
-     "top": ["Unlimited forms", "250 submissions/month", "1 calendar per seat", "100 AI credits/month", "1,000 workflow emails/month", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and page skips", "Calculations and formulas", "File uploads", "435 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
+     "top": ["Unlimited forms", "250 submissions/month", "1 calendar per seat", "100 AI credits/month", "1,000 workflow emails/month", "AI form builder", "Multi-page forms + progress bar", "Conditional logic and page skips", "Calculations and formulas", "File uploads", "840 form templates", "Meeting booking inside forms", "Google Meet, Teams and Zoom links", "Email reminders a day and an hour before"]},
     {"id": "starter", "name": "Starter", "for": "For small teams that book calls", "m": 15, "y": 12,
      "btn": ("Start free", "https://app.tryclaritia.com/signup", "ghost"), "plus": "Free",
      "top": ["Unlimited forms", "2,000 submissions/month", "6 calendars per seat", "500 AI credits/month", "10,000 workflow emails/month", "Unlimited meeting types", "e-Signatures", "Stripe payment", "Custom brand", "Redirect on completion", "Booking pages for each person and the team", "Group meetings with a guest limit", "Meeting polls", "Paid meetings with Stripe"]},
@@ -50,7 +50,7 @@ GROUPS = [
         ("Checks on every field", [Y, Y, Y, Y]),
         ("Thank-you screen", [Y, Y, Y, Y]),
         ("18 form styles", [Y, Y, Y, Y]),
-        ("435 form templates", [Y, Y, Y, Y]),
+        ("840 form templates", [Y, Y, Y, Y]),
         ("Works on phones and by keyboard", [Y, Y, Y, Y]),
         ("e-Signatures", [N, Y, Y, Y]),
         ("Stripe payment", [N, Y, Y, Y]),

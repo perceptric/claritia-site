@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 12, 12
+CSS_V, JS_V = 13, 13
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -33,6 +33,44 @@ def ind_slug(v: str) -> str:
 THEMES = DATA["themes"]
 TH = {x["id"]: x for x in THEMES}
 FONTS_URL = DATA["fonts"].replace("&", "&amp;")
+
+
+def theme_fonts_url(tid: str) -> str:
+    """Only the font families one style uses, taken from the full Google Fonts link, so a template page loads less."""
+    names = []
+    for k in ("--f-font", "--f-head"):
+        m = re.match(r'\s*"([^"]+)"', TH[tid]["vars"].get(k, ""))
+        if m and m.group(1) not in names:
+            names.append(m.group(1))
+    base, _, query = DATA["fonts"].partition("?")
+    keep = [q for q in query.split("&") if q.startswith("family=") and q[7:].split(":")[0].replace("+", " ") in names]
+    rest = [q for q in query.split("&") if not q.startswith("family=")]
+    return (base + "?" + "&".join(keep + rest)).replace("&", "&amp;") if keep else FONTS_URL
+
+
+def contrast(a: str, b: str) -> float:
+    def lum(h):
+        h = h.lstrip("#")
+        if len(h) == 3:
+            h = "".join(c * 2 for c in h)
+        c = [int(h[i:i + 2], 16) / 255 for i in (0, 2, 4)]
+        c = [x / 12.92 if x <= 0.03928 else ((x + 0.055) / 1.055) ** 2.4 for x in c]
+        return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
+    la, lb = sorted((lum(a), lum(b)), reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+def button_shade(accent: str, ink: str):
+    """A style's own button color when its text reads clearly (4.5:1); else the nearest deeper or lighter shade that does."""
+    if not (re.fullmatch(r"#[0-9a-fA-F]{6}", accent or "") and re.fullmatch(r"#[0-9a-fA-F]{6}", ink or "")) or contrast(accent, ink) >= 4.5:
+        return None
+    toward = 0 if contrast("#ffffff", ink) < contrast("#000000", ink) else 255  # darken under light text, lighten under dark text
+    rgb = [int(accent[i:i + 2], 16) for i in (1, 3, 5)]
+    for step in range(1, 41):
+        c = "#" + "".join(f"{round(v + (toward - v) * step / 40):02x}" for v in rgb)
+        if contrast(c, ink) >= 4.5:
+            return c
+    return None
 IND_LABEL = {i["value"]: i["label"] for i in IND}
 ORDERED = [t for t in T if t["featured"]] + [t for t in T if not t["featured"]]
 
@@ -121,6 +159,9 @@ def write_styles() -> None:
     rules = ["/* Form styles. Written by tools/templates.py from the app's src/lib/forms/themes.ts. */"]
     for th in THEMES:
         body = ";".join(f"{k}:{v}" for k, v in th["vars"].items())
+        shade = button_shade(th["vars"].get("--f-accent", ""), th["vars"].get("--f-accent-ink", ""))
+        if shade:
+            body += f";--f-btn:{shade}"
         rules.append(f".th-{th['id']}{{{body}}}")
         if th["art"]:
             (art / f"{th['id']}.svg").write_text(th["art"])
@@ -173,9 +214,12 @@ SPRITE = shell.SPRITE.replace(
 CLOSE_MARK = shell.CLOSE_MARK
 
 
-def page(path: str, title: str, desc: str, body: str, ld: list) -> None:
+def page(path: str, title: str, desc: str, body: str, ld: list, fonts: str | None = None) -> None:
+    # A template page loads its own style's fonts; the rest wait until a style menu or preview needs them (forms.js).
+    font_links = (f'<link rel="stylesheet" href="{fonts}">\n<link rel="stylesheet" href="{FONTS_URL}" media="print" data-fonts-all>\n'
+                  f'<noscript><link rel="stylesheet" href="{FONTS_URL}"></noscript>\n') if fonts else f'<link rel="stylesheet" href="{FONTS_URL}">\n'
     extra = (
-        f'<link rel="stylesheet" href="{FONTS_URL}">\n'
+        font_links +
         f'<link rel="stylesheet" href="/assets/forms.css?v={CSS_V}">\n'
         f'<link rel="stylesheet" href="/assets/themes.css?v={CSS_V}">\n'
         + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
@@ -356,7 +400,7 @@ def field(f) -> str:
         cols = f.get("options", [])
         head = "".join(f"<th scope=\"col\">{esc(c)}</th>" for c in cols)
         rows = "".join(f'<tr><th scope="row">{esc(r)}</th>' + "".join(f'<td><label class="cf__cell"><input type="radio" name="{key}::{esc(r)}" value="{esc(c)}" aria-label="{esc(r)}: {esc(c)}"><span class="cf__mark cf__mark--radio"></span></label></td>' for c in cols) + "</tr>" for r in f.get("rows", []))
-        return wrap(group, f'<div class="cf__matrix"><table><thead><tr><th></th>{head}</tr></thead><tbody>{rows}</tbody></table></div>')
+        return wrap(group, f'<div class="cf__matrix"><table><thead><tr><td></td>{head}</tr></thead><tbody>{rows}</tbody></table></div>')
     if k == "file":
         many = f.get("maxFiles", 1) > 1
         return wrap(label, f'<label class="cf__drop"><input id="{fid}" type="file" name="{key}"{" multiple" if many else ""}><span>Drop {"files" if many else "a file"} here or <u>browse</u></span><small>Up to 10 MB</small></label><ul class="cf__files"></ul>')
@@ -396,7 +440,10 @@ def live_form(t) -> str:
         title = f'<p class="cf__ptitle">{esc(p["title"])}</p>' if p.get("title") else ""
         pages.append(f'<fieldset class="cf__page" data-page="{i}"><legend class="sr-only">Page {i + 1}</legend>{title}<div class="cf__fields">{"".join(field(f) for f in p["fields"])}</div></fieldset>')
     multi = len(s["pages"]) > 1
-    notice = "" if t["internal"] else '<p class="cf__notice">We\'ll use your details to reply and may email you about related products. You can unsubscribe at any time.</p>'
+    # Marketing email needs a yes: an unchecked box for news, and a plain notice about the reply.
+    notice = "" if t["internal"] else ('<label class="cf__agree cf__optin"><input type="checkbox" name="_news" value="yes"><span class="cf__mark cf__mark--checkbox"></span>'
+                                        '<span>Email me product news and tips. I can unsubscribe at any time.</span></label>'
+                                        '<p class="cf__notice">We\'ll use your details to reply to you.</p>')
     end = s["end"]
     data = json.dumps({"schema": s, "use": f"{APP}/forms/templates/{t['slug']}"}, ensure_ascii=False).replace("</", "<\\/")
     return f"""<form class="cf" novalidate data-cf>
@@ -937,7 +984,7 @@ def template_page(t):
         crumbs([("Form templates", "/templates"), (t["industryLabel"], ind_path), (t["name"], path)]),
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]},
     ]
-    page(path, f"{title_h} (free) | Claritia", f"{t['blurb']} A free {t['name'].lower()} form with {questions(t)} questions and {len(THEMES)} styles. Try it, then use it in a click.", body, ld)
+    page(path, f"{title_h} (free) | Claritia", f"{t['blurb']} A free {t['name'].lower()} form with {questions(t)} questions and {len(THEMES)} styles. Try it, then use it in a click.", body, ld, fonts=theme_fonts_url(t["theme"]))
 
 
 INDEX_QA = [
