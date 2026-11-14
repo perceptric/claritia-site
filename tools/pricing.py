@@ -309,7 +309,7 @@ def faq():
 
 
 def cta():
-    return shell.absolute(shell.block("<!-- The last prompt, on dark -->", "</section>\n    </div>\n  </div>"))
+    return shell.LAST_PROMPT
 
 
 def page():
@@ -374,6 +374,8 @@ def home_cards():
     """The home page's plan cards are the same cards, so the two never drift apart."""
     home = ROOT / "index.html"
     text = home.read_text()
+    if '<div class="plans">' not in text:
+        return  # the home page has no plan cards
     i = text.index('<div class="plans">')
     j = text.index('<p class="onlink">', i)
     cards = "\n        ".join(card(p).replace('href="#features"', 'href="/pricing#features"') for p in PLANS)

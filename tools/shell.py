@@ -24,6 +24,10 @@ def absolute(s: str) -> str:
     return re.sub(r'(<a\b[^>]*?\bhref=")#', r"\1/#", s)
 
 
+# The dark "last prompt" box that closes the pricing and product pages. It used to be copied out of the home page;
+# the home page no longer has it, so it lives in tools/last-prompt.html.
+LAST_PROMPT = absolute((ROOT / "tools" / "last-prompt.html").read_text().rstrip("\n"))
+
 SPRITE = block('<svg width="0" height="0"', "</svg>\n")
 HEADER = absolute(block('<header class="site-header">', "</header>"))
 SHEET = absolute(block('<div class="sheet">', "</div>\n</div>\n"))

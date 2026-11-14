@@ -10,7 +10,7 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 
 | Path | What |
 |---|---|
-| `index.html` | The home page: hero with the prompt, why, how it works, compare, tools, integrations, templates, numbers, pricing, questions and the last prompt. It also holds the header, phone menu and footer every page shares. |
+| `index.html` | The home page: the hero, "Try the full Claritia flow" (pick a brand, Claritia learns its style, then a live form with logic and a calculator, routing, booking and the emails, all in that brand), the scroll story, integrations, questions and the last screen. Styled by `assets/home2.css` (scoped under `main.nh`), run by `assets/home2.js`, demo photos in `assets/demo/`. It also holds the header, phone menu and footer every page shares. |
 | `products/` | The product pages: `/products`, Forms, Meetings and Routing, laid out like Arrowsterr's platform pages: the app drawn in HTML, the tools it works with, before and with Claritia, four features beside parts of the app, how it works and templates. Static. Written by `tools/products.py`, styled by `assets/products.css` (raise `PX_V` after changing it). |
 | `integrations/` | The integration hub and one page per tool (73), each with its workflows, how to connect, templates and questions. Written by `tools/integrations.py` (the first eight and the layout) and `tools/integrations_more.py` (the rest, by kind of tool). Logos in `assets/logos`. |
 | `blog/` | The blog: `/blog` and a page per post. Write a post as `blog/posts/<slug>.md` (the lines it starts with are in `tools/blog.py`), then run `python3 tools/blog.py`: it draws the post's cover from `tools/blog-cover.html` (1200 x 630, no words: an app window on the home page's green tiles; scenes: form, meeting, workflow, integration, responses) and adds it to `sitemap.xml`. |
@@ -18,7 +18,8 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 | `404.html`, `privacy/`, `terms/` | Page not found and the legal pages. Written by `tools/legal.py`. |
 | `assets/site.css` | Tokens, type, buttons, chips, tags, the header, phone menu, footer, and every home section. |
 | `assets/site.js` | Menus, the phone menu, scroll reveals and the pricing switch. |
-| `assets/home.js` | Home only: the blinking tiles, prompt suggestions, the How it works steps and the Compare switch. |
+| `assets/home.js` | The old home page's script (tiles, prompt, How it works, Compare). No page loads it now. |
+| `tools/last-prompt.html` | The dark "last prompt" box that closes the pricing and product pages (`shell.LAST_PROMPT`). |
 | `assets/logos/` | Logos of the tools Claritia works with. |
 | `assets/brand/` | Mark, favicon, Apple touch icon and the share image (`og-image.png`). |
 | `tools/shell.py` | Copies the sprite, header, phone menu and footer out of `index.html` and writes the shared `<head>`. |

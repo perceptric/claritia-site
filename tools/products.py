@@ -181,7 +181,7 @@ def shelf(title_h, sub, slugs, more_label, more_href):
 
 
 def cta():
-    return shell.absolute(shell.block("<!-- The last prompt, on dark -->", "</section>\n    </div>\n  </div>"))
+    return shell.LAST_PROMPT
 
 
 def page(slug, title, desc, main):
