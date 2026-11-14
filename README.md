@@ -17,7 +17,7 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
 | `pricing/` | The pricing page: plans, the host count, every feature side by side, questions. Written by `tools/pricing.py`, which also holds the plan data. |
 | `404.html`, `privacy/`, `terms/` | Page not found and the legal pages. Written by `tools/legal.py`. |
 | `assets/site.css` | Tokens, type, buttons, chips, tags, the header, phone menu, footer, and every home section. |
-| `assets/site.js` | Menus, the phone menu, scroll reveals and the pricing switch. |
+| `assets/site.js` | Menus, the phone menu, scroll reveals, the pricing switch and the cookie consent banner (see below). |
 | `assets/home.js` | The old home page's script (tiles, prompt, How it works, Compare). No page loads it now. |
 | `tools/last-prompt.html` | The dark "last prompt" box that closes the pricing and product pages (`shell.LAST_PROMPT`). |
 | `assets/logos/` | Logos of the tools Claritia works with. |
@@ -44,6 +44,22 @@ form templates, pricing and questions. The look is calm and light (`BRAND.md`).
   `python3 tools/pricing.py`. The home page cards and `pricing.md` are written from the same data; update them to match.
 
 Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
+
+## Cookie consent and analytics
+
+Every page shows a small cookie card on the first visit (`assets/site.js`, styled in `assets/site.css`). Reject all and
+Accept all carry the same weight; Choose shows the categories. The answer is kept in one cookie, `cl_consent`, for
+12 months, and Cookie settings in the footer opens the card again. The site loads no analytics today.
+
+To add an analytics tag, write it so it waits for a yes:
+
+```html
+<script type="text/plain" data-consent="analytics" data-src="https://example.com/tag.js"></script>
+```
+
+Inline code works too (leave out `data-src`). Other code can call `window.claritiaConsent.get()` or listen for the
+`claritia:consent` event. If you add a new kind of cookie (ads, for example), add its category to the card and update
+the Cookies part of the privacy policy in `tools/legal.py`.
 
 ## Running cost
 

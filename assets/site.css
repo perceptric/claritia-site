@@ -748,3 +748,24 @@ button.tabb { cursor: pointer; }
   .site-actions { margin-left: auto; }
   .nav__group { position: static; }
 }
+
+/* Cookie consent: a quiet card at the bottom left, with Reject and Accept given the same weight */
+.consent { position: fixed; z-index: 90; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(400px, calc(100vw - 32px)); padding: 18px; border-radius: var(--r-xl); background: var(--surface); box-shadow: var(--sh-menu); color: var(--text); animation: consent-in .3s var(--ease); }
+@keyframes consent-in { from { opacity: 0; transform: translateY(10px); } }
+.consent__title { font-size: 15px; font-weight: 600; line-height: 20px; color: var(--ink); }
+.consent__text { margin-top: 6px; font-size: 13px; line-height: 19px; color: var(--body); }
+.consent__text a { color: var(--green-ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--green-300); }
+.consent__choices { margin-top: 12px; display: grid; gap: 8px; }
+.consent__choices[hidden] { display: none; }
+.consent__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border-radius: var(--r-md); background: var(--surface-3); box-shadow: inset 0 0 0 1px var(--line-light); cursor: pointer; }
+.consent__row b { display: block; font-size: 13px; font-weight: 600; color: var(--text); }
+.consent__row small { display: block; margin-top: 1px; font-size: 12px; line-height: 17px; color: var(--meta); }
+.consent__row input { flex: none; width: 18px; height: 18px; accent-color: var(--green); cursor: pointer; }
+.consent__row input:disabled { cursor: not-allowed; }
+.consent__actions { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.consent__actions .btn--outline, .consent__actions .btn--primary { flex: 1 1 0; }
+.consent__more { width: 100%; height: 30px; font-size: 13px; color: var(--meta); }
+.consent__link { padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
+.consent__link:hover { color: #fff; }
+.consent button:focus-visible, .consent__link:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .consent { animation: none; } }

@@ -2,7 +2,7 @@
 import html, re, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-UPDATED = "October 30, 2026"
+UPDATED = {"privacy": "November 14, 2026", "terms": "October 30, 2026"}
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import shell  # noqa: E402
@@ -44,7 +44,9 @@ def md(text: str) -> str:
     while i < len(lines):
         l = lines[i]
         if not l.strip(): i += 1; continue
-        if l.startswith("## "): out.append(f"<h2>{inline(l[3:])}</h2>"); i += 1; continue
+        if l.startswith("## "):
+            slug = re.sub(r"[^a-z0-9]+", "-", l[3:].lower()).strip("-")
+            out.append(f'<h2 id="{slug}">{inline(l[3:])}</h2>'); i += 1; continue
         if l.startswith("- "):
             items = []
             while i < len(lines) and lines[i].startswith("- "): items.append(f"<li>{inline(lines[i][2:])}</li>"); i += 1
@@ -153,7 +155,7 @@ Depending on where you live, you can ask to see, correct, delete or export your 
 
 ## Cookies
 
-The Claritia app uses your browser's storage to keep you signed in and remember your choices. We do not use advertising cookies.
+This website sets one cookie of its own, `cl_consent`, which remembers your cookie choice for 12 months. Analytics tools only load after you say yes, and you can change your answer any time with Cookie settings at the bottom of every page. The Claritia app uses your browser's storage to keep you signed in and remember your choices. We do not use advertising cookies.
 
 ## Security
 
@@ -235,7 +237,7 @@ Email [hello@tryclaritia.com](mailto:hello@tryclaritia.com).
 """
 
 for slug, title, desc, text in [("privacy", "Privacy Policy", "How Claritia collects, uses and protects personal data, including Google user data.", PRIVACY), ("terms", "Terms of Service", "The terms for using Claritia.", TERMS)]:
-    (ROOT / slug / "index.html").write_text(legal_page(slug, title, desc, UPDATED, md(text)))
+    (ROOT / slug / "index.html").write_text(legal_page(slug, title, desc, UPDATED[slug], md(text)))
     print("wrote", slug)
 
 # Page not found

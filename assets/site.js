@@ -113,3 +113,85 @@
     });
   });
 })();
+
+// Cookie consent. The site only needs one cookie of its own (this choice). Any analytics tag must be written as
+// <script type="text/plain" data-consent="analytics" data-src="..."> (or with inline code): it runs only after a yes.
+// Other code can read window.claritiaConsent.get() or listen for the "claritia:consent" event.
+(function () {
+  var NAME = "cl_consent", YEAR = 31536000;
+  function read() {
+    var m = document.cookie.match(/(?:^|;\s*)cl_consent=([^;]*)/);
+    if (!m) return null;
+    var v = decodeURIComponent(m[1]).split(".");
+    return v[0] === "v1" ? { analytics: v[1] === "a1" } : null;
+  }
+  function write(c) {
+    document.cookie = NAME + "=" + encodeURIComponent("v1." + (c.analytics ? "a1" : "a0")) + "; Max-Age=" + YEAR + "; Path=/; SameSite=Lax" + (location.protocol === "https:" ? "; Secure" : "");
+  }
+  function run(c) {
+    document.querySelectorAll('script[type="text/plain"][data-consent]').forEach(function (s) {
+      if (!c[s.getAttribute("data-consent")] || s.hasAttribute("data-ran")) return;
+      s.setAttribute("data-ran", "");
+      var n = document.createElement("script");
+      if (s.getAttribute("data-src")) { n.src = s.getAttribute("data-src"); n.async = true; } else { n.text = s.text; }
+      s.parentNode.insertBefore(n, s.nextSibling);
+    });
+    document.dispatchEvent(new CustomEvent("claritia:consent", { detail: c }));
+  }
+
+  var box = null;
+  function close() { if (box) { box.remove(); box = null; } }
+  function choose(c) { write(c); close(); run(c); }
+  function open(showChoices) {
+    close();
+    var now = read() || { analytics: false };
+    box = document.createElement("section");
+    box.className = "consent";
+    box.setAttribute("role", "region");
+    box.setAttribute("aria-label", "Cookie choices");
+    box.innerHTML =
+      '<p class="consent__title">Cookies on Claritia</p>' +
+      '<p class="consent__text">We use the cookies the site needs to work. With your OK, we\'ll also use analytics cookies to see which pages help. You can change this any time with Cookie settings at the bottom of the page. <a href="/privacy#cookies">Privacy</a></p>' +
+      '<div class="consent__choices"' + (showChoices ? "" : " hidden") + '>' +
+        '<label class="consent__row"><span><b>Needed</b><small>Keeps the site working and remembers this choice. Always on.</small></span><input type="checkbox" checked disabled></label>' +
+        '<label class="consent__row"><span><b>Analytics</b><small>Counts visits and clicks so we can improve the site. Nothing is sold.</small></span><input type="checkbox" id="consent-analytics"' + (now.analytics ? " checked" : "") + '></label>' +
+      '</div>' +
+      '<div class="consent__actions">' +
+        '<button type="button" class="btn btn--outline" data-c="reject">Reject all</button>' +
+        '<button type="button" class="btn btn--primary" data-c="accept">Accept all</button>' +
+        '<button type="button" class="btn btn--plain consent__more" data-c="' + (showChoices ? "save" : "choose") + '">' + (showChoices ? "Save choices" : "Choose") + '</button>' +
+      '</div>';
+    document.body.appendChild(box);
+    box.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-c]");
+      if (!b) return;
+      var k = b.getAttribute("data-c");
+      if (k === "accept") choose({ analytics: true });
+      else if (k === "reject") choose({ analytics: false });
+      else if (k === "save") choose({ analytics: box.querySelector("#consent-analytics").checked });
+      else {
+        box.querySelector(".consent__choices").hidden = false;
+        b.setAttribute("data-c", "save");
+        b.textContent = "Save choices";
+        box.querySelector("#consent-analytics").focus();
+      }
+    });
+  }
+
+  window.claritiaConsent = { get: read, open: function () { open(true); } };
+
+  // A Cookie settings link beside Privacy and Terms on every page.
+  var legal = document.querySelector('.site-footer__base nav[aria-label="Legal"]');
+  if (legal) {
+    var link = document.createElement("button");
+    link.type = "button";
+    link.className = "consent__link";
+    link.textContent = "Cookie settings";
+    link.addEventListener("click", function () { open(true); var a = box && box.querySelector("#consent-analytics"); if (a) a.focus(); });
+    legal.insertBefore(link, legal.children[2] || null);
+  }
+
+  var saved = read();
+  if (saved) run(saved);
+  else open(false);
+})();
