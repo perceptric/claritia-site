@@ -317,7 +317,7 @@ def page():
     main = f"""<div id="pricing">
   <div class="frame">
     <section class="pr-hero" aria-labelledby="price-h">
-      <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#card"/></svg>Pricing</span>
+      
       <h1 class="display" id="price-h">Start free. Pay per seat as you grow.</h1>
       <p class="sub">Pay for each teammate who takes calls. Teammates who only build forms or read answers are always free.</p>
       <div class="pr-tools">
@@ -342,7 +342,7 @@ def page():
   <div class="frame">
     <section class="pr-sec" id="features" aria-labelledby="feat-h">
       <div class="shead">
-        <span class="eyebrow"><svg class="i s12" aria-hidden="true"><use href="#i-check"/></svg>Every feature</span>
+        
         <h2 class="h2" id="feat-h">Compare every plan</h2>
         <p class="sub">Every plan has unlimited forms and unlimited editors.</p>
       </div>

@@ -162,7 +162,7 @@
 .nh .hero2{padding:150px 56px 130px;text-align:center;display:flex;flex-direction:column;align-items:center}
 .nh .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green-ink)}
 .nh .kicker i{width:6px;height:6px;border-radius:50%;background:var(--green)}
-.nh .display2{margin-top:24px;max-width:1000px;font-size:84px;line-height:86px;font-weight:500;letter-spacing:-.045em;color:var(--ink);text-wrap:balance}
+.nh .display2{margin-top:0;max-width:1000px;font-size:84px;line-height:86px;font-weight:500;letter-spacing:-.045em;color:var(--ink);text-wrap:balance}
 .nh .display2 .nh-mark{background:linear-gradient(transparent 68%,var(--green-200) 68%,var(--green-200) 90%,transparent 90%);padding:0 4px}
 .nh .hero2>p{margin-top:28px;max-width:560px;font-size:19px;line-height:28px;color:var(--body)}
 .nh .hero2 .ctas{margin-top:34px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
@@ -336,7 +336,7 @@
 .nh .nh-sec{padding:160px 56px 0}
 .nh .nh-shead{text-align:center;display:flex;flex-direction:column;align-items:center}
 .nh .eyebrow{display:inline-flex;align-items:center;gap:6px;height:25px;padding:0 10px;border-radius:999px;background:var(--surface);box-shadow:var(--sh-chip);font-size:13px;font-weight:500;color:#3a3a38}
-.nh .h2{margin-top:18px;font-size:48px;line-height:50px;font-weight:500;letter-spacing:-.038em;color:var(--ink)}
+.nh .h2{margin-top:0;font-size:48px;line-height:50px;font-weight:500;letter-spacing:-.038em;color:var(--ink)}
 .nh .nh-shead p{margin-top:16px;max-width:520px;font-size:17px;line-height:25px;color:var(--body)}
 .nh .nh-pills{margin-top:28px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
 .nh .pill-b{height:34px;padding:0 14px;border-radius:999px;background:var(--surface);box-shadow:var(--sh-pill);font-size:14px;font-weight:450;color:var(--nav);display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:0;font-family:inherit}

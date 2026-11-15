@@ -954,20 +954,20 @@ def template_page(t):
   </section>
   <section class="section section--tint">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">Styles</p><h2 class="h2">One form, {len(THEMES)} looks.<br><span class="two">Pick one, or bring your color.</span></h2></div>
+      <div class="sec-head reveal"><h2 class="h2">One form, {len(THEMES)} looks.<br><span class="two">Pick one, or bring your color.</span></h2></div>
       <div class="tlooks reveal" data-delay="1">{"".join(f'<button type="button" class="tlook" data-pick="{x}" aria-label="Show the form in {esc(TH[x]["name"])}">{thumb(t, x).replace(" data-own=", " data-fixed data-own=")}<span class="tlook__n">{swatch(x)}<b>{esc(TH[x]["name"])}</b><small>{esc(TH[x]["mood"])}</small></span></button>' for x in looks)}</div>
     </div>
   </section>
   <section class="section">
     <div class="wrap tsplit">
-      <div class="sec-head reveal"><p class="eyebrow">Customize in minutes</p><h2 class="h2">Make it yours.<br><span class="two">No code.</span></h2><p class="lead">Change any question, add your own from {len(KINDS_SHOWN)} question types, and show each one only when it matters.</p></div>
+      <div class="sec-head reveal"><h2 class="h2">Make it yours.<br><span class="two">No code.</span></h2><p class="lead">Change any question, add your own from {len(KINDS_SHOWN)} question types, and show each one only when it matters.</p></div>
       <div class="reveal" data-delay="1">{kinds_grid()}</div>
     </div>
     <div class="wrap">{feat_grid()}</div>
   </section>
   <section class="section section--tint">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">Connect to any app</p><h2 class="h2">Answers go where you work.<br><span class="two">Live in a minute.</span></h2></div>
+      <div class="sec-head reveal"><h2 class="h2">Answers go where you work.<br><span class="two">Live in a minute.</span></h2></div>
       {steps(use)}
       <div class="reveal" data-delay="2">{logos()}</div>
     </div>
@@ -1028,7 +1028,7 @@ def multipage_page():
 def index_page():
     body = f"""<section class="thero">
     <div class="wrap"><div class="thero__in">
-      <p class="eyebrow reveal">Form templates</p>
+      
       <h1 class="display reveal" data-delay="1">Form templates<br><span class="two">for every industry.</span></h1>
       <p class="lead reveal" data-delay="2">{len(T)} ready forms for {len(HAS_PAGE["industry"])} industries in {len(THEMES)} styles: demo requests, quotes, intake, applications, surveys and quizzes. Try any of them here. Use one and it goes live on your site in a click, with every answer saved as a contact.</p>
       <div class="hero__ctas reveal" data-delay="3"><a class="btn btn--primary btn--lg" href="#all">Browse form templates</a><a class="btn btn--ghost btn--lg" href="{APP}/signup">Start free</a></div>
@@ -1038,38 +1038,38 @@ def index_page():
   {gallery(("all", ""), ORDERED)}
   <section class="section section--tint" id="multi-page">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">Multi-page</p><h2 class="h2">Long forms, one page at a time.<br><span class="two">{N["layout"]["steps"]} multi-page form templates.</span></h2></div>
+      <div class="sec-head reveal"><h2 class="h2">Long forms, one page at a time.<br><span class="two">{N["layout"]["steps"]} multi-page form templates.</span></h2></div>
       <div class="tgrid tgrid--3 reveal" data-delay="1">{"".join(card(t) for t in LONG[:6])}</div>
       <p class="tmore reveal" data-delay="2"><a class="btn btn--ghost" href="/templates/multi-page">See all multi-page form templates <span class="nudge" aria-hidden="true">&rarr;</span></a></p>
     </div>
   </section>
   <section class="section" id="categories">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">Categories</p><h2 class="h2">Every kind of form.<br><span class="two">{len(HAS_PAGE["category"])} categories in {len(HAS_PAGE["family"])} groups.</span></h2></div>
+      <div class="sec-head reveal"><h2 class="h2">Every kind of form.<br><span class="two">{len(HAS_PAGE["category"])} categories in {len(HAS_PAGE["family"])} groups.</span></h2></div>
       {browse()}
     </div>
   </section>
   <section class="section section--tint" id="kits">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">Starter kits</p><h2 class="h2">The forms to start with.<br><span class="two">{len(KITS)} kits, added in one click.</span></h2></div>
+      <div class="sec-head reveal"><h2 class="h2">The forms to start with.<br><span class="two">{len(KITS)} kits, added in one click.</span></h2></div>
       <div class="tkits reveal" data-delay="1">{"".join(kit_strip(k["industry"]) for k in KITS)}</div>
     </div>
   </section>
   <section class="section section--tint" id="styles">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">Styles</p><h2 class="h2">{len(THEMES)} styles for every form.<br><span class="two">Tap one to see the whole gallery in it.</span></h2></div>
+      <div class="sec-head reveal"><h2 class="h2">{len(THEMES)} styles for every form.<br><span class="two">Tap one to see the whole gallery in it.</span></h2></div>
       <div class="reveal" data-delay="1">{styles_strip()}</div>
     </div>
   </section>
   <section class="section">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">Built in</p><h2 class="h2">Everything a form needs.<br><span class="two">On every form template.</span></h2></div>
+      <div class="sec-head reveal"><h2 class="h2">Everything a form needs.<br><span class="two">On every form template.</span></h2></div>
       {feat_grid()}
     </div>
   </section>
   <section class="section section--tint">
     <div class="wrap">
-      <div class="sec-head reveal"><p class="eyebrow">How it works</p><h2 class="h2">Pick it, connect it, share it.<br><span class="two">Live in a minute.</span></h2></div>
+      <div class="sec-head reveal"><h2 class="h2">Pick it, connect it, share it.<br><span class="two">Live in a minute.</span></h2></div>
       {steps(APP)}
       <div class="reveal" data-delay="2">{logos()}</div>
     </div>

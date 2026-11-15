@@ -154,7 +154,7 @@ def card(p: dict, big=False) -> str:
 
 def index(posts: list) -> str:
     head = f"""    <section class="pd-hero bl-hero" aria-labelledby="bl-h">
-      <span class="eyebrow">{I("type", "i s12")}Blog</span>
+      
       <h1 id="bl-h">Notes on forms, booking and follow-up</h1>
       <p class="sub">How small teams turn visitors into booked meetings, from the people who build Claritia.</p>
     </section>"""

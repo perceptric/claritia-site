@@ -27,7 +27,7 @@ STYLE = """<style>
 
 def legal_page(slug, title, desc, updated, body):
     main = f"""<div class="legal">
-<p class="eyebrow">Legal</p>
+
 <h1 class="h2">{title}</h1>
 <p class="upd">Last updated: {updated}</p>
 {body}
@@ -243,7 +243,7 @@ for slug, title, desc, text in [("privacy", "Privacy Policy", "How Claritia coll
 # Page not found
 NOT_FOUND = f"""<div class="reading">
   {shell.CLOSE_MARK}
-  <p class="eyebrow">404</p>
+  
   <h1 class="h2">This page isn't here.</h1>
   <p class="lead">The link may be old. Start from the home page or browse the form templates.</p>
   <div class="close__ctas" style="justify-content:flex-start"><a class="btn btn--primary btn--lg" href="/">Go home</a><a class="btn btn--ghost btn--lg" href="/templates">Browse form templates</a></div>

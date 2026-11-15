@@ -112,7 +112,7 @@ def rows(items):
 
 def hero(icon, name, title, sub, second, shot):
     return f"""    <section class="pd-hero" aria-labelledby="pp-h">
-      <span class="eyebrow">{I(icon, "i s12")}{esc(name)}</span>
+      
       <h1 id="pp-h">{esc(title)}</h1>
       <p class="sub">{esc(sub)}</p>
       <div class="pd-ctas">
@@ -139,7 +139,7 @@ def then_now(title_h, sub, old, new):
     o = "<i></i>".join(f"<div>{I(ic)}{esc(t)}<small>{esc(n)}</small></div>" for ic, t, n in old)
     w = "<i></i>".join(f"<div>{I(ic)}{esc(t)}<small>{esc(n)}</small></div>" for ic, t, n in new)
     return f"""    <section class="pd-sec" aria-labelledby="then-h">
-      <div class="pd-head"><span class="eyebrow">{I("bolt", "i s12")}Why Claritia</span><h2 class="h2" id="then-h">{title_h}</h2><p class="sub">{esc(sub)}</p></div>
+      <div class="pd-head"><h2 class="h2" id="then-h">{title_h}</h2><p class="sub">{esc(sub)}</p></div>
       <div class="pd-then">
         <div><h3>Before</h3><div class="pd-chain pd-chain--old">{o}</div></div>
         <div><h3>With Claritia</h3><div class="pd-chain pd-chain--new">{w}</div></div>
@@ -153,7 +153,7 @@ def features(title_h, items):
         tag = f'<span class="tag tag--green">{esc(plan)}</span>' if plan else ""
         out.append(f'<div class="pd-feat{" pd-feat--flip" if n % 2 else ""}"><div class="pd-feat__text">{tag}<h3>{esc(h)}</h3><p>{esc(p)}</p></div>{vis}</div>')
     return f"""    <section class="pd-sec" aria-labelledby="feat-h">
-      <div class="pd-head"><span class="eyebrow">{I("check", "i s12")}Features</span><h2 class="h2" id="feat-h">{title_h}</h2></div>
+      <div class="pd-head"><h2 class="h2" id="feat-h">{title_h}</h2></div>
       <div class="pd-feats">{"".join(out)}</div>
     </section>"""
 
@@ -161,7 +161,7 @@ def features(title_h, items):
 def how(title_h, steps, vis):
     li = "".join(f'<li><b>0{i + 1}</b><h3>{esc(h)}</h3><p>{esc(p)}</p></li>' for i, (h, p) in enumerate(steps))
     return f"""    <section class="pd-sec" aria-labelledby="how-h">
-      <div class="pd-head"><span class="eyebrow">{I("flow", "i s12")}How it works</span><h2 class="h2" id="how-h">{title_h}</h2></div>
+      <div class="pd-head"><h2 class="h2" id="how-h">{title_h}</h2></div>
       <div class="pd-how"><ol class="pd-steps">{li}</ol>{vis}</div>
     </section>"""
 
@@ -174,7 +174,7 @@ def shelf(title_h, sub, slugs, more_label, more_href):
         meta = f"{tpl.questions(t)} questions" + (f", {pages} pages" if pages > 1 else "")
         items.append(f'<a class="pd-tpl" href="/templates/{s}">{tpl.thumb(t)}<b>{esc(t["name"])}</b><span class="pd-meta">{esc(meta)}</span></a>')
     return f"""    <section class="pd-sec" aria-labelledby="tpl-h">
-      <div class="pd-head"><span class="eyebrow">{I("form", "i s12")}Templates</span><h2 class="h2" id="tpl-h">{title_h}</h2><p class="sub">{esc(sub)}</p></div>
+      <div class="pd-head"><h2 class="h2" id="tpl-h">{title_h}</h2><p class="sub">{esc(sub)}</p></div>
       <div class="pd-shelf">{"".join(items)}</div>
       <div class="pd-more"><a class="btn btn--ghost btn--lg" href="{more_href}">{esc(more_label)} {I("arrow", "i s14 arr")}</a></div>
     </section>"""
@@ -339,7 +339,7 @@ def index_page():
              ("03", "routing", "Routing", "Each answer picks the meeting and the person, and the team takes turns fairly.")]
     trio = "".join(f'<a href="/products/{k}"><b>{n}</b><h2>{t}</h2><p>{esc(line)}</p><em>See {t} {I("arrow", "i s14 arr")}</em></a>' for n, k, t, line in items)
     main = frame(f"""    <section class="pd-hero" aria-labelledby="pp-h" style="padding-bottom:40px">
-      <span class="eyebrow">{I("grid", "i s12")}Product</span>
+      
       <h1 id="pp-h">From first click to booked call</h1>
       <p class="sub">Forms, meetings and routing that share one record for every lead.</p>
       <div class="pd-ctas"><a class="btn btn--primary btn--lg" href="{APP}/signup">Start free {I("arrow", "i s14 arr")}</a><a class="btn btn--ghost btn--lg" href="/pricing">See pricing</a></div>

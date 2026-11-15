@@ -18,7 +18,7 @@ esc, I, APP, frame = px.esc, px.I, px.APP, px.frame
 
 
 def head_block(eyebrow, icon, title, sub, h_id):
-    return f'<div class="pd-head"><span class="eyebrow">{I(icon, "i s12")}{esc(eyebrow)}</span><h2 class="h2" id="{h_id}">{title}</h2><p class="sub">{esc(sub)}</p></div>'
+    return f'<div class="pd-head"><h2 class="h2" id="{h_id}">{title}</h2><p class="sub">{esc(sub)}</p></div>'
 
 
 def caps(items):
@@ -471,7 +471,7 @@ document.querySelectorAll('.ix-kind:not(#popular)').forEach(function(sec){var n=
 var l=document.querySelector('[data-ix-kind="'+sec.id+'"]');if(l)l.hidden=!n;});none.hidden=any;});})();</script>"""
     main = frame(f"""    <section class="pd-hero ix-hero ix-hero--hub" aria-labelledby="ix-h">
       <div class="ix-copy">
-        <span class="eyebrow">{I("plug", "i s12")}Integrations</span>
+        
         <h1 id="ix-h">Connect Claritia to the tools you use</h1>
         <p class="sub">Send each lead to your CRM, book it on your calendar and tell your team where they already work. {len(ORDER)} tools, most of them one click.</p>
         <div class="pd-ctas">
