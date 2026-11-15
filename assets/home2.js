@@ -1,30 +1,4 @@
-/* Home page: the try-it flow (brand learning, live form, routing, booking, emails), the scroll story and the dot globe. */
-var NODES=[
-  {ic:"form",c:"g",name:"New form submission",tag:'<span class="tag t-green">Book a demo</span>',pill:"Submitted"},
-  {ic:"route",c:"b",name:"Round robin",tag:'<span class="tag t-blue">Sales, North America</span>',pill:"11 to 50"},
-  {ic:"cal",c:"p",name:"Book a meeting",tag:'<span class="tag t-purple">Intro call</span><span class="tag t-gray">30 min</span>',pill:"Booked"},
-  {ic:"spark",c:"o",name:"AI follow-up",tag:'<span class="tag t-orange">Demo booked</span><span class="tag t-gray">4 emails</span>',pill:""}
-];
-var RUN=["Triggering","Assigning","Opening calendar","Writing"];
-function render(canvas,cur){
-  var h="";
-  NODES.forEach(function(n,k){
-    var st=k<cur?"done":k===cur?"on":"todo";
-    var label=k<cur?'<div class="status ok"><svg class="i s14"><use href="#nh-check"/></svg>Done</div>':k===cur?'<div class="status run"><span class="spin"></span>'+RUN[k]+'</div>':"";
-    h+='<div class="nh-node '+st+'">'+label+'<div class="top"><span class="ic '+n.c+'"><svg class="i"><use href="#'+n.ic+'"/></svg></span>'+n.name+'<span class="nh-dots">⋮</span></div><div class="nh-sub">'+n.tag+'</div></div>';
-    if(k<NODES.length-1)h+='<div class="wire'+(k<cur?" lit":"")+'">'+(k<cur&&n.pill?'<span class="pill">'+n.pill+'</span>':"")+'</div>';
-  });
-  canvas.querySelector(".rail").innerHTML=h;
-  fill(canvas.querySelector(".slot-card"),cur);
-}
-function fill(slot,cur){
-  slot.innerHTML="";slot.appendChild(document.getElementById("c"+cur).content.cloneNode(true));
-  var g=slot.querySelector(".calgrid");
-  if(g){var x="";["S","M","T","W","T","F","S"].forEach(function(d){x+='<div class="dn">'+d+'</div>'});
-    var open=[16,17,18,19,20,23,24,25,30];
-    for(var d=1;d<=30;d++){var c="d";if(open.indexOf(d)>-1)c+=" a";if(d===17)c+=" sel";x+='<div class="'+c+'"><span>'+d+'</span></div>'}
-    g.innerHTML=x;}
-}
+/* Home page: the try-it flow (brand learning, live form, routing, booking, emails), feature tabs, the AI app chat and the dot globe. */
 // hero demo: pick a brand, Claritia learns its style, then the form, booking and AI email all run in that style
 (function(){
   var AV={w44:"/assets/demo/women-44.jpg",w68:"/assets/demo/women-68.jpg",w65:"/assets/demo/women-65.jpg",w90:"/assets/demo/women-90.jpg",w26:"/assets/demo/women-26.jpg",m32:"/assets/demo/men-32.jpg",m46:"/assets/demo/men-46.jpg",m75:"/assets/demo/men-75.jpg"};
@@ -280,25 +254,53 @@ function fill(slot,cur){
       spans[i].textContent+=segs[i][0].charAt(j++);if(j>=segs[i][0].length){i++;j=0}}},16);
   }
 })();
-// story: scroll progress through the pinned section picks the step
-var storyEl=document.getElementById("story"),storyCanvas=document.getElementById("storyCanvas");
-var steps=[].slice.call(document.querySelectorAll(".stp")),navs=[].slice.call(document.querySelectorAll(".sn")),shown=-1;
-steps.forEach(function(s,k){fill(s.querySelector(".m-card"),k)});
-function setStep(i){if(i===shown)return;shown=i;
-  steps.forEach(function(s,k){s.classList.toggle("on",k===i)});
-  navs.forEach(function(n,k){n.classList.toggle("on",k===i)});
-  render(storyCanvas,i)}
-function progress(){var r=storyEl.getBoundingClientRect(),run=storyEl.offsetHeight-storyEl.querySelector(".pin").offsetHeight;
-  return run>0?Math.min(1,Math.max(0,-r.top/run)):0}
-function onScroll(){if(getComputedStyle(storyEl.querySelector(".pin")).position!=="sticky")return;
-  var p=progress(),n=steps.length;setStep(Math.min(n-1,Math.floor(p*n)));
-  navs.forEach(function(el,k){var f=Math.min(1,Math.max(0,p*n-k));el.style.setProperty("--fill",(f*100).toFixed(1)+"%")})}
-navs.forEach(function(el,k){el.onclick=function(){var run=storyEl.offsetHeight-storyEl.querySelector(".pin").offsetHeight;
-  var top=storyEl.getBoundingClientRect().top+scrollY;scrollTo({top:top+run*(k+.5)/steps.length,behavior:"smooth"})}});
-setStep(0);onScroll();
-addEventListener("scroll",onScroll,{passive:true});addEventListener("resize",onScroll);
-// pills
-[].forEach.call(document.querySelectorAll(".pill-b"),function(b){b.onclick=function(){[].forEach.call(document.querySelectorAll(".pill-b"),function(o){o.classList.remove("on")});b.classList.add("on")}});
+// calendar grid in the meetings feature
+[].forEach.call(document.querySelectorAll("[data-cal]"),function(g){var x="";["S","M","T","W","T","F","S"].forEach(function(d){x+='<div class="dn">'+d+'</div>'});
+  var open=[16,17,18,19,20,23,24,25,30];
+  for(var d=1;d<=30;d++){var c="d";if(open.indexOf(d)>-1)c+=" a";if(d===17)c+=" sel";x+='<div class="'+c+'"><span>'+d+'</span></div>'}
+  g.innerHTML=x});
+// feature tabs: without JS every panel shows, stacked
+[].forEach.call(document.querySelectorAll("[data-tabs]"),function(box,n){
+  var tabs=[].slice.call(box.querySelectorAll('[role="tab"]')),panels=[].slice.call(box.querySelectorAll('[role="tabpanel"]'));
+  function pick(k,focus){tabs.forEach(function(t,i){var on=i===k;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1;panels[i].hidden=!on;if(on&&focus)t.focus()});
+    panels[k].classList.remove("in");void panels[k].offsetWidth;panels[k].classList.add("in")}
+  tabs.forEach(function(t,i){t.id="ft"+n+"-"+i;panels[i].id="fp"+n+"-"+i;t.setAttribute("aria-controls",panels[i].id);panels[i].setAttribute("aria-labelledby",t.id);
+    t.onclick=function(){pick(i)};
+    t.onkeydown=function(e){var d=e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;if(d){e.preventDefault();pick((i+d+tabs.length)%tabs.length,true)}}});
+  box.classList.add("tabbed");pick(0);
+});
+// AI app chat: pick a prompt and watch the assistant use Claritia
+(function(){
+  var body=document.getElementById("mcp-body");if(!body)return;
+  var chips=[].slice.call(document.querySelectorAll("#mcp-chips button")),input=document.getElementById("mcp-in"),app=document.getElementById("mcp-app");
+  var calm=matchMedia("(prefers-reduced-motion: reduce)").matches,timers=[],played=false;
+  var CHECK='<svg class="i s14"><use href="#nh-check"/></svg>';
+  var Q=[
+    {q:"Who booked a meeting this week?",tools:[["list_bookings","This week · 14 found"]],a:"14 people booked this week. Maya Ortiz has 6, Lena Koch has 5 and Sam Brooks has 3. Most came from <b>Book a demo</b>, and 4 are teams of 51 or more."},
+    {q:"Make a roof quote form that books a site visit with the closest crew lead.",tools:[["create_form","Roof quote · 6 questions"],["add_routing","ZIP code → closest crew lead"],["link_meeting","Site visit · 45 min"]],a:'Done. Your form is live at <span class="u">ridgeline.com/quote</span>. Each lead goes to the closest crew lead and books a visit before they leave.'},
+    {q:"Draft follow-ups for leads who haven't booked yet.",tools:[["list_leads","No booking · 9 leads"],["draft_emails","9 drafts in your voice"]],a:"I wrote 9 follow-ups from each lead's answers. They're waiting for your approval in <b>Emails → Drafts</b>. Want me to start with the 3 biggest teams?"}
+  ];
+  var TABS=[].slice.call(document.querySelectorAll(".ctabs [role=tab]"));
+  var ICON={"Claude":'<span class="lg-claude"></span>',"ChatGPT":'<span class="lg-gpt"></span>',"Claude Code":'<span class="lg-claude sq"></span>',"Cursor":'<span class="lg-cursor"></span>',"Any MCP client":'<svg class="i s14"><use href="#nh-plug"/></svg>',"Try it":'<svg class="i s14 sp"><use href="#nh-spark"/></svg>'};
+  TABS.forEach(function(t){t.onclick=function(){TABS.forEach(function(o){o.setAttribute("aria-selected",o===t)});
+    var name=t.dataset.app;app.innerHTML=ICON[name]+(name==="Try it"?"Your AI app":name)}});
+  function clear(){timers.forEach(clearTimeout);timers=[]}
+  function at(ms,fn){timers.push(setTimeout(fn,calm?0:ms))}
+  function add(html,cls){var d=document.createElement("div");d.className=cls;d.innerHTML=html;body.appendChild(d);return d}
+  function play(k){clear();played=true;var it=Q[k];
+    chips.forEach(function(c,i){c.classList.toggle("on",i===k)});
+    body.innerHTML="";input.textContent=it.q;input.classList.remove("ph");
+    at(250,function(){add(it.q,"msg me");input.textContent="Ask about your leads, forms or meetings";input.classList.add("ph")});
+    it.tools.forEach(function(tl,i){at(700+i*650,function(){var d=add('<span class="tl"><span class="spin"></span>claritia · '+tl[0]+'</span><span class="tr">Working…</span>',"tool run");
+      at(500,function(){d.className="tool";d.innerHTML='<span class="tl">'+CHECK+'claritia · '+tl[0]+'</span><span class="tr">'+tl[1]+'</span>'})})});
+    at(900+it.tools.length*650,function(){add(it.a,"msg ai")});
+  }
+  chips.forEach(function(c,i){c.onclick=function(){play(i)}});
+  // start empty, then play the first prompt when the chat scrolls into view
+  body.innerHTML='<div class="empty"><b>How can I help you today?</b><span>Ask about your leads, forms or meetings</span></div>';
+  chips.forEach(function(c){c.classList.remove("on")});input.textContent="Ask about your leads, forms or meetings";input.classList.add("ph");
+  if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting&&!played){io.disconnect();setTimeout(function(){if(!played)play(0)},calm?0:600)}},{threshold:.5});io.observe(body)}
+})();
 // final: a dot globe with the Claritia mark, a slow ripple and bookings that light up
 (function(){
   var c=document.getElementById("orb");if(!c)return;

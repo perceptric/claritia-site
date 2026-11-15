@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=15">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&amp;family=Playfair+Display:wght@500;600&amp;family=Jost:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=Manrope:wght@500;600;700&amp;family=Barlow+Condensed:wght@600;700&amp;family=Barlow:wght@400;500;600&amp;display=swap">
-<link rel="stylesheet" href="/assets/home2.css?v=7">
+<link rel="stylesheet" href="/assets/home2.css?v=8">
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
 </head>
 <body class="home">
@@ -280,38 +280,283 @@
 <div class="nh-rule"></div>
 
 <div class="frame">
-  <!-- 4. Centered head + use-case pills -->
-  <section class="nh-sec">
+  <!-- 3. Three products that join into one -->
+  <section class="nh-sec join" id="workflows">
     <div class="nh-shead">
-      <h2 class="h2">One app for every lead.<br><span class="dim">From first click to booked call.</span></h2>
-      <p>Claritia captures the lead, books the meeting with the right person and follows up with AI, so nothing falls through the cracks.</p>
-      <div class="nh-pills">
-        <a class="pill-b" href="/templates/saas">SaaS demos</a><a class="pill-b" href="/templates/agency">Agencies</a><a class="pill-b" href="/templates/construction">Home services</a><a class="pill-b" href="/templates/healthcare">Clinics</a><a class="pill-b" href="/templates/real-estate">Real estate</a><a class="pill-b" href="/templates/legal">Law firms</a><a class="pill-b" href="/templates/fitness">Coaching</a>
+      <h2 class="h2">Forms, meetings and email marketing.<br><span class="dim">Finally in one place.</span></h2>
+      <p>Most teams pay for three tools and copy leads between them. With Claritia they share every lead, so each step knows what came before.</p>
+    </div>
+    <div class="trio">
+      <article class="tri">
+        <div class="tri-h"><span class="ic g"><svg class="i s18"><use href="#nh-form"/></svg></span><div><b>Forms</b><small>Capture the lead</small></div></div>
+        <div class="tri-shot">
+          <div class="nh-field"><label>Work email</label><div class="input">priya@northwind.co</div></div>
+          <div class="nh-field"><label>How big is your team?</label><div class="choices c2"><div class="choice">2 to 10</div><div class="choice sel">11 to 50</div></div></div>
+          <div class="cbtn nh-dark mt14">Submit <svg class="i s14"><use href="#nh-arrow"/></svg></div>
+        </div>
+        <p>Build any form from a sentence or one of 840 templates, with logic, prices and payments.</p>
+      </article>
+      <article class="tri">
+        <div class="tri-h"><span class="ic p"><svg class="i s18"><use href="#nh-cal"/></svg></span><div><b>Meetings</b><small>Book the right person</small></div></div>
+        <div class="tri-shot">
+          <div class="host" style="margin-top:0"><img class="nh-av md" src="/assets/demo/women-44.jpg" alt=""><div><b>Maya Ortiz</b><small>Intro call · 30 min</small></div><span class="tag t-blue right">Round robin</span></div>
+          <div class="lbl-s">Tue, Nov 17</div>
+          <div class="slots3"><div class="slot">9:00 am</div><div class="slot sel">10:30 am</div><div class="slot">1:00 pm</div></div>
+        </div>
+        <p>Leads pick a time with the right rep inside the form, before they leave the page.</p>
+      </article>
+      <article class="tri">
+        <div class="tri-h"><span class="ic o"><svg class="i s18"><use href="#nh-spark"/></svg></span><div><b>Email marketing</b><small>Follow up and nurture</small></div></div>
+        <div class="tri-shot">
+          <div class="mrow s">Subject <b>Ideas for your call on Tuesday</b></div>
+          <div class="mbody s"><p>Hi Priya, you said your <span class="hl">team of 11 to 50</span> wants to <span class="hl">book more demos</span>, so I'll show…</p></div>
+          <div class="seq2"><span class="tag t-green">Confirmation sent</span><span class="tag t-orange">Prep email ready</span></div>
+        </div>
+        <p>AI writes each follow-up from the lead's answers and keeps them warm until they buy.</p>
+      </article>
+    </div>
+    <svg class="nh-wires" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M200 0 C200 70 600 40 600 110"/><path d="M600 0 V110"/><path d="M1000 0 C1000 70 600 40 600 110"/>
+      <path class="nh-flow" d="M200 0 C200 70 600 40 600 110"/><path class="nh-flow" d="M600 0 V110"/><path class="nh-flow" d="M1000 0 C1000 70 600 40 600 110"/>
+    </svg>
+    <div class="hub">
+      <div class="hub-h"><img class="nh-av md" src="/assets/demo/women-65.jpg" alt=""><div><b>Priya Raman</b><small>Northwind · priya@northwind.co</small></div><span class="tag t-green right">One lead, one record</span></div>
+      <ol class="hub-tl">
+        <li><span class="ic g"><svg class="i s14"><use href="#nh-form"/></svg></span><div><b>Filled out "Book a demo"</b><small>Team of 11 to 50 · Wants more demos from the site</small></div><time>9:41</time></li>
+        <li><span class="ic p"><svg class="i s14"><use href="#nh-cal"/></svg></span><div><b>Booked an intro call with Maya Ortiz</b><small>Tue, Nov 17 at 10:30 · Sent by round robin</small></div><time>9:42</time></li>
+        <li><span class="ic o"><svg class="i s14"><use href="#nh-spark"/></svg></span><div><b>Got a prep email written from her answers</b><small>Sequence: Demo booked · 3 more to go</small></div><time>9:43</time></li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<div class="nh-rule"></div>
+
+<div class="frame">
+  <!-- 4. Claritia starts with your brand -->
+  <section class="brand-sec">
+    <div class="bhead">
+      <h2 class="h2 xl">Claritia starts with <span class="g">your brand</span></h2>
+      <p>Add your website and Claritia reads it. It picks up your logo, colors, fonts and voice, so every form, booking page and email looks and sounds like you.</p>
+    </div>
+    <div class="bk">
+      <div class="bk-url"><svg class="i"><use href="#nh-globe"/></svg>ridgelineroofing.com<span class="bk-ok"><svg class="i s12"><use href="#nh-check"/></svg>Brand learned</span></div>
+      <div class="bk-grid">
+        <div class="bk-card">
+          <h3>brand.md</h3><small class="sub">Colors, type and voice</small>
+          <div class="bk-lbl">Colors</div>
+          <ul class="sw-list">
+            <li><i style="background:#f26b1d"></i>Ridgeline Orange<code>#F26B1D</code></li>
+            <li><i style="background:#1f2328"></i>Charcoal<code>#1F2328</code></li>
+            <li><i style="background:#b9500f"></i>Ember<code>#B9500F</code></li>
+            <li><i style="background:#fff0e4"></i>Peach<code>#FFF0E4</code></li>
+            <li><i style="background:#f6f4f1"></i>Sand<code>#F6F4F1</code></li>
+          </ul>
+          <div class="bk-lbl">Type</div>
+          <p>Headings in Barlow Condensed, text in Barlow.</p>
+          <div class="bk-lbl">Voice</div>
+          <p><b>We say</b> straight talk and real prices.<br><b>We avoid</b> jargon and pushy sales talk.</p>
+        </div>
+        <div class="bk-col">
+          <div class="bk-card rr">
+            <div class="rr-top"><span class="rr-logo"><svg viewBox="0 0 24 24"><path d="M2 13L12 4l10 9" stroke="currentColor" stroke-width="3" fill="none"/><rect x="6" y="13" width="12" height="8" fill="currentColor"/></svg>Ridgeline</span><span class="rr-aa">AaBb</span></div>
+            <h4>Get a free roof estimate</h4>
+            <div class="rr-opts"><span>Repair</span><span class="on">New roof</span><span>Inspection</span><span>Storm damage</span></div>
+            <span class="rr-btn">Next step <svg class="i s14"><use href="#nh-arrow"/></svg></span>
+            <div class="rr-bar"><i style="background:#f26b1d"></i><i style="background:#1f2328"></i><i style="background:#b9500f"></i><i style="background:#fff0e4"></i><i style="background:#f6f4f1"></i></div>
+            <small class="sub">Your form, in your style</small>
+          </div>
+          <div class="bk-card">
+            <div class="bk-lbl" style="margin-top:0">Meeting types</div>
+            <div class="mt-row"><b>Free on-site estimate</b><span>45 min · At your home</span></div>
+            <div class="mt-row"><b>Storm damage check</b><span>30 min · At your home</span></div>
+            <div class="mt-row"><b>Quote review call</b><span>15 min · Phone</span></div>
+          </div>
+        </div>
+        <div class="bk-col">
+          <div class="bk-card">
+            <div class="bk-lbl" style="margin-top:0">Questions it suggests</div>
+            <div class="qs"><svg class="i s14"><use href="#nh-spark"/></svg>What do you need done?</div>
+            <div class="qs"><svg class="i s14"><use href="#nh-spark"/></svg>How old is your roof?</div>
+            <div class="qs"><svg class="i s14"><use href="#nh-spark"/></svg>What's your ZIP code?</div>
+            <div class="qs"><svg class="i s14"><use href="#nh-spark"/></svg>Add photos of the damage</div>
+          </div>
+          <div class="bk-card">
+            <div class="bk-lbl" style="margin-top:0">Emails in your voice</div>
+            <div class="bk-mail"><div class="mrow s">From <img class="nh-av sm" src="/assets/demo/men-75.jpg" alt=""><b>Dan Miller</b></div><div class="mbody s"><p>Hi Jane, I'll be out Thursday at 9 to look at that leak over the kitchen. The visit is free, and you'll get a written quote the same day.</p></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+</div>
 
-  <!-- 5. Scroll story -->
-  <span id="workflows" class="anchor"></span>
-  <div class="story" id="story">
-    <div class="pin">
-      <div class="nh-steps">
-        <div class="stp-stack">
-      <div class="stp on" data-i="0"><span class="n"><b>1</b>Forms</span><h3>Form submission</h3><p>The flow starts the moment a lead submits your form. Start from 840 templates or describe the form you need.</p><a class="nh-more" href="/templates">See form templates <svg class="i s14"><use href="#nh-arrow"/></svg></a><div class="m-card"></div></div>
-      <div class="stp" data-i="1"><span class="n"><b>2</b>Routing</span><h3>Round robin routing</h3><p>Each lead goes to the next rep on the right team, based on what they wrote in the form.</p><a class="nh-more" href="/products/routing">How routing works <svg class="i s14"><use href="#nh-arrow"/></svg></a><div class="m-card"></div></div>
-      <div class="stp" data-i="2"><span class="n"><b>3</b>Meetings</span><h3>Scheduling</h3><p>The lead picks a time on their rep's calendar right inside the form, before they leave the page.</p><a class="nh-more" href="/products/meetings">Booking pages <svg class="i s14"><use href="#nh-arrow"/></svg></a><div class="m-card"></div></div>
-      <div class="stp" data-i="3"><span class="n"><b>4</b>AI email</span><h3>Agentic email marketing</h3><p>AI writes each follow-up from the lead's answers and keeps them warm until they buy.</p><a class="nh-more" href="/email-templates">See AI email <svg class="i s14"><use href="#nh-arrow"/></svg></a><div class="m-card"></div></div>
+<div class="nh-rule"></div>
+
+<div class="frame">
+  <!-- 5. Feature by feature -->
+  <section class="nh-feats">
+    <div class="nh-feat">
+      <div class="feat-l" data-tabs>
+        <div class="ftabs" role="tablist" aria-label="Forms"><button type="button" role="tab" aria-selected="true">AI form builder</button><button type="button" role="tab" aria-selected="false">Show-if logic</button><button type="button" role="tab" aria-selected="false">Calculator</button></div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>New form</b><small>Built from one sentence</small></div>
+          <div class="ask"><svg class="i s14"><use href="#nh-spark"/></svg>Make a roof estimate form that asks about the job, the ZIP code and photos, then books a visit</div>
+          <ol class="qlist">
+            <li><span class="qn">1</span>What do you need done?<span class="tag t-gray">Choice</span></li>
+            <li><span class="qn">2</span>How old is your roof?<span class="tag t-gray">Dropdown</span></li>
+            <li><span class="qn">3</span>What's your ZIP code?<span class="tag t-gray">Short text</span></li>
+            <li><span class="qn">4</span>Add photos of the damage<span class="tag t-gray">File upload</span></li>
+            <li><span class="qn">5</span>Pick a time for your visit<span class="tag t-purple">Meeting</span></li>
+          </ol>
         </div>
-        <nav class="snav" aria-label="Steps"><button type="button" class="sn on" data-i="0"><i></i>Forms</button><button type="button" class="sn" data-i="1"><i></i>Routing</button><button type="button" class="sn" data-i="2"><i></i>Meetings</button><button type="button" class="sn" data-i="3"><i></i>AI email</button></nav>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>Logic</b><small>Ask only what matters</small></div>
+          <div class="rule-r"><span class="w">If</span><b>What do you need done?</b>is<span class="tag t-green">Storm damage</span></div>
+          <div class="rule-t"><svg class="i s14"><use href="#nh-arrow"/></svg>Show <b>Insurance claim number</b></div>
+          <div class="rule-r"><span class="w">If</span><b>Budget</b>is<span class="tag t-green">Under $5,000</span></div>
+          <div class="rule-t"><svg class="i s14"><use href="#nh-arrow"/></svg>Skip to <b>Repair options</b></div>
+          <div class="rule-r"><span class="w">If</span><b>ZIP code</b>is outside<span class="tag t-orange">Service area</span></div>
+          <div class="rule-t"><svg class="i s14"><use href="#nh-arrow"/></svg>End with <b>We'll call you back</b></div>
+        </div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>Price estimate</b><small>Worked out as they answer</small></div>
+          <div class="calc-r"><span>Roof size</span><b>1,800 sq ft</b></div>
+          <div class="calc-r"><span>Material</span><b>Architectural shingles · $4.50</b></div>
+          <div class="calc-r"><span>Old roof removal</span><b>$1,200</b></div>
+          <div class="calc-f"><code>size × material + removal</code><span>Estimate<b>$9,300</b></span></div>
+        </div>
       </div>
-      <div class="stick">
-        <div class="canvas" id="storyCanvas">
-          <div class="live"><i></i><em>Live</em><span></span>New lead flow</div>
-          <div class="inner"><div class="rail"></div><div class="slot-card"></div></div>
-        </div>
+      <div class="feat-r">
+        <h2 class="h2">Build any form <span class="dim">in one sentence</span></h2>
+        <p>Describe the form you need and Claritia builds it. Add show-if logic, prices and payments, or start from one of 840 templates.</p>
+        <a class="nh-more" href="/templates">See form templates <svg class="i s14"><use href="#nh-arrow"/></svg></a>
       </div>
     </div>
-  </div>
+
+    <div class="nh-feat flip">
+      <div class="feat-l" data-tabs>
+        <div class="ftabs" role="tablist" aria-label="Routing"><button type="button" role="tab" aria-selected="true">Rules</button><button type="button" role="tab" aria-selected="false">Routing log</button></div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>Round robin</b><small>Team: Sales, North America</small></div>
+          <div class="rrule" style="margin-top:0">If <b>Team size</b> is <span class="tag t-green">11 to 50</span> send to <b>Sales, North America</b></div>
+          <div class="rep sel"><img class="nh-av" src="/assets/demo/women-44.jpg" alt="">Maya Ortiz<span class="load"><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i></span><span class="tag t-green"><svg class="i s14"><use href="#nh-check"/></svg>Assigned</span></div>
+          <div class="rep"><img class="nh-av" src="/assets/demo/women-68.jpg" alt="">Lena Koch<span class="load"><i class="f"></i><i class="f"></i><i></i><i></i><i></i></span><span class="meta">Next up</span></div>
+          <div class="rep"><img class="nh-av" src="/assets/demo/men-32.jpg" alt="">Sam Brooks<span class="load"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i></span><span class="meta">Away until Mon</span></div>
+        </div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>Routing log</b><small>Today</small></div>
+          <div class="tbl">
+            <div class="tr th"><span>Lead</span><span>Answer</span><span>Sent to</span></div>
+            <div class="tr"><span><img class="nh-av sm" src="/assets/demo/women-65.jpg" alt="">Priya Raman</span><span>11 to 50</span><span>Maya Ortiz<small>Next in turn</small></span></div>
+            <div class="tr"><span><img class="nh-av sm" src="/assets/demo/men-46.jpg" alt="">Jordan Lee</span><span>51 or more</span><span>Enterprise team<small>Team size rule</small></span></div>
+            <div class="tr"><span><img class="nh-av sm" src="/assets/demo/women-26.jpg" alt="">Laura Chen</span><span>2 to 10</span><span>Lena Koch<small>Sam is away</small></span></div>
+            <div class="tr"><span><img class="nh-av sm" src="/assets/demo/women-90.jpg" alt="">Ana Silva</span><span>11 to 50</span><span>Lena Koch<small>Next in turn</small></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="feat-r">
+        <h2 class="h2">Send every lead <span class="dim">to the right person</span></h2>
+        <p>Route by any answer, like team size, ZIP code or budget. Round robin with weights, caps and away days picks the rep, and the log keeps the reason.</p>
+        <a class="nh-more" href="/products/routing">How routing works <svg class="i s14"><use href="#nh-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <div class="nh-feat">
+      <div class="feat-l" data-tabs>
+        <div class="ftabs" role="tablist" aria-label="Meetings"><button type="button" role="tab" aria-selected="true">Booking in the form</button><button type="button" role="tab" aria-selected="false">Team booking page</button></div>
+        <div class="fpanel" role="tabpanel">
+          <div class="book">
+            <div>
+              <div class="host" style="margin-top:0"><img class="nh-av md" src="/assets/demo/women-44.jpg" alt=""><div><b>Maya Ortiz</b><small>Your host</small></div></div>
+              <h4>Intro call</h4>
+              <div class="facts"><span><svg class="i s14"><use href="#nh-clock"/></svg>30 min</span><span><svg class="i s14"><use href="#nh-video"/></svg>Google Meet</span></div>
+              <div class="cal"><div class="mh">November&nbsp;<span>2026</span></div><div class="grid calgrid" data-cal></div></div>
+            </div>
+            <div class="times">
+              <div class="lbl">Tue, Nov 17</div>
+              <div class="slot">9:00 am</div><div class="slot sel">10:30 am</div><div class="slot">11:00 am</div><div class="slot">1:00 pm</div>
+              <div class="cbtn green" style="height:36px;margin-top:6px">Confirm</div>
+            </div>
+          </div>
+        </div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>Acme sales team</b><small>acme.claritia.app/sales</small></div>
+          <div class="mt-row big"><span class="avs"><img class="nh-av sm" src="/assets/demo/women-44.jpg" alt=""><img class="nh-av sm" src="/assets/demo/women-68.jpg" alt=""><img class="nh-av sm" src="/assets/demo/men-32.jpg" alt=""></span><div><b>Intro call</b><span>30 min · Next free rep</span></div><svg class="i s14"><use href="#nh-chev"/></svg></div>
+          <div class="mt-row big"><span class="avs"><img class="nh-av sm" src="/assets/demo/women-44.jpg" alt=""><img class="nh-av sm" src="/assets/demo/men-46.jpg" alt=""></span><div><b>Product demo</b><span>45 min · Everyone free</span></div><svg class="i s14"><use href="#nh-chev"/></svg></div>
+          <div class="mt-row big"><span class="avs"><img class="nh-av sm" src="/assets/demo/men-75.jpg" alt=""></span><div><b>Office hours</b><span>60 min · Up to 20 guests</span></div><svg class="i s14"><use href="#nh-chev"/></svg></div>
+          <div class="mt-row big"><span class="avs"><img class="nh-av sm" src="/assets/demo/women-90.jpg" alt=""></span><div><b>Paid strategy session</b><span>60 min · $150 with Stripe</span></div><svg class="i s14"><use href="#nh-chev"/></svg></div>
+        </div>
+      </div>
+      <div class="feat-r">
+        <h2 class="h2">Let leads book <span class="dim">before they leave</span></h2>
+        <p>The calendar opens right inside the form. Booking pages, team meetings, polls and paid sessions sync with Google Calendar and Outlook.</p>
+        <a class="nh-more" href="/products/meetings">See meetings <svg class="i s14"><use href="#nh-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <div class="nh-feat flip">
+      <div class="feat-l" data-tabs>
+        <div class="ftabs" role="tablist" aria-label="Email"><button type="button" role="tab" aria-selected="true">AI follow-up</button><button type="button" role="tab" aria-selected="false">Sequence</button></div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>AI follow-up</b><span class="tag t-orange right"><svg class="i s14"><use href="#nh-spark"/></svg>Drafted by AI</span></div>
+          <div class="mail" style="margin-top:0">
+            <div class="mrow">To <img class="nh-av sm" src="/assets/demo/women-65.jpg" alt=""><b>Priya Raman</b></div>
+            <div class="mrow">Subject <b>Ideas for your call on Tuesday</b></div>
+            <div class="mbody"><p>Hi Priya,</p><p>Thanks for booking time for <span class="hl">Tuesday at 10:30</span>. You said your <span class="hl">team of 11 to 50</span> wants to <span class="hl">book more demos from your site</span>, so I'll show how teams your size route every lead in seconds.</p><p>Talk soon,<br>Maya</p></div>
+          </div>
+          <div class="actions"><div class="cbtn ghost"><svg class="i s14"><use href="#nh-edit"/></svg>Edit</div><div class="cbtn nh-dark"><svg class="i s14"><use href="#nh-send"/></svg>Approve and send</div></div>
+        </div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>Sequence: Demo booked</b><small>6 steps</small></div>
+          <ol class="steps-tl">
+            <li class="ok"><i></i><b>Confirmation with a calendar invite</b><span class="tag t-green">Sent</span></li>
+            <li class="ok"><i></i><b>Prep email from her answers</b><span class="tag t-orange">Ready</span></li>
+            <li><i></i><b>Reminder</b><span class="m">1 day before</span></li>
+            <li><i></i><b>Reminder</b><span class="m">1 hour before</span></li>
+            <li><i></i><b>Thank-you after the call</b><span class="m">If held</span></li>
+            <li><i></i><b>No-show follow-up with a new link</b><span class="m">If missed</span></li>
+          </ol>
+        </div>
+      </div>
+      <div class="feat-r">
+        <h2 class="h2">Follow-ups <span class="dim">that write themselves</span></h2>
+        <p>AI writes every email from the lead's answers, in your brand's voice. Reminders go out on their own, and you approve each AI draft before it sends.</p>
+        <a class="nh-more" href="/email-templates">See email templates <svg class="i s14"><use href="#nh-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <div class="nh-feat">
+      <div class="feat-l" data-tabs>
+        <div class="ftabs" role="tablist" aria-label="Results"><button type="button" role="tab" aria-selected="true">Every form</button><button type="button" role="tab" aria-selected="false">Drop-off by question</button></div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>Results</b><small>Last 30 days</small></div>
+          <div class="tbl res">
+            <div class="tr th"><span>Form</span><span>Answered</span><span>Booked</span></div>
+            <div class="tr"><span>Book a demo</span><span><i class="bar"><i style="width:62%"></i></i>62%</span><span>312</span></div>
+            <div class="tr"><span>Free roof estimate</span><span><i class="bar"><i style="width:48%"></i></i>48%</span><span>187</span></div>
+            <div class="tr"><span>Pricing quote</span><span><i class="bar"><i style="width:41%"></i></i>41%</span><span>96</span></div>
+            <div class="tr"><span>Partner sign-up</span><span><i class="bar"><i style="width:33%"></i></i>33%</span><span>54</span></div>
+            <div class="tr dim"><span>Webinar sign-up</span><span><i class="bar"><i style="width:27%"></i></i>27%</span><span>21</span></div>
+          </div>
+        </div>
+        <div class="fpanel" role="tabpanel">
+          <div class="fp-h"><b>Book a demo</b><small>Where people stop</small></div>
+          <div class="drop"><span>Work email</span><i class="bar"><i style="width:100%"></i></i><b>100%</b></div>
+          <div class="drop"><span>Team size</span><i class="bar"><i style="width:91%"></i></i><b>91%</b></div>
+          <div class="drop warn"><span>Phone number</span><i class="bar"><i style="width:68%"></i></i><b>68%</b></div>
+          <div class="drop"><span>What you need</span><i class="bar"><i style="width:65%"></i></i><b>65%</b></div>
+          <div class="drop"><span>Pick a time</span><i class="bar"><i style="width:62%"></i></i><b>62%</b></div>
+          <p class="hint"><svg class="i s14"><use href="#nh-spark"/></svg>23% stop at Phone number. Try making it optional.</p>
+        </div>
+      </div>
+      <div class="feat-r">
+        <h2 class="h2">See what every form <span class="dim">brings in</span></h2>
+        <p>Views, starts, answers and bookings for each form. See the question where people stop, then fix it in a click.</p>
+        <a class="nh-more" href="/pricing">See plans <svg class="i s14"><use href="#nh-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
 </div>
 
 <div class="nh-rule"></div>
@@ -343,7 +588,159 @@
 <div class="nh-rule" style="margin-top:160px"></div>
 
 <div class="frame">
-  <!-- 8. FAQ -->
+  <!-- 7. MCP -->
+  <section class="mcp2" id="mcp">
+    <div class="mcp-l">
+      <div class="ctabs" role="tablist" aria-label="AI apps">
+        <button type="button" role="tab" aria-selected="true" data-app="Try it"><svg class="i s14 sp"><use href="#nh-spark"/></svg>Try it</button>
+        <button type="button" role="tab" aria-selected="false" data-app="Claude"><span class="lg-claude"></span>Claude</button>
+        <button type="button" role="tab" aria-selected="false" data-app="ChatGPT"><span class="lg-gpt"></span>ChatGPT</button>
+        <button type="button" role="tab" aria-selected="false" data-app="Claude Code"><span class="lg-claude sq"></span>Claude Code</button>
+        <button type="button" role="tab" aria-selected="false" data-app="Cursor"><span class="lg-cursor"></span>Cursor</button>
+        <button type="button" role="tab" aria-selected="false" data-app="Any MCP client"><svg class="i s14"><use href="#nh-plug"/></svg>Any MCP client</button>
+      </div>
+      <div class="chat2">
+        <div class="chat2-h"><span class="app" id="mcp-app"><span class="lg-claude"></span>Claude</span><span class="tag t-green right"><i class="dot"></i>Claritia connected</span></div>
+        <div class="chat2-b" id="mcp-body" aria-live="polite">
+          <div class="msg me">Who booked a meeting this week?</div>
+          <div class="tool"><span class="tl"><svg class="i s14"><use href="#nh-check"/></svg>claritia · list_bookings</span><span class="tr">This week · 14 found</span></div>
+          <div class="msg ai">14 people booked this week. Maya Ortiz has 6, Lena Koch has 5 and Sam Brooks has 3. Most came from <b>Book a demo</b>, and 4 are teams of 51 or more.</div>
+        </div>
+        <div class="chips" id="mcp-chips"><button type="button" class="on" data-q="0">Who booked this week?</button><button type="button" data-q="1">Build a roof quote form</button><button type="button" data-q="2">Draft follow-ups for open leads</button></div>
+        <div class="chat2-in"><span id="mcp-in">Who booked a meeting this week?</span><span class="send"><svg class="i s14"><use href="#nh-arrow-up2"/></svg></span></div>
+      </div>
+    </div>
+    <div class="mcp-r">
+      <h2 class="h2 xl">Connect with your favorite AI assistants</h2>
+      <p>Ask your AI app about your leads, forms and meetings in plain words. It answers with your Claritia data and can build forms, change routing and draft follow-ups for you.</p>
+      <div class="ctas"><a class="btn btn--green btn--lg" href="https://app.tryclaritia.com/signup">Connect your AI app <svg class="i s14"><use href="#nh-arrow"/></svg></a></div>
+    </div>
+  </section>
+</div>
+
+<div class="frame">
+  <!-- 8. Sign-up block -->
+  <section class="signup">
+    <div class="su-in">
+      <div class="su-copy">
+        <h2>Start free with <span class="mk"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</span></h2>
+        <p>Build your first form, connect your calendar and book your first meeting today. Free for one seat, no card needed.</p>
+        <a class="su-btn" href="https://app.tryclaritia.com/signup">Start free <svg class="i s14"><use href="#nh-arrow"/></svg></a>
+      </div>
+      <div class="su-shot" aria-hidden="true">
+        <div class="su-win">
+          <div class="su-bar"><i></i><i></i><i></i></div>
+          <div class="su-body">
+            <div class="su-side"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="su-main">
+              <b class="su-t">Leads</b>
+              <div class="su-stats"><div><small>Answered</small><b>312</b></div><div><small>Booked</small><b>96</b></div><div><small>Show rate</small><b>88%</b></div></div>
+              <div class="su-row"><img class="nh-av sm" src="/assets/demo/women-65.jpg" alt=""><span>Priya Raman</span><em>Booked</em></div>
+              <div class="su-row"><img class="nh-av sm" src="/assets/demo/men-46.jpg" alt=""><span>Jordan Lee</span><em>Booked</em></div>
+              <div class="su-row"><img class="nh-av sm" src="/assets/demo/women-26.jpg" alt=""><span>Laura Chen</span><em class="o">Follow-up</em></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="nh-rule"></div>
+
+<div class="frame">
+  <!-- 9. Comparison -->
+  <section class="nh-sec cmp-sec" id="compare">
+    <div class="nh-shead">
+      <h2 class="h2">Claritia vs. <span class="dim">the usual stack</span></h2>
+      <p>Most teams glue a form tool, a scheduler, a router and an email tool together. Here is how Claritia compares with the tools people use most.</p>
+    </div>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead><tr><th scope="col"><span class="sr">Feature</span></th><th scope="col" class="us"><span class="cl"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</span></th><th scope="col"><img class="wm" src="/assets/logos/typeform.svg" alt="">Typeform</th><th scope="col"><img src="/assets/logos/calendly.svg" alt="">Calendly</th><th scope="col"><span class="cp">CP</span>Chili Piper</th><th scope="col"><img src="/assets/logos/hubspot.svg" alt="">HubSpot</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Form builder with show-if logic</th><td class="us"><i class="y"></i></td><td><i class="y"></i></td><td><span class="p">Routing forms</span></td><td><span class="p">Uses your forms</span></td><td><i class="y"></i></td></tr>
+          <tr><th scope="row">Prices and quotes worked out in the form</th><td class="us"><i class="y"></i></td><td><i class="y"></i></td><td><i class="n"></i></td><td><i class="n"></i></td><td><i class="n"></i></td></tr>
+          <tr><th scope="row">Book a meeting right inside the form</th><td class="us"><i class="y"></i></td><td><span class="p">Through Calendly</span></td><td><i class="y"></i></td><td><i class="y"></i></td><td><i class="y"></i></td></tr>
+          <tr><th scope="row">Round robin by form answers</th><td class="us"><i class="y"></i></td><td><i class="n"></i></td><td><i class="y"></i></td><td><i class="y"></i></td><td><i class="y"></i></td></tr>
+          <tr><th scope="row">Email follow-ups and nurture sequences</th><td class="us"><i class="y"></i></td><td><i class="n"></i></td><td><span class="p">Reminders only</span></td><td><i class="n"></i></td><td><i class="y"></i></td></tr>
+          <tr><th scope="row">AI follow-ups written from each lead's answers</th><td class="us"><i class="y"></i></td><td><i class="n"></i></td><td><i class="n"></i></td><td><i class="n"></i></td><td><span class="p">Separate setup</span></td></tr>
+          <tr><th scope="row">One record of answers, bookings and emails</th><td class="us"><i class="y"></i></td><td><i class="n"></i></td><td><i class="n"></i></td><td><i class="n"></i></td><td><i class="y"></i></td></tr>
+          <tr class="tot"><th scope="row">Tools you need for all of this</th><td class="us"><b>1</b></td><td>3 or more</td><td>2 or more</td><td>3 or more</td><td>2 paid hubs</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cmp-note">Based on each company's public plans and help pages in November 2026. Features change, so check their sites for the latest.</p>
+  </section>
+</div>
+
+<div class="nh-rule" style="margin-top:160px"></div>
+
+<div class="frame">
+  <!-- 10. Plans -->
+  <section class="nh-sec plans-sec" id="pricing">
+    <div class="nh-shead">
+      <h2 class="h2">Plans that grow <span class="dim">with you</span></h2>
+      <p>Pay for each teammate who takes calls. Teammates who only build forms or read answers are always free.</p>
+      <div class="bill js-only" data-bill role="group" aria-label="Billing period">
+        <button type="button" data-bill-to="monthly" aria-pressed="true">Monthly</button>
+        <button type="button" data-bill-to="yearly" aria-pressed="false">Yearly <em>Save 20%</em></button>
+      </div>
+    </div>
+    <div class="plans">
+        <div class="plan" data-plan="free" data-m="0" data-y="0" data-hm="" data-hy="">
+          <div class="plan__top"><b>Free</b></div>
+          <p class="plan__price"><b>$0</b><small>/month</small></p>
+          <p class="plan__for">For one person who wants to try it</p>
+          <p class="plan__host">1 seat. No card needed.</p>
+          <p class="plan__total" aria-live="polite"></p>
+          <a class="btn btn--ghost" href="https://app.tryclaritia.com/signup">Start free</a>
+          <h3>All the basics</h3>
+          <ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>Unlimited forms</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>250 submissions/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>1 calendar per seat</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>100 AI credits/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>1,000 workflow emails/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>AI form builder</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Multi-page forms + progress bar</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Conditional logic and page skips</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Calculations and formulas</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>File uploads</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>840 form templates</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Meeting booking inside forms</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Google Meet, Teams and Zoom links</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Email reminders a day and an hour before</li></ul>
+          <a class="plan__all" href="/pricing#features">See every feature</a>
+        </div>
+        <div class="plan" data-plan="starter" data-m="15" data-y="12" data-hm="15" data-hy="12">
+          <div class="plan__top"><b>Starter</b></div>
+          <p class="plan__price"><b><span data-monthly>$15</span><span data-yearly>$12</span></b><small>/seat/month</small></p>
+          <p class="plan__for">For small teams that book calls</p>
+          <p class="plan__host">For each teammate who takes calls</p>
+          <p class="plan__total" aria-live="polite"></p>
+          <a class="btn btn--ghost" href="https://app.tryclaritia.com/signup">Start free</a>
+          <h3>Everything in Free, plus</h3>
+          <ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>Unlimited forms</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>2,000 submissions/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>6 calendars per seat</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>500 AI credits/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>10,000 workflow emails/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Unlimited meeting types</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>e-Signatures</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Stripe payment</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Custom brand</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Redirect on completion</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Booking pages for each person and the team</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Group meetings with a guest limit</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Meeting polls</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Paid meetings with Stripe</li></ul>
+          <a class="plan__all" href="/pricing#features">See every feature</a>
+        </div>
+        <div class="plan plan--pick" data-plan="pro" data-m="39" data-y="31" data-hm="39" data-hy="31">
+          <div class="plan__top"><b>Pro</b><span class="tag tag--green">Most picked</span></div>
+          <p class="plan__price"><b><span data-monthly>$39</span><span data-yearly>$31</span></b><small>/seat/month</small></p>
+          <p class="plan__for">For teams that share leads</p>
+          <p class="plan__host">For each teammate who takes calls</p>
+          <p class="plan__total" aria-live="polite"></p>
+          <a class="btn btn--primary" href="https://app.tryclaritia.com/signup">Start free</a>
+          <h3>Everything in Starter, plus</h3>
+          <ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>5,000 submissions/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>2,000 AI credits/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>50,000 workflow emails/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Follow-up emails from your own domain</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Remove Claritia branding</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Round robin with weights and priority</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Meetings with everyone free</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Team pools</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Daily and weekly limits for each person</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>No-show follow-up with the reschedule link</li></ul>
+          <a class="plan__all" href="/pricing#features">See every feature</a>
+        </div>
+        <div class="plan" data-plan="business" data-m="79" data-y="63" data-hm="79" data-hy="63">
+          <div class="plan__top"><b>Business</b></div>
+          <p class="plan__price"><b><span data-monthly>$79</span><span data-yearly>$63</span></b><small>/seat/month</small></p>
+          <p class="plan__for">For busy teams with lots of leads</p>
+          <p class="plan__host">For each teammate who takes calls</p>
+          <p class="plan__total" aria-live="polite"></p>
+          <a class="btn btn--ghost" href="https://app.tryclaritia.com/signup">Start free</a>
+          <h3>Everything in Pro, plus</h3>
+          <ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>Unlimited submissions</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>5,000 AI credits/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>200,000 workflow emails/month</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Your own domain for forms and booking pages</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Partial answers</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Drop-off by question</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Owner first (the person&#x27;s owner in your CRM)</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Double round robin (one from each of two teams)</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Salesforce</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Chat help</li></ul>
+          <a class="plan__all" href="/pricing#features">See every feature</a>
+        </div>
+      </div>
+      <p class="onlink"><a class="btn btn--outline btn--lg" href="/pricing">See every feature and price <svg class="i s14"><use href="#nh-arrow"/></svg></a></p>
+  </section>
+</div>
+
+<div class="nh-rule" style="margin-top:160px"></div>
+
+<div class="frame">
+  <!-- 11. FAQ -->
   <section class="nh-faq" id="faq">
     <div class="faq-l">
       <h2 class="h2">Still have questions?</h2>
@@ -366,7 +763,7 @@
 <div class="nh-rule"></div>
 
 <div class="frame">
-  <!-- 9. Final -->
+  <!-- 12. Final -->
   <section class="final">
     <h2 class="big">Your first booked meeting<br><span class="dim">is 15 minutes away.</span></h2>
     <div class="ctas"><a class="btn btn--primary btn--lg" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo <svg class="i s14"><use href="#nh-arrow"/></svg></a><a class="btn btn--outline btn--lg" href="https://app.tryclaritia.com/signup">Start free</a></div>
@@ -379,55 +776,6 @@
     </div>
   </section>
 </div>
-<template id="c0">
-  <div class="card">
-    <div class="chead"><span class="ic g"><svg class="i s18"><use href="#nh-form"/></svg></span><div><h3>Book a demo</h3><small>acme.com/demo</small></div><span class="right tag t-green">Published</span></div>
-    <div class="nh-field"><label>Work email</label><div class="input">priya@northwind.co</div></div>
-    <div class="nh-field"><label>How big is your team?</label><div class="choices"><div class="choice">Just me</div><div class="choice">2 to 10</div><div class="choice sel">11 to 50</div><div class="choice">51 or more</div></div></div>
-    <div class="nh-field"><label>What do you need help with?</label><div class="input focus">Booking more demos from our site<span class="caret"></span></div></div>
-    <div class="cbtn nh-dark mt20">Submit <svg class="i s14"><use href="#nh-arrow"/></svg></div>
-  </div>
-</template>
-<template id="c1">
-  <div class="card">
-    <div class="chead"><span class="ic b"><svg class="i s18"><use href="#nh-route"/></svg></span><div><h3>Round robin</h3><small>Team: Sales, North America</small></div><span class="right tag t-blue">3 reps</span></div>
-    <div class="rrule">If <b>Team size</b> is <span class="tag t-green">11 to 50</span> send to <b>Sales, North America</b></div>
-    <div class="rep sel"><img class="nh-av" src="/assets/demo/women-44.jpg" alt="">Maya Ortiz<span class="load"><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i></span><span class="tag t-green"><svg class="i s14"><use href="#nh-check"/></svg>Assigned</span></div>
-    <div class="rep"><img class="nh-av" src="/assets/demo/women-68.jpg" alt="">Lena Koch<span class="load"><i class="f"></i><i class="f"></i><i></i><i></i><i></i></span><span class="meta">Next up</span></div>
-    <div class="rep"><img class="nh-av" src="/assets/demo/men-32.jpg" alt="">Sam Brooks<span class="load"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i></span><span class="meta">Away until Mon</span></div>
-    <div class="foot">Owner: <b>Maya Ortiz</b> · Next lead goes to <b>Lena Koch</b> · Synced to HubSpot</div>
-  </div>
-</template>
-<template id="c2">
-  <div class="card wide">
-    <div class="book">
-      <div>
-        <div class="chead" style="padding-bottom:0;border:0"><span class="ic p"><svg class="i s18"><use href="#nh-cal"/></svg></span><div><h3>Acme</h3><small>Step 2 of 2 · Pick a time</small></div></div>
-        <div class="host"><img class="nh-av md" src="/assets/demo/women-44.jpg" alt=""><div><b>Maya Ortiz</b><small>Your host</small></div></div>
-        <h4>Intro call</h4>
-        <div class="facts"><span><svg class="i s14"><use href="#nh-clock"/></svg>30 min</span><span><svg class="i s14"><use href="#nh-video"/></svg>Google Meet</span><span><svg class="i s14"><use href="#nh-globe"/></svg>New York</span></div>
-        <div class="cal"><div class="mh">November&nbsp;<span>2026</span><span style="margin-left:auto;display:flex;gap:6px;color:var(--meta)"><svg class="i s14"><use href="#nh-chevl"/></svg><svg class="i s14"><use href="#nh-chev"/></svg></span></div><div class="grid calgrid"></div></div>
-      </div>
-      <div class="times">
-        <div class="lbl">Tue, Nov 17</div>
-        <div class="slot">9:00 am</div><div class="slot sel">10:30 am</div><div class="slot">11:00 am</div><div class="slot">1:00 pm</div><div class="slot">2:30 pm</div>
-        <div class="cbtn green" style="height:36px;margin-top:6px">Confirm</div>
-      </div>
-    </div>
-  </div>
-</template>
-<template id="c3">
-  <div class="card wide">
-    <div class="chead"><span class="ic o"><svg class="i s18"><use href="#nh-spark"/></svg></span><div><h3>AI follow-up</h3><small>Sequence: Demo booked</small></div><span class="right tag t-orange"><svg class="i s14"><use href="#nh-spark"/></svg>Drafted by AI</span></div>
-    <div class="mail">
-      <div class="mrow">To <img class="nh-av sm" src="/assets/demo/women-65.jpg" alt=""><b>Priya Raman</b><span style="margin-left:auto;display:inline-flex;align-items:center;gap:8px">From <img class="nh-av sm" src="/assets/demo/women-44.jpg" alt="">Maya Ortiz</span></div>
-      <div class="mrow">Subject <b>Ideas for your call on Tuesday</b></div>
-      <div class="mbody"><p>Hi Priya,</p><p>Thanks for booking time for <span class="hl">Tuesday at 10:30</span>. You said your <span class="hl">team of 11 to 50</span> wants to <span class="hl">book more demos from your site</span>, so I'll show how teams your size route every form lead to a rep in seconds.</p><p>Talk soon,<br>Maya</p></div>
-    </div>
-    <div class="seq"><div class="nh-sq"><b>Confirmation</b><span class="tag t-green">Sent</span></div><div class="nh-sq on"><b>Prep email</b><span class="tag t-orange">Ready</span></div><div class="nh-sq"><b>Reminder</b>1 day before</div><div class="nh-sq"><b>Nurture</b>If no reply</div></div>
-    <div class="actions"><div class="cbtn ghost"><svg class="i s14"><use href="#nh-edit"/></svg>Edit</div><div class="cbtn nh-dark"><svg class="i s14"><use href="#nh-send"/></svg>Approve and send</div></div>
-  </div>
-</template>
 </main>
 
 <footer class="site-footer">
@@ -450,6 +798,6 @@
 </footer>
 
 <script src="/assets/site.js?v=9" defer></script>
-<script src="/assets/home2.js?v=3" defer></script>
+<script src="/assets/home2.js?v=4" defer></script>
 </body>
 </html>
