@@ -477,7 +477,9 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
   .cf__opt, .cf__agree { min-height: 44px; }
 }
 /* The opt-in box for news, under the form */
-.cf__optin { margin-top: 4px; font-size: 13px; color: var(--f-muted); }
-.cf__optin + .cf__notice { margin-top: 6px; }
+.cf__optin { margin-top: 18px; font-size: 13px; color: var(--f-muted); }
+.cf__optin[hidden], .cf__notice[hidden] { display: none; }
+.cf__optin + .cf__notice { margin: 6px 0 0; }
+.cf__optin ~ .cf__acts, .cf__notice ~ .cf__acts { margin-top: 16px; }
 /* Buttons use a slightly deeper shade when a style's own color is too light for white text */
 .cf__btn:not(.cf__btn--ghost) { background: var(--f-btn, var(--f-accent)); border-color: var(--f-btn, var(--f-accent)); }

@@ -350,6 +350,8 @@
         prog.querySelector(".cf__bar i").style.width = ((i + 1) / lp.length) * 100 + "%";
       }
       form.querySelector(".cf__notice") && (form.querySelector(".cf__notice").hidden = !last);
+      // The news opt-in belongs with the final answers: only on the last page, right above Submit.
+      form.querySelector(".cf__optin") && (form.querySelector(".cf__optin").hidden = !last);
       return { v: v, lp: lp, i: i, last: last };
     }
 

@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 13, 13
+CSS_V, JS_V = 14, 14
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -451,9 +451,9 @@ def live_form(t) -> str:
   {'<div class="cf__prog" hidden><span class="cf__prog-l"></span><span class="cf__prog-n"></span><span class="cf__bar"><i></i></span></div>' if multi else ""}
   {cover_html(s)}
   {"".join(pages)}
+  {notice}
   <div class="cf__acts"><button type="button" class="cf__btn cf__btn--ghost" data-back hidden>Back</button>{'<button type="button" class="cf__later" data-later>Save and finish later</button>' if s.get("resume") else ""}<button type="button" class="cf__btn" data-next data-submit-label="{esc(s["submit"])}">{esc(s["submit"] if not multi else "Next")}</button></div>
   {'<p class="cf__later-note" hidden>On the live form, this emails a link that opens the form where they stopped.</p>' if s.get("resume") else ""}
-  {notice}
   <div class="cf__end" hidden role="status"><span class="cf__end-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></span><h3 class="cf__end-t">{esc(end["title"])}</h3><div class="cf__score" hidden></div>{f'<p class="cf__end-p">{esc(end["text"])}</p>' if end.get("text") else ""}{'<div class="cf__book" data-book><div class="cf__days" role="group" aria-label="Day"></div><div class="cf__times" role="group" aria-label="Time"><button type="button">9:00 am</button><button type="button">10:30 am</button><button type="button">1:00 pm</button><button type="button">3:30 pm</button></div><p class="cf__book-note" hidden>Sample times. In the live form this books the meeting on your calendar.</p></div>' if end.get("booking") else ""}<p class="cf__demo">This is a preview, so nothing was sent. <a href="{APP}/forms/templates/{t['slug']}">Use this form template</a> to take real answers.</p><button type="button" class="cf__restart">Start over</button></div>
   <script type="application/json" class="cf__data">{data}</script>
 </form>"""

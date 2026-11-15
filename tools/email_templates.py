@@ -41,7 +41,7 @@ STYLE = """<style>
 
 
 def page(path: str, title: str, desc: str, body: str, ld: list) -> None:
-    extra = '<link rel="stylesheet" href="/assets/forms.css?v=13">\n' + STYLE + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
+    extra = '<link rel="stylesheet" href="/assets/forms.css?v=14">\n' + STYLE + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
     out = shell.head(title, desc, path, extra) + "\n" + shell.body(body)
     dest = ROOT / path.strip("/") / "index.html"
     dest.parent.mkdir(parents=True, exist_ok=True)
