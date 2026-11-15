@@ -136,7 +136,16 @@ function fill(slot,cur){
   function $(id){return document.getElementById(id)}
   function later(fn,ms){timers.push(setTimeout(fn,calm?0:ms))}
   function clearAll(){timers.forEach(clearTimeout);timers=[];clearInterval(typer)}
-  function show(i){steps.forEach(function(el,k){el.hidden=k!==i});prog.forEach(function(p,k){p.classList.toggle("on",k<=PROG[i])})}
+  // Each new step starts where the eye is: the frame keeps its height while the next step loads (hold), and if the
+  // frame's top has scrolled under the header, the page brings it back so the step reads from its first line.
+  var tbEl=document.getElementById("tb"),tryEl=document.getElementById("try");
+  function release(){tbEl.style.minHeight=""}
+  function show(i){
+    release();
+    steps.forEach(function(el,k){el.hidden=k!==i});prog.forEach(function(p,k){p.classList.toggle("on",k<=PROG[i])});
+    var top=tryEl.getBoundingClientRect().top;
+    if(top<90||top>innerHeight*.6)scrollBy({top:top-96,behavior:calm?"auto":"smooth"});
+  }
   var tz="your time zone";try{tz=(Intl.DateTimeFormat().resolvedOptions().timeZone||"").split("/").pop().replace(/_/g," ")||tz}catch(e){}
   $("tz").textContent=tz;
 
@@ -214,13 +223,13 @@ function fill(slot,cur){
   form.addEventListener("change",function(e){if(e.target.name==="opt"){err("err-opt","");showLogic(+e.target.value)}});
 
   function route(){
-    show(4);var m=$("match");$("pick").hidden=true;m.className="match wait";
+    var h=tbEl.offsetHeight;show(4);tbEl.style.minHeight=h+"px";var m=$("match");$("pick").hidden=true;m.className="match wait";
     m.innerHTML='<span class="spin"></span><div><b>Finding the right person…</b><small>Checking your answer: '+st.opt+'</small></div>';
     later(function(){
       var t=brand.match(st.rep,st.opt);m.className="match";
       m.innerHTML='<img src="'+AV[st.rep.av]+'" alt=""><div><b>'+t[0]+'</b><small>'+t[1]+'</small></div>';
       $("m-name").textContent=brand.meet;$("m-where").textContent=brand.where;$("c-cta").textContent=brand.form.confirm;
-      dayI=0;timeI=-1;buildDays();$("pick").hidden=false;
+      dayI=0;timeI=-1;buildDays();$("pick").hidden=false;release();
     },1100);
   }
   function buildDays(){
