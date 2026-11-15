@@ -162,7 +162,7 @@
 .nh .hero2{padding:150px 56px 130px;text-align:center;display:flex;flex-direction:column;align-items:center}
 .nh .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green-ink)}
 .nh .kicker i{width:6px;height:6px;border-radius:50%;background:var(--green)}
-.nh .display2{margin-top:24px;max-width:1000px;font-size:84px;line-height:86px;font-weight:600;letter-spacing:-.05em;color:var(--ink);text-wrap:balance}
+.nh .display2{margin-top:24px;max-width:1000px;font-size:84px;line-height:86px;font-weight:500;letter-spacing:-.045em;color:var(--ink);text-wrap:balance}
 .nh .display2 .nh-mark{background:linear-gradient(transparent 68%,var(--green-200) 68%,var(--green-200) 90%,transparent 90%);padding:0 4px}
 .nh .hero2>p{margin-top:28px;max-width:560px;font-size:19px;line-height:28px;color:var(--body)}
 .nh .hero2 .ctas{margin-top:34px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
