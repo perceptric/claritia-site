@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=15">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&amp;family=Playfair+Display:wght@500;600&amp;family=Jost:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=Manrope:wght@500;600;700&amp;family=Barlow+Condensed:wght@600;700&amp;family=Barlow:wght@400;500;600&amp;display=swap">
-<link rel="stylesheet" href="/assets/home2.css?v=4">
+<link rel="stylesheet" href="/assets/home2.css?v=5">
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
 </head>
 <body class="home">
@@ -179,12 +179,18 @@
       <div class="nh-tb" id="tb">
         <div class="try-prog"><span class="on">Brand</span><span>Details</span><span>Time</span><span>Booked</span></div>
 
-        <div class="tstep" id="s0">
+        <div class="tstep welcome" id="sw">
           <span class="wave"><img src="/assets/brand/claritia-mark-small.svg" alt=""></span>
-          <h3>Welcome! This is a live Claritia form.</h3>
-          <p class="lede">Pick the brand you want to see it in. Claritia will learn its style in a few seconds.</p>
-          <div class="brands" id="brands"></div>
+          <h3>Welcome to Claritia!</h3>
+          <p class="lede">Let's experience how you can unify forms&nbsp;+ scheduling&nbsp;+ email marketing in one place.</p>
+          <div class="tactions"><button class="tbtn" id="start-now" type="button">Start now <svg class="i s14"><use href="#nh-arrow"/></svg></button></div>
           <noscript><p class="nojs">Turn on JavaScript to try the live form.</p></noscript>
+        </div>
+
+        <div class="tstep" id="s0" hidden>
+          <h3>Choose a brand</h3>
+          <p class="lede">Pick the brand you want to see the form in. Claritia will learn its style in a few seconds.</p>
+          <div class="brands" id="brands"></div>
         </div>
 
         <div class="tstep" id="s1" hidden>
@@ -254,7 +260,7 @@
       </div>
     </div>
     <p class="try-note">Demo only. Nothing you type leaves this page. Brands shown are made up for this demo.</p>
-    <a class="btn btn--primary btn--lg try-cta" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Like it? Book a real demo <svg class="i s14"><use href="#nh-arrow"/></svg></a>
+    <a class="btn btn--primary btn--lg try-cta" href="https://app.tryclaritia.com/signup">Like it? Start free today <svg class="i s14"><use href="#nh-arrow"/></svg></a>
   </div>
 
   <!-- 2. Works-with row -->
@@ -443,6 +449,6 @@
 </footer>
 
 <script src="/assets/site.js?v=9" defer></script>
-<script src="/assets/home2.js?v=1" defer></script>
+<script src="/assets/home2.js?v=2" defer></script>
 </body>
 </html>

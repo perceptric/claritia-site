@@ -516,3 +516,13 @@ html:not(.js) .nh .stp-stack{display:flex;flex-direction:column;gap:48px}html:no
 html:not(.js) .nh .snav,html:not(.js) .nh .stick,html:not(.js) .nh .orb-wrap{display:none}
 .nh .nojs{margin-top:16px;font-size:14px;color:var(--meta)}
 @media (prefers-reduced-motion:reduce){.nh *,.nh *::before,.nh *::after{animation:none!important;transition:none!important}.nh .pop{opacity:1;transform:none}}
+
+/* the welcome screen before the brands: centered, roomy */
+.nh .welcome{display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:72px;padding-bottom:84px}
+.nh .welcome:not([hidden]){display:flex}
+.nh .welcome[hidden]{display:none}
+.nh .welcome .wave{width:56px;height:56px;border-radius:16px;margin-bottom:18px}
+.nh .welcome .wave img{width:30px;height:30px}
+.nh .welcome h3{font-size:32px;line-height:38px}
+.nh .welcome .lede{max-width:440px;margin-top:10px;font-size:17px;line-height:26px}
+.nh .welcome .tactions{justify-content:center;margin-top:26px}

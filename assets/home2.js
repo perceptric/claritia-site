@@ -129,8 +129,8 @@ function fill(slot,cur){
   BRANDS.forEach(function(b){var x=EXTRA[b.id];b.logic=x.logic;b.calc=x.calc;b.mails=x.mails});
   var TIMES=["9:00 am","9:30 am","10:30 am","11:00 am","1:00 pm","2:30 pm","3:00 pm","4:30 pm"];
   var tb=document.getElementById("tb"),form=document.getElementById("tf");
-  var steps=["s0","s1","tf","ts1","ts2"].map(function(id){return document.getElementById(id)});
-  var prog=[].slice.call(document.querySelectorAll(".try-prog span")),PROG=[0,0,1,2,3];
+  var steps=["sw","s0","s1","tf","ts1","ts2"].map(function(id){return document.getElementById(id)});
+  var prog=[].slice.call(document.querySelectorAll(".try-prog span")),PROG=[0,0,0,1,2,3];
   var calm=matchMedia("(prefers-reduced-motion: reduce)").matches;
   var brand=null,st={},days=[],dayI=0,timeI=-1,timers=[],typer=null;
   function $(id){return document.getElementById(id)}
@@ -157,7 +157,7 @@ function fill(slot,cur){
   $("brands").addEventListener("click",function(e){var t=e.target.closest(".bt");if(t)learn(BRANDS[+t.dataset.i])});
 
   function learn(b){
-    clearAll();brand=b;resetVars();show(1);$("swap").hidden=false;
+    clearAll();brand=b;resetVars();show(2);$("swap").hidden=false;
     $("learn").hidden=false;$("like").hidden=true;$("ln-name").textContent=b.name;$("ln-spin").style.display="";
     var li=[].slice.call(document.querySelectorAll(".lsteps li"));li.forEach(function(x){x.classList.remove("done")});
     ["lv0","lv1","lv2","lv3"].forEach(function(id){$(id).innerHTML=""});
@@ -172,8 +172,9 @@ function fill(slot,cur){
       $("like-go").focus({preventScroll:true});
     },3400);
   }
-  $("like-go").onclick=function(){buildForm();show(2);$("try-name").focus({preventScroll:true})};
-  $("like-other").onclick=$("swap").onclick=$("restart").onclick=function(){clearAll();resetVars();brand=null;$("swap").hidden=true;show(0)};
+  $("like-go").onclick=function(){buildForm();show(3);$("try-name").focus({preventScroll:true})};
+  $("start-now").onclick=function(){show(1);var f=document.querySelector(".bt");if(f)f.focus({preventScroll:true})};
+  $("like-other").onclick=$("swap").onclick=$("restart").onclick=function(){clearAll();resetVars();brand=null;$("swap").hidden=true;show(1)};
 
   function buildForm(){
     var f=brand.form;form.reset();
@@ -213,7 +214,7 @@ function fill(slot,cur){
   form.addEventListener("change",function(e){if(e.target.name==="opt"){err("err-opt","");showLogic(+e.target.value)}});
 
   function route(){
-    show(3);var m=$("match");$("pick").hidden=true;m.className="match wait";
+    show(4);var m=$("match");$("pick").hidden=true;m.className="match wait";
     m.innerHTML='<span class="spin"></span><div><b>Finding the right person…</b><small>Checking your answer: '+st.opt+'</small></div>';
     later(function(){
       var t=brand.match(st.rep,st.opt);m.className="match";
@@ -234,13 +235,13 @@ function fill(slot,cur){
   }
   $("days").addEventListener("click",function(e){var b=e.target.closest(".day");if(!b)return;dayI=+b.dataset.k;timeI=-1;buildDays()});
   $("times").addEventListener("click",function(e){var b=e.target.closest(".tm");if(!b||b.disabled)return;timeI=+b.dataset.k;buildTimes()});
-  $("back").onclick=function(){show(2);$("try-name").focus({preventScroll:true})};
+  $("back").onclick=function(){show(3);$("try-name").focus({preventScroll:true})};
   $("confirm").onclick=book;
 
   function book(){
     if(timeI<0)return;
     var day=days[dayI],dLong=day.toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric"}),dShort=day.toLocaleDateString("en-US",{weekday:"long"}),t=TIMES[timeI];
-    show(4);
+    show(5);
     $("bk-title").textContent=brand.booked(st);
     $("bk-when").textContent=brand.meet.split(",")[0]+" on "+dLong+" at "+t+" ("+tz+"). The invite is on its way to "+st.email+".";
     $("em-to").textContent=st.name;$("em-from").textContent=st.rep.n;$("em-av").src=AV[st.rep.av];
