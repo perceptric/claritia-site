@@ -159,7 +159,7 @@
 .nh .nh-sq.on{background:var(--green-50);box-shadow:0 0 0 1.5px var(--green)}
 .nh .actions{margin-top:14px;display:flex;gap:10px}
 .nh .actions .cbtn{flex:1;height:40px}
-.nh .hero2{padding:150px 56px 130px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.nh .hero2{padding:120px 56px 0;text-align:center;display:flex;flex-direction:column;align-items:center}
 .nh .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green-ink)}
 .nh .kicker i{width:6px;height:6px;border-radius:50%;background:var(--green)}
 .nh .display2{margin-top:0;max-width:1000px;font-size:84px;line-height:86px;font-weight:500;letter-spacing:-.045em;color:var(--ink);text-wrap:balance}
@@ -173,7 +173,7 @@
 .nh .trylink svg{animation:nudge 1.6s ease-in-out infinite}
 @keyframes nudge{50%{transform:translateY(3px)}}
 .nh .ldot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px var(--green-100)}
-.nh .flow-canvas{margin:56px 28px 0;padding:56px 24px 40px;border-radius:24px;background:var(--surface-3);box-shadow:var(--sh-rest);background-image:radial-gradient(circle,#e2e2dc 1px,transparent 1.2px);background-size:18px 18px;display:flex;flex-direction:column;align-items:center}
+.nh .flow-canvas{scroll-margin-top:90px;margin:56px 28px 0;padding:56px 24px 40px;border-radius:24px;background:var(--surface-3);box-shadow:var(--sh-rest);background-image:radial-gradient(circle,#e2e2dc 1px,transparent 1.2px);background-size:18px 18px;display:flex;flex-direction:column;align-items:center}
 .nh .try-hint{width:100%;max-width:780px;margin-bottom:12px;display:flex;align-items:center;justify-content:flex-end;gap:6px;font-size:13px;color:var(--meta)}
 .nh .try{width:100%;max-width:780px;border-radius:18px;background:var(--surface);box-shadow:var(--sh-float);overflow:hidden}
 .nh .try-top{display:flex;align-items:center;gap:12px;padding:11px 16px;border-bottom:1px solid var(--line-light);font-size:13px;color:var(--meta);background:var(--surface)}
@@ -453,7 +453,7 @@
 .nh .demo{padding:0 12px 12px}
 .nh .inner{flex-direction:column;justify-content:center;padding:70px 16px 16px;gap:16px}
 .nh .rail{display:none}
-.nh .hero2{padding:88px 20px 80px}
+.nh .hero2{padding:72px 20px 0}
 .nh .display2{font-size:46px;line-height:48px}
 .nh .hero2>p{font-size:17px;line-height:25px}
 .nh .flow-canvas{margin:40px 10px 0;padding:24px 8px 28px}
