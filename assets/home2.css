@@ -526,3 +526,30 @@ html:not(.js) .nh .snav,html:not(.js) .nh .stick,html:not(.js) .nh .orb-wrap{dis
 .nh .welcome h3{font-size:32px;line-height:38px}
 .nh .welcome .lede{max-width:440px;margin-top:10px;font-size:17px;line-height:26px}
 .nh .welcome .tactions{justify-content:center;margin-top:26px}
+
+/* hero: 50:50, the message on the left (it stays in view while the demo grows), the live demo on the right */
+.nh .hero-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start;padding:96px 28px 0}
+.nh .hero-split .hero2{position:sticky;top:132px;padding:48px 0 0 28px;text-align:left;align-items:flex-start}
+.nh .hero-split .display2{font-size:60px;line-height:63px;max-width:none}
+.nh .hero-split .hero2>p{max-width:480px;margin-top:24px}
+.nh .hero-split .hero2 .ctas,.nh .hero-split .nh-checks{justify-content:flex-start}
+.nh .hero-split .nh-checks{flex-direction:column;align-items:flex-start;gap:10px}
+.nh .hero-split .flow-canvas{margin:0;padding:28px 20px}
+.nh .hero-split .try-hint,.nh .hero-split .try{max-width:none}
+.nh .hero-split .try-top .made{position:static;transform:none;margin-left:2px}
+.nh .hero-split .brands{grid-template-columns:repeat(auto-fill,minmax(128px,1fr))}
+.nh .hero-split .em-tabs{grid-template-columns:repeat(2,1fr)}
+@media (max-width:1100px){
+  .nh .hero-split{grid-template-columns:minmax(0,1fr);gap:40px;padding:72px 12px 0}
+  .nh .hero-split .hero2{position:static;padding:0 12px;text-align:center;align-items:center}
+  .nh .hero-split .hero2 .ctas{justify-content:center}
+  .nh .hero-split .nh-checks{flex-direction:row;justify-content:center;align-items:center;gap:10px 24px}
+  .nh .hero-split .display2{font-size:52px;line-height:55px}
+  .nh .hero-split .em-tabs{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:900px){
+  .nh .hero-split{padding:96px 0 0}
+  .nh .hero-split .display2{font-size:42px;line-height:45px}
+  .nh .hero-split .flow-canvas{padding:24px 8px 28px;margin:0 10px}
+  .nh .hero-split .em-tabs{grid-template-columns:1fr 1fr}
+}
