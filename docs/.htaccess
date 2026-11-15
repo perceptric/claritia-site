@@ -1,0 +1,20 @@
+# docs.tryclaritia.com is served from this folder (a Hostinger subdomain on public_html/docs).
+# Its own rules: the site's rules in the parent folder would add "docs/" to every redirect.
+ErrorDocument 404 /index.html
+DirectoryIndex index.html
+AddDefaultCharset utf-8
+AddType "text/markdown; charset=utf-8" .md
+AddType "text/plain; charset=utf-8" .txt
+
+RewriteEngine On
+# tryclaritia.com/docs/... and www go to the docs subdomain
+RewriteCond %{HTTP_HOST} ^(www\.)?tryclaritia\.com$ [NC]
+RewriteRule ^(.*)$ https://docs.tryclaritia.com/$1 [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://docs.tryclaritia.com/$1 [R=301,L]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|css|js|md|txt)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
