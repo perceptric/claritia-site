@@ -14,7 +14,8 @@ CDN = "https://tryclaritia.com/assets/email"
 
 FONT = "Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
 
-# name, subject, preheader, art, title, lead (html), button, expiry line, extra block (html), footer reason
+# name, subject, preheader, art, title, lead (html), button, code (with code_line when it sits under a button),
+# expiry line, extra block (html), footer reason
 EMAILS = [
     dict(
         name="confirm-signup", subject="Welcome to Claritia: confirm your email",
@@ -22,6 +23,7 @@ EMAILS = [
         art="welcome", title="Welcome to Claritia",
         lead='Confirm <b style="color:#171717;font-weight:600">{{ .Email }}</b> and your account is ready. Forms, meetings and email marketing, all in one place.',
         button="Confirm my email", url="{{ .ConfirmationURL }}", expiry="Works once, for the next hour",
+        code="{{ .Token }}", code_line="Or type this code on the sign-in page:",
         next=[("Build your first form", "Describe it in a sentence or pick one of 840 templates."),
               ("Connect your calendar", "Google Calendar or Outlook, in one click.")],
         reason="You got this email because someone signed up for Claritia with this address. If it wasn't you, you can ignore it.",
@@ -32,6 +34,7 @@ EMAILS = [
         art="signin", title="Sign in to Claritia",
         lead='Here is your sign-in link for <b style="color:#171717;font-weight:600">{{ .Email }}</b>. Tap the button and you\'re in.',
         button="Sign in to Claritia", url="{{ .ConfirmationURL }}", expiry="Works once, for the next hour",
+        code="{{ .Token }}", code_line="Or type this code on the sign-in page:",
         reason="You got this email because someone asked to sign in to Claritia with this address. If it wasn't you, you can ignore it. Your account is safe.",
     ),
     dict(
@@ -123,8 +126,16 @@ def fallback(url):
                     </td>
                   </tr>"""
 
+def code_line(text):
+    return f"""<p style="margin:22px 0 10px;font-size:13px;line-height:18px;color:#737373">{text}</p>"""
+
 def page(e):
-    action = code_box(e["code"]) if e.get("code") else button(e["button"], e["url"])
+    if e.get("url"):
+        action = button(e["button"], e["url"])
+        if e.get("code"):
+            action += "\n                      " + code_line(e["code_line"]) + "\n                      " + code_box(e["code"])
+    else:
+        action = code_box(e["code"])
     extra = next_steps(e["next"]) if e.get("next") else ""
     tail = fallback(e["url"]) if e.get("url") else ""
     return f"""<!doctype html>
