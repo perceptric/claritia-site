@@ -1,10 +1,12 @@
 <!doctype html>
-<!-- The blog's cover template (1200 x 630, the size link previews use). Pure visuals, no words: a drawing of the app
-     on a solid color, with the color set by the post's category. tools/blog-cover.mjs fills it from JSON in the
-     address's hash: {title, category, kind, logo, name}.
+<!-- The blog's cover template (1200 x 630, the size link previews use). Pure visuals, no words: an app window with
+     floating pieces around it (notifications, charts, people, a cursor) on a color set by the post's category.
+     tools/blog-cover.mjs fills it from JSON in the address's hash: {title, category, kind, logo, name}.
      Colors: Forms green (mint when the title says "Alternatives"), Scheduling blue, Routing black, Workflows orange,
      Integrations mint.
-     Kinds (the scene): form, meeting, workflow, integration, responses, route, robin, logic. -->
+     Kinds (the scene): form, meeting, workflow, integration, route, robin, logic (responses draws route).
+     Small details (which slot is booked, chart heights, event spots) come from the title, so each cover differs and a
+     post's cover never changes when it's drawn again. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -12,42 +14,52 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { width: 1200px; height: 630px; overflow: hidden; -webkit-font-smoothing: antialiased; }
   /* Drawn at 1600 x 840, then scaled to 1200 x 630 */
-  .cover { position: absolute; left: 0; top: 0; width: 1600px; height: 840px; transform: scale(.75); transform-origin: 0 0; background: var(--bg); overflow: hidden; }
-  .dots { position: absolute; inset: 0; background-image: radial-gradient(var(--soft) 2.5px, transparent 2.5px); background-size: 40px 40px; }
-  .blob { position: absolute; border-radius: 50%; background: var(--soft); }
-  .stage { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
-  .card { background: #fff; border-radius: 36px; box-shadow: 0 2px 0 rgba(0,0,0,.04), 0 40px 100px rgba(0,0,0,.20); position: relative; }
-  .tilt { transform: rotate(-3deg); }
-  .bar { height: 18px; border-radius: 9px; background: #e9e9e9; }
-  .box { height: 64px; border-radius: 16px; border: 3px solid #ececec; }
-  .opt { height: 72px; border-radius: 18px; border: 3px solid #ececec; display: flex; align-items: center; padding: 0 20px; gap: 14px; }
-  .opt i { width: 26px; height: 26px; border-radius: 50%; border: 3px solid #d4d4d4; flex: none; }
-  .opt .bar { flex: 1; height: 14px; }
-  .opt.on { background: #f2faf6; border-color: #0c8c5e; }
-  .opt.on i { border: 0; background: #0c8c5e; display: grid; place-items: center; }
-  .opt.on i svg { width: 16px; height: 16px; }
-  .btn { height: 72px; border-radius: 18px; background: #0c8c5e; }
-  .ok { width: 64px; height: 64px; border-radius: 50%; background: #0c8c5e; border: 5px solid #fff; display: grid; place-items: center; box-shadow: 0 10px 30px rgba(12,140,94,.4); }
-  .ok svg { width: 34px; height: 34px; }
-  .av { border-radius: 50%; background: #efeaff; color: #8b74e8; display: grid; place-items: center; }
-  .av svg { width: 60%; height: 60%; }
-  .av.g { background: #0c8c5e; color: #fff; }
+  .cover { position: absolute; left: 0; top: 0; width: 1600px; height: 840px; transform: scale(.75); transform-origin: 0 0; overflow: hidden;
+    background: radial-gradient(900px 600px at 12% 0%, var(--glow), transparent 70%), radial-gradient(800px 600px at 100% 100%, var(--deep), transparent 70%), var(--bg); }
+  .dots { position: absolute; inset: 0; background-image: radial-gradient(var(--soft) 2.4px, transparent 2.4px); background-size: 40px 40px; }
+  .ring { position: absolute; border-radius: 50%; border: 2px solid var(--soft); }
+  .layer { position: absolute; inset: 0; }
+  .card { position: absolute; background: #fff; border-radius: 28px; box-shadow: 0 1px 0 rgba(0,0,0,.04), 0 30px 80px -10px rgba(0,0,0,.28), 0 0 0 1px rgba(0,0,0,.04); }
+  .chrome { display: flex; align-items: center; gap: 10px; height: 58px; padding: 0 24px; border-bottom: 2px solid #f1f1f1; }
+  .chrome i { width: 14px; height: 14px; border-radius: 50%; background: #e4e4e4; }
+  .chrome i:nth-child(1) { background: #ff5f57; } .chrome i:nth-child(2) { background: #febc2e; } .chrome i:nth-child(3) { background: #28c840; }
+  .chrome span { margin-left: 26px; width: 260px; height: 26px; border-radius: 99px; background: #f4f4f4; }
+  .side { position: absolute; left: 0; top: 58px; bottom: 0; width: 84px; border-right: 2px solid #f3f3f3; display: flex; flex-direction: column; align-items: center; gap: 16px; padding-top: 24px; }
+  .side b { width: 40px; height: 40px; border-radius: 12px; background: #f3f3f3; }
+  .side b.on { background: #e3f4ec; box-shadow: inset 0 0 0 2px #0c8c5e; }
+  .b { border-radius: 99px; background: #e9e9e9; flex: none; }
+  .ic { display: grid; place-items: center; border-radius: 14px; flex: none; }
+  .ic svg { width: 54%; height: 54%; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .av { border-radius: 50%; display: grid; place-items: center; flex: none; border: 4px solid #fff; }
+  .av svg { width: 58%; height: 58%; }
+  .ok { position: absolute; border-radius: 50%; background: #0c8c5e; border: 5px solid #fff; display: grid; place-items: center; box-shadow: 0 10px 26px rgba(12,140,94,.45); }
+  .ok svg { width: 52%; height: 52%; }
+  .row { display: flex; align-items: center; gap: 16px; }
+  .box { border-radius: 14px; border: 3px solid #ededed; }
+  .opt { height: 62px; border-radius: 16px; border: 3px solid #ededed; display: flex; align-items: center; gap: 14px; padding: 0 18px; }
+  .opt i { width: 24px; height: 24px; border-radius: 50%; border: 3px solid #d4d4d4; flex: none; display: grid; place-items: center; }
+  .opt.on { border-color: #0c8c5e; background: #f2faf6; }
+  .opt.on i { border: 0; background: #0c8c5e; }
+  .opt.on i svg { width: 15px; height: 15px; }
+  .btn { border-radius: 16px; background: #0c8c5e; }
+  .cursor { position: absolute; width: 64px; height: 64px; filter: drop-shadow(0 8px 14px rgba(0,0,0,.3)); z-index: 30; }
+  svg.wires { position: absolute; left: 0; top: 0; overflow: visible; }
 </style>
 </head>
 <body>
 <div class="cover" id="cover"><div class="dots"></div>
-  <div class="blob" style="width:900px;height:900px;left:-250px;top:-420px"></div>
-  <div class="blob" style="width:700px;height:700px;right:-200px;bottom:-380px"></div>
-  <div class="stage" id="scene"></div>
+  <div class="ring" style="width:1100px;height:1100px;left:-420px;top:-640px"></div>
+  <div class="ring" style="width:900px;height:900px;right:-360px;bottom:-560px"></div>
+  <div class="layer" id="scene"></div>
 </div>
 <script>
   const D = JSON.parse(decodeURIComponent(location.hash.slice(1) || "%7B%7D"));
   const THEMES = {
-    forms:      { bg: "#0c8c5e", accent: "#c9f27a", soft: "rgba(255,255,255,.12)", line: "#ffffff" },
-    mint:       { bg: "#e3f4ec", accent: "#0c8c5e", soft: "rgba(12,140,94,.10)",   line: "#0c8c5e" },
-    scheduling: { bg: "#e2effd", accent: "#1e4f9a", soft: "rgba(30,79,154,.10)",   line: "#1e4f9a" },
-    routing:    { bg: "#101412", accent: "#3ee08f", soft: "rgba(255,255,255,.07)", line: "#ffffff" },
-    followup:   { bg: "#ffe9cc", accent: "#c2410c", soft: "rgba(194,65,12,.10)",   line: "#c2410c" },
+    forms:      { bg: "#0c8c5e", glow: "#22a873", deep: "#08704b", accent: "#c9f27a", soft: "rgba(255,255,255,.13)", line: "rgba(255,255,255,.55)" },
+    mint:       { bg: "#e3f4ec", glow: "#f3fbf7", deep: "#c9eadb", accent: "#0c8c5e", soft: "rgba(12,140,94,.12)",   line: "rgba(12,140,94,.45)" },
+    scheduling: { bg: "#e2effd", glow: "#f4f9ff", deep: "#c7dcf7", accent: "#1e4f9a", soft: "rgba(30,79,154,.11)",   line: "rgba(30,79,154,.45)" },
+    routing:    { bg: "#101412", glow: "#1c2a23", deep: "#0a0d0b", accent: "#3ee08f", soft: "rgba(255,255,255,.07)", line: "rgba(255,255,255,.35)" },
+    followup:   { bg: "#ffe9cc", glow: "#fff6ea", deep: "#fbd3a6", accent: "#c2410c", soft: "rgba(194,65,12,.11)",   line: "rgba(194,65,12,.45)" },
   };
   const cat = (D.category || "").toLowerCase();
   const themeName = cat === "scheduling" ? "scheduling" : cat === "routing" ? "routing" : cat === "workflows" ? "followup"
@@ -55,94 +67,195 @@
   const T = THEMES[themeName];
   for (const [k, v] of Object.entries(T)) document.getElementById("cover").style.setProperty("--" + k, v);
 
+  // A seeded random from the title, so details differ between posts but never change for one post.
+  let seed = 7; for (const ch of D.title || "") seed = (seed * 31 + ch.charCodeAt(0)) >>> 0;
+  const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
+  const pick = (n) => Math.floor(rnd() * n);
+
+  const C = { green: "#0c8c5e", gsoft: "#e3f4ec", blue: "#2f6fdf", bsoft: "#e2effd", orange: "#ea7a1a", osoft: "#ffe9cc",
+              purple: "#7c5cf0", psoft: "#efeaff", pink: "#e0457b", ksoft: "#fde4ee", gray: "#d9d9d9" };
+  const ICON = {
+    form: '<rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 8h6M9 12h6M9 16h3"/>',
+    clock: '<circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/>',
+    mail: '<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/>',
+    cal: '<rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/>',
+    video: '<rect x="3" y="7" width="12" height="10" rx="2.5"/><path d="m15 11 6-3v8l-6-3"/>',
+    spark: '<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/>',
+    chat: '<path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>',
+    db: '<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/>',
+    sheet: '<rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 10h16M4 15h16M10 4v16"/>',
+    bolt: '<path d="M13 3 5 13h6l-1 8 8-10h-6z"/>',
+    branch: '<circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="12" r="2.5"/><path d="M6 8.5v7M8.5 6c5 0 7 2 7 5.5M8.5 18c5 0 7-2 7-4.5"/>',
+    rotate: '<path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/>',
+    pin: '<path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+    bell: '<path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4zM10 20a2 2 0 0 0 4 0"/>',
+    card: '<rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h4"/>',
+  };
   const CHECK = '<svg viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const PERSON = '<svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="4" fill="currentColor"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="currentColor"/></svg>';
-  const ok = (style) => `<div class="ok" style="position:absolute;${style}">${CHECK}</div>`;
+  const CURSOR = '<svg viewBox="0 0 32 32"><path d="M6 3l20 12-9 2-4 9z" fill="#0f0f0f" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/></svg>';
 
-  const scenes = {
-    form: () => `<div class="card tilt" style="width:620px;padding:52px">
-      <div class="bar" style="width:55%;height:24px;background:#d9d9d9"></div>
-      <div class="bar" style="width:30%;margin-top:40px"></div><div class="box" style="margin-top:16px"></div>
-      <div class="bar" style="width:40%;margin-top:34px"></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px">
-        <div class="opt"><i></i><span class="bar"></span></div><div class="opt on"><i>${CHECK}</i><span class="bar" style="background:#bfe6d3"></span></div>
-        <div class="opt"><i></i><span class="bar"></span></div><div class="opt"><i></i><span class="bar"></span></div></div>
-      <div class="btn" style="margin-top:36px"></div>${ok("right:-30px;top:-30px")}</div>`,
+  const pos = (x, y, w, h, rot = 0, z = 1) => `left:${x}px;top:${y}px;width:${w}px;${h ? `height:${h}px;` : ""}transform:rotate(${rot}deg);z-index:${z};`;
+  const card = (x, y, w, h, rot, z, inner, extra = "") => `<div class="card" style="${pos(x, y, w, h, rot, z)}${extra}">${inner}</div>`;
+  const bar = (w, c = "#e9e9e9", h = 14) => `<div class="b" style="width:${typeof w === "number" ? w + "px" : w};height:${h}px;background:${c}"></div>`;
+  const ic = (k, color, bg, s = 48) => `<span class="ic" style="width:${s}px;height:${s}px;color:${color};background:${bg}"><svg viewBox="0 0 24 24">${ICON[k]}</svg></span>`;
+  const av = (color, bg, s = 56) => `<span class="av" style="width:${s}px;height:${s}px;color:${color};background:${bg}">${PERSON}</span>`;
+  const ok = (x, y, s = 60) => `<div class="ok" style="left:${x}px;top:${y}px;width:${s}px;height:${s}px;z-index:40">${CHECK}</div>`;
+  const cursor = (x, y) => `<div class="cursor" style="left:${x}px;top:${y}px">${CURSOR}</div>`;
+  const PEOPLE = [[C.purple, C.psoft], [C.blue, C.bsoft], [C.orange, C.osoft], [C.pink, C.ksoft], [C.green, C.gsoft]];
+  const people = (n, s = 56, gap = -16) => `<div class="row" style="gap:0">${Array.from({ length: n }, (_, i) => `<div style="margin-left:${i ? gap : 0}px">${av(...PEOPLE[i % PEOPLE.length], s)}</div>`).join("")}</div>`;
+  const chrome = '<div class="chrome"><i></i><i></i><i></i><span></span></div>';
+  const side = (on = 1) => `<div class="side">${[0, 1, 2, 3, 4].map((i) => `<b class="${i === on ? "on" : ""}"></b>`).join("")}</div>`;
 
-    meeting: () => {
-      let cells = "";
-      for (let i = 0; i < 28; i++) {
-        const bg = i === 16 ? "#0c8c5e" : [9, 10, 15, 17, 22, 23].includes(i) ? "#e3f4ec" : "#f3f3f3";
-        cells += `<div style="height:52px;border-radius:14px;background:${bg}"></div>`;
-      }
-      const slots = ["border:3px solid #ececec", "background:#0c8c5e", "border:3px solid #ececec", "border:3px dashed #e3e3e3"]
-        .map((s) => `<div style="height:64px;border-radius:16px;${s}"></div>`).join("");
-      return `<div class="card tilt" style="width:700px;padding:52px">
-        <div style="display:flex;justify-content:space-between;align-items:center"><div class="bar" style="width:40%;height:24px;background:#d9d9d9"></div>
-        <div style="display:flex;gap:12px"><div class="bar" style="width:36px;height:36px;border-radius:12px"></div><div class="bar" style="width:36px;height:36px;border-radius:12px"></div></div></div>
-        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin-top:36px">${cells}</div>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px">${slots}</div>${ok("right:-30px;top:-30px")}</div>`;
-    },
+  // Floating pieces --------------------------------------------------------------------------------------------
+  const toast = (x, y, rot, icon, col, bg) => card(x, y, 380, 112, rot, 20,
+    `<div class="row" style="height:100%;padding:0 26px">${ic(icon, col, bg, 58)}<div style="flex:1;display:flex;flex-direction:column;gap:12px">${bar("70%", "#d9d9d9", 16)}${bar("45%")}</div></div>`) + ok(x + 340, y - 22, 52);
+  const chart = (x, y, rot) => { let bars = ""; for (let i = 0; i < 7; i++) { const h = 30 + Math.round(rnd() * 90), on = i === 5;
+      bars += `<div style="flex:1;height:${on ? 130 : h}px;border-radius:10px;background:${on ? C.green : "#e7f1ec"}"></div>`; }
+    return card(x, y, 340, 230, rot, 18, `<div style="padding:26px"><div class="row" style="justify-content:space-between">${bar(120, "#d9d9d9", 16)}${bar(60, C.gsoft, 26)}</div>
+      <div style="display:flex;align-items:flex-end;gap:12px;height:140px;margin-top:22px">${bars}</div></div>`); };
+  const spark = (x, y, rot) => { const pts = []; for (let i = 0; i <= 8; i++) pts.push([i * 36, 110 - (i * 9 + rnd() * 34)]);
+    const d = pts.map((p, i) => (i ? "L" : "M") + p[0] + " " + p[1]).join(" ");
+    return card(x, y, 340, 220, rot, 18, `<div style="padding:26px"><div class="row" style="justify-content:space-between">${bar(110, "#d9d9d9", 16)}${bar(70, C.gsoft, 26)}</div>
+      <svg width="290" height="130" viewBox="0 0 290 130" style="margin-top:18px;overflow:visible"><path d="${d} L288 130 L0 130Z" fill="${C.gsoft}"/><path d="${d}" fill="none" stroke="${C.green}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="${pts[8][0]}" cy="${pts[8][1]}" r="9" fill="${C.green}" stroke="#fff" stroke-width="4"/></svg></div>`); };
+  const chips = (x, y, rot) => card(x, y, 330, 0, rot, 19, `<div style="padding:24px;display:flex;flex-direction:column;gap:14px">
+      ${[[C.bsoft, C.blue], [C.psoft, C.purple], [C.osoft, C.orange]].map(([bg, c], i) => `<div class="row" style="gap:12px">${bar(88, bg, 34)}<span style="width:16px;height:16px;border-radius:50%;border:3px solid #d4d4d4"></span>${bar(i === 1 ? 120 : 96, i === 1 ? C.gsoft : "#f1f1f1", 34)}</div>`).join("")}</div>`);
+  const ai = (x, y, rot) => card(x, y, 320, 108, rot, 20, `<div class="row" style="height:100%;padding:0 24px">${ic("spark", C.purple, C.psoft, 58)}<div style="flex:1;display:flex;flex-direction:column;gap:12px">${bar("85%", C.psoft, 16)}${bar("55%", "#efefef")}</div></div>`);
+  const groupCard = (x, y, rot) => card(x, y, 300, 104, rot, 17, `<div class="row" style="height:100%;padding:0 22px;justify-content:space-between">${people(4, 54)}${bar(46, "#f1f1f1", 30)}</div>`);
 
-    logic: () => `<svg width="1600" height="840" style="position:absolute;inset:0">
-        <path d="M630 420 C 800 420, 800 260, 1000 260" stroke="var(--line)" stroke-opacity=".35" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="2 22"/>
-        <path d="M630 420 C 800 420, 800 580, 1000 580" stroke="var(--accent)" stroke-width="12" fill="none" stroke-linecap="round"/></svg>
-      <div class="card tilt" style="width:320px;padding:36px;position:absolute;left:310px;top:330px">
-        <div class="bar" style="width:60%;height:20px;background:#d9d9d9"></div>
-        <div class="opt on" style="margin-top:22px;height:60px"><i>${CHECK}</i><span class="bar" style="background:#bfe6d3"></span></div>
-        <div class="opt" style="margin-top:12px;height:60px"><i></i><span class="bar"></span></div></div>
-      <div class="card" style="width:300px;height:170px;padding:32px;position:absolute;left:1000px;top:175px;opacity:.55">
-        <div class="bar" style="width:70%"></div><div class="bar" style="width:45%;margin-top:18px"></div></div>
-      <div class="card" style="width:300px;height:170px;padding:32px;position:absolute;left:1000px;top:495px">
-        <div class="bar" style="width:70%"></div><div class="bar" style="width:45%;margin-top:18px"></div>${ok("right:-26px;top:-26px")}</div>`,
+  // Scenes -----------------------------------------------------------------------------------------------------
+  const scenes = {};
 
-    integration: () => `<div style="display:flex;align-items:center;gap:70px">
-      <div class="card tilt" style="width:440px;padding:44px">
-        <div class="bar" style="width:55%;height:22px;background:#d9d9d9"></div>
-        <div class="box" style="margin-top:28px"></div><div class="box" style="margin-top:16px"></div>
-        <div class="btn" style="margin-top:28px"></div></div>
-      <svg width="140" height="60" viewBox="0 0 140 60"><path d="M6 30h110M96 10l24 20-24 20" stroke="var(--accent)" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <div class="card" style="width:440px;padding:44px;transform:rotate(2deg)">
-        <div style="display:flex;gap:22px;align-items:center"><div class="av" style="width:96px;height:96px">${PERSON}</div>
-        <div style="flex:1"><div class="bar" style="width:80%;height:22px;background:#d9d9d9"></div><div class="bar" style="width:50%;margin-top:14px"></div></div></div>
-        <div class="bar" style="margin-top:34px"></div><div class="bar" style="width:70%;margin-top:16px"></div>${ok("right:-28px;top:-28px")}</div></div>`,
+  scenes.form = () => {
+    const sel = pick(4), act = pick(5);
+    const fields = [0, 1, 2, 3, 4].map((i) => `<div class="row" style="gap:12px;padding:12px;border-radius:14px;${i === act ? "background:#f2faf6;box-shadow:inset 0 0 0 2px #0c8c5e" : ""}">${ic(["form", "mail", "cal", "card", "spark"][i], i === act ? C.green : "#9a9a9a", i === act ? "#fff" : "#f3f3f3", 38)}${bar(80 + (i * 23) % 50, i === act ? "#bfe6d3" : "#ececec", 12)}</div>`).join("");
+    const opts = [0, 1, 2, 3].map((i) => `<div class="opt ${i === sel ? "on" : ""}"><i>${i === sel ? CHECK : ""}</i>${bar("60%", i === sel ? "#bfe6d3" : "#ececec", 12)}</div>`).join("");
+    return card(300, 110, 900, 620, -2, 10, `${chrome}${side(1)}
+      <div style="position:absolute;left:84px;top:58px;bottom:0;width:250px;border-right:2px solid #f3f3f3;padding:22px 18px;display:flex;flex-direction:column;gap:6px">${fields}</div>
+      <div style="position:absolute;left:334px;right:0;top:58px;bottom:0;background:#fafaf8;padding:34px 44px">
+        <div style="background:#fff;border-radius:22px;box-shadow:0 0 0 2px #f0f0f0;padding:30px">
+          ${bar("50%", "#d4d4d4", 20)}<div style="margin-top:12px">${bar("70%", "#efefef", 12)}</div>
+          <div class="box" style="height:58px;margin-top:24px"></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px">${opts}</div>
+          <div class="btn" style="height:62px;margin-top:22px"></div></div></div>`)
+      + ai(120, 170, -6) + toast(1090, 96, 4, "bell", C.green, C.gsoft) + chart(1130, 500, 3) + groupCard(150, 610, 3) + cursor(1010, 650);
+  };
 
-    route: () => {
-      const ys = [170, 420, 670];
-      const lines = ys.map((y, i) => i === 1
-        ? `<path d="M560 420 C 800 420, 800 ${y}, 1040 ${y}" stroke="var(--accent)" stroke-width="12" fill="none" stroke-linecap="round"/>`
-        : `<path d="M560 420 C 800 420, 800 ${y}, 1040 ${y}" stroke="var(--line)" stroke-opacity=".25" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="2 20"/>`).join("");
-      const avs = ys.map((y, i) => { const on = i === 1, s = on ? 170 : 130;
-        return `<div class="av${on ? " g" : ""}" style="position:absolute;left:${on ? 1040 : 1050}px;top:${y - s / 2}px;width:${s}px;height:${s}px;${on ? "box-shadow:0 0 0 14px rgba(62,224,143,.25)" : "opacity:.7"}">${PERSON}</div>`; }).join("");
-      return `<svg width="1600" height="840" style="position:absolute;inset:0">${lines}</svg>
-        <div class="card tilt" style="position:absolute;left:180px;top:270px;width:380px;padding:40px">
-          <div style="display:flex;gap:18px;align-items:center"><div class="av" style="width:80px;height:80px">${PERSON}</div>
-          <div style="flex:1"><div class="bar" style="width:80%;height:20px;background:#d9d9d9"></div><div class="bar" style="width:55%;margin-top:12px"></div></div></div>
-          <div class="bar" style="margin-top:28px"></div><div class="bar" style="width:65%;margin-top:14px"></div></div>${avs}`;
-    },
+  scenes.meeting = () => {
+    let grid = "";
+    for (let r = 0; r < 6; r++) grid += `<div style="position:absolute;left:0;right:0;top:${r * 80}px;border-top:2px solid #f2f2f2"></div>`;
+    const colors = [[C.bsoft, C.blue], [C.psoft, C.purple], [C.osoft, C.orange], [C.ksoft, C.pink]];
+    let ev = "";
+    for (let d = 0; d < 5; d++) { const n = 1 + pick(2);
+      for (let k = 0; k < n; k++) { const top = 10 + (k * 2 + pick(2)) * 80 * 1.2 % 380, h = 60 + pick(2) * 40, [bg, c] = colors[(d + k) % 4];
+        ev += `<div style="position:absolute;left:${d * 20 + 0.6}%;width:18.8%;top:${top}px;height:${h}px;border-radius:12px;background:${bg};border-left:6px solid ${c};padding:12px">${bar("70%", c + "55", 10)}</div>`; } }
+    const bd = pick(5);
+    ev += `<div style="position:absolute;left:${bd * 20 + 0.6}%;width:18.8%;top:250px;height:110px;border-radius:12px;background:#0c8c5e;padding:14px;box-shadow:0 12px 30px rgba(12,140,94,.4);z-index:3">${bar("70%", "rgba(255,255,255,.7)", 12)}<div style="margin-top:10px">${bar("45%", "rgba(255,255,255,.45)", 10)}</div></div>`;
+    const heads = [0, 1, 2, 3, 4].map((i) => `<div style="text-align:center"><div style="margin:0 auto;width:44px;height:44px;border-radius:50%;background:${i === bd ? C.green : "#f3f3f3"}"></div></div>`).join("");
+    let cells = ""; const on = pick(28);
+    for (let i = 0; i < 28; i++) cells += `<div style="height:34px;border-radius:10px;background:${i === on ? C.green : [3, 9, 10, 16, 17, 22].includes(i) ? C.gsoft : "#f4f4f4"}"></div>`;
+    const sl = pick(3);
+    const slots = [0, 1, 2].map((i) => `<div style="height:52px;border-radius:14px;${i === sl ? "background:#0c8c5e" : "border:3px solid #ececec"}"></div>`).join("");
+    return card(250, 100, 920, 640, -2, 10, `${chrome}${side(2)}
+      <div style="position:absolute;left:84px;right:0;top:58px;padding:26px 34px 0">
+        <div class="row" style="justify-content:space-between">${bar(220, "#d4d4d4", 22)}<div class="row" style="gap:10px">${bar(44, "#f1f1f1", 44)}${bar(44, "#f1f1f1", 44)}${bar(120, C.gsoft, 44)}</div></div>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);margin-top:24px">${heads}</div>
+        <div style="position:relative;height:430px;margin-top:18px">${grid}${ev}</div></div>`)
+      + card(1090, 130, 360, 0, 4, 20, `<div style="padding:26px">${bar(140, "#d9d9d9", 16)}<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:20px">${cells}</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px">${slots}</div></div>`) + ok(1410, 108)
+      + toast(1050, 600, -3, "video", C.blue, C.bsoft) + groupCard(110, 150, -5) + cursor(1240, 470);
+  };
 
-    robin: () => {
-      const cx = 800, cy = 420, r = 250, rad = (a) => (a * Math.PI) / 180;
-      const pt = (a) => [cx + r * Math.cos(rad(a)), cy + r * Math.sin(rad(a))];
-      const [x1, y1] = pt(-80), [x2, y2] = pt(-10);
-      let out = `<svg width="1600" height="840" style="position:absolute;inset:0">
-        <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--line)" stroke-opacity=".18" stroke-width="10" stroke-dasharray="4 26" stroke-linecap="round"/>
-        <path d="M${x1} ${y1} A ${r} ${r} 0 0 1 ${x2} ${y2}" stroke="var(--accent)" stroke-width="14" fill="none" stroke-linecap="round"/></svg>`;
-      [-90, 0, 90, 180].forEach((a, i) => { const [x, y] = pt(a), on = i === 1, s = on ? 190 : 140;
-        out += `<div class="av${on ? " g" : ""}" style="position:absolute;left:${x - s / 2}px;top:${y - s / 2}px;width:${s}px;height:${s}px;${on ? "box-shadow:0 0 0 16px rgba(62,224,143,.25)" : ""}">${PERSON}</div>`; });
-      return out + `<div class="ok" style="position:absolute;left:${cx - 50}px;top:${cy - 50}px;width:100px;height:100px">${CHECK}</div>`;
-    },
+  scenes.workflow = () => {
+    const steps = [["form", C.blue, C.bsoft], ["clock", "#8a8a8a", "#f2f2f2"], ["mail", C.green, C.gsoft], ["cal", C.purple, C.psoft]];
+    const done = pick(2) + 1;
+    const tl = steps.map(([k, c, bg], i) => `<div class="row" style="padding:18px;border-radius:18px;${i === 2 ? "box-shadow:inset 0 0 0 3px #0c8c5e;background:#f7fcf9" : "box-shadow:inset 0 0 0 2px #f0f0f0"}">${ic(k, c, bg, 52)}<div style="flex:1;display:flex;flex-direction:column;gap:10px">${bar("75%", "#dcdcdc", 14)}${bar("45%", "#efefef", 10)}</div>${i <= done ? `<span style="width:30px;height:30px;border-radius:50%;background:${C.green};display:grid;place-items:center">${CHECK.replace('viewBox', 'width="18" height="18" viewBox')}</span>` : ""}</div>${i < 3 ? '<div style="width:4px;height:22px;background:#ececec;margin-left:42px"></div>' : ""}`).join("");
+    const tok = (w, c, bg) => `<span style="display:inline-block;width:${w}px;height:22px;border-radius:8px;background:${bg};box-shadow:inset 0 0 0 2px ${c}55;vertical-align:middle"></span>`;
+    const line = (parts) => `<div class="row" style="gap:12px;margin-top:18px">${parts}</div>`;
+    return card(110, 110, 400, 0, -3, 12, `<div style="padding:28px">${tl}</div>`)
+      + card(540, 120, 760, 600, 1.5, 10, `${chrome}<div style="padding:34px 44px">
+        <div class="row">${av(C.purple, C.psoft, 72)}<div style="flex:1;display:flex;flex-direction:column;gap:12px">${bar("40%", "#d4d4d4", 18)}${bar("28%", "#efefef", 12)}</div>${bar(110, "#f3f3f3", 40)}</div>
+        <div style="height:2px;background:#f2f2f2;margin:28px 0 8px"></div>
+        ${line(bar(80, "#e6e6e6") + tok(110, C.purple, C.psoft) + bar(160, "#e6e6e6"))}
+        ${line(bar(220, "#e6e6e6") + tok(90, C.blue, C.bsoft) + bar(140, "#e6e6e6"))}
+        ${line(bar(300, "#e6e6e6") + bar(150, "#e6e6e6"))}
+        ${line(bar(140, "#e6e6e6") + tok(120, C.green, C.gsoft) + bar(110, "#e6e6e6"))}
+        ${line(bar(260, "#e6e6e6"))}
+        <div class="row" style="margin-top:40px;gap:14px"><div class="btn" style="width:210px;height:64px;background:var(--accent)"></div><div class="btn" style="width:150px;height:64px;background:#f2f2f2"></div>
+        <div style="margin-left:auto">${ic("spark", C.purple, C.psoft, 56)}</div></div></div>`)
+      + spark(1200, 70, 5) + toast(1140, 620, -2, "mail", C.green, C.gsoft) + cursor(800, 650);
+  };
 
-    workflow: () => `<div class="card tilt" style="width:760px;padding:56px">
-      <div style="display:flex;gap:22px;align-items:center"><div class="av" style="width:84px;height:84px">${PERSON}</div>
-      <div style="flex:1"><div class="bar" style="width:45%;height:22px;background:#d9d9d9"></div><div class="bar" style="width:30%;margin-top:14px"></div></div></div>
-      <div class="bar" style="margin-top:44px"></div><div class="bar" style="width:92%;margin-top:18px"></div>
-      <div class="bar" style="width:96%;margin-top:18px"></div><div class="bar" style="width:60%;margin-top:18px"></div>
-      <div style="display:flex;gap:16px;margin-top:44px"><div class="btn" style="width:220px;background:var(--accent)"></div><div class="btn" style="width:160px;background:#f2f2f2"></div></div>
-      ${ok("right:-30px;top:-30px;background:var(--accent)")}</div>`,
+  scenes.integration = () => {
+    const cx = 800, cy = 420;
+    const apps = [["cal", C.blue, C.bsoft], ["video", C.blue, "#e5f0ff"], ["chat", C.purple, C.psoft], ["db", C.orange, C.osoft], ["mail", C.pink, C.ksoft], ["sheet", C.green, C.gsoft], ["card", C.purple, C.psoft], ["bolt", C.orange, C.osoft]];
+    const spots = [[-440, -230], [-500, 20], [-420, 250], [-150, -300], [150, 290], [430, -240], [500, 10], [420, 250]];
+    const live = pick(8);
+    let wires = "", tiles = "";
+    spots.forEach(([dx, dy], i) => { const x = cx + dx, y = cy + dy, on = i === live || i === (live + 3) % 8;
+      wires += `<path d="M${cx} ${cy} C ${cx + dx * .5} ${cy}, ${cx + dx * .5} ${y}, ${x} ${y}" stroke="${on ? "var(--accent)" : "var(--line)"}" stroke-width="${on ? 7 : 4}" fill="none" stroke-linecap="round" ${on ? "" : 'stroke-dasharray="2 14"'}/>`
+        + (on ? `<circle cx="${cx + dx * .5}" cy="${(cy + y) / 2}" r="10" fill="var(--accent)" stroke="#fff" stroke-width="4"/>` : "");
+      const [k, c, bg] = apps[i], s = on ? 140 : 116;
+      tiles += card(x - s / 2, y - s / 2, s, s, (i % 2 ? 4 : -4), 12, `<div style="display:grid;place-items:center;height:100%">${ic(k, c, bg, s * .55)}</div>`) + (on ? ok(x + s / 2 - 34, y - s / 2 - 22, 48) : ""); });
+    const MARK = '<svg viewBox="0 0 48 48" width="120" height="120"><rect width="48" height="48" rx="13" fill="#0C8C5E"/><rect x="9" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="9" y="20.5" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="20.5" width="13" height="7" rx="3.5" fill="#fff"/><rect x="9" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/></svg>';
+    return `<svg class="wires" width="1600" height="840">${wires}</svg>${tiles}`
+      + card(cx - 110, cy - 110, 220, 220, 0, 15, `<div style="display:grid;place-items:center;height:100%">${MARK}</div>`, "border-radius:40px;box-shadow:0 0 0 18px rgba(255,255,255,.35),0 30px 80px -10px rgba(0,0,0,.3)")
+      + cursor(cx + 70, cy + 80);
+  };
+
+  scenes.route = () => {
+    const win = pick(3), ys = [150, 360, 570];
+    let wires = `<path d="M470 420 C 540 420, 560 420, 620 420" stroke="var(--accent)" stroke-width="8" fill="none" stroke-linecap="round"/>`;
+    ys.forEach((y, i) => { const on = i === win, ty = y + 70;
+      wires += `<path d="M760 420 C 880 420, 880 ${ty}, 1000 ${ty}" stroke="${on ? "var(--accent)" : "var(--line)"}" stroke-width="${on ? 8 : 4}" fill="none" stroke-linecap="round" ${on ? "" : 'stroke-dasharray="2 14"'}/>`; });
+    const reps = ys.map((y, i) => { const on = i === win, load = [0.35, 0.7, 0.55][(i + win) % 3];
+      return card(1000, y, 420, 140, on ? 0 : (i ? 2 : -2), on ? 16 : 12, `<div class="row" style="height:100%;padding:0 26px">${av(...PEOPLE[i + 1], 72)}<div style="flex:1;display:flex;flex-direction:column;gap:12px">${bar("70%", "#d9d9d9", 16)}
+        <div style="height:12px;border-radius:99px;background:#f0f0f0"><div style="width:${load * 100}%;height:100%;border-radius:99px;background:${on ? C.green : "#cfcfcf"}"></div></div>
+        <div class="row" style="gap:8px">${bar(56, PEOPLE[i + 1][1], 22)}${bar(40, "#f2f2f2", 22)}</div></div></div>`, on ? "box-shadow:0 0 0 5px var(--accent),0 30px 80px -10px rgba(0,0,0,.4)" : "opacity:.92") + (on ? ok(1390, y - 20) : ""); }).join("");
+    return `<svg class="wires" width="1600" height="840">${wires}</svg>`
+      + card(110, 300, 360, 0, -3, 14, `<div style="padding:28px"><div class="row">${av(C.orange, C.osoft, 76)}<div style="flex:1;display:flex;flex-direction:column;gap:12px">${bar("80%", "#d4d4d4", 18)}${bar("55%", "#efefef", 12)}</div></div>
+        <div class="row" style="gap:10px;margin-top:24px;flex-wrap:wrap">${bar(90, C.bsoft, 30)}${bar(70, C.psoft, 30)}${bar(100, C.gsoft, 30)}</div>
+        <div style="margin-top:22px">${bar("100%", "#f1f1f1", 12)}</div><div style="margin-top:12px">${bar("65%", "#f1f1f1", 12)}</div></div>`)
+      + `<div style="position:absolute;left:620px;top:350px;width:140px;height:140px;border-radius:30px;background:var(--accent);transform:rotate(45deg);box-shadow:0 20px 50px rgba(0,0,0,.35);z-index:14"></div>
+         <div style="position:absolute;left:640px;top:370px;width:100px;height:100px;display:grid;place-items:center;z-index:15">${ic("branch", themeName === "routing" ? "#101412" : "#fff", "transparent", 90)}</div>`
+      + reps + chips(520, 560, 3) + chart(520, 60, -3) + cursor(400, 520);
   };
   scenes.responses = scenes.route;
-  const kind = { check: "responses" }[D.kind] || D.kind || "form";
+
+  scenes.robin = () => {
+    const nxt = pick(4), cx = 800, cy = 420;
+    const spots = [[-380, -200], [380, -200], [380, 200], [-380, 200]];
+    const reps = spots.map(([dx, dy], i) => { const on = i === nxt, x = cx + dx - 190, y = cy + dy - 75;
+      const dots = Array.from({ length: 6 }, (_, k) => `<span style="width:22px;height:22px;border-radius:7px;background:${k < 2 + ((i + nxt) % 3) ? (on ? C.green : "#cfcfcf") : "#f0f0f0"}"></span>`).join("");
+      return card(x, y, 380, 150, on ? 0 : (i % 2 ? 2 : -2), on ? 16 : 12, `<div class="row" style="height:100%;padding:0 26px">${av(...PEOPLE[i], 78)}<div style="flex:1;display:flex;flex-direction:column;gap:14px">${bar("70%", "#d9d9d9", 16)}<div class="row" style="gap:7px">${dots}</div></div></div>`,
+        on ? "box-shadow:0 0 0 5px var(--accent),0 30px 80px -10px rgba(0,0,0,.4)" : "") + (on ? ok(x + 340, y - 22) : ""); }).join("");
+    const r = 150;
+    const arc = (a1, a2) => { const p = (a) => [cx + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)]; const [x1, y1] = p(a1), [x2, y2] = p(a2); return `M${x1} ${y1} A ${r} ${r} 0 0 1 ${x2} ${y2}`; };
+    const wires = spots.map(([dx, dy], i) => `<path d="M${cx} ${cy} L${cx + dx * .55} ${cy + dy * .55}" stroke="${i === nxt ? "var(--accent)" : "var(--line)"}" stroke-width="${i === nxt ? 7 : 4}" stroke-linecap="round" ${i === nxt ? "" : 'stroke-dasharray="2 14"'}/>`).join("");
+    return `<svg class="wires" width="1600" height="840">${wires}<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--line)" stroke-width="4" stroke-dasharray="2 16" stroke-linecap="round"/>
+        <path d="${arc(-150, -30)}" stroke="var(--accent)" stroke-width="12" fill="none" stroke-linecap="round"/><path d="${arc(30, 150)}" stroke="var(--accent)" stroke-width="12" fill="none" stroke-linecap="round"/></svg>`
+      + card(cx - 85, cy - 85, 170, 170, 0, 15, `<div style="display:grid;place-items:center;height:100%">${ic("rotate", C.green, C.gsoft, 100)}</div>`, "border-radius:50%")
+      + reps + cursor(cx + 300, cy + 60);
+  };
+
+  scenes.logic = () => {
+    const sel = pick(3);
+    const node = (x, y, w, icon, c, bg, on, z = 14) => card(x, y, w, 120, 0, z, `<div class="row" style="height:100%;padding:0 22px">${ic(icon, c, bg, 64)}<div style="flex:1;display:flex;flex-direction:column;gap:12px">${bar("75%", on ? "#cfe9dc" : "#dcdcdc", 16)}${bar("45%", "#efefef", 12)}</div></div>`, on ? "box-shadow:0 0 0 5px var(--accent),0 30px 80px -10px rgba(0,0,0,.35)" : "");
+    const opts = [0, 1, 2].map((i) => `<div class="opt ${i === sel ? "on" : ""}" style="height:58px"><i>${i === sel ? CHECK : ""}</i>${bar("60%", i === sel ? "#bfe6d3" : "#ececec", 12)}</div>`).join("");
+    const wire = (d, on) => `<path d="${d}" stroke="${on ? "var(--accent)" : "var(--line)"}" stroke-width="${on ? 8 : 4}" fill="none" stroke-linecap="round" ${on ? "" : 'stroke-dasharray="2 14"'}/>`;
+    const ys = [130, 360, 590], outs = [["form", C.blue, C.bsoft], ["cal", C.green, C.gsoft], ["mail", C.orange, C.osoft]];
+    let w = wire("M300 420 L 400 420", true);
+    ys.forEach((y, i) => { w += wire(`M770 ${360 + i * 72} C 860 ${360 + i * 72}, 860 ${y + 60}, 960 ${y + 60}`, i === sel); });
+    w += wire(`M1340 ${ys[sel] + 60} C 1400 ${ys[sel] + 60}, 1400 ${ys[sel] + 60}, 1440 ${ys[sel] + 60}`, true);
+    return `<svg class="wires" width="1600" height="840">${w}</svg>`
+      + card(110, 360, 190, 120, -3, 14, `<div style="display:grid;place-items:center;height:100%">${ic("bolt", C.orange, C.osoft, 70)}</div>`)
+      + card(400, 230, 370, 0, -1.5, 15, `<div style="padding:28px">${bar("60%", "#d4d4d4", 18)}<div style="margin-top:10px">${bar("40%", "#efefef", 12)}</div><div style="display:flex;flex-direction:column;gap:14px;margin-top:22px">${opts}</div></div>`)
+      + ys.map((y, i) => node(960, y, 380, ...outs[i], i === sel)).join("")
+      + ok(1418, ys[sel] + 32, 56) + chips(110, 600, -3) + cursor(700, 340 + sel * 72);
+  };
+
+  const kind = D.kind || "form";
   document.getElementById("scene").innerHTML = (scenes[kind] || scenes.form)();
   document.body.dataset.ready = "1";
 </script>
