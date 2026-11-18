@@ -33,7 +33,11 @@ POSTS = ROOT / "blog" / "posts"
 def inline(t: str) -> str:
     t = html.escape(t, quote=False)
     t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
+    # Tool screenshots in /assets/blog/tools/ are all 1440 x 900, so they get a size and don't shift the page.
+    t = re.sub(r"!\[([^\]]*)\]\((/assets/blog/tools/[^)\s]+)\)", r'<img src="\2" alt="\1" width="1440" height="900" loading="lazy">', t)
     t = re.sub(r"!\[([^\]]*)\]\(([^)\s]+)\)", r'<img src="\2" alt="\1" loading="lazy">', t)
+    # Links to other sites open in a new tab (Claritia's own app and site stay in this one).
+    t = re.sub(r"\[([^\]]+)\]\((https?://(?![^/)]*tryclaritia\.com)[^)\s]+)\)", r'<a href="\2" target="_blank" rel="noopener">\1</a>', t)
     t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', t)
     t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
     t = re.sub(r"(?<![*\w])\*([^*]+)\*(?!\*)", r"<em>\1</em>", t)

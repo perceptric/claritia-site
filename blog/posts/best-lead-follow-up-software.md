@@ -1,5 +1,5 @@
 ---
-title: Best Lead Follow-Up Software for Small Teams That Book Meetings (2026)
+title: 8 Best Lead Follow-Up Software Tools for Small Teams (2026)
 description: Compare the best lead follow-up software for 2026, from booking nudges to sales sequences, with the channels each tool uses and what each plan costs.
 category: Workflows
 kind: workflow
@@ -33,6 +33,10 @@ This post is for small teams who want that follow-up to run on its own. Start wi
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia ties follow-up to forms and meetings. When someone fills your form but doesn't book, Starter follows up the next day until they book. Pro adds a thank-you after a held meeting and a no-show follow-up with the reschedule link.
 
 **Best for:** small teams who want every form lead to end up on the calendar.
@@ -52,6 +56,10 @@ Claritia ties follow-up to forms and meetings. When someone fills your form but 
 **Pricing:** Free plan at $0. Starter is $15 a seat a month or $12 billed yearly. Pro is $39 or $31 billed yearly. Teammates who only build forms or read answers are free.
 
 ## 2. HubSpot Sales Hub
+
+[![HubSpot Sales Hub homepage](/assets/blog/tools/hubspot-sales-hub.webp)](https://www.hubspot.com/products/sales)
+
+**Website:** [hubspot.com](https://www.hubspot.com/products/sales)
 
 HubSpot Sales Hub runs follow-up as sequences inside its CRM. A rep enrolls a contact, and HubSpot sends a timed series of emails and tasks. On Enterprise, workflows can enroll contacts in sequences on their own.
 
@@ -73,6 +81,10 @@ HubSpot Sales Hub runs follow-up as sequences inside its CRM. A rep enrolls a co
 
 ## 3. Close
 
+[![Close homepage](/assets/blog/tools/close.webp)](https://www.close.com/)
+
+**Website:** [close.com](https://www.close.com/)
+
 Close is a CRM built for small sales teams who call and text. SMS works on every plan. From Growth up, automated workflows send email and SMS, and a power dialer helps reps get through call lists.
 
 **Best for:** small sales teams who want calls and texts inside their CRM.
@@ -92,6 +104,10 @@ Close is a CRM built for small sales teams who call and text. SMS works on every
 **Pricing:** Solo is $9 a user a month billed yearly ($19 monthly). Essentials is $35 ($49 monthly). Growth is $99 ($109 monthly).
 
 ## 4. ActiveCampaign
+
+[![ActiveCampaign homepage](/assets/blog/tools/activecampaign.webp)](https://www.activecampaign.com/)
+
+**Website:** [activecampaign.com](https://www.activecampaign.com/)
 
 ActiveCampaign is email marketing with deep automation. Every plan includes multi-step automations, and Plus adds sales automation. A Pipelines add-on brings deal records and lead scoring.
 
@@ -113,6 +129,10 @@ ActiveCampaign is email marketing with deep automation. Every plan includes mult
 
 ## 5. lemlist
 
+[![lemlist homepage](/assets/blog/tools/lemlist.webp)](https://www.lemlist.com/)
+
+**Website:** [lemlist.com](https://www.lemlist.com/)
+
 lemlist builds outbound sequences with email follow-ups. Its Multichannel plan adds LinkedIn steps and calls to the same sequence. It works well when you reach out first, before a lead fills any form.
 
 **Best for:** outbound teams who follow up across email and LinkedIn.
@@ -132,6 +152,10 @@ lemlist builds outbound sequences with email follow-ups. Its Multichannel plan a
 **Pricing:** Email is $55 a month billed yearly ($69 monthly). Multichannel is $87 billed yearly ($109 monthly).
 
 ## 6. Kixie
+
+[![Kixie homepage](/assets/blog/tools/kixie.webp)](https://www.kixie.com/)
+
+**Website:** [kixie.com](https://www.kixie.com/)
 
 Kixie adds calling and texting to your CRM. Reps can click to call or text from the record, and a power dialer works through lists. It connects to HubSpot, Salesforce, Zoho and Pipedrive.
 
@@ -153,6 +177,10 @@ Kixie adds calling and texting to your CRM. Reps can click to call or text from 
 
 ## 7. Calendly
 
+[![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
+
+**Website:** [calendly.com](https://calendly.com/)
+
 Calendly handles follow-up around a booked meeting. Meeting reminders come on Standard and up. Pre-drafted follow-up emails come with its Notetaker add-on plans.
 
 **Best for:** teams who mostly need reminders for meetings already on the calendar.
@@ -172,6 +200,10 @@ Calendly handles follow-up around a booked meeting. Meeting reminders come on St
 **Pricing:** Free plan. Standard is $10 a seat a month billed yearly ($12 monthly). Teams is $16 billed yearly ($20 monthly).
 
 ## 8. Zcal
+
+[![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
+
+**Website:** [zcal.co](https://zcal.co/)
 
 Zcal's free plan sends automated email reminders. Pro adds follow-up emails and custom reminder messages, plus SMS reminder credits. It's one of the lowest-priced ways to add text reminders.
 

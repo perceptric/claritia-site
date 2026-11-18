@@ -1,5 +1,5 @@
 ---
-title: Best Lead Routing Software to Send Each Lead to the Right Rep (2026)
+title: 8 Best Lead Routing Software Tools to Reach the Right Rep (2026)
 description: Compare the best lead routing software for 2026: what each tool routes on and which CRM it needs, with real prices and contract terms for each.
 category: Routing
 kind: route
@@ -33,6 +33,10 @@ This post is for teams choosing a router this quarter. Some tools live inside Sa
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia routes from the form itself. On Submission, each form picks the meeting, and each meeting picks the person. You can route by any answer or by what the person said in past fills. On Business, a known account goes to its CRM owner.
 
 **Best for:** small teams who route inbound form leads and want the meeting booked in the same step.
@@ -52,6 +56,10 @@ Claritia routes from the form itself. On Submission, each form picks the meeting
 **Pricing:** Free plan at $0. Routing starts on Pro at $39 a seat a month or $31 billed yearly. Business is $79 or $63 billed yearly.
 
 ## 2. LeanData
+
+[![LeanData homepage](/assets/blog/tools/leandata.webp)](https://www.leandata.com/)
+
+**Website:** [leandata.com](https://www.leandata.com/)
 
 LeanData is routing and orchestration built on Salesforce. Its Standard edition covers round robin and territory routing for leads. Higher editions extend routing to contacts and accounts, then to any standard or custom Salesforce object.
 
@@ -73,6 +81,10 @@ LeanData is routing and orchestration built on Salesforce. Its Standard edition 
 
 ## 3. Distribution Engine
 
+[![Distribution Engine homepage](/assets/blog/tools/distribution-engine.webp)](https://www.distributionengine.com/)
+
+**Website:** [distributionengine.com](https://www.distributionengine.com/)
+
 Distribution Engine installs from the Salesforce AppExchange and keeps all data in your Salesforce org. It routes by availability and workload. It also offers skills-based routing. Its published prices make budgeting simple.
 
 **Best for:** Salesforce teams who want strong routing at a price they can see.
@@ -92,6 +104,10 @@ Distribution Engine installs from the Salesforce AppExchange and keeps all data 
 **Pricing:** Plans run from $20 a user a month on Starter to $55 on Unlimited, billed yearly. Booking Engine is $10 a user a month billed yearly.
 
 ## 4. Chili Piper
+
+[![Chili Piper homepage](/assets/blog/tools/chili-piper.webp)](https://www.chilipiper.com/)
+
+**Website:** [chilipiper.com](https://www.chilipiper.com/)
 
 Chili Piper routes form leads and shares them fairly across a sales team. Its strength is the handoff, where an SDR books the right AE in one click. It connects to Salesforce and HubSpot.
 
@@ -113,6 +129,10 @@ Chili Piper routes form leads and shares them fairly across a sales team. Its st
 
 ## 5. Default
 
+[![Default homepage](/assets/blog/tools/default.webp)](https://www.default.com/)
+
+**Website:** [default.com](https://www.default.com/)
+
 Default combines routing with enrichment and workflows. Each rep takes a seat for routing or scheduling on top of the base plan. The Routing and Scheduling seat covers queues and round robins, plus booking links.
 
 **Best for:** ops teams who want routing and workflow runs in one platform.
@@ -132,6 +152,10 @@ Default combines routing with enrichment and workflows. Each rep takes a seat fo
 **Pricing:** Growth is $12,000 a year and Enterprise is $25,000 a year, billed yearly, plus seats.
 
 ## 6. RevenueHero
+
+[![RevenueHero homepage](/assets/blog/tools/revenuehero.webp)](https://www.revenuehero.io/)
+
+**Website:** [revenuehero.io](https://www.revenuehero.io/)
 
 RevenueHero routes inbound leads and books them from forms and booking pages. Essentials handles round robin with custom rules and domain matching. Advanced adds matching on any CRM property, along with fallback redistribution.
 
@@ -153,6 +177,10 @@ RevenueHero routes inbound leads and books them from forms and booking pages. Es
 
 ## 7. Calendly
 
+[![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
+
+**Website:** [calendly.com](https://calendly.com/)
+
 Calendly routes on its Teams plan through routing forms. A lead answers a few questions and lands on the right event. Teams also routes by Salesforce and HubSpot assignment, and Enterprise adds Salesforce lookup routing.
 
 **Best for:** teams who want simple routing on a booking link.
@@ -172,6 +200,10 @@ Calendly routes on its Teams plan through routing forms. A lead answers a few qu
 **Pricing:** Free plan. Teams is $16 a seat a month billed yearly ($20 monthly).
 
 ## 8. OnceHub
+
+[![OnceHub homepage](/assets/blog/tools/oncehub.webp)](https://www.oncehub.com/)
+
+**Website:** [oncehub.com](https://www.oncehub.com/)
 
 OnceHub's Route plan adds routing forms and round robin. It can send a meeting to the contact owner in your CRM. Engage adds website chatbots that route leads in a chat.
 

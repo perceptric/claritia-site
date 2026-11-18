@@ -1,5 +1,5 @@
 ---
-title: Best WordPress Form Builder: 8 Plugins and Tools Compared (2026)
+title: 8 Best WordPress Form Builders and Plugins, Compared (2026)
 description: Compare the best WordPress form builders of 2026, from WPForms and Gravity Forms to hosted tools you embed with one script tag, with real prices.
 category: Forms
 kind: form
@@ -33,6 +33,10 @@ This post is for small teams choosing the best WordPress form builder. Think abo
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia is a forms and meetings tool for small teams, with workflows that follow up. It is a hosted tool, so there is no plugin to install or update. You paste one script tag into a Custom HTML block, and the form shows on your WordPress page. Visitors can fill it in and book a meeting with the right person in the same flow.
 
 **Best for:** WordPress sites that want each good lead to book a meeting.
@@ -50,6 +54,10 @@ Claritia is a forms and meetings tool for small teams, with workflows that follo
 **Pricing:** Free is $0, Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
 
 ## 2. WPForms
+
+[![WPForms homepage](/assets/blog/tools/wpforms.webp)](https://wpforms.com/)
+
+**Website:** [wpforms.com](https://wpforms.com/)
 
 WPForms is the most installed form plugin on this list, with over 5 million active installs for WPForms Lite. Its drag-and-drop builder is easy to learn, and conditional logic is on every paid plan. WPForms AI can create and edit forms from Basic up.
 
@@ -69,6 +77,10 @@ WPForms is the most installed form plugin on this list, with over 5 million acti
 
 ## 3. Gravity Forms
 
+[![Gravity Forms homepage](/assets/blog/tools/gravity-forms.webp)](https://www.gravityforms.com/)
+
+**Website:** [gravityforms.com](https://www.gravityforms.com/)
+
 Gravity Forms has long been a favorite of WordPress developers. Conditional logic is a core feature on every license, and a large set of add-ons covers payments and CRMs. It suits sites with complex forms and a developer on hand.
 
 **Best for:** Agencies and developers building complex forms.
@@ -86,6 +98,10 @@ Gravity Forms has long been a favorite of WordPress developers. Conditional logi
 **Pricing:** Basic is $59 a year for 1 site and Pro is $159 a year for 3 sites. Elite costs $259 a year for unlimited sites.
 
 ## 4. Formidable Forms
+
+[![Formidable Forms homepage](/assets/blog/tools/formidable-forms.webp)](https://formidableforms.com/)
+
+**Website:** [formidableforms.com](https://formidableforms.com/)
 
 Formidable Forms is built for forms that do math. Conditional logic and calculations are on every plan, which makes it a good fit for quote forms and calculators. Its higher plans add AI and form abandonment.
 
@@ -105,6 +121,10 @@ Formidable Forms is built for forms that do math. Conditional logic and calculat
 
 ## 5. Fluent Forms
 
+[![Fluent Forms homepage](/assets/blog/tools/fluent-forms.webp)](https://fluentforms.com/)
+
+**Website:** [fluentforms.com](https://fluentforms.com/)
+
 Fluent Forms gives every paid plan the full feature set. The difference between plans is the number of sites. That means conditional logic and partial entries are both included from the single-site plan, along with its AI form builder.
 
 **Best for:** Small sites that want every feature without picking a tier.
@@ -122,6 +142,8 @@ Fluent Forms gives every paid plan the full feature set. The difference between 
 **Pricing:** Free version, then Single Site $63, Agency $127 and Unlimited $239 a year. Lifetime licenses start at $279.
 
 ## 6. Ninja Forms
+
+**Website:** [ninjaforms.com](https://ninjaforms.com/)
 
 Ninja Forms starts with a free Core plugin and lets you add what you need. Conditional logic and multi-step forms come in the Plus plan. HubSpot and Salesforce come in Pro, along with save progress.
 
@@ -141,6 +163,10 @@ Ninja Forms starts with a free Core plugin and lets you add what you need. Condi
 
 ## 7. Forminator
 
+[![Forminator homepage](/assets/blog/tools/forminator.webp)](https://wpmudev.com/project/forminator-pro/)
+
+**Website:** [wpmudev.com](https://wpmudev.com/project/forminator-pro/)
+
 Forminator, from WPMU DEV, is a free plugin with over 600,000 active installs. Its free version includes conditional logic and Stripe and PayPal payments. Forminator Pro adds more fields and add-ons.
 
 **Best for:** Sites that want a lot from a free plugin.
@@ -158,6 +184,10 @@ Forminator, from WPMU DEV, is a free plugin with over 600,000 active installs. I
 **Pricing:** Free plugin. Pro Basic is $50 a year for 1 site.
 
 ## 8. Jotform
+
+[![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
+
+**Website:** [jotform.com](https://www.jotform.com/)
 
 Jotform is a hosted form builder with an official WordPress plugin. You install the plugin and add a form with a shortcode, or paste the embed code into a Custom HTML block. Your entries live in Jotform, so the same forms work on any site.
 

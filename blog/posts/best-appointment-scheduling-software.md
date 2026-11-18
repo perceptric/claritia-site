@@ -1,5 +1,5 @@
 ---
-title: Best Appointment Scheduling Software: 8 Tools Compared (2026)
+title: 8 Best Appointment Scheduling Software Tools, Compared (2026)
 description: Compare the best appointment scheduling software on reminders, intake questions, payments and price, and find the right fit for how your clients book.
 category: Scheduling
 kind: meeting
@@ -33,6 +33,10 @@ This guide is for anyone who books clients by the hour, from a solo coach to a s
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia joins forms and meetings for small teams, with workflows that follow up after. Your client fills in a short form and picks an appointment inside it. You get their answers and the booking together, and reminders go out on their own.
 
 **Best for:** small teams that get clients from their website and want intake and booking in one step.
@@ -53,6 +57,10 @@ Starter adds paid meetings with Stripe or PayPal, plus e-signatures on forms. Pr
 
 ## 2. Acuity Scheduling
 
+[![Acuity Scheduling homepage](/assets/blog/tools/acuity-scheduling.webp)](https://acuityscheduling.com/)
+
+**Website:** [acuityscheduling.com](https://acuityscheduling.com/)
+
 Acuity has served appointment businesses for years, and it shows in the details. Every plan comes with intake forms and online payments. Higher plans add a waitlist and HIPAA support.
 
 **Best for:** therapists and clinics that take payment at booking.
@@ -70,6 +78,10 @@ Acuity has served appointment businesses for years, and it shows in the details.
 **Pricing:** Starter $16 a month billed yearly ($20 monthly). Standard is $27 ($34) and Premium $55 ($69).
 
 ## 3. Google Calendar appointment schedules
+
+[![Google Calendar appointment schedules homepage](/assets/blog/tools/google-appointment-schedules.webp)](https://workspace.google.com/resources/appointment-scheduling/)
+
+**Website:** [workspace.google.com](https://workspace.google.com/resources/appointment-scheduling/)
 
 Google Calendar has a booking page built in. You can make an appointment schedule with a personal Google account or a Workspace account. Some features need an eligible Workspace or Google One plan.
 
@@ -89,6 +101,10 @@ Google Calendar has a booking page built in. You can make an appointment schedul
 
 ## 4. Microsoft Bookings
 
+[![Microsoft Bookings homepage](/assets/blog/tools/microsoft-bookings.webp)](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app)
+
+**Website:** [microsoft.com](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app)
+
 Microsoft Bookings comes with many Microsoft 365 business plans. It gives you personal booking pages and shared pages for a team. Online appointments get a Teams meeting link on their own.
 
 **Best for:** offices that already pay for Microsoft 365.
@@ -106,6 +122,10 @@ Microsoft Bookings comes with many Microsoft 365 business plans. It gives you pe
 **Pricing:** Included with some Microsoft 365 plans. See their pricing page.
 
 ## 5. YouCanBookMe
+
+[![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
+
+**Website:** [youcanbook.me](https://youcanbook.me/)
 
 YouCanBookMe is known for its long list of settings. You can tune notice periods and protect pages with a password. The free plan is enough to try it.
 
@@ -125,6 +145,10 @@ YouCanBookMe is known for its long list of settings. You can tune notice periods
 
 ## 6. SimplyBook.me
 
+[![SimplyBook.me homepage](/assets/blog/tools/simplybook.webp)](https://simplybook.me/)
+
+**Website:** [simplybook.me](https://simplybook.me/)
+
 SimplyBook.me suits businesses with a menu of services and several providers. It gives you a booking website and a widget for your own site. You pay by the number of bookings and providers.
 
 **Best for:** studios and service shops with many services and staff.
@@ -143,6 +167,10 @@ SimplyBook.me suits businesses with a menu of services and several providers. It
 
 ## 7. Zcal
 
+[![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
+
+**Website:** [zcal.co](https://zcal.co/)
+
 Zcal gives a solo user email reminders and payments without a paid plan. It's a good fit for one person who books a mix of calls and sessions. Paid plans add text reminders and team scheduling.
 
 **Best for:** one person who wants reminders and payments at no cost.
@@ -160,6 +188,10 @@ Zcal gives a solo user email reminders and payments without a paid plan. It's a 
 **Pricing:** Pro $7 a user a month and Business $12 a user a month, with a 14-day free trial.
 
 ## 8. TidyCal
+
+[![TidyCal homepage](/assets/blog/tools/tidycal.webp)](https://tidycal.com/)
+
+**Website:** [tidycal.com](https://tidycal.com/)
 
 TidyCal lets you pay once and keep booking. Its free plan already handles group and package bookings. Paid plans add SMS reminders and drop the fee on paid bookings.
 

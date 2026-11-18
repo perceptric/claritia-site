@@ -1,5 +1,5 @@
 ---
-title: Best Form Builder With Conditional Logic: 8 Tools Compared (2026)
+title: 8 Best Form Builders With Conditional Logic, Compared (2026)
 description: Compare 8 form builders with conditional logic. See which ones skip steps, run calculations and keep logic on the free plan, with real prices for 2026.
 category: Forms
 kind: logic
@@ -33,6 +33,10 @@ This post is for small teams picking a form builder with conditional logic this 
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia is a forms and meetings tool for small teams, with workflows that follow up. Its forms come with conditional logic and step skips on the free plan, plus calculations and formulas. When the logic decides a visitor is a fit, the same form can book them into a meeting with the right person.
 
 **Best for:** Teams that want the logic to end in a booked meeting.
@@ -50,6 +54,10 @@ Claritia is a forms and meetings tool for small teams, with workflows that follo
 **Pricing:** Free is $0, Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
 
 ## 2. Typeform
+
+[![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
+
+**Website:** [typeform.com](https://www.typeform.com/)
 
 Typeform shows one question at a time, which makes branching feel natural to the person filling it in. Its logic lets you send people down different paths based on what they answer. The free plan has a low response cap, so most teams move to a paid plan quickly.
 
@@ -69,6 +77,10 @@ Typeform shows one question at a time, which makes branching feel natural to the
 
 ## 3. Fillout
 
+[![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
+
+**Website:** [fillout.com](https://www.fillout.com/)
+
 Fillout gives you a lot for free. Conditional logic is on every plan, and the free plan includes 1,000 responses a month with unlimited forms and seats. It suits teams who want to build serious logic before they pay anything.
 
 **Best for:** Teams that want deep logic on a free plan.
@@ -86,6 +98,10 @@ Fillout gives you a lot for free. Conditional logic is on every plan, and the fr
 **Pricing:** Free at $0, then Starter $15, Pro $40 and Business $75 a month, billed yearly.
 
 ## 4. Jotform
+
+[![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
+
+**Website:** [jotform.com](https://www.jotform.com/)
 
 Jotform is one of the oldest form builders, and its logic shows that age in a good way. You can set rules that show fields, skip pages, change emails and send people to different thank-you pages. Jotform says conditional logic is on every plan, the free one included.
 
@@ -105,6 +121,10 @@ Jotform is one of the oldest form builders, and its logic shows that age in a go
 
 ## 5. Tally
 
+[![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
+
+**Website:** [tally.so](https://tally.so/)
+
 Tally feels like writing a document. You type questions, then add logic blocks that show or hide what comes next. Its free plan includes conditional logic and calculations with unlimited forms and submissions, within its fair use rules.
 
 **Best for:** Solo founders and small teams who want logic for free.
@@ -122,6 +142,10 @@ Tally feels like writing a document. You type questions, then add logic blocks t
 **Pricing:** Pro is $24 a month and Business is $74 a month, billed monthly. Yearly billing gives two months off.
 
 ## 6. Paperform
+
+[![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
+
+**Website:** [paperform.co](https://paperform.co/)
 
 Paperform forms look like web pages, with text and images between the questions. Its conditional logic is on every plan, and it adds a calculations assistant on Pro and up. It works well for quotes and bookings.
 
@@ -141,6 +165,10 @@ Paperform forms look like web pages, with text and images between the questions.
 
 ## 7. Zoho Forms
 
+[![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
+
+**Website:** [zoho.com](https://www.zoho.com/forms/)
+
 Zoho Forms has a detailed rules system. Its pricing page lists field rules, form rules, page rules and set value actions, each with an advanced version. If your team already runs on Zoho CRM, the fit is close.
 
 **Best for:** Teams that already use Zoho apps.
@@ -158,6 +186,10 @@ Zoho Forms has a detailed rules system. Its pricing page lists field rules, form
 **Pricing:** See their pricing page.
 
 ## 8. Gravity Forms
+
+[![Gravity Forms homepage](/assets/blog/tools/gravity-forms.webp)](https://www.gravityforms.com/)
+
+**Website:** [gravityforms.com](https://www.gravityforms.com/)
 
 Gravity Forms is a WordPress plugin. Conditional logic is a core feature on every license, and it works on fields and on the emails sent after a fill. For rules that mix AND with OR, there is an add-on.
 

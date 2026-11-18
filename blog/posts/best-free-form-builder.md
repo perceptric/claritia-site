@@ -1,5 +1,5 @@
 ---
-title: Best Free Form Builder: 9 Free Plans Compared Side by Side (2026)
+title: 9 Best Free Form Builders, Compared Side by Side (2026)
 description: Find the best free form builder for 2026. Compare free plan limits, branding, payments and upgrade prices across 9 tools, so you know what you get for $0.
 category: Forms
 kind: form
@@ -34,6 +34,10 @@ Free plans differ more than their sign-up pages suggest. Some cap answers each m
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia's free plan is built for forms that lead to a conversation. You get unlimited forms and 250 submissions a month, and each form can book a meeting with you on the spot. Tia, the AI form builder, drafts a form from one plain sentence, so you can start in minutes.
 
 **Best for:** Small teams and founders who want free forms that turn into booked calls.
@@ -51,6 +55,10 @@ Claritia's free plan is built for forms that lead to a conversation. You get unl
 **Pricing:** Free for 250 submissions a month. Paid plans run from $15 to $79 a seat a month, or $12 to $63 billed yearly. Teammates who only build forms or read answers are free.
 
 ## 2. Tally
+
+[![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
+
+**Website:** [tally.so](https://tally.so/)
 
 Tally has the most generous free plan in this list. Forms and submissions are unlimited under fair use, and you get logic and payments without paying. The editor works like a writing doc, so building a form feels like typing a note.
 
@@ -70,6 +78,10 @@ Tally has the most generous free plan in this list. Forms and submissions are un
 
 ## 3. Fillout
 
+[![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
+
+**Website:** [fillout.com](https://www.fillout.com/)
+
 Fillout gives you 1,000 responses a month with unlimited forms and seats. That makes it one of the best free plans for a team where several people build forms. Logic and payments are included, and scheduling forms are free too.
 
 **Best for:** Teams where many people build forms.
@@ -87,6 +99,10 @@ Fillout gives you 1,000 responses a month with unlimited forms and seats. That m
 **Pricing:** Starter is $15 a month billed yearly. Pro is $40 and Business is $75 a month, billed yearly.
 
 ## 4. Google Forms
+
+[![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
+
+**Website:** [google.com](https://www.google.com/forms/about/)
 
 Google Forms is free with a Google account and needs no setup. Answers land in Google Sheets, and you can share editing with your team. For internal work, it's often all you need.
 
@@ -106,6 +122,10 @@ Google Forms is free with a Google account and needs no setup. Answers land in G
 
 ## 5. Microsoft Forms
 
+[![Microsoft Forms homepage](/assets/blog/tools/microsoft-forms.webp)](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes)
+
+**Website:** [microsoft.com](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes)
+
 Microsoft Forms is the free pick for people who live in Microsoft 365. With a free Microsoft account, each form takes up to 200 responses, and you can keep up to 400 forms. Business and school accounts get far higher limits.
 
 **Best for:** Offices and schools that use Microsoft apps.
@@ -123,6 +143,10 @@ Microsoft Forms is the free pick for people who live in Microsoft 365. With a fr
 **Pricing:** Free with a Microsoft account. Business plans come with Microsoft 365; see their pricing page.
 
 ## 6. Zoho Forms
+
+[![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
+
+**Website:** [zoho.com](https://www.zoho.com/forms/)
 
 Zoho Forms has a fair free plan for one user. You get 3 forms and 500 submissions a month, which is plenty for a single contact or event form. It's the natural pick if you already use Zoho CRM.
 
@@ -142,6 +166,10 @@ Zoho Forms has a fair free plan for one user. You get 3 forms and 500 submission
 
 ## 7. Jotform
 
+[![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
+
+**Website:** [jotform.com](https://www.jotform.com/)
+
 Jotform's free plan gives you access to its huge template library and widgets. The limits are tight, at 5 forms and 100 submissions a month. It's a good place to start if you want a template for an unusual form.
 
 **Best for:** Solo users who want a ready-made template.
@@ -160,6 +188,10 @@ Jotform's free plan gives you access to its huge template library and widgets. T
 
 ## 8. Cognito Forms
 
+[![Cognito Forms homepage](/assets/blog/tools/cognito-forms.webp)](https://www.cognitoforms.com/)
+
+**Website:** [cognitoforms.com](https://www.cognitoforms.com/)
+
 Cognito Forms is one of the few free plans that handles payments and real math. You get 100 entries a month and unlimited forms. It's a good fit for small order forms and paid sign-ups.
 
 **Best for:** Free order forms and quotes with totals.
@@ -177,6 +209,10 @@ Cognito Forms is one of the few free plans that handles payments and real math. 
 **Pricing:** Pro is $19 a month billed yearly ($24 monthly), with 2,000 entries a month.
 
 ## 9. Paperform
+
+[![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
+
+**Website:** [paperform.co](https://paperform.co/)
 
 Paperform's free plan lets you try its page-style editor, where you mix content and questions like a web page. It allows unlimited forms and users, with a cap of 30 submissions a month. Think of it as a long trial before you choose a paid plan.
 

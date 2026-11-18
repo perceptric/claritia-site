@@ -1,5 +1,5 @@
 ---
-title: Best Google Forms Alternatives for Small Teams: 9 Picks (2026)
+title: 9 Best Google Forms Alternatives for Small Teams (2026)
 description: Compare the best Google Forms alternatives for 2026. See which tools add better design, payments, logic and meeting booking, and which import Google Forms.
 category: Forms
 kind: form
@@ -34,6 +34,10 @@ Things change when a form faces your customers. You may want your own brand on i
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia picks up where Google Forms stops. You can import your Google Forms on the free plan, then give each one smarter logic and a meeting booking step. Tia, the AI form builder, can also draft a new form from one plain sentence.
 
 **Best for:** Small teams whose forms collect leads and should book meetings.
@@ -51,6 +55,10 @@ Claritia picks up where Google Forms stops. You can import your Google Forms on 
 **Pricing:** Free for 250 submissions a month. Paid plans run from $15 to $79 a seat a month, or $12 to $63 billed yearly. Teammates who only build forms or read answers are free, and Google Sheets links start on Starter.
 
 ## 2. Tally
+
+[![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
+
+**Website:** [tally.so](https://tally.so/)
 
 Tally keeps the best part of Google Forms, the $0 price, and adds much more. Forms and submissions are unlimited under fair use. You also get logic and payments for free, and it sends answers to Google Sheets.
 
@@ -70,6 +78,10 @@ Tally keeps the best part of Google Forms, the $0 price, and adds much more. For
 
 ## 3. Fillout
 
+[![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
+
+**Website:** [fillout.com](https://www.fillout.com/)
+
 Fillout is a good fit if your team shares form work, like it does in Google Forms. Every plan has unlimited seats, and the free plan takes 1,000 responses a month. It links to Google Sheets on the free plan too.
 
 **Best for:** Teams that build forms together and live in spreadsheets.
@@ -87,6 +99,10 @@ Fillout is a good fit if your team shares form work, like it does in Google Form
 **Pricing:** Starter is $15 a month billed yearly. Pro is $40 and Business is $75 a month, billed yearly.
 
 ## 4. Microsoft Forms
+
+[![Microsoft Forms homepage](/assets/blog/tools/microsoft-forms.webp)](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes)
+
+**Website:** [microsoft.com](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes)
 
 Microsoft Forms is the closest match in spirit. It's simple and free with a Microsoft account, and it fits teams that use Excel and Teams. Business and school accounts get very high response limits.
 
@@ -106,6 +122,10 @@ Microsoft Forms is the closest match in spirit. It's simple and free with a Micr
 
 ## 5. Typeform
 
+[![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
+
+**Website:** [typeform.com](https://www.typeform.com/)
+
 Typeform is the pick if you want your form to look nothing like a plain list of questions. It shows one question at a time, with polished design that fits a brand. You'll pay more for it, and each plan caps responses.
 
 **Best for:** Brands that want a striking customer form.
@@ -123,6 +143,10 @@ Typeform is the pick if you want your form to look nothing like a plain list of 
 **Pricing:** Basic is $28 a month billed yearly ($39 monthly). Plus is $56 and Business is $91 a month, billed yearly.
 
 ## 6. Jotform
+
+[![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
+
+**Website:** [jotform.com](https://www.jotform.com/)
 
 Jotform covers far more form types than Google Forms. Its template library is very large, and widgets handle special fields like signatures and payments. It's a single-user tool below Enterprise.
 
@@ -142,6 +166,10 @@ Jotform covers far more form types than Google Forms. Its template library is ve
 
 ## 7. Paperform
 
+[![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
+
+**Website:** [paperform.co](https://paperform.co/)
+
 Paperform turns a form into something like a web page. You can mix text and images with your questions, which helps when the form needs to explain an offer. Every plan has unlimited users.
 
 **Best for:** Forms that also need to sell or explain.
@@ -160,6 +188,10 @@ Paperform turns a form into something like a web page. You can mix text and imag
 
 ## 8. Zoho Forms
 
+[![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
+
+**Website:** [zoho.com](https://www.zoho.com/forms/)
+
 Zoho Forms is a solid step up for teams on Zoho apps. Paid plans have unlimited forms and high caps, from 10,000 submissions a month on Basic. Its mobile app helps with forms filled out in the field.
 
 **Best for:** Teams that use Zoho CRM.
@@ -177,6 +209,10 @@ Zoho Forms is a solid step up for teams on Zoho apps. Paid plans have unlimited 
 **Pricing:** See their pricing page.
 
 ## 9. SurveyMonkey
+
+[![SurveyMonkey homepage](/assets/blog/tools/surveymonkey.webp)](https://www.surveymonkey.com/)
+
+**Website:** [surveymonkey.com](https://www.surveymonkey.com/)
 
 SurveyMonkey is the pick if you use Google Forms mainly for surveys and want deeper results. Its tools help you read and share what people said. It's built for research more than for lead forms.
 

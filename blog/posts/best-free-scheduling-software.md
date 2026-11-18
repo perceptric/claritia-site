@@ -1,5 +1,5 @@
 ---
-title: Best Free Scheduling Software: 9 Free Plans Worth Using (2026)
+title: 9 Best Free Scheduling Software Plans Worth Using (2026)
 description: The best free scheduling software for 2026, compared on the limit you hit first and what the next plan costs, so you can start booking at $0.
 category: Scheduling
 kind: meeting
@@ -34,6 +34,10 @@ So the useful question is which limit you will hit first. For some people it's t
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia joins forms and meetings for small teams, with workflows that follow up after. Its free plan puts booking inside a form, so you learn who's coming before they pick a time. Reminders and reschedule links come included.
 
 **Best for:** people who want a lead form and a booking page in one free tool.
@@ -54,6 +58,10 @@ Teammates who only build forms or read answers never need a seat, even on paid p
 
 ## 2. Google Calendar appointment schedules
 
+[![Google Calendar appointment schedules homepage](/assets/blog/tools/google-appointment-schedules.webp)](https://workspace.google.com/resources/appointment-scheduling/)
+
+**Website:** [workspace.google.com](https://workspace.google.com/resources/appointment-scheduling/)
+
 If you use Google Calendar, you already have a booking page. Appointment schedules work with a personal Google account or a Workspace account. Some features need an eligible Workspace or Google One plan.
 
 **Best for:** solo users who want booking inside the calendar they already use.
@@ -71,6 +79,10 @@ If you use Google Calendar, you already have a booking page. Appointment schedul
 **Pricing:** Free with a Google account for the basics. Paid features: See their pricing page.
 
 ## 3. Zcal
+
+[![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
+
+**Website:** [zcal.co](https://zcal.co/)
 
 Zcal's free plan is one of the fullest around for a single person. You get unlimited links and calendar accounts, and meeting polls come free too. Paid plans mainly add team features and text reminders.
 
@@ -90,6 +102,10 @@ Zcal's free plan is one of the fullest around for a single person. You get unlim
 
 ## 4. Cal.com
 
+[![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
+
+**Website:** [cal.com](https://cal.com/)
+
 Cal.com's free plan is built for one user and gives that user a lot. You get unlimited links and calendars, plus email and SMS notifications. Its code is on GitHub if you want to host it yourself.
 
 **Best for:** solo users and developers who want room to grow.
@@ -107,6 +123,10 @@ Cal.com's free plan is built for one user and gives that user a lot. You get unl
 **Pricing:** Teams is $12 a user a month (25% less billed yearly) and Organizations $28 a user a month.
 
 ## 5. Koalendar
+
+[![Koalendar homepage](/assets/blog/tools/koalendar.webp)](https://koalendar.com/)
+
+**Website:** [koalendar.com](https://koalendar.com/)
 
 Koalendar gives you unlimited booking pages and event types for free. It also handles more than 30 languages and comes with phone apps. It's a good pick for someone who books several kinds of meetings.
 
@@ -126,6 +146,10 @@ Koalendar gives you unlimited booking pages and event types for free. It also ha
 
 ## 6. TidyCal
 
+[![TidyCal homepage](/assets/blog/tools/tidycal.webp)](https://tidycal.com/)
+
+**Website:** [tidycal.com](https://tidycal.com/)
+
 TidyCal's free plan covers unlimited booking types and paid bookings. When you outgrow it, you can pay once for a lifetime plan. That makes it easy to keep costs flat.
 
 **Best for:** solo pros who sell sessions and dislike subscriptions.
@@ -143,6 +167,10 @@ TidyCal's free plan covers unlimited booking types and paid bookings. When you o
 **Pricing:** Individual Lifetime $29 once and Agency Lifetime $79 once. Pro is $12 a month or $99 a year.
 
 ## 7. Calendly
+
+[![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
+
+**Website:** [calendly.com](https://calendly.com/)
 
 Calendly's free plan is the one many people start with. It gives you one event type with one calendar and a booking page you can shape. Most growing users move to Standard for more event types and reminders.
 
@@ -162,6 +190,10 @@ Calendly's free plan is the one many people start with. It gives you one event t
 
 ## 8. HubSpot Meetings
 
+[![HubSpot Meetings homepage](/assets/blog/tools/hubspot-meetings.webp)](https://www.hubspot.com/products/sales/schedule-meeting)
+
+**Website:** [hubspot.com](https://www.hubspot.com/products/sales/schedule-meeting)
+
 HubSpot's free tools include a meetings link that books into its free CRM. If you plan to grow into HubSpot, it's a natural first step. The free version has one personal link.
 
 **Best for:** small sales teams starting on HubSpot's free CRM.
@@ -179,6 +211,10 @@ HubSpot's free tools include a meetings link that books into its free CRM. If yo
 **Pricing:** Free with one link. Sales Hub plans: See their pricing page.
 
 ## 9. Setmore
+
+[![Setmore homepage](/assets/blog/tools/setmore.webp)](https://www.setmore.com/)
+
+**Website:** [setmore.com](https://www.setmore.com/)
 
 Setmore's free plan is built for a small staff. Up to four people can take bookings, with unlimited appointments. It comes with phone apps and support from real people.
 

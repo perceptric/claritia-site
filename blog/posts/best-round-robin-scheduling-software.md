@@ -1,5 +1,5 @@
 ---
-title: The Best Round Robin Scheduling Software for Small Teams (2026)
+title: 9 Best Round Robin Scheduling Software for Small Teams (2026)
 description: Compare the best round robin scheduling software for 2026: how each tool shares meetings across a team, and the plan and price you need for it.
 category: Routing
 kind: robin
@@ -34,6 +34,10 @@ When you compare tools, look past the words "round robin" on the pricing page. C
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia brings forms and meetings together for small teams, with workflows that follow up. A visitor fills your form and picks a time inside it. The meeting then goes to the next right person in the rotation. Round robin sits on the Pro plan with weights and priority, so you can send more meetings to the people who should get them.
 
 **Best for:** small teams who want the form and the rotation in one place.
@@ -53,6 +57,10 @@ Claritia brings forms and meetings together for small teams, with workflows that
 **Pricing:** Free plan at $0. Round robin starts on Pro at $39 a seat a month, or $31 billed yearly. Teammates who only build forms or read answers are free.
 
 ## 2. Calendly
+
+[![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
+
+**Website:** [calendly.com](https://calendly.com/)
 
 Calendly is the booking link many of your buyers already know. Its Teams plan adds round robin and team scheduling, along with forms that route leads to the right event. Teams also routes by the owner already set in Salesforce or HubSpot.
 
@@ -74,6 +82,10 @@ Calendly is the booking link many of your buyers already know. Its Teams plan ad
 
 ## 3. Cal.com
 
+[![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
+
+**Website:** [cal.com](https://cal.com/)
+
 Cal.com is open source scheduling with a free plan for one person and unlimited links. Its Teams plan adds round robin and routing forms. It also adds custom notifications and workflows for reminders.
 
 **Best for:** teams who like open source and want room to build on top.
@@ -93,6 +105,10 @@ Cal.com is open source scheduling with a free plan for one person and unlimited 
 **Pricing:** Free for 1 user. Teams is $12 a user a month, with 25% off billed yearly. Organizations is $28 a user a month.
 
 ## 4. SavvyCal
+
+[![SavvyCal homepage](/assets/blog/tools/savvycal.webp)](https://savvycal.com/)
+
+**Website:** [savvycal.com](https://savvycal.com/)
 
 SavvyCal puts care into the booking page, so the person booking has an easy time. Both paid plans include round robin and collective team links. The free plan lets you set up links and send meeting polls, but people can only book from your links on a paid plan.
 
@@ -114,6 +130,10 @@ SavvyCal puts care into the booking page, so the person booking has an easy time
 
 ## 5. OnceHub
 
+[![OnceHub homepage](/assets/blog/tools/oncehub.webp)](https://www.oncehub.com/)
+
+**Website:** [oncehub.com](https://www.oncehub.com/)
+
 OnceHub has a plan for each job, from Schedule up to Engage. Round robin and routing forms arrive on Route. Engage adds chatbots for your website.
 
 **Best for:** teams who want routing forms and a website chatbot from one vendor.
@@ -133,6 +153,10 @@ OnceHub has a plan for each job, from Schedule up to Engage. Round robin and rou
 **Pricing:** Free Basic plan. Schedule is $10 a user a month billed yearly. Route is $19 billed yearly ($23 monthly), and Engage is $39 billed yearly.
 
 ## 6. Zcal
+
+[![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
+
+**Website:** [zcal.co](https://zcal.co/)
 
 Zcal gives you unlimited links on a free plan that stays free. Round robin and collective events start on Pro. Pro also adds follow-up emails and SMS reminders.
 
@@ -154,6 +178,10 @@ Zcal gives you unlimited links on a free plan that stays free. Round robin and c
 
 ## 7. HubSpot
 
+[![HubSpot homepage](/assets/blog/tools/hubspot.webp)](https://www.hubspot.com/)
+
+**Website:** [hubspot.com](https://www.hubspot.com/)
+
 HubSpot's meetings tool lives inside its CRM. Team scheduling pages, round robin included, need a paid Sales Hub or Service Hub plan and a Sales or Service seat. When a contact picks a time, HubSpot books the teammate who is free at that time.
 
 **Best for:** teams who already run their sales in HubSpot.
@@ -174,6 +202,10 @@ HubSpot's meetings tool lives inside its CRM. Team scheduling pages, round robin
 
 ## 8. Zoho Bookings
 
+[![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
+
+**Website:** [zoho.com](https://www.zoho.com/bookings/)
+
 Zoho Bookings fits teams who already use Zoho apps. The free plan covers one user with reminders and two-way calendar sync. Round robin is on its feature list, but the pricing page doesn't show which plan includes it.
 
 **Best for:** teams already paying for Zoho.
@@ -193,6 +225,10 @@ Zoho Bookings fits teams who already use Zoho apps. The free plan covers one use
 **Pricing:** Free for one user. Basic is $6 a user a month billed yearly ($8 monthly). Premium is $9 billed yearly ($12 monthly).
 
 ## 9. YouCanBookMe
+
+[![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
+
+**Website:** [youcanbook.me](https://youcanbook.me/)
 
 YouCanBookMe keeps booking pages simple. Round robin comes on the Team plan, along with more calendars and booking pages for each person. New users get a 14-day trial with no credit card.
 

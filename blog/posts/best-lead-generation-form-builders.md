@@ -1,5 +1,5 @@
 ---
-title: Best Lead Generation Form Builder: 8 Tools for Small Teams (2026)
+title: 8 Best Lead Generation Form Builders for Small Teams (2026)
 description: Compare 8 lead generation form builders on free plans, prices and what happens to each lead after the form, so you can pick the right one for your team.
 category: Forms
 kind: integration
@@ -33,6 +33,10 @@ This post is for small teams choosing a lead generation form builder. Look past 
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia is a forms and meetings tool for small teams, with workflows that follow up. A visitor fills in your form and books a meeting in the same flow, then gets a confirmation email with a calendar invite. Workflows send reminders a day and an hour before, so the lead hears from you before the call.
 
 **Best for:** Small teams that want each good lead to book a meeting before they leave the page.
@@ -50,6 +54,10 @@ Claritia is a forms and meetings tool for small teams, with workflows that follo
 **Pricing:** Free is $0, Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
 
 ## 2. HubSpot forms
+
+[![HubSpot forms homepage](/assets/blog/tools/hubspot-forms.webp)](https://www.hubspot.com/products/marketing/forms)
+
+**Website:** [hubspot.com](https://www.hubspot.com/products/marketing/forms)
 
 HubSpot's form builder is free to start, and every person who fills in a form is added to your HubSpot CRM. That makes it the natural pick for teams already running sales or marketing in HubSpot. The more advanced form features sit on paid plans.
 
@@ -69,6 +77,10 @@ HubSpot's form builder is free to start, and every person who fills in a form is
 
 ## 3. Typeform
 
+[![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
+
+**Website:** [typeform.com](https://www.typeform.com/)
+
 Typeform shows one question at a time, which can make a lead form feel more like a chat. Its AI tools go past building the form. They can ask a follow-up question when an answer is vague, and its automations can send follow-up emails.
 
 **Best for:** Brands that want a polished, one-question-at-a-time lead form.
@@ -86,6 +98,10 @@ Typeform shows one question at a time, which can make a lead form feel more like
 **Pricing:** Basic is $28 a month and Plus is $56 a month, billed yearly. Business costs $91 a month on the same terms.
 
 ## 4. Fillout
+
+[![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
+
+**Website:** [fillout.com](https://www.fillout.com/)
 
 Fillout has one of the most generous free plans for lead forms. You get 1,000 responses a month with unlimited forms and seats. HubSpot is among the integrations it lists on every plan, the free one included.
 
@@ -105,6 +121,10 @@ Fillout has one of the most generous free plans for lead forms. You get 1,000 re
 
 ## 5. Jotform
 
+[![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
+
+**Website:** [jotform.com](https://www.jotform.com/)
+
 Jotform is a large, mature form builder with a form for almost every case. Its HubSpot integration can create contacts, deals, tickets and companies from a submission. It also handles payments well, which helps if your lead form takes a deposit.
 
 **Best for:** Lead forms that collect payments or long details.
@@ -122,6 +142,10 @@ Jotform is a large, mature form builder with a form for almost every case. Its H
 **Pricing:** Free Starter plan, then Bronze $34, Silver $39 and Gold $99 a month, billed yearly.
 
 ## 6. Paperform
+
+[![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
+
+**Website:** [paperform.co](https://paperform.co/)
 
 Paperform makes forms that look like web pages, with text and images mixed in. Its appointment field is on every plan and syncs with Google Calendar, so a lead can pick a time. It works well for service businesses that sell with a story.
 
@@ -141,6 +165,10 @@ Paperform makes forms that look like web pages, with text and images mixed in. I
 
 ## 7. Unbounce
 
+[![Unbounce homepage](/assets/blog/tools/unbounce.webp)](https://unbounce.com/)
+
+**Website:** [unbounce.com](https://unbounce.com/)
+
 Unbounce is a landing page builder with lead gen forms built in. You build the whole page around the form and test versions to see which brings more leads. Conversions are uncapped on every plan, and the limits are on visitors.
 
 **Best for:** Marketers running paid ads to a page made for one offer.
@@ -158,6 +186,10 @@ Unbounce is a landing page builder with lead gen forms built in. You build the w
 **Pricing:** Starter $29, Build $99, Experiment $149 and Optimize $249 a month, billed monthly. Yearly billing costs less.
 
 ## 8. Zoho Forms
+
+[![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
+
+**Website:** [zoho.com](https://www.zoho.com/forms/)
 
 Zoho Forms connects closely with Zoho CRM, with a Zoho CRM field and the integration on every plan. Paid plans have high caps, starting at 10,000 submissions a month. It fits teams already paying for Zoho apps.
 

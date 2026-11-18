@@ -1,5 +1,5 @@
 ---
-title: Best AI Form Builder: 8 Tools That Write Your Form for You (2026)
+title: 8 Best AI Form Builders That Write Your Form for You (2026)
 description: Compare the best AI form builders of 2026. See what each tool's AI really does, from a form built from one sentence to AI answer analysis, and what it costs.
 category: Forms
 kind: form
@@ -33,6 +33,10 @@ This post is for small teams comparing AI form builders. Every tool on this list
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia is a forms and meetings tool for small teams, with workflows that follow up. Tia, its AI form builder, builds a form from a plain sentence. The form it builds comes with the rest of Claritia behind it, from conditional logic to meeting booking inside the form.
 
 **Best for:** Teams that want an AI-built form to turn into booked meetings.
@@ -50,6 +54,10 @@ Claritia is a forms and meetings tool for small teams, with workflows that follo
 **Pricing:** Free is $0, Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
 
 ## 2. Typeform
+
+[![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
+
+**Website:** [typeform.com](https://www.typeform.com/)
 
 Typeform has spread AI across the whole form. It builds a form from one prompt and can translate it into more than 25 languages. On the answer side, it can ask a follow-up when a reply is vague and find themes in open-ended answers.
 
@@ -69,6 +77,10 @@ Typeform has spread AI across the whole form. It builds a form from one prompt a
 
 ## 3. Jotform
 
+[![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
+
+**Website:** [jotform.com](https://www.jotform.com/)
+
 Jotform's AI Form Generator creates a form from a text prompt. You then refine it by chatting with the AI inside the form builder, asking for new fields or colors. Jotform says the generator is free to use, with form limits set by your plan.
 
 **Best for:** Teams that want a free AI generator inside a mature form builder.
@@ -86,6 +98,10 @@ Jotform's AI Form Generator creates a form from a text prompt. You then refine i
 **Pricing:** Free Starter plan, then Bronze $34, Silver $39 and Gold $99 a month, billed yearly.
 
 ## 4. Fillout
+
+[![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
+
+**Website:** [fillout.com](https://www.fillout.com/)
 
 Fillout's AI form builder is powered by Zite. You describe the form in plain words or upload a PDF, and it writes the questions and picks the inputs. You can ask for changes in plain language, and nothing goes live until you publish.
 
@@ -105,6 +121,10 @@ Fillout's AI form builder is powered by Zite. You describe the form in plain wor
 
 ## 5. Tally
 
+[![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
+
+**Website:** [tally.so](https://tally.so/)
+
 Tally AI generates a form from a plain-language prompt. Inside a form, you click "Ask AI" and describe a change, and Tally says it makes targeted edits without rewriting the whole form. You can also upload a screenshot or PDF, and it recreates the form.
 
 **Best for:** People who want AI help on a free form builder with no submission cap.
@@ -122,6 +142,10 @@ Tally AI generates a form from a plain-language prompt. Inside a form, you click
 **Pricing:** Pro is $24 a month and Business is $74 a month, billed monthly. Yearly billing gives two months off.
 
 ## 6. Paperform
+
+[![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
+
+**Website:** [paperform.co](https://paperform.co/)
 
 Paperform includes AI form creation on every plan, the free one included. On Pro and up, an AI calculations assistant helps you build formulas, and AI report insights help you read results. Its AI workflow building is on every plan too.
 
@@ -141,6 +165,10 @@ Paperform includes AI form creation on every plan, the free one included. On Pro
 
 ## 7. Zoho Forms
 
+[![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
+
+**Website:** [zoho.com](https://www.zoho.com/forms/)
+
 Zoho Forms has a broad set of AI tools under its Zia assistant. Its pricing page lists AI forms, PDF to form, image to form and smart scan, plus content and choice suggestions. AI use runs on credits, and you can buy more as an add-on.
 
 **Best for:** Teams turning paper or PDF forms into online forms.
@@ -158,6 +186,10 @@ Zoho Forms has a broad set of AI tools under its Zia assistant. Its pricing page
 **Pricing:** See their pricing page.
 
 ## 8. Google Forms
+
+[![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
+
+**Website:** [google.com](https://www.google.com/forms/about/)
 
 Google Forms now has "Help me create a form," powered by Gemini. You describe the form and review the draft before you create it. It can also draft a quiz and pull context from your Docs, Sheets, Slides and PDFs.
 

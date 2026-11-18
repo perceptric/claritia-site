@@ -34,6 +34,10 @@ This guide is for small teams choosing a replacement this week. Two questions ma
 
 ## 1. Claritia
 
+[![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+**Website:** [tryclaritia.com](/)
+
 Claritia joins forms and meetings in one tool for small teams, with workflows that follow up after each booking. A visitor fills in a form and picks a time inside it. The booking then goes to the right teammate based on their answers.
 
 **Best for:** small teams that turn website visitors into booked meetings.
@@ -54,6 +58,10 @@ If you are moving over, Starter takes in answers and bookings from Calendly. Tha
 
 ## 2. Cal.com
 
+[![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
+
+**Website:** [cal.com](https://cal.com/)
+
 Cal.com is a scheduling tool with its source code on GitHub and a guide for hosting it yourself. The free plan is generous for one person. The Teams plan adds round robin and routing forms.
 
 **Best for:** technical teams that want to host or extend their scheduler.
@@ -71,6 +79,10 @@ Cal.com is a scheduling tool with its source code on GitHub and a guide for host
 **Pricing:** Free for one user. Teams is $12 a user a month (25% less billed yearly) and Organizations $28.
 
 ## 3. SavvyCal
+
+[![SavvyCal homepage](/assets/blog/tools/savvycal.webp)](https://savvycal.com/)
+
+**Website:** [savvycal.com](https://savvycal.com/)
 
 SavvyCal puts the person booking first. Invitees can lay their own calendar over yours to spot a good time. You can rank your times so the best ones show up first.
 
@@ -90,6 +102,10 @@ SavvyCal puts the person booking first. Invitees can lay their own calendar over
 
 ## 4. OnceHub
 
+[![OnceHub homepage](/assets/blog/tools/oncehub.webp)](https://www.oncehub.com/)
+
+**Website:** [oncehub.com](https://www.oncehub.com/)
+
 OnceHub is built around routing. Its Route plan sends leads by form answers and contact details. Its Engage plan adds web chatbots that hand a visitor straight to a meeting.
 
 **Best for:** sales teams that qualify inbound leads with forms and chat.
@@ -107,6 +123,10 @@ OnceHub is built around routing. Its Route plan sends leads by form answers and 
 **Pricing:** Schedule $10 a seat a month billed yearly ($12 monthly). Route is $19 ($23) and Engage $39 ($47).
 
 ## 5. Zcal
+
+[![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
+
+**Website:** [zcal.co](https://zcal.co/)
 
 Zcal gives one person a lot for free, including unlimited links and meeting polls. Its paid plans add team features and text reminders. It suits people who want a full setup without a bill.
 
@@ -126,6 +146,10 @@ Zcal gives one person a lot for free, including unlimited links and meeting poll
 
 ## 6. Zoho Bookings
 
+[![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
+
+**Website:** [zoho.com](https://www.zoho.com/bookings/)
+
 Zoho Bookings is part of the Zoho suite, so it fits teams that already use Zoho CRM or Bigin. It offers round robin with four ways to share bookings out. Prices are low when billed yearly.
 
 **Best for:** teams that already run on Zoho apps.
@@ -143,6 +167,10 @@ Zoho Bookings is part of the Zoho suite, so it fits teams that already use Zoho 
 **Pricing:** Basic $6 a user a month billed yearly ($8 monthly), Premium $9 billed yearly ($12 monthly).
 
 ## 7. TidyCal
+
+[![TidyCal homepage](/assets/blog/tools/tidycal.webp)](https://tidycal.com/)
+
+**Website:** [tidycal.com](https://tidycal.com/)
 
 TidyCal is for people who would rather skip monthly fees. You can buy a lifetime plan once. The free plan already has unlimited booking types.
 
@@ -162,6 +190,10 @@ TidyCal is for people who would rather skip monthly fees. You can buy a lifetime
 
 ## 8. HubSpot Meetings
 
+[![HubSpot Meetings homepage](/assets/blog/tools/hubspot-meetings.webp)](https://www.hubspot.com/products/sales/schedule-meeting)
+
+**Website:** [hubspot.com](https://www.hubspot.com/products/sales/schedule-meeting)
+
 If your contacts already live in HubSpot, its meetings tool books straight into the CRM. The free version gives you one personal meeting link. Paid Sales Hub plans add team links.
 
 **Best for:** teams already using HubSpot's CRM.
@@ -179,6 +211,10 @@ If your contacts already live in HubSpot, its meetings tool books straight into 
 **Pricing:** Free with one link. Sales Hub plans: See their pricing page.
 
 ## 9. YouCanBookMe
+
+[![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
+
+**Website:** [youcanbook.me](https://youcanbook.me/)
 
 YouCanBookMe keeps booking simple, with a free plan to get started. Paid plans add SMS reminders. The Team plan brings round robin and one shared dashboard.
 
