@@ -10,212 +10,302 @@ Appointment software has one job: get the right client into the right slot, and 
 
 This guide is for anyone who books clients by the hour, from a solo coach to a small practice with a front desk. As you read, picture two moments in each tool: the day before the visit, and the moment a client needs to move it. The best tool handles both without you stepping in.
 
-## How we picked
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to ask your intake questions and book the appointment in one form, with email reminders a day and an hour before.
 
-- **Reminders:** email or text, and how far ahead they go out.
-- **Self-service changes:** clients can reschedule or cancel from a link.
-- **Intake questions:** collect what you need before the appointment.
-- **Payments:** take a fee or deposit when the client books.
-- **Staff and calendars:** what it costs to add a second person or room.
+In this post, we compare 8 appointment scheduling tools on reminders, intake questions, payments and price, and show where each one falls short.
 
-## The quick comparison
+## Main points
+
+- Good appointment software lets clients book on their own and sends the reminders that get them through the door.
+- Look at two moments in each tool: the day before the visit, and the moment a client needs to move it.
+- Free plans differ a lot. Acuity Scheduling has only a 7-day trial, while Google Calendar's appointment schedules are free with a Google account.
+- Top picks: [Claritia](/), [Acuity Scheduling](https://acuityscheduling.com/), [Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/), [Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app), [YouCanBookMe](https://youcanbook.me/), [SimplyBook.me](https://simplybook.me/), [Zcal](https://zcal.co/) and [TidyCal](https://tidycal.com/).
+- Pick [Claritia](/) if clients find you on your website and you want their answers and the booking in one form.
+
+## What is appointment scheduling software?
+
+Appointment scheduling software shows your open times on a booking page. Clients pick a slot, and the tool adds it to your calendar and sends reminders. It takes the place of phone calls and long email threads about when to meet.
+
+Typical features include:
+
+- A booking page that shows only the times you are free.
+- Calendar sync, so new bookings don't clash with what's already there.
+- Email or text reminders before each visit.
+- Reschedule and cancel links clients can use on their own.
+- Intake questions that collect what you need before the visit.
+- Payments or deposits taken when the client books.
+
+## How to choose appointment scheduling software
+
+Price matters, but these five checks tell you more about how a tool will run your day:
+
+- **Reminders.** Email or text, and how far ahead they go out.
+- **Self-service changes.** Clients can reschedule or cancel from a link.
+- **Intake questions.** Collect what you need before the appointment.
+- **Payments.** Take a fee or deposit when the client books.
+- **Staff and calendars.** What it costs to add a second person or room.
+
+## The 8 best appointment scheduling software tools in 2026
 
 | Tool | Best for | Free plan | Paid from | Reminders |
 |---|---|---|---|---|
-| Claritia | Booking clients straight from a website form | Yes | $12 a seat a month billed yearly | Email a day and an hour before, on free |
-| Acuity Scheduling | Practices that need intake forms and payment | No, 7-day trial | $16 a month billed yearly | Email on every plan, SMS from Standard |
-| Google Calendar appointment schedules | Solo pros who live in Google Calendar | Yes, with a Google account | See their pricing page | Up to 5 reminders |
-| Microsoft Bookings | Offices on Microsoft 365 | Comes with some plans | See their pricing page | Email and SMS notifications |
-| YouCanBookMe | Simple pages with plenty of settings | Yes, 30 bookings a month | See their pricing page | Email and SMS from Individual |
-| SimplyBook.me | Service menus with many providers | Yes, 50 bookings | $11.90 a month billed yearly | Basic email reminders on free |
-| Zcal | Free email reminders for one person | Yes | $7 a user a month | Email on free, SMS on Pro |
-| TidyCal | Paying once with no monthly bill | Yes, 1 calendar | $29 one time | SMS on Agency Lifetime and Pro |
+| [Claritia](/) | Booking clients straight from a website form | Yes | $12 a seat a month billed yearly | Email a day and an hour before, on free |
+| [Acuity Scheduling](https://acuityscheduling.com/) | Practices that need intake forms and payment | No, 7-day trial | $16 a month billed yearly | Email on every plan, SMS from Standard |
+| [Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/) | Solo pros who live in Google Calendar | Yes, with a Google account | See their pricing page | Up to 5 reminders |
+| [Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) | Offices on Microsoft 365 | Comes with some plans | See their pricing page | Email and SMS notifications |
+| [YouCanBookMe](https://youcanbook.me/) | Simple pages with plenty of settings | Yes, 30 bookings a month | See their pricing page | Email and SMS from Individual |
+| [SimplyBook.me](https://simplybook.me/) | Service menus with many providers | Yes, 50 bookings | $11.90 a month billed yearly | Basic email reminders on free |
+| [Zcal](https://zcal.co/) | Free email reminders for one person | Yes | $7 a user a month | Email on free, SMS on Pro |
+| [TidyCal](https://tidycal.com/) | Paying once with no monthly bill | Yes, 1 calendar | $29 one time | SMS on Agency Lifetime and Pro |
 
 ## 1. Claritia
 
+[Claritia](/) joins forms and meetings for small teams, with workflows that follow up after. Your client fills in a short form and picks an appointment inside it, so you get their answers and the booking together. Reminders then go out on their own. It suits small teams that get clients from their website and want intake and booking in one step.
+
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
-**Website:** [tryclaritia.com](/)
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** and send reminders a day and an hour before every appointment, free plan included.
 
-Claritia joins forms and meetings for small teams, with workflows that follow up after. Your client fills in a short form and picks an appointment inside it. You get their answers and the booking together, and reminders go out on their own.
+### Key features
 
-**Best for:** small teams that get clients from their website and want intake and booking in one step.
+- **Booking inside the form:** Intake questions come before the time slot.
+- **Confirmation and reminders:** A confirmation email with a calendar invite, plus reminders a day and an hour before.
+- **Self-service changes:** Reschedule and cancel links on every booking, free plan included.
+- **Day controls:** Working hours, buffers, notice and daily caps keep each day under control.
+- **Paid meetings:** Starter adds paid meetings with Stripe or PayPal, plus e-signatures on forms. See [Claritia Meetings](/products/meetings) for the booking side.
 
-**What stands out:**
-- Booking inside the form, so intake questions come before the time slot.
-- Confirmation email with a calendar invite, plus reminders a day and an hour before.
-- Reschedule and cancel links on every booking, free plan included.
-- Working hours, buffers, notice and daily caps keep each day under control.
+### Pros
 
-**Where it falls short:**
-- Text reminders on Pro and Business are coming soon, so today reminders go by email.
-- There's no native mobile app, so your front desk works in the browser.
+- **Intake and booking together:** You get the client's answers and the appointment in one step.
+- **Reminders without the work:** They go out on their own, on every plan.
+- **Fair seat pricing:** Teammates who only build forms or read answers are free.
 
-**Pricing:** Free at $0, Starter $15 a seat a month ($12 billed yearly), Pro $39 ($31) and Business $79 ($63).
+### Cons
 
-Starter adds paid meetings with Stripe or PayPal, plus e-signatures on forms. Pro adds a no-show follow-up that sends the reschedule link, and a thank-you after a held meeting. See [Claritia Meetings](/products/meetings) for the booking side.
+- **Email reminders only for now:** Text reminders on Pro and Business are coming soon.
+- **No native mobile app:** Your front desk works in the browser.
+
+### Price and plans
+
+You can start on the free plan with no card. Paid plans are priced per seat, and a seat is a teammate people can book a meeting with.
+
+- **Free:** $0 for 1 seat, with 1 meeting type on 1 calendar.
+- **Starter:** $15 a seat a month ($12 billed yearly). Adds paid meetings with Stripe or PayPal, plus e-signatures on forms.
+- **Pro:** $39 a seat a month ($31 billed yearly). Adds a no-show follow-up that sends the reschedule link, and a thank-you after a held meeting.
+- **Business:** $79 a seat a month ($63 billed yearly). Adds your own domain for forms and booking pages.
 
 ## 2. Acuity Scheduling
 
+[Acuity Scheduling](https://acuityscheduling.com/) has served appointment businesses for years, and it shows in the details. Every plan comes with intake forms and online payments, and higher plans add a waitlist and HIPAA support. It's a strong fit for therapists and clinics that take payment at booking.
+
 [![Acuity Scheduling homepage](/assets/blog/tools/acuity-scheduling.webp)](https://acuityscheduling.com/)
 
-**Website:** [acuityscheduling.com](https://acuityscheduling.com/)
+### Key features
 
-Acuity has served appointment businesses for years, and it shows in the details. Every plan comes with intake forms and online payments. Higher plans add a waitlist and HIPAA support.
+- **Intake forms:** Custom client intake forms on every plan.
+- **Payments:** Through Stripe, Square, PayPal and Venmo.
+- **Standard extras:** SMS reminders, a waitlist, packages and memberships.
+- **HIPAA support:** Premium includes a signed HIPAA agreement and up to 36 calendars.
 
-**Best for:** therapists and clinics that take payment at booking.
+### Pros
 
-**What stands out:**
-- Custom client intake forms on every plan.
-- Payments through Stripe, Square, PayPal and Venmo.
-- Standard adds SMS reminders, a waitlist, packages and memberships.
-- Premium includes a signed HIPAA agreement and up to 36 calendars.
+- **Intake and payment on every plan:** You don't need an upgrade for either one.
+- **Many ways to pay:** Clients can pay through Stripe, Square, PayPal or Venmo.
+- **Ready for health practices:** A signed HIPAA agreement on Premium.
 
-**Where it falls short:**
-- There's no free plan. You get a 7-day trial with no card needed.
-- Text reminders start on Standard at $27 a month billed yearly.
+### Cons
 
-**Pricing:** Starter $16 a month billed yearly ($20 monthly). Standard is $27 ($34) and Premium $55 ($69).
+- **No free plan:** You get a 7-day trial with no card needed.
+- **Text reminders cost more:** They start on Standard at $27 a month billed yearly.
+
+### Price and plans
+
+- **Starter:** $16 a month billed yearly ($20 monthly).
+- **Standard:** $27 a month billed yearly ($34 monthly).
+- **Premium:** $55 a month billed yearly ($69 monthly).
 
 ## 3. Google Calendar appointment schedules
 
+[Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/) give you a booking page built into Google Calendar. You can make one with a personal Google account or a Workspace account, though some features need an eligible Workspace or Google One plan. It suits solo pros who already run their day in Google Calendar.
+
 [![Google Calendar appointment schedules homepage](/assets/blog/tools/google-appointment-schedules.webp)](https://workspace.google.com/resources/appointment-scheduling/)
 
-**Website:** [workspace.google.com](https://workspace.google.com/resources/appointment-scheduling/)
+### Key features
 
-Google Calendar has a booking page built in. You can make an appointment schedule with a personal Google account or a Workspace account. Some features need an eligible Workspace or Google One plan.
+- **Clash checks:** It checks your other calendars so slots don't clash.
+- **Reminders:** Up to five reminders per booking.
+- **Email checks:** Bookings get an email check.
+- **Payments:** Stripe payments on bookings.
 
-**Best for:** solo pros who already run their day in Google Calendar.
+### Pros
 
-**What stands out:**
-- Nothing new to learn if you already use Google Calendar.
-- It checks your other calendars so slots don't clash.
-- Up to five reminders per booking.
-- Email checks on bookings and Stripe payments.
+- **Nothing new to learn:** It works inside the calendar you already use.
+- **Free to start:** The basics come with a Google account.
 
-**Where it falls short:**
-- You can't create a schedule in the phone app. It needs a web browser.
-- Some features sit behind a paid Workspace or Google One plan, and Workspace Business Starter doesn't include booking pages.
+### Cons
 
-**Pricing:** Free with a Google account for the basics. Paid features: See their pricing page.
+- **Browser only for setup:** You can't create a schedule in the phone app.
+- **Some features cost extra:** Some sit behind a paid Workspace or Google One plan, and Workspace Business Starter doesn't include booking pages.
+
+### Price and plans
+
+- **Google account:** Free for the basics.
+- **Workspace or Google One:** Some features need an eligible paid plan. See their pricing page.
 
 ## 4. Microsoft Bookings
 
+[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) comes with many Microsoft 365 business plans. It gives you personal booking pages and shared pages for a team, and online appointments get a Teams meeting link on their own. It's a good fit for offices that already pay for Microsoft 365.
+
 [![Microsoft Bookings homepage](/assets/blog/tools/microsoft-bookings.webp)](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app)
 
-**Website:** [microsoft.com](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app)
+### Key features
 
-Microsoft Bookings comes with many Microsoft 365 business plans. It gives you personal booking pages and shared pages for a team. Online appointments get a Teams meeting link on their own.
+- **Notifications:** Email and text notifications to cut down on no-shows.
+- **Shared booking pages:** Pages that list your services and staff.
+- **Teams links:** Each online appointment gets a Teams meeting link.
+- **Works where you work:** Inside Outlook and Teams as well as on the web.
 
-**Best for:** offices that already pay for Microsoft 365.
+### Pros
 
-**What stands out:**
-- Included with Business Basic, Business Standard, Business Premium and Teams Essentials.
-- Email and text notifications to cut down on no-shows.
-- Shared booking pages with your services and staff.
-- Works inside Outlook and Teams as well as on the web.
+- **Already in your plan:** It's included with Business Basic, Business Standard, Business Premium and Teams Essentials.
+- **Text notifications:** Email and text both help cut no-shows.
 
-**Where it falls short:**
-- You need a Microsoft 365 plan that includes it.
-- It suits Outlook users best. Google Calendar shops will get less out of it.
+### Cons
 
-**Pricing:** Included with some Microsoft 365 plans. See their pricing page.
+- **Needs the right plan:** You need a Microsoft 365 plan that includes it.
+- **Best for Outlook users:** Google Calendar shops will get less out of it.
+
+### Price and plans
+
+- **Microsoft 365 business plans:** Included with some plans. See their pricing page.
 
 ## 5. YouCanBookMe
 
+[YouCanBookMe](https://youcanbook.me/) is known for its long list of settings. You can tune notice periods and protect pages with a password, and the free plan is enough to try it. It suits solo pros and small teams who want fine control over their booking page.
+
 [![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
 
-**Website:** [youcanbook.me](https://youcanbook.me/)
+### Key features
 
-YouCanBookMe is known for its long list of settings. You can tune notice periods and protect pages with a password. The free plan is enough to try it.
+- **Free booking page:** With your logo and Stripe payments.
+- **Reminders:** Individual adds email and SMS reminders, plus group sessions.
+- **Notice periods:** Minimum and maximum notice, plus password-protected pages.
+- **Workflows:** Professional adds automated workflows and a daily meeting cap.
 
-**Best for:** solo pros and small teams who want fine control over their booking page.
+### Pros
 
-**What stands out:**
-- A free booking page with your logo and Stripe payments.
-- Individual adds email and SMS reminders and group sessions.
-- Minimum and maximum notice periods, plus password-protected pages.
-- Professional adds automated workflows and a daily meeting cap.
+- **Fine control:** Plenty of settings for each booking page.
+- **Payments on free:** Take Stripe payments without a paid plan.
 
-**Where it falls short:**
-- The free plan is capped at 30 bookings a month and shows a "Powered for free" button.
-- SMS costs extra on top of the plan.
+### Cons
 
-**Pricing:** See their pricing page.
+- **Booking cap on free:** 30 bookings a month, with a "Powered for free" button.
+- **SMS costs extra:** It's charged on top of the plan.
+
+### Price and plans
+
+- **Free:** $0, with 30 bookings a month.
+- **Individual:** Adds email and SMS reminders and group sessions. See their pricing page.
+- **Professional:** Adds automated workflows and a daily meeting cap. See their pricing page.
 
 ## 6. SimplyBook.me
 
+[SimplyBook.me](https://simplybook.me/) suits businesses with a menu of services and several providers. It gives you a booking website and a widget for your own site, and you pay by the number of bookings and providers. It's a good fit for studios and service shops with many services and staff.
+
 [![SimplyBook.me homepage](/assets/blog/tools/simplybook.webp)](https://simplybook.me/)
 
-**Website:** [simplybook.me](https://simplybook.me/)
+### Key features
 
-SimplyBook.me suits businesses with a menu of services and several providers. It gives you a booking website and a widget for your own site. You pay by the number of bookings and providers.
+- **Booking website:** A booking site of your own, plus a WordPress widget.
+- **Email reminders on free:** Basic email reminders on the free plan.
+- **Room for staff:** Standard covers 15 providers and Premium 30.
+- **Service menus:** Built for many services across several providers.
 
-**Best for:** studios and service shops with many services and staff.
+### Pros
 
-**What stands out:**
-- A free plan with 50 bookings and basic email reminders.
-- A booking website plus a WordPress widget.
-- Standard covers 500 bookings and 15 providers.
-- Premium raises that to 2,000 bookings and 30 providers.
+- **Free start:** 50 bookings on the free plan.
+- **Price follows use:** You pay by your number of bookings and providers.
 
-**Where it falls short:**
-- A busy month can push you past your booking cap.
-- The free plan has one provider only.
+### Cons
 
-**Pricing:** Basic $11.90 a month billed yearly ($13.90 monthly). Standard is $24.90 ($29.90) and Premium $49.90 ($59.90).
+- **Booking caps:** A busy month can push you past your cap.
+- **One provider on free:** A second person means a paid plan.
+
+### Price and plans
+
+- **Free:** 50 bookings and one provider.
+- **Basic:** $11.90 a month billed yearly ($13.90 monthly).
+- **Standard:** $24.90 a month billed yearly ($29.90 monthly), for 500 bookings and 15 providers.
+- **Premium:** $49.90 a month billed yearly ($59.90 monthly), for 2,000 bookings and 30 providers.
 
 ## 7. Zcal
 
+[Zcal](https://zcal.co/) gives a solo user email reminders and payments without a paid plan. It's a good fit for one person who books a mix of calls and sessions. Paid plans add text reminders and team scheduling.
+
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
-**Website:** [zcal.co](https://zcal.co/)
+### Key features
 
-Zcal gives a solo user email reminders and payments without a paid plan. It's a good fit for one person who books a mix of calls and sessions. Paid plans add text reminders and team scheduling.
+- **Email reminders on free:** Automated email reminders at no cost.
+- **Custom questions:** Plus multiple durations on free.
+- **Payments:** Stripe payments on free, with a 3% fee.
+- **Pro extras:** Follow-up emails and 750 SMS credits a month per user.
 
-**Best for:** one person who wants reminders and payments at no cost.
+### Pros
 
-**What stands out:**
-- Automated email reminders on the free plan.
-- Custom questions and multiple durations on free.
-- Stripe payments on free, with a 3% fee.
-- Pro adds follow-up emails and 750 SMS credits a month per user.
+- **A lot for $0:** Reminders, questions and payments on the free plan.
+- **Low paid price:** Pro is $7 a user a month.
 
-**Where it falls short:**
-- The free plan sends one reminder and keeps Zcal branding.
-- File uploads on bookings start on Pro.
+### Cons
 
-**Pricing:** Pro $7 a user a month and Business $12 a user a month, with a 14-day free trial.
+- **Free plan limits:** One reminder, and Zcal branding stays on.
+- **File uploads cost more:** File uploads on bookings start on Pro.
+
+### Price and plans
+
+Both paid plans come with a 14-day free trial.
+
+- **Free:** $0, with one reminder and Zcal branding.
+- **Pro:** $7 a user a month.
+- **Business:** $12 a user a month.
 
 ## 8. TidyCal
 
+[TidyCal](https://tidycal.com/) lets you pay once and keep booking. Its free plan already handles group and package bookings, and paid plans add SMS reminders and drop the fee on paid bookings. It suits solo pros who want to avoid a monthly bill.
+
 [![TidyCal homepage](/assets/blog/tools/tidycal.webp)](https://tidycal.com/)
 
-**Website:** [tidycal.com](https://tidycal.com/)
+### Key features
 
-TidyCal lets you pay once and keep booking. Its free plan already handles group and package bookings. Paid plans add SMS reminders and drop the fee on paid bookings.
+- **Unlimited booking types:** On every plan.
+- **Paid bookings:** Stripe and PayPal on free, with a 1% fee.
+- **Repeat clients:** Package and recurring bookings.
+- **Agency Lifetime extras:** Round robin and 10 SMS reminders a month in the US and Canada.
 
-**Best for:** solo pros who want to avoid a monthly bill.
+### Pros
 
-**What stands out:**
-- Unlimited booking types on every plan.
-- Paid bookings through Stripe and PayPal on free, with a 1% fee.
-- Package and recurring bookings for repeat clients.
-- Agency Lifetime adds round robin and 10 SMS reminders a month in the US and Canada.
+- **No monthly bill:** Lifetime plans are paid once.
+- **Payments on free:** Take paid bookings without a paid plan.
 
-**Where it falls short:**
-- The free plan connects one calendar.
-- Unlimited SMS and no platform fee need Pro.
+### Cons
 
-**Pricing:** Individual Lifetime $29 once and Agency Lifetime $79 once. Pro is $12 a month or $99 a year.
+- **One calendar on free:** The free plan connects one calendar.
+- **Full SMS needs Pro:** Unlimited SMS and no platform fee need Pro.
 
-## How to choose
+### Price and plans
 
-- If clients find you on your website and you want their answers and the booking in one form, pick Claritia.
-- If you run a health or wellness practice that needs intake forms and a HIPAA agreement, pick Acuity Scheduling on Premium.
-- If you work alone and already live in Google Calendar, start with its appointment schedules.
-- If you sell many services across several providers, compare SimplyBook.me's booking caps with your volume.
-- If you want text reminders without a monthly plan, look at TidyCal's Agency Lifetime deal.
+- **Free:** $0, with one calendar.
+- **Individual Lifetime:** $29 once.
+- **Agency Lifetime:** $79 once.
+- **Pro:** $12 a month or $99 a year.
+
+## Which appointment scheduling software should you pick?
+
+- If clients find you on your website and you want their answers and the booking in one form, pick [Claritia](/).
+- If you run a health or wellness practice that needs intake forms and a HIPAA agreement, pick [Acuity Scheduling](https://acuityscheduling.com/) on Premium.
+- If you work alone and already live in Google Calendar, start with its [appointment schedules](https://workspace.google.com/resources/appointment-scheduling/).
+- If you sell many services across several providers, compare [SimplyBook.me](https://simplybook.me/)'s booking caps with your volume.
+- If you want text reminders without a monthly plan, look at [TidyCal](https://tidycal.com/)'s Agency Lifetime deal.
 
 ## Questions
 
@@ -241,4 +331,8 @@ Yes. Claritia takes payment for meetings from Starter. Acuity takes payment on e
 
 ## Start booking clients
 
-Set up a booking form with intake questions in a few minutes. [Start free](https://app.tryclaritia.com/signup), or browse [form templates](/templates) to start from one built for your kind of business.
+Set up a booking form with intake questions in a few minutes.
+
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your booking form and take your first appointment today.
+
+You can also browse [form templates](/templates) to start from one built for your kind of business.
