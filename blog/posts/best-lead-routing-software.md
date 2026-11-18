@@ -6,229 +6,315 @@ kind: route
 date: 2026-10-26
 ---
 
-Lead routing decides who gets each new lead and how fast. A good setup reads what the lead told you and checks who already owns the account. Then it hands the lead to a free rep, ideally with a meeting already booked.
+Lead routing decides who gets each new lead and how fast. When nobody owns that choice, a lead waits in an inbox, lands with the wrong rep, or goes to someone who is out that week.
 
-This post is for teams choosing a router this quarter. Some tools live inside Salesforce and handle territories across thousands of accounts. Others start from a web form and book the meeting in the same step. Know which one you are before you compare prices, and make sure you can see why each lead went where it did.
+A good router reads what the lead told you and checks who already owns the account. Then it hands the lead to a free rep, ideally with a meeting already booked, and shows you why each lead went where it did.
 
-## How we picked
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that routes each lead to the right rep and books the meeting in the same step.
 
-- What the tool routes on: form answers, CRM fields, territories or past activity.
-- Which CRM it needs, and whether it works without one.
-- A clear log of why each lead went to each person.
+In this post, we compare 8 lead routing tools. You'll see what each one routes on, which CRM it needs and what it costs.
+
+## Main points
+
+- Some tools live inside Salesforce and handle territories across thousands of accounts. Others start from a web form and book the meeting in the same step.
+- Know which kind you need before you compare prices.
+- Check what the tool routes on, which CRM it needs, and whether a log shows why each lead went where it did.
+- Top picks: [Claritia](/), [LeanData](https://www.leandata.com/), [Distribution Engine](https://www.distributionengine.com/), [Chili Piper](https://www.chilipiper.com/), [Default](https://www.default.com/), [RevenueHero](https://www.revenuehero.io/), [Calendly](https://calendly.com/) and [OnceHub](https://www.oncehub.com/).
+- Pick [Claritia](/) if your leads come in through web forms and you want each one booked with the right person.
+
+## What is lead routing software?
+
+Lead routing software decides which person gets each new lead. It reads form answers or CRM fields and hands the lead to the right rep based on your rules.
+
+Typical features include:
+
+- Rules based on form answers or CRM fields.
+- Round robin, to share leads fairly across a team.
+- Owner-first routing to the rep who already owns the person or account.
+- Territory routing by region or account.
 - A fallback when no one in the rule is free.
-- Entry price and contract terms for a small team.
+- A routing log that shows why each lead went where it did.
 
-## The quick comparison
+## How to choose lead routing software
+
+Start with where your leads come from. Then run these five checks:
+
+- **What it routes on.** Form answers, CRM fields, territories or past activity.
+- **Which CRM it needs.** Some tools need Salesforce. Others work without a CRM at all.
+- **A clear log.** You should see why each lead went to each person.
+- **A fallback.** Something should happen when no one in the rule is free.
+- **Entry price and contract terms.** Check the lowest plan with routing, and whether it ties you to a yearly contract.
+
+## The 8 best lead routing software tools in 2026
 
 | Tool | Best for | Free plan | Paid from | Routes by |
 |---|---|---|---|---|
-| Claritia | Routing form leads straight to a meeting | Yes | $12 a seat a month, billed yearly | Any form answer and past answers; CRM owner on Business |
-| LeanData | Salesforce teams with territory rules | No | See their pricing page | Territory and any Salesforce object |
-| Distribution Engine | Salesforce teams who want a published price | 30-day trial | $20 a user a month, billed yearly | Workload and account owner |
-| Chili Piper | Large teams with SDR to AE handoffs | No | $15,000 a year with 15 seats | Form answers and fair distribution |
-| Default | Ops teams who want routing with workflows | None listed | $12,000 a year | Queues and CRM objects |
-| RevenueHero | B2B inbound with CRM matching | No | $79 a month plus $25 a seat, billed yearly | Custom rules and domain; any CRM property on Advanced |
-| Calendly | Routing on a booking link | Yes, 1 event type | $16 a seat a month for routing, billed yearly | Form answers and CRM assignment |
-| OnceHub | Routing forms and chatbots | Yes | $19 a user a month for routing, billed yearly | Form answers and CRM contact owner |
+| [Claritia](/) | Routing form leads straight to a meeting | Yes | $12 a seat a month, billed yearly | Any form answer and past answers; CRM owner on Business |
+| [LeanData](https://www.leandata.com/) | Salesforce teams with territory rules | No | See their pricing page | Territory and any Salesforce object |
+| [Distribution Engine](https://www.distributionengine.com/) | Salesforce teams who want a published price | 30-day trial | $20 a user a month, billed yearly | Workload and account owner |
+| [Chili Piper](https://www.chilipiper.com/) | Large teams with SDR to AE handoffs | No | $15,000 a year with 15 seats | Form answers and fair distribution |
+| [Default](https://www.default.com/) | Ops teams who want routing with workflows | None listed | $12,000 a year | Queues and CRM objects |
+| [RevenueHero](https://www.revenuehero.io/) | B2B inbound with CRM matching | No | $79 a month plus $25 a seat, billed yearly | Custom rules and domain; any CRM property on Advanced |
+| [Calendly](https://calendly.com/) | Routing on a booking link | Yes, 1 event type | $16 a seat a month for routing, billed yearly | Form answers and CRM assignment |
+| [OnceHub](https://www.oncehub.com/) | Routing forms and chatbots | Yes | $19 a user a month for routing, billed yearly | Form answers and CRM contact owner |
 
 ## 1. Claritia
 
+[Claritia](/) routes from the form itself. Each form picks the meeting, and each meeting picks the person, so the lead books in the same step. You can route by any answer or by what the person said in past fills, and on Business a known account goes to its CRM owner. It suits small teams who route inbound form leads and want the meeting booked right away.
+
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
-**Website:** [tryclaritia.com](/)
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** and turn on routing by answer when you move to Pro.
 
-Claritia routes from the form itself. On Submission, each form picks the meeting, and each meeting picks the person. You can route by any answer or by what the person said in past fills. On Business, a known account goes to its CRM owner.
+### Key features
 
-**Best for:** small teams who route inbound form leads and want the meeting booked in the same step.
+- **Routing by answer:** Route by any answer to a meeting and a person on Pro.
+- **Past answers:** A returning lead goes where it went before.
+- **Routing log:** Shows why each lead went where it did.
+- **Owner first:** On Business, with double round robin and Salesforce. See the [Salesforce integration](/integrations/salesforce).
+- **Fair rotation:** Team pools and away days keep the rotation fair on Pro.
+- **Booking inside the form:** The lead picks a time on the same page.
 
-**What stands out:**
+### Pros
 
-- Route by any answer to a meeting and a person on Pro.
-- Route by past answers, so a returning lead goes where it went before.
-- A routing log that shows why each lead went where it did.
-- Owner first and double round robin on Business, with Salesforce. Team pools and away days keep the rotation fair on Pro.
+- **No CRM needed:** Routing works from form answers alone.
+- **Monthly billing:** Pay month to month, or save 20% billed yearly.
+- **Fair seat pricing:** Teammates who only build forms or read answers are free.
 
-**Where it falls short:**
+### Cons
 
-- It's built for small teams more than large enterprises with deep territory maps.
-- Its app marketplace is smaller than the big names, since Claritia is newer.
+- **Built for small teams:** It fits small teams more than large enterprises with deep territory maps.
+- **Newer tool:** Its app marketplace is smaller than the big names.
 
-**Pricing:** Free plan at $0. Routing starts on Pro at $39 a seat a month or $31 billed yearly. Business is $79 or $63 billed yearly.
+### Price and plans
+
+You can start on the free plan with no card. Paid plans are priced per seat, and a seat is a teammate people can book a meeting with.
+
+- **Free:** $0 for 1 seat and 250 submissions a month.
+- **Starter:** $15 a seat a month ($12 billed yearly). Adds HubSpot and other CRMs.
+- **Pro:** $39 a seat a month ($31 billed yearly). Adds routing by answer and by past answers, round robin, team pools and the routing log.
+- **Business:** $79 a seat a month ($63 billed yearly). Adds Salesforce, owner first and double round robin.
 
 ## 2. LeanData
 
+[LeanData](https://www.leandata.com/) is routing and orchestration built on Salesforce. Its Standard edition covers round robin and territory routing for leads. Higher editions extend routing to contacts and accounts, then to any standard or custom Salesforce object. It's made for Salesforce teams with territories and account-based rules.
+
 [![LeanData homepage](/assets/blog/tools/leandata.webp)](https://www.leandata.com/)
 
-**Website:** [leandata.com](https://www.leandata.com/)
+### Key features
 
-LeanData is routing and orchestration built on Salesforce. Its Standard edition covers round robin and territory routing for leads. Higher editions extend routing to contacts and accounts, then to any standard or custom Salesforce object.
+- **Lead routing:** Round robin, territory routing and lead-to-account routing on Standard.
+- **Multi-criteria assignment:** Along with signal-driven workflows, on Advanced.
+- **Any Salesforce object:** On Premium, with scheduled automations.
+- **BookIt:** Adds scheduling for forms and handoffs.
 
-**Best for:** Salesforce teams with territories and account-based rules.
+### Pros
 
-**What stands out:**
+- **Room to grow:** Routing extends from leads to contacts, accounts and any Salesforce object.
+- **Scheduling add-on:** BookIt books meetings from forms and handoffs.
 
-- Lead-to-account routing on Standard.
-- Multi-criteria assignment and signal-driven workflows on Advanced.
-- Any Salesforce object on Premium, with scheduled automations.
-- BookIt adds scheduling for forms and handoffs.
+### Cons
 
-**Where it falls short:**
+- **Quote pricing:** Pricing is by quote, and onboarding is billed apart.
+- **Salesforce only:** It's built around Salesforce, so teams on other CRMs need a different tool.
+- **No free plan:** You start with a quote.
 
-- Pricing is by quote, and onboarding is billed apart.
-- It's built around Salesforce, so teams on other CRMs need a different tool.
+### Price and plans
 
-**Pricing:** See their pricing page. Quotes depend on the features and the number of Salesforce users or queues.
+- **Standard, Advanced and Premium:** By quote. Quotes depend on the features and the number of Salesforce users or queues.
+- **Onboarding:** Billed apart.
 
 ## 3. Distribution Engine
 
+[Distribution Engine](https://www.distributionengine.com/) installs from the Salesforce AppExchange and keeps all data in your Salesforce org. It routes by availability and workload, and it also offers skills-based routing. It suits Salesforce teams who want strong routing at a price they can see, since its published prices make budgeting simple.
+
 [![Distribution Engine homepage](/assets/blog/tools/distribution-engine.webp)](https://www.distributionengine.com/)
 
-**Website:** [distributionengine.com](https://www.distributionengine.com/)
+### Key features
 
-Distribution Engine installs from the Salesforce AppExchange and keeps all data in your Salesforce org. It routes by availability and workload. It also offers skills-based routing. Its published prices make budgeting simple.
+- **Round robin:** Along with territory assignment.
+- **Workload routing:** Routes by workload or account ownership.
+- **Skills-based routing:** For support and sales teams.
+- **Booking Engine:** A separate product for scheduling.
 
-**Best for:** Salesforce teams who want strong routing at a price they can see.
+### Pros
 
-**What stands out:**
+- **Published prices:** Easy to budget for.
+- **Free trial:** 30 days with no credit card.
+- **Your data stays put:** All data stays in your Salesforce org.
 
-- Round robin and territory assignment.
-- Routing by workload or account ownership.
-- Skills-based routing for support and sales teams.
-- A 30-day free trial with no credit card.
+### Cons
 
-**Where it falls short:**
+- **Needs Salesforce:** It only works inside Salesforce.
+- **License minimum:** Paid plans need at least 5 licenses, billed yearly.
+- **Scheduling costs extra:** Booking Engine is a separate product.
 
-- It needs Salesforce.
-- Paid plans need at least 5 licenses, billed yearly. Scheduling is a separate product, Booking Engine.
+### Price and plans
 
-**Pricing:** Plans run from $20 a user a month on Starter to $55 on Unlimited, billed yearly. Booking Engine is $10 a user a month billed yearly.
+Paid plans need at least 5 licenses and are billed yearly.
+
+- **Starter:** $20 a user a month.
+- **Unlimited:** $55 a user a month.
+- **Booking Engine:** $10 a user a month.
 
 ## 4. Chili Piper
 
+[Chili Piper](https://www.chilipiper.com/) routes form leads and shares them fairly across a sales team. Its strength is the handoff, where an SDR books the right AE in one click. It connects to Salesforce and HubSpot, and it suits larger sales teams with set handoffs between SDRs and AEs.
+
 [![Chili Piper homepage](/assets/blog/tools/chili-piper.webp)](https://www.chilipiper.com/)
 
-**Website:** [chilipiper.com](https://www.chilipiper.com/)
+### Key features
 
-Chili Piper routes form leads and shares them fairly across a sales team. Its strength is the handoff, where an SDR books the right AE in one click. It connects to Salesforce and HubSpot.
+- **Form routing:** Form routing and lead distribution on Growth.
+- **One-click handoffs:** An SDR books the right AE in one click.
+- **CRM connections:** Salesforce and HubSpot.
+- **Marketing connections:** Marketo and Pardot.
 
-**Best for:** larger sales teams with set handoffs between SDRs and AEs.
+### Pros
 
-**What stands out:**
+- **Built for handoffs:** Fits teams with set SDR to AE handoffs.
+- **Both big CRMs:** Works with Salesforce and HubSpot.
 
-- Form routing and lead distribution on Growth.
-- One-click booking with the right AE.
-- Salesforce and HubSpot connections.
-- Marketo and Pardot connections for marketing teams.
+### Cons
 
-**Where it falls short:**
+- **High entry price:** Growth starts at $15,000 a year with 15 seats.
+- **Yearly billing only:** All plans are billed yearly, with no monthly option.
+- **No free plan:** You start on a paid plan.
 
-- Growth starts at $15,000 a year with 15 seats.
-- All plans are billed yearly, with no monthly option.
+### Price and plans
 
-**Pricing:** Growth is $15,000 a year with 15 seats, then $45 a seat a month. Scale is $42,000 a year with 30 seats.
+All plans are billed yearly.
+
+- **Growth:** $15,000 a year with 15 seats, then $45 a seat a month.
+- **Scale:** $42,000 a year with 30 seats.
 
 ## 5. Default
 
+[Default](https://www.default.com/) combines routing with enrichment and workflows. Each rep takes a seat for routing or scheduling on top of the base plan, and the Routing and Scheduling seat covers queues and round robins, plus booking links. It suits ops teams who want routing and workflow runs in one platform.
+
 [![Default homepage](/assets/blog/tools/default.webp)](https://www.default.com/)
 
-**Website:** [default.com](https://www.default.com/)
+### Key features
 
-Default combines routing with enrichment and workflows. Each rep takes a seat for routing or scheduling on top of the base plan. The Routing and Scheduling seat covers queues and round robins, plus booking links.
+- **Routing and Scheduling seat:** Queues and object routing.
+- **Workflow runs:** 200,000 a year on Growth.
+- **Enrichment:** 24,000 enrichment credits a year on Growth.
+- **Rollover:** Unused credits and runs roll over within the yearly agreement.
 
-**Best for:** ops teams who want routing and workflow runs in one platform.
+### Pros
 
-**What stands out:**
+- **One platform:** Routing, enrichment and workflows together.
+- **Unused runs carry over:** Credits and runs you don't use roll over within the agreement.
 
-- Queues and object routing on the Routing and Scheduling seat.
-- 200,000 workflow runs a year on Growth.
-- 24,000 enrichment credits a year on Growth.
-- Unused credits and runs roll over within the yearly agreement.
+### Cons
 
-**Where it falls short:**
+- **High entry price:** Growth starts at $12,000 a year, plus seats.
+- **Seats cost extra:** A Routing and Scheduling seat is $540 a user a year.
+- **No free plan listed:** You start on a yearly plan.
 
-- Growth starts at $12,000 a year, plus seats.
-- A Routing and Scheduling seat is $540 a user a year.
+### Price and plans
 
-**Pricing:** Growth is $12,000 a year and Enterprise is $25,000 a year, billed yearly, plus seats.
+Plans are billed yearly, plus seats.
+
+- **Growth:** $12,000 a year.
+- **Enterprise:** $25,000 a year.
+- **Routing and Scheduling seat:** $540 a user a year.
 
 ## 6. RevenueHero
 
+[RevenueHero](https://www.revenuehero.io/) routes inbound leads and books them from forms and booking pages. Essentials handles round robin with custom rules and domain matching. Advanced adds matching on any CRM property, along with fallback redistribution. It suits B2B teams who want CRM-aware routing without a large contract.
+
 [![RevenueHero homepage](/assets/blog/tools/revenuehero.webp)](https://www.revenuehero.io/)
 
-**Website:** [revenuehero.io](https://www.revenuehero.io/)
+### Key features
 
-RevenueHero routes inbound leads and books them from forms and booking pages. Essentials handles round robin with custom rules and domain matching. Advanced adds matching on any CRM property, along with fallback redistribution.
+- **Domain matching:** With a routing log, on Essentials.
+- **CRM matching:** Match on any CRM property or lookup field on Advanced.
+- **Fallback redistribution:** On Advanced, when the first pick can't take the lead.
+- **Free admin seats:** With no seat minimum.
 
-**Best for:** B2B teams who want CRM-aware routing without a large contract.
+### Pros
 
-**What stands out:**
+- **No seat minimum:** Start with the team you have.
+- **Free admin seats:** Admins don't need a paid seat.
+- **Monthly option:** Essentials can be paid monthly.
 
-- Domain matching and a routing log on Essentials.
-- Match on any CRM property or lookup field on Advanced.
-- Fallback redistribution on Advanced when the first pick can't take it.
-- No seat minimum, with free admin seats.
+### Cons
 
-**Where it falls short:**
+- **No free trial:** You start on a paid plan.
+- **Advanced for CRM updates:** Owner updates and lead creation in the CRM need Advanced.
 
-- There's no free trial.
-- Owner updates and lead creation in the CRM need Advanced.
+### Price and plans
 
-**Pricing:** Essentials is $79 a month plus $25 a seat, billed yearly ($99 plus $35 monthly). Advanced is $159 plus $35 a seat, billed yearly.
+- **Essentials:** $79 a month plus $25 a seat, billed yearly, or $99 plus $35 a seat billed monthly.
+- **Advanced:** $159 plus $35 a seat, billed yearly.
 
 ## 7. Calendly
 
+[Calendly](https://calendly.com/) routes on its Teams plan through routing forms. A lead answers a few questions and lands on the right event. Teams also routes by Salesforce and HubSpot assignment, and Enterprise adds Salesforce lookup routing. It fits teams who want simple routing on a booking link.
+
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
-**Website:** [calendly.com](https://calendly.com/)
+### Key features
 
-Calendly routes on its Teams plan through routing forms. A lead answers a few questions and lands on the right event. Teams also routes by Salesforce and HubSpot assignment, and Enterprise adds Salesforce lookup routing.
+- **Routing forms:** On Teams.
+- **Owner routing:** Routes by the owner set in Salesforce or HubSpot.
+- **Salesforce lookup routing:** On Enterprise.
+- **Round robin:** Shares the meetings across the team.
 
-**Best for:** teams who want simple routing on a booking link.
+### Pros
 
-**What stands out:**
+- **Simple routing:** A few questions send the lead to the right event.
+- **Owner routing on Teams:** No Enterprise plan needed for Salesforce or HubSpot owner routing.
+- **Free plan:** One event type for free.
 
-- Routing forms on Teams.
-- Routing by the owner set in Salesforce or HubSpot.
-- Salesforce lookup routing on Enterprise.
-- Round robin to share the meetings.
+### Cons
 
-**Where it falls short:**
+- **Routing needs Teams:** Routing forms skip the Standard plan.
+- **Large Enterprise contract:** Enterprise starts at $15,000 a year with a 50-seat minimum.
 
-- Routing forms skip the Standard plan.
-- Enterprise starts at $15,000 a year with a 50-seat minimum.
+### Price and plans
 
-**Pricing:** Free plan. Teams is $16 a seat a month billed yearly ($20 monthly).
+- **Free:** 1 event type.
+- **Teams:** $16 a seat a month billed yearly ($20 monthly).
+- **Enterprise:** From $15,000 a year, with a 50-seat minimum.
 
 ## 8. OnceHub
 
+[OnceHub](https://www.oncehub.com/)'s Route plan adds routing forms and round robin. It can send a meeting to the contact owner in your CRM, and Engage adds website chatbots that route leads in a chat. It suits teams who want routing forms and chat routing from one tool.
+
 [![OnceHub homepage](/assets/blog/tools/oncehub.webp)](https://www.oncehub.com/)
 
-**Website:** [oncehub.com](https://www.oncehub.com/)
+### Key features
 
-OnceHub's Route plan adds routing forms and round robin. It can send a meeting to the contact owner in your CRM. Engage adds website chatbots that route leads in a chat.
+- **Routing forms:** On Route, with round robin.
+- **Contact owner:** Meetings with the CRM contact owner on Route and up.
+- **Chatbots:** On Engage, to route leads in a chat.
+- **Trial:** A 14-day trial of Engage with no credit card.
 
-**Best for:** teams who want routing forms and chat routing from one tool.
+### Pros
 
-**What stands out:**
+- **Free plan:** A free Basic plan to start.
+- **Forms and chat:** Routing forms and chatbots from one tool.
 
-- Routing forms on Route.
-- Meetings with the CRM contact owner on Route and up.
-- Chatbots on Engage.
-- A 14-day trial of Engage with no credit card.
+### Cons
 
-**Where it falls short:**
+- **Routing needs Route:** Routing needs Route or higher.
+- **Chatbots cost more:** Chatbots only come on Engage.
 
-- Routing needs Route or higher.
-- Chatbots only come on Engage.
+### Price and plans
 
-**Pricing:** Free Basic plan. Route is $19 a user a month billed yearly ($23 monthly). Engage is $39 billed yearly.
+- **Basic:** Free.
+- **Route:** $19 a user a month billed yearly ($23 monthly).
+- **Engage:** $39 a user a month billed yearly.
 
-## How to choose
+## Which lead routing software should you pick?
 
-- If your leads come in through web forms and you want each one booked with the right person, pick Claritia Pro.
-- If you run Salesforce with territories and account rules, compare LeanData with Distribution Engine.
-- If you need matching on CRM fields at a lower entry price, try RevenueHero Advanced.
-- If you only need a few questions before a booking link, Calendly Teams is enough.
+- If your leads come in through web forms and you want each one booked with the right person, pick [Claritia](/) Pro.
+- If you run Salesforce with territories and account rules, compare [LeanData](https://www.leandata.com/) with [Distribution Engine](https://www.distributionengine.com/).
+- If you need matching on CRM fields at a lower entry price, try [RevenueHero](https://www.revenuehero.io/) Advanced.
+- If you want routing and workflow runs under one yearly contract, look at [Default](https://www.default.com/).
+- If you only need a few questions before a booking link, [Calendly](https://calendly.com/) Teams is enough.
 
 ## Questions
 
@@ -252,4 +338,10 @@ Use a routing log. Claritia's routing log on Pro shows where each lead went and 
 
 Good tools fall back to a wider group. In Claritia, team pools and round robin share the lead among the people who can take it.
 
-Route your next form lead to the right person. [Start free](https://app.tryclaritia.com/signup), then read how [routing](/products/routing) works or connect [Salesforce](/integrations/salesforce).
+## Get started
+
+Route your next form lead to the right person, with the meeting booked before they leave the page.
+
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first form today, then turn on routing on Pro.
+
+You can also read how [routing](/products/routing) works or connect [Salesforce](/integrations/salesforce).

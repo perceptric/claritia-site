@@ -6,255 +6,339 @@ kind: robin
 date: 2026-11-04
 ---
 
-Round robin scheduling shares new meetings across your team. One person stops getting every call while another waits for work. This post is for small teams who book demos or intro calls and want each booking to land with the right free teammate.
+Round robin scheduling shares new meetings across your team. Without it, one person gets every call while another waits for work, and a lead waits longer than they should for a time.
 
-When you compare tools, look past the words "round robin" on the pricing page. Check whether you can give some people more meetings than others, and what happens when someone is away. Then check the plan. Round robin often sits one or two plans above the cheapest one.
+A good tool hands each booking to the right free teammate. It lets you give some people more meetings than others, drops people who are away, and comes on a plan you can afford. That last part matters, since round robin often sits one or two plans above the cheapest one.
 
-## How we picked
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that books the right teammate, then add round robin with weights and away days on Pro.
 
-- How the tool picks the next person: plain rotation, weights, priority or open time.
-- Limits for each person, such as a daily or weekly cap.
+In this post, we compare 9 round robin scheduling tools for small teams who book demos or intro calls. You'll see how each one picks the next person and which plan you need for it.
+
+## Main points
+
+- Look past the words "round robin" on a pricing page. It often sits one or two plans above the cheapest one.
+- The better tools let you weight people, cap their meetings and skip people who are away.
+- A form before the booking can send each lead to the right group before the rotation picks a name.
+- Top picks: [Claritia](/), [Calendly](https://calendly.com/), [Cal.com](https://cal.com/), [SavvyCal](https://savvycal.com/), [OnceHub](https://www.oncehub.com/), [Zcal](https://zcal.co/), [HubSpot](https://www.hubspot.com/), [Zoho Bookings](https://www.zoho.com/bookings/) and [YouCanBookMe](https://youcanbook.me/).
+- Pick [Claritia](/) if you want the form and the rotation in one tool, with weights and away days.
+
+## What is round robin scheduling software?
+
+Round robin scheduling software hands each new meeting to the next person on a team. It keeps work fair and gets leads a time sooner, since anyone free can take the call.
+
+Typical features include:
+
+- A rotation by turn, weight, priority or open time.
+- Daily or weekly caps for each person.
 - Time off, so people on leave drop out of the rotation.
-- What happens before the booking, such as a form that sends people to the right group.
-- The plan you need for round robin and what it costs.
+- Team booking links that show everyone's open times.
+- Forms that send each lead to the right group first.
+- Calendar sync, so only free times show.
 
-## The quick comparison
+## How to choose round robin scheduling software
+
+Most tools list round robin somewhere. These five checks show which one fits your team:
+
+- **How it picks the next person.** Plain rotation, weights, priority or open time.
+- **Limits for each person.** A daily or weekly cap keeps one person from taking every call.
+- **Time off.** People on leave should drop out of the rotation.
+- **What happens before the booking.** A form can send people to the right group first.
+- **The plan you need.** Check which plan has round robin and what it costs.
+
+## The 9 best round robin scheduling software in 2026
 
 | Tool | Best for | Free plan | Paid from | Round robin on |
 |---|---|---|---|---|
-| Claritia | Forms that book the right teammate | Yes | $12 a seat a month, billed yearly | Pro, $31 a seat billed yearly |
-| Calendly | Teams already on Calendly links | Yes, 1 event type | $10 a seat a month, billed yearly | Teams, $16 a seat billed yearly |
-| Cal.com | Open source scheduling | Yes, 1 user | $12 a user a month | Teams |
-| SavvyCal | A kind booking page | Setup only | $10 a user a month, billed yearly | Basic and Premium |
-| OnceHub | Routing forms with chat | Yes | $10 a user a month, billed yearly | Route, $19 a user billed yearly |
-| Zcal | Low-cost team links | Yes | $7 a user a month | Pro and Business |
-| HubSpot | Teams that live in HubSpot | Yes, up to 2 users | $20 a seat a month, paid monthly | Paid Sales Hub or Service Hub |
-| Zoho Bookings | Teams on Zoho apps | Yes, 1 user | $6 a user a month, billed yearly | See their pricing page |
-| YouCanBookMe | Simple booking pages | Yes, 30 bookings a month | See their pricing page | Team |
+| [Claritia](/) | Forms that book the right teammate | Yes | $12 a seat a month, billed yearly | Pro, $31 a seat billed yearly |
+| [Calendly](https://calendly.com/) | Teams already on Calendly links | Yes, 1 event type | $10 a seat a month, billed yearly | Teams, $16 a seat billed yearly |
+| [Cal.com](https://cal.com/) | Open source scheduling | Yes, 1 user | $12 a user a month | Teams |
+| [SavvyCal](https://savvycal.com/) | A kind booking page | Setup only | $10 a user a month, billed yearly | Basic and Premium |
+| [OnceHub](https://www.oncehub.com/) | Routing forms with chat | Yes | $10 a user a month, billed yearly | Route, $19 a user billed yearly |
+| [Zcal](https://zcal.co/) | Low-cost team links | Yes | $7 a user a month | Pro and Business |
+| [HubSpot](https://www.hubspot.com/) | Teams that live in HubSpot | Yes, up to 2 users | $20 a seat a month, paid monthly | Paid Sales Hub or Service Hub |
+| [Zoho Bookings](https://www.zoho.com/bookings/) | Teams on Zoho apps | Yes, 1 user | $6 a user a month, billed yearly | See their pricing page |
+| [YouCanBookMe](https://youcanbook.me/) | Simple booking pages | Yes, 30 bookings a month | See their pricing page | Team |
 
 ## 1. Claritia
 
+[Claritia](/) brings forms and meetings together for small teams, with workflows that follow up. A visitor fills your form and picks a time inside it, and the meeting goes to the next right person in the rotation. Round robin sits on the Pro plan with weights and priority, so you can send more meetings to the people who should get them. It suits small teams who want the form and the rotation in one place.
+
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
-**Website:** [tryclaritia.com](/)
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** and add round robin with weights and priority on Pro.
 
-Claritia brings forms and meetings together for small teams, with workflows that follow up. A visitor fills your form and picks a time inside it. The meeting then goes to the next right person in the rotation. Round robin sits on the Pro plan with weights and priority, so you can send more meetings to the people who should get them.
+### Key features
 
-**Best for:** small teams who want the form and the rotation in one place.
+- **Weights and priority:** Give some people more meetings than others.
+- **Meetings with everyone free:** For calls that need the whole group.
+- **Team pools and away days:** A pool for each group, and people on leave drop out.
+- **Limits for each person:** Daily and weekly caps, so one person never takes every call in a busy week.
+- **Routing by answer:** Route by any answer to a meeting and a person, with a routing log that shows where each lead went.
+- **Owner first and double round robin:** On Business.
 
-**What stands out:**
+### Pros
 
-- Round robin with weights and priority, plus meetings with everyone free for calls that need the whole group.
-- Team pools for each group, and away days so people on leave drop out.
-- Daily and weekly limits for each person, so one person never takes every call in a busy week.
-- Route by any answer to a meeting and a person, with a routing log that shows where each lead went. Owner first and double round robin come on Business.
+- **Form and rotation in one tool:** The lead fills the form and books the next right teammate in the same flow.
+- **Monthly billing:** Pay month to month, or save 20% billed yearly.
+- **Fair seat pricing:** Teammates who only build forms or read answers are free.
 
-**Where it falls short:**
+### Cons
 
-- Claritia is a newer tool, so its app marketplace and community are smaller than the big names.
-- There's no native mobile app.
+- **Newer tool:** Its app marketplace and community are smaller than the big names.
+- **No mobile app:** There's no native mobile app.
 
-**Pricing:** Free plan at $0. Round robin starts on Pro at $39 a seat a month, or $31 billed yearly. Teammates who only build forms or read answers are free.
+### Price and plans
+
+You can start on the free plan with no card. Paid plans are priced per seat, and a seat is a teammate people can book a meeting with.
+
+- **Free:** $0 for 1 seat and 250 submissions a month.
+- **Starter:** $15 a seat a month ($12 billed yearly). Adds booking pages for each person and the team.
+- **Pro:** $39 a seat a month ($31 billed yearly). Adds round robin with weights and priority, team pools, away days and limits for each person.
+- **Business:** $79 a seat a month ($63 billed yearly). Adds owner first and double round robin.
 
 ## 2. Calendly
 
+[Calendly](https://calendly.com/) is the booking link many of your buyers already know. Its Teams plan adds round robin and team scheduling, along with forms that route leads to the right event. Teams also routes by the owner already set in Salesforce or HubSpot. It suits teams already on Calendly links who want to add a rotation.
+
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
-**Website:** [calendly.com](https://calendly.com/)
+### Key features
 
-Calendly is the booking link many of your buyers already know. Its Teams plan adds round robin and team scheduling, along with forms that route leads to the right event. Teams also routes by the owner already set in Salesforce or HubSpot.
+- **Round robin:** Round robin and team scheduling on Teams.
+- **Routing forms:** On Teams and Enterprise.
+- **Owner routing:** By Salesforce and HubSpot assignment on Teams.
+- **Salesforce lookup routing:** On Enterprise.
 
-**Best for:** teams already on Calendly links who want to add a rotation.
+### Pros
 
-**What stands out:**
+- **A familiar page:** Most invitees have seen the booking page before.
+- **Owner routing on Teams:** Salesforce and HubSpot owner routing without Enterprise.
 
-- Round robin and team scheduling on Teams.
-- Routing forms on Teams and Enterprise.
-- Routing by Salesforce and HubSpot assignment on Teams, with Salesforce lookup routing on Enterprise.
-- A booking page most invitees have seen before.
+### Cons
 
-**Where it falls short:**
+- **Round robin needs Teams:** The free plan has one event type.
+- **Routing forms cost more:** Standard leaves them out, so a small team pays for Teams to get them.
 
-- The free plan has one event type, and round robin needs Teams.
-- Standard leaves out forms that route leads, so a small team pays for Teams to get them.
+### Price and plans
 
-**Pricing:** Free plan. Standard is $10 a seat a month billed yearly ($12 monthly). Teams is $16 a seat a month billed yearly ($20 monthly).
+- **Free:** 1 event type.
+- **Standard:** $10 a seat a month billed yearly ($12 monthly).
+- **Teams:** $16 a seat a month billed yearly ($20 monthly).
 
 ## 3. Cal.com
 
+[Cal.com](https://cal.com/) is open source scheduling with a free plan for one person and unlimited links. Its Teams plan adds round robin and routing forms, plus custom notifications and workflows for reminders. It suits teams who like open source and want room to build on top.
+
 [![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
 
-**Website:** [cal.com](https://cal.com/)
+### Key features
 
-Cal.com is open source scheduling with a free plan for one person and unlimited links. Its Teams plan adds round robin and routing forms. It also adds custom notifications and workflows for reminders.
+- **Free plan:** For 1 user with unlimited links.
+- **Round robin and routing forms:** On Teams.
+- **Workflows:** Custom notifications and workflows on Teams.
+- **CRM sync:** Salesforce and HubSpot sync listed on the free plan.
 
-**Best for:** teams who like open source and want room to build on top.
+### Pros
 
-**What stands out:**
+- **Open source:** Room to build on top.
+- **Low price:** Teams is $12 a user a month, less billed yearly.
 
-- A free plan for 1 user with unlimited links.
-- Round robin and routing forms on Teams.
-- Custom notifications and workflows on Teams.
-- Salesforce and HubSpot sync listed on the free plan.
+### Cons
 
-**Where it falls short:**
+- **Free plan is for one:** Any team rotation means paying for Teams.
+- **Setup time:** The wide set of options can take longer to set up than a simpler tool.
 
-- The free plan covers one user, so any team rotation means paying for Teams.
-- The wide set of options can take longer to set up than a simpler tool.
+### Price and plans
 
-**Pricing:** Free for 1 user. Teams is $12 a user a month, with 25% off billed yearly. Organizations is $28 a user a month.
+- **Free:** $0 for 1 user.
+- **Teams:** $12 a user a month, with 25% off billed yearly.
+- **Organizations:** $28 a user a month.
 
 ## 4. SavvyCal
 
+[SavvyCal](https://savvycal.com/) puts care into the booking page, so the person booking has an easy time. Both paid plans include round robin and collective team links. It suits teams who care most about how the booking page feels.
+
 [![SavvyCal homepage](/assets/blog/tools/savvycal.webp)](https://savvycal.com/)
 
-**Website:** [savvycal.com](https://savvycal.com/)
+### Key features
 
-SavvyCal puts care into the booking page, so the person booking has an easy time. Both paid plans include round robin and collective team links. The free plan lets you set up links and send meeting polls, but people can only book from your links on a paid plan.
+- **Round robin:** Round robin and collective links on both paid plans.
+- **Meeting polls:** Free, along with link setup.
+- **Your own domain:** Booking pages on your own domain on Premium.
+- **No branding:** Premium removes SavvyCal branding.
 
-**Best for:** teams who care most about how the booking page feels.
+### Pros
 
-**What stands out:**
+- **Easy booking page:** Built with the person booking in mind.
+- **Round robin on the first paid plan:** Basic includes it.
+- **Money-back guarantee:** 30 days on paid plans.
 
-- Round robin and collective links on both paid plans.
-- Free meeting polls and link setup.
-- A 30-day money-back guarantee on paid plans.
-- Premium adds booking pages on your own domain and removes SavvyCal branding.
+### Cons
 
-**Where it falls short:**
+- **No self-serve trial:** You can email support to try it first.
+- **No routing by answer listed:** Its pricing page doesn't list routing by form answers.
+- **Free plan can't take bookings:** People can only book from your links on a paid plan.
 
-- There's no self-serve free trial. You can email support to try it first.
-- Its pricing page doesn't list routing by form answers.
+### Price and plans
 
-**Pricing:** Basic is $10 a user a month billed yearly ($12 monthly). Premium is $17 billed yearly ($20 monthly).
+The free plan lets you set up links and send meeting polls.
+
+- **Basic:** $10 a user a month billed yearly ($12 monthly).
+- **Premium:** $17 a user a month billed yearly ($20 monthly).
 
 ## 5. OnceHub
 
+[OnceHub](https://www.oncehub.com/) has a plan for each job, from Schedule up to Engage. Round robin and routing forms arrive on Route, and Engage adds chatbots for your website. It suits teams who want routing forms and a website chatbot from one vendor.
+
 [![OnceHub homepage](/assets/blog/tools/oncehub.webp)](https://www.oncehub.com/)
 
-**Website:** [oncehub.com](https://www.oncehub.com/)
+### Key features
 
-OnceHub has a plan for each job, from Schedule up to Engage. Round robin and routing forms arrive on Route. Engage adds chatbots for your website.
+- **Round robin and routing forms:** On Route.
+- **Contact owner:** Meetings assigned to the CRM contact owner on Route and up.
+- **CRM connections:** Native Salesforce and HubSpot connections from Schedule up.
+- **Chatbots:** On Engage.
 
-**Best for:** teams who want routing forms and a website chatbot from one vendor.
+### Pros
 
-**What stands out:**
+- **Free plan:** A free Basic plan to start.
+- **Trial:** A 14-day trial of Engage with no credit card.
 
-- Round robin and routing forms on Route.
-- Meetings assigned to the CRM contact owner on Route and up.
-- Native Salesforce and HubSpot connections from Schedule up.
-- A 14-day trial of Engage with no credit card.
+### Cons
 
-**Where it falls short:**
+- **Round robin skips Schedule:** You start on Route.
+- **Chatbots cost more:** They only come on Engage, the top self-serve plan.
 
-- Round robin skips the Schedule plan, so you start on Route.
-- Chatbots only come on Engage, the top self-serve plan.
+### Price and plans
 
-**Pricing:** Free Basic plan. Schedule is $10 a user a month billed yearly. Route is $19 billed yearly ($23 monthly), and Engage is $39 billed yearly.
+- **Basic:** Free.
+- **Schedule:** $10 a user a month billed yearly.
+- **Route:** $19 a user a month billed yearly ($23 monthly).
+- **Engage:** $39 a user a month billed yearly.
 
 ## 6. Zcal
 
+[Zcal](https://zcal.co/) gives you unlimited links on a free plan that stays free. Round robin and collective events start on Pro, which also adds follow-up emails and SMS reminders. It suits small teams who want round robin at the lowest price here.
+
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
-**Website:** [zcal.co](https://zcal.co/)
+### Key features
 
-Zcal gives you unlimited links on a free plan that stays free. Round robin and collective events start on Pro. Pro also adds follow-up emails and SMS reminders.
+- **Free plan:** Unlimited links and meeting polls.
+- **Round robin:** Round robin and collective events on Pro.
+- **SMS reminders:** 750 credits a month on Pro, 1,500 on Business.
+- **Unlimited teams:** On Business.
 
-**Best for:** small teams who want round robin at the lowest price here.
+### Pros
 
-**What stands out:**
+- **Lowest price here:** Round robin on Pro at $7 a user a month.
+- **Follow-up built in:** Pro adds follow-up emails and SMS reminders.
 
-- Unlimited links and meeting polls on the free plan.
-- Round robin on Pro at $7 a user a month.
-- 750 SMS reminder credits a month on Pro, 1,500 on Business.
-- Unlimited teams on Business.
+### Cons
 
-**Where it falls short:**
+- **One team on Pro:** More teams need Business.
+- **No routing by answer listed:** Its pricing page doesn't list routing by answers.
 
-- Pro covers one team. More teams need Business.
-- Its pricing page doesn't list routing by answers.
+### Price and plans
 
-**Pricing:** Free plan. Pro is $7 a user a month. Business is $12.
+- **Free:** $0, with unlimited links.
+- **Pro:** $7 a user a month.
+- **Business:** $12 a user a month.
 
 ## 7. HubSpot
 
+[HubSpot](https://www.hubspot.com/)'s meetings tool lives inside its CRM. Team scheduling pages, round robin included, need a paid Sales Hub or Service Hub plan and a Sales or Service seat. When a contact picks a time, HubSpot books the teammate who is free at that time. It suits teams who already run their sales in HubSpot.
+
 [![HubSpot homepage](/assets/blog/tools/hubspot.webp)](https://www.hubspot.com/)
 
-**Website:** [hubspot.com](https://www.hubspot.com/)
+### Key features
 
-HubSpot's meetings tool lives inside its CRM. Team scheduling pages, round robin included, need a paid Sales Hub or Service Hub plan and a Sales or Service seat. When a contact picks a time, HubSpot books the teammate who is free at that time.
+- **Booking on the record:** Bookings land straight on the contact record.
+- **Round robin:** Books whoever on the team is free at the chosen time.
+- **Free CRM:** For up to 2 users.
+- **Workflows:** Up to 50 on Starter.
 
-**Best for:** teams who already run their sales in HubSpot.
+### Pros
 
-**What stands out:**
+- **All in one CRM:** Meetings sit where your sales team already works.
+- **Free start:** The CRM is free for up to 2 users.
 
-- Bookings land straight on the contact record.
-- Round robin books whoever on the team is free at the chosen time.
-- A free CRM for up to 2 users.
-- Workflows on Starter, up to 50.
+### Cons
 
-**Where it falls short:**
+- **Disconnected calendars:** HubSpot's own help pages say a teammate with a disconnected calendar is treated as always free.
+- **Onboarding fee:** Professional adds a required $1,500 one-time onboarding fee.
+- **Paid seat for team pages:** Round robin needs a paid Sales Hub or Service Hub plan and a Sales or Service seat.
 
-- HubSpot's own help pages say a teammate with a disconnected calendar is treated as always free.
-- Professional adds a required $1,500 one-time onboarding fee.
+### Price and plans
 
-**Pricing:** Free for up to 2 users. Starter is $20 a seat a month paid monthly, with a lower price billed yearly. Professional is $90 a seat a month billed yearly, plus onboarding.
+- **Free:** For up to 2 users.
+- **Starter:** $20 a seat a month paid monthly, with a lower price billed yearly.
+- **Professional:** $90 a seat a month billed yearly, plus a $1,500 one-time onboarding fee.
 
 ## 8. Zoho Bookings
 
+[Zoho Bookings](https://www.zoho.com/bookings/) fits teams who already use Zoho apps. The free plan covers one user with reminders and two-way calendar sync. Round robin is on its feature list, but the pricing page doesn't show which plan includes it.
+
 [![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
 
-**Website:** [zoho.com](https://www.zoho.com/bookings/)
+### Key features
 
-Zoho Bookings fits teams who already use Zoho apps. The free plan covers one user with reminders and two-way calendar sync. Round robin is on its feature list, but the pricing page doesn't show which plan includes it.
+- **Free plan:** One user, with reminder emails and two-way calendar sync.
+- **Zoho CRM sync:** Bookings connect to Zoho CRM.
+- **Round robin:** On its feature list.
+- **Zoho One:** Zoho One customers get Premium.
 
-**Best for:** teams already paying for Zoho.
+### Pros
 
-**What stands out:**
+- **Low prices:** Low per-user prices.
+- **Good fit for Zoho users:** Premium comes with Zoho One.
 
-- A free plan for one user with reminder emails.
-- Zoho CRM sync.
-- Low per-user prices.
-- Zoho One customers get Premium.
+### Cons
 
-**Where it falls short:**
+- **Free plan is for one:** Only one user.
+- **Unclear round robin plan:** You'll need to ask Zoho which plan has round robin.
 
-- The free plan is for one user only.
-- You'll need to ask Zoho which plan has round robin.
+### Price and plans
 
-**Pricing:** Free for one user. Basic is $6 a user a month billed yearly ($8 monthly). Premium is $9 billed yearly ($12 monthly).
+- **Free:** For 1 user.
+- **Basic:** $6 a user a month billed yearly ($8 monthly).
+- **Premium:** $9 a user a month billed yearly ($12 monthly).
 
 ## 9. YouCanBookMe
 
+[YouCanBookMe](https://youcanbook.me/) keeps booking pages simple. Round robin comes on the Team plan, along with more calendars and booking pages for each person. It suits teams who want plain booking pages with a rotation.
+
 [![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
 
-**Website:** [youcanbook.me](https://youcanbook.me/)
+### Key features
 
-YouCanBookMe keeps booking pages simple. Round robin comes on the Team plan, along with more calendars and booking pages for each person. New users get a 14-day trial with no credit card.
+- **Round robin:** On Team.
+- **More calendars:** Up to 10 calendars for each user on Team.
+- **Forms:** Unlimited questions on Professional and Team.
+- **Reminders:** From the Individual plan up.
 
-**Best for:** teams who want plain booking pages with a rotation.
+### Pros
 
-**What stands out:**
+- **Simple pages:** Booking pages kept plain and simple.
+- **Free trial:** New users get 14 days with no credit card.
 
-- Round robin on Team.
-- Up to 10 calendars for each user on Team.
-- Forms with unlimited questions on Professional and Team.
-- Reminders from the Individual plan up.
+### Cons
 
-**Where it falls short:**
+- **Small free plan:** 30 bookings a month, with a "Powered for free" button.
+- **Round robin on the top plan only:** You need Team.
 
-- The free plan allows 30 bookings a month and shows a "Powered for free" button.
-- Round robin only comes on the top plan.
+### Price and plans
 
-**Pricing:** Free plan. See their pricing page for paid plans.
+- **Free:** 30 bookings a month.
+- **Individual, Professional and Team:** See their pricing page.
 
-## How to choose
+## Which round robin scheduling software should you pick?
 
-- If you want the form and the rotation in one tool, with weights and away days, pick Claritia Pro.
-- If your buyers already know Calendly and you route by Salesforce or HubSpot owner, pick Calendly Teams.
-- If you run your whole sales process in HubSpot, use its team scheduling pages.
-- If price comes first and a plain rotation is enough, pick Zcal Pro.
-- If you like open source and want routing forms too, pick Cal.com Teams.
+- If you want the form and the rotation in one tool, with weights and away days, pick [Claritia](/) Pro.
+- If your buyers already know Calendly and you route by Salesforce or HubSpot owner, pick [Calendly](https://calendly.com/) Teams.
+- If you run your whole sales process in HubSpot, use [HubSpot](https://www.hubspot.com/)'s team scheduling pages.
+- If price comes first and a plain rotation is enough, pick [Zcal](https://zcal.co/) Pro.
+- If you like open source and want routing forms too, pick [Cal.com](https://cal.com/) Teams.
 
 ## Questions
 
@@ -278,4 +362,10 @@ A plain booking link works. A form helps when different leads need different peo
 
 Among the tools here, Zcal Pro lists round robin at $7 a user a month. Claritia Pro is $31 a seat billed yearly and adds forms and routing in the same plan.
 
-Set up your first team rotation today. [Start free](https://app.tryclaritia.com/signup), then see how [routing](/products/routing) and [meetings](/products/meetings) work together.
+## Get started
+
+Set up your first team rotation today, and let each form lead book the right teammate.
+
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first form, then turn on round robin with weights and away days on Pro.
+
+You can also see how [routing](/products/routing) and [meetings](/products/meetings) work together.

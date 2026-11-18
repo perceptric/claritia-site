@@ -6,11 +6,38 @@ kind: form
 date: 2026-11-06
 ---
 
-A form builder is where most small teams meet new people. A visitor fills in a contact form or a quote request, and that answer starts the work. This guide is for teams that want a form they can build in an afternoon and trust for years.
+A form builder is where most small teams meet new people. A visitor fills in a contact form or a quote request, and that answer starts the work. The trouble is that many tools look alike on the sign-up page, and the limits only show up once your form is live.
 
-As you compare, look past the template count. Check the monthly answer limit and the real price for your whole team. Then look at what happens after someone clicks submit, because that step decides whether a form brings in work or just collects rows.
+A good form builder is one you can set up in an afternoon and trust for years. It has a fair monthly answer limit, a clear price for your whole team, and something useful happens after someone clicks submit, so the form brings in work instead of just collecting rows.
 
-## How we picked
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build unlimited forms that book a meeting with the right person, with 250 submissions a month on the free plan.
+
+In this post, we compare 9 form builders for small teams. You'll see what each one costs, what it does well, and where it falls short.
+
+## Main points
+
+- Most form builders cover the basics. The real differences are answer limits, seat pricing and what happens after submit.
+- Free plans range from 30 submissions a month to unlimited within fair use.
+- Some tools charge for every builder, and others give you unlimited seats or free teammates.
+- Top picks: [Claritia](/), [Typeform](https://www.typeform.com/), [Jotform](https://www.jotform.com/), [Fillout](https://www.fillout.com/), [Tally](https://tally.so/), [Paperform](https://paperform.co/), [Zoho Forms](https://www.zoho.com/forms/), [Cognito Forms](https://www.cognitoforms.com/) and [Google Forms](https://www.google.com/forms/about/).
+- Pick [Claritia](/) if you want each form to end in a booked meeting and a follow-up.
+
+## What is a form builder?
+
+A form builder is a tool for making online forms without code. You add questions, set the rules, pick a look and share the form by link or embed it on your site. Each answer is saved, and most tools can send it on to other apps.
+
+Typical features include:
+
+- A drag-and-drop or doc-style editor.
+- Templates for common forms like contact, quote and sign-up forms.
+- Conditional logic that shows or skips questions based on answers.
+- Design controls for fonts, colors and layout.
+- Integrations that send answers to a spreadsheet, CRM or email tool.
+- Extras such as payments, file uploads, calculations or meeting booking.
+
+## How to choose a form builder
+
+Template counts look impressive, but they rarely decide whether a form works for you. These five checks matter more:
 
 - **Ease of building.** You can get a working form live on the same day, without help from a developer.
 - **A free plan you can use.** Enough answers each month to run a real form before you pay.
@@ -18,225 +45,297 @@ As you compare, look past the template count. Check the monthly answer limit and
 - **Logic and design.** Questions that change with each answer, and a look that fits your brand.
 - **What happens after submit.** Emails, integrations, routing and meeting booking.
 
-## The quick comparison
+## The 9 best form builders for small teams in 2026
 
 | Tool | Best for | Free plan | Paid from | Known for |
 |---|---|---|---|---|
-| Claritia | Forms that book meetings | Unlimited forms, 250 submissions a month | $12 a seat a month, billed yearly | Booking a meeting inside the form |
-| Typeform | Polished, branded forms | Yes, with a low response cap | $28 a month, billed yearly | One question at a time |
-| Jotform | Huge template choice | 5 forms, 100 submissions a month | $34 a month, billed yearly | Widgets and PDF tools |
-| Fillout | Big free allowance | 1,000 responses a month | $15 a month, billed yearly | Unlimited seats on every plan |
-| Tally | Free forms at volume | Unlimited forms and submissions (fair use) | $24 a month | Doc-style editor |
-| Paperform | Forms that read like a page | 30 submissions a month | $49 a month, billed yearly | Unlimited users |
-| Zoho Forms | Teams on Zoho apps | 3 forms, 500 submissions a month | See their pricing page | Zoho CRM link |
-| Cognito Forms | Forms with heavy math | 100 entries a month | $19 a month, billed yearly | Calculations and repeating sections |
-| Google Forms | Quick internal surveys | Free with a Google account | See their pricing page | Google Sheets link |
+| [Claritia](/) | Forms that book meetings | Unlimited forms, 250 submissions a month | $12 a seat a month, billed yearly | Booking a meeting inside the form |
+| [Typeform](https://www.typeform.com/) | Polished, branded forms | Yes, with a low response cap | $28 a month, billed yearly | One question at a time |
+| [Jotform](https://www.jotform.com/) | Huge template choice | 5 forms, 100 submissions a month | $34 a month, billed yearly | Widgets and PDF tools |
+| [Fillout](https://www.fillout.com/) | Big free allowance | 1,000 responses a month | $15 a month, billed yearly | Unlimited seats on every plan |
+| [Tally](https://tally.so/) | Free forms at volume | Unlimited forms and submissions (fair use) | $24 a month | Doc-style editor |
+| [Paperform](https://paperform.co/) | Forms that read like a page | 30 submissions a month | $49 a month, billed yearly | Unlimited users |
+| [Zoho Forms](https://www.zoho.com/forms/) | Teams on Zoho apps | 3 forms, 500 submissions a month | See their pricing page | Zoho CRM link |
+| [Cognito Forms](https://www.cognitoforms.com/) | Forms with heavy math | 100 entries a month | $19 a month, billed yearly | Calculations and repeating sections |
+| [Google Forms](https://www.google.com/forms/about/) | Quick internal surveys | Free with a Google account | See their pricing page | Google Sheets link |
 
 ## 1. Claritia
 
+[Claritia](/) is a form builder made for small teams that want each form to lead somewhere. You can build a form by hand or describe it in one plain sentence and let Tia, the AI form builder, draft it for you. Each form can book a meeting with the right person on the spot, and workflows send the follow-up, so it fits teams whose forms should turn visitors into leads and booked meetings.
+
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
-**Website:** [tryclaritia.com](/)
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** and build your first form from one sentence.
 
-Claritia is a form builder made for small teams that want each form to lead somewhere. You can build a form by hand or describe it in one plain sentence and let Tia, the AI form builder, draft it for you. Each form can book a meeting with the right person on the spot, and workflows send the follow-up.
+### Key features
 
-**Best for:** Small teams whose forms should turn visitors into leads and booked meetings.
+- **Unlimited forms for free:** Multi-page forms, conditional logic, calculations and file uploads on the free plan.
+- **Tia, the AI form builder:** Describe the form in one plain sentence and Tia drafts it.
+- **Templates and styles:** 840 form templates and 18 form styles to start from.
+- **Booking inside the form:** People book a meeting in the same flow, linked to Google Calendar or Outlook.
+- **Follow-up workflows:** Confirmation emails and reminders go out after each booking.
 
-**What stands out:**
-- Unlimited forms on the free plan, with multi-page forms, conditional logic, calculations and file uploads.
-- 435 form templates and 18 form styles to start from.
-- Meeting booking inside the form, linked to Google Calendar or Outlook.
-- Only teammates people book meetings with need a seat. Teammates who only build forms or read answers are free.
+### Pros
 
-**Where it falls short:**
-- It's a newer tool, so its app marketplace and community are smaller than the big names.
-- There's no native mobile app yet, and the Zapier and Make apps are still on the way.
+- **Forms that lead somewhere:** The booking and the follow-up start from the form.
+- **Fair seat pricing:** Only teammates people book meetings with need a seat. Teammates who only build forms or read answers are free.
+- **A lot on the free plan:** Logic, calculations and file uploads cost nothing.
 
-**Pricing:** Free for 250 submissions a month. Paid plans run from $15 to $79 a seat a month, or $12 to $63 billed yearly.
+### Cons
+
+- **Newer tool:** Its app marketplace and community are smaller than the big names.
+- **Gaps still filling in:** There's no native mobile app yet, and the Zapier and Make apps are still on the way.
+
+### Price and plans
+
+You can start on the free plan with no card. Paid plans are priced per seat, and a seat is a teammate people can book a meeting with.
+
+- **Free:** $0 for 1 seat and 250 submissions a month.
+- **Starter:** $15 a seat a month ($12 billed yearly). Adds HubSpot, e-signatures and Stripe payments.
+- **Pro:** $39 a seat a month ($31 billed yearly). Adds round robin and routing by answer.
+- **Business:** $79 a seat a month ($63 billed yearly). Adds Salesforce, partial answers and owner first.
 
 ## 2. Typeform
 
+[Typeform](https://www.typeform.com/) shows one question at a time, which makes a long form feel like a short chat. Its design tools are among the most polished in the market, and it connects to a wide range of apps. It suits brands that care most about a striking, calm form layout. The trade-off is price, since each plan caps your monthly responses.
+
 [![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
 
-**Website:** [typeform.com](https://www.typeform.com/)
+### Key features
 
-Typeform shows one question at a time, which makes a long form feel like a short chat. Its design tools are among the most polished in the market, and it connects to a wide range of apps. The trade-off is price, since each plan caps your monthly responses.
+- **One question at a time:** A layout that works well on phones.
+- **Design controls:** Strong styling tools and a large set of templates.
+- **Logic:** Sends people down different paths based on their answers.
+- **More users as you grow:** Up to 5 users on Business.
 
-**Best for:** Brands that care most about a striking, calm form layout.
+### Pros
 
-**What stands out:**
-- A one-question-at-a-time layout that works well on phones.
-- Strong design controls and a large set of templates.
-- Logic that sends people down different paths based on their answers.
-- More users as you move up, with 5 on Business.
+- **Polished forms:** Its design tools are among the best you'll find.
+- **Many apps:** Connects to a wide range of tools.
 
-**Where it falls short:**
-- Basic includes 100 responses a month and 1 user.
-- The free plan has a low response cap, so it suits testing more than live use.
+### Cons
 
-**Pricing:** Basic is $28 a month billed yearly ($39 monthly). Plus is $56 and Business is $91 a month, billed yearly.
+- **Low caps on Basic:** 100 responses a month and 1 user.
+- **Free plan for testing:** The low response cap suits testing more than live use.
+
+### Price and plans
+
+- **Free:** Yes, with a low response cap.
+- **Basic:** $28 a month billed yearly, or $39 billed monthly.
+- **Plus:** $56 a month, billed yearly.
+- **Business:** $91 a month, billed yearly.
 
 ## 3. Jotform
 
+[Jotform](https://www.jotform.com/) has one of the largest template libraries of any form builder, plus widgets for almost any field you can think of. It also offers extra tools inside the same account, such as a PDF editor and Jotform Tables. Every plan below Enterprise is for a single user, so it suits solo builders who want a template for every kind of form.
+
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
-**Website:** [jotform.com](https://www.jotform.com/)
+### Key features
 
-Jotform has one of the largest template libraries of any form builder, plus widgets for almost any field you can think of. It also offers extra tools inside the same account, such as a PDF editor and Jotform Tables. Every plan below Enterprise is for a single user.
+- **Templates and widgets:** A very large template library and a long list of widgets.
+- **Extra tools:** A PDF editor and Jotform Tables in the same account.
+- **HIPAA features:** On Gold and Enterprise.
+- **Mobile apps:** For filling in and managing forms.
 
-**Best for:** Solo builders who want a template for every kind of form.
+### Pros
 
-**What stands out:**
-- A very large template library and a long list of widgets.
-- Extra tools for PDFs and tables in one account.
-- HIPAA features on Gold and Enterprise.
-- Mobile apps for filling and managing forms.
+- **A template for almost anything:** Few tools match its library.
+- **More than forms:** PDFs and tables live in one account.
 
-**Where it falls short:**
-- Plans below Enterprise are single-user, which is hard for a growing team.
-- The free plan stops at 5 forms and 100 submissions a month, with Jotform branding.
+### Cons
 
-**Pricing:** Bronze is $34 a month billed yearly ($39 monthly) for 25 forms and 1,000 submissions a month. Silver is $39 and Gold is $99 a month, billed yearly.
+- **Single user:** Plans below Enterprise are for one user, which is hard for a growing team.
+- **Small free plan:** 5 forms and 100 submissions a month, with Jotform branding.
+
+### Price and plans
+
+- **Starter:** Free, with 5 forms and 100 submissions a month.
+- **Bronze:** $34 a month billed yearly, or $39 billed monthly. 25 forms and 1,000 submissions a month.
+- **Silver:** $39 a month, billed yearly.
+- **Gold:** $99 a month, billed yearly.
 
 ## 4. Fillout
 
+[Fillout](https://www.fillout.com/) has one of the most generous free plans you'll find, with 1,000 responses a month and unlimited seats. Conditional logic and payments are free too. It's a strong pick for teams that want many free responses and many builders, and for teams that keep their data in Airtable or Google Sheets.
+
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
-**Website:** [fillout.com](https://www.fillout.com/)
+### Key features
 
-Fillout has one of the most generous free plans you'll find, with 1,000 responses a month and unlimited seats. Conditional logic and payments are free too. It's a strong pick for teams that keep their data in Airtable or Google Sheets.
+- **Big free allowance:** 1,000 responses a month.
+- **Unlimited seats:** On every plan.
+- **Scheduling:** Scheduling forms on the free plan, and Calendly scheduling from Starter.
+- **Airtable and Google Sheets:** Linked on the free plan.
 
-**Best for:** Teams that want many free responses and many builders.
+### Pros
 
-**What stands out:**
-- 1,000 free responses a month.
-- Unlimited seats on every plan.
-- Scheduling forms on the free plan, and Calendly scheduling from Starter.
-- Airtable and Google Sheets links on the free plan.
+- **Room for the whole team:** Everyone can build forms at no extra cost.
+- **Logic and payments for free:** Both are on the free plan.
 
-**Where it falls short:**
-- Partial submissions are a Business feature.
-- Free forms carry a Fillout badge and skip custom themes.
+### Cons
 
-**Pricing:** Starter is $15 a month billed yearly. Pro is $40 and Business is $75 a month, billed yearly.
+- **Partial submissions cost more:** They're a Business feature.
+- **Free plan limits:** Free forms carry a Fillout badge and skip custom themes.
+
+### Price and plans
+
+- **Free:** $0, with 1,000 responses a month.
+- **Starter:** $15 a month, billed yearly.
+- **Pro:** $40 a month, billed yearly.
+- **Business:** $75 a month, billed yearly.
 
 ## 5. Tally
 
+[Tally](https://tally.so/) works like a writing doc. You type, and the page turns into a form. Its free plan has unlimited forms and submissions under fair use, and it already includes logic and payments. It suits makers and small teams who want free forms with no answer cap.
+
 [![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
 
-**Website:** [tally.so](https://tally.so/)
+### Key features
 
-Tally works like a writing doc. You type, and the page turns into a form. Its free plan has unlimited forms and submissions under fair use, and it already includes logic and payments.
+- **Unlimited free use:** Unlimited forms and submissions on the free plan, under fair use rules.
+- **Calculations and signatures:** At no cost.
+- **Free integrations:** Google Sheets, Notion, Airtable and webhooks.
+- **Languages:** More than 45, with right-to-left support.
 
-**Best for:** Makers and small teams who want free forms with no answer cap.
+### Pros
 
-**What stands out:**
-- Unlimited forms and submissions on the free plan, under fair use rules.
-- Calculations and signatures at no cost.
-- Free links to Google Sheets, Notion, Airtable and webhooks.
-- More than 45 languages, with right-to-left support.
+- **No answer cap:** Volume doesn't push you to pay.
+- **Easy to learn:** Building a form feels like typing a note.
 
-**Where it falls short:**
-- Removing Tally branding and seeing partial submissions need Pro.
-- Team collaboration and custom domains are also on Pro.
+### Cons
 
-**Pricing:** Pro is $24 a month, with two months off when you pay yearly. Business is $74 a month.
+- **Branding and partial submissions:** Removing Tally branding and seeing partial submissions need Pro.
+- **Team features cost more:** Team collaboration and custom domains are also on Pro.
+
+### Price and plans
+
+- **Free:** $0, unlimited under fair use.
+- **Pro:** $24 a month.
+- **Business:** $74 a month.
+
+Paying yearly gives two months off.
 
 ## 6. Paperform
 
+[Paperform](https://paperform.co/) lets you build a form the way you'd write a web page, with content and questions side by side. Paid plans include unlimited submissions under fair use, and every plan has unlimited users. It suits teams that want a form to double as a landing page. The free plan is small, so most people treat it as a trial.
+
 [![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
 
-**Website:** [paperform.co](https://paperform.co/)
+### Key features
 
-Paperform lets you build a form the way you'd write a web page, with content and questions side by side. Paid plans include unlimited submissions under fair use, and every plan has unlimited users. The free plan is small, so most people treat it as a trial.
+- **Page-like editor:** Mix content and questions on one page.
+- **Unlimited users:** On every plan.
+- **Unlimited submissions:** On paid plans, under fair use.
+- **Free trial:** 7 days of paid features with no card.
 
-**Best for:** Teams that want a form to double as a landing page.
+### Pros
 
-**What stands out:**
-- A page-like editor that mixes content and questions.
-- Unlimited users on every plan.
-- Unlimited submissions on paid plans, under fair use.
-- A 7-day free trial of paid features with no card.
+- **Forms that sell:** Room to explain your offer next to the questions.
+- **No seat math:** Everyone on the team can use it on any plan.
 
-**Where it falls short:**
-- 30 free submissions a month is enough for testing and little more.
-- Pro costs more than many rivals' first paid plan.
+### Cons
 
-**Pricing:** Pro is $49 a month billed yearly ($59 monthly). Business is $124 a month billed yearly ($149 monthly).
+- **Tiny free plan:** 30 submissions a month is enough for testing and little more.
+- **Higher starting price:** Pro costs more than many rivals' first paid plan.
+
+### Price and plans
+
+- **Free:** 30 submissions a month.
+- **Pro:** $49 a month billed yearly, or $59 billed monthly.
+- **Business:** $124 a month billed yearly, or $149 billed monthly.
 
 ## 7. Zoho Forms
 
+[Zoho Forms](https://www.zoho.com/forms/) fits businesses that already run on Zoho CRM and other Zoho apps. Its paid plans have high submission caps, and it has a mobile app for collecting answers in the field. The free plan gives one user 3 forms and 500 submissions a month.
+
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 
-**Website:** [zoho.com](https://www.zoho.com/forms/)
+### Key features
 
-Zoho Forms fits teams that already run on Zoho CRM and other Zoho apps. Its paid plans have high submission caps, and it has a mobile app for collecting answers in the field. The free plan gives one user 3 forms and 500 submissions a month.
+- **Zoho CRM:** A close link with Zoho CRM.
+- **High caps:** From 10,000 submissions a month on Basic.
+- **Team size:** Up to 10 users on Standard.
+- **Mobile app:** Collect answers on the go.
 
-**Best for:** Businesses that already use Zoho.
+### Pros
 
-**What stands out:**
-- A close link with Zoho CRM.
-- High caps, from 10,000 submissions a month on Basic.
-- Up to 10 users on Standard.
-- A mobile app for collecting answers on the go.
+- **Made for Zoho teams:** Answers fit straight into Zoho CRM.
+- **Room for volume:** Paid plans start with high submission caps.
 
-**Where it falls short:**
-- It works best inside the Zoho world.
-- The free plan stops at 3 forms.
+### Cons
 
-**Pricing:** See their pricing page.
+- **Best inside Zoho:** It works best in the Zoho world.
+- **Small free plan:** It stops at 3 forms.
+
+### Price and plans
+
+- **Free:** 1 user, 3 forms and 500 submissions a month.
+- **Paid plans:** See their pricing page.
 
 ## 8. Cognito Forms
 
+[Cognito Forms](https://www.cognitoforms.com/) is strong at math. It handles calculations and repeating sections well, which makes it a good fit for quotes and order forms with totals. Its free plan even takes payments.
+
 [![Cognito Forms homepage](/assets/blog/tools/cognito-forms.webp)](https://www.cognitoforms.com/)
 
-**Website:** [cognitoforms.com](https://www.cognitoforms.com/)
+### Key features
 
-Cognito Forms is strong at math. It handles calculations and repeating sections well, which makes it a good fit for quotes and order forms. Its free plan even takes payments.
+- **Calculations:** Work out prices and totals.
+- **Repeating sections:** For lists of items or people.
+- **Payments:** On the free plan.
+- **Unlimited forms:** Build as many as you need.
 
-**Best for:** Quotes and order forms with totals.
+### Pros
 
-**What stands out:**
-- Calculations for prices and totals.
-- Repeating sections for lists of items or people.
-- Payments on the free plan.
-- Unlimited forms.
+- **Good at quotes:** Totals and repeating items are where it shines.
+- **Paid forms for free:** Take payments before you upgrade.
 
-**Where it falls short:**
-- The free plan takes 100 entries a month and shows Cognito branding.
-- The builder suits detailed forms more than quick, styled ones.
+### Cons
 
-**Pricing:** Pro is $19 a month billed yearly ($24 monthly), with 2,000 entries a month.
+- **Small free plan:** 100 entries a month, with Cognito branding.
+- **Less suited to quick forms:** The builder fits detailed forms more than quick, styled ones.
+
+### Price and plans
+
+- **Free:** 100 entries a month.
+- **Pro:** $19 a month billed yearly, or $24 billed monthly. 2,000 entries a month.
 
 ## 9. Google Forms
 
+[Google Forms](https://www.google.com/forms/about/) is the simple, free choice most people already know. Answers flow into Google Sheets, and anyone with a Google account can build a form in minutes. It suits quick internal surveys and quizzes more than customer-facing lead forms.
+
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 
-**Website:** [google.com](https://www.google.com/forms/about/)
+### Key features
 
-Google Forms is the simple, free choice most people already know. Answers flow into Google Sheets, and anyone with a Google account can build a form in minutes. It suits internal surveys and quizzes more than customer-facing lead forms.
+- **Free:** With a Google account.
+- **Google Sheets:** Answers go straight to a sheet.
+- **Quizzes:** With grading.
+- **Shared editing:** Several editors can work on one form at the same time.
 
-**Best for:** Quick internal surveys and quizzes.
+### Pros
 
-**What stands out:**
-- Free with a Google account.
-- A direct link to Google Sheets.
-- Quizzes with grading.
-- Several editors can work on one form at the same time.
+- **Nothing to set up:** Anyone with a Google account can start in minutes.
+- **Good for internal work:** It suits surveys and quizzes for your own team.
 
-**Where it falls short:**
-- Few design options and simple, section-based logic.
-- No built-in payments or meeting booking.
+### Cons
 
-**Pricing:** Free with a Google account. Business use comes with Google Workspace; see their pricing page.
+- **Basic design and logic:** Few design options and simple, section-based logic.
+- **No payments or booking:** Neither is built in.
 
-## How to choose
+### Price and plans
 
-- **If your forms should end in a booked call,** pick Claritia. The booking and the follow-up start from the form.
-- **If design matters most and the budget is there,** pick Typeform.
-- **If you need many free responses or many builders,** pick Fillout or Tally.
-- **If you run on Zoho or need heavy math,** pick Zoho Forms or Cognito Forms.
-- **If you need a quick internal survey,** Google Forms does the job.
+- **Personal:** Free with a Google account.
+- **Business:** Comes with Google Workspace. See their pricing page.
+
+## Which form builder should you pick?
+
+- **If your forms should end in a booked call,** pick [Claritia](/). The booking and the follow-up start from the form.
+- **If design matters most and the budget is there,** pick [Typeform](https://www.typeform.com/).
+- **If you need many free responses or many builders,** pick [Fillout](https://www.fillout.com/) or [Tally](https://tally.so/).
+- **If you run on Zoho or need heavy math,** pick [Zoho Forms](https://www.zoho.com/forms/) or [Cognito Forms](https://www.cognitoforms.com/).
+- **If you need a quick internal survey,** [Google Forms](https://www.google.com/forms/about/) does the job.
 
 ## Questions
 
@@ -260,6 +359,10 @@ Yes. In Claritia, people pick a time inside the form, and the booking lands on G
 
 It depends on the tool. Jotform plans below Enterprise are single-user, while Fillout has unlimited seats. In Claritia, only teammates people book meetings with need a seat.
 
-## Start building
+## Get started
 
-Build your first form from one sentence with Tia, or pick one of the [435 templates](/templates). [Start free](https://app.tryclaritia.com/signup), and see how [Claritia forms](/products/forms) turn answers into booked meetings.
+Build your first form from one sentence with Tia, or pick one of the [840 templates](/templates).
+
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first form and book your first meeting today.
+
+You can also see how [Claritia forms](/products/forms) turn answers into booked meetings.

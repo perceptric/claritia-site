@@ -6,230 +6,305 @@ kind: workflow
 date: 2026-10-22
 ---
 
-A lead often goes quiet for an ordinary reason. They filled your form and meant to book, then a meeting pulled them away. Or they booked and missed the call. Lead follow-up software sends the next message at the right time, so a good lead gets a second and third chance to talk to you.
+A lead often goes quiet for an ordinary reason. They filled your form and meant to book, then a meeting pulled them away. Or they booked and missed the call. Without a next message, that lead is gone.
 
-This post is for small teams who want that follow-up to run on its own. Start with the moments that matter to you: a form fill with no booking, a meeting tomorrow, a no-show, a call that just ended. Then pick the tool whose channels and triggers match those moments.
+Lead follow-up software sends the next message at the right time, so a good lead gets a second and third chance to talk to you. The right tool runs on its own and starts at the moments that matter to you: a form fill with no booking, a meeting tomorrow, a no-show, a call that just ended.
 
-## How we picked
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to send reminders before every meeting, then follow up with form leads until they book on Starter.
+
+In this post, we compare 8 lead follow-up tools for small teams. You'll see what starts each one's follow-up, the channels it uses and what each plan costs.
+
+## Main points
+
+- Start with the moments that matter to you, then pick the tool whose triggers match them.
+- Tools differ by channel. Some send email, some call and text, and some add LinkedIn steps.
+- Meeting tools like Calendly and Zcal follow up around a booked meeting, so leads who never book get none.
+- Top picks: [Claritia](/), [HubSpot Sales Hub](https://www.hubspot.com/products/sales), [Close](https://www.close.com/), [ActiveCampaign](https://www.activecampaign.com/), [lemlist](https://www.lemlist.com/), [Kixie](https://www.kixie.com/), [Calendly](https://calendly.com/) and [Zcal](https://zcal.co/).
+- Pick [Claritia](/) if your leads fill a form and you want every one of them to end up on the calendar.
+
+## What is lead follow-up software?
+
+Lead follow-up software sends the next message to a lead at the right moment, such as a day after a form fill or right after a missed meeting. It stops once the lead books or replies.
+
+Typical features include:
 
 - Triggers tied to real moments, such as a form fill or a missed meeting.
-- Channels: email, text, calls or LinkedIn.
-- Messages sent from your own inbox, with your own wording.
-- A clear stop when the lead books or replies.
-- Price for a small team.
+- Email, text, call or LinkedIn steps.
+- Messages sent from your own inbox, in your own words.
+- Reminders before a booked meeting.
+- A stop when the lead books or replies.
 
-## The quick comparison
+## How to choose lead follow-up software
+
+Pick your moments first. Then run these five checks:
+
+- **Triggers tied to real moments.** A form fill with no booking, a missed meeting or a call that just ended.
+- **The right channels.** Email, text, calls or LinkedIn.
+- **Your own inbox and wording.** Messages should come from you and sound like you.
+- **A clear stop.** Follow-up should end when the lead books or replies.
+- **Price for a small team.** Check what the plan with the triggers you need costs for your team.
+
+## The 8 best lead follow-up software tools in 2026
 
 | Tool | Best for | Free plan | Paid from | Follow-up channels |
 |---|---|---|---|---|
-| Claritia | Following up form leads until they book | Yes | $12 a seat a month, billed yearly | Email from your Gmail or Outlook |
-| HubSpot Sales Hub | Sales sequences inside a CRM | Yes, up to 2 users | $20 a seat a month, paid monthly | Email; LinkedIn steps with Sales Navigator |
-| Close | Small sales teams who call and text | 14-day trial | $9 a user a month, billed yearly | Email and SMS, plus a dialer |
-| ActiveCampaign | Marketing email automations | 14-day trial | See their pricing page | Email |
-| lemlist | Outbound sequences | 14-day trial | $55 a month, billed yearly | Email; LinkedIn and calls on Multichannel |
-| Kixie | Calling and texting from your CRM | 7-day trial | See their pricing page | Calls and SMS |
-| Calendly | Reminders around a booked meeting | Yes, 1 event type | $10 a seat a month, billed yearly | Email reminders |
-| Zcal | Low-cost reminders and follow-ups | Yes | $7 a user a month | Email and SMS reminders |
+| [Claritia](/) | Following up form leads until they book | Yes | $12 a seat a month, billed yearly | Email from your Gmail or Outlook |
+| [HubSpot Sales Hub](https://www.hubspot.com/products/sales) | Sales sequences inside a CRM | Yes, up to 2 users | $20 a seat a month, paid monthly | Email; LinkedIn steps with Sales Navigator |
+| [Close](https://www.close.com/) | Small sales teams who call and text | 14-day trial | $9 a user a month, billed yearly | Email and SMS, plus a dialer |
+| [ActiveCampaign](https://www.activecampaign.com/) | Marketing email automations | 14-day trial | See their pricing page | Email |
+| [lemlist](https://www.lemlist.com/) | Outbound sequences | 14-day trial | $55 a month, billed yearly | Email; LinkedIn and calls on Multichannel |
+| [Kixie](https://www.kixie.com/) | Calling and texting from your CRM | 7-day trial | See their pricing page | Calls and SMS |
+| [Calendly](https://calendly.com/) | Reminders around a booked meeting | Yes, 1 event type | $10 a seat a month, billed yearly | Email reminders |
+| [Zcal](https://zcal.co/) | Low-cost reminders and follow-ups | Yes | $7 a user a month | Email and SMS reminders |
 
 ## 1. Claritia
 
+[Claritia](/) ties follow-up to forms and meetings. When someone fills your form but doesn't book, Starter follows up the next day until they book. Pro adds a thank-you after a held meeting and a no-show follow-up with the reschedule link. It suits small teams who want every form lead to end up on the calendar.
+
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
-**Website:** [tryclaritia.com](/)
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** and send reminders before every meeting from day one.
 
-Claritia ties follow-up to forms and meetings. When someone fills your form but doesn't book, Starter follows up the next day until they book. Pro adds a thank-you after a held meeting and a no-show follow-up with the reschedule link.
+### Key features
 
-**Best for:** small teams who want every form lead to end up on the calendar.
+- **Follow-up until they book:** The next day, every day, on Starter.
+- **Meeting reminders:** A day and an hour before every meeting, on every plan.
+- **No-show follow-up:** With the reschedule link, on Pro.
+- **Thank-you after a held meeting:** On Pro.
+- **Your own inbox:** Emails from your own Gmail or Outlook, with your own wording and times, on Starter.
+- **Team alerts:** Slack and Microsoft Teams connections can alert your team too.
 
-**What stands out:**
+### Pros
 
-- Follow-up the next day until they book, on Starter.
-- Reminders a day and an hour before every meeting, on every plan.
-- A no-show follow-up with the reschedule link, plus a thank-you after a held meeting, on Pro.
-- Emails from your own Gmail or Outlook, with your own wording and times on Starter. Slack and Microsoft Teams connections can alert your team too.
+- **Follow-up starts at the form:** Leads who fill a form but never book still get a nudge.
+- **Reminders for free:** Email reminders are on every plan.
+- **Fair seat pricing:** Teammates who only build forms or read answers are free.
 
-**Where it falls short:**
+### Cons
 
-- SMS reminders on Pro and Business are coming soon.
-- Zapier and Make apps are on the way and aren't listed yet.
+- **No SMS yet:** SMS reminders on Pro and Business are coming soon.
+- **No Zapier or Make apps yet:** They're on the way and aren't listed yet.
 
-**Pricing:** Free plan at $0. Starter is $15 a seat a month or $12 billed yearly. Pro is $39 or $31 billed yearly. Teammates who only build forms or read answers are free.
+### Price and plans
+
+You can start on the free plan with no card. Paid plans are priced per seat, and a seat is a teammate people can book a meeting with.
+
+- **Free:** $0 for 1 seat and 250 submissions a month. Includes reminders a day and an hour before each meeting.
+- **Starter:** $15 a seat a month ($12 billed yearly). Adds follow-up the next day until they book, your own wording and times, and emails from your own Gmail or Outlook.
+- **Pro:** $39 a seat a month ($31 billed yearly). Adds the no-show follow-up and the thank-you after a held meeting.
+- **Business:** $79 a seat a month ($63 billed yearly). Adds Salesforce, partial answers and owner first.
 
 ## 2. HubSpot Sales Hub
 
+[HubSpot Sales Hub](https://www.hubspot.com/products/sales) runs follow-up as sequences inside its CRM. A rep enrolls a contact, and HubSpot sends a timed series of emails and tasks. It suits sales teams who live in HubSpot and send one-to-one sequences.
+
 [![HubSpot Sales Hub homepage](/assets/blog/tools/hubspot-sales-hub.webp)](https://www.hubspot.com/products/sales)
 
-**Website:** [hubspot.com](https://www.hubspot.com/products/sales)
+### Key features
 
-HubSpot Sales Hub runs follow-up as sequences inside its CRM. A rep enrolls a contact, and HubSpot sends a timed series of emails and tasks. On Enterprise, workflows can enroll contacts in sequences on their own.
+- **Sequences:** On Professional, with up to 500 email sends per user a day.
+- **Workflows:** Up to 300 on Professional.
+- **Automatic enrollment:** On Enterprise, workflows can enroll contacts in sequences on their own.
+- **LinkedIn steps:** In sequences, with a Sales Navigator subscription.
 
-**Best for:** sales teams who live in HubSpot and send one-to-one sequences.
+### Pros
 
-**What stands out:**
+- **All in one CRM:** Sequences run where your reps already work.
+- **Free start:** The CRM is free for up to 2 users.
 
-- Sequences on Professional, with up to 500 email sends per user a day.
-- Up to 300 workflows on Professional.
-- Sequences triggered by workflows on Enterprise.
-- LinkedIn steps in sequences with a Sales Navigator subscription.
+### Cons
 
-**Where it falls short:**
+- **Sequences cost more:** They start on Professional, which adds a required $1,500 onboarding fee.
+- **LinkedIn costs extra:** LinkedIn steps need a separate Sales Navigator subscription.
 
-- Sequences start on Professional, which adds a required $1,500 onboarding fee.
-- LinkedIn steps need a separate Sales Navigator subscription.
+### Price and plans
 
-**Pricing:** Free for up to 2 users. Starter is $20 a seat a month paid monthly, lower billed yearly. Professional is $90 a seat a month billed yearly ($100 monthly), plus onboarding.
+- **Free:** For up to 2 users.
+- **Starter:** $20 a seat a month paid monthly, lower billed yearly.
+- **Professional:** $90 a seat a month billed yearly ($100 monthly), plus a $1,500 onboarding fee.
 
 ## 3. Close
 
+[Close](https://www.close.com/) is a CRM built for small sales teams who call and text. SMS works on every plan. From Growth up, automated workflows send email and SMS, and a power dialer helps reps get through call lists. It suits small sales teams who want calls and texts inside their CRM.
+
 [![Close homepage](/assets/blog/tools/close.webp)](https://www.close.com/)
 
-**Website:** [close.com](https://www.close.com/)
+### Key features
 
-Close is a CRM built for small sales teams who call and text. SMS works on every plan. From Growth up, automated workflows send email and SMS, and a power dialer helps reps get through call lists.
+- **Two-way SMS:** On every plan.
+- **Automated workflows:** Email and SMS on Growth and Scale.
+- **Dialers:** A power dialer on Growth, with a predictive dialer on Scale.
+- **Meeting reminders:** Calendar sync and meeting reminders on all plans.
 
-**Best for:** small sales teams who want calls and texts inside their CRM.
+### Pros
 
-**What stands out:**
+- **Calls, texts and email in one place:** Everything sits in the CRM.
+- **Low entry price:** Solo is $9 a user a month billed yearly.
+- **Free trial:** 14 days.
 
-- Two-way SMS on every plan.
-- Automated workflows with email and SMS on Growth and Scale.
-- A power dialer on Growth, with a predictive dialer on Scale.
-- Calendar sync and meeting reminders on all plans.
+### Cons
 
-**Where it falls short:**
+- **Automation costs more:** Automated workflows start on Growth at $99 a user a month billed yearly.
+- **Solo is for one:** It covers a single user.
 
-- Automated workflows start on Growth at $99 a user a month billed yearly.
-- Solo covers a single user.
+### Price and plans
 
-**Pricing:** Solo is $9 a user a month billed yearly ($19 monthly). Essentials is $35 ($49 monthly). Growth is $99 ($109 monthly).
+- **Solo:** $9 a user a month billed yearly ($19 monthly).
+- **Essentials:** $35 a user a month billed yearly ($49 monthly).
+- **Growth:** $99 a user a month billed yearly ($109 monthly).
 
 ## 4. ActiveCampaign
 
+[ActiveCampaign](https://www.activecampaign.com/) is email marketing with automation at its core. Every plan includes multi-step automations, and Plus adds sales automation. A Pipelines add-on brings deal records and lead scoring. It suits teams who follow up with nurture emails to a large list.
+
 [![ActiveCampaign homepage](/assets/blog/tools/activecampaign.webp)](https://www.activecampaign.com/)
 
-**Website:** [activecampaign.com](https://www.activecampaign.com/)
+### Key features
 
-ActiveCampaign is email marketing with deep automation. Every plan includes multi-step automations, and Plus adds sales automation. A Pipelines add-on brings deal records and lead scoring.
+- **Multi-step automations:** On every plan, limited to 5 actions on Starter.
+- **Sales automation:** On Plus and up.
+- **AI campaign follow-up:** On all plans.
+- **Calendly connection:** From Plus up.
 
-**Best for:** teams who follow up with nurture emails to a large list.
+### Pros
 
-**What stands out:**
+- **Automation on every plan:** Even the entry plan has multi-step automations.
+- **Room for sales:** The Pipelines add-on brings deal records and lead scoring.
 
-- Multi-step automations on every plan, limited to 5 actions on Starter.
-- Sales automation on Plus and up.
-- AI campaign follow-up on all plans.
-- A Calendly connection from Plus up.
+### Cons
 
-**Where it falls short:**
+- **Prices grow with your list:** Prices scale with your contact count.
+- **No built-in scheduler:** Meeting booking comes through Calendly.
+- **Short automations on Starter:** Limited to 5 actions.
 
-- Prices scale with your contact count.
-- Meeting booking comes through Calendly rather than a built-in scheduler.
+### Price and plans
 
-**Pricing:** See their pricing page. Plans start at 1,000 contacts, with a 14-day free trial.
+Prices scale with your contact count, so see their pricing page for yours.
+
+- **All plans:** Start at 1,000 contacts.
+- **Trial:** 14 days free.
 
 ## 5. lemlist
 
+[lemlist](https://www.lemlist.com/) builds outbound sequences with email follow-ups. Its Multichannel plan adds LinkedIn steps and calls to the same sequence. It works well for outbound teams who reach out first, before a lead fills any form.
+
 [![lemlist homepage](/assets/blog/tools/lemlist.webp)](https://www.lemlist.com/)
 
-**Website:** [lemlist.com](https://www.lemlist.com/)
+### Key features
 
-lemlist builds outbound sequences with email follow-ups. Its Multichannel plan adds LinkedIn steps and calls to the same sequence. It works well when you reach out first, before a lead fills any form.
+- **Email follow-ups:** With CRM connections, on the Email plan.
+- **LinkedIn and calls:** On Multichannel.
+- **Send volume:** Up to 50,000 emails a month on the Email plan.
+- **Free trial:** 14 days with 200 free credits.
 
-**Best for:** outbound teams who follow up across email and LinkedIn.
+### Pros
 
-**What stands out:**
+- **One sequence, many channels:** Email, LinkedIn and calls together on Multichannel.
+- **Generous email limit:** Up to 50,000 emails a month on the Email plan.
 
-- Email follow-ups and CRM connections on the Email plan.
-- LinkedIn steps and calls on Multichannel.
-- Up to 50,000 emails a month on the Email plan.
-- A 14-day free trial with 200 free credits.
+### Cons
 
-**Where it falls short:**
+- **Made for cold outreach:** It's built for cold outreach more than follow-up after a form fill.
+- **LinkedIn costs more:** LinkedIn and call steps need Multichannel.
 
-- It's built for cold outreach more than follow-up after a form fill.
-- LinkedIn and call steps need Multichannel.
+### Price and plans
 
-**Pricing:** Email is $55 a month billed yearly ($69 monthly). Multichannel is $87 billed yearly ($109 monthly).
+- **Email:** $55 a month billed yearly ($69 monthly).
+- **Multichannel:** $87 a month billed yearly ($109 monthly).
 
 ## 6. Kixie
 
+[Kixie](https://www.kixie.com/) adds calling and texting to your CRM. Reps can click to call or text from the record, and a power dialer works through lists. It connects to HubSpot, Salesforce, Zoho and Pipedrive, and suits teams who follow up by phone and text.
+
 [![Kixie homepage](/assets/blog/tools/kixie.webp)](https://www.kixie.com/)
 
-**Website:** [kixie.com](https://www.kixie.com/)
+### Key features
 
-Kixie adds calling and texting to your CRM. Reps can click to call or text from the record, and a power dialer works through lists. It connects to HubSpot, Salesforce, Zoho and Pipedrive.
+- **Click to call and text:** From your CRM record.
+- **Power dialer:** Up to 4 lines on Multi-Line.
+- **SMS templates:** Plus team SMS on Professional.
+- **Unlimited minutes:** In the US and Canada.
 
-**Best for:** teams who follow up by phone and text.
+### Pros
 
-**What stands out:**
+- **Works in your CRM:** HubSpot, Salesforce, Zoho and Pipedrive.
+- **Free trial:** 7 days with no credit card.
 
-- Click-to-call and click-to-text from your CRM.
-- A power dialer with up to 4 lines on Multi-Line.
-- SMS templates and team SMS on Professional.
-- Unlimited minutes in the US and Canada.
+### Cons
 
-**Where it falls short:**
+- **No prices listed:** Its pricing page doesn't list prices.
+- **No email follow-up:** Email follow-up sits with your CRM, outside Kixie.
 
-- Its pricing page doesn't list prices.
-- Email follow-up sits with your CRM, outside Kixie.
+### Price and plans
 
-**Pricing:** See their pricing page. A 7-day free trial needs no credit card.
+- **All plans:** See their pricing page. It doesn't list prices.
+- **Trial:** 7 days free, with no credit card.
 
 ## 7. Calendly
 
+[Calendly](https://calendly.com/) handles follow-up around a booked meeting. Meeting reminders come on Standard and up, and pre-drafted follow-up emails come with its Notetaker add-on plans. It suits teams who mostly need reminders for meetings already on the calendar.
+
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
-**Website:** [calendly.com](https://calendly.com/)
+### Key features
 
-Calendly handles follow-up around a booked meeting. Meeting reminders come on Standard and up. Pre-drafted follow-up emails come with its Notetaker add-on plans.
+- **Meeting reminders:** From Standard up.
+- **Follow-up drafts:** Pre-drafted follow-up emails with Notetaker add-on plans.
+- **Team booking:** Round robin and routing forms on Teams.
+- **A known page:** A booking page most leads already know.
 
-**Best for:** teams who mostly need reminders for meetings already on the calendar.
+### Pros
 
-**What stands out:**
+- **A familiar link:** Leads already know the booking page.
+- **Free plan:** One event type for free.
 
-- Meeting reminders from Standard up.
-- Pre-drafted follow-up emails with Notetaker add-on plans.
-- Round robin and routing forms on Teams.
-- A booking page most leads already know.
+### Cons
 
-**Where it falls short:**
+- **Small free plan:** The free plan has one event type.
+- **Booked meetings only:** Its follow-up starts once a meeting exists, so leads who never booked get none.
 
-- The free plan has one event type.
-- Its follow-up starts once a meeting exists, so leads who never booked get none.
+### Price and plans
 
-**Pricing:** Free plan. Standard is $10 a seat a month billed yearly ($12 monthly). Teams is $16 billed yearly ($20 monthly).
+- **Free:** 1 event type.
+- **Standard:** $10 a seat a month billed yearly ($12 monthly).
+- **Teams:** $16 a seat a month billed yearly ($20 monthly).
 
 ## 8. Zcal
 
+[Zcal](https://zcal.co/)'s free plan sends automated email reminders. Pro adds follow-up emails and custom reminder messages, plus SMS reminder credits. It's one of the lowest-priced ways to add text reminders, which suits small teams on a tight budget.
+
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
-**Website:** [zcal.co](https://zcal.co/)
+### Key features
 
-Zcal's free plan sends automated email reminders. Pro adds follow-up emails and custom reminder messages, plus SMS reminder credits. It's one of the lowest-priced ways to add text reminders.
+- **Email reminders:** Free.
+- **Follow-up emails:** On Pro, with custom reminder messages.
+- **SMS credits:** 750 a month on Pro, 1,500 on Business.
+- **Round robin:** On Pro.
 
-**Best for:** small teams who want email and SMS reminders on a tight budget.
+### Pros
 
-**What stands out:**
+- **Low price:** Pro is $7 a user a month.
+- **Free reminders:** Email reminders on the free plan.
 
-- Free email reminders.
-- Follow-up emails on Pro.
-- 750 SMS credits a month on Pro, 1,500 on Business.
-- Round robin on Pro.
+### Cons
 
-**Where it falls short:**
+- **Booked meetings only:** Follow-up runs around meetings, so form leads who never book are out of reach.
+- **One team on Pro:** Pro covers one team.
 
-- Follow-up runs around meetings, so form leads who never book are out of reach.
-- Pro covers one team.
+### Price and plans
 
-**Pricing:** Free plan. Pro is $7 a user a month. Business is $12.
+- **Free:** $0, with email reminders.
+- **Pro:** $7 a user a month, with 750 SMS credits a month.
+- **Business:** $12 a user a month, with 1,500 SMS credits a month.
 
-## How to choose
+## Which lead follow-up software should you pick?
 
-- If your leads fill a form and sometimes forget to book, pick Claritia Starter. Add Pro for no-show follow-ups.
-- If your reps work a HubSpot pipeline and want sequences, pick HubSpot Sales Hub Professional.
-- If your team follows up by phone as much as email, look at Close or Kixie.
-- If you reach out first, before any form fill, pick lemlist.
-- If you only need text reminders before meetings, Zcal Pro is the low-cost choice.
+- If your leads fill a form and sometimes forget to book, pick [Claritia](/) Starter. Add Pro for no-show follow-ups.
+- If your reps work a HubSpot pipeline and want sequences, pick [HubSpot Sales Hub](https://www.hubspot.com/products/sales) Professional.
+- If your team follows up by phone as much as email, look at [Close](https://www.close.com/) or [Kixie](https://www.kixie.com/).
+- If you reach out first, before any form fill, pick [lemlist](https://www.lemlist.com/).
+- If you only need text reminders before meetings, [Zcal](https://zcal.co/) Pro is the low-cost choice.
 
 ## Questions
 
@@ -253,4 +328,10 @@ Yes, with Claritia Starter. Emails go out from your own Gmail or Outlook, with y
 
 SMS reminders on Pro and Business are coming soon. Today, Claritia sends email reminders a day and an hour before each meeting.
 
-Turn form fills into booked meetings with follow-up that runs on its own. [Start free](https://app.tryclaritia.com/signup), or see how [meetings](/products/meetings) and [forms](/products/forms) work together.
+## Get started
+
+Turn form fills into booked meetings with follow-up that runs on its own.
+
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to send your first meeting reminders today, then follow up with form leads until they book on Starter.
+
+You can also see how [meetings](/products/meetings) and [forms](/products/forms) work together.
