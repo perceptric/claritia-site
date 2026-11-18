@@ -6,11 +6,40 @@ kind: form
 date: 2026-10-30
 ---
 
-Typeform earned its fans. Its one-question-at-a-time layout makes forms feel calm and personal, and its design tools are some of the best around. If your brand lives on polish, it's still a strong choice.
+Typeform earned its fans. Its one-question-at-a-time layout makes forms feel calm and personal, and its design tools are some of the best around. The trouble is the bill. Basic costs $28 a month billed yearly and includes 100 responses a month for 1 user, and the free plan has a low response cap.
 
-Many small teams start looking elsewhere once the bill grows. Basic costs $28 a month billed yearly and includes 100 responses a month for 1 user, and the free plan has a low response cap. This guide is for teams that want more answers for the money, or a form that does more after someone clicks submit.
+A good Typeform alternative gives you more answers for the money, room for your team, or a form that does more after someone clicks submit.
 
-## How we picked
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build polished forms that end in a booked meeting with the right teammate.
+
+In this post, we compare 8 Typeform alternatives by price, response limits and features, with the pros and cons of each.
+
+## Main points
+
+- Typeform Basic costs $28 a month billed yearly for 100 responses a month and 1 user.
+- Every tool below includes more responses on its first paid plan, and several have large free plans.
+- Check three things first: how many responses you get for the money, how many teammates can work on forms, and what happens after submit.
+- Top picks: [Claritia](/), [Fillout](https://www.fillout.com/), [Tally](https://tally.so/), [Paperform](https://paperform.co/), [Jotform](https://www.jotform.com/), [Zoho Forms](https://www.zoho.com/forms/), [Cognito Forms](https://www.cognitoforms.com/) and [SurveyMonkey](https://www.surveymonkey.com/).
+- Pick [Claritia](/) if you want each form to end in a booked meeting, and keep your Typeform answers flowing while you move.
+
+## What is a Typeform alternative?
+
+A Typeform alternative is a form builder you use in place of Typeform. You build forms, quizzes or surveys in the other tool, share them by link or on your site, and collect the answers there.
+
+Teams switch for three main reasons. They want more responses for the price. They want more teammates on one plan. Or they want something to happen right after submit, like a follow-up email or a booked meeting.
+
+Typical features include:
+
+- Conditional logic that shows or skips questions based on answers.
+- Design controls for fonts, colors and layout.
+- A one-question layout, a page layout, or both.
+- Payments and file uploads.
+- Integrations with spreadsheets, CRMs and email tools.
+- Steps after submit, such as follow-up emails or meeting booking.
+
+## How to choose a Typeform alternative
+
+Price is only part of it. These five checks tell you more:
 
 - **Responses for the money.** How many answers the first paid plan includes each month.
 - **Seats.** How many teammates can build or read forms without extra cost.
@@ -18,202 +47,273 @@ Many small teams start looking elsewhere once the bill grows. Basic costs $28 a 
 - **After submit.** Integrations, follow-up emails, routing and meeting booking.
 - **Easy switch.** How fast you can rebuild your forms and keep leads flowing.
 
-## The quick comparison
+## The 8 best Typeform alternatives in 2026
 
 | Tool | Best for | Free plan | Paid from | Responses on first paid plan |
 |---|---|---|---|---|
-| Claritia | Forms that book meetings | Unlimited forms, 250 submissions a month | $12 a seat a month, billed yearly | 2,000 a month |
-| Fillout | Most free responses | 1,000 responses a month | $15 a month, billed yearly | 2,000 a month |
-| Tally | Low cost at volume | Unlimited forms and submissions (fair use) | $24 a month | Unlimited (fair use) |
-| Paperform | Page-style forms | 30 submissions a month | $49 a month, billed yearly | Unlimited (fair use) |
-| Jotform | Template variety | 5 forms, 100 submissions a month | $34 a month, billed yearly | 1,000 a month |
-| Zoho Forms | Zoho users | 3 forms, 500 submissions a month | See their pricing page | 10,000 a month |
-| Cognito Forms | Forms with math | 100 entries a month | $19 a month, billed yearly | 2,000 a month |
-| SurveyMonkey | Research surveys | Basic plan, 10 questions per survey | $39 a month, billed yearly | 15,000 a year |
+| [Claritia](/) | Forms that book meetings | Unlimited forms, 250 submissions a month | $12 a seat a month, billed yearly | 2,000 a month |
+| [Fillout](https://www.fillout.com/) | Most free responses | 1,000 responses a month | $15 a month, billed yearly | 2,000 a month |
+| [Tally](https://tally.so/) | Low cost at volume | Unlimited forms and submissions (fair use) | $24 a month | Unlimited (fair use) |
+| [Paperform](https://paperform.co/) | Page-style forms | 30 submissions a month | $49 a month, billed yearly | Unlimited (fair use) |
+| [Jotform](https://www.jotform.com/) | Template variety | 5 forms, 100 submissions a month | $34 a month, billed yearly | 1,000 a month |
+| [Zoho Forms](https://www.zoho.com/forms/) | Zoho users | 3 forms, 500 submissions a month | See their pricing page | 10,000 a month |
+| [Cognito Forms](https://www.cognitoforms.com/) | Forms with math | 100 entries a month | $19 a month, billed yearly | 2,000 a month |
+| [SurveyMonkey](https://www.surveymonkey.com/) | Research surveys | Basic plan, 10 questions per survey | $39 a month, billed yearly | 15,000 a year |
 
 ## 1. Claritia
 
+[Claritia](/) gives you polished forms and adds what comes next. A visitor fills in the form and picks a time with the right teammate, and a confirmation email with a calendar invite follows. It suits small teams that want each form to end in a booked meeting.
+
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
-**Website:** [tryclaritia.com](/)
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** and rebuild your first Typeform form from one plain sentence with Tia.
 
-Claritia gives you polished forms and adds what comes next. A visitor fills in the form and picks a time with the right teammate. A confirmation email with a calendar invite follows. Tia, the AI form builder, can draft a form from one plain sentence, so rebuilding your Typeform forms goes fast.
+### Key features
 
-**Best for:** Small teams that want each form to end in a booked meeting.
+- **Booking inside the form:** The right teammate's calendar opens as soon as the form is sent, with Google Calendar and Outlook on every plan.
+- **Tia, the AI form builder:** Tia drafts a form from one plain sentence, so rebuilding your Typeform forms goes fast.
+- **Typeform answers:** Starter takes in answers from Typeform, so your old forms can keep running while you move. See the [Typeform connection](/integrations/typeform).
+- **Styles and templates:** 18 form styles and 840 templates, with your own brand from Starter.
+- **Routing:** On Pro, route by any answer to a meeting and a person.
+- **High limits:** 2,000 submissions a month on Starter, and unlimited on Business.
 
-**What stands out:**
-- 2,000 submissions a month on Starter, and unlimited on Business.
-- 18 form styles and 435 templates, with your own brand from Starter.
-- Meeting booking inside the form, and routing by any answer to a meeting and a person on Pro.
-- Starter takes in answers from Typeform, so your old forms can keep running while you move.
+### Pros
 
-**Where it falls short:**
-- It's a newer tool, so its app marketplace and community are smaller than Typeform's.
-- Zapier and Make apps are on the way, and there's no native mobile app.
+- **One step from form to meeting:** The visitor fills in the form and books a time in the same flow.
+- **Logic for free:** Conditional logic and calculations are on every plan.
+- **Fair seat pricing:** Teammates who only build forms or read answers are free.
 
-**Pricing:** Free for 250 submissions a month. Paid plans run from $15 to $79 a seat a month, or $12 to $63 billed yearly. Teammates who only build forms or read answers are free.
+### Cons
+
+- **Newer tool:** Its app marketplace and community are smaller than Typeform's.
+- **No Zapier or Make apps yet:** They're on the way and are yet to be listed.
+- **No mobile app:** There's no native mobile app.
+
+### Price and plans
+
+You can start on the free plan with no card. Paid plans are priced per seat, and a seat is a teammate people can book a meeting with.
+
+- **Free:** $0 for 1 seat and 250 submissions a month.
+- **Starter:** $15 a seat a month ($12 billed yearly), with 2,000 submissions a month. Adds your own brand and answers from Typeform.
+- **Pro:** $39 a seat a month ($31 billed yearly), with 5,000 submissions a month. Adds round robin and routing by answer.
+- **Business:** $79 a seat a month ($63 billed yearly), with unlimited submissions. Adds partial answers and drop-off by question.
 
 ## 2. Fillout
 
+[Fillout](https://www.fillout.com/) is the closest match on value. Its free plan includes 1,000 responses a month, and every plan has unlimited seats. It covers most of what Typeform users need, from logic to payments, and suits teams that want many responses and many builders at a low price.
+
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
-**Website:** [fillout.com](https://www.fillout.com/)
+### Key features
 
-Fillout is the closest match on value. Its free plan includes 1,000 responses a month, and every plan has unlimited seats. It covers most of what Typeform users need, from logic to payments.
+- **Big free plan:** 1,000 responses a month at no cost.
+- **Unlimited seats:** On every plan.
+- **Logic and payments:** Both on the free plan.
+- **Scheduling:** Scheduling forms for free, and Calendly scheduling from Starter.
 
-**Best for:** Teams that want many responses and many builders at a low price.
+### Pros
 
-**What stands out:**
-- 1,000 free responses a month.
-- Unlimited seats on every plan.
-- Logic and payments on the free plan.
-- Scheduling forms for free, and Calendly scheduling from Starter.
+- **More answers for less:** Starter includes 2,000 responses a month.
+- **Room for the whole team:** No extra cost for more builders.
 
-**Where it falls short:**
-- Partial submissions are a Business feature.
-- Free forms carry a Fillout badge and skip custom themes.
+### Cons
 
-**Pricing:** Starter is $15 a month billed yearly. Pro is $40 and Business is $75 a month, billed yearly.
+- **Partial submissions cost more:** They're a Business feature.
+- **Free plan branding:** Free forms carry a Fillout badge and skip custom themes.
+
+### Price and plans
+
+- **Free:** $0, with 1,000 responses a month.
+- **Starter:** $15 a month billed yearly, with 2,000 responses a month.
+- **Pro:** $40 a month, billed yearly.
+- **Business:** $75 a month, billed yearly.
 
 ## 3. Tally
 
+[Tally](https://tally.so/) feels like writing in a doc. You type questions on a blank page, and it builds the form as you go. It's the cheapest way to collect large numbers of answers, since the free plan has unlimited submissions under fair use. That makes it a good fit for makers and small teams on a tight budget.
+
 [![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
 
-**Website:** [tally.so](https://tally.so/)
+### Key features
 
-Tally feels like writing in a doc. You type questions on a blank page, and it builds the form as you go. It's the cheapest way to collect large numbers of answers, since the free plan has unlimited submissions under fair use.
+- **Unlimited forms:** Unlimited forms and submissions for free, under fair use.
+- **Logic and payments:** Both on the free plan.
+- **Free integrations:** Links to Google Sheets, Notion, Airtable and webhooks.
+- **Insights on Pro:** Drop-off analytics and partial submissions.
 
-**Best for:** Makers and small teams on a tight budget.
+### Pros
 
-**What stands out:**
-- Unlimited forms and submissions for free, under fair use.
-- Logic and payments on the free plan.
-- Free links to Google Sheets, Notion, Airtable and webhooks.
-- Drop-off analytics and partial submissions on Pro.
+- **Free goes far:** The free plan covers most needs at $0.
+- **Doc-style editor:** You type your form like a document.
 
-**Where it falls short:**
-- Free forms show Tally branding.
-- Its doc-style look differs from Typeform's one-question layout.
+### Cons
 
-**Pricing:** Pro is $24 a month, with two months off when you pay yearly. Business is $74 a month.
+- **Free plan branding:** Free forms show Tally branding.
+- **A different look:** Its doc-style forms differ from Typeform's one-question layout.
+
+### Price and plans
+
+- **Free:** $0, unlimited forms and submissions under fair use.
+- **Pro:** $24 a month, with two months off when you pay yearly.
+- **Business:** $74 a month.
 
 ## 4. Paperform
 
+[Paperform](https://paperform.co/) lets you build a form like a web page, mixing images and text with your questions. Paid plans include unlimited submissions under fair use, and every plan has unlimited users. It suits teams that want a form to double as a landing page, or that feel held back by Typeform's per-plan user limits.
+
 [![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
 
-**Website:** [paperform.co](https://paperform.co/)
+### Key features
 
-Paperform lets you build a form like a web page, mixing images and text with your questions. Paid plans include unlimited submissions under fair use, and every plan has unlimited users. That makes it a good fit if Typeform's per-plan user limits hold you back.
+- **Page-like editor:** Plenty of room for content around your questions.
+- **Unlimited users:** On every plan.
+- **Unlimited submissions:** On Pro and Business, under fair use.
+- **Free trial:** 7 days with no card needed.
 
-**Best for:** Teams that want a form to double as a landing page.
+### Pros
 
-**What stands out:**
-- Unlimited users on every plan.
-- Unlimited submissions on Pro and Business, under fair use.
-- A page-like editor with plenty of room for content.
-- A 7-day free trial with no card needed.
+- **No user limits:** Your whole team can work on forms.
+- **No counting answers:** Paid plans take unlimited submissions under fair use.
 
-**Where it falls short:**
-- The free plan takes 30 submissions a month.
-- Pro costs more than most Typeform alternatives here.
+### Cons
 
-**Pricing:** Pro is $49 a month billed yearly ($59 monthly). Business is $124 a month billed yearly ($149 monthly).
+- **Small free plan:** It takes 30 submissions a month.
+- **Higher price:** Pro costs more than most Typeform alternatives here.
+
+### Price and plans
+
+- **Free:** 30 submissions a month.
+- **Pro:** $49 a month billed yearly, or $59 billed monthly.
+- **Business:** $124 a month billed yearly, or $149 billed monthly.
 
 ## 5. Jotform
 
+[Jotform](https://www.jotform.com/) swaps Typeform's minimal style for sheer range. It has a very large template library and widgets for almost any field. It also offers a card-style form layout, along with extra tools for PDFs and tables. It's best for solo builders who want a template for every need.
+
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
-**Website:** [jotform.com](https://www.jotform.com/)
+### Key features
 
-Jotform swaps Typeform's minimal style for sheer range. It has a very large template library and widgets for almost any field. It also offers a card-style form layout, along with extra tools for PDFs and tables.
+- **Templates:** A very large template library.
+- **Widgets:** Many widgets for special fields.
+- **More than forms:** A card-style form layout, plus extra tools for PDFs and tables.
+- **HIPAA features:** On Gold and Enterprise.
+- **Mobile apps:** For filling and managing forms.
 
-**Best for:** Solo builders who want a template for every need.
+### Pros
 
-**What stands out:**
-- A very large template library.
-- Many widgets for special fields.
-- HIPAA features on Gold and Enterprise.
-- Mobile apps for filling and managing forms.
+- **A template for most needs:** You rarely start from a blank form.
+- **Forms on the go:** Mobile apps help you work away from your desk.
 
-**Where it falls short:**
-- Plans below Enterprise are single-user.
-- Bronze includes 25 forms and 1,000 submissions a month.
+### Cons
 
-**Pricing:** Bronze is $34 a month billed yearly ($39 monthly). Silver is $39 and Gold is $99 a month, billed yearly.
+- **Single user:** Plans below Enterprise are for one user.
+- **Caps on Bronze:** Bronze includes 25 forms and 1,000 submissions a month.
+
+### Price and plans
+
+- **Free:** 5 forms and 100 submissions a month.
+- **Bronze:** $34 a month billed yearly ($39 monthly).
+- **Silver:** $39 a month, billed yearly.
+- **Gold:** $99 a month, billed yearly.
 
 ## 6. Zoho Forms
 
+[Zoho Forms](https://www.zoho.com/forms/) trades flair for high limits. Its paid plans start at 10,000 submissions a month, far more than Typeform's Basic plan. It's best for teams that already run on Zoho apps and need high volume.
+
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 
-**Website:** [zoho.com](https://www.zoho.com/forms/)
+### Key features
 
-Zoho Forms trades flair for high limits. Its paid plans start at 10,000 submissions a month, far more than Typeform's Basic plan. It's best if your team already runs on Zoho CRM.
+- **High limits:** 10,000 submissions a month on Basic.
+- **Users:** Up to 10 users on Standard.
+- **Zoho CRM:** A close link with Zoho CRM.
+- **Mobile app:** For collecting answers on the go.
 
-**Best for:** Teams on Zoho apps who need high volume.
+### Pros
 
-**What stands out:**
-- 10,000 submissions a month on Basic.
-- Up to 10 users on Standard.
-- A close link with Zoho CRM.
-- A mobile app for collecting answers on the go.
+- **Volume:** Far more submissions than Typeform's Basic plan.
+- **Zoho fit:** Works closely with the Zoho apps your team may already use.
 
-**Where it falls short:**
-- The free plan has 3 forms and 1 user.
-- It fits best inside the Zoho world.
+### Cons
 
-**Pricing:** See their pricing page.
+- **Small free plan:** 3 forms and 1 user.
+- **Best inside Zoho:** It fits best inside the Zoho world.
+
+### Price and plans
+
+- **Free:** 3 forms, 500 submissions a month and 1 user.
+- **Basic:** 10,000 submissions a month.
+- **Standard:** Up to 10 users.
+
+For prices, see their pricing page.
 
 ## 7. Cognito Forms
 
+[Cognito Forms](https://www.cognitoforms.com/) is a practical pick for quotes and order forms. Its calculations and repeating sections handle totals well, and the free plan takes payments. The first paid plan is one of the cheapest here.
+
 [![Cognito Forms homepage](/assets/blog/tools/cognito-forms.webp)](https://www.cognitoforms.com/)
 
-**Website:** [cognitoforms.com](https://www.cognitoforms.com/)
+### Key features
 
-Cognito Forms is a practical pick for quotes and order forms. Its calculations and repeating sections handle totals well, and the free plan takes payments. The first paid plan is one of the cheapest here.
+- **Calculations:** Calculations and repeating sections for totals.
+- **Payments:** On the free plan.
+- **Unlimited forms:** No cap on how many forms you keep.
+- **Pro limits:** 2,000 entries a month on Pro.
 
-**Best for:** Order forms and quotes with totals.
+### Pros
 
-**What stands out:**
-- Calculations and repeating sections.
-- Payments on the free plan.
-- Unlimited forms.
-- 2,000 entries a month on Pro.
+- **Good with numbers:** Totals for quotes and orders work well.
+- **Low price:** The first paid plan is one of the cheapest here.
 
-**Where it falls short:**
-- 100 entries a month on free, with Cognito Forms branding.
-- Its style is more practical than Typeform's.
+### Cons
 
-**Pricing:** Pro is $19 a month billed yearly ($24 monthly).
+- **Small free plan:** 100 entries a month, with Cognito Forms branding.
+- **Plain style:** Its style is more practical than Typeform's.
+
+### Price and plans
+
+- **Free:** 100 entries a month.
+- **Pro:** $19 a month billed yearly ($24 monthly), with 2,000 entries a month.
 
 ## 8. SurveyMonkey
 
+[SurveyMonkey](https://www.surveymonkey.com/) is built for surveys and research more than lead capture. If you use Typeform mainly for customer feedback, its analysis tools are worth a look. Annual plans count responses by the year.
+
 [![SurveyMonkey homepage](/assets/blog/tools/surveymonkey.webp)](https://www.surveymonkey.com/)
 
-**Website:** [surveymonkey.com](https://www.surveymonkey.com/)
+### Key features
 
-SurveyMonkey is built for surveys and research more than lead capture. If you use Typeform mainly for customer feedback, its analysis tools are worth a look. Annual plans count responses by the year.
+- **Survey analysis:** Tools for reading results.
+- **Yearly responses:** 15,000 responses a year on Advantage.
+- **Team plans:** For 3 or more users.
+- **Extra responses:** $0.15 each on paid plans.
 
-**Best for:** Customer feedback and research surveys.
+### Pros
 
-**What stands out:**
-- Survey analysis tools for reading results.
-- 15,000 responses a year on Advantage.
-- Team plans for 3 or more users.
-- Extra responses at $0.15 each on paid plans.
+- **Built for feedback:** Its analysis tools help you make sense of survey results.
+- **Room for teams:** Team plans cover 3 or more users.
 
-**Where it falls short:**
-- The free Basic plan allows 10 questions per survey and limited responses.
-- The monthly Standard plan costs $149 a month for 1,000 responses.
+### Cons
 
-**Pricing:** Advantage is $39 a month billed yearly ($468 a year). Premier is $139 a month billed yearly. Team Advantage is $30 a user a month billed yearly, for 3 or more users.
+- **Tight free plan:** Basic allows 10 questions per survey and limited responses.
+- **Costly monthly plan:** Standard costs $149 a month for 1,000 responses.
 
-## How to choose
+### Price and plans
 
-- **If you want your forms to book meetings,** pick Claritia. It also takes in Typeform answers while you switch.
-- **If you want the most free responses and seats,** pick Fillout.
-- **If price is the main reason you're leaving,** pick Tally.
-- **If you need unlimited users,** pick Paperform or Fillout.
-- **If you mostly run research surveys,** pick SurveyMonkey.
+- **Basic:** Free, with 10 questions per survey and limited responses.
+- **Standard:** $149 a month billed monthly, for 1,000 responses.
+- **Advantage:** $39 a month billed yearly ($468 a year), with 15,000 responses a year.
+- **Premier:** $139 a month, billed yearly.
+- **Team Advantage:** $30 a user a month billed yearly, for 3 or more users.
+
+## Which Typeform alternative should you pick?
+
+- If you want your forms to book meetings, pick [Claritia](/). It also takes in Typeform answers while you switch.
+- If you want the most free responses and seats, pick [Fillout](https://www.fillout.com/).
+- If price is the main reason you're leaving, pick [Tally](https://tally.so/).
+- If you need unlimited users, pick [Paperform](https://paperform.co/) or [Fillout](https://www.fillout.com/).
+- If you mostly run research surveys, pick [SurveyMonkey](https://www.surveymonkey.com/).
 
 ## Questions
 
@@ -237,6 +337,10 @@ Yes. On Starter, Claritia takes in answers from Typeform. You can keep old forms
 
 Tally's free plan covers most needs at $0. For a paid plan, Claritia Starter is $12 a seat a month billed yearly, and Fillout Starter is $15 a month billed yearly.
 
-## Make the switch
+## Get started
 
-You can rebuild a Typeform form in minutes with Tia, or start from a [form template](/templates). [Start free](https://app.tryclaritia.com/signup), and see how the [Typeform connection](/integrations/typeform) keeps answers flowing while you move.
+You can rebuild a Typeform form in minutes with Tia, or start from a [form template](/templates).
+
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first form and book your first meeting today.
+
+You can also see how the [Typeform connection](/integrations/typeform) keeps answers flowing while you move.

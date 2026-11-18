@@ -8,9 +8,36 @@ date: 2026-10-21
 
 WordPress gives you two ways to add forms. You can install a plugin that runs inside your site and stores entries in your WordPress database. Or you can use a hosted form tool and embed it on your pages. Both work well, and the right pick depends on where you want your leads to live.
 
-This post is for small teams choosing the best WordPress form builder. Think about who will build the forms and where the answers go next. A plugin keeps everything in WordPress admin. A hosted tool keeps forms working the same way across every site you run, and it adds less load to your server.
+A good WordPress form builder fits who will build the forms and where the answers go next. A plugin keeps everything in WordPress admin. A hosted tool keeps forms working the same way across every site you run, and it adds less load to your server.
 
-## How we picked
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to add a form that books meetings to your WordPress site with one script tag.
+
+In this post, we compare 8 WordPress form builders, both plugins and hosted tools, with real prices and the pros and cons of each.
+
+## Main points
+
+- WordPress forms come in two kinds: native plugins that store entries in your WordPress database, and hosted tools you embed on your pages.
+- Many plugins discount the first year, so check what you pay at renewal.
+- Check three things first: how the tool runs on WordPress, whether logic is in the version you'd buy, and what happens after submit.
+- Top picks: [Claritia](/), [WPForms](https://wpforms.com/), [Gravity Forms](https://www.gravityforms.com/), [Formidable Forms](https://formidableforms.com/), [Fluent Forms](https://fluentforms.com/), [Ninja Forms](https://ninjaforms.com/), [Forminator](https://wpmudev.com/project/forminator-pro/) and [Jotform](https://www.jotform.com/).
+- Pick [Claritia](/) if you want WordPress visitors to book a meeting with the right person.
+
+## What is a WordPress form builder?
+
+A WordPress form builder is a tool that adds forms to a WordPress site, such as contact forms, quote forms and lead forms. It comes in two kinds. A native plugin runs inside your site and keeps entries in your WordPress database. A hosted tool runs on its own servers, and you embed its forms on your pages.
+
+Typical features include:
+
+- A drag-and-drop builder for laying out fields.
+- Conditional logic that shows or hides fields based on answers.
+- Calculations for quotes and order totals.
+- Payments through tools like Stripe and PayPal.
+- CRM integrations, such as HubSpot or Salesforce.
+- Partial entries, so you can see who stopped halfway.
+
+## How to choose a WordPress form builder
+
+Think about who will build the forms and where the answers go. Then use these five checks:
 
 - **How it runs on WordPress.** A native plugin or a hosted tool you embed.
 - **Logic and calculations.** Rules that show or hide fields and do math on answers.
@@ -18,200 +45,277 @@ This post is for small teams choosing the best WordPress form builder. Think abo
 - **Free version.** What you get before you pay.
 - **Renewal price.** Many plugins discount the first year, so check what you pay after.
 
-## The quick comparison
+## The 8 best WordPress form builders in 2026
 
 | Tool | Best for | Free plan | Paid from | How it runs on WordPress |
 |---|---|---|---|---|
-| Claritia | Forms that book meetings | Yes, 250 submissions a month | $12 a seat a month, billed yearly | Hosted, embedded with one script tag |
-| WPForms | Beginners who want a guided builder | Yes, WPForms Lite | $49.50 a year (first year) | Native plugin |
-| Gravity Forms | Developers and complex sites | No free version | $59 a year | Native plugin |
-| Formidable Forms | Calculators and data apps | Yes, free version | $39.50 a year (first year) | Native plugin |
-| Fluent Forms | Every Pro feature on every plan | Yes, free version | $63 a year | Native plugin |
-| Ninja Forms | Paying only for the add-ons you need | Yes, Core is free | $59.40 a year (first year) | Native plugin |
-| Forminator | A strong free plugin | Yes, free plugin | $50 a year | Native plugin |
-| Jotform | Using one form tool across many sites | Yes, 5 forms and 100 submissions | $34 a month, billed yearly | Hosted, with an embed plugin |
+| [Claritia](/) | Forms that book meetings | Yes, 250 submissions a month | $12 a seat a month, billed yearly | Hosted, embedded with one script tag |
+| [WPForms](https://wpforms.com/) | Beginners who want a guided builder | Yes, WPForms Lite | $49.50 a year (first year) | Native plugin |
+| [Gravity Forms](https://www.gravityforms.com/) | Developers and complex sites | No free version | $59 a year | Native plugin |
+| [Formidable Forms](https://formidableforms.com/) | Calculators and data apps | Yes, free version | $39.50 a year (first year) | Native plugin |
+| [Fluent Forms](https://fluentforms.com/) | Every Pro feature on every plan | Yes, free version | $63 a year | Native plugin |
+| [Ninja Forms](https://ninjaforms.com/) | Paying only for the add-ons you need | Yes, Core is free | $59.40 a year (first year) | Native plugin |
+| [Forminator](https://wpmudev.com/project/forminator-pro/) | A strong free plugin | Yes, free plugin | $50 a year | Native plugin |
+| [Jotform](https://www.jotform.com/) | Using one form tool across many sites | Yes, 5 forms and 100 submissions | $34 a month, billed yearly | Hosted, with an embed plugin |
 
 ## 1. Claritia
 
+[Claritia](/) is a forms and meetings tool for small teams, with workflows that follow up. It is a hosted tool, so there is no plugin to install or update. You paste one script tag into a Custom HTML block, and the form shows on your WordPress page. Visitors can fill it in and book a meeting with the right person in the same flow, which suits WordPress sites that want each good lead to book a meeting.
+
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
-**Website:** [tryclaritia.com](/)
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** and embed your first form on WordPress with one script tag.
 
-Claritia is a forms and meetings tool for small teams, with workflows that follow up. It is a hosted tool, so there is no plugin to install or update. You paste one script tag into a Custom HTML block, and the form shows on your WordPress page. Visitors can fill it in and book a meeting with the right person in the same flow.
+### Key features
 
-**Best for:** WordPress sites that want each good lead to book a meeting.
+- **WordPress embed:** One script tag in a Custom HTML block, or a popup. See the [WordPress embed](/integrations/wordpress).
+- **Booking inside the form:** On the free plan, with Google Calendar and Outlook.
+- **Logic and math:** Conditional logic, step skips, calculations and hidden fields for UTM tags on the free plan.
+- **Tracking tags:** Google Analytics, Google Tag Manager, Meta Pixel and Google Ads tags work on the form.
+- **HubSpot:** Each form fill can go to HubSpot on Starter.
 
-**What stands out:**
-- Embeds on WordPress with one script tag, or as a popup.
-- Meeting booking inside forms on the free plan, with Google Calendar and Outlook.
-- Conditional logic, step skips, calculations and hidden fields for UTM tags on the free plan.
-- Google Analytics, Google Tag Manager, Meta Pixel and Google Ads tags work on the form.
+### Pros
 
-**Where it falls short:**
-- Answers live in Claritia's app instead of your WordPress database. If you want entries inside WordPress admin, a native plugin fits better.
-- Claritia is a newer tool, so its app marketplace and community are smaller than the big plugins.
+- **No plugin to maintain:** Nothing to install or update on your site.
+- **Light on your server:** The form loads from Claritia, with no database work on your site.
+- **Fair seat pricing:** Teammates who only build forms or read answers are free.
 
-**Pricing:** Free is $0, Starter is $15 a seat a month ($12 billed yearly), Pro is $39 ($31) and Business is $79 ($63). Teammates who only build forms or read answers are free.
+### Cons
+
+- **Entries live outside WordPress:** Answers live in Claritia's app instead of your WordPress database. If you want entries inside WordPress admin, a native plugin fits better.
+- **Newer tool:** Its app marketplace and community are smaller than the big plugins.
+
+### Price and plans
+
+You can start on the free plan with no card. Paid plans are priced per seat, and a seat is a teammate people can book a meeting with.
+
+- **Free:** $0 for 1 seat and 250 submissions a month.
+- **Starter:** $15 a seat a month ($12 billed yearly), with 2,000 submissions a month. Adds HubSpot, e-signatures and Stripe payments.
+- **Pro:** $39 a seat a month ($31 billed yearly), with 5,000 submissions a month. Adds routing by answer and removes Claritia branding.
+- **Business:** $79 a seat a month ($63 billed yearly), with unlimited submissions. Adds Salesforce, partial answers and your own domain for forms.
 
 ## 2. WPForms
 
+[WPForms](https://wpforms.com/) is the most installed form plugin on this list, with over 5 million active installs for WPForms Lite. Its drag-and-drop builder is easy to learn, and conditional logic is on every paid plan. It suits site owners who want a friendly builder inside WordPress.
+
 [![WPForms homepage](/assets/blog/tools/wpforms.webp)](https://wpforms.com/)
 
-**Website:** [wpforms.com](https://wpforms.com/)
+### Key features
 
-WPForms is the most installed form plugin on this list, with over 5 million active installs for WPForms Lite. Its drag-and-drop builder is easy to learn, and conditional logic is on every paid plan. WPForms AI can create and edit forms from Basic up.
+- **Free Lite version:** Over 5 million active installs.
+- **Smart conditional logic:** From the Basic plan.
+- **WPForms AI:** Creates and edits forms, from Basic up.
+- **Form abandonment:** On Pro, so you can see who stopped halfway.
+- **CRMs:** HubSpot and Salesforce on the Elite plan.
 
-**Best for:** Site owners who want a friendly builder inside WordPress.
+### Pros
 
-**What stands out:**
-- A free Lite version with a large user base.
-- Smart conditional logic and WPForms AI from the Basic plan.
-- Form abandonment on Pro, so you can see who stopped halfway.
-- HubSpot and Salesforce on the Elite plan.
+- **Easy to learn:** A drag-and-drop builder for beginners.
+- **Logic on every paid plan:** No need to buy a higher tier for it.
 
-**Where it falls short:**
-- CRM integrations like HubSpot are only on Elite.
-- The first-year prices are half off, and renewals are at full price.
+### Cons
 
-**Pricing:** Basic $49.50, Plus $99.50, Pro $199.50 and Elite $299.50 for the first year. Normal prices are $99, $199, $399 and $599.
+- **CRMs cost more:** Integrations like HubSpot are only on Elite.
+- **Renewals cost more:** First-year prices are half off, and renewals are at full price.
+
+### Price and plans
+
+Prices below are for the first year. Renewals are at the normal price.
+
+- **Lite:** Free.
+- **Basic:** $49.50 for the first year, then $99 a year.
+- **Plus:** $99.50 for the first year, then $199 a year.
+- **Pro:** $199.50 for the first year, then $399 a year.
+- **Elite:** $299.50 for the first year, then $599 a year.
 
 ## 3. Gravity Forms
 
+[Gravity Forms](https://www.gravityforms.com/) has long been a favorite of WordPress developers. Conditional logic is a core feature on every license, and a large set of add-ons covers payments and CRMs. It suits agencies and developers building complex forms.
+
 [![Gravity Forms homepage](/assets/blog/tools/gravity-forms.webp)](https://www.gravityforms.com/)
 
-**Website:** [gravityforms.com](https://www.gravityforms.com/)
+### Key features
 
-Gravity Forms has long been a favorite of WordPress developers. Conditional logic is a core feature on every license, and a large set of add-ons covers payments and CRMs. It suits sites with complex forms and a developer on hand.
+- **Conditional logic:** On every license.
+- **HubSpot add-on:** From the Basic license.
+- **Elite extras:** Partial Entries and Salesforce on Elite.
+- **Advanced Conditional Logic:** An add-on for grouped rules.
 
-**Best for:** Agencies and developers building complex forms.
+### Pros
 
-**What stands out:**
-- Conditional logic on every license.
-- A HubSpot add-on from the Basic license.
-- Partial Entries and Salesforce on Elite.
-- An Advanced Conditional Logic add-on for grouped rules.
+- **Built for complex forms:** A large set of add-ons covers payments and CRMs.
+- **HubSpot on the first license:** No need for a top plan to reach your CRM.
 
-**Where it falls short:**
-- There is no free version and no trial.
-- Many features come as add-ons, so setup takes more time.
+### Cons
 
-**Pricing:** Basic is $59 a year for 1 site and Pro is $159 a year for 3 sites. Elite costs $259 a year for unlimited sites.
+- **No free version:** And no trial.
+- **More setup:** Many features come as add-ons, so setup takes more time.
+
+### Price and plans
+
+- **Basic:** $59 a year for 1 site.
+- **Pro:** $159 a year for 3 sites.
+- **Elite:** $259 a year for unlimited sites.
 
 ## 4. Formidable Forms
 
+[Formidable Forms](https://formidableforms.com/) is built for forms that do math. Conditional logic and calculations are on every plan, which makes it a good fit for quote forms and calculators. Its higher plans add AI and form abandonment.
+
 [![Formidable Forms homepage](/assets/blog/tools/formidable-forms.webp)](https://formidableforms.com/)
 
-**Website:** [formidableforms.com](https://formidableforms.com/)
+### Key features
 
-Formidable Forms is built for forms that do math. Conditional logic and calculations are on every plan, which makes it a good fit for quote forms and calculators. Its higher plans add AI and form abandonment.
+- **Logic and calculations:** On every plan.
+- **Form abandonment:** On Business and Elite.
+- **AI requests:** On Business and Elite.
+- **CRMs:** HubSpot and Salesforce on Elite.
 
-**Best for:** Calculators and quote forms.
+### Pros
 
-**What stands out:**
-- Conditional logic and calculations on every plan.
-- Form abandonment on Business and Elite.
-- AI requests on Business and Elite.
-- HubSpot and Salesforce on Elite.
+- **Good with numbers:** Calculators and quote forms on every plan.
+- **Free version:** You can start before you pay.
 
-**Where it falls short:**
-- CRM integrations are only on Elite.
-- The first-year prices are introductory, and renewals are at full price.
+### Cons
 
-**Pricing:** Basic $39.50, Plus $99.50, Business $199.50 and Elite $299.50 for the first year. Normal prices are $79, $199, $399 and $599.
+- **CRMs cost more:** Integrations are only on Elite.
+- **Renewals cost more:** First-year prices are introductory, and renewals are at full price.
+
+### Price and plans
+
+Prices below are for the first year. Renewals are at the normal price.
+
+- **Free version:** $0.
+- **Basic:** $39.50 for the first year, then $79 a year.
+- **Plus:** $99.50 for the first year, then $199 a year.
+- **Business:** $199.50 for the first year, then $399 a year.
+- **Elite:** $299.50 for the first year, then $599 a year.
 
 ## 5. Fluent Forms
 
+[Fluent Forms](https://fluentforms.com/) gives every paid plan the full feature set. The difference between plans is the number of sites. That means conditional logic and partial entries are both included from the single-site plan, along with its AI form builder. It suits small sites that want every feature without picking a tier.
+
 [![Fluent Forms homepage](/assets/blog/tools/fluent-forms.webp)](https://fluentforms.com/)
 
-**Website:** [fluentforms.com](https://fluentforms.com/)
+### Key features
 
-Fluent Forms gives every paid plan the full feature set. The difference between plans is the number of sites. That means conditional logic and partial entries are both included from the single-site plan, along with its AI form builder.
+- **All features on every Pro plan:** Plans differ only by the number of sites.
+- **AI form builder:** Included.
+- **Partial entries:** With save and resume.
+- **Lifetime licenses:** As well as yearly ones.
 
-**Best for:** Small sites that want every feature without picking a tier.
+### Pros
 
-**What stands out:**
-- All features on every Pro plan.
-- An AI form builder included.
-- Partial entries and save and resume.
-- Lifetime licenses as well as yearly ones.
+- **No tiers to compare:** The single-site plan has every feature.
+- **Lifetime option:** Pay once instead of every year.
 
-**Where it falls short:**
-- Its pricing page lists 60+ integrations without naming each one, so check the list for your CRM.
-- Some features, such as calculations, need Pro.
+### Cons
 
-**Pricing:** Free version, then Single Site $63, Agency $127 and Unlimited $239 a year. Lifetime licenses start at $279.
+- **Unnamed integrations:** Its pricing page lists 60+ integrations without naming each one, so check the list for your CRM.
+- **Some features need Pro:** Calculations, for example, are not in the free version.
+
+### Price and plans
+
+- **Free version:** $0.
+- **Single Site:** $63 a year.
+- **Agency:** $127 a year.
+- **Unlimited:** $239 a year.
+- **Lifetime:** From $279.
 
 ## 6. Ninja Forms
 
-**Website:** [ninjaforms.com](https://ninjaforms.com/)
+[Ninja Forms](https://ninjaforms.com/) starts with a free Core plugin and lets you add what you need. Conditional logic and multi-step forms come in the Plus plan. HubSpot and Salesforce come in Pro, along with save progress. It suits sites that want a free base and a few paid add-ons.
 
-Ninja Forms starts with a free Core plugin and lets you add what you need. Conditional logic and multi-step forms come in the Plus plan. HubSpot and Salesforce come in Pro, along with save progress.
+### Key features
 
-**Best for:** Sites that want a free base and a few paid add-ons.
+- **Free Core plugin:** A base to start from.
+- **Plus:** Conditional logic and multi-step forms.
+- **Pro:** HubSpot, Salesforce and save progress.
+- **Many sites:** Pro covers up to 20 sites.
 
-**What stands out:**
-- A free Core plugin.
-- Conditional logic and multi-step forms on Plus.
-- HubSpot and Salesforce on Pro.
-- Pro covers up to 20 sites.
+### Pros
 
-**Where it falls short:**
-- The free Core has no conditional logic.
-- First-year prices include a 40% discount, and renewals are at full price.
+- **Pay for what you need:** Start free and add only the features you use.
+- **CRMs below the top plan:** HubSpot and Salesforce come in Pro.
 
-**Pricing:** Core free, then Plus $59.40, Pro $119.40 and Elite $299.40 for the first year. Renewals are at normal prices, such as $99 a year for Plus.
+### Cons
+
+- **No logic in Core:** The free Core has no conditional logic.
+- **Renewals cost more:** First-year prices include a 40% discount, and renewals are at full price.
+
+### Price and plans
+
+Prices below are for the first year. Renewals are at normal prices, such as $99 a year for Plus.
+
+- **Core:** Free.
+- **Plus:** $59.40 for the first year.
+- **Pro:** $119.40 for the first year.
+- **Elite:** $299.40 for the first year.
 
 ## 7. Forminator
 
+[Forminator](https://wpmudev.com/project/forminator-pro/), from WPMU DEV, is a free plugin with over 600,000 active installs. Its free version includes conditional logic and Stripe and PayPal payments, and Forminator Pro adds more fields and add-ons. It suits sites that want a lot from a free plugin.
+
 [![Forminator homepage](/assets/blog/tools/forminator.webp)](https://wpmudev.com/project/forminator-pro/)
 
-**Website:** [wpmudev.com](https://wpmudev.com/project/forminator-pro/)
+### Key features
 
-Forminator, from WPMU DEV, is a free plugin with over 600,000 active installs. Its free version includes conditional logic and Stripe and PayPal payments. Forminator Pro adds more fields and add-ons.
+- **Conditional logic:** In the free version.
+- **Payments:** Stripe and PayPal with no Pro upgrade.
+- **HubSpot:** An integration listed on its plugin page.
+- **Calculations:** Calculation fields that do math on answers.
 
-**Best for:** Sites that want a lot from a free plugin.
+### Pros
 
-**What stands out:**
-- Conditional logic in the free version.
-- Stripe and PayPal payments with no Pro upgrade.
-- A HubSpot integration listed on its plugin page.
-- Calculation fields.
+- **A lot for free:** Logic and payments without paying.
+- **Low Pro price:** Pro Basic is $50 a year for 1 site.
 
-**Where it falls short:**
-- The free listing doesn't spell out which features need Pro.
-- It is part of a wider WPMU DEV suite, so the plans can take a moment to compare.
+### Cons
 
-**Pricing:** Free plugin. Pro Basic is $50 a year for 1 site.
+- **Unclear free limits:** The free listing doesn't spell out which features need Pro.
+- **Plans take a moment:** It's part of a wider WPMU DEV suite, so the plans can take a moment to compare.
+
+### Price and plans
+
+- **Free plugin:** $0.
+- **Pro Basic:** $50 a year for 1 site.
 
 ## 8. Jotform
 
+[Jotform](https://www.jotform.com/) is a hosted form builder with an official WordPress plugin. You install the plugin and add a form with a shortcode, or paste the embed code into a Custom HTML block. Your entries live in Jotform, so the same forms work on any site. That suits teams that run several sites and want one place for every form.
+
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
-**Website:** [jotform.com](https://www.jotform.com/)
+### Key features
 
-Jotform is a hosted form builder with an official WordPress plugin. You install the plugin and add a form with a shortcode, or paste the embed code into a Custom HTML block. Your entries live in Jotform, so the same forms work on any site.
+- **Official plugin:** For embedding forms in WordPress.
+- **Conditional logic:** On the free plan.
+- **AI form generator:** Free to use.
+- **HubSpot:** A native integration.
 
-**Best for:** Teams that run several sites and want one place for every form.
+### Pros
 
-**What stands out:**
-- An official plugin for embedding forms in WordPress.
-- Conditional logic on the free plan.
-- A free AI form generator.
-- A native HubSpot integration.
+- **One tool for many sites:** The same forms work on any site.
+- **Logic for free:** Conditional logic is on the free plan.
 
-**Where it falls short:**
-- The free plan allows 5 forms and 100 submissions a month.
-- Jotform notes its embed script can clash with other scripts on a site, and suggests the iFrame method if it does.
+### Cons
 
-**Pricing:** Free Starter plan, then Bronze $34, Silver $39 and Gold $99 a month, billed yearly.
+- **Small free plan:** 5 forms and 100 submissions a month.
+- **Script clashes:** Jotform notes its embed script can clash with other scripts on a site, and suggests the iFrame method if it does.
 
-## How to choose
+### Price and plans
 
-- If you want WordPress visitors to book meetings with the right person, pick Claritia.
-- If you want a guided builder and your entries in WordPress admin, pick WPForms.
-- If you build complex forms for clients, pick Gravity Forms.
-- If your forms do math, pick Formidable Forms.
-- If you want a capable free plugin, start with Forminator or Fluent Forms.
+- **Starter:** Free, with 5 forms and 100 submissions a month.
+- **Bronze:** $34 a month, billed yearly.
+- **Silver:** $39 a month, billed yearly.
+- **Gold:** $99 a month, billed yearly.
+
+## Which WordPress form builder should you pick?
+
+- If you want WordPress visitors to book meetings with the right person, pick [Claritia](/).
+- If you want a guided builder and your entries in WordPress admin, pick [WPForms](https://wpforms.com/).
+- If you build complex forms for clients, pick [Gravity Forms](https://www.gravityforms.com/).
+- If your forms do math, pick [Formidable Forms](https://formidableforms.com/).
+- If you want a capable free plugin, start with [Forminator](https://wpmudev.com/project/forminator-pro/) or [Fluent Forms](https://fluentforms.com/).
 
 ## Questions
 
@@ -237,4 +341,8 @@ Yes. Claritia connects to HubSpot on Starter. Among plugins, Gravity Forms has a
 
 ## Get started
 
-Add a form that books meetings to your WordPress site with one script tag. [Start free](https://app.tryclaritia.com/signup). You can also read about the [WordPress embed](/integrations/wordpress) or browse [form templates](/templates).
+Add a form that books meetings to your WordPress site with one script tag.
+
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first form, embed it on WordPress and book your first meeting today.
+
+You can also read about the [WordPress embed](/integrations/wordpress) or browse [form templates](/templates).
