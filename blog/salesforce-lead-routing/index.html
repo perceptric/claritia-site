@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lead Routing in Salesforce: How to Set It Up Step by Step (2026) · Claritia</title>
+<meta name="description" content="Set up lead routing in Salesforce with lead assignment rules, add a round robin, fix common problems, and see when an add-on tool is worth it.">
+<link rel="canonical" href="https://tryclaritia.com/blog/salesforce-lead-routing">
+<meta property="og:site_name" content="Claritia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lead Routing in Salesforce: How to Set It Up Step by Step (2026) · Claritia">
+<meta property="og:description" content="Set up lead routing in Salesforce with lead assignment rules, add a round robin, fix common problems, and see when an add-on tool is worth it.">
+<meta property="og:url" content="https://tryclaritia.com/blog/salesforce-lead-routing">
+<meta property="og:image" content="https://tryclaritia.com/blog/salesforce-lead-routing/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/claritia-mark-small.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#fafaf5">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=15">
+<link rel="stylesheet" href="/assets/products.css?v=2">
+<link rel="stylesheet" href="/assets/blog.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Lead Routing in Salesforce: How to Set It Up Step by Step (2026)", "description": "Set up lead routing in Salesforce with lead assignment rules, add a round robin, fix common problems, and see when an add-on tool is worth it.", "datePublished": "2026-11-18", "image": "https://tryclaritia.com/blog/salesforce-lead-routing/cover.png", "mainEntityOfPage": "https://tryclaritia.com/blog/salesforce-lead-routing", "author": {"@type": "Person", "name": "Claritia"}, "publisher": {"@type": "Organization", "name": "Claritia", "logo": {"@type": "ImageObject", "url": "https://tryclaritia.com/assets/brand/claritia-app-icon.png"}}}</script>
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#0C8C5E"/><rect x="9" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="9" y="20.5" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="20.5" width="13" height="7" rx="3.5" fill="#fff"/><rect x="9" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16" fill="none"><path d="m3.5 8.5 3 3 6-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 16 16" fill="none"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7z" fill="currentColor"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+  <symbol id="chev-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></symbol>
+  <symbol id="grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="bolt" viewBox="0 0 24 24"><path d="M13 3L5 13h6l-1 8 8-10h-6l1-8z"/></symbol>
+  <symbol id="form" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+  <symbol id="flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v3a3 3 0 0 0 3 3h6.5"/><path d="M13 12l2.5 2.5L13 17"/></symbol>
+  <symbol id="route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H14a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h5.5"/></symbol>
+  <symbol id="table" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 10h16M10 10v10"/></symbol>
+  <symbol id="sort" viewBox="0 0 24 24"><path d="M7 4v16M4 17l3 3 3-3M17 20V4M14 7l3-3 3 3"/></symbol>
+  <symbol id="filter" viewBox="0 0 24 24"><path d="M4 5h16l-6 7.5V19l-4 1v-7.5L4 5z"/></symbol>
+  <symbol id="eyeoff" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 8.5 4.5 9.5 6a16 16 0 0 1-2.6 3.2M6.6 6.6C4.5 8 3.1 10.1 2.5 12c1 1.5 4.5 6 9.5 6a9.6 9.6 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+  <symbol id="type" viewBox="0 0 24 24"><path d="M5 6V4h14v2M12 4v16M9 20h6"/></symbol>
+  <symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/><path d="M19 15.5c.2 1.6.9 2.3 2.5 2.5-1.6.2-2.3.9-2.5 2.5-.2-1.6-.9-2.3-2.5-2.5 1.6-.2 2.3-.9 2.5-2.5z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.2l2.4 2.4 4.6-5"/></symbol>
+  <symbol id="home" viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="side" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M9.5 5v14"/></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.5 3.5 5.3 3.5 8.5s-1.1 6-3.5 8.5c-2.4-2.5-3.5-5.3-3.5-8.5s1.1-6 3.5-8.5z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4 7l8 6 8-6"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="desk" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20h8M12 16.5V20"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/></symbol>
+  <symbol id="plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"/></symbol>
+  <symbol id="card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h3"/></symbol>
+  <symbol id="video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 5.8a3 3 0 0 1 0 5.4M18 14a5.5 5.5 0 0 1 2.5 5"/></symbol>
+  <symbol id="lang" viewBox="0 0 24 24"><path d="M4 6h9M8.5 4v2M6 6c.5 3 2.6 5.6 5 7M11 6c-.5 3-2.6 5.6-5 7M13 20l4-9 4 9M14.5 17h5"/></symbol>
+  <symbol id="hook" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><circle cx="12" cy="6" r="2.5"/><path d="M10.8 8.2L7.3 14.8M13.2 8.2l3.5 6.6M8.5 17h7"/></symbol>
+  <symbol id="sign" viewBox="0 0 24 24"><path d="M4 18c3-1 4.5-4 6-8 1-2.6 2.5-3.5 3.5-2.5S13 11 11 14c-1.6 2.4 0 3.5 2 2l2-1.6c1-.8 2-.4 2.2.6.2 1 1 1.5 2.8 1"/><path d="M4 21h16"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="site-header__bar">
+    <a class="logo" href="/" aria-label="Claritia home"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="nav">
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Product <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--prod">
+            <div class="menu">
+              <a class="menu__item" href="/products/forms"><span class="itile"><svg class="i" aria-hidden="true"><use href="#form"/></svg></span><span><b>Forms</b><small>Pages, logic and prices</small></span></a><a class="menu__item" href="/products/meetings"><span class="itile"><svg class="i" aria-hidden="true"><use href="#cal"/></svg></span><span><b>Meetings</b><small>Booking pages and team pools</small></span></a><a class="menu__item" href="/products/routing"><span class="itile"><svg class="i" aria-hidden="true"><use href="#route"/></svg></span><span><b>Routing</b><small>The right person for each lead</small></span></a><a class="menu__item" href="/#workflows"><span class="itile"><svg class="i" aria-hidden="true"><use href="#flow"/></svg></span><span><b>Workflows</b><small>Reminders and follow-ups</small></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Form templates <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--mega">
+            <div class="mcols">
+              <div class="mcol"><b class="mcol__h">By use</b><a href="/templates/group/leads">Leads and sales</a><a href="/templates/group/booking">Booking</a><a href="/templates/group/money">Orders and payments</a><a href="/templates/group/events">Events</a><a href="/templates/group/feedback">Feedback and surveys</a><a href="/templates/group/intake">Intake and onboarding</a><a href="/templates/group/apply">Apply and join</a><a href="/templates/group/legal">Consent and legal</a></div>
+              <div class="mcol"><b class="mcol__h">Popular</b><a href="/templates/category/demo-request">Demo request</a><a href="/templates/category/contact">Contact</a><a href="/templates/category/quote">Quote</a><a href="/templates/category/appointment">Appointment</a><a href="/templates/category/registration">Registration</a><a href="/templates/category/job-application">Job application</a><a href="/templates/category/order">Order</a><a href="/templates/category/feedback">Feedback</a></div>
+              <div class="mcol"><b class="mcol__h">By industry</b><a href="/templates/saas">SaaS and software</a><a href="/templates/agency">Agencies</a><a href="/templates/consulting">Consulting</a><a href="/templates/healthcare">Healthcare</a><a href="/templates/real-estate">Real estate</a><a href="/templates/education">Education and training</a><a href="/templates/fitness">Fitness</a><a href="/templates/legal">Legal</a></div>
+            </div>
+            <div class="menu-foot"><a href="/templates">See all 840 templates <svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Integrations <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--mega">
+            <div class="mcols mcols--ix">
+              <div class="mcol"><b class="mcol__h">By kind</b><div class="mlinks2"><a href="/integrations#crm">CRM</a><a href="/integrations#calendars">Calendars</a><a href="/integrations#video">Video</a><a href="/integrations#chat">Chat</a><a href="/integrations#email">Email</a><a href="/integrations#sheets">Sheets</a><a href="/integrations#work-tools">Work tools</a><a href="/integrations#documents">Documents</a><a href="/integrations#files">Files</a><a href="/integrations#payments">Payments</a><a href="/integrations#analytics">Analytics</a><a href="/integrations#website">Website</a></div></div>
+              <div class="mcol"><b class="mcol__h">Popular</b><div class="mtools"><a class="mtool" href="/integrations/hubspot"><img src="/assets/logos/hubspot.svg" alt="" width="18" height="18">HubSpot</a><a class="mtool" href="/integrations/salesforce"><img src="/assets/logos/salesforce.svg" alt="" width="18" height="18">Salesforce</a><a class="mtool" href="/integrations/google-calendar"><img src="/assets/logos/calendar.svg" alt="" width="18" height="18">Google Calendar</a><a class="mtool" href="/integrations/outlook"><img src="/assets/logos/outlook.jpg" alt="" width="18" height="18">Outlook</a><a class="mtool" href="/integrations/zoom"><img src="/assets/logos/zoom.svg" alt="" width="18" height="18">Zoom</a><a class="mtool" href="/integrations/slack"><img src="/assets/logos/slack.svg" alt="" width="18" height="18">Slack</a><a class="mtool" href="/integrations/google-sheets"><img src="/assets/logos/googlesheets.svg" alt="" width="18" height="18">Google Sheets</a><a class="mtool" href="/integrations/mailchimp"><img src="/assets/logos/mailchimp.svg" alt="" width="18" height="18">Mailchimp</a><a class="mtool" href="/integrations/stripe"><img src="/assets/logos/stripe.svg" alt="" width="18" height="18">Stripe</a><a class="mtool" href="/integrations/webflow"><img src="/assets/logos/webflow.svg" alt="" width="18" height="18">Webflow</a></div></div>
+            </div>
+            <div class="menu-foot"><a href="/integrations">See all 73 integrations <svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+        <li><a class="nav__link" href="/pricing">Pricing</a></li>
+        <li><a class="nav__link" href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="site-actions">
+      <a class="site-actions__signin" href="https://app.tryclaritia.com/signin">Sign in</a>
+      <a class="btn btn--primary" href="https://app.tryclaritia.com/signup">Start free <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-label="Open menu">
+        <svg class="i-open" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="i-close" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="sheet">
+  <div class="sheet__body">
+    <span class="sheet__label">Product</span>
+    <a href="/products/forms">Forms</a>
+    <a href="/products/meetings">Meetings</a>
+    <a href="/products/routing">Routing</a>
+    <a href="/#workflows">Workflows</a>
+    <a href="/templates">Form templates</a>
+    <a href="/integrations">Integrations</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/blog">Blog</a>
+  </div>
+  <div class="sheet__foot">
+    <a class="btn btn--ghost btn--lg" href="https://app.tryclaritia.com/signin">Sign in</a>
+    <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com/signup">Start free</a>
+  </div>
+</div>
+
+<main id="main">
+  <div class="frame">
+    <article class="bl-post">
+      <nav class="bl-crumb" aria-label="Breadcrumb"><a href="/blog">Blog</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><span>Routing</span></nav>
+      <h1>Lead Routing in Salesforce: How to Set It Up Step by Step (2026)</h1>
+      <p class="bl-lead">Set up lead routing in Salesforce with lead assignment rules, add a round robin, fix common problems, and see when an add-on tool is worth it.</p>
+      <div class="bl-by"><time datetime="2026-11-18">November 18, 2026</time><span>8 min read</span></div>
+      <img class="bl-cover" src="/blog/salesforce-lead-routing/cover.png?v=5719b207e7" alt="" width="1200" height="630">
+      <div class="bl-body-wrap">
+        <aside class="bl-toc" aria-label="On this page"><b>On this page</b><a href="#main-points">Main points</a><a href="#what-is-lead-routing-in-salesforce">What is lead routing in Salesforce?</a><a href="#what-you-need">What you need</a><a href="#step-1-write-your-rules-in-order">Step 1: Write your rules in order</a><a href="#step-2-set-a-default-lead-owner">Step 2: Set a default lead owner</a><a href="#step-3-create-queues-for-your-teams">Step 3: Create queues for your teams</a><a href="#step-4-create-the-lead-assignment-rule">Step 4: Create the lead assignment rule</a><a href="#step-5-add-a-simple-round-robin">Step 5: Add a simple round robin</a><a href="#step-6-make-sure-the-rule-runs">Step 6: Make sure the rule runs</a><a href="#step-7-test-with-real-examples">Step 7: Test with real examples</a><a href="#common-problems">Common problems</a><a href="#tools-for-lead-routing-in-salesforce">Tools for lead routing in Salesforce</a><a href="#questions">Questions</a><a href="#get-started">Get started</a></aside>
+        <div class="bl-body"><p>Leads pour into Salesforce from web forms, imports and your team. Without routing, they all land with one default owner, or in a queue someone has to sort by hand. The lead who filled in your demo form at 9 am is still waiting at lunch, because no one knew it was theirs.</p>
+<p>Salesforce has routing built in. Lead assignment rules can send each lead to the right rep or queue the moment it's created. They also have limits, and the most common one surprises people: there's no round robin button.</p>
+<blockquote><p><strong><a href="https://app.tryclaritia.com/signup">Try Claritia free</a></strong> to send form leads to Salesforce with the right owner and the meeting already booked.</p></blockquote>
+<p>In this post, you'll set up lead routing in Salesforce step by step, add a simple round robin, fix the usual problems, and see when an add-on tool makes sense.</p>
+<h2 id="main-points">Main points</h2>
+<ul><li>Salesforce routes leads with lead assignment rules. Only one lead assignment rule can be active at a time, and it holds a list of entries checked in order.</li><li>The first entry that matches wins and assigns the lead to a user or a queue. Add a catch-all entry at the end.</li><li>There's no round robin setting. The usual fix is a formula field that numbers leads, with one rule entry per rep.</li><li>Assignment rules don't know about time off, workload or meetings. Tools like <a href="https://www.leandata.com/" target="_blank" rel="noopener">LeanData</a>, <a href="https://www.distributionengine.com/" target="_blank" rel="noopener">Distribution Engine</a> and <a href="https://www.chilipiper.com/" target="_blank" rel="noopener">Chili Piper</a> fill those gaps.</li><li>For form leads, <a href="/">Claritia</a> sends each lead to Salesforce and books the meeting with the right owner, on its Business plan.</li></ul>
+<h2 id="what-is-lead-routing-in-salesforce">What is lead routing in Salesforce?</h2>
+<p>Lead routing in Salesforce means giving each new lead record an owner based on rules. The owner can be a user, such as a sales rep, or a queue that a team works from. Salesforce's main tool for this is the lead assignment rule, set up in Setup. For the basics of routing in general, read <a href="/blog/what-is-lead-routing">what lead routing is</a>.</p>
+<h2 id="what-you-need">What you need</h2>
+<ul><li><strong>Admin access</strong> to Setup in your Salesforce org.</li><li><strong>Your routing rules on paper.</strong> Who gets which lead, and who gets the rest.</li><li><strong>The lead fields your rules need</strong>, such as Country, State, Industry, Lead Source or a company size field.</li><li><strong>Queues</strong>, if a team should share leads from one list.</li><li><strong>A sandbox</strong>, if you have one, to test before you change live routing.</li></ul>
+<h2 id="step-1-write-your-rules-in-order">Step 1: Write your rules in order</h2>
+<p>Assignment rules check each entry from the top down and stop at the first match. So the order matters as much as the rules. Write them as a short list, most specific first:</p>
+<ol><li>Leads from companies with more than 1,000 employees go to the enterprise queue.</li><li>Leads from Germany, Austria and Switzerland go to the DACH rep.</li><li>Leads from the United States go to the US team.</li><li>Everyone else goes to the general queue.</li></ol>
+<p>The last line is your catch-all. Without it, a lead that matches nothing won't be assigned by the rule.</p>
+<h2 id="step-2-set-a-default-lead-owner">Step 2: Set a default lead owner</h2>
+<p>In Setup, open Lead Settings and pick a default lead owner. When an assignment rule can't find an owner for a web lead, Salesforce gives it to this person or queue. Pick someone who checks it every day, or a queue your team watches.</p>
+<h2 id="step-3-create-queues-for-your-teams">Step 3: Create queues for your teams</h2>
+<p>If a team should share leads, create a queue for it in Setup under Queues. Pick Lead as the object and add the team members. A queue keeps leads in one list until someone takes them. That's handy, but it's also where leads wait, so the team needs a habit of picking them up.</p>
+<h2 id="step-4-create-the-lead-assignment-rule">Step 4: Create the lead assignment rule</h2>
+<ol><li>In Setup, search for Lead Assignment Rules and click New.</li><li>Name the rule and mark it active. Only one lead assignment rule can be active, so this one replaces any rule that was active before.</li><li>Open the rule and add a rule entry for each line from Step 1.</li><li>For each entry, set the sort order, the criteria, and the user or queue to assign.</li><li>If you like, pick an email template so the new owner gets an alert.</li><li>Add the catch-all entry last, with no criteria.</li></ol>
+<p>Keep each entry to one clear idea, so you can tell later why a lead went where it did.</p>
+<h2 id="step-5-add-a-simple-round-robin">Step 5: Add a simple round robin</h2>
+<p>Lead assignment rules have no round robin setting. Salesforce's own help shows a workaround that uses fields on the lead:</p>
+<ol><li>Add an auto-number field to the lead, so every new lead gets the next number.</li><li>Add a formula field that turns that number into a rep number. With three reps, the formula uses MOD to give 1, 2 or 3, then starts again.</li><li>In your assignment rule, add one entry per rep: rep number equals 1 goes to the first rep, 2 to the second, and so on.</li></ol>
+<p>This shares leads evenly, but it's rigid. When a rep joins, leaves or goes on holiday, someone has to change the formula and the entries by hand.</p>
+<h2 id="step-6-make-sure-the-rule-runs">Step 6: Make sure the rule runs</h2>
+<p>An active rule doesn't run on every lead by default. Check each way leads come in:</p>
+<ul><li><strong>Web-to-lead:</strong> Leads from Salesforce web-to-lead forms go through the active rule.</li><li><strong>Leads your team creates:</strong> The "Assign using active assignment rule" checkbox on the lead form decides it. Add it to the page layout, or to the Lightning record page if you use Dynamic Forms.</li><li><strong>Apex code and the API:</strong> Leads created in code skip the rule unless the code asks for it. Ask your developer to set the assignment rule option.</li><li><strong>Flows:</strong> A flow that creates leads may skip the rule too. Check Salesforce's help for how to apply assignment rules from a flow, and test it.</li><li><strong>Imports:</strong> Check the assignment option in the import tool before you load a file.</li></ul>
+<h2 id="step-7-test-with-real-examples">Step 7: Test with real examples</h2>
+<p>Create one test lead for each rule entry, plus one that should hit the catch-all. Check the owner on each, and check that the alert email arrived. Then watch new leads for a week and fix the order of any entries that clash.</p>
+<h2 id="common-problems">Common problems</h2>
+<ul><li><strong>The rule didn't run.</strong> The lead came in by code, a flow or an import that skipped assignment. See Step 6.</li><li><strong>The wrong rep got the lead.</strong> An earlier entry matched first. Move the more specific entry higher.</li><li><strong>Everything goes to the default owner.</strong> No entry matched, or the active rule is a different one. Remember only one rule is active.</li><li><strong>Reps on holiday keep getting leads.</strong> Assignment rules don't check time off. You have to edit the entries, or use a tool that knows who's away.</li><li><strong>A customer lands with a new rep.</strong> Assignment rules look at the lead's own fields. They don't check whether the company is already an account someone owns.</li><li><strong>Owners flip back.</strong> If you also sync owners with another system, such as HubSpot, the two can overwrite each other. Pick one system to own assignment.</li></ul>
+<h2 id="tools-for-lead-routing-in-salesforce">Tools for lead routing in Salesforce</h2>
+<p>Assignment rules cover a lot for free, but they stop at the owner field. When you need fair rotation with time off, account matching, or a meeting booked on the spot, an add-on helps. For a full comparison, see our list of the <a href="/blog/best-lead-routing-software">best lead routing software</a>.</p>
+<h3 id="claritia">Claritia</h3>
+<p><a href="/">Claritia</a> is a forms and meetings tool that sends each form lead to Salesforce as a lead or a contact, matched by email so it doesn't make duplicates. You choose who sets the owner: Claritia's routing, or your Salesforce assignment rules. A lead Salesforce already knows books with its owner first, and new leads go to the team's round robin. Each fill also shows as a completed task on the record.</p>
+<p>The <a href="/integrations/salesforce">Salesforce integration</a> is on Business, at $79 a seat a month ($63 billed yearly). Claritia is a newer tool with a smaller app marketplace than the Salesforce-native tools, and its Zapier and Make apps aren't listed yet.</p>
+<h3 id="leandata">LeanData</h3>
+<p><a href="https://www.leandata.com/" target="_blank" rel="noopener">LeanData</a> is built for Salesforce teams. Its Standard edition covers round robin, territory and account-based routing, plus matching leads to accounts. Advanced and Premium add contacts, accounts and any Salesforce object. Pricing is by quote, based on features, objects and the number of Salesforce users or queues, and onboarding is billed apart.</p>
+<h3 id="distribution-engine">Distribution Engine</h3>
+<p><a href="https://www.distributionengine.com/" target="_blank" rel="noopener">Distribution Engine</a> installs from the Salesforce AppExchange. It adds round robin with workload and availability on top of Salesforce. Plans start at $20 a user a month, billed yearly, with a minimum of 5 licenses and a 30-day free trial.</p>
+<h3 id="chili-piper">Chili Piper</h3>
+<p><a href="https://www.chilipiper.com/" target="_blank" rel="noopener">Chili Piper</a> works with Salesforce and HubSpot. Its Growth plan adds form routing, territory and assignment rules, and fair lead distribution, with meetings booked from the form. Growth starts at $15,000 a year with 15 seats, billed yearly only.</p>
+<p>Prices checked November 2026.</p>
+<h2 id="questions">Questions</h2>
+<h3 id="does-salesforce-have-built-in-lead-routing">Does Salesforce have built-in lead routing?</h3>
+<p>Yes. Lead assignment rules assign each new lead to a user or queue based on criteria you set. They're set up in Setup under Lead Assignment Rules.</p>
+<h3 id="how-many-lead-assignment-rules-can-be-active-in-salesforce">How many lead assignment rules can be active in Salesforce?</h3>
+<p>One. You can create several rules, but only one lead assignment rule is active at a time. Put all your entries in that one rule, in the order you want them checked.</p>
+<h3 id="can-salesforce-do-round-robin-lead-assignment">Can Salesforce do round robin lead assignment?</h3>
+<p>Not with a single setting. The common workaround is an auto-number field and a formula field that numbers leads 1, 2, 3 and so on, with one rule entry per rep. Add-on tools handle round robin with time off and weights.</p>
+<h3 id="why-are-my-salesforce-assignment-rules-not-working">Why are my Salesforce assignment rules not working?</h3>
+<p>Most often the lead came in a way that skips the rule, such as Apex code, a flow or an import with assignment turned off. Also check that the rule you edited is the active one.</p>
+<h3 id="where-do-leads-go-if-no-assignment-rule-matches">Where do leads go if no assignment rule matches?</h3>
+<p>Web leads go to the default lead owner set in Lead Settings. Add a catch-all entry at the end of your rule so every lead gets an owner you chose.</p>
+<h3 id="can-a-salesforce-lead-go-to-the-account-owner">Can a Salesforce lead go to the account owner?</h3>
+<p>Not with standard assignment rules, since they read the lead's own fields. Tools like LeanData match leads to accounts. In Claritia, a lead Salesforce already knows books with its owner on Business.</p>
+<h2 id="get-started">Get started</h2>
+<p>Write your rules in order, add a catch-all, and test each way leads come in. When you need time off, owner matching or a booked meeting, add a tool on top.</p>
+<blockquote><p><strong><a href="https://app.tryclaritia.com/signup">Try Claritia free</a></strong> to build a form that sends leads to Salesforce and books the meeting with the right owner.</p></blockquote>
+<p>You can also see the <a href="/integrations/salesforce">Salesforce integration</a> or how <a href="/products/routing">Claritia routing</a> works.</p></div>
+      </div>
+    </article>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="bl-more" aria-labelledby="more-h"><h2 id="more-h">More from the blog</h2><div class="bl-grid"><a class="bl-card" href="/blog/inbound-lead-generation"><span class="bl-card__img"><img src="/blog/inbound-lead-generation/cover.png?v=728704a58c" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Forms</b>November 18, 2026</span><b class="bl-card__h">Inbound Lead Generation: A Simple Guide for Small B2B Teams (2026)</b></span></a><a class="bl-card" href="/blog/typeform-vs-jotform"><span class="bl-card__img"><img src="/blog/typeform-vs-jotform/cover.png?v=2da96bae39" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Forms</b>November 18, 2026</span><b class="bl-card__h">Typeform vs Jotform: Which Form Builder Fits Your Team? (2026)</b></span></a><a class="bl-card" href="/blog/microsoft-teams-meeting-scheduler"><span class="bl-card__img"><img src="/blog/microsoft-teams-meeting-scheduler/cover.png?v=5ffb66813a" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Scheduling</b>November 18, 2026</span><b class="bl-card__h">Microsoft Teams Meeting Scheduler: How to Let People Book Teams Calls (2026)</b></span></a></div></section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+<!-- The last prompt, on dark -->
+  <div class="dark">
+    <div class="band"><div class="frame"></div></div>
+    <div class="frame">
+      <section class="cta" aria-labelledby="cta-h">
+        <div class="ghostapp" aria-hidden="true"><div class="gbar"><span class="sq"><svg class="i s14"><use href="#home"/></svg></span>Lead intake<div class="end"><span>Share</span><span>Publish</span></div></div></div>
+        <h2 id="cta-h">What form do you need?</h2>
+        <form class="dprompt" action="https://app.tryclaritia.com/forms/new" method="get"><div class="in">
+          <label class="sr-only" for="ask2">Describe the form you need</label>
+          <textarea id="ask2" name="ask" maxlength="300" placeholder="Build a catering quote with a price calculator and a deposit"></textarea>
+          <div class="pbar">
+            <span class="logos"><img src="/assets/logos/calendar.svg" alt="" width="22" height="22"><img src="/assets/logos/outlook.jpg" alt="" width="22" height="22"><img src="/assets/logos/hubspot.svg" alt="" width="22" height="22"></span>
+            <span class="small">Free plan. No card needed.</span>
+            <span class="grow"></span>
+            <button class="btn btn--green" type="submit">Get started <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></button>
+          </div>
+        </div></form>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__frame">
+    <div class="site-footer__in">
+      <div class="site-footer__brand">
+        <a class="logo" href="/" aria-label="Claritia home"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</a>
+        <p>Forms that book the meeting</p>
+      </div>
+      <div class="site-footer__col"><h2>Product</h2><ul><li><a href="/products/forms">Forms</a></li><li><a href="/products/meetings">Meetings</a></li><li><a href="/products/routing">Routing</a></li><li><a href="/#workflows">Workflows</a></li><li><a href="/integrations">Integrations</a></li></ul></div>
+      <div class="site-footer__col"><h2>Form templates</h2><ul><li><a href="/templates">All form templates</a></li><li><a href="/templates/group/leads">Leads and sales</a></li><li><a href="/templates/group/booking">Booking</a></li><li><a href="/templates/group/money">Orders and payments</a></li><li><a href="/templates/group/events">Events</a></li></ul></div>
+      <div class="site-footer__col"><h2>Company</h2><ul><li><a href="/pricing">Pricing</a></li><li><a href="/#faq">Questions</a></li><li><a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a></li><li><a href="mailto:hello@tryclaritia.com">Contact</a></li></ul></div>
+      <div class="site-footer__col"><h2>Resources</h2><ul><li><a href="https://app.tryclaritia.com/signin">Sign in</a></li><li><a href="/blog">Blog</a></li><li><a href="/llms.txt">llms.txt</a></li><li><a href="/pricing.md">Pricing.md</a></li></ul></div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Perceptric. Claritia is a Perceptric product.</span>
+      <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js?v=9" defer></script>
+</body>
+</html>
