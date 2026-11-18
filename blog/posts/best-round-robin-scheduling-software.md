@@ -98,7 +98,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Calendly
 
-[Calendly](https://calendly.com/) is the booking link many of your buyers already know. Its Teams plan adds round robin and team scheduling, along with forms that route leads to the right event. Teams also routes by the owner already set in Salesforce or HubSpot. It suits teams already on Calendly links who want to add a rotation.
+[Calendly](https://calendly.com/) is the booking link many of your buyers already know. Its Teams plan adds round robin and team scheduling, along with forms that route leads to the right event. Teams also routes by the owner already set in HubSpot, and Enterprise adds routing by Salesforce owner. It suits teams already on Calendly links who want to add a rotation.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -106,13 +106,13 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 - **Round robin:** Round robin and team scheduling on Teams.
 - **Routing forms:** On Teams and Enterprise.
-- **Owner routing:** By Salesforce and HubSpot assignment on Teams.
+- **Owner routing:** By HubSpot assignment on Teams, and by Salesforce assignment on Enterprise.
 - **Salesforce lookup routing:** On Enterprise.
 
 ### Pros
 
 - **A familiar page:** Most invitees have seen the booking page before.
-- **Owner routing on Teams:** Salesforce and HubSpot owner routing without Enterprise.
+- **HubSpot owner routing on Teams:** No Enterprise plan needed for HubSpot owners.
 
 ### Cons
 
@@ -335,7 +335,7 @@ The free plan lets you set up links and send meeting polls.
 ## Which round robin scheduling software should you pick?
 
 - If you want the form and the rotation in one tool, with weights and away days, pick [Claritia](/) Pro.
-- If your buyers already know Calendly and you route by Salesforce or HubSpot owner, pick [Calendly](https://calendly.com/) Teams.
+- If your buyers already know Calendly and you route by HubSpot owner, pick [Calendly](https://calendly.com/) Teams.
 - If you run your whole sales process in HubSpot, use [HubSpot](https://www.hubspot.com/)'s team scheduling pages.
 - If price comes first and a plain rotation is enough, pick [Zcal](https://zcal.co/) Pro.
 - If you like open source and want routing forms too, pick [Cal.com](https://cal.com/) Teams.

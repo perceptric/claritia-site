@@ -251,21 +251,21 @@ Plans are billed yearly, plus seats.
 
 ## 7. Calendly
 
-[Calendly](https://calendly.com/) routes on its Teams plan through routing forms. A lead answers a few questions and lands on the right event. Teams also routes by Salesforce and HubSpot assignment, and Enterprise adds Salesforce lookup routing. It fits teams who want simple routing on a booking link.
+[Calendly](https://calendly.com/) routes on its Teams plan through routing forms. A lead answers a few questions and lands on the right event. Teams also routes by HubSpot assignment. Routing by Salesforce assignment and Salesforce lookup come on Enterprise. It fits teams who want simple routing on a booking link.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
 ### Key features
 
 - **Routing forms:** On Teams.
-- **Owner routing:** Routes by the owner set in Salesforce or HubSpot.
+- **Owner routing:** Routes by HubSpot owner on Teams, and by Salesforce assignment on Enterprise.
 - **Salesforce lookup routing:** On Enterprise.
 - **Round robin:** Shares the meetings across the team.
 
 ### Pros
 
 - **Simple routing:** A few questions send the lead to the right event.
-- **Owner routing on Teams:** No Enterprise plan needed for Salesforce or HubSpot owner routing.
+- **HubSpot owner routing on Teams:** No Enterprise plan needed for HubSpot owners.
 - **Free plan:** One event type for free.
 
 ### Cons

@@ -160,14 +160,14 @@ Plans are billed yearly, and each rep needs a seat on top.
 
 ## 4. Calendly
 
-[Calendly](https://calendly.com/)'s Teams plan adds routing forms and round robin. It also routes by the owner set in Salesforce or HubSpot. That covers a good share of what teams buy Chili Piper for, on a booking page your leads already know. It fits teams who want routing forms on the booking link they already use.
+[Calendly](https://calendly.com/)'s Teams plan adds routing forms and round robin. It also routes by the owner set in HubSpot and sends meetings to Salesforce. Routing by Salesforce owner needs Enterprise. That covers a good share of what teams buy Chili Piper for, on a booking page your leads already know. It fits teams who want routing forms on the booking link they already use.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
 ### Key features
 
 - **Routing forms:** Routing forms and round robin on Teams.
-- **Owner routing:** Routes by the owner set in Salesforce or HubSpot, on Teams.
+- **Owner routing:** Routes by HubSpot owner on Teams. Routing by Salesforce assignment is on Enterprise.
 - **Salesforce lookup routing:** On Enterprise.
 - **Billing choice:** Monthly or yearly billing.
 
@@ -175,7 +175,7 @@ Plans are billed yearly, and each rep needs a seat on top.
 
 - **A familiar link:** Your leads already know the booking page.
 - **Free plan:** One event type for free.
-- **Owner routing without Enterprise:** Salesforce and HubSpot owner routing comes on Teams.
+- **HubSpot owner routing without Enterprise:** It comes on Teams.
 
 ### Cons
 
@@ -363,7 +363,7 @@ Yes. Claritia, RevenueHero, Calendly, OnceHub and Cal.com all offer monthly bill
 
 ### Which Chili Piper alternative works best with Salesforce?
 
-LeanData and Distribution Engine are built inside Salesforce. Claritia Business adds Salesforce with owner first, and Calendly Teams routes by Salesforce assignment.
+LeanData and Distribution Engine are built inside Salesforce. Claritia Business adds Salesforce with owner first, and Calendly routes by Salesforce assignment on Enterprise.
 
 ### Does Chili Piper have a free plan?
 
