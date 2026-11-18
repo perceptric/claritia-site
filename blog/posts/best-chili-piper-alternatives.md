@@ -2,7 +2,7 @@
 title: Best Chili Piper Alternatives for Routing and Booking Meetings (2026)
 description: Looking for Chili Piper alternatives in 2026? Compare tools that route form leads and book meetings, with real prices and the billing terms for each.
 category: Routing
-kind: meeting
+kind: route
 date: 2026-11-01
 ---
 

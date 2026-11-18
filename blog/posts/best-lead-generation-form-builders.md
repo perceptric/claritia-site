@@ -2,7 +2,7 @@
 title: Best Lead Generation Form Builder: 8 Tools for Small Teams (2026)
 description: Compare 8 lead generation form builders on free plans, prices and what happens to each lead after the form, so you can pick the right one for your team.
 category: Forms
-kind: form
+kind: integration
 date: 2026-10-31
 ---
 

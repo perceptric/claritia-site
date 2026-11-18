@@ -2,7 +2,7 @@
 title: Best Form Builder With Conditional Logic: 8 Tools Compared (2026)
 description: Compare 8 form builders with conditional logic. See which ones skip steps, run calculations and keep logic on the free plan, with real prices for 2026.
 category: Forms
-kind: form
+kind: logic
 date: 2026-11-05
 ---
 

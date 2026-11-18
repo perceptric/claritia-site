@@ -2,7 +2,7 @@
 title: Best Lead Routing Software to Send Each Lead to the Right Rep (2026)
 description: Compare the best lead routing software for 2026: what each tool routes on and which CRM it needs, with real prices and contract terms for each.
 category: Routing
-kind: responses
+kind: route
 date: 2026-10-26
 ---
 

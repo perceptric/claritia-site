@@ -6,7 +6,7 @@ A post is a Markdown file in blog/posts/<slug>.md that starts with a few lines b
     title: How to route demo requests to the right rep
     description: One or two sentences for search results and link previews.
     category: Routing
-    kind: meeting            # the cover's scene: form, meeting, workflow, integration or responses
+    kind: meeting            # the cover's scene: form, meeting, workflow, integration, route, robin or logic
     date: 2026-11-06
     author: Vincent Nguyen
     logo: /assets/logos/hubspot.svg   # integration covers only

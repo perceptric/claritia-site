@@ -2,7 +2,7 @@
 title: The Best Round Robin Scheduling Software for Small Teams (2026)
 description: Compare the best round robin scheduling software for 2026: how each tool shares meetings across a team, and the plan and price you need for it.
 category: Routing
-kind: meeting
+kind: robin
 date: 2026-11-04
 ---
 
