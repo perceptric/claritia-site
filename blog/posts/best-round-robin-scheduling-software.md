@@ -51,7 +51,7 @@ Most tools list round robin somewhere. These five checks show which one fits you
 |---|---|---|---|---|
 | [Claritia](/) | Forms that book the right teammate | Yes | $12 a seat a month, billed yearly | Pro, $31 a seat billed yearly |
 | [Calendly](https://calendly.com/) | Teams already on Calendly links | Yes, 1 event type | $10 a seat a month, billed yearly | Teams, $16 a seat billed yearly |
-| [Cal.com](https://cal.com/) | Open source scheduling | Yes, 1 user | $12 a user a month | Teams |
+| [Cal.com](https://cal.com/) | Open source scheduling | Yes, 1 user | $12 a user a month, billed yearly | Teams |
 | [SavvyCal](https://savvycal.com/) | A kind booking page | Setup only | $10 a user a month, billed yearly | Basic and Premium |
 | [OnceHub](https://www.oncehub.com/) | Routing forms with chat | Yes | $10 a user a month, billed yearly | Route, $19 a user billed yearly |
 | [Zcal](https://zcal.co/) | Low-cost team links | Yes | $7 a user a month | Pro and Business |
@@ -141,7 +141,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 ### Pros
 
 - **Open source:** Room to build on top.
-- **Low price:** Teams is $12 a user a month, less billed yearly.
+- **Low price:** Teams is $12 a user a month billed yearly, or $16 monthly.
 
 ### Cons
 
@@ -151,7 +151,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 ### Price and plans
 
 - **Free:** $0 for 1 user.
-- **Teams:** $12 a user a month, with 25% off billed yearly.
+- **Teams:** $16 a user a month, or $12 billed yearly.
 - **Organizations:** $28 a user a month.
 
 ## 4. SavvyCal

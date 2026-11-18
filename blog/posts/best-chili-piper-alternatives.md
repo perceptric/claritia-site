@@ -54,7 +54,7 @@ Price matters, but so does the contract behind it. These five checks help:
 | [RevenueHero](https://www.revenuehero.io/) | B2B teams booking from forms | No | $79 a month plus $25 a seat, billed yearly | Monthly or yearly |
 | [Calendly](https://calendly.com/) | Teams who want routing on a known link | Yes, 1 event type | $10 a seat a month, billed yearly | Monthly or yearly |
 | [OnceHub](https://www.oncehub.com/) | Routing forms with chatbots | Yes | $10 a user a month, billed yearly | Monthly or yearly |
-| [Cal.com](https://cal.com/) | Open source routing forms | Yes, 1 user | $12 a user a month | Monthly or yearly |
+| [Cal.com](https://cal.com/) | Open source routing forms | Yes, 1 user | $12 a user a month, billed yearly | Monthly or yearly |
 | [LeanData](https://www.leandata.com/) | Salesforce teams with complex rules | No | See their pricing page | Quote |
 | [Distribution Engine](https://www.distributionengine.com/) | Salesforce teams who want a lower entry price | 30-day trial | $10 a user a month, billed yearly | Yearly, 5 licenses or more |
 | [HubSpot](https://www.hubspot.com/) | Teams who run sales in HubSpot | Yes, up to 2 users | $20 a seat a month, paid monthly | Monthly or yearly |
@@ -238,7 +238,7 @@ Paid plans start at $10 a user a month, billed yearly.
 ### Pros
 
 - **Open source:** You can see and build on the code.
-- **Low price:** Teams is $12 a user a month.
+- **Low price:** Teams is $12 a user a month billed yearly, or $16 monthly.
 - **Free plan:** Free for 1 user.
 
 ### Cons
@@ -249,7 +249,7 @@ Paid plans start at $10 a user a month, billed yearly.
 ### Price and plans
 
 - **Free:** $0 for 1 user.
-- **Teams:** $12 a user a month, with 25% off billed yearly.
+- **Teams:** $16 a user a month, or $12 billed yearly.
 - **Organizations:** $28 a user a month.
 
 ## 7. LeanData

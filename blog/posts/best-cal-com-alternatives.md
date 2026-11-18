@@ -6,7 +6,7 @@ kind: meeting
 date: 2026-10-24
 ---
 
-Cal.com does a lot right. Its source code is on GitHub, with guides for hosting it yourself. Its free plan gives one user unlimited links and calendars, with SMS notifications, and the Teams plan adds round robin and routing forms at $12 a user a month. People still look elsewhere. Some teams have no one to run or tune a scheduler. Others want the booking to start from a lead form, or want round robin without paying for every person on the team.
+Cal.com does a lot right. Its source code is on GitHub, with guides for hosting it yourself. Its free plan gives one user unlimited links and calendars, with SMS notifications, and the Teams plan adds round robin and routing forms at $12 a user a month billed yearly ($16 monthly). People still look elsewhere. Some teams have no one to run or tune a scheduler. Others want the booking to start from a lead form, or want round robin without paying for every person on the team.
 
 A good Cal.com alternative is hosted for you, so setup takes a sign-up and a calendar connection. It also shows the price of team scheduling up front.
 
@@ -16,7 +16,7 @@ In this post, we compare 8 hosted scheduling tools on round robin, routing, free
 
 ## Main points
 
-- Cal.com is hard to beat for a developer or a solo user, and its Teams plan adds round robin and routing forms at $12 a user a month.
+- Cal.com is hard to beat for a developer or a solo user, and its Teams plan adds round robin and routing forms at $12 a user a month billed yearly ($16 monthly).
 - Teams often switch when they want a fully hosted tool with no setup work, or a different way to route and price team booking.
 - Check where team scheduling starts. Round robin begins at $7 a user a month on Zcal Pro and at $16 a seat billed yearly on Calendly Teams.
 - Top picks: [Claritia](/), [Calendly](https://calendly.com/), [SavvyCal](https://savvycal.com/), [OnceHub](https://www.oncehub.com/), [Zcal](https://zcal.co/), [Koalendar](https://koalendar.com/), [Zoho Bookings](https://www.zoho.com/bookings/) and [YouCanBookMe](https://youcanbook.me/).

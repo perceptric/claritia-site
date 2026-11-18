@@ -56,7 +56,7 @@ A long feature list matters less than how a tool fits your sales process. These 
 | [RevenueHero](https://www.revenuehero.io/) | B2B inbound booking | No | $79 a month plus $25 a seat, billed yearly | HubSpot, Salesforce, Zoho and Attio |
 | [OnceHub](https://www.oncehub.com/) | Booking with routing forms and chat | Yes | $10 a user a month, billed yearly | Salesforce and HubSpot from Schedule |
 | [SavvyCal](https://savvycal.com/) | Reps who want a polished link | Setup only | $10 a user a month, billed yearly | CRM connections on both plans |
-| [Cal.com](https://cal.com/) | Open source teams | Yes, 1 user | $12 a user a month | Salesforce and HubSpot sync on free |
+| [Cal.com](https://cal.com/) | Open source teams | Yes, 1 user | $12 a user a month, billed yearly | Salesforce and HubSpot sync on free |
 
 ## 1. Claritia
 
@@ -293,7 +293,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 ### Price and plans
 
 - **Free:** $0 for 1 user.
-- **Teams:** $12 a user a month, with 25% off billed yearly.
+- **Teams:** $16 a user a month, or $12 billed yearly.
 - **Organizations:** $28 a user a month.
 
 ## Which scheduling software should your sales team pick?

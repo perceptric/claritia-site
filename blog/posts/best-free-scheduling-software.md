@@ -52,7 +52,7 @@ Every free plan looks generous on its pricing page. These five checks show what 
 | [Claritia](/) | Booking from a form at no cost | Yes | $12 a seat a month billed yearly | 1 meeting type on 1 calendar |
 | [Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/) | Google Calendar users | Yes | See their pricing page | Some features need a paid plan |
 | [Zcal](https://zcal.co/) | The most features for one person | Yes | $7 a user a month | Zcal branding stays on |
-| [Cal.com](https://cal.com/) | Unlimited links for one person | Yes | $12 a user a month | 1 user |
+| [Cal.com](https://cal.com/) | Unlimited links for one person | Yes | $12 a user a month, billed yearly | 1 user |
 | [Koalendar](https://koalendar.com/) | Unlimited event types and languages | Yes | $6.99 a seat a month billed yearly | No reminders on free |
 | [TidyCal](https://tidycal.com/) | Paid bookings with no monthly bill | Yes | $29 one time | 1 calendar |
 | [Calendly](https://calendly.com/) | A simple, familiar link | Yes | $10 a seat a month billed yearly | 1 event type |
@@ -103,10 +103,10 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ### Key features
 
-- **Clash checks:** It checks your other calendars before it shows a slot.
-- **Reminders:** Up to five reminders per booking.
-- **Spam checks:** Email checks on bookings to cut spam.
-- **Payments:** Stripe payments on bookings.
+- **One free booking page:** A personal Google account gets a basic booking page in Google Calendar.
+- **Reminders on paid plans:** Google lists email reminders as a paid-plan feature.
+- **Calendar checks on paid plans:** Checking your other calendars before showing a slot is a paid-plan feature too.
+- **Payments on paid plans:** Stripe payments on bookings need an eligible paid plan.
 
 ### Pros
 
@@ -116,7 +116,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 ### Cons
 
 - **Browser only for setup:** You create schedules in a web browser. The phone app can't make them.
-- **Premium features:** Google lists some features as premium, so check which ones your account has.
+- **Thin free version:** Reminders, more than one schedule, calendar checks and payments all need a paid Google plan.
 
 ### Price and plans
 
@@ -180,7 +180,7 @@ Both paid plans come with a 14-day free trial.
 ### Price and plans
 
 - **Free:** $0 for one user.
-- **Teams:** $12 a user a month, 25% less billed yearly.
+- **Teams:** $16 a user a month, or $12 billed yearly.
 - **Organizations:** $28 a user a month.
 
 ## 5. Koalendar

@@ -50,7 +50,7 @@ Most of these tools handle a single booking link well. These five checks show th
 | Tool | Best for | Free plan | Paid from | Team routing |
 |---|---|---|---|---|
 | [Claritia](/) | Small teams that book leads from forms | Yes, 1 calendar and 1 meeting type | $12 a seat a month billed yearly | Route by any answer on Pro |
-| [Cal.com](https://cal.com/) | Teams that want code they can host | Yes, 1 user | $12 a user a month | Routing forms on Teams |
+| [Cal.com](https://cal.com/) | Teams that want code they can host | Yes, 1 user | $12 a user a month, billed yearly | Routing forms on Teams |
 | [SavvyCal](https://savvycal.com/) | Outside calls where the booking feel matters | No booking on free | $10 a user a month billed yearly | Round robin on Basic |
 | [OnceHub](https://www.oncehub.com/) | Qualifying leads with forms and chat | Yes, 1 user | $10 a seat a month billed yearly | Routing forms on Route |
 | [Zcal](https://zcal.co/) | Solo users who want a lot for free | Yes | $7 a user a month | Round robin on Pro |
@@ -122,7 +122,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 ### Price and plans
 
 - **Free:** $0 for one user.
-- **Teams:** $12 a user a month, 25% less billed yearly.
+- **Teams:** $16 a user a month, or $12 billed yearly.
 - **Organizations:** $28 a user a month.
 
 ## 3. SavvyCal
