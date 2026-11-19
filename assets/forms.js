@@ -1,13 +1,41 @@
 // The form template gallery and the live forms on each template page (tools/templates.py). No library.
 // Without this file every form still shows in full and every card still links to its page.
 
-// Gallery: search words and filter chips, in place. Chips in one menu widen the results; two menus narrow them. ---
+// Dropdowns (.tdd): the filters and Pages. A click opens or closes the list; a click outside, Escape or Tab closes it.
+(function () {
+  var dds = Array.prototype.slice.call(document.querySelectorAll(".tdd"));
+  function close(dd) {
+    dd.classList.remove("is-open");
+    dd.querySelector(".tdd__btn").setAttribute("aria-expanded", "false");
+  }
+  dds.forEach(function (dd) {
+    var btn = dd.querySelector(".tdd__btn");
+    var list = dd.querySelector(".tdd__list");
+    btn.addEventListener("click", function () {
+      var open = !dd.classList.contains("is-open");
+      dds.forEach(close);
+      if (!open) return;
+      dd.classList.add("is-open");
+      btn.setAttribute("aria-expanded", "true");
+      keepInView(list);
+    });
+    dd.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && dd.classList.contains("is-open")) { close(dd); btn.focus(); }
+    });
+    dd.addEventListener("focusout", function (e) { if (!dd.contains(e.relatedTarget)) close(dd); });
+    // One pick: picking closes the list.
+    if (!dd.hasAttribute("data-multi")) list.addEventListener("click", function (e) { if (e.target.closest(".tdd__opt")) { close(dd); btn.focus(); } });
+  });
+  document.addEventListener("mousedown", function (e) { dds.forEach(function (dd) { if (!dd.contains(e.target)) close(dd); }); });
+})();
+
+// Gallery: search words and filters, in place. Two picks in one menu widen the results; two menus narrow them. ---
 (function () {
   var grid = document.querySelector("[data-grid]");
   var search = document.querySelector("[data-search]");
   if (!grid || !search) return;
   var cards = Array.prototype.slice.call(grid.querySelectorAll(".tcard"));
-  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip[data-m]"));
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".tdd__opt[data-m]"));
   var count = document.querySelector("[data-count]");
   var none = document.querySelector("[data-none]");
   var on = {};
@@ -33,6 +61,14 @@
     });
     if (count) count.textContent = n;
     if (none) none.hidden = n > 0;
+    // Each filter's button says how many of its values are picked.
+    document.querySelectorAll(".tdd[data-multi]").forEach(function (dd) {
+      var k = dd.querySelectorAll('.tdd__opt[aria-pressed="true"]').length;
+      var el = dd.querySelector(".tdd__n");
+      el.textContent = k;
+      el.hidden = !k;
+      dd.classList.toggle("is-on", k > 0);
+    });
   }
   search.addEventListener("input", apply);
   chips.forEach(function (ch) {
@@ -642,33 +678,27 @@ function relink() {
 
 // Pages: the form on one page or in pages, for a form that goes both ways --------------------------------------
 (function () {
-  var bar = document.querySelector(".tpgs");
+  var dd = document.querySelector(".tdd[data-pgs]");
   var stage = document.querySelector("[data-stage]");
-  if (!bar || !stage) return;
-  var own = bar.getAttribute("data-own");
-  var btns = Array.prototype.slice.call(bar.querySelectorAll("button[data-pages]"));
+  if (!dd || !stage) return;
+  var def = dd.getAttribute("data-default");
+  var opts = Array.prototype.slice.call(dd.querySelectorAll(".tdd__opt[data-pages]"));
   function apply(mode, quiet) {
-    btns.forEach(function (b) { b.setAttribute("aria-checked", b.getAttribute("data-pages") === mode ? "true" : "false"); });
+    opts.forEach(function (o) { o.setAttribute("aria-pressed", o.getAttribute("data-pages") === mode ? "true" : "false"); });
+    var on = opts.filter(function (o) { return o.getAttribute("data-pages") === mode; })[0];
+    if (on) dd.querySelector(".tdd__t").textContent = on.textContent;
     stage.querySelectorAll("form[data-cf][data-pages]").forEach(function (f) { f.hidden = f.getAttribute("data-pages") !== mode; });
     document.querySelectorAll("[data-use]").forEach(function (a) {
-      if (mode === own) a.removeAttribute("data-pages"); else a.setAttribute("data-pages", mode);
+      if (mode === def) a.removeAttribute("data-pages"); else a.setAttribute("data-pages", mode);
     });
     relink();
     if (!quiet) {
       var u = new URL(location.href);
-      if (mode === own) u.searchParams.delete("pages"); else u.searchParams.set("pages", mode);
+      if (mode === def) u.searchParams.delete("pages"); else u.searchParams.set("pages", mode);
       history.replaceState(null, "", u.pathname + u.search + u.hash);
     }
   }
-  btns.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-pages")); }); });
-  bar.addEventListener("keydown", function (e) {
-    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
-    e.preventDefault();
-    var i = btns.findIndex(function (b) { return b.getAttribute("aria-checked") === "true"; });
-    var n = btns[(i + (e.key === "ArrowRight" ? 1 : btns.length - 1)) % btns.length];
-    apply(n.getAttribute("data-pages"));
-    n.focus();
-  });
+  opts.forEach(function (o) { o.addEventListener("click", function () { apply(o.getAttribute("data-pages")); }); });
   var want = new URLSearchParams(location.search).get("pages");
   if (want === "one" || want === "multi") apply(want, true);
 })();

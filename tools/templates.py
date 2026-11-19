@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 15, 15
+CSS_V, JS_V = 16, 16
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -180,15 +180,15 @@ def swatch(tid: str) -> str:
 
 
 def style_bar(current: str, own: bool = False) -> str:
-    """The style menu: the form's own style or any of the others, and Shuffle."""
+    """The style menu: Default (the style each form comes in) or any of the others, and Shuffle."""
     data = json.dumps({x["id"]: {k: x[k] for k in ("name", "layout", "input", "shadow", "pattern", "dark")} for x in THEMES}).replace("</", "<\\/")
     opts = []
     if own:
-        opts.append(f'<li role="option" data-theme="" aria-selected="true"><span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><span><b>Each form&#39;s own</b><small>Every card in its own style</small></span></li>')
+        opts.append(f'<li role="option" data-theme="" aria-selected="true"><span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><span><b>Default</b><small>Each form in the style it comes in</small></span></li>')
     for x in THEMES:
         sel = "true" if (x["id"] == current and not own) else "false"
         opts.append(f'<li role="option" data-theme="{x["id"]}" aria-selected="{sel}">{swatch(x["id"])}<span><b>{esc(x["name"])}</b><small>{esc(x["mood"])}</small></span></li>')
-    shown = '<span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><b>Each form&#39;s own</b>' if own else f'{swatch(current)}<b>{esc(TH[current]["name"])}</b>'
+    shown = '<span class="sw sw--own" aria-hidden="true"><i></i><i></i><i></i></span><b>Default</b>' if own else f'{swatch(current)}<b>{esc(TH[current]["name"])}</b>'
     return f"""<div class="tsty" data-styles{" data-own" if own else ""}>
         <span class="tsty__l">Style</span>
         <div class="tsty__dd">
@@ -517,16 +517,30 @@ CHIP_MENUS = [("does", DATA["does"]), ("feature", DATA["features"]), ("layout", 
 CHIP_SKIP = {("does", "follow-up"), ("feature", "booking"), ("feature", "score"), ("layout", "one"), ("feature", "hidden")}
 
 
+CHIP_TITLE = {"does": "What it does", "feature": "Features", "layout": "Layout", "length": "Length"}
+
+
+def dropdown(title: str, opts: list[str], multi: bool, attrs: str = "") -> str:
+    """A menu button and its list: many picks (the filters) or one (Pages). The options are buttons."""
+    return (f'<div class="tdd"{" data-multi" if multi else ""}{attrs}><button type="button" class="tdd__btn" aria-haspopup="true" aria-expanded="false">'
+            f'<b class="tdd__t">{esc(title)}</b><span class="tdd__n" hidden></span><svg class="tsty__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>'
+            f'<div class="tdd__list" role="group" aria-label="{esc(title)}">{"".join(opts)}</div></div>')
+
+
 def chips_for(items) -> str:
+    """The filters: one dropdown per menu, with the values that narrow these templates."""
     out = []
     for m, values in CHIP_MENUS:
         key = {"does": "does", "feature": "features", "layout": "layout", "length": "length"}[m]
+        opts = []
         for v in values:
             if (m, v["id"]) in CHIP_SKIP:
                 continue
             n = sum(1 for t in items if (v["id"] in t[key] if isinstance(t[key], list) else t[key] == v["id"]))
             if n >= 2 and n < len(items):
-                out.append(f'<button type="button" class="chip" data-m="{m}" data-v="{v["id"]}" aria-pressed="false">{esc(v["label"])}</button>')
+                opts.append(f'<button type="button" class="tdd__opt" data-m="{m}" data-v="{v["id"]}" aria-pressed="false"><span>{esc(v["label"])}</span><small>{n}</small></button>')
+        if opts:
+            out.append(dropdown(CHIP_TITLE[m], opts, True))
     return "".join(out)
 
 
@@ -558,7 +572,7 @@ def gallery(current, items) -> str:
       <div class="tgal__main">
         <div class="tfilter">
           <label class="tsearch"><span class="sr-only">Search form templates</span><svg aria-hidden="true"><use href="#i-search"/></svg><input type="search" placeholder="Search {len(items)} form templates" data-search></label>
-          <div class="chips" role="group" aria-label="Filters">{chips_for(items)}</div>
+          <div class="tdds" role="group" aria-label="Filters">{chips_for(items)}</div>
         </div>
         {jump(current)}
         <div class="tbar"><p class="tcount"><span data-count>{len(items)}</span> form templates</p>{style_bar("paper", own=True)}</div>
@@ -820,8 +834,10 @@ def pages_bar(t) -> str:
     """One page or multi-page, for a form that goes both ways."""
     if not t.get("alt"):
         return ""
-    btn = lambda m, label: f'<button type="button" role="radio" aria-checked="{"true" if t["pages"] == m else "false"}" data-pages="{m}">{label}</button>'
-    return f'<div class="tpgs" role="radiogroup" aria-label="Pages" data-own="{t["pages"]}">{btn("one", "One page")}{btn("multi", "Multi-page")}</div>'
+    names = {"one": "One page", "multi": "Multi-page"}
+    opts = [f'<button type="button" class="tdd__opt" data-pages="{m}" aria-pressed="{"true" if t["pages"] == m else "false"}"><span>{names[m]}</span></button>' for m in ("one", "multi")]
+    menu = dropdown(names[t["pages"]], opts, False, f' data-pgs data-default="{t["pages"]}"')
+    return f'<div class="tpgs"><span class="tsty__l">Pages</span>{menu}</div>'
 
 
 def logos() -> str:
