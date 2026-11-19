@@ -151,7 +151,7 @@ How it compares with both:
 
 ![Claritia reading a website's colors, font, buttons and fields to style a form](/assets/blog/ui/ui-forms-read-from-acme-com.webp)
 
-*Caption: Claritia reads a website's colors, font, buttons and fields, then styles the form to match.*
+*Claritia reads a website's colors, font, buttons and fields, then styles the form to match.*
 
 Starter is $15 a seat a month ($12 billed yearly). See [pricing](/pricing) for every plan.
 

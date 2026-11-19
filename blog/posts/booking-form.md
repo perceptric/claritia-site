@@ -43,7 +43,7 @@ A booking page is fine when every booking is the same. A booking form is better 
 
 ![A form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: In Claritia, the form asks its questions first, and the last step is a time picker.*
+*In Claritia, the form asks its questions first, and the last step is a time picker.*
 
 If you're picking a scheduling tool for the calendar side, see our list of the [best appointment scheduling software](/blog/best-appointment-scheduling-software).
 
@@ -224,7 +224,7 @@ Browse every [booking form template](/templates/group/booking) to find one for y
 
 ![What runs after a booking: a confirmation, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
 
-*Caption: After each booking, Claritia sends a confirmation with the invite, then reminders a day and an hour before.*
+*After each booking, Claritia sends a confirmation with the invite, then reminders a day and an hour before.*
 
 ## Common mistakes
 

@@ -84,7 +84,7 @@ Its free plan puts the booking inside a form, so a visitor answers your question
 
 ![What Claritia sends after a booking: a confirmation, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
 
-*Caption: On the free plan, each booking gets a confirmation with the invite and reminders a day and an hour before.*
+*On the free plan, each booking gets a confirmation with the invite and reminders a day and an hour before.*
 
 ### Pros
 

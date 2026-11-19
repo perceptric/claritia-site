@@ -141,7 +141,7 @@ If Fillout's plans don't fit, we compared other options in [the best Typeform al
 
 ![A Claritia form that asks team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form asks its questions, then ends on open times with the right person.*
+*A Claritia form asks its questions, then ends on open times with the right person.*
 
 - **Free:** $0 for 1 seat and 250 submissions a month, with unlimited forms, conditional logic, calculations, file uploads, hidden fields and booking inside forms.
 - **Starter:** $15 a seat a month ($12 billed yearly). Adds 2,000 submissions, Stripe payments, e-signatures, redirects and HubSpot.

@@ -141,7 +141,7 @@ If Typeform's response limits don't fit your traffic, we compared other tools in
 
 ![A Claritia quote form that prices options as people answer and takes a deposit with Stripe](/assets/blog/ui/ui-forms-catering-quote.webp)
 
-*Caption: This Claritia form adds up the price as people answer, then takes a deposit with Stripe.*
+*This Claritia form adds up the price as people answer, then takes a deposit with Stripe.*
 
 Teammates who only build forms or read answers don't need a seat. Claritia is newer, with a smaller app marketplace than Typeform, and its Zapier and Make apps aren't listed yet. On Starter, you can also bring [Typeform answers into Claritia](/integrations/typeform) while you move. See all [form features](/products/forms).
 

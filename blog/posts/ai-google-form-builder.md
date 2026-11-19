@@ -88,7 +88,7 @@ In [Claritia](/), it works like this:
 
 ![Tia building a demo request form from one sentence](/assets/blog/ui/ui-forms-tia.webp)
 
-*Caption: Tia, Claritia's AI form builder, turns one sentence into a demo request form.*
+*Tia, Claritia's AI form builder, turns one sentence into a demo request form.*
 
 Already built a Google Form with Gemini? You can [import it into Claritia](/integrations/google-forms) by pasting its edit link. The questions come over, and your Google Form isn't changed.
 

@@ -87,7 +87,7 @@ Its forms send leads to HubSpot on the Starter plan, and workflows send reminder
 
 ![Claritia's owner first setting: a lead owned by Maya in HubSpot is booked with Maya, and the team takes turns if she is away](/assets/blog/ui/ui-routing-owner-first.webp)
 
-*Caption: With owner first, a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns when she is away.*
+*With owner first, a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns when she is away.*
 
 ### Pros
 

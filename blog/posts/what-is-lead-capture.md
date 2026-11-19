@@ -73,7 +73,7 @@ You can start from a [demo request template](/templates/category/demo-request) a
 
 [![The first page of questions in Claritia's SaaS demo request template](/assets/blog/ui/tpl-saas-demo-request.webp)](/templates/saas-demo-request)
 
-*Caption: The first page of questions in Claritia's SaaS demo request template.*
+*The first page of questions in Claritia's SaaS demo request template.*
 
 ## Best practices for lead capture
 
@@ -91,7 +91,7 @@ Don't end on a plain thank-you message if you can avoid it. Show a calendar, sen
 
 ![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
 
-*Caption: Claritia's submissions list shows each lead, who they booked with and their next step, such as Booked or Guide sent.*
+*Claritia's submissions list shows each lead, who they booked with and their next step, such as Booked or Guide sent.*
 
 ### Send each lead to the right place
 

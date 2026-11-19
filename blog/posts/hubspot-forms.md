@@ -179,7 +179,7 @@ On Business, at $79 a seat a month ($63 billed yearly), a lead HubSpot already k
 
 ![Claritia's owner first setting books a lead with their HubSpot owner, Maya, and falls back to the sales team](/assets/blog/ui/ui-routing-owner-first.webp)
 
-*Caption: With owner first, a lead Maya owns in HubSpot books with Maya, and the sales team takes turns when she's away.*
+*With owner first, a lead Maya owns in HubSpot books with Maya, and the sales team takes turns when she's away.*
 
 Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.
 

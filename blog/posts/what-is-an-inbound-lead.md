@@ -81,7 +81,7 @@ The person who just filled in your form is thinking about the problem right now.
 
 ![A form's thank-you screen that opens the right rep's calendar right after submit](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
+*In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
 
 ### Send each lead to one owner
 
@@ -123,7 +123,7 @@ On Pro, each answer can pick the meeting and the person, with round robin, team 
 
 ![Claritia's routing log for one lead: country is Germany, rule 2 picked Lena Koch, who has 3 of 8 meetings this week](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
 
-*Caption: Claritia's routing log shows why a lead from Germany went to Lena: rule 2 matched, and she had an open time.*
+*Claritia's routing log shows why a lead from Germany went to Lena: rule 2 matched, and she had an open time.*
 
 ### HubSpot
 

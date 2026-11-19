@@ -161,7 +161,7 @@ If what you really want is for each form to turn a lead into a meeting, neither 
 
 ![A Claritia form that asks team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form can end on a time picker, so the lead books on the same page.*
+*A Claritia form can end on a time picker, so the lead books on the same page.*
 
 Why Typeform and Jotform users look at it:
 

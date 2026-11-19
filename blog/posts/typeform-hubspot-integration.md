@@ -140,7 +140,7 @@ You can use it two ways with Typeform and HubSpot.
 
 ![A form's thank-you screen that opens the right rep's calendar](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: When a Claritia form is sent, the thank-you screen opens the right rep's calendar.*
+*When a Claritia form is sent, the thank-you screen opens the right rep's calendar.*
 
 Claritia's free plan takes 250 submissions a month, with conditional logic and multi-page forms included. HubSpot, Typeform answers and follow-up the next day until they book start on Starter at $15 a seat a month ($12 yearly). Routing by any answer is on Pro at $39 ($31 yearly). See [pricing](/pricing).
 

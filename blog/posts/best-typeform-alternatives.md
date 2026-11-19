@@ -83,7 +83,7 @@ The forms still look polished, and more happens after submit. A visitor picks a 
 
 ![Claritia reading a website's colors, font, buttons and fields to style a form](/assets/blog/ui/ui-forms-read-from-acme-com.webp)
 
-*Caption: Claritia reads your website's colors, font, buttons and fields, then styles the form to match.*
+*Claritia reads your website's colors, font, buttons and fields, then styles the form to match.*
 
 ### Pros
 

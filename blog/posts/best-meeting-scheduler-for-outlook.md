@@ -85,7 +85,7 @@ It connects to Outlook or Microsoft 365 in one click on every plan, the free one
 
 ![Claritia meeting types: a one person intro call, a round robin sales demo, an everyone-free onboarding call and a group demo](/assets/blog/ui/ui-meetings-meeting-types.webp)
 
-*Caption: Claritia's meeting types include round robin and everyone-free meetings for teams.*
+*Claritia's meeting types include round robin and everyone-free meetings for teams.*
 
 ### Pros
 

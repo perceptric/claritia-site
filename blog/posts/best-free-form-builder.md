@@ -81,7 +81,7 @@ Its free plan gives you unlimited forms and 250 submissions a month, and each fo
 
 ![A form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form asks for team size, then shows open times so the lead books on the spot.*
+*A Claritia form asks for team size, then shows open times so the lead books on the spot.*
 
 ### Pros
 

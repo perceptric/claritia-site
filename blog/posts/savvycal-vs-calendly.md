@@ -172,7 +172,7 @@ What it adds next to SavvyCal and Calendly:
 
 ![Claritia's round robin team with weights, one rep away until Monday, and daily and weekly caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
 
-*Caption: A Claritia round robin team: Maya has a weight of two, one rep is away until Monday, and caps limit meetings per day and per week.*
+*A Claritia round robin team: Maya has a weight of two, one rep is away until Monday, and caps limit meetings per day and per week.*
 
 Starter is $15 a seat a month ($12 billed yearly), and Pro is $39 ($31 billed yearly). See [pricing](/pricing) for every plan.
 

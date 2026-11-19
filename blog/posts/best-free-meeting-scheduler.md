@@ -80,7 +80,7 @@ Its free plan gives you one meeting type on one calendar, shown in each visitor'
 
 ![A Claritia booking page calendar with open times for a 30 min Google Meet sales demo](/assets/blog/ui/ui-meetings-sales-demo.webp)
 
-*Caption: A Claritia booking page shows only your open times, here for a 30 minute sales demo on Google Meet.*
+*A Claritia booking page shows only your open times, here for a 30 minute sales demo on Google Meet.*
 
 ### Pros
 

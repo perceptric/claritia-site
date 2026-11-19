@@ -85,7 +85,7 @@ Conditional logic, page skips, calculations and booking inside the form are on t
 
 ![A Claritia quote form that prices options and takes a deposit with Stripe](/assets/blog/ui/ui-forms-catering-quote.webp)
 
-*Caption: A Claritia quote form adds up the price as people pick options, then takes a deposit with Stripe.*
+*A Claritia quote form adds up the price as people pick options, then takes a deposit with Stripe.*
 
 ### Pros
 

@@ -73,7 +73,7 @@ Describe the form to Tia, Claritia's AI form builder, in a sentence. For example
 
 ![Tia building a demo request form from one sentence](/assets/blog/ui/ui-forms-tia.webp)
 
-*Caption: Tia turns one sentence into a demo request form you can then edit.*
+*Tia turns one sentence into a demo request form you can then edit.*
 
 Then shape it:
 
@@ -95,7 +95,7 @@ The form can sit in the page, or open as a popup, a slide-in, a corner button or
 
 ![Claritia's share panel with the form link, the embed code and display options](/assets/blog/ui/ui-forms-share.webp)
 
-*Caption: The Share tab gives you the form link, the embed code, and a choice of in page, popup, slide in, corner button or side tab.*
+*The Share tab gives you the form link, the embed code, and a choice of in page, popup, slide in, corner button or side tab.*
 
 ## Step 4: Or keep your Webflow form
 

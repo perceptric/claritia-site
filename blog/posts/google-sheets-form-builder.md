@@ -85,7 +85,7 @@ Its [Google Sheets integration](/integrations/google-sheets) adds a row for each
 
 ![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
 
-*Caption: Every fill is saved in Claritia first, with who the lead booked and what happens next.*
+*Every fill is saved in Claritia first, with who the lead booked and what happens next.*
 
 ### Pros
 

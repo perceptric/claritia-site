@@ -85,7 +85,7 @@ Teammates who only build forms or read answers are free on every plan. A seat is
 
 ![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form can end on a time picker, so the lead books in the same flow.*
+*A Claritia form can end on a time picker, so the lead books in the same flow.*
 
 ### Pros
 

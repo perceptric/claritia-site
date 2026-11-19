@@ -61,7 +61,7 @@ Start from a [demo request template](/templates/category/demo-request).
 
 [![The first page of Claritia's SaaS demo request template form](/assets/blog/ui/tpl-saas-demo-request.webp)](/templates/saas-demo-request)
 
-*Caption: The first page of questions in Claritia's SaaS demo request template.*
+*The first page of questions in Claritia's SaaS demo request template.*
 
 ### 2. Quote request form
 
@@ -102,7 +102,7 @@ Start from a [consultation template](/templates/category/consultation).
 
 [![The first page of Claritia's consulting discovery template form](/assets/blog/ui/tpl-consulting-discovery.webp)](/templates/consulting-discovery)
 
-*Caption: The first page of questions in Claritia's consulting discovery template.*
+*The first page of questions in Claritia's consulting discovery template.*
 
 ### 4. Newsletter signup form
 
@@ -208,7 +208,7 @@ Start from a [calculator template](/templates/category/calculator).
 
 ![A Claritia catering quote form that prices options as people answer and takes a deposit with Stripe](/assets/blog/ui/ui-forms-catering-quote.webp)
 
-*Caption: A quote form that prices each choice as the lead answers, then takes a deposit with Stripe.*
+*A quote form that prices each choice as the lead answers, then takes a deposit with Stripe.*
 
 ### 10. Waitlist form
 

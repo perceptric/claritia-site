@@ -113,11 +113,11 @@ The best time to qualify is inside the form, before anyone books. Here's how it 
 
 ![Claritia routing rules: large teams book the enterprise demo, leads from Germany book with Lena, small budgets get the starter guide, everyone else goes to the sales round robin](/assets/blog/ui/ui-routing-routing.webp)
 
-*Caption: In Claritia, routing rules like these read each answer and pick the meeting, the rep or the guide.*
+*In Claritia, routing rules like these read each answer and pick the meeting, the rep or the guide.*
 
 ![Claritia's routing log for one lead from Germany, showing the rule that picked Lena Koch and her open time](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
 
-*Caption: The routing log shows why a lead went to Lena: the country rule matched and she had an open time.*
+*The routing log shows why a lead went to Lena: the country rule matched and she had an open time.*
 
 Unfit leads stay off your reps' calendars, and a qualified lead never waits for a reply, which matters for [speed to lead](/blog/inbound-lead-generation).
 

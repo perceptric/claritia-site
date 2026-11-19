@@ -80,7 +80,7 @@ When someone fills your form but doesn't book, Starter follows up the next day u
 
 ![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
 
-*Caption: Claritia lists each lead with who they booked and the next step, such as Booked or Guide sent.*
+*Claritia lists each lead with who they booked and the next step, such as Booked or Guide sent.*
 
 ### Pros
 

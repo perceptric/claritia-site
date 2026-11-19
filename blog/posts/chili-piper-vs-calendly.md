@@ -159,7 +159,7 @@ What it offers next to Chili Piper and Calendly:
 
 ![Claritia's routing log for one lead, showing the rule and rep that were picked](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
 
-*Caption: Claritia's routing log shows which rule matched a lead from Germany and why Lena Koch got the meeting.*
+*Claritia's routing log shows which rule matched a lead from Germany and why Lena Koch got the meeting.*
 
 Pro is $39 a seat a month ($31 billed yearly), and Business is $79 ($63 billed yearly). See [pricing](/pricing) for every plan.
 

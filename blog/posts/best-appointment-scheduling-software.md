@@ -80,7 +80,7 @@ For an appointment business, the client answers your intake questions and picks 
 
 ![Claritia's after-booking steps: a confirmation with the invite, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
 
-*Caption: After each booking, Claritia sends a confirmation with the invite, then a reminder a day before and an hour before.*
+*After each booking, Claritia sends a confirmation with the invite, then a reminder a day before and an hour before.*
 
 ### Pros
 

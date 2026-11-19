@@ -43,7 +43,7 @@ In Claritia, working hours, buffers, notice and daily caps come on every plan. S
 
 ![Claritia's availability settings with a connected calendar, working hours by day, a buffer and minimum notice](/assets/blog/ui/ui-meetings-availability.webp)
 
-*Caption: In Claritia, you set working hours for each day, plus a buffer and minimum notice.*
+*In Claritia, you set working hours for each day, plus a buffer and minimum notice.*
 
 ## Step 2: Find the overlap in working hours
 

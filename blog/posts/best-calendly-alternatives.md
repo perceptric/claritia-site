@@ -81,7 +81,7 @@ It builds forms from a sentence or one of 840 templates, opens the right person'
 
 ![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: In Claritia, the visitor answers a few questions and picks a time on the same form.*
+*In Claritia, the visitor answers a few questions and picks a time on the same form.*
 
 ### Pros
 

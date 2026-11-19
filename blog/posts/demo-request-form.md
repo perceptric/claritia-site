@@ -81,7 +81,7 @@ Start from the [book a call template](/templates/general-book-a-call).
 
 [![Claritia's book a call template: name, work email, company, team size and what you'd like to cover](/assets/blog/ui/tpl-general-book-a-call.webp)](/templates/general-book-a-call)
 
-*Caption: The book a call template asks four quick fields and one open question before the calendar.*
+*The book a call template asks four quick fields and one open question before the calendar.*
 
 ### 2. The qualifying demo form
 
@@ -109,7 +109,7 @@ Start from the [demo request template](/templates/saas-demo-request).
 
 [![Page 1 of Claritia's demo request template: name, work email, company and job title](/assets/blog/ui/tpl-saas-demo-request.webp)](/templates/saas-demo-request)
 
-*Caption: Page 1 of the demo request template keeps to name, work email, company and job title.*
+*Page 1 of the demo request template keeps to name, work email, company and job title.*
 
 ### 3. The enterprise demo form
 
@@ -144,7 +144,7 @@ A buyer who picks a time on the page doesn't sit in an inbox waiting for a reply
 
 ![Claritia thank-you screen that opens the right rep's calendar right after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
+*In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
 
 ## Common mistakes
 

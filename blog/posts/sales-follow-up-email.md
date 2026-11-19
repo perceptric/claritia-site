@@ -240,7 +240,7 @@ Several of the templates above can run as workflows, so they go out at the right
 
 ![What Claritia sends after a booking: a confirmation with the invite, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
 
-*Caption: After each booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
+*After each booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
 
 On Starter, you set your own wording and times, and emails can go out from your own [Gmail](/integrations/gmail) or [Outlook](/integrations/outlook). On Pro, follow-up emails go out from your own domain.
 

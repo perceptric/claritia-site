@@ -133,7 +133,7 @@ If Calendly's pricing doesn't fit, you have good options. We compared them in de
 
 ![A Claritia thank-you screen that opens the right rep's calendar after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: Right after submit, the form's thank-you screen opens the right rep's calendar.*
+*Right after submit, the form's thank-you screen opens the right rep's calendar.*
 
 - **Free:** $0 for 1 seat, 1 meeting type, 1 calendar, Google Calendar and Outlook, Zoom, Meet and Teams links, and booking inside forms.
 - **Starter:** $15 a seat a month ($12 billed yearly). Adds unlimited meeting types, 6 calendars a seat, group meetings, meeting polls, paid meetings with Stripe and HubSpot.

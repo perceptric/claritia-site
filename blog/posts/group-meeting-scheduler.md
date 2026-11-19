@@ -93,7 +93,7 @@ For groups, Starter adds meeting polls and group meetings with a guest limit, ne
 
 ![Claritia meeting types, including a round robin sales demo, an everyone-free onboarding call and a group demo with 20 seats](/assets/blog/ui/ui-meetings-meeting-types.webp)
 
-*Caption: In Claritia, a group demo with 20 seats sits next to one-on-one and everyone-free meeting types.*
+*In Claritia, a group demo with 20 seats sits next to one-on-one and everyone-free meeting types.*
 
 ### Pros
 

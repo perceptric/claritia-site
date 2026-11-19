@@ -267,7 +267,7 @@ For reminders, here's what each plan includes:
 
 ![What runs after a Claritia booking: a confirmation with the invite, then reminders a day before and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
 
-*Caption: After each booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
+*After each booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
 
 Claritia has limits too. It's newer, with a smaller marketplace, its Zapier and Make apps aren't listed yet, and its built-in SMS reminders haven't shipped yet. For now, texts go through your own Twilio number. See [Claritia meetings](/products/meetings) for how booking and reminders fit together.
 

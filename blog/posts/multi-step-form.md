@@ -83,7 +83,7 @@ Each example below is a real template you can fill in now. See all of them on th
 
 [![The first page of Claritia's demo request template: name, work email, company and job title, with step 1 of 2 on the progress bar](/assets/blog/ui/tpl-saas-demo-request.webp)](/templates/saas-demo-request)
 
-*Caption: Step 1 of 2 in the demo request template asks only for name, work email, company and job title.*
+*Step 1 of 2 in the demo request template asks only for name, work email, company and job title.*
 
 ### Discovery questionnaire
 
@@ -99,7 +99,7 @@ Each example below is a real template you can fill in now. See all of them on th
 
 [![The first page of Claritia's case evaluation template: contact details and a type of case menu](/assets/blog/ui/tpl-legal-case-evaluation.webp)](/templates/legal-case-evaluation)
 
-*Caption: The case evaluation template asks the type of case on the first page, and that answer picks the next page.*
+*The case evaluation template asks the type of case on the first page, and that answer picks the next page.*
 
 ### Tax prep intake
 

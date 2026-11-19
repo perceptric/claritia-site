@@ -161,7 +161,7 @@ What it adds for each group:
 
 ![A Claritia thank-you screen that opens the right rep's calendar after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: After a lead sends a Claritia form, the thank-you screen opens the right rep's calendar.*
+*After a lead sends a Claritia form, the thank-you screen opens the right rep's calendar.*
 
 Claritia's free plan gives 1 seat and 250 submissions a month. Starter is $15 a seat a month ($12 billed yearly) and raises that to 2,000. See [pricing](/pricing) for every plan.
 

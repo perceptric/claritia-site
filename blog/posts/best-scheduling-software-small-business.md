@@ -80,7 +80,7 @@ A client fills in your form and books a time inside it, so you get their details
 
 ![What Claritia sends after a booking: a confirmation, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
 
-*Caption: After a booking, Claritia sends the confirmation and invite, then a reminder a day before and an hour before.*
+*After a booking, Claritia sends the confirmation and invite, then a reminder a day before and an hour before.*
 
 ### Pros
 
@@ -355,7 +355,7 @@ Connect every calendar your team uses, so the tool hides times that are already 
 
 ![Claritia availability settings with Google Calendar connected, working hours, buffer and notice](/assets/blog/ui/ui-meetings-availability.webp)
 
-*Caption: In Claritia you connect your calendar and set working hours, a buffer and notice.*
+*In Claritia you connect your calendar and set working hours, a buffer and notice.*
 
 ## Get started
 

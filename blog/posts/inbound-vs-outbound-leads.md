@@ -55,7 +55,7 @@ The work happens before and after the lead arrives. Before, you make your busine
 
 ![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form asks for team size, then lets the lead pick a time without leaving the page.*
+*A Claritia form asks for team size, then lets the lead pick a time without leaving the page.*
 
 ## How outbound leads work
 
@@ -140,7 +140,7 @@ It covers the inbound side. Routing by answers to the right meeting and person i
 
 ![Claritia thank-you screen that opens the right rep's calendar right after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: After the form is sent, Claritia opens the right rep's calendar on the thank-you screen.*
+*After the form is sent, Claritia opens the right rep's calendar on the thank-you screen.*
 
 ### lemlist
 

@@ -138,7 +138,7 @@ Routing by any answer to a meeting and a person starts on Pro, with a log of why
 
 ![Claritia routing rules that book large teams into an enterprise demo and send small budgets a starter guide](/assets/blog/ui/ui-routing-routing.webp)
 
-*Caption: Claritia's routing rules act on form answers, such as team size, country and budget, to pick the next step.*
+*Claritia's routing rules act on form answers, such as team size, country and budget, to pick the next step.*
 
 ### HubSpot
 

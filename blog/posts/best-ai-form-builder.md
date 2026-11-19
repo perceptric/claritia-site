@@ -83,7 +83,7 @@ Tia, its AI form builder, works on every plan. The forms it makes can use condit
 
 ![Tia building a demo request form from one sentence](/assets/blog/ui/ui-forms-tia.webp)
 
-*Caption: Tia turns one sentence into a demo request form.*
+*Tia turns one sentence into a demo request form.*
 
 ### Pros
 

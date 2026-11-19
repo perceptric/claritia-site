@@ -81,7 +81,7 @@ The visitor books inside the form. Their answers decide which meeting they see a
 
 ![Claritia routing rules that send each lead to a meeting or a rep](/assets/blog/ui/ui-routing-routing.webp)
 
-*Caption: Claritia's routing rules pick a meeting or a rep from the lead's answers, and everyone else goes to the sales round robin.*
+*Claritia's routing rules pick a meeting or a rep from the lead's answers, and everyone else goes to the sales round robin.*
 
 ### Pros
 

@@ -37,7 +37,7 @@ Typical features include:
 
 ![Claritia sales team load this week as bars for each rep, with one rep away](/assets/blog/ui/ui-routing-sales-team.webp)
 
-*Caption: Claritia shows how many meetings each rep has this week, so you can see the load stay even.*
+*Claritia shows how many meetings each rep has this week, so you can see the load stay even.*
 
 ## How to choose round robin scheduling software
 
@@ -86,7 +86,7 @@ The visitor picks a time inside the form, and the meeting goes to the next right
 
 ![Claritia team settings with a weight for each rep, one rep away until Monday, and daily and weekly caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
 
-*Caption: In Claritia, Maya gets twice the weight of her teammates, one rep is away until Monday, and caps limit meetings per day and week.*
+*In Claritia, Maya gets twice the weight of her teammates, one rep is away until Monday, and caps limit meetings per day and week.*
 
 ### Pros
 

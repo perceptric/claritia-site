@@ -80,7 +80,7 @@ A lead fills in your demo form and picks a time on the same page. Workflows then
 
 ![A Claritia form's thank-you screen that opens the right rep's calendar after submit](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: Right after a lead sends the demo form, Claritia opens the right rep's calendar.*
+*Right after a lead sends the demo form, Claritia opens the right rep's calendar.*
 
 ### Pros
 

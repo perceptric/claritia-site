@@ -69,7 +69,7 @@ A booking tool makes sense if you don't want another Zoom add-on, or if you need
 
 ![Claritia's availability settings with Google Calendar connected, working hours by day, a buffer and notice](/assets/blog/ui/ui-meetings-availability.webp)
 
-*Caption: In Claritia's availability settings, you connect your calendar and set working hours, buffers and notice.*
+*In Claritia's availability settings, you connect your calendar and set working hours, buffers and notice.*
 
 From then on, each booking makes a new Zoom meeting on the host's account. The join link goes on the calendar event and on the guest's invite. If a step ever has to run again, Claritia reuses the Zoom meeting it already made, so a guest never gets two links. See the [Zoom integration](/integrations/zoom) for the details.
 
@@ -83,7 +83,7 @@ When your Zoom calls come from your website, a plain link loses you the chance t
 
 ![A Claritia form that asks about team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form asks its questions first, then ends on a time picker on the same page.*
+*A Claritia form asks its questions first, then ends on a time picker on the same page.*
 
 The visitor answers your questions, then picks a time on the same page, with their name and email already filled in. The Zoom link is made as soon as they book. On Pro, round robin shares the calls across your team, and the Zoom meeting is made on the account of the person who gets the lead.
 

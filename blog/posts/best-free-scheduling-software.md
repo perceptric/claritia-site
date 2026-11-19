@@ -81,7 +81,7 @@ Its free plan puts booking inside a form, with reminders and reschedule links in
 
 ![A Claritia form that asks team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form asks its questions first, then shows open times on the same page.*
+*A Claritia form asks its questions first, then shows open times on the same page.*
 
 ### Pros
 

@@ -84,7 +84,7 @@ For scoring, it keeps segments and lead scoring next to your contacts, and a for
 
 ![Claritia routing rules that book large teams into an enterprise demo, send small budgets a starter guide and give everyone else to the sales round robin](/assets/blog/ui/ui-routing-routing.webp)
 
-*Caption: Claritia's routing rules turn form answers into an outcome: an enterprise demo, a rep by country, a starter guide or the sales round robin.*
+*Claritia's routing rules turn form answers into an outcome: an enterprise demo, a rep by country, a starter guide or the sales round robin.*
 
 ### Pros
 

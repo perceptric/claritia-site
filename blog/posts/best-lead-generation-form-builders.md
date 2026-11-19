@@ -81,7 +81,7 @@ A visitor books in the same flow and gets a confirmation email with a calendar i
 
 ![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
 
-*Caption: Claritia's submissions list shows each lead, who they booked with and their next step.*
+*Claritia's submissions list shows each lead, who they booked with and their next step.*
 
 ### Pros
 

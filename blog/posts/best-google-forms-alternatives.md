@@ -83,7 +83,7 @@ It picks up where Google Forms stops. You can import your Google Forms on the fr
 
 ![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form that ends with the lead picking a meeting time.*
+*A Claritia form that ends with the lead picking a meeting time.*
 
 ### Pros
 

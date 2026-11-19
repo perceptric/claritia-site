@@ -127,7 +127,7 @@ On Starter, each fill creates or updates a HubSpot contact matched by email, and
 
 ![Claritia's owner first setting: a lead owned by Maya in HubSpot is booked with Maya, and the team takes turns if she is away](/assets/blog/ui/ui-routing-owner-first.webp)
 
-*Caption: With owner first, a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns when she is away.*
+*With owner first, a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns when she is away.*
 
 Claritia is a newer tool, so its app marketplace is smaller than HubSpot's, and its Zapier and Make apps aren't listed yet.
 

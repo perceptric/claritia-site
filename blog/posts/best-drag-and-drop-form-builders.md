@@ -88,7 +88,7 @@ It works differently from a classic drag and drop builder. Tia, the AI form buil
 
 ![Claritia's form builder with Tia's chat on the left and the live form on the right](/assets/blog/ui/ui-forms-app.webp)
 
-*Caption: You talk to Tia on the left and see the form change on the right.*
+*You talk to Tia on the left and see the form change on the right.*
 
 ### Pros
 

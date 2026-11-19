@@ -84,7 +84,7 @@ For a service business, that means your intake questions and your calendar sit o
 
 ![A Claritia form that asks about team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: A Claritia form asks its questions, then ends on a time picker, so the booking happens inside the form.*
+*A Claritia form asks its questions, then ends on a time picker, so the booking happens inside the form.*
 
 ### Pros
 

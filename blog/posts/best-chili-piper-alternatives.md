@@ -84,7 +84,7 @@ Routing and round robin come on the Pro plan, and you can pay for it month to mo
 
 ![Claritia routing rules that send each lead to a meeting and a rep based on team size, country and budget](/assets/blog/ui/ui-routing-routing.webp)
 
-*Caption: Claritia's routing rules send each lead to a meeting and a rep, and everyone else to the sales round robin.*
+*Claritia's routing rules send each lead to a meeting and a rep, and everyone else to the sales round robin.*
 
 ### Pros
 

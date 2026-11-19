@@ -164,7 +164,7 @@ Setup takes three steps: sign in with HubSpot under Settings, then Integrations,
 
 ![Claritia owner first setting that books a lead with their HubSpot owner, or the sales team when the owner is away](/assets/blog/ui/ui-routing-owner-first.webp)
 
-*Caption: With owner first, a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns when she's away.*
+*With owner first, a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns when she's away.*
 
 **Cons:** Claritia is a newer tool with a smaller marketplace than Calendly's, and its Zapier and Make apps aren't listed yet.
 

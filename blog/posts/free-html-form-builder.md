@@ -85,7 +85,7 @@ Tia, the AI form builder, drafts the form, and you paste one script tag into you
 
 ![Claritia's share panel with a form link, the one-line embed code and display options](/assets/blog/ui/ui-forms-share.webp)
 
-*Caption: Claritia's share panel gives you the form link, the embed code and a choice of in page, popup, slide in, corner button or side tab.*
+*Claritia's share panel gives you the form link, the embed code and a choice of in page, popup, slide in, corner button or side tab.*
 
 ### Pros
 

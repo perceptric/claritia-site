@@ -82,7 +82,7 @@ Its workflows send the confirmation with the invite, then reminders a day and an
 
 ![What runs after a booking in Claritia: a confirmation with the invite, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
 
-*Caption: After a booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
+*After a booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
 
 ### Pros
 

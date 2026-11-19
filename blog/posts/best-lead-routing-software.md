@@ -37,7 +37,7 @@ Typical features include:
 
 ![A Claritia routing log showing rule 2 sent a lead from Germany to Lena Koch](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
 
-*Caption: A routing log in Claritia shows the country, the rule that matched and the rep it picked.*
+*A routing log in Claritia shows the country, the rule that matched and the rep it picked.*
 
 ## How to choose lead routing software
 
@@ -85,7 +85,7 @@ Routing starts from the form. Each form picks the meeting, and each meeting pick
 
 ![Claritia's routing screen with rules, the reason a rep got a lead and team load](/assets/blog/ui/ui-routing-app.webp)
 
-*Caption: Claritia's routing screen puts the rules, each lead's reason and the team's load in one place.*
+*Claritia's routing screen puts the rules, each lead's reason and the team's load in one place.*
 
 ### Pros
 

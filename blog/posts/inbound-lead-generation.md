@@ -104,7 +104,7 @@ The better way: the form ends on the right person's calendar. The lead's name an
 
 ![A form's thank-you screen that opens the right rep's calendar](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
+*In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
 
 A few things to set up:
 
@@ -126,7 +126,7 @@ Not every lead books, and not every booked lead shows up. Follow-up catches both
 
 ![What runs after a booking: a confirmation, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
 
-*Caption: Claritia sends a confirmation with the invite, then reminders a day and an hour before the meeting.*
+*Claritia sends a confirmation with the invite, then reminders a day and an hour before the meeting.*
 
 Keep follow-up short and in your own voice. Stop it as soon as the lead books or replies.
 

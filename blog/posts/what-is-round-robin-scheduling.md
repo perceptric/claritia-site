@@ -72,7 +72,7 @@ Plain turn-taking is the starting point. Most teams add one or more of these:
 
 ![A Claritia sales team with weights, one rep away until Monday, and daily and weekly caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
 
-*Caption: In Claritia, Maya has weight 2 and the others have weight 1. One rep is away until Monday, and caps limit each day and week.*
+*In Claritia, Maya has weight 2 and the others have weight 1. One rep is away until Monday, and caps limit each day and week.*
 
 ## Examples of round robin scheduling
 
@@ -111,7 +111,7 @@ Every meeting shows the rule that matched and why that person was picked, and Bu
 
 ![A Claritia routing log showing rule 2 sent a lead from Germany to Lena Koch](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
 
-*Caption: The log for one lead shows the rule that matched and why Lena got the meeting.*
+*The log for one lead shows the rule that matched and why Lena got the meeting.*
 
 Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.
 

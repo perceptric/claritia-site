@@ -81,7 +81,7 @@ Tia, its AI form builder, writes the draft from your sentence, or you can build 
 
 ![Claritia's form builder, with the Tia chat on the left and a live form preview on the right](/assets/blog/ui/ui-forms-app.webp)
 
-*Caption: In Claritia's form builder, you chat with Tia on the left and watch the form take shape on the right.*
+*In Claritia's form builder, you chat with Tia on the left and watch the form take shape on the right.*
 
 ### Pros
 

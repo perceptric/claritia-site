@@ -44,7 +44,7 @@ A good router also keeps a record of each choice. When a rep asks "why did I get
 
 ![Claritia routing log for one lead: country is Germany, rule 2 picked Lena Koch, with her open time and meetings this week](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
 
-*Caption: Claritia's log shows which rule matched a lead and why Lena got the meeting.*
+*Claritia's log shows which rule matched a lead and why Lena got the meeting.*
 
 ## Types of lead routing
 
@@ -70,7 +70,7 @@ Many teams also route on the answers in the form. A lead who picks "Enterprise" 
 
 ![Claritia routing rules by team size, country and budget, with a round robin fallback and every lead added to HubSpot](/assets/blog/ui/ui-routing-routing.webp)
 
-*Caption: Claritia's routing rules send each lead to a meeting or a rep based on its answers.*
+*Claritia's routing rules send each lead to a meeting or a rep based on its answers.*
 
 ## Examples of lead routing
 
@@ -109,7 +109,7 @@ Every booking keeps a note of which rule matched and why that person was picked.
 
 ![Claritia owner first routing: a lead owned by Maya in HubSpot books with Maya, and the sales team takes turns if she is away](/assets/blog/ui/ui-routing-owner-first.webp)
 
-*Caption: With owner first, a lead Maya owns in HubSpot books with Maya, and the team takes turns when she's away.*
+*With owner first, a lead Maya owns in HubSpot books with Maya, and the team takes turns when she's away.*
 
 ### LeanData
 

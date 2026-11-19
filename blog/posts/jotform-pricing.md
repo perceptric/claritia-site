@@ -141,7 +141,7 @@ If Jotform's limits don't fit how you work, there are many options. We compared 
 
 ![A Claritia form's thank-you screen that opens the right rep's calendar after submit](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: After a lead submits a Claritia form, the thank-you screen opens the right rep's calendar.*
+*After a lead submits a Claritia form, the thank-you screen opens the right rep's calendar.*
 
 - **Free:** $0 for 1 seat and 250 submissions a month, with unlimited forms, conditional logic, file uploads and calculations.
 - **Starter:** $15 a seat a month ($12 billed yearly). Adds 2,000 submissions, e-signatures, Stripe payments and HubSpot.

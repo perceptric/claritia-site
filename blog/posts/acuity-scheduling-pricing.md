@@ -128,7 +128,7 @@ If Acuity's plans don't fit, several other tools have free plans. We compared th
 
 ![A form's thank-you screen showing the right rep's calendar with open times](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
 
-*Caption: In Claritia, the thank-you screen opens the right person's calendar as soon as the form is sent.*
+*In Claritia, the thank-you screen opens the right person's calendar as soon as the form is sent.*
 
 - **Free:** $0 for 1 seat, 1 meeting type, 1 calendar and 250 form submissions a month, with booking inside forms and email reminders a day and an hour before.
 - **Starter:** $15 a seat a month ($12 billed yearly). Adds unlimited meeting types, 6 calendars per seat, group meetings, paid meetings with Stripe, Square or PayPal, and text reminders through your own Twilio number.

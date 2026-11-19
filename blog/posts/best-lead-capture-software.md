@@ -75,7 +75,7 @@ The same form can sit in the page or show as a popup, a slide-in, a corner butto
 
 ![Claritia share panel with a form link, embed code and display options](/assets/blog/ui/ui-forms-share.webp)
 
-*Caption: Claritia's share panel gives you a link and one line of embed code, and shows the form in the page, as a popup, a slide-in, a corner button or a side tab.*
+*Claritia's share panel gives you a link and one line of embed code, and shows the form in the page, as a popup, a slide-in, a corner button or a side tab.*
 
 ### Pros
 

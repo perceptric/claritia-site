@@ -162,7 +162,7 @@ What it offers next to Calendly and Acuity:
 
 ![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: In Claritia, the questions come first and the time picker sits at the end of the same form.*
+*In Claritia, the questions come first and the time picker sits at the end of the same form.*
 
 The free plan gives 1 seat, 1 calendar, 1 meeting type and 250 submissions a month. Starter is $15 a seat a month ($12 billed yearly). See [pricing](/pricing) for every plan.
 

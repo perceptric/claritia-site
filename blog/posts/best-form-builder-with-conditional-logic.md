@@ -80,7 +80,7 @@ Its forms come with conditional logic and step skips on the free plan, plus calc
 
 ![Claritia's On submission panel with routing rules based on form answers](/assets/blog/ui/ui-routing-on-submission.webp)
 
-*Caption: Claritia's On submission rules use the answers to pick what happens next.*
+*Claritia's On submission rules use the answers to pick what happens next.*
 
 ### Pros
 

@@ -87,7 +87,7 @@ Now add a daily cap of 6 meetings for each person. On a busy Monday, Maya reache
 
 ![A Claritia team set up for weighted round robin: Maya at weight two, the others at weight one, one rep away until Monday, and daily and weekly caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
 
-*Caption: A similar setup in Claritia: Maya has weight two, the others have weight one, and caps limit meetings per day and per week.*
+*A similar setup in Claritia: Maya has weight two, the others have weight one, and caps limit meetings per day and per week.*
 
 ### Example 3: catching up after a busy slot
 
@@ -133,7 +133,7 @@ Forms can send each lead to the right team pool first, and each meeting shows th
 
 ![Claritia's routing log for one lead, showing the rule that picked Lena Koch, her open time and her meetings so far this week](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
 
-*Caption: Claritia's routing log shows why Lena got this lead, including how many meetings she already has this week.*
+*Claritia's routing log shows why Lena got this lead, including how many meetings she already has this week.*
 
 Claritia is a newer tool, with a smaller marketplace and no Zapier or Make apps listed yet. See [Claritia routing](/products/routing).
 

@@ -159,7 +159,7 @@ What it offers next to Cal.com and Calendly:
 
 ![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
 
-*Caption: In Claritia, the time picker is the last step of the form, so the lead books without a second page.*
+*In Claritia, the time picker is the last step of the form, so the lead books without a second page.*
 
 Starter is $15 a seat a month ($12 billed yearly), and Pro is $39 ($31 billed yearly). See [pricing](/pricing) for every plan.
 

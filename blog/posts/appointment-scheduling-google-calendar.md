@@ -83,7 +83,7 @@ It connects Google Calendar in one click on every plan. Google tells Claritia as
 
 ![Claritia availability settings with Google Calendar connected, working hours by day, buffer and notice](/assets/blog/ui/ui-meetings-availability.webp)
 
-*Caption: In Claritia, you connect Google Calendar and set your working hours, buffer and notice in one place.*
+*In Claritia, you connect Google Calendar and set your working hours, buffer and notice in one place.*
 
 ### Pros
 
