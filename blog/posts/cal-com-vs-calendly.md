@@ -39,13 +39,13 @@ Prices checked November 2026.
 
 ## What is Cal.com?
 
-[Cal.com](https://cal.com/) is an open source scheduling tool. Its source code is on GitHub, with guides for hosting it yourself, and you can also use the hosted version at cal.com. The free plan is generous for one person, and paid plans add teams, round robin, routing forms and, at the top end, compliance features such as SOC 2 and HIPAA.
+[Cal.com](https://cal.com/) is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video. Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is on GitHub, with guides for hosting it yourself, and you can also use the hosted version at cal.com. The free plan is generous for one person, and paid plans add teams, round robin, routing forms and, at the top end, compliance features such as SOC 2 and HIPAA.
 
 [![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
 
 ## What is Calendly?
 
-[Calendly](https://calendly.com/) is a scheduling tool built around booking links. You set your available times, share a link, and invitees pick a slot. Paid plans add reminders, payments and team meetings, and Teams adds round robin and lead routing. It also sells an AI notetaker and an email scheduling assistant, Callie, as add-ons.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Reminders, payments and team meetings come on paid plans, and the Teams plan adds round robin and lead routing. The notetaker and the email assistant, called Callie, are sold as add-ons.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 

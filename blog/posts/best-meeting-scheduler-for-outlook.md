@@ -63,7 +63,7 @@ Prices checked November 2026.
 
 ## 1. Claritia
 
-[Claritia](/) is a forms and meetings tool for small teams, with workflows that send reminders and follow-ups. It connects to Outlook or Microsoft 365 in one click on every plan, the free one included. A visitor fills in your form, picks a time inside it, and the meeting lands in Outlook with a Teams link.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. It connects to Outlook or Microsoft 365 in one click on every plan, the free one included, and its workflows send reminders as well as follow-ups. A visitor picks a time inside your form, and the meeting lands in Outlook with a Teams link.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -100,7 +100,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Microsoft Bookings
 
-[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is Microsoft's own scheduler. It has two parts. Personal Bookings, also called Bookings with me, gives you a one-on-one booking page tied to your Outlook calendar. Shared Bookings is for teams, with services, staff and business hours. It suits companies already paying for Microsoft 365.
+[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is a scheduling app included with many Microsoft 365 business subscriptions, built for organizations that want customers or colleagues to book time without the back and forth. It offers personal booking pages for one person's availability and shared booking pages where teams define services, staff, and business hours. Bookings works with Outlook calendars, creates a Microsoft Teams link for online appointments, sends email and text reminders, and stores its data in Exchange Online. It's Microsoft's own scheduler, and its personal pages, also called Bookings with me, tie one-on-one booking to your Outlook calendar. It suits companies already paying for Microsoft 365.
 
 [![Microsoft Bookings homepage](/assets/blog/tools/microsoft-bookings.webp)](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app)
 
@@ -132,7 +132,7 @@ Microsoft lists Bookings in Microsoft 365 Business Basic, Business Standard and 
 
 ## 3. Calendly
 
-[Calendly](https://calendly.com/) is the booking link many of your clients have already used. It connects Outlook and Office 365 calendars, and its video integrations, Microsoft Teams included, are on every plan.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. It's the booking link many of your clients have already used, and it connects Outlook and Office 365 calendars, with video integrations, Microsoft Teams included, on every plan.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -162,7 +162,7 @@ Microsoft lists Bookings in Microsoft 365 Business Basic, Business Standard and 
 
 ## 4. Cal.com
 
-[Cal.com](https://cal.com/) offers a free Microsoft 365/Teams app, which you set up together with its Outlook calendar app so booked meetings get a Teams link. It needs a work or school account. It suits one person who wants unlimited links at no cost.
+[Cal.com](https://cal.com/) is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video. Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub. Its free Microsoft 365/Teams app, set up together with its Outlook calendar app, gives booked meetings a Teams link, though it needs a work or school account. It suits one person who wants unlimited links at no cost.
 
 [![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
 
@@ -190,7 +190,7 @@ Microsoft lists Bookings in Microsoft 365 Business Basic, Business Standard and 
 
 ## 5. Zoho Bookings
 
-[Zoho Bookings](https://www.zoho.com/bookings/) syncs both ways with Microsoft 365 and Outlook.com calendars, on its free plan too, and can add a Teams link to virtual meetings. It suits price-minded teams on Microsoft 365.
+[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits. Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It syncs both ways with Microsoft 365 and Outlook.com calendars, on its free plan too, and can add a Teams link to virtual meetings, which suits price-minded teams on Microsoft 365.
 
 [![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
 
@@ -219,7 +219,7 @@ Microsoft lists Bookings in Microsoft 365 Business Basic, Business Standard and 
 
 ## 6. OnceHub
 
-[OnceHub](https://www.oncehub.com/) connects to Microsoft 365 and Exchange calendars and adds Teams links, even on its free Basic plan. It suits companies with stricter IT rules.
+[OnceHub](https://www.oncehub.com/) is a scheduling and engagement platform for sales, service, support, and recruiting teams that want to screen visitors and book them with the right person. It offers branded booking pages, booking hubs, routing forms that qualify people before they book, and AI chat and phone agents that answer questions and schedule calls. Its scheduling engine handles one-on-one, multi-host, and group meetings, creates video links and reminders, and connects to CRMs and Zapier. It connects to Microsoft 365 and Exchange calendars and adds Teams links, even on its free Basic plan, so it suits companies with stricter IT rules.
 
 [![OnceHub homepage](/assets/blog/tools/oncehub.webp)](https://www.oncehub.com/)
 
@@ -248,7 +248,7 @@ Microsoft lists Bookings in Microsoft 365 Business Basic, Business Standard and 
 
 ## 7. SavvyCal
 
-[SavvyCal](https://savvycal.com/) connects to Microsoft 365 (Outlook) calendars and creates Teams links for bookings on a work or school calendar. It suits consultants who book many outside calls.
+[SavvyCal](https://savvycal.com/) is a scheduling tool for professionals and teams who want booking links that feel easy for both the host and the guest. Guests see a full week of open times and can lay their own calendar over the link to spot a match. Hosts set buffers, limits, preferred times, and time blocks, put links on their own domain, and take Stripe payments. It also supports round robin, collective, and group links, meeting polls, and reminder workflows. It connects to Microsoft 365 (Outlook) calendars and creates Teams links for bookings on a work or school calendar, which suits consultants who book many outside calls.
 
 [![SavvyCal homepage](/assets/blog/tools/savvycal.webp)](https://savvycal.com/)
 
@@ -276,7 +276,7 @@ Microsoft lists Bookings in Microsoft 365 Business Basic, Business Standard and 
 
 ## 8. YouCanBookMe
 
-[YouCanBookMe](https://youcanbook.me/) checks Microsoft calendars for open times and connects to Microsoft Teams on its free plan. It suits solo users and small teams who want a plain booking page.
+[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe. It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. It checks Microsoft calendars for open times and connects to Microsoft Teams on its free plan, which suits solo users and small teams who want a plain booking page.
 
 [![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
 
@@ -306,7 +306,7 @@ Microsoft lists Bookings in Microsoft 365 Business Basic, Business Standard and 
 
 ## 9. HubSpot Meetings
 
-[HubSpot Meetings](https://www.hubspot.com/products/sales/schedule-meeting) syncs with Office 365 and Exchange calendars and logs each booking in HubSpot's CRM. It suits sales teams whose contacts already live in HubSpot.
+[HubSpot Meetings](https://www.hubspot.com/products/sales/schedule-meeting) is the meeting scheduler inside HubSpot's CRM, built for sales and service teams that want prospects to book time and have every meeting recorded. You connect a Google or Office 365 calendar, then share a booking link or embed it on a web page or in live chat. It supports round robin and group meeting links, logs booked meetings on contact records, can start email sequences, and uses AI to prepare meeting context and follow-ups. It also syncs with Exchange calendars, which suits sales teams whose contacts already live in HubSpot.
 
 [![HubSpot Meetings homepage](/assets/blog/tools/hubspot-meetings.webp)](https://www.hubspot.com/products/sales/schedule-meeting)
 

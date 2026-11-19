@@ -39,13 +39,13 @@ Prices checked November 2026.
 
 ## What is Google Forms?
 
-[Google Forms](https://www.google.com/forms/about/) is Google's free form and survey builder. You build a form in your browser, share it by link or email, or embed it on a page. Each answer can go to a Google Sheet, and Forms draws charts of the answers as they come in. It also turns any form into a quiz with an answer key and points.
+[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge. Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's free to use, and any form can become a quiz with an answer key and points.
 
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 
 ## What is Jotform?
 
-[Jotform](https://www.jotform.com/) is an online form builder with a drag-and-drop editor. It describes itself as having more than 20,000 templates. It covers payments, e-signatures, file uploads and HIPAA features on its top plan. It also offers a card layout that shows one question at a time, plus tools for PDFs and tables.
+[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It says it has more than 20,000 templates, handles file uploads, and adds HIPAA features on its top plan. Its card layout can also show one question at a time.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -137,7 +137,7 @@ If neither fits because your form should start a sales conversation, read on.
 
 ## A third option: Claritia
 
-[Claritia](/) is a forms and meetings tool for small teams. It fills the gap both tools leave: what happens after a lead hits submit. A Claritia form can end with a booking step, so the lead picks a time with the right person on the same page. See [Claritia Forms](/products/forms) for the full list.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. It fills the gap both tools leave, which is what happens after a lead hits submit, since a Claritia form can end with a booking step on the same page. See [Claritia Forms](/products/forms) for the full list.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 

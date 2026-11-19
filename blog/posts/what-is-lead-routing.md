@@ -91,19 +91,19 @@ Lead routing tools fall into two groups. Some live inside Salesforce and handle 
 
 ### Claritia
 
-[Claritia](/) routes from the form itself. Rules read each answer and book the right meeting with the right person, then the team takes turns fairly with weights, caps and away days. Every booking keeps a note of which rule matched and why that person was picked. On Business, a lead who's already in HubSpot or Salesforce books with their owner first. Routing by answer starts on Pro at $39 a seat a month ($31 billed yearly). See how [Claritia routing](/products/routing) works.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It drafts follow-up emails in your brand's voice for you to approve, and it routes from the form itself. Rules read each answer and book the right meeting with the right person, then the team takes turns fairly with weights, caps and away days. Every booking keeps a note of which rule matched and why that person was picked. On Business, a lead who's already in HubSpot or Salesforce books with their owner first. Routing by answer starts on Pro at $39 a seat a month ($31 billed yearly). See how [Claritia routing](/products/routing) works.
 
 ### LeanData
 
-[LeanData](https://www.leandata.com/) is a routing tool for Salesforce teams. Its Standard edition covers round robin, territory and account-based routing, plus lead-to-account matching. Higher editions add contacts, accounts and any Salesforce object. Pricing is by quote, and onboarding is billed apart.
+[LeanData](https://www.leandata.com/) is a revenue orchestration platform for B2B marketing, sales, operations, and customer success teams that want every lead and account handled by the right person. It matches leads to accounts and opportunities, routes them by territory rules, round robin, and service levels, and keeps an audit trail of each decision, with deep Salesforce support. Its BookIt tool lets prospects schedule with the assigned rep, and Journeys tracks buying groups across a deal. Its Standard edition covers round robin, territory and account-based routing, plus lead-to-account matching, and higher editions add contacts, accounts and any Salesforce object. Pricing is by quote, and onboarding is billed apart.
 
 ### Distribution Engine
 
-[Distribution Engine](https://www.distributionengine.com/) installs from the Salesforce AppExchange and routes leads by round robin, workload and account ownership. It publishes its prices, from $20 a user a month billed yearly, with a minimum of 5 licenses and a 30-day free trial.
+[Distribution Engine](https://www.distributionengine.com/) is a lead routing and case assignment app built inside Salesforce for revenue operations teams and Salesforce admins who want every record to reach the right rep fast, without writing code. It assigns leads, cases and other records by round robin, territory, skills, workload, availability and account ownership, matches inbound leads to existing accounts, and reassigns work that misses its response target. A companion product, Booking Engine, books meetings and hands qualified leads to reps inside Salesforce. It installs from the Salesforce AppExchange and publishes its prices, from $20 a user a month billed yearly, with a minimum of 5 licenses and a 30-day free trial.
 
 ### Chili Piper
 
-[Chili Piper](https://www.chilipiper.com/) routes form leads, shares them across a sales team and books the meeting. It works with Salesforce and HubSpot. Its Growth plan starts at $15,000 a year with 15 seats, billed yearly only.
+[Chili Piper](https://www.chilipiper.com/) is a meeting booking and lead routing platform for B2B revenue teams that want inbound buyers to book with the right rep right away. When someone submits a form, it qualifies them, routes them by rules such as company size, region or account owner, and shows that rep's calendar on the spot. It also routes Salesforce records by rep workload, identifies visiting companies, runs an AI chat, blocks fake bookings and sends reps a brief before each meeting. It works with Salesforce and HubSpot, and its Growth plan starts at $15,000 a year with 15 seats, billed yearly only.
 
 Prices checked November 2026. If you run your CRM in one place, these guides walk through the built-in options: [lead routing in Salesforce](/blog/salesforce-lead-routing) and [HubSpot lead routing](/blog/hubspot-lead-routing).
 

@@ -119,23 +119,25 @@ Before you share the link widely, book a meeting with yourself from a private br
 
 ### Claritia
 
-[Claritia](/) connects Outlook or Microsoft 365 on every plan and adds a Teams link to each meeting for work and school accounts. Booking can sit inside a form, so you learn who's coming before they pick a time. Round robin with weights is on Pro. The free plan has one meeting type on one calendar, and Claritia is a newer tool with a smaller marketplace than the big names.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+It connects Outlook or Microsoft 365 on every plan and adds a Teams link to each meeting for work and school accounts. Because booking can sit inside a form, you learn who's coming before they pick a time. Round robin with weights is on Pro. The free plan has one meeting type on one calendar, and Claritia is a newer tool with a smaller marketplace than the big names.
 
 ### Microsoft Bookings
 
-[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is the natural first try if your company already pays for an eligible Microsoft 365 plan. It isn't sold on its own and can't take payments.
+[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is a scheduling app included with many Microsoft 365 business subscriptions, built for organizations that want customers or colleagues to book time without the back and forth. It offers personal booking pages for one person's availability and shared booking pages where teams define services, staff, and business hours. Bookings works with Outlook calendars, creates a Microsoft Teams link for online appointments, sends email and text reminders, and stores its data in Exchange Online. If your company already pays for an eligible Microsoft 365 plan, it's the natural first try, though it isn't sold on its own and can't take payments.
 
 ### Calendly
 
-[Calendly](https://calendly.com/) connects Outlook and Office 365 calendars, and its Teams video integration is on every plan. The free plan has one event type and no reminders.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. It connects Outlook and Office 365 calendars, and its Teams video integration is on every plan. The free plan has one event type and no reminders.
 
 ### Zoho Bookings
 
-[Zoho Bookings](https://www.zoho.com/bookings/) syncs with Microsoft 365 and Outlook.com calendars and can add a Teams link to virtual meetings. Its free plan is for one user.
+[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits. Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It syncs with Microsoft 365 and Outlook.com calendars and can add a Teams link to virtual meetings. Its free plan is for one user.
 
 ### YouCanBookMe
 
-[YouCanBookMe](https://youcanbook.me/) connects to Microsoft Teams on its free plan, which allows 30 bookings a month.
+[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe. It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. It connects to Microsoft Teams on its free plan, which allows 30 bookings a month.
 
 For a full comparison, see our list of the [best meeting schedulers for Outlook](/blog/best-meeting-scheduler-for-outlook).
 

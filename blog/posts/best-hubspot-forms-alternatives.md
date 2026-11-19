@@ -64,7 +64,7 @@ Price matters, but it's rarely the reason a switch goes wrong. These five checks
 
 ## 1. Claritia
 
-[Claritia](/) is a forms and meetings tool for small teams. Its forms send leads to HubSpot on the Starter plan, and the same form can book a meeting with the right person before the lead leaves the page. Workflows then send reminders and a follow-up the next day until the lead books.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. Its forms send leads to HubSpot on the Starter plan, and workflows send reminders and a follow-up the next day until the lead books.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -101,7 +101,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Fillout
 
-[Fillout](https://www.fillout.com/) lists HubSpot among the integrations it includes on every plan, the free one too. Its free plan gives you 1,000 responses a month with unlimited forms and seats, which is generous next to most tools on this list.
+[Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures. It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. HubSpot is among the integrations it includes on every plan, the free one too, and the free plan gives you 1,000 responses a month with unlimited forms and seats, which is generous next to most tools on this list.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -132,7 +132,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Typeform
 
-[Typeform](https://www.typeform.com/) shows one question at a time and gives you strong design control. Its HubSpot integration lets you map any question to a HubSpot property, so answers sync to your HubSpot records. It also offers Zapier workflows for more HubSpot actions.
+[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies. Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment. It gives you strong design control, and its HubSpot integration lets you map any question to a HubSpot property, so answers sync to your HubSpot records. Zapier workflows cover more HubSpot actions.
 
 [![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
 
@@ -162,7 +162,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 4. Jotform
 
-[Jotform](https://www.jotform.com/)'s HubSpot integration goes past contacts. Its help pages list actions to create a contact, a deal, a ticket, a company or a custom record from a form. That helps if your form starts a sales or support process in HubSpot.
+[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. Its HubSpot integration goes past contacts. Its help pages list actions to create a contact, a deal, a ticket, a company or a custom record from a form, which helps if your form starts a sales or support process in HubSpot.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -192,7 +192,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 5. Paperform
 
-[Paperform](https://paperform.co/) has a direct HubSpot integration that creates or updates a contact. Its forms look like web pages, with text and images between questions. Only HubSpot properties marked for use in forms show up in its settings, so check those in HubSpot first.
+[Paperform](https://paperform.co/) is an online form builder for small businesses and solo operators who want one form to capture details, take payment, and start the next step. Its editor works like a document, with a one question at a time mode, conditional logic, and spreadsheet style formulas for prices and scores. Forms can take bookings and Stripe payments, send contracts for e-signature through Papersign, and pass submissions to CRMs, email tools, and spreadsheets through integrations or Stepper workflows. Its direct HubSpot integration creates or updates a contact, and its forms look like web pages, with text and images between questions. Only HubSpot properties marked for use in forms show up in its settings, so check those in HubSpot first.
 
 [![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
 
@@ -220,7 +220,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 6. Gravity Forms
 
-[Gravity Forms](https://www.gravityforms.com/) is a WordPress plugin with a HubSpot add-on on its Basic license. Entries stay in your WordPress database and go to HubSpot as well. Conditional logic is a core feature on every license.
+[Gravity Forms](https://www.gravityforms.com/) is a form plugin for WordPress professionals and site owners who want to build anything from a simple contact form to a multi-step workflow on their own site. Its visual editor offers many field types, multi-page layouts, conditional logic, calculations and save and continue. It can take payments through Stripe, Square and other processors, register users, create posts from entries, route notifications based on answers, and send data to other tools through a REST API and webhooks. A HubSpot add-on comes with the Basic license, so entries stay in your WordPress database and go to HubSpot as well, and conditional logic is included on every license.
 
 [![Gravity Forms homepage](/assets/blog/tools/gravity-forms.webp)](https://www.gravityforms.com/)
 
@@ -249,7 +249,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 7. Formstack
 
-[Formstack](https://www.formstack.com/) is a form platform for larger teams, with documents and e-signatures in its Suite plan. It lists HubSpot as a featured integration among more than 300. It also has strong Salesforce options through its Salesforce Solutions plan.
+[Formstack](https://www.formstack.com/) is a no-code platform for organizations that want to collect data, create documents and gather signatures without manual paperwork. Its form builder offers AI form creation, prefilled links, branded themes, step logic and group approvals, and it sends submissions into CRMs and other business systems. Separate products generate documents from the data a form collects and capture eSignatures, and versions of its forms and documents run inside Salesforce. It is aimed at larger teams, with documents and e-signatures in its Suite plan, and it lists HubSpot as a featured integration among more than 300. It also has strong Salesforce options through its Salesforce Solutions plan.
 
 [![Formstack homepage](/assets/blog/tools/formstack.webp)](https://www.formstack.com/)
 
@@ -278,7 +278,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 8. Tally
 
-[Tally](https://tally.so/) is a free form builder with unlimited forms and submissions within fair use. Its pricing page lists Zapier and Make among the free integrations, and those are the usual route from Tally to HubSpot. It suits teams on a tight budget who already use Zapier.
+[Tally](https://tally.so/) is a form builder for individuals and teams who want to make forms by typing, much like writing in a document. You insert blocks for contact details, file uploads, ratings, signatures, and Stripe payments, then add conditional logic, calculations, hidden fields, and answer piping. Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking. It is free, with unlimited forms and submissions within fair use, and its pricing page lists Zapier and Make among the free integrations. Those are the usual route from Tally to HubSpot, so it suits teams on a tight budget who already use Zapier.
 
 [![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
 

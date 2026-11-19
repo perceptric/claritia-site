@@ -62,7 +62,7 @@ Price is only part of it. These five checks tell you more:
 
 ## 1. Claritia
 
-[Claritia](/) gives you polished forms and adds what comes next. A visitor fills in the form and picks a time with the right teammate, and a confirmation email with a calendar invite follows. It suits small teams that want each form to end in a booked meeting.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. It gives you polished forms and adds what comes next, so after a visitor picks a time with the right teammate, a confirmation email with a calendar invite follows.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -100,7 +100,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Fillout
 
-[Fillout](https://www.fillout.com/) is the closest match on value. Its free plan includes 1,000 responses a month, and every plan has unlimited seats. It covers most of what Typeform users need, from logic to payments, and suits teams that want many responses and many builders at a low price.
+[Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures. It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. It covers most of what Typeform users need and is the closest match on value, with 1,000 responses a month on the free plan and unlimited seats on every plan. It suits teams that want many responses and many builders at a low price.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -130,7 +130,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Tally
 
-[Tally](https://tally.so/) feels like writing in a doc. You type questions on a blank page, and it builds the form as you go. It's the cheapest way to collect large numbers of answers, since the free plan has unlimited submissions under fair use. That makes it a good fit for makers and small teams on a tight budget.
+[Tally](https://tally.so/) is a form builder for individuals and teams who want to make forms by typing, much like writing in a document. You insert blocks for contact details, file uploads, ratings, signatures, and Stripe payments, then add conditional logic, calculations, hidden fields, and answer piping. Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking. It's the cheapest way to collect large numbers of answers, since the free plan has unlimited submissions under fair use, which makes it a good fit for makers and small teams on a tight budget.
 
 [![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
 
@@ -159,7 +159,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 4. Paperform
 
-[Paperform](https://paperform.co/) lets you build a form like a web page, mixing images and text with your questions. Paid plans include unlimited submissions under fair use, and every plan has unlimited users. It suits teams that want a form to double as a landing page, or that feel held back by Typeform's per-plan user limits.
+[Paperform](https://paperform.co/) is an online form builder for small businesses and solo operators who want one form to capture details, take payment, and start the next step. Its editor works like a document, with a one question at a time mode, conditional logic, and spreadsheet style formulas for prices and scores. Forms can take bookings and Stripe payments, send contracts for e-signature through Papersign, and pass submissions to CRMs, email tools, and spreadsheets through integrations or Stepper workflows. Mixing images and text with your questions lets a form double as a landing page. Paid plans include unlimited submissions under fair use and every plan has unlimited users, which suits teams held back by Typeform's per-plan user limits.
 
 [![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
 
@@ -188,7 +188,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 5. Jotform
 
-[Jotform](https://www.jotform.com/) swaps Typeform's minimal style for sheer range. It has a very large template library and widgets for almost any field. It also offers a card-style form layout, along with extra tools for PDFs and tables. It's best for solo builders who want a template for every need.
+[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It swaps Typeform's minimal style for sheer range, with a very large template library, widgets for almost any field and a card-style form layout. It's best for solo builders who want a template for every need.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -219,7 +219,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 6. Zoho Forms
 
-[Zoho Forms](https://www.zoho.com/forms/) trades flair for high limits. Its paid plans start at 10,000 submissions a month, far more than Typeform's Basic plan. It's best for teams that already run on Zoho apps and need high volume.
+[Zoho Forms](https://www.zoho.com/forms/) is an online form builder for businesses that want to collect data and move it through review and approval steps without code. It can build a form from a prompt, turn PDFs or photos of paper forms into online forms, and read business cards or IDs to fill in fields. Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM. It trades flair for high limits, since paid plans start at 10,000 submissions a month, far more than Typeform's Basic plan. It's best for teams that already run on Zoho apps and need high volume.
 
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 
@@ -250,7 +250,7 @@ For prices, see their pricing page.
 
 ## 7. Cognito Forms
 
-[Cognito Forms](https://www.cognitoforms.com/) is a practical pick for quotes and order forms. Its calculations and repeating sections handle totals well, and the free plan takes payments. The first paid plan is one of the cheapest here.
+[Cognito Forms](https://www.cognitoforms.com/) is an online form builder for organizations that want to collect data and automate the work that follows each entry. Its drag-and-drop builder handles many field types, automatic calculations, signatures and file uploads. Forms can move entries through approval workflows, generate documents, look up data from other forms and take payments through Square, Stripe, PayPal or its own Cognito Pay. It also includes controls that help teams meet HIPAA, GDPR and CCPA rules. It's a practical pick for quotes and order forms, since its calculations and repeating sections handle totals well. The free plan takes payments, and the first paid plan is one of the cheapest here.
 
 [![Cognito Forms homepage](/assets/blog/tools/cognito-forms.webp)](https://www.cognitoforms.com/)
 
@@ -278,7 +278,7 @@ For prices, see their pricing page.
 
 ## 8. SurveyMonkey
 
-[SurveyMonkey](https://www.surveymonkey.com/) is built for surveys and research more than lead capture. If you use Typeform mainly for customer feedback, its analysis tools are worth a look. Annual plans count responses by the year.
+[SurveyMonkey](https://www.surveymonkey.com/) is an online survey platform for teams that want to gather feedback from customers, employees and target markets and act on what they learn. Users build surveys and forms from templates, expert-written questions or a short AI prompt, add skip logic and branding, and send them by link, email, text message, QR code or website embed. It summarizes results with charts and AI-sorted themes for open answers, and it can reach a global panel of paid respondents. It's built for research more than lead capture, so if you use Typeform mainly for customer feedback, its analysis tools are worth a look. Annual plans count responses by the year.
 
 [![SurveyMonkey homepage](/assets/blog/tools/surveymonkey.webp)](https://www.surveymonkey.com/)
 

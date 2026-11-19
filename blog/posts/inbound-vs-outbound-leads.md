@@ -126,19 +126,19 @@ Most teams end up with both. The real gain often comes from handling inbound wel
 
 ### Claritia
 
-[Claritia](/) handles the inbound side. Its forms capture each lead, route it by the answers to the right meeting and person on Pro, and open the calendar right after submit. On Starter, leads go to HubSpot, Pipedrive, Attio and other CRMs, and a follow-up goes out the next day until the lead books. See [Claritia routing](/products/routing).
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. It handles the inbound side. Routing by answers to the right meeting and person is on Pro, and on Starter, leads go to HubSpot, Pipedrive, Attio and other CRMs while a follow-up goes out the next day until the lead books. See [Claritia routing](/products/routing).
 
 ### lemlist
 
-[lemlist](https://www.lemlist.com/) builds outbound sequences with email follow-ups. Its Multichannel plan adds LinkedIn steps and calls to the same sequence. It suits teams that reach out first.
+[lemlist](https://www.lemlist.com/) is a sales outreach platform for sales teams that want to find prospects and run outbound campaigns across several channels. It offers a B2B lead database, finds and verifies emails and phone numbers, and enriches leads with data from LinkedIn, company websites and the CRM. Teams build sequences that mix email, LinkedIn visits and messages, calls, WhatsApp and SMS, handle every reply in one inbox, and watch mailbox and domain health to keep emails out of spam. LinkedIn steps and calls join the same sequence on its Multichannel plan, which suits teams that reach out first.
 
 ### HubSpot Sales Hub
 
-[HubSpot Sales Hub](https://www.hubspot.com/products/sales) tracks both kinds of leads in one CRM. Reps can enroll contacts in sequences on Professional, and the CRM is free for up to 2 users.
+[HubSpot Sales Hub](https://www.hubspot.com/products/sales) is HubSpot's sales software for sales teams that want to find prospects, work deals and forecast revenue from one workspace tied to the CRM. It tracks leads and deals in pipelines, sends automated email sequences, places and logs calls from a dialer, records meetings, and scores deals by how likely they are to close. AI tools point out accounts showing buying signals, draft follow-ups and suggest CRM updates, while managers get forecasts, coaching tools and reports. It tracks inbound and outbound leads in the same CRM, reps can enroll contacts in sequences on Professional, and the CRM is free for up to 2 users.
 
 ### Close
 
-[Close](https://www.close.com/) is a CRM for small sales teams that call and text. It has two-way SMS on every plan and dialers on higher plans, which helps with outbound calling.
+[Close](https://www.close.com/) is a sales CRM for small and growing businesses that want their reps to call, email and text leads without switching between tools. It logs every call, email, text, note and meeting on the lead record, builds smart lists of leads that need attention, and runs automated follow-up workflows across email, phone and SMS. It also records and transcribes meetings, reports on rep activity, and includes an AI agent named Chloe that can qualify leads and book meetings. It has two-way SMS on every plan and dialers on higher plans, which helps with outbound calling.
 
 ## Questions
 

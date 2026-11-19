@@ -66,7 +66,7 @@ Prices checked November 2026.
 
 ## 1. Claritia
 
-[Claritia](/) takes a different route from a classic drag and drop builder. You describe the form in one sentence, and Tia, the AI form builder, writes the questions and pages, links a meeting and drafts the follow-up emails. Then you change anything by hand or by asking Tia. It suits small teams who want a working form fast and want each lead to book a meeting at the end.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. It takes a different route from a classic drag and drop builder, since Tia, the AI form builder, writes the questions and pages from your sentence and links a meeting. You then change anything by hand or by asking Tia, which suits small teams who want a working form fast.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -102,7 +102,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Jotform
 
-[Jotform](https://www.jotform.com/) is the classic drag and drop form builder. You drag fields and widgets onto the form, change colors and layout, and open any of its more than 20,000 templates to change it without code. It suits people who want a ready-made starting point for almost any kind of form.
+[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. You drag fields and widgets onto the form, change colors and layout, and can open any of its more than 20,000 templates as a ready-made starting point for almost any kind of form.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -132,7 +132,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Fillout
 
-[Fillout](https://www.fillout.com/) lets you choose how to build: drag and drop, or have AI draft the form. Its free plan includes 1,000 responses a month and unlimited seats, so the whole team can build. It suits teams who want a modern editor and a large free allowance.
+[Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures. It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. Its free plan includes 1,000 responses a month and unlimited seats, so the whole team can build, which suits teams who want a modern editor and a large free allowance.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -162,7 +162,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 4. WPForms
 
-[WPForms](https://wpforms.com/) is a drag and drop form builder that runs inside WordPress. You build in your WordPress dashboard, and WPForms AI can draft a form for you to adjust. Every paid plan includes unlimited forms, submissions and users, plus conditional logic. It suits WordPress site owners. If that's you, also see our list of [WordPress form builders](/blog/best-wordpress-form-builder).
+[WPForms](https://wpforms.com/) is a form builder plugin for WordPress site owners who want to add contact, payment, survey and registration forms without writing code. It offers a drag-and-drop editor with templates and an AI form builder, along with conditional logic, multi-page forms and calculations. Entries are kept in the WordPress dashboard, and the plugin can send email notifications, accept Stripe payments, collect signatures and file uploads, save partial entries and pass leads to email marketing tools and CRMs. You build in your WordPress dashboard, and every paid plan includes unlimited forms, submissions and users, plus conditional logic. If you run a WordPress site, also see our list of [WordPress form builders](/blog/best-wordpress-form-builder).
 
 [![WPForms homepage](/assets/blog/tools/wpforms.webp)](https://wpforms.com/)
 
@@ -194,7 +194,7 @@ Prices are per year, for the first year.
 
 ## 5. Zoho Forms
 
-[Zoho Forms](https://www.zoho.com/forms/) has a no-code drag and drop builder with templates and conditional logic. Paid plans start at 10,000 submissions a month. It suits teams who use Zoho apps or expect a lot of answers.
+[Zoho Forms](https://www.zoho.com/forms/) is an online form builder for businesses that want to collect data and move it through review and approval steps without code. It can build a form from a prompt, turn PDFs or photos of paper forms into online forms, and read business cards or IDs to fill in fields. Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM. Its no-code drag and drop builder comes with templates and conditional logic, and paid plans start at 10,000 submissions a month, so it suits teams who use Zoho apps or expect a lot of answers.
 
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 
@@ -226,7 +226,7 @@ All prices are billed yearly.
 
 ## 6. Formstack
 
-[Formstack](https://www.formstack.com/) offers a no-code drag and drop builder with conditional logic, plus documents and e-signatures in its Suite plan. It's priced for larger teams that need forms, documents and signatures in one place.
+[Formstack](https://www.formstack.com/) is a no-code platform for organizations that want to collect data, create documents and gather signatures without manual paperwork. Its form builder offers AI form creation, prefilled links, branded themes, step logic and group approvals, and it sends submissions into CRMs and other business systems. Separate products generate documents from the data a form collects and capture eSignatures, and versions of its forms and documents run inside Salesforce. Its no-code drag and drop builder includes conditional logic, and the Suite plan adds the documents and e-signatures. It's priced for larger teams that need forms, documents and signatures in one place.
 
 [![Formstack homepage](/assets/blog/tools/formstack.webp)](https://www.formstack.com/)
 
@@ -254,7 +254,7 @@ All prices are billed yearly.
 
 ## 7. Cognito Forms
 
-[Cognito Forms](https://www.cognitoforms.com/) has a drag and drop builder that's strong at math. It handles calculations, repeating sections and tables, which suits quotes, orders and any form with a total. Its free plan even takes payments.
+[Cognito Forms](https://www.cognitoforms.com/) is an online form builder for organizations that want to collect data and automate the work that follows each entry. Its drag-and-drop builder handles many field types, automatic calculations, signatures and file uploads. Forms can move entries through approval workflows, generate documents, look up data from other forms and take payments through Square, Stripe, PayPal or its own Cognito Pay. It also includes controls that help teams meet HIPAA, GDPR and CCPA rules. Its builder is strong at math, with repeating sections and tables that suit quotes, orders and any form with a total, and even its free plan takes payments.
 
 [![Cognito Forms homepage](/assets/blog/tools/cognito-forms.webp)](https://www.cognitoforms.com/)
 
@@ -283,7 +283,7 @@ All prices are billed yearly.
 
 ## 8. Google Forms
 
-[Google Forms](https://www.google.com/forms/about/) is the simple free choice. You pick question types, drag them into order and send the form by link or embed it on a page. Answers go to Google Sheets. It suits quick internal forms and surveys more than branded lead forms.
+[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge. Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's the simple free choice here, and it suits quick internal forms and surveys more than branded lead forms.
 
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 

@@ -60,7 +60,7 @@ Field types matter less than what happens after the form. These five checks matt
 
 ## 1. Claritia
 
-[Claritia](/) is a forms and meetings tool for small teams, with workflows that follow up. A visitor fills in your form and books a meeting in the same flow, then gets a confirmation email with a calendar invite. Workflows send reminders a day and an hour before, so the lead hears from you before the call. It suits small teams that want each good lead to book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. A visitor books in the same flow and gets a confirmation email with a calendar invite, then workflows send reminders a day and an hour before, so the lead hears from you before the call.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -97,7 +97,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. HubSpot forms
 
-[HubSpot forms](https://www.hubspot.com/products/marketing/forms) are free to start, and every person who fills in a form is added to your HubSpot CRM. That makes them the natural pick for teams whose whole funnel already runs in HubSpot. The more advanced form features sit on paid plans.
+[HubSpot forms](https://www.hubspot.com/products/marketing/forms) is the form builder in HubSpot's Marketing Hub for marketers who want website visitors to become CRM contacts automatically. Users build forms in a drag-and-drop editor or from templates for newsletter signups, downloads, event registration and more, then embed them on a site or publish them as standalone pages. Each submission is saved to the contact database, can trigger a follow-up email or nurture campaign, and feeds reports on views, submissions and conversion rate. The forms are free to start, which makes them the natural pick for teams whose whole funnel already runs in HubSpot. The more advanced form features sit on paid plans.
 
 [![HubSpot forms homepage](/assets/blog/tools/hubspot-forms.webp)](https://www.hubspot.com/products/marketing/forms)
 
@@ -125,7 +125,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Typeform
 
-[Typeform](https://www.typeform.com/) shows one question at a time, which can make a lead form feel more like a chat. Its AI tools go past building the form. They can ask a follow-up question when an answer is vague, and its automations can send follow-up emails. It suits brands that want a polished, one-question-at-a-time lead form.
+[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies. Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment. Showing one question at a time can make a lead form feel more like a chat. Its AI can also ask a follow-up question when an answer is vague, and its automations can send follow-up emails, so it suits brands that want a polished lead form.
 
 [![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
 
@@ -155,7 +155,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 4. Fillout
 
-[Fillout](https://www.fillout.com/) has one of the most generous free plans for lead forms. You get 1,000 responses a month with unlimited forms and seats. HubSpot is among the integrations it lists on every plan, the free one included. It suits teams that collect a lot of leads and want to keep costs low.
+[Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures. It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. It has one of the most generous free plans for lead forms, with 1,000 responses a month and unlimited forms and seats, and HubSpot is among the integrations on every plan. It suits teams that collect a lot of leads and want to keep costs low.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -185,7 +185,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 5. Jotform
 
-[Jotform](https://www.jotform.com/) is a large, mature form builder with a form for almost every case. Its HubSpot integration can create contacts, deals, tickets and companies from a submission. It also handles payments well, so it suits lead forms that take a deposit or collect long details.
+[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It is a large, mature builder with a form for almost every case, and its HubSpot integration can create contacts, deals, tickets and companies from a submission. Its payment handling suits lead forms that take a deposit or collect long details.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -215,7 +215,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 6. Paperform
 
-[Paperform](https://paperform.co/) makes forms that look like web pages, with text and images mixed in. Its appointment field is on every plan and syncs with Google Calendar, so a lead can pick a time. It suits service businesses that want a lead form with room to explain the offer.
+[Paperform](https://paperform.co/) is an online form builder for small businesses and solo operators who want one form to capture details, take payment, and start the next step. Its editor works like a document, with a one question at a time mode, conditional logic, and spreadsheet style formulas for prices and scores. Forms can take bookings and Stripe payments, send contracts for e-signature through Papersign, and pass submissions to CRMs, email tools, and spreadsheets through integrations or Stepper workflows. Its forms look like web pages, with text and images mixed in, and its appointment field is on every plan and syncs with Google Calendar, so a lead can pick a time. That suits service businesses that want a lead form with room to explain the offer.
 
 [![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
 
@@ -244,7 +244,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 7. Unbounce
 
-[Unbounce](https://unbounce.com/) is a landing page builder with lead gen forms built in. You build the whole page around the form and test versions to see which brings more leads. Conversions are uncapped on every plan, and the limits are on visitors. It suits marketers running paid ads to a page made for one offer.
+[Unbounce](https://unbounce.com/) is a landing page builder for marketers and agencies who want to build and test campaign pages without a developer. A page can start from an AI prompt, a template or a blank canvas, then be edited by prompt or drag and drop. Unbounce runs A/B tests, uses Smart Traffic to send visitors to the variant most likely to convert, adds popups and sticky bars, and publishes to custom domains with forms that pass leads to other tools. You build the whole page around the form. Conversions are uncapped on every plan, with the limits on visitors, so it suits marketers running paid ads to a page made for one offer.
 
 [![Unbounce homepage](/assets/blog/tools/unbounce.webp)](https://unbounce.com/)
 
@@ -276,7 +276,7 @@ Prices below are billed monthly. Yearly billing costs less.
 
 ## 8. Zoho Forms
 
-[Zoho Forms](https://www.zoho.com/forms/) connects closely with Zoho CRM, with a Zoho CRM field and the integration on every plan. Paid plans have high caps, starting at 10,000 submissions a month. It fits teams that run sales in Zoho CRM and already pay for Zoho apps.
+[Zoho Forms](https://www.zoho.com/forms/) is an online form builder for businesses that want to collect data and move it through review and approval steps without code. It can build a form from a prompt, turn PDFs or photos of paper forms into online forms, and read business cards or IDs to fill in fields. Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM. A Zoho CRM field and the integration come on every plan, and paid plans have high caps, starting at 10,000 submissions a month. It fits teams that run sales in Zoho CRM and already pay for Zoho apps.
 
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 

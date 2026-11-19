@@ -61,7 +61,7 @@ Every free plan looks generous on its pricing page. These five checks show what 
 
 ## 1. Claritia
 
-[Claritia](/) joins forms and meetings for small teams, with workflows that follow up after. Its free plan puts booking inside a form, so you learn who's coming before they pick a time, and reminders and reschedule links come included. It suits people who want a lead form and a booking page in one free tool.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. Its free plan puts booking inside a form, so you learn who's coming before they pick a time, with reminders and reschedule links included. It suits people who want a lead form and a booking page in one free tool.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -97,7 +97,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Google Calendar appointment schedules
 
-[Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/) give anyone who uses Google Calendar a booking page already. They work with a personal Google account or a Workspace account, and some features need an eligible Workspace or Google One plan. They suit solo users who want booking inside the calendar they already use.
+[Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/) is a booking feature built into Google Calendar for people who want others to pick an open time without leaving their own calendar. You set the length, hours, buffers, and daily limits, add booking form questions, and share a booking page link or embed it on a website. It checks your calendars to prevent double bookings, sends confirmation emails, and on eligible paid accounts adds reminders, guest email checks, and Stripe payments. It works with a personal Google account or a Workspace account, though some features need an eligible Workspace or Google One plan. It suits solo users who want booking inside the calendar they already use.
 
 [![Google Calendar appointment schedules homepage](/assets/blog/tools/google-appointment-schedules.webp)](https://workspace.google.com/resources/appointment-scheduling/)
 
@@ -125,7 +125,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Zcal
 
-[Zcal](https://zcal.co/)'s free plan is one of the fullest around for a single person. You get unlimited links and calendar accounts, and meeting polls come free too. Paid plans mainly add team features and text reminders. It suits solo users who want polls and reminders for free.
+[Zcal](https://zcal.co/) is a scheduling app for individuals, teams, and class hosts who want booking pages and meeting polls in one place. Booking pages can carry custom fonts, colors, layouts, welcome videos, and custom questions, and they sync with Google, Outlook, and Apple calendars. Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier. Its free plan is one of the fullest around for a single person, with unlimited links and calendar accounts and free meeting polls. Paid plans mainly add team features and text reminders, so it suits solo users who want polls and reminders for free.
 
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
@@ -156,7 +156,7 @@ Both paid plans come with a 14-day free trial.
 
 ## 4. Cal.com
 
-[Cal.com](https://cal.com/)'s free plan is built for one user and gives that user a lot. You get unlimited links and calendars, plus email and SMS notifications. Its code is on GitHub if you want to host it yourself. It suits solo users and developers who want room to grow.
+[Cal.com](https://cal.com/) is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video. Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub. Its free plan is built for one user, with unlimited links and calendars plus email and SMS notifications, and you can host the code yourself. It suits solo users and developers who want room to grow.
 
 [![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
 
@@ -185,7 +185,7 @@ Both paid plans come with a 14-day free trial.
 
 ## 5. Koalendar
 
-[Koalendar](https://koalendar.com/) gives you unlimited booking pages and event types for free. It also handles more than 30 languages and comes with phone apps. It's a good pick for solo users who book several kinds of meetings.
+[Koalendar](https://koalendar.com/) is a scheduling app for small businesses, consultants, educators, and teams that want a simple booking page clients can use from any device. You create booking pages with your logo and colors, connect Google, Outlook, or iCloud calendars, and add custom questions. It detects time zones, sends email and SMS reminders, supports group, collective, and round robin bookings, takes Stripe payments, and offers booking pages in many languages. You get unlimited booking pages and event types for free, with more than 30 languages and phone apps, which makes it a good pick for solo users who book several kinds of meetings.
 
 [![Koalendar homepage](/assets/blog/tools/koalendar.webp)](https://koalendar.com/)
 
@@ -214,7 +214,7 @@ Both paid plans come with a 14-day free trial.
 
 ## 6. TidyCal
 
-[TidyCal](https://tidycal.com/)'s free plan covers unlimited booking types and paid bookings. When you outgrow it, you can pay once for a lifetime plan, which makes it easy to keep costs flat. It suits solo pros who sell sessions and dislike subscriptions.
+[TidyCal](https://tidycal.com/) is a booking tool for coaches, consultants, and solo service providers who want a simple booking page that also takes payment. You list each service as a booking type and connect a Google, Microsoft, or Apple calendar to avoid double bookings. Clients can pay through Stripe or PayPal when they book, buy session packages or recurring sessions, and get automated email and SMS reminders. It is made by Sumo Group, the company behind AppSumo. Its free plan covers unlimited booking types and paid bookings, and when you outgrow it you can pay once for a lifetime plan to keep costs flat. It suits solo pros who sell sessions and dislike subscriptions.
 
 [![TidyCal homepage](/assets/blog/tools/tidycal.webp)](https://tidycal.com/)
 
@@ -244,7 +244,7 @@ Both paid plans come with a 14-day free trial.
 
 ## 7. Calendly
 
-[Calendly](https://calendly.com/)'s free plan is the one many people start with. It gives you one event type with one calendar and a booking page you can shape. Most growing users move to Standard for more event types and reminders. It suits people who need one simple booking link.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Its free plan, the one many people start with, gives you one event type with one calendar and a booking page you can shape. Most growing users move to Standard for more event types and reminders, so the free plan suits people who need one simple booking link.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -273,7 +273,7 @@ Both paid plans come with a 14-day free trial.
 
 ## 8. HubSpot Meetings
 
-[HubSpot Meetings](https://www.hubspot.com/products/sales/schedule-meeting) is part of HubSpot's free tools, and it books into HubSpot's free CRM. If you plan to grow into HubSpot, it's a natural first step. It suits small sales teams starting on HubSpot's free CRM.
+[HubSpot Meetings](https://www.hubspot.com/products/sales/schedule-meeting) is the meeting scheduler inside HubSpot's CRM, built for sales and service teams that want prospects to book time and have every meeting recorded. You connect a Google or Office 365 calendar, then share a booking link or embed it on a web page or in live chat. It supports round robin and group meeting links, logs booked meetings on contact records, can start email sequences, and uses AI to prepare meeting context and follow-ups. It's part of HubSpot's free tools and books into the free CRM, so it's a natural first step for small sales teams that plan to grow into HubSpot.
 
 [![HubSpot Meetings homepage](/assets/blog/tools/hubspot-meetings.webp)](https://www.hubspot.com/products/sales/schedule-meeting)
 
@@ -301,7 +301,7 @@ Both paid plans come with a 14-day free trial.
 
 ## 9. Setmore
 
-[Setmore](https://www.setmore.com/)'s free plan is built for a small staff. Up to four people can take bookings, with unlimited appointments, and it comes with phone apps and support from real people. It suits small shops and studios with a few staff members.
+[Setmore](https://www.setmore.com/) is an online appointment scheduling app for service businesses and teams that want customers to book and pay without back-and-forth calls. Each business gets a branded booking page with its services, real-time availability and reviews, which it can share on its website, Facebook, Instagram or a QR code. Setmore books one-on-one appointments and group classes, sends email and text reminders, adds Zoom or Google Meet links, syncs with Google Calendar and takes card payments. Its free plan lets up to four people take bookings, with unlimited appointments, phone apps and support from real people, so it suits small shops and studios with a few staff members.
 
 [![Setmore homepage](/assets/blog/tools/setmore.webp)](https://www.setmore.com/)
 

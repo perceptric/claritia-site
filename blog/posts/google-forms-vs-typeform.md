@@ -39,13 +39,13 @@ Prices checked November 2026.
 
 ## What is Google Forms?
 
-[Google Forms](https://www.google.com/forms/about/) is Google's free form and survey builder. You add questions, share the form by link or email, or embed it on a page. Answers can go to a Google Sheet, and Forms shows charts of the results as they arrive. Any form can become a quiz with an answer key, points and feedback.
+[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge. Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's free, and any form can become a quiz with an answer key, points and feedback.
 
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 
 ## What is Typeform?
 
-[Typeform](https://www.typeform.com/) is a paid form builder known for its conversational layout. Each question fills the screen, and people move through the form one answer at a time. Its plans include AI that helps build forms, logic, hidden fields and integrations with tools like HubSpot, Salesforce and Google Sheets.
+[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies. Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment. It's a paid form builder where each question fills the screen, so people move through the form one answer at a time. Its plans include logic, hidden fields and a Salesforce integration too.
 
 [![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
 

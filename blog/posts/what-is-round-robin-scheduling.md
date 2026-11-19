@@ -93,23 +93,25 @@ Plain turn-taking is the starting point. Most teams add one or more of these:
 
 ### Claritia
 
-[Claritia](/) joins forms and meetings, so the form answers pick the team and the rotation picks the person. Round robin on Pro comes with weights and priority, team pools, away days and daily and weekly caps. Every meeting shows the rule that matched and why that person was picked, and Business adds owner first. Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+The form answers pick the team, and the rotation picks the person. Round robin on Pro comes with weights and priority, team pools, away days and daily and weekly caps. Every meeting shows the rule that matched and why that person was picked, and Business adds owner first. Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.
 
 ### Calendly
 
-[Calendly](https://calendly.com/)'s Teams plan adds round robin and team scheduling, plus forms that route leads. Teams is $16 a seat a month billed yearly.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Round robin, team scheduling and routing forms come on its Teams plan, at $16 a seat a month billed yearly.
 
 ### Cal.com
 
-[Cal.com](https://cal.com/)'s Teams plan has round robin with priority and optional weights. You choose between booking whoever is free and load balancing that pauses hosts who get too far ahead. Teams is $12 a user a month billed yearly.
+[Cal.com](https://cal.com/) is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video. Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub. Its Teams plan has round robin with priority and optional weights. You choose between booking whoever is free and load balancing that pauses hosts who get too far ahead. Teams is $12 a user a month billed yearly.
 
 ### HubSpot
 
-[HubSpot](https://www.hubspot.com/)'s meetings tool offers round robin links that book the first available rep. Team links need a paid Sales Hub plan.
+[HubSpot](https://www.hubspot.com/) is a customer platform for businesses of all sizes that want their marketing, sales and customer service teams to work from the same customer data. It is built around a shared CRM and adds separate products, called hubs, for marketing, sales, service, content, data management, and quotes and billing. Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents. Its meetings tool offers round robin links that book the first available rep, and team links need a paid Sales Hub plan.
 
 ### Zcal
 
-[Zcal](https://zcal.co/) adds round robin events on Pro, at $7 a user a month billed yearly.
+[Zcal](https://zcal.co/) is a scheduling app for individuals, teams, and class hosts who want booking pages and meeting polls in one place. Booking pages can carry custom fonts, colors, layouts, welcome videos, and custom questions, and they sync with Google, Outlook, and Apple calendars. Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier. Round robin events come on Pro, at $7 a user a month billed yearly.
 
 ## Questions
 

@@ -135,19 +135,19 @@ Keep follow-up short and in your own voice. Stop it as soon as the lead books or
 
 ### Claritia
 
-[Claritia](/) covers the steps after a buyer lands on your site. Its forms capture the lead with hidden fields and spam protection on every plan, and the right person's calendar opens right after submit. On Starter, leads go to your CRM, Slack sends an alert, and a follow-up goes out the next day until the lead books. On Pro, routing by answer and round robin decide who takes each lead.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. Its forms come with hidden fields and spam protection on every plan. On Starter, leads go to your CRM, Slack sends an alert, and a follow-up goes out the next day until the lead books. On Pro, routing by answer and round robin decide who takes each lead.
 
 ### HubSpot
 
-[HubSpot](https://www.hubspot.com/) brings marketing tools and a CRM together, with free forms, live chat and a chatbot builder. It suits teams that want content, email and contacts in one system.
+[HubSpot](https://www.hubspot.com/) is a customer platform for businesses of all sizes that want their marketing, sales and customer service teams to work from the same customer data. It is built around a shared CRM and adds separate products, called hubs, for marketing, sales, service, content, data management, and quotes and billing. Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents. Its forms, live chat and chatbot builder are free, and it suits teams that want content, email and contacts in one system.
 
 ### OptinMonster
 
-[OptinMonster](https://optinmonster.com/) adds popups, floating bars and other campaigns to your site, with triggers by page, time on site and scroll. It helps turn blog readers into subscribers.
+[OptinMonster](https://optinmonster.com/) is a lead generation tool for website owners and marketers who want to turn more visitors into email subscribers, leads and sales. It builds popups, floating bars, fullscreen overlays, slide-ins, inline forms and spin-a-wheel coupon offers from templates in a drag-and-drop editor. Campaigns show up based on rules such as exit intent, inactivity, scheduled dates, the page being viewed and past visitor behavior, and it includes A/B tests and conversion reports. It works on WordPress, Shopify and other sites. Its triggers also include time on site and scroll, and it helps turn blog readers into subscribers.
 
 ### Unbounce
 
-[Unbounce](https://unbounce.com/) builds landing pages with lead gen forms and lets you test versions of each page. It suits teams sending paid ads to one offer.
+[Unbounce](https://unbounce.com/) is a landing page builder for marketers and agencies who want to build and test campaign pages without a developer. A page can start from an AI prompt, a template or a blank canvas, then be edited by prompt or drag and drop. Unbounce runs A/B tests, uses Smart Traffic to send visitors to the variant most likely to convert, adds popups and sticky bars, and publishes to custom domains with forms that pass leads to other tools. It suits teams sending paid ads to one offer.
 
 Compare more options in our list of the [best lead capture software](/blog/best-lead-capture-software).
 

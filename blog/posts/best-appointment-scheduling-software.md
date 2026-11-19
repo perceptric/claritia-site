@@ -60,7 +60,7 @@ Price matters, but these five checks tell you more about how a tool will run you
 
 ## 1. Claritia
 
-[Claritia](/) joins forms and meetings for small teams, with workflows that follow up after. Your client fills in a short form and picks an appointment inside it, so you get their answers and the booking together. Reminders then go out on their own. It suits small teams that get clients from their website and want intake and booking in one step.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. Your client picks an appointment inside a short form, so you get their answers and the booking together, and reminders then go out on their own.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -96,7 +96,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Acuity Scheduling
 
-[Acuity Scheduling](https://acuityscheduling.com/) has served appointment businesses for years, and it shows in the details. Every plan comes with intake forms and online payments, and higher plans add a waitlist and HIPAA support. It's a strong fit for therapists and clinics that take payment at booking.
+[Acuity Scheduling](https://acuityscheduling.com/) is appointment scheduling software for service businesses such as salons, coaches, wellness providers, fitness studios, and tutors that want clients to book and pay on their own. Clients pick times on a branded booking page, fill out intake forms, and get automatic confirmations and reminders. Owners can take deposits or full payments through Stripe, Square, or PayPal, sell packages, subscriptions, and gift certificates, run waitlists, and manage staff calendars across locations. Acuity has served appointment businesses for years, and every plan includes intake forms and online payments. Higher plans add the waitlist and HIPAA support, which makes it a strong fit for therapists and clinics that take payment at booking.
 
 [![Acuity Scheduling homepage](/assets/blog/tools/acuity-scheduling.webp)](https://acuityscheduling.com/)
 
@@ -126,7 +126,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Google Calendar appointment schedules
 
-[Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/) give you a booking page built into Google Calendar. You can make one with a personal Google account or a Workspace account, though some features need an eligible Workspace or Google One plan. It suits solo pros who already run their day in Google Calendar.
+[Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/) is a booking feature built into Google Calendar for people who want others to pick an open time without leaving their own calendar. You set the length, hours, buffers, and daily limits, add booking form questions, and share a booking page link or embed it on a website. It checks your calendars to prevent double bookings, sends confirmation emails, and on eligible paid accounts adds reminders, guest email checks, and Stripe payments. You can make one with a personal Google account or a Workspace account, though some features need an eligible Workspace or Google One plan. It suits solo pros who already run their day in Google Calendar.
 
 [![Google Calendar appointment schedules homepage](/assets/blog/tools/google-appointment-schedules.webp)](https://workspace.google.com/resources/appointment-scheduling/)
 
@@ -154,7 +154,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 4. Microsoft Bookings
 
-[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) comes with many Microsoft 365 business plans. It gives you personal booking pages and shared pages for a team, and online appointments get a Teams meeting link on their own. It's a good fit for offices that already pay for Microsoft 365.
+[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is a scheduling app included with many Microsoft 365 business subscriptions, built for organizations that want customers or colleagues to book time without the back and forth. It offers personal booking pages for one person's availability and shared booking pages where teams define services, staff, and business hours. Bookings works with Outlook calendars, creates a Microsoft Teams link for online appointments, sends email and text reminders, and stores its data in Exchange Online. It's a good fit for offices that already pay for Microsoft 365.
 
 [![Microsoft Bookings homepage](/assets/blog/tools/microsoft-bookings.webp)](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app)
 
@@ -181,7 +181,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 5. YouCanBookMe
 
-[YouCanBookMe](https://youcanbook.me/) is known for its long list of settings. You can tune notice periods and protect pages with a password, and the free plan is enough to try it. It suits solo pros and small teams who want fine control over their booking page.
+[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe. It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. It's known for its long list of settings, such as notice periods you can tune, and the free plan is enough to try it. It suits solo pros and small teams who want fine control over their booking page.
 
 [![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
 
@@ -210,7 +210,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 6. SimplyBook.me
 
-[SimplyBook.me](https://simplybook.me/) suits businesses with a menu of services and several providers. It gives you a booking website and a widget for your own site, and you pay by the number of bookings and providers. It's a good fit for studios and service shops with many services and staff.
+[SimplyBook.me](https://simplybook.me/) is an online booking system for service businesses in fields like beauty, health, education, fitness, and public services that want clients to book at any hour. It gives each business a booking website and lets clients also book through Facebook, Instagram, Google, or a branded client app. It sends reminders by email, SMS, and WhatsApp, takes payments online or in person through its POS, and adds options such as classes, memberships, intake forms, and gift cards. Along with the booking website you get a widget for your own site, and you pay by the number of bookings and providers. It's a good fit for studios and service shops with a menu of services and several providers.
 
 [![SimplyBook.me homepage](/assets/blog/tools/simplybook.webp)](https://simplybook.me/)
 
@@ -240,7 +240,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 7. Zcal
 
-[Zcal](https://zcal.co/) gives a solo user email reminders and payments without a paid plan. It's a good fit for one person who books a mix of calls and sessions. Paid plans add text reminders and team scheduling.
+[Zcal](https://zcal.co/) is a scheduling app for individuals, teams, and class hosts who want booking pages and meeting polls in one place. Booking pages can carry custom fonts, colors, layouts, welcome videos, and custom questions, and they sync with Google, Outlook, and Apple calendars. Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier. A solo user gets email reminders and payments without a paid plan, which makes it a good fit for one person who books a mix of calls and sessions. Paid plans add text reminders and team scheduling.
 
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
@@ -271,7 +271,7 @@ Both paid plans come with a 14-day free trial.
 
 ## 8. TidyCal
 
-[TidyCal](https://tidycal.com/) lets you pay once and keep booking. Its free plan already handles group and package bookings, and paid plans add SMS reminders and drop the fee on paid bookings. It suits solo pros who want to avoid a monthly bill.
+[TidyCal](https://tidycal.com/) is a booking tool for coaches, consultants, and solo service providers who want a simple booking page that also takes payment. You list each service as a booking type and connect a Google, Microsoft, or Apple calendar to avoid double bookings. Clients can pay through Stripe or PayPal when they book, buy session packages or recurring sessions, and get automated email and SMS reminders. It is made by Sumo Group, the company behind AppSumo. You can pay once and keep booking, and the free plan already handles group and package bookings. Paid plans add SMS reminders and drop the fee on paid bookings, so it suits solo pros who want to avoid a monthly bill.
 
 [![TidyCal homepage](/assets/blog/tools/tidycal.webp)](https://tidycal.com/)
 
