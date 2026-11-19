@@ -5,8 +5,9 @@ category: Forms
 kind: form
 date: 2026-11-18
 ---
+ Google Forms and Jotform are two of the most common places people start when they need a form. Google Forms is free with a Google account and sends answers straight to Google Sheets.
 
-Google Forms and Jotform are two of the most common places people start when they need a form. Google Forms is free with a Google account and sends answers straight to Google Sheets. Jotform has a free plan too, plus a huge template library and fields for payments and signatures. On the surface they look like they do the same job.
+Jotform has a free plan too, plus a huge template library and fields for payments and signatures. On the surface they look like they do the same job.
 
 They don't fit the same people, though. Pick the wrong one and you hit a wall later: a 5 form cap, a missing payment field, or a form that doesn't look like your business. This guide helps you see which wall you're likely to hit first.
 
@@ -39,13 +40,17 @@ Prices checked November 2026.
 
 ## What is Google Forms?
 
-[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge. Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's free to use, and any form can become a quiz with an answer key and points.
+[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge.
+
+Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's free to use, and any form can become a quiz with an answer key and points.
 
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 
 ## What is Jotform?
 
-[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It says it has more than 20,000 templates, handles file uploads, and adds HIPAA features on its top plan. Its card layout can also show one question at a time.
+[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways.
+
+Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It says it has more than 20,000 templates, handles file uploads, and adds HIPAA features on its top plan. Its card layout can also show one question at a time.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -77,7 +82,9 @@ Jotform gives you far more to work with. Its drag-and-drop editor has many field
 
 ## Logic and question types
 
-Google Forms has the core question types: short answer, paragraph, multiple choice, checkboxes, dropdown, file upload, linear scale, rating, grids, date and time. Its logic works through sections. On a choice question, you can send people to a chosen section based on their answer, or end the form. You can't show or hide a single question in the middle of a page.
+Google Forms has the core question types: short answer, paragraph, multiple choice, checkboxes, dropdown, file upload, linear scale, rating, grids, date and time. Its logic works through sections.
+
+On a choice question, you can send people to a chosen section based on their answer, or end the form. You can't show or hide a single question in the middle of a page.
 
 Jotform includes conditional logic on its free plan. You can show or hide fields, skip pages and change what happens at the end based on answers. Its logic can also send emails to different people, run calculations and change the thank-you page. Along with logic, it has fields Google Forms lacks, like payments and signatures.
 
@@ -137,7 +144,11 @@ If neither fits because your form should start a sales conversation, read on.
 
 ## A third option: Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. It fills the gap both tools leave, which is what happens after a lead hits submit, since a Claritia form can end with a booking step on the same page. See [Claritia Forms](/products/forms) for the full list.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+It fills the gap both tools leave, which is what happens after a lead hits submit, since a Claritia form can end with a booking step on the same page. See [Claritia Forms](/products/forms) for the full list.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 

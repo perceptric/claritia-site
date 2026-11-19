@@ -60,7 +60,11 @@ Most tools here handle a basic booking page. These five checks show which one fi
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. A client fills in your form and books a time inside it, so you get their details and the meeting in one step. It suits small teams that win clients through a website and want the form to book the meeting.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+A client fills in your form and books a time inside it, so you get their details and the meeting in one step. It suits small teams that win clients through a website and want the form to book the meeting.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -96,7 +100,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Acuity Scheduling
 
-[Acuity Scheduling](https://acuityscheduling.com/) is appointment scheduling software for service businesses such as salons, coaches, wellness providers, fitness studios, and tutors that want clients to book and pay on their own. Clients pick times on a branded booking page, fill out intake forms, and get automatic confirmations and reminders. Owners can take deposits or full payments through Stripe, Square, or PayPal, sell packages, subscriptions, and gift certificates, run waitlists, and manage staff calendars across locations. It's a long-standing pick, and every plan includes custom intake forms and online payments. You pay by the number of calendars, which suits a business where each staff member or room has one.
+[Acuity Scheduling](https://acuityscheduling.com/) is appointment scheduling software for service businesses such as salons, coaches, wellness providers, fitness studios, and tutors that want clients to book and pay on their own. Clients pick times on a branded booking page, fill out intake forms, and get automatic confirmations and reminders.
+
+Owners can take deposits or full payments through Stripe, Square, or PayPal, sell packages, subscriptions, and gift certificates, run waitlists, and manage staff calendars across locations. It's a long-standing pick, and every plan includes custom intake forms and online payments. You pay by the number of calendars, which suits a business where each staff member or room has one.
 
 [![Acuity Scheduling homepage](/assets/blog/tools/acuity-scheduling.webp)](https://acuityscheduling.com/)
 
@@ -125,7 +131,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Setmore
 
-[Setmore](https://www.setmore.com/) is an online appointment scheduling app for service businesses and teams that want customers to book and pay without back-and-forth calls. Each business gets a branded booking page with its services, real-time availability and reviews, which it can share on its website, Facebook, Instagram or a QR code. Setmore books one-on-one appointments and group classes, sends email and text reminders, adds Zoom or Google Meet links, syncs with Google Calendar and takes card payments. Its free plan covers up to four users with unlimited appointments, and it has phone apps for iOS and Android. It suits shops and studios with a few staff and a small budget.
+[Setmore](https://www.setmore.com/) is an online appointment scheduling app for service businesses and teams that want customers to book and pay without back-and-forth calls. Each business gets a branded booking page with its services, real-time availability and reviews, which it can share on its website, Facebook, Instagram or a QR code.
+
+Setmore books one-on-one appointments and group classes, sends email and text reminders, adds Zoom or Google Meet links, syncs with Google Calendar and takes card payments. Its free plan covers up to four users with unlimited appointments, and it has phone apps for iOS and Android. It suits shops and studios with a few staff and a small budget.
 
 [![Setmore homepage](/assets/blog/tools/setmore.webp)](https://www.setmore.com/)
 
@@ -155,7 +163,11 @@ Paid plans are charged per user.
 
 ## 4. Microsoft Bookings
 
-[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is a scheduling app included with many Microsoft 365 business subscriptions, built for organizations that want customers or colleagues to book time without the back and forth. It offers personal booking pages for one person's availability and shared booking pages where teams define services, staff, and business hours. Bookings works with Outlook calendars, creates a Microsoft Teams link for online appointments, sends email and text reminders, and stores its data in Exchange Online. If your business already pays for Microsoft 365, you may already have it, since it comes with Business Basic, Business Standard, Business Premium and Teams Essentials, among other plans. It suits offices that already run on Outlook and Teams.
+[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is a scheduling app included with many Microsoft 365 business subscriptions, built for organizations that want customers or colleagues to book time without the back and forth.
+
+It offers personal booking pages for one person's availability and shared booking pages where teams define services, staff, and business hours. Bookings works with Outlook calendars, creates a Microsoft Teams link for online appointments, sends email and text reminders, and stores its data in Exchange Online.
+
+If your business already pays for Microsoft 365, you may already have it, since it comes with Business Basic, Business Standard, Business Premium and Teams Essentials, among other plans. It suits offices that already run on Outlook and Teams.
 
 [![Microsoft Bookings homepage](/assets/blog/tools/microsoft-bookings.webp)](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app)
 
@@ -182,7 +194,9 @@ Paid plans are charged per user.
 
 ## 5. Calendly
 
-[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. It's the name most people know for booking links, simple for clients and a good fit for sales calls and one-on-one meetings. Team features like round robin start on the Teams plan.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments.
+
+Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. It's the name most people know for booking links, simple for clients and a good fit for sales calls and one-on-one meetings. Team features like round robin start on the Teams plan.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -212,7 +226,9 @@ Paid plans are charged per user.
 
 ## 6. Zoho Bookings
 
-[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits. Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It also links to Bigin, and its per-user prices are among the lowest here, so it suits small teams already using Zoho CRM or Bigin.
+[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits.
+
+Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It also links to Bigin, and its per-user prices are among the lowest here, so it suits small teams already using Zoho CRM or Bigin.
 
 [![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
 
@@ -241,7 +257,11 @@ Paid plans are charged per user.
 
 ## 7. SimplyBook.me
 
-[SimplyBook.me](https://simplybook.me/) is an online booking system for service businesses in fields like beauty, health, education, fitness, and public services that want clients to book at any hour. It gives each business a booking website and lets clients also book through Facebook, Instagram, Google, or a branded client app. It sends reminders by email, SMS, and WhatsApp, takes payments online or in person through its POS, and adds options such as classes, memberships, intake forms, and gift cards. It also offers a widget for your own site. Prices are set by bookings and providers, and higher plans raise both the booking cap and the number of staff, which suits a business with a steady, modest number of bookings.
+[SimplyBook.me](https://simplybook.me/) is an online booking system for service businesses in fields like beauty, health, education, fitness, and public services that want clients to book at any hour. It gives each business a booking website and lets clients also book through Facebook, Instagram, Google, or a branded client app.
+
+It sends reminders by email, SMS, and WhatsApp, takes payments online or in person through its POS, and adds options such as classes, memberships, intake forms, and gift cards. It also offers a widget for your own site.
+
+Prices are set by bookings and providers, and higher plans raise both the booking cap and the number of staff, which suits a business with a steady, modest number of bookings.
 
 [![SimplyBook.me homepage](/assets/blog/tools/simplybook.webp)](https://simplybook.me/)
 
@@ -270,7 +290,9 @@ Paid plans are charged per user.
 
 ## 8. Koalendar
 
-[Koalendar](https://koalendar.com/) is a scheduling app for small businesses, consultants, educators, and teams that want a simple booking page clients can use from any device. You create booking pages with your logo and colors, connect Google, Outlook, or iCloud calendars, and add custom questions. It detects time zones, sends email and SMS reminders, supports group, collective, and round robin bookings, takes Stripe payments, and offers booking pages in many languages. It keeps prices low for one or two people. The free plan has unlimited booking pages and event types, and Business bundles three seats with round robin.
+[Koalendar](https://koalendar.com/) is a scheduling app for small businesses, consultants, educators, and teams that want a simple booking page clients can use from any device. You create booking pages with your logo and colors, connect Google, Outlook, or iCloud calendars, and add custom questions.
+
+It detects time zones, sends email and SMS reminders, supports group, collective, and round robin bookings, takes Stripe payments, and offers booking pages in many languages. It keeps prices low for one or two people. The free plan has unlimited booking pages and event types, and Business bundles three seats with round robin.
 
 [![Koalendar homepage](/assets/blog/tools/koalendar.webp)](https://koalendar.com/)
 

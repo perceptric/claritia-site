@@ -61,7 +61,11 @@ Most tools list round robin somewhere. These five checks show which one fits you
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. The visitor picks a time inside the form, and the meeting goes to the next right person in the rotation. Round robin sits on the Pro plan with weights and priority, so you can send more meetings to the people who should get them.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+The visitor picks a time inside the form, and the meeting goes to the next right person in the rotation. Round robin sits on the Pro plan with weights and priority, so you can send more meetings to the people who should get them.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -98,7 +102,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Calendly
 
-[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Its Teams plan adds round robin and team scheduling and routes by the owner already set in HubSpot, while Enterprise adds routing by Salesforce owner. It suits teams already on Calendly links who want to add a rotation.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments.
+
+Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Its Teams plan adds round robin and team scheduling and routes by the owner already set in HubSpot, while Enterprise adds routing by Salesforce owner. It suits teams already on Calendly links who want to add a rotation.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -127,7 +133,11 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Cal.com
 
-[Cal.com](https://cal.com/) is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video. Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub. Its free plan covers one person with unlimited links, and its Teams plan adds round robin, routing forms, custom notifications and workflows for reminders. It suits teams who like open source and want room to build on top.
+[Cal.com](https://cal.com/) is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video.
+
+Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub.
+
+Its free plan covers one person with unlimited links, and its Teams plan adds round robin, routing forms, custom notifications and workflows for reminders. It suits teams who like open source and want room to build on top.
 
 [![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
 
@@ -156,7 +166,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 4. SavvyCal
 
-[SavvyCal](https://savvycal.com/) is a scheduling tool for professionals and teams who want booking links that feel easy for both the host and the guest. Guests see a full week of open times and can lay their own calendar over the link to spot a match. Hosts set buffers, limits, preferred times, and time blocks, put links on their own domain, and take Stripe payments. It also supports round robin, collective, and group links, meeting polls, and reminder workflows. Both paid plans include round robin and collective team links, and it suits teams who care most about how the booking page feels.
+[SavvyCal](https://savvycal.com/) is a scheduling tool for professionals and teams who want booking links that feel easy for both the host and the guest. Guests see a full week of open times and can lay their own calendar over the link to spot a match.
+
+Hosts set buffers, limits, preferred times, and time blocks, put links on their own domain, and take Stripe payments. It also supports round robin, collective, and group links, meeting polls, and reminder workflows. Both paid plans include round robin and collective team links, and it suits teams who care most about how the booking page feels.
 
 [![SavvyCal homepage](/assets/blog/tools/savvycal.webp)](https://savvycal.com/)
 
@@ -188,7 +200,9 @@ The free plan lets you set up links and send meeting polls.
 
 ## 5. OnceHub
 
-[OnceHub](https://www.oncehub.com/) is a scheduling and engagement platform for sales, service, support, and recruiting teams that want to screen visitors and book them with the right person. It offers branded booking pages, booking hubs, routing forms that qualify people before they book, and AI chat and phone agents that answer questions and schedule calls. Its scheduling engine handles one-on-one, multi-host, and group meetings, creates video links and reminders, and connects to CRMs and Zapier. It has a plan for each job, from Schedule up to Engage. Round robin and routing forms arrive on Route, and Engage adds chatbots for your website.
+[OnceHub](https://www.oncehub.com/) is a scheduling and engagement platform for sales, service, support, and recruiting teams that want to screen visitors and book them with the right person. It offers branded booking pages, booking hubs, routing forms that qualify people before they book, and AI chat and phone agents that answer questions and schedule calls.
+
+Its scheduling engine handles one-on-one, multi-host, and group meetings, creates video links and reminders, and connects to CRMs and Zapier. It has a plan for each job, from Schedule up to Engage. Round robin and routing forms arrive on Route, and Engage adds chatbots for your website.
 
 [![OnceHub homepage](/assets/blog/tools/oncehub.webp)](https://www.oncehub.com/)
 
@@ -218,7 +232,11 @@ The free plan lets you set up links and send meeting polls.
 
 ## 6. Zcal
 
-[Zcal](https://zcal.co/) is a scheduling app for individuals, teams, and class hosts who want booking pages and meeting polls in one place. Booking pages can carry custom fonts, colors, layouts, welcome videos, and custom questions, and they sync with Google, Outlook, and Apple calendars. Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier. Its free plan stays free and gives you unlimited links. Round robin and collective events start on Pro, which also adds follow-up emails and SMS reminders, so it suits small teams who want round robin at the lowest price here.
+[Zcal](https://zcal.co/) is a scheduling app for individuals, teams, and class hosts who want booking pages and meeting polls in one place. Booking pages can carry custom fonts, colors, layouts, welcome videos, and custom questions, and they sync with Google, Outlook, and Apple calendars.
+
+Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier.
+
+Its free plan stays free and gives you unlimited links. Round robin and collective events start on Pro, which also adds follow-up emails and SMS reminders, so it suits small teams who want round robin at the lowest price here.
 
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
@@ -247,7 +265,11 @@ The free plan lets you set up links and send meeting polls.
 
 ## 7. HubSpot
 
-[HubSpot](https://www.hubspot.com/) is a customer platform for businesses of all sizes that want their marketing, sales and customer service teams to work from the same customer data. It is built around a shared CRM and adds separate products, called hubs, for marketing, sales, service, content, data management, and quotes and billing. Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents. Its meetings tool lives inside the CRM. Team scheduling pages, round robin included, need a paid Sales Hub or Service Hub plan and a Sales or Service seat, and HubSpot books whichever teammate is free at the time the contact picks.
+[HubSpot](https://www.hubspot.com/) is a customer platform for businesses of all sizes that want their marketing, sales and customer service teams to work from the same customer data. It is built around a shared CRM and adds separate products, called hubs, for marketing, sales, service, content, data management, and quotes and billing.
+
+Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents. Its meetings tool lives inside the CRM.
+
+Team scheduling pages, round robin included, need a paid Sales Hub or Service Hub plan and a Sales or Service seat, and HubSpot books whichever teammate is free at the time the contact picks.
 
 [![HubSpot homepage](/assets/blog/tools/hubspot.webp)](https://www.hubspot.com/)
 
@@ -277,7 +299,9 @@ The free plan lets you set up links and send meeting polls.
 
 ## 8. Zoho Bookings
 
-[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits. Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. Its free plan covers one user with reminders and two-way calendar sync. Round robin is on its feature list, though the pricing page doesn't show which plan includes it.
+[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits.
+
+Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. Its free plan covers one user with reminders and two-way calendar sync. Round robin is on its feature list, though the pricing page doesn't show which plan includes it.
 
 [![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
 
@@ -306,7 +330,9 @@ The free plan lets you set up links and send meeting polls.
 
 ## 9. YouCanBookMe
 
-[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe. It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. Round robin comes on the Team plan, along with more calendars and booking pages for each person. It suits teams who want plain booking pages with a rotation.
+[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe.
+
+It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. Round robin comes on the Team plan, along with more calendars and booking pages for each person. It suits teams who want plain booking pages with a rotation.
 
 [![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
 

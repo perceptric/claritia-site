@@ -117,6 +117,11 @@ def read(path: pathlib.Path) -> dict:
         if not meta.get(need):
             raise SystemExit(f"{path.name}: needs a {need}")
     body, heads = md(m.group(2))
+    # Keep paragraphs short: about 5 lines on desktop at most. Split long ones at a sentence break.
+    for para in re.findall(r"<p>(.*?)</p>", body):
+        n = len(re.sub(r"<[^>]+>", " ", para).split())
+        if n > 70 and not para.startswith("<a href") and "<img" not in para:
+            print(f"warning: {path.name}: a {n}-word paragraph (keep paragraphs under 70 words): {re.sub(r'<[^>]+>', '', para)[:60]}...")
     words = len(re.sub(r"<[^>]+>", " ", body).split())
     return {**meta, "slug": path.stem, "body": body, "heads": heads, "minutes": max(1, round(words / 230)),
             "category": meta.get("category", "Guides"), "kind": meta.get("kind", "responses"),

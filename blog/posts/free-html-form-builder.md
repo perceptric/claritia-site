@@ -24,7 +24,9 @@ In this post, we compare 7 free tools that give you a form for any HTML site. Yo
 
 ## What is a free HTML form builder?
 
-A free HTML form builder is a tool that lets you make a web form without code and put it on any HTML page for free. You build the form in the tool, then copy an embed code, usually a script tag or an iframe, into your site. The tool hosts the form, saves each answer and sends you a note.
+A free HTML form builder is a tool that lets you make a web form without code and put it on any HTML page for free.
+
+You build the form in the tool, then copy an embed code, usually a script tag or an iframe, into your site. The tool hosts the form, saves each answer and sends you a note.
 
 It works on hand-coded sites and on site builders like WordPress, Webflow, Framer, Squarespace and Shopify, since all of them accept a piece of HTML.
 
@@ -63,7 +65,11 @@ Prices checked November 2026.
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. Tia, the AI form builder, drafts the form, and you paste one script tag into your page to show it inline, as a popup or as a side tab. The last page can be a calendar, so each lead books a meeting before they leave.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+Tia, the AI form builder, drafts the form, and you paste one script tag into your page to show it inline, as a popup or as a side tab. The last page can be a calendar, so each lead books a meeting before they leave.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -99,7 +105,11 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Tally
 
-[Tally](https://tally.so/) is a form builder for individuals and teams who want to make forms by typing, much like writing in a document. You insert blocks for contact details, file uploads, ratings, signatures, and Stripe payments, then add conditional logic, calculations, hidden fields, and answer piping. Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking. It has the biggest free plan here, with unlimited forms and submissions within fair use, and you can embed a form as a standard, popup or full page form. Its help pages say all three embed types are free.
+[Tally](https://tally.so/) is a form builder for individuals and teams who want to make forms by typing, much like writing in a document. You insert blocks for contact details, file uploads, ratings, signatures, and Stripe payments, then add conditional logic, calculations, hidden fields, and answer piping.
+
+Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking.
+
+It has the biggest free plan here, with unlimited forms and submissions within fair use, and you can embed a form as a standard, popup or full page form. Its help pages say all three embed types are free.
 
 [![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
 
@@ -130,7 +140,9 @@ Yearly billing gives two months off.
 
 ## 3. Fillout
 
-[Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures. It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. It gives you 1,000 responses a month for free, with embedding on every plan and unlimited seats, so it suits teams who want a big free plan and a modern editor.
+[Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures.
+
+It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. It gives you 1,000 responses a month for free, with embedding on every plan and unlimited seats, so it suits teams who want a big free plan and a modern editor.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -160,7 +172,11 @@ Yearly billing gives two months off.
 
 ## 4. Jotform
 
-[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It has more than 20,000 templates, and when your form is ready, you copy its embed code and paste it into your site builder or page. The free plan is small, so it fits low-volume forms. For more on its editor, see our list of [drag and drop form builders](/blog/best-drag-and-drop-form-builders).
+[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways.
+
+Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It has more than 20,000 templates, and when your form is ready, you copy its embed code and paste it into your site builder or page.
+
+The free plan is small, so it fits low-volume forms. For more on its editor, see our list of [drag and drop form builders](/blog/best-drag-and-drop-form-builders).
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -190,7 +206,11 @@ Yearly billing gives two months off.
 
 ## 5. Cognito Forms
 
-[Cognito Forms](https://www.cognitoforms.com/) is an online form builder for organizations that want to collect data and automate the work that follows each entry. Its drag-and-drop builder handles many field types, automatic calculations, signatures and file uploads. Forms can move entries through approval workflows, generate documents, look up data from other forms and take payments through Square, Stripe, PayPal or its own Cognito Pay. It also includes controls that help teams meet HIPAA, GDPR and CCPA rules. It gives you two embed codes. Seamless puts the form right into your page, and iframe keeps it in its own frame for sites where Seamless clashes. It suits quotes and order forms, and the free plan even takes payments.
+[Cognito Forms](https://www.cognitoforms.com/) is an online form builder for organizations that want to collect data and automate the work that follows each entry. Its drag-and-drop builder handles many field types, automatic calculations, signatures and file uploads.
+
+Forms can move entries through approval workflows, generate documents, look up data from other forms and take payments through Square, Stripe, PayPal or its own Cognito Pay. It also includes controls that help teams meet HIPAA, GDPR and CCPA rules.
+
+It gives you two embed codes. Seamless puts the form right into your page, and iframe keeps it in its own frame for sites where Seamless clashes. It suits quotes and order forms, and the free plan even takes payments.
 
 [![Cognito Forms homepage](/assets/blog/tools/cognito-forms.webp)](https://www.cognitoforms.com/)
 
@@ -219,7 +239,9 @@ Yearly billing gives two months off.
 
 ## 6. Google Forms
 
-[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge. Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's free with a Google account. To embed a form, open its More menu, pick Embed HTML, copy the code and paste it into your page. It suits simple forms where looks don't matter much.
+[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge.
+
+Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's free with a Google account. To embed a form, open its More menu, pick Embed HTML, copy the code and paste it into your page. It suits simple forms where looks don't matter much.
 
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 
@@ -247,7 +269,9 @@ Yearly billing gives two months off.
 
 ## 7. Formspree
 
-[Formspree](https://formspree.io/) is a form backend for developers, designers and agencies who build their own HTML or JavaScript forms and do not want to run a server for them. A form posts to a Formspree endpoint, which saves each submission to an inbox, filters spam, checks fields on the server and accepts file uploads. It sends notification emails and autoresponses, routes submissions by rules, connects to tools such as Slack, Google Sheets and Airtable, and offers an API and React library. You build the form with your own markup and styles, then point its action at your Formspree address, which makes it the right pick for developers and anyone with a hand-coded site.
+[Formspree](https://formspree.io/) is a form backend for developers, designers and agencies who build their own HTML or JavaScript forms and do not want to run a server for them. A form posts to a Formspree endpoint, which saves each submission to an inbox, filters spam, checks fields on the server and accepts file uploads.
+
+It sends notification emails and autoresponses, routes submissions by rules, connects to tools such as Slack, Google Sheets and Airtable, and offers an API and React library. You build the form with your own markup and styles, then point its action at your Formspree address, which makes it the right pick for developers and anyone with a hand-coded site.
 
 [![Formspree homepage](/assets/blog/tools/formspree.webp)](https://formspree.io/)
 

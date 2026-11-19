@@ -60,7 +60,11 @@ Almost every tool says it has logic. These five checks show how much you really 
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. Its forms come with conditional logic and step skips on the free plan, plus calculations and formulas. When the logic decides a visitor is a fit, the same form books them with the right person, so it suits teams that want the logic to end in a booked meeting.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+Its forms come with conditional logic and step skips on the free plan, plus calculations and formulas. When the logic decides a visitor is a fit, the same form books them with the right person, so it suits teams that want the logic to end in a booked meeting.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -96,7 +100,11 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Typeform
 
-[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies. Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment. Showing one question at a time makes branching feel natural, which suits brand-led forms where the look matters as much as the rules. The free plan has a low response cap, so most teams move to a paid plan quickly.
+[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies.
+
+Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment.
+
+Showing one question at a time makes branching feel natural, which suits brand-led forms where the look matters as much as the rules. The free plan has a low response cap, so most teams move to a paid plan quickly.
 
 [![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
 
@@ -126,7 +134,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. Fillout
 
-[Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures. It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. Conditional logic is on every plan, and the free plan includes 1,000 responses a month with unlimited forms and seats, so teams can build deep logic before they pay anything.
+[Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures.
+
+It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. Conditional logic is on every plan, and the free plan includes 1,000 responses a month with unlimited forms and seats, so teams can build deep logic before they pay anything.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -156,7 +166,11 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 4. Jotform
 
-[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It is one of the oldest form builders, and its rules can show fields, skip pages, change emails and send people to different thank-you pages. Jotform says conditional logic is on every plan, the free one included, which suits long forms like applications and intake forms with many branches.
+[Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways.
+
+Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It is one of the oldest form builders, and its rules can show fields, skip pages, change emails and send people to different thank-you pages.
+
+Jotform says conditional logic is on every plan, the free one included, which suits long forms like applications and intake forms with many branches.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -186,7 +200,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 5. Tally
 
-[Tally](https://tally.so/) is a form builder for individuals and teams who want to make forms by typing, much like writing in a document. You insert blocks for contact details, file uploads, ratings, signatures, and Stripe payments, then add conditional logic, calculations, hidden fields, and answer piping. Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking. Its free plan includes conditional logic and calculations with unlimited forms and submissions, within its fair use rules, so solo founders and small teams get logic for free.
+[Tally](https://tally.so/) is a form builder for individuals and teams who want to make forms by typing, much like writing in a document. You insert blocks for contact details, file uploads, ratings, signatures, and Stripe payments, then add conditional logic, calculations, hidden fields, and answer piping.
+
+Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking. Its free plan includes conditional logic and calculations with unlimited forms and submissions, within its fair use rules, so solo founders and small teams get logic for free.
 
 [![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
 
@@ -217,7 +233,11 @@ Yearly billing gives two months off.
 
 ## 6. Paperform
 
-[Paperform](https://paperform.co/) is an online form builder for small businesses and solo operators who want one form to capture details, take payment, and start the next step. Its editor works like a document, with a one question at a time mode, conditional logic, and spreadsheet style formulas for prices and scores. Forms can take bookings and Stripe payments, send contracts for e-signature through Papersign, and pass submissions to CRMs, email tools, and spreadsheets through integrations or Stepper workflows. Its forms look like web pages, with text and images between the questions. Conditional logic is on every plan, a calculations assistant comes on Pro and up, and it works well for quotes, bookings and any form that needs to read like a landing page.
+[Paperform](https://paperform.co/) is an online form builder for small businesses and solo operators who want one form to capture details, take payment, and start the next step. Its editor works like a document, with a one question at a time mode, conditional logic, and spreadsheet style formulas for prices and scores.
+
+Forms can take bookings and Stripe payments, send contracts for e-signature through Papersign, and pass submissions to CRMs, email tools, and spreadsheets through integrations or Stepper workflows. Its forms look like web pages, with text and images between the questions.
+
+Conditional logic is on every plan, a calculations assistant comes on Pro and up, and it works well for quotes, bookings and any form that needs to read like a landing page.
 
 [![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
 
@@ -246,7 +266,11 @@ Yearly billing gives two months off.
 
 ## 7. Zoho Forms
 
-[Zoho Forms](https://www.zoho.com/forms/) is an online form builder for businesses that want to collect data and move it through review and approval steps without code. It can build a form from a prompt, turn PDFs or photos of paper forms into online forms, and read business cards or IDs to fill in fields. Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM. Its rules system is detailed, and the pricing page lists field rules, form rules, page rules and set value actions, each with an advanced version. Teams already on Zoho CRM and other Zoho apps will find the fit close.
+[Zoho Forms](https://www.zoho.com/forms/) is an online form builder for businesses that want to collect data and move it through review and approval steps without code.
+
+It can build a form from a prompt, turn PDFs or photos of paper forms into online forms, and read business cards or IDs to fill in fields. Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM.
+
+Its rules system is detailed, and the pricing page lists field rules, form rules, page rules and set value actions, each with an advanced version. Teams already on Zoho CRM and other Zoho apps will find the fit close.
 
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 
@@ -274,7 +298,11 @@ Yearly billing gives two months off.
 
 ## 8. Gravity Forms
 
-[Gravity Forms](https://www.gravityforms.com/) is a form plugin for WordPress professionals and site owners who want to build anything from a simple contact form to a multi-step workflow on their own site. Its visual editor offers many field types, multi-page layouts, conditional logic, calculations and save and continue. It can take payments through Stripe, Square and other processors, register users, create posts from entries, route notifications based on answers, and send data to other tools through a REST API and webhooks. Conditional logic is a core feature on every license and works on fields and on the emails sent after a fill, with an add-on for rules that mix AND with OR. It suits WordPress sites that want entries stored on their own server.
+[Gravity Forms](https://www.gravityforms.com/) is a form plugin for WordPress professionals and site owners who want to build anything from a simple contact form to a multi-step workflow on their own site. Its visual editor offers many field types, multi-page layouts, conditional logic, calculations and save and continue.
+
+It can take payments through Stripe, Square and other processors, register users, create posts from entries, route notifications based on answers, and send data to other tools through a REST API and webhooks.
+
+Conditional logic is a core feature on every license and works on fields and on the emails sent after a fill, with an add-on for rules that mix AND with OR. It suits WordPress sites that want entries stored on their own server.
 
 [![Gravity Forms homepage](/assets/blog/tools/gravity-forms.webp)](https://www.gravityforms.com/)
 

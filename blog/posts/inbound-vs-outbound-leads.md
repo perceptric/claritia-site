@@ -24,7 +24,9 @@ In this post, we compare inbound and outbound leads side by side, with examples,
 
 ## What is the difference between inbound and outbound leads?
 
-An inbound lead is a person who contacts your business first, for example by filling in a form, booking a call or starting a chat. An outbound lead is a person your team contacts first, through cold email, calls, social messages or events. Inbound leads start with the buyer's interest, and outbound leads start with your choice of who to reach.
+An inbound lead is a person who contacts your business first, for example by filling in a form, booking a call or starting a chat.
+
+An outbound lead is a person your team contacts first, through cold email, calls, social messages or events. Inbound leads start with the buyer's interest, and outbound leads start with your choice of who to reach.
 
 For a closer look at the first kind, read [what an inbound lead is](/blog/what-is-an-inbound-lead).
 
@@ -126,19 +128,29 @@ Most teams end up with both. The real gain often comes from handling inbound wel
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. It handles the inbound side. Routing by answers to the right meeting and person is on Pro, and on Starter, leads go to HubSpot, Pipedrive, Attio and other CRMs while a follow-up goes out the next day until the lead books. See [Claritia routing](/products/routing).
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+It handles the inbound side. Routing by answers to the right meeting and person is on Pro, and on Starter, leads go to HubSpot, Pipedrive, Attio and other CRMs while a follow-up goes out the next day until the lead books. See [Claritia routing](/products/routing).
 
 ### lemlist
 
-[lemlist](https://www.lemlist.com/) is a sales outreach platform for sales teams that want to find prospects and run outbound campaigns across several channels. It offers a B2B lead database, finds and verifies emails and phone numbers, and enriches leads with data from LinkedIn, company websites and the CRM. Teams build sequences that mix email, LinkedIn visits and messages, calls, WhatsApp and SMS, handle every reply in one inbox, and watch mailbox and domain health to keep emails out of spam. LinkedIn steps and calls join the same sequence on its Multichannel plan, which suits teams that reach out first.
+[lemlist](https://www.lemlist.com/) is a sales outreach platform for sales teams that want to find prospects and run outbound campaigns across several channels. It offers a B2B lead database, finds and verifies emails and phone numbers, and enriches leads with data from LinkedIn, company websites and the CRM.
+
+Teams build sequences that mix email, LinkedIn visits and messages, calls, WhatsApp and SMS, handle every reply in one inbox, and watch mailbox and domain health to keep emails out of spam. LinkedIn steps and calls join the same sequence on its Multichannel plan, which suits teams that reach out first.
 
 ### HubSpot Sales Hub
 
-[HubSpot Sales Hub](https://www.hubspot.com/products/sales) is HubSpot's sales software for sales teams that want to find prospects, work deals and forecast revenue from one workspace tied to the CRM. It tracks leads and deals in pipelines, sends automated email sequences, places and logs calls from a dialer, records meetings, and scores deals by how likely they are to close. AI tools point out accounts showing buying signals, draft follow-ups and suggest CRM updates, while managers get forecasts, coaching tools and reports. It tracks inbound and outbound leads in the same CRM, reps can enroll contacts in sequences on Professional, and the CRM is free for up to 2 users.
+[HubSpot Sales Hub](https://www.hubspot.com/products/sales) is HubSpot's sales software for sales teams that want to find prospects, work deals and forecast revenue from one workspace tied to the CRM. It tracks leads and deals in pipelines, sends automated email sequences, places and logs calls from a dialer, records meetings, and scores deals by how likely they are to close.
+
+AI tools point out accounts showing buying signals, draft follow-ups and suggest CRM updates, while managers get forecasts, coaching tools and reports. It tracks inbound and outbound leads in the same CRM, reps can enroll contacts in sequences on Professional, and the CRM is free for up to 2 users.
 
 ### Close
 
-[Close](https://www.close.com/) is a sales CRM for small and growing businesses that want their reps to call, email and text leads without switching between tools. It logs every call, email, text, note and meeting on the lead record, builds smart lists of leads that need attention, and runs automated follow-up workflows across email, phone and SMS. It also records and transcribes meetings, reports on rep activity, and includes an AI agent named Chloe that can qualify leads and book meetings. It has two-way SMS on every plan and dialers on higher plans, which helps with outbound calling.
+[Close](https://www.close.com/) is a sales CRM for small and growing businesses that want their reps to call, email and text leads without switching between tools. It logs every call, email, text, note and meeting on the lead record, builds smart lists of leads that need attention, and runs automated follow-up workflows across email, phone and SMS.
+
+It also records and transcribes meetings, reports on rep activity, and includes an AI agent named Chloe that can qualify leads and book meetings. It has two-way SMS on every plan and dialers on higher plans, which helps with outbound calling.
 
 ## Questions
 

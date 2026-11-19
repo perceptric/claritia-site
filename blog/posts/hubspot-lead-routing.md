@@ -86,7 +86,9 @@ In the form's settings, turn on **Notify contact owner** if you want the owner a
 7. Pick specific users or a team to rotate between.
 8. Save the workflow and turn it on.
 
-By default, HubSpot shares records equally within the team or list you picked. If you rotate HubSpot's lead records instead of contacts, which HubSpot marks as beta, you also get load balanced, round robin and random options, and you need Sales Hub Professional or Enterprise. Turn off the setting that syncs the lead owner with the contact or company owner first, or the two will fight.
+By default, HubSpot shares records equally within the team or list you picked. If you rotate HubSpot's lead records instead of contacts, which HubSpot marks as beta, you also get load balanced, round robin and random options, and you need Sales Hub Professional or Enterprise.
+
+Turn off the setting that syncs the lead owner with the contact or company owner first, or the two will fight.
 
 ## Step 5: Let the lead book with a rep
 
@@ -113,7 +115,11 @@ HubSpot's own tools work well once you're on Professional. If you're not, or if 
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. On Starter, each fill creates or updates a HubSpot contact matched by email, and either Claritia's routing or HubSpot's own rules can pick the owner. Contacts that already have an owner keep theirs. You can also keep your HubSpot forms, since Claritia hears the form send and opens the right calendar.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+On Starter, each fill creates or updates a HubSpot contact matched by email, and either Claritia's routing or HubSpot's own rules can pick the owner. Contacts that already have an owner keep theirs. You can also keep your HubSpot forms, since Claritia hears the form send and opens the right calendar.
 
 - **Starter, $15 a seat a month ($12 yearly):** The [HubSpot integration](/integrations/hubspot), field mapping and fills on the contact timeline.
 - **Pro, $39 a seat a month ($31 yearly):** [Routing](/products/routing) by any answer, round robin with weights, team pools and a routing log.
@@ -123,11 +129,19 @@ Claritia is a newer tool, so its app marketplace is smaller than HubSpot's, and 
 
 ### Chili Piper
 
-[Chili Piper](https://www.chilipiper.com/) is a meeting booking and lead routing platform for B2B revenue teams that want inbound buyers to book with the right rep right away. When someone submits a form, it qualifies them, routes them by rules such as company size, region or account owner, and shows that rep's calendar on the spot. It also routes Salesforce records by rep workload, identifies visiting companies, runs an AI chat, blocks fake bookings and sends reps a brief before each meeting. It works with HubSpot and Salesforce, and its Growth plan adds form routing, territory and assignment rules, and fair lead distribution. Growth starts at $15,000 a year with 15 seats, all plans are billed yearly, and it fits larger sales teams.
+[Chili Piper](https://www.chilipiper.com/) is a meeting booking and lead routing platform for B2B revenue teams that want inbound buyers to book with the right rep right away.
+
+When someone submits a form, it qualifies them, routes them by rules such as company size, region or account owner, and shows that rep's calendar on the spot. It also routes Salesforce records by rep workload, identifies visiting companies, runs an AI chat, blocks fake bookings and sends reps a brief before each meeting.
+
+It works with HubSpot and Salesforce, and its Growth plan adds form routing, territory and assignment rules, and fair lead distribution. Growth starts at $15,000 a year with 15 seats, all plans are billed yearly, and it fits larger sales teams.
 
 ### Calendly
 
-[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Its Teams plan adds routing forms and round robin at $16 a seat a month billed yearly, so a lead answers a few questions and lands on the right booking page. It suits teams who want light routing in front of a booking link.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings.
+
+It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps.
+
+Its Teams plan adds routing forms and round robin at $16 a seat a month billed yearly, so a lead answers a few questions and lands on the right booking page. It suits teams who want light routing in front of a booking link.
 
 For more options, see our list of the [best lead routing software](/blog/best-lead-routing-software).
 

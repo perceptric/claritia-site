@@ -39,13 +39,17 @@ Prices checked November 2026.
 
 ## What is Calendly?
 
-[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Reminders, payments and team meetings come on paid plans, with round robin and lead routing on Teams, and the AI notetaker and email scheduling assistant are sold as add-ons.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments.
+
+Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Reminders, payments and team meetings come on paid plans, with round robin and lead routing on Teams, and the AI notetaker and email scheduling assistant are sold as add-ons.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
 ## What is Acuity Scheduling?
 
-[Acuity Scheduling](https://acuityscheduling.com/) is appointment scheduling software for service businesses such as salons, coaches, wellness providers, fitness studios, and tutors that want clients to book and pay on their own. Clients pick times on a branded booking page, fill out intake forms, and get automatic confirmations and reminders. Owners can take deposits or full payments through Stripe, Square, or PayPal, sell packages, subscriptions, and gift certificates, run waitlists, and manage staff calendars across locations. Every plan includes custom client forms, payments, email reminders and time zone conversion, and higher plans add text reminders, the waitlist, packages, memberships and HIPAA support.
+[Acuity Scheduling](https://acuityscheduling.com/) is appointment scheduling software for service businesses such as salons, coaches, wellness providers, fitness studios, and tutors that want clients to book and pay on their own. Clients pick times on a branded booking page, fill out intake forms, and get automatic confirmations and reminders.
+
+Owners can take deposits or full payments through Stripe, Square, or PayPal, sell packages, subscriptions, and gift certificates, run waitlists, and manage staff calendars across locations. Every plan includes custom client forms, payments, email reminders and time zone conversion, and higher plans add text reminders, the waitlist, packages, memberships and HIPAA support.
 
 [![Acuity Scheduling homepage](/assets/blog/tools/acuity-scheduling.webp)](https://acuityscheduling.com/)
 
@@ -66,7 +70,9 @@ The two tools price in different ways, so compare them for your team size.
 | Standard | $27 a month | $34 a month | Up to 6 |
 | Premium | $55 a month | $69 a month | Up to 36 |
 
-Calendly charges for each person who hosts meetings. Acuity charges one price for the account, and each calendar can be a staff member, a room or a location. For one person, Calendly is cheaper and has a free plan. For a small business with four staff, Acuity Standard at $27 a month billed yearly covers all of them, while Calendly Standard for four seats is $40 a month billed yearly.
+Calendly charges for each person who hosts meetings. Acuity charges one price for the account, and each calendar can be a staff member, a room or a location. For one person, Calendly is cheaper and has a free plan.
+
+For a small business with four staff, Acuity Standard at $27 a month billed yearly covers all of them, while Calendly Standard for four seats is $40 a month billed yearly.
 
 ## Payments, packages and memberships
 
@@ -141,7 +147,9 @@ If your bookings start from a form on your website, there's one more option to w
 
 ## A third option: Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. Booking inside forms is on the free plan, with Google Calendar and Outlook. See [Claritia Meetings](/products/meetings).
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. Booking inside forms is on the free plan, with Google Calendar and Outlook. See [Claritia Meetings](/products/meetings).
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 

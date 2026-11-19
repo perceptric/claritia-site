@@ -5,8 +5,9 @@ category: Scheduling
 kind: meeting
 date: 2026-10-24
 ---
+ Cal.com does a lot right. Its source code is on GitHub, with guides for hosting it yourself. Its free plan gives one user unlimited links and calendars, with SMS notifications, and the Teams plan adds round robin and routing forms at $12 a user a month billed yearly ($16 monthly).
 
-Cal.com does a lot right. Its source code is on GitHub, with guides for hosting it yourself. Its free plan gives one user unlimited links and calendars, with SMS notifications, and the Teams plan adds round robin and routing forms at $12 a user a month billed yearly ($16 monthly). People still look elsewhere. Some teams have no one to run or tune a scheduler. Others want the booking to start from a lead form, or want round robin without paying for every person on the team.
+People still look elsewhere. Some teams have no one to run or tune a scheduler. Others want the booking to start from a lead form, or want round robin without paying for every person on the team.
 
 A good Cal.com alternative is hosted for you, so setup takes a sign-up and a calendar connection. It also shows the price of team scheduling up front.
 
@@ -60,7 +61,11 @@ Most of these tools cover the basics. These five checks show where they differ:
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. The visitor books inside the form, and their answers decide which meeting they see as well as who on your team they meet, so it suits teams whose meetings start from a form on their website.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+The visitor books inside the form, and their answers decide which meeting they see as well as who on your team they meet, so it suits teams whose meetings start from a form on their website.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -96,7 +101,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 2. Calendly
 
-[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. It's the booking link most people already know, so clients rarely need help using it. Team features like round robin and lead routing sit on its Teams plan, and it fits teams that want a familiar tool that's fully hosted.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments.
+
+Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. It's the booking link most people already know, so clients rarely need help using it. Team features like round robin and lead routing sit on its Teams plan, and it fits teams that want a familiar tool that's fully hosted.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -126,7 +133,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 3. SavvyCal
 
-[SavvyCal](https://savvycal.com/) is a scheduling tool for professionals and teams who want booking links that feel easy for both the host and the guest. Guests see a full week of open times and can lay their own calendar over the link to spot a match. Hosts set buffers, limits, preferred times, and time blocks, put links on their own domain, and take Stripe payments. It also supports round robin, collective, and group links, meeting polls, and reminder workflows. You can rank your open times so your favorite slots show first, which suits founders and consultants who book many calls with outside people.
+[SavvyCal](https://savvycal.com/) is a scheduling tool for professionals and teams who want booking links that feel easy for both the host and the guest. Guests see a full week of open times and can lay their own calendar over the link to spot a match.
+
+Hosts set buffers, limits, preferred times, and time blocks, put links on their own domain, and take Stripe payments. It also supports round robin, collective, and group links, meeting polls, and reminder workflows. You can rank your open times so your favorite slots show first, which suits founders and consultants who book many calls with outside people.
 
 [![SavvyCal homepage](/assets/blog/tools/savvycal.webp)](https://savvycal.com/)
 
@@ -155,7 +164,9 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 4. OnceHub
 
-[OnceHub](https://www.oncehub.com/) is a scheduling and engagement platform for sales, service, support, and recruiting teams that want to screen visitors and book them with the right person. It offers branded booking pages, booking hubs, routing forms that qualify people before they book, and AI chat and phone agents that answer questions and schedule calls. Its scheduling engine handles one-on-one, multi-host, and group meetings, creates video links and reminders, and connects to CRMs and Zapier. It's a strong choice when routing is the main need. Its Route plan includes routing forms with booking inside the form, and Engage adds chatbots that hand visitors to a live meeting.
+[OnceHub](https://www.oncehub.com/) is a scheduling and engagement platform for sales, service, support, and recruiting teams that want to screen visitors and book them with the right person. It offers branded booking pages, booking hubs, routing forms that qualify people before they book, and AI chat and phone agents that answer questions and schedule calls.
+
+Its scheduling engine handles one-on-one, multi-host, and group meetings, creates video links and reminders, and connects to CRMs and Zapier. It's a strong choice when routing is the main need. Its Route plan includes routing forms with booking inside the form, and Engage adds chatbots that hand visitors to a live meeting.
 
 [![OnceHub homepage](/assets/blog/tools/oncehub.webp)](https://www.oncehub.com/)
 
@@ -185,7 +196,11 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 ## 5. Zcal
 
-[Zcal](https://zcal.co/) is a scheduling app for individuals, teams, and class hosts who want booking pages and meeting polls in one place. Booking pages can carry custom fonts, colors, layouts, welcome videos, and custom questions, and they sync with Google, Outlook, and Apple calendars. Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier. Its free plan is close to Cal.com's in spirit, with plenty for one person at no cost, and its Pro plan adds round robin at a low price. That makes it a good fit for solo users who want a cheap path to team scheduling.
+[Zcal](https://zcal.co/) is a scheduling app for individuals, teams, and class hosts who want booking pages and meeting polls in one place. Booking pages can carry custom fonts, colors, layouts, welcome videos, and custom questions, and they sync with Google, Outlook, and Apple calendars.
+
+Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier.
+
+Its free plan is close to Cal.com's in spirit, with plenty for one person at no cost, and its Pro plan adds round robin at a low price. That makes it a good fit for solo users who want a cheap path to team scheduling.
 
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
@@ -216,7 +231,11 @@ Both paid plans come with a 14-day free trial.
 
 ## 6. Koalendar
 
-[Koalendar](https://koalendar.com/) is a scheduling app for small businesses, consultants, educators, and teams that want a simple booking page clients can use from any device. You create booking pages with your logo and colors, connect Google, Outlook, or iCloud calendars, and add custom questions. It detects time zones, sends email and SMS reminders, supports group, collective, and round robin bookings, takes Stripe payments, and offers booking pages in many languages. It keeps pricing simple for very small teams. Its Business plan bundles three seats with round robin, and the free plan has unlimited booking pages and event types, so it suits teams of two or three that want one flat price.
+[Koalendar](https://koalendar.com/) is a scheduling app for small businesses, consultants, educators, and teams that want a simple booking page clients can use from any device. You create booking pages with your logo and colors, connect Google, Outlook, or iCloud calendars, and add custom questions.
+
+It detects time zones, sends email and SMS reminders, supports group, collective, and round robin bookings, takes Stripe payments, and offers booking pages in many languages. It keeps pricing simple for very small teams.
+
+Its Business plan bundles three seats with round robin, and the free plan has unlimited booking pages and event types, so it suits teams of two or three that want one flat price.
 
 [![Koalendar homepage](/assets/blog/tools/koalendar.webp)](https://koalendar.com/)
 
@@ -245,7 +264,9 @@ Both paid plans come with a 14-day free trial.
 
 ## 7. Zoho Bookings
 
-[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits. Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It fits teams already on Zoho CRM or Bigin, offers round robin with four ways to spread bookings, and keeps its per-user prices low on yearly billing.
+[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits.
+
+Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It fits teams already on Zoho CRM or Bigin, offers round robin with four ways to spread bookings, and keeps its per-user prices low on yearly billing.
 
 [![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
 
@@ -274,7 +295,9 @@ Both paid plans come with a 14-day free trial.
 
 ## 8. YouCanBookMe
 
-[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe. It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. It gives you fine control over each booking page, such as notice periods, and its Team plan adds round robin with one dashboard for everyone. It suits teams that want detailed settings on every page.
+[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe.
+
+It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. It gives you fine control over each booking page, such as notice periods, and its Team plan adds round robin with one dashboard for everyone. It suits teams that want detailed settings on every page.
 
 [![YouCanBookMe homepage](/assets/blog/tools/youcanbookme.webp)](https://youcanbook.me/)
 

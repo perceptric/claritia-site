@@ -24,7 +24,9 @@ This guide explains what weighted round robin means in networking and in sales, 
 
 ## What is weighted round robin?
 
-Weighted round robin is a way of taking turns where some members get more turns than others. Each member gets a number called a weight, and over a full cycle each one gets a share of turns equal to their weight divided by the total. A member with weight 2 gets two turns for every one turn that a member with weight 1 gets.
+Weighted round robin is a way of taking turns where some members get more turns than others. Each member gets a number called a weight, and over a full cycle each one gets a share of turns equal to their weight divided by the total.
+
+A member with weight 2 gets two turns for every one turn that a member with weight 1 gets.
 
 The idea is the same wherever it's used. Only the members change: servers in a network, or people on a team.
 
@@ -32,7 +34,9 @@ The idea is the same wherever it's used. Only the members change: servers in a n
 
 Many people first meet the term in load balancing. A load balancer sits in front of several servers and passes each new request to one of them. With plain round robin, each server gets the next request in turn. That works when the servers are the same size.
 
-When they aren't, you give the bigger server a bigger weight. Say server A has three times the capacity of server B. Give A a weight of 3 and B a weight of 1, and A gets 3 of every 4 requests. Many load balancers, NGINX among them, use round robin by default and let you set a weight for each server. Some also mix the turns up, so the bigger server doesn't get all of its requests in a row.
+When they aren't, you give the bigger server a bigger weight. Say server A has three times the capacity of server B. Give A a weight of 3 and B a weight of 1, and A gets 3 of every 4 requests.
+
+Many load balancers, NGINX among them, use round robin by default and let you set a weight for each server. Some also mix the turns up, so the bigger server doesn't get all of its requests in a row.
 
 Weighted round robin doesn't look at how busy each server is right now. If that matters, load balancers offer other methods, such as least connections, which sends each request to the server with the fewest open connections.
 
@@ -115,21 +119,35 @@ Some tools show weights as percentages instead. In [Cal.com](https://cal.com/), 
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
 
-Round robin with weights and priority is on Pro. You set a weight for each person, people who are away or at their daily or weekly cap are skipped, and the most due person gets the next lead. Forms can send each lead to the right team pool first, and each meeting shows the rule that matched and why that person was picked. Claritia is a newer tool, with a smaller marketplace and no Zapier or Make apps listed yet. See [Claritia routing](/products/routing).
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+Round robin with weights and priority is on Pro. You set a weight for each person, people who are away or at their daily or weekly cap are skipped, and the most due person gets the next lead.
+
+Forms can send each lead to the right team pool first, and each meeting shows the rule that matched and why that person was picked. Claritia is a newer tool, with a smaller marketplace and no Zapier or Make apps listed yet. See [Claritia routing](/products/routing).
 
 ### Cal.com
 
-[Cal.com](https://cal.com/) is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video. Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub. Its Teams plan has round robin with priority and optional weights, set as percentages. Among the hosts free at the chosen time, the host furthest behind their share gets the booking. Teams is $12 a user a month billed yearly ($16 monthly).
+[Cal.com](https://cal.com/) is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video.
+
+Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub.
+
+Its Teams plan has round robin with priority and optional weights, set as percentages. Among the hosts free at the chosen time, the host furthest behind their share gets the booking. Teams is $12 a user a month billed yearly ($16 monthly).
 
 ### Chili Piper
 
-[Chili Piper](https://www.chilipiper.com/) is a meeting booking and lead routing platform for B2B revenue teams that want inbound buyers to book with the right rep right away. When someone submits a form, it qualifies them, routes them by rules such as company size, region or account owner, and shows that rep's calendar on the spot. It also routes Salesforce records by rep workload, identifies visiting companies, runs an AI chat, blocks fake bookings and sends reps a brief before each meeting. It lists weighting, caps and meeting limits among its distribution features, along with round robin across reps and teams. Its Growth plan starts at $1,250 a month with 15 seats included.
+[Chili Piper](https://www.chilipiper.com/) is a meeting booking and lead routing platform for B2B revenue teams that want inbound buyers to book with the right rep right away. When someone submits a form, it qualifies them, routes them by rules such as company size, region or account owner, and shows that rep's calendar on the spot.
+
+It also routes Salesforce records by rep workload, identifies visiting companies, runs an AI chat, blocks fake bookings and sends reps a brief before each meeting. It lists weighting, caps and meeting limits among its distribution features, along with round robin across reps and teams. Its Growth plan starts at $1,250 a month with 15 seats included.
 
 ### Distribution Engine
 
-[Distribution Engine](https://www.distributionengine.com/) is a lead routing and case assignment app built inside Salesforce for revenue operations teams and Salesforce admins who want every record to reach the right rep fast, without writing code. It assigns leads, cases and other records by round robin, territory, skills, workload, availability and account ownership, matches inbound leads to existing accounts, and reassigns work that misses its response target. A companion product, Booking Engine, books meetings and hands qualified leads to reps inside Salesforce. Its plans list round robin, load balancing, and weighting and caps. Plans are $20, $35 and $55 a user a month with annual billing, and there's a 30-day free trial.
+[Distribution Engine](https://www.distributionengine.com/) is a lead routing and case assignment app built inside Salesforce for revenue operations teams and Salesforce admins who want every record to reach the right rep fast, without writing code.
+
+It assigns leads, cases and other records by round robin, territory, skills, workload, availability and account ownership, matches inbound leads to existing accounts, and reassigns work that misses its response target.
+
+A companion product, Booking Engine, books meetings and hands qualified leads to reps inside Salesforce. Its plans list round robin, load balancing, and weighting and caps. Plans are $20, $35 and $55 a user a month with annual billing, and there's a 30-day free trial.
 
 For more tools, see our guides to [round robin scheduling software](/blog/best-round-robin-scheduling-software) and [lead routing software](/blog/best-lead-routing-software).
 

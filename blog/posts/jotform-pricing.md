@@ -144,7 +144,9 @@ If Jotform's limits don't fit how you work, there are many options. We compared 
 - **Pro:** $39 a seat a month ($31 billed yearly). Adds 5,000 submissions, round robin, routing and removes Claritia branding.
 - **Business:** $79 a seat a month ($63 billed yearly). Adds unlimited submissions, partial answers and Salesforce.
 
-A seat is a teammate people can book a meeting with. Teammates who only build forms or read answers are free. To be fair, Claritia is a newer tool with fewer widgets and a smaller app marketplace than Jotform, its Zapier and Make apps aren't listed yet, and it doesn't list HIPAA features. You can browse the [form templates](/templates) or see all [form features](/products/forms).
+A seat is a teammate people can book a meeting with. Teammates who only build forms or read answers are free.
+
+To be fair, Claritia is a newer tool with fewer widgets and a smaller app marketplace than Jotform, its Zapier and Make apps aren't listed yet, and it doesn't list HIPAA features. You can browse the [form templates](/templates) or see all [form features](/products/forms).
 
 ## Questions
 

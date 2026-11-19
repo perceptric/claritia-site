@@ -26,7 +26,9 @@ Below, we walk through every Typeform plan, what the free plan leaves out, the c
 
 Yes. Typeform has a free plan with unlimited forms, but it only takes 10 responses a month in total, across every form in your account. Unused responses don't carry over to the next month.
 
-The free plan is better than its limit suggests. Typeform says it includes logic with branching, scores and calculations, custom endings, embedding, response exports, basic reports, integrations, API access and Typeform AI for building forms. You can try paid features in trial mode, but you need a paid plan to publish a form that uses them. For most real forms, 10 responses a month runs out in a day.
+The free plan is better than its limit suggests. Typeform says it includes logic with branching, scores and calculations, custom endings, embedding, response exports, basic reports, integrations, API access and Typeform AI for building forms.
+
+You can try paid features in trial mode, but you need a paid plan to publish a form that uses them. For most real forms, 10 responses a month runs out in a day.
 
 ## Typeform pricing: how much does Typeform cost?
 
@@ -120,7 +122,9 @@ The plan price is only part of what you pay. Watch for these:
 
 Typeform is worth it if the look of your form matters most. Its one-question-at-a-time style is calm and polished, and logic and calculations are included even on the free plan.
 
-It gets expensive as volume grows. Basic gives you 100 responses a month for $28 billed yearly, which is fine for a small form but low for a busy lead form. Plus is often the plan people need in practice, since it removes the branding and adds teammates, at $56 a month billed yearly. If you need Salesforce or conversion tracking, you're looking at Business at $91 billed yearly.
+It gets expensive as volume grows. Basic gives you 100 responses a month for $28 billed yearly, which is fine for a small form but low for a busy lead form.
+
+Plus is often the plan people need in practice, since it removes the branding and adds teammates, at $56 a month billed yearly. If you need Salesforce or conversion tracking, you're looking at Business at $91 billed yearly.
 
 Typeform also stops at the form. If your goal is to book a meeting with each lead, you'll connect it to a scheduling tool, which is another bill.
 

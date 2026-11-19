@@ -109,23 +109,37 @@ Say what you will do with their details, and don't add them to a newsletter they
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page. It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve. You can show the form in the page, as a popup, a slide-in, a corner button or a side tab. Hidden fields, conditional logic and spam protection are on the free plan, and Starter sends leads to HubSpot, Pipedrive, Attio and other CRMs. See [Claritia forms](/products/forms).
+[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+
+It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
+
+You can show the form in the page, as a popup, a slide-in, a corner button or a side tab. Hidden fields, conditional logic and spam protection are on the free plan, and Starter sends leads to HubSpot, Pipedrive, Attio and other CRMs. See [Claritia forms](/products/forms).
 
 ### HubSpot
 
-[HubSpot](https://www.hubspot.com/) is a customer platform for businesses of all sizes that want their marketing, sales and customer service teams to work from the same customer data. It is built around a shared CRM and adds separate products, called hubs, for marketing, sales, service, content, data management, and quotes and billing. Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents. Its form builder, live chat and chatbot builder are free, and each form fill is added to the CRM. HubSpot lists conditional logic and multi-step forms as premium form features.
+[HubSpot](https://www.hubspot.com/) is a customer platform for businesses of all sizes that want their marketing, sales and customer service teams to work from the same customer data. It is built around a shared CRM and adds separate products, called hubs, for marketing, sales, service, content, data management, and quotes and billing.
+
+Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents. Its form builder, live chat and chatbot builder are free, and each form fill is added to the CRM. HubSpot lists conditional logic and multi-step forms as premium form features.
 
 ### OptinMonster
 
-[OptinMonster](https://optinmonster.com/) is a lead generation tool for website owners and marketers who want to turn more visitors into email subscribers, leads and sales. It builds popups, floating bars, fullscreen overlays, slide-ins, inline forms and spin-a-wheel coupon offers from templates in a drag-and-drop editor. Campaigns show up based on rules such as exit intent, inactivity, scheduled dates, the page being viewed and past visitor behavior, and it includes A/B tests and conversion reports. It works on WordPress, Shopify and other sites. Campaigns can also show based on time on site or scroll. Exit intent is on its Pro plan and up, and it suits content-heavy sites that want to grow an email list.
+[OptinMonster](https://optinmonster.com/) is a lead generation tool for website owners and marketers who want to turn more visitors into email subscribers, leads and sales. It builds popups, floating bars, fullscreen overlays, slide-ins, inline forms and spin-a-wheel coupon offers from templates in a drag-and-drop editor.
+
+Campaigns show up based on rules such as exit intent, inactivity, scheduled dates, the page being viewed and past visitor behavior, and it includes A/B tests and conversion reports. It works on WordPress, Shopify and other sites.
+
+Campaigns can also show based on time on site or scroll. Exit intent is on its Pro plan and up, and it suits content-heavy sites that want to grow an email list.
 
 ### Tidio
 
-[Tidio](https://www.tidio.com/) is a customer service platform for online stores and growing businesses that want to answer shoppers quickly and turn chats into sales. Its AI agent, Lyro, answers questions from the company's own help content and product catalog across live chat, email, WhatsApp, Instagram and Messenger, and hands harder cases to a person. Tidio also offers a shared inbox, ticketing, a live chat widget and no-code Flows that greet visitors, collect contact details and send data to other tools. In the chat window, Flows can take a quote request as well as a visitor's details, and the free plan includes a small number of conversations each month.
+[Tidio](https://www.tidio.com/) is a customer service platform for online stores and growing businesses that want to answer shoppers quickly and turn chats into sales. Its AI agent, Lyro, answers questions from the company's own help content and product catalog across live chat, email, WhatsApp, Instagram and Messenger, and hands harder cases to a person.
+
+Tidio also offers a shared inbox, ticketing, a live chat widget and no-code Flows that greet visitors, collect contact details and send data to other tools. In the chat window, Flows can take a quote request as well as a visitor's details, and the free plan includes a small number of conversations each month.
 
 ### Typeform
 
-[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies. Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment. It shows one question at a time, which can make a lead form feel like a chat. It has a free plan, and conditional logic starts on its Basic plan.
+[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies.
+
+Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment. It shows one question at a time, which can make a lead form feel like a chat. It has a free plan, and conditional logic starts on its Basic plan.
 
 For a full comparison with prices, see our list of the [best lead capture software](/blog/best-lead-capture-software).
 
