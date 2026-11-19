@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is Lead Scoring? Models, Examples and How It Works (2026) · Claritia</title>
+<meta name="description" content="What is lead scoring? Learn how fit and interest scores work, copy a simple point model, and see how each score decides routing and follow-up.">
+<link rel="canonical" href="https://tryclaritia.com/blog/what-is-lead-scoring">
+<meta property="og:site_name" content="Claritia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Is Lead Scoring? Models, Examples and How It Works (2026) · Claritia">
+<meta property="og:description" content="What is lead scoring? Learn how fit and interest scores work, copy a simple point model, and see how each score decides routing and follow-up.">
+<meta property="og:url" content="https://tryclaritia.com/blog/what-is-lead-scoring">
+<meta property="og:image" content="https://tryclaritia.com/blog/what-is-lead-scoring/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/claritia-mark-small.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#fafaf5">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=15">
+<link rel="stylesheet" href="/assets/products.css?v=3">
+<link rel="stylesheet" href="/assets/blog.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "What Is Lead Scoring? Models, Examples and How It Works (2026)", "description": "What is lead scoring? Learn how fit and interest scores work, copy a simple point model, and see how each score decides routing and follow-up.", "datePublished": "2026-11-19", "image": "https://tryclaritia.com/blog/what-is-lead-scoring/cover.png", "mainEntityOfPage": "https://tryclaritia.com/blog/what-is-lead-scoring", "author": {"@type": "Person", "name": "Claritia"}, "publisher": {"@type": "Organization", "name": "Claritia", "logo": {"@type": "ImageObject", "url": "https://tryclaritia.com/assets/brand/claritia-app-icon.png"}}}</script>
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#0C8C5E"/><rect x="9" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="9" y="20.5" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="20.5" width="13" height="7" rx="3.5" fill="#fff"/><rect x="9" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16" fill="none"><path d="m3.5 8.5 3 3 6-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 16 16" fill="none"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7z" fill="currentColor"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+  <symbol id="chev-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></symbol>
+  <symbol id="grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="bolt" viewBox="0 0 24 24"><path d="M13 3L5 13h6l-1 8 8-10h-6l1-8z"/></symbol>
+  <symbol id="form" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+  <symbol id="flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v3a3 3 0 0 0 3 3h6.5"/><path d="M13 12l2.5 2.5L13 17"/></symbol>
+  <symbol id="route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H14a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h5.5"/></symbol>
+  <symbol id="table" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 10h16M10 10v10"/></symbol>
+  <symbol id="sort" viewBox="0 0 24 24"><path d="M7 4v16M4 17l3 3 3-3M17 20V4M14 7l3-3 3 3"/></symbol>
+  <symbol id="filter" viewBox="0 0 24 24"><path d="M4 5h16l-6 7.5V19l-4 1v-7.5L4 5z"/></symbol>
+  <symbol id="eyeoff" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 8.5 4.5 9.5 6a16 16 0 0 1-2.6 3.2M6.6 6.6C4.5 8 3.1 10.1 2.5 12c1 1.5 4.5 6 9.5 6a9.6 9.6 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+  <symbol id="type" viewBox="0 0 24 24"><path d="M5 6V4h14v2M12 4v16M9 20h6"/></symbol>
+  <symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/><path d="M19 15.5c.2 1.6.9 2.3 2.5 2.5-1.6.2-2.3.9-2.5 2.5-.2-1.6-.9-2.3-2.5-2.5 1.6-.2 2.3-.9 2.5-2.5z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.2l2.4 2.4 4.6-5"/></symbol>
+  <symbol id="home" viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="side" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M9.5 5v14"/></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.5 3.5 5.3 3.5 8.5s-1.1 6-3.5 8.5c-2.4-2.5-3.5-5.3-3.5-8.5s1.1-6 3.5-8.5z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4 7l8 6 8-6"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="desk" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20h8M12 16.5V20"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/></symbol>
+  <symbol id="plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"/></symbol>
+  <symbol id="card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h3"/></symbol>
+  <symbol id="video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 5.8a3 3 0 0 1 0 5.4M18 14a5.5 5.5 0 0 1 2.5 5"/></symbol>
+  <symbol id="lang" viewBox="0 0 24 24"><path d="M4 6h9M8.5 4v2M6 6c.5 3 2.6 5.6 5 7M11 6c-.5 3-2.6 5.6-5 7M13 20l4-9 4 9M14.5 17h5"/></symbol>
+  <symbol id="hook" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><circle cx="12" cy="6" r="2.5"/><path d="M10.8 8.2L7.3 14.8M13.2 8.2l3.5 6.6M8.5 17h7"/></symbol>
+  <symbol id="sign" viewBox="0 0 24 24"><path d="M4 18c3-1 4.5-4 6-8 1-2.6 2.5-3.5 3.5-2.5S13 11 11 14c-1.6 2.4 0 3.5 2 2l2-1.6c1-.8 2-.4 2.2.6.2 1 1 1.5 2.8 1"/><path d="M4 21h16"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="site-header__bar">
+    <a class="logo" href="/" aria-label="Claritia home"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="nav">
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Product <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--prod">
+            <div class="menu">
+              <a class="menu__item" href="/products/forms"><span class="itile"><svg class="i" aria-hidden="true"><use href="#form"/></svg></span><span><b>Forms</b><small>Pages, logic and prices</small></span></a><a class="menu__item" href="/products/meetings"><span class="itile"><svg class="i" aria-hidden="true"><use href="#cal"/></svg></span><span><b>Meetings</b><small>Booking pages and team pools</small></span></a><a class="menu__item" href="/products/routing"><span class="itile"><svg class="i" aria-hidden="true"><use href="#route"/></svg></span><span><b>Routing</b><small>The right person for each lead</small></span></a><a class="menu__item" href="/#workflows"><span class="itile"><svg class="i" aria-hidden="true"><use href="#flow"/></svg></span><span><b>Workflows</b><small>Reminders and follow-ups</small></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Form templates <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--mega">
+            <div class="mcols">
+              <div class="mcol"><b class="mcol__h">By use</b><a href="/templates/group/leads">Leads and sales</a><a href="/templates/group/booking">Booking</a><a href="/templates/group/money">Orders and payments</a><a href="/templates/group/events">Events</a><a href="/templates/group/feedback">Feedback and surveys</a><a href="/templates/group/intake">Intake and onboarding</a><a href="/templates/group/apply">Apply and join</a><a href="/templates/group/legal">Consent and legal</a></div>
+              <div class="mcol"><b class="mcol__h">Popular</b><a href="/templates/category/demo-request">Demo request</a><a href="/templates/category/contact">Contact</a><a href="/templates/category/quote">Quote</a><a href="/templates/category/appointment">Appointment</a><a href="/templates/category/registration">Registration</a><a href="/templates/category/job-application">Job application</a><a href="/templates/category/order">Order</a><a href="/templates/category/feedback">Feedback</a></div>
+              <div class="mcol"><b class="mcol__h">By industry</b><a href="/templates/saas">SaaS and software</a><a href="/templates/agency">Agencies</a><a href="/templates/consulting">Consulting</a><a href="/templates/healthcare">Healthcare</a><a href="/templates/real-estate">Real estate</a><a href="/templates/education">Education and training</a><a href="/templates/fitness">Fitness</a><a href="/templates/legal">Legal</a></div>
+            </div>
+            <div class="menu-foot"><a href="/templates">See all 840 templates <svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Integrations <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--mega">
+            <div class="mcols mcols--ix">
+              <div class="mcol"><b class="mcol__h">By kind</b><div class="mlinks2"><a href="/integrations#crm">CRM</a><a href="/integrations#calendars">Calendars</a><a href="/integrations#video">Video</a><a href="/integrations#chat">Chat</a><a href="/integrations#email">Email</a><a href="/integrations#sheets">Sheets</a><a href="/integrations#work-tools">Work tools</a><a href="/integrations#documents">Documents</a><a href="/integrations#files">Files</a><a href="/integrations#payments">Payments</a><a href="/integrations#analytics">Analytics</a><a href="/integrations#website">Website</a></div></div>
+              <div class="mcol"><b class="mcol__h">Popular</b><div class="mtools"><a class="mtool" href="/integrations/hubspot"><img src="/assets/logos/hubspot.svg" alt="" width="18" height="18">HubSpot</a><a class="mtool" href="/integrations/salesforce"><img src="/assets/logos/salesforce.svg" alt="" width="18" height="18">Salesforce</a><a class="mtool" href="/integrations/google-calendar"><img src="/assets/logos/calendar.svg" alt="" width="18" height="18">Google Calendar</a><a class="mtool" href="/integrations/outlook"><img src="/assets/logos/outlook.jpg" alt="" width="18" height="18">Outlook</a><a class="mtool" href="/integrations/zoom"><img src="/assets/logos/zoom.svg" alt="" width="18" height="18">Zoom</a><a class="mtool" href="/integrations/slack"><img src="/assets/logos/slack.svg" alt="" width="18" height="18">Slack</a><a class="mtool" href="/integrations/google-sheets"><img src="/assets/logos/googlesheets.svg" alt="" width="18" height="18">Google Sheets</a><a class="mtool" href="/integrations/mailchimp"><img src="/assets/logos/mailchimp.svg" alt="" width="18" height="18">Mailchimp</a><a class="mtool" href="/integrations/stripe"><img src="/assets/logos/stripe.svg" alt="" width="18" height="18">Stripe</a><a class="mtool" href="/integrations/webflow"><img src="/assets/logos/webflow.svg" alt="" width="18" height="18">Webflow</a></div></div>
+            </div>
+            <div class="menu-foot"><a href="/integrations">See all 73 integrations <svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+        <li><a class="nav__link" href="/pricing">Pricing</a></li>
+        <li><a class="nav__link" href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="site-actions">
+      <a class="site-actions__signin" href="https://app.tryclaritia.com/signin">Sign in</a>
+      <a class="btn btn--primary" href="https://app.tryclaritia.com/signup">Start free <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-label="Open menu">
+        <svg class="i-open" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="i-close" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="sheet">
+  <div class="sheet__body">
+    <span class="sheet__label">Product</span>
+    <a href="/products/forms">Forms</a>
+    <a href="/products/meetings">Meetings</a>
+    <a href="/products/routing">Routing</a>
+    <a href="/#workflows">Workflows</a>
+    <a href="/templates">Form templates</a>
+    <a href="/integrations">Integrations</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/blog">Blog</a>
+  </div>
+  <div class="sheet__foot">
+    <a class="btn btn--ghost btn--lg" href="https://app.tryclaritia.com/signin">Sign in</a>
+    <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com/signup">Start free</a>
+  </div>
+</div>
+
+<main id="main">
+  <div class="frame">
+    <article class="bl-post">
+      <nav class="bl-crumb" aria-label="Breadcrumb"><a href="/blog">Blog</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><span>Routing</span></nav>
+      <h1>What Is Lead Scoring? Models, Examples and How It Works (2026)</h1>
+      <p class="bl-lead">What is lead scoring? Learn how fit and interest scores work, copy a simple point model, and see how each score decides routing and follow-up.</p>
+      <div class="bl-by"><time datetime="2026-11-19">November 19, 2026</time><span>9 min read</span></div>
+      <img class="bl-cover" src="/blog/what-is-lead-scoring/cover.png?v=f60ad0423c" alt="" width="1200" height="630">
+      <div class="bl-body-wrap">
+        <aside class="bl-toc" aria-label="On this page"><b>On this page</b><a href="#main-points">Main points</a><a href="#what-is-lead-scoring">What is lead scoring?</a><a href="#how-lead-scoring-works">How lead scoring works</a><a href="#types-of-lead-scoring">Types of lead scoring</a><a href="#a-simple-lead-scoring-model">A simple lead scoring model</a><a href="#how-a-score-drives-routing-and-follow-up">How a score drives routing and follow-up</a><a href="#best-practices">Best practices</a><a href="#common-mistakes">Common mistakes</a><a href="#tools-for-lead-scoring">Tools for lead scoring</a><a href="#questions">Questions</a><a href="#get-started">Get started</a></aside>
+        <div class="bl-body"><p>Your form brings in twenty leads this week. One is a director at a company that fits you well and asked for a demo. Another is a student writing a paper. If both land in the same inbox, your reps answer them in the order they arrived, and the best lead waits behind the student.</p>
+<p>Lead scoring fixes the order. Each lead gets points for who they are and what they do, and the total tells your team who to call first, who to nurture and who to leave alone. A short list of rules on one page is enough to start.</p>
+<blockquote><p><strong><a href="https://app.tryclaritia.com/signup">Try Claritia free</a></strong> to qualify each lead inside the form and book the good fits with the right rep on the same page.</p></blockquote>
+<p>In this post, you'll learn what lead scoring is, how a scoring model works, a simple point model you can copy, and how the score drives routing and follow-up.</p>
+<h2 id="main-points">Main points</h2>
+<ul><li>Lead scoring gives each lead points for fit (who they are) and interest (what they do), then uses the total to pick the next step.</li><li>A good model also takes points away: for bad fits like students or competitors, and for interest that has gone cold, called score decay.</li><li>Predictive or AI scoring learns from your past won and lost leads, but it needs enough history to work.</li><li>A score only helps when it triggers something: a rep, a meeting, a nurture email or nothing at all.</li><li>Tools to look at: <a href="/">Claritia</a> for scoring and routing form leads, <a href="https://www.hubspot.com/" target="_blank" rel="noopener">HubSpot</a> and <a href="https://www.salesforce.com/sales/" target="_blank" rel="noopener">Salesforce Sales Cloud</a>.</li></ul>
+<h2 id="what-is-lead-scoring">What is lead scoring?</h2>
+<p>Lead scoring is a way to rank leads by giving each one points for how well they fit your ideal customer and how interested they seem. The total score tells your team which leads to contact first and which to nurture until they're ready.</p>
+<p>It's one part of <a href="/blog/lead-qualification">lead qualification</a>. Qualification asks "is this a good lead?" Scoring turns the answer into a number, so software can sort hundreds of leads the way a careful rep would sort ten.</p>
+<h2 id="how-lead-scoring-works">How lead scoring works</h2>
+<p>Most scoring follows the same six steps, whether you use a spreadsheet or a CRM:</p>
+<ol><li><strong>Describe your best customers.</strong> Look at the deals you won. What size were those companies, who bought, and what did they do first?</li><li><strong>Turn those traits into rules.</strong> Each rule is one fact you can check, such as "company has 20 to 200 employees" or "visited the pricing page".</li><li><strong>Give each rule points.</strong> Strong signals get more points. Signs of a bad fit take points away.</li><li><strong>Add up the score.</strong> Each time a lead's details change or they do something, the score updates.</li><li><strong>Set thresholds.</strong> Decide what score makes a lead hot, warm or cold, and what happens at each level.</li><li><strong>Check it against results.</strong> After a month or two, see which scores became meetings and deals, and adjust the points.</li></ol>
+<h2 id="types-of-lead-scoring">Types of lead scoring</h2>
+<h3 id="fit-score">Fit score</h3>
+<p>A fit score looks at who the lead is: company size, industry, country, job title or budget. This data comes from your form answers, your CRM or an enrichment service. A high fit score means "this is the kind of company we sell to."</p>
+<h3 id="interest-score">Interest score</h3>
+<p>An interest score, also called an engagement or behavior score, looks at what the lead does. Asking for a demo, visiting the pricing page, opening emails and coming to a webinar all add points. A high interest score means "they're paying attention right now."</p>
+<h3 id="combined-score">Combined score</h3>
+<p>Most teams use both. A combined score adds fit and interest together, or keeps them side by side. Keeping them apart helps: a perfect fit with no interest needs nurture, while a poor fit with lots of interest might be a student.</p>
+<h3 id="negative-scoring">Negative scoring</h3>
+<p>Negative scoring takes points away. Common examples are a personal email address on a B2B form, a job title like student or job seeker, a competitor's domain, a country you don't sell to, or an unsubscribe. Without negative rules, a curious student who reads every blog post can outscore a real buyer.</p>
+<h3 id="score-decay">Score decay</h3>
+<p>Interest fades. A pricing page visit last week means more than one a year ago. Score decay lowers interest points as time passes, for example by half after 30 days. Fit points usually don't decay, since a company's size rarely changes month to month.</p>
+<h3 id="predictive-or-ai-scoring">Predictive or AI scoring</h3>
+<p>Predictive scoring, sometimes called AI lead scoring, skips the hand-written rules. A model looks at leads that became customers and leads that didn't, finds what they had in common, and scores new leads by how much they look like past winners.</p>
+<p>It needs history to learn from. In HubSpot, for example, an AI score needs at least 50 contacts to train on, with 25 that converted and 25 that didn't. A new team with few deals is better off with simple rules.</p>
+<h2 id="a-simple-lead-scoring-model">A simple lead scoring model</h2>
+<p>Here's a starting model for a small B2B team. Change the rules to match your own customers.</p>
+<div class="bl-table"><table><thead><tr><th>Rule</th><th>Type</th><th>Points</th></tr></thead><tbody><tr><td>Company has 20 to 200 employees</td><td>Fit</td><td>+20</td></tr><tr><td>Job title is founder, head of, director or VP</td><td>Fit</td><td>+15</td></tr><tr><td>Based in a country you sell to</td><td>Fit</td><td>+10</td></tr><tr><td>Uses a tool you connect with</td><td>Fit</td><td>+5</td></tr><tr><td>Asked for a demo or a quote</td><td>Interest</td><td>+30</td></tr><tr><td>Visited the pricing page</td><td>Interest</td><td>+10</td></tr><tr><td>Came to a webinar</td><td>Interest</td><td>+10</td></tr><tr><td>Opened 3 or more emails in 30 days</td><td>Interest</td><td>+5</td></tr><tr><td>Personal email address on a B2B form</td><td>Negative</td><td>-10</td></tr><tr><td>Unsubscribed from emails</td><td>Negative</td><td>-20</td></tr><tr><td>Student or job seeker</td><td>Negative</td><td>-30</td></tr><tr><td>Works at a competitor</td><td>Negative</td><td>-50</td></tr></tbody></table></div>
+<p>Then set three thresholds:</p>
+<ul><li><strong>60 or more, hot:</strong> Route to a rep and offer a meeting right away.</li><li><strong>30 to 59, warm:</strong> Send nurture emails and score again as they act.</li><li><strong>Under 30, cold:</strong> Keep them on the newsletter and spend no rep time.</li></ul>
+<p>Two leads show how it plays out. Jane is an operations director at an 80-person firm in a country you sell to, and she asks for a demo. She scores 20 + 15 + 10 + 30 = 75, so she's hot and goes straight to a rep.</p>
+<p>Tom signs up with a personal email, visits the pricing page and opens a few emails. He scores -10 + 10 + 5 = 5, so he stays on the newsletter until he does more.</p>
+<h2 id="how-a-score-drives-routing-and-follow-up">How a score drives routing and follow-up</h2>
+<p>A score sitting in a CRM field does nothing. It pays off when each threshold starts a clear action:</p>
+<ul><li><strong>Hot leads go to a rep fast.</strong> The lead gets an owner, the rep gets an alert, and in the best setups the lead books a meeting on the spot. Read more on <a href="/blog/what-is-lead-routing">what lead routing is</a>.</li><li><strong>The score picks the team.</strong> High fit scores can go to senior reps, while smaller leads go to a shared round robin.</li><li><strong>Warm leads get nurture.</strong> Useful emails until their interest score crosses the line.</li><li><strong>Crossing a threshold is an event.</strong> When a score jumps past 60, a workflow can assign an owner, so a lead that warms up slowly isn't missed.</li></ul>
+<p>Speed matters most at the top. A hot lead who waits a day may already be talking to someone else.</p>
+<h2 id="best-practices">Best practices</h2>
+<ul><li><strong>Start with five to ten rules.</strong> A short model takes two minutes to explain to a rep.</li><li><strong>Ask for what scoring needs.</strong> If company size matters, ask for it on the form with set choices.</li><li><strong>Keep fit and interest apart.</strong> Two numbers tell you more than one.</li><li><strong>Agree on thresholds with sales.</strong> When both teams sign off on what "hot" means, reps trust the leads they get.</li><li><strong>Review every quarter.</strong> Compare scores with meetings held and deals won, then move the points.</li></ul>
+<h2 id="common-mistakes">Common mistakes</h2>
+<ul><li><strong>Scoring everything.</strong> Points for every page view make the score noisy. Ten blog posts don't make a lead ten times more likely to buy.</li><li><strong>No negative rules.</strong> Students and competitors climb the list and waste rep time.</li><li><strong>No decay.</strong> Leads who were active a year ago stay "hot" forever.</li><li><strong>A score with no action.</strong> If nothing happens when a lead turns hot, the model is just a number in a field.</li></ul>
+<h2 id="tools-for-lead-scoring">Tools for lead scoring</h2>
+<p>Lead scoring is built into many CRMs, often on their higher plans. For prices and more tools, see our list of the <a href="/blog/best-lead-scoring-software">best lead scoring software</a>.</p>
+<h3 id="claritia">Claritia</h3>
+<p><a href="/">Claritia</a> is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.</p>
+<p>It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.</p>
+<p>It keeps segments and lead scoring next to your contacts, and its AI qualify step only picks an outcome you set. In forms, calculations can add up points as a lead answers, on every plan.</p>
+<p>Routing by any answer to a meeting and a person starts on Pro, with a log of why each lead went where it did. See how <a href="/products/routing">Claritia routing</a> works.</p>
+<h3 id="hubspot">HubSpot</h3>
+<p><a href="https://www.hubspot.com/" target="_blank" rel="noopener">HubSpot</a> is a customer platform for businesses of all sizes that want their marketing, sales and customer service teams to work from the same customer data. It is built around a shared CRM and adds separate products, called hubs, for marketing, sales, service, content, data management, and quotes and billing.</p>
+<p>Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents.</p>
+<p>Its lead scoring tool builds fit, engagement and combined scores with group limits, negative points and score decay. It needs Marketing Hub or Sales Hub Professional or Enterprise, and AI-built contact scores need Marketing Hub Enterprise. Our guide to <a href="/blog/hubspot-lead-scoring">HubSpot lead scoring</a> walks through the setup.</p>
+<h3 id="salesforce-sales-cloud">Salesforce Sales Cloud</h3>
+<p><a href="https://www.salesforce.com/sales/" target="_blank" rel="noopener">Salesforce Sales Cloud</a> is a sales CRM for companies of every size that want their sellers to track every account, deal and conversation in one place and hit their number. It captures calls, emails and meetings on each record, manages pipelines and forecasts, and adds AI agents that research prospects, prep deals and watch accounts.</p>
+<p>Its lead scoring is predictive: it studies your data, predicts which leads are most likely to convert and shows the factors behind each score. Salesforce's pricing page lists it on the Advanced and Max editions, and as a paid extra on Core. Prices checked November 2026.</p>
+<h2 id="questions">Questions</h2>
+<h3 id="what-is-a-lead-scoring-model">What is a lead scoring model?</h3>
+<p>A lead scoring model is the set of rules and points you use to score leads, plus the thresholds that say what each score means. A simple model has five to ten fit and interest rules, a few negative rules and three levels: hot, warm and cold.</p>
+<h3 id="what-is-a-good-lead-score">What is a good lead score?</h3>
+<p>There's no universal number. A good score is one that, in your own data, turns into meetings and deals more often than lower scores. Check after a month which scores became customers.</p>
+<h3 id="what-is-the-difference-between-fit-and-interest-scores">What is the difference between fit and interest scores?</h3>
+<p>A fit score measures who the lead is, like company size or job title. An interest score measures what they do, like asking for a demo or visiting your pricing page. Most teams use both.</p>
+<h3 id="how-is-lead-scoring-different-from-lead-qualification">How is lead scoring different from lead qualification?</h3>
+<p>Lead qualification decides whether a lead is worth sales time. Lead scoring is one way to decide, by adding up points. Frameworks like BANT are another, and many teams use both.</p>
+<h3 id="do-small-teams-need-lead-scoring">Do small teams need lead scoring?</h3>
+<p>If a rep can read every lead each day, a few clear questions on your form may be enough. Scoring earns its place when leads pile up faster than your team can read them.</p>
+<h2 id="get-started">Get started</h2>
+<p>Write five fit rules, five interest rules and a few negative ones. Set three thresholds, decide what happens at each, and check the results after a month.</p>
+<blockquote><p><strong><a href="https://app.tryclaritia.com/signup">Try Claritia free</a></strong> to build a form that qualifies each lead and books the hot ones with the right rep before they leave.</p></blockquote>
+<p>You can also read about <a href="/blog/lead-qualification">lead qualification</a> or how <a href="/blog/what-is-lead-routing">lead routing</a> sends each lead to the right person.</p></div>
+      </div>
+    </article>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="bl-more" aria-labelledby="more-h"><h2 id="more-h">More from the blog</h2><div class="bl-grid"><a class="bl-card" href="/blog/zoom-meeting-scheduler"><span class="bl-card__img"><img src="/blog/zoom-meeting-scheduler/cover.png?v=2d22856ce1" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Scheduling</b>November 19, 2026</span><b class="bl-card__h">Zoom Meeting Scheduler: How to Let People Book Zoom Calls (2026)</b></span></a><a class="bl-card" href="/blog/best-no-code-form-builder"><span class="bl-card__img"><img src="/blog/best-no-code-form-builder/cover.png?v=05258d5af6" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Forms</b>November 19, 2026</span><b class="bl-card__h">8 Best No-Code Form Builders for Full Workflows (2026)</b></span></a><a class="bl-card" href="/blog/hubspot-lead-scoring"><span class="bl-card__img"><img src="/blog/hubspot-lead-scoring/cover.png?v=7ac48be500" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Integrations</b>November 19, 2026</span><b class="bl-card__h">HubSpot Lead Scoring: How It Works and How to Set It Up (2026)</b></span></a></div></section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+<!-- The last prompt, on dark -->
+  <div class="dark">
+    <div class="band"><div class="frame"></div></div>
+    <div class="frame">
+      <section class="cta" aria-labelledby="cta-h">
+        <div class="ghostapp" aria-hidden="true"><div class="gbar"><span class="sq"><svg class="i s14"><use href="#home"/></svg></span>Lead intake<div class="end"><span>Share</span><span>Publish</span></div></div></div>
+        <h2 id="cta-h">What form do you need?</h2>
+        <form class="dprompt" action="https://app.tryclaritia.com/forms/new" method="get"><div class="in">
+          <label class="sr-only" for="ask2">Describe the form you need</label>
+          <textarea id="ask2" name="ask" maxlength="300" placeholder="Build a catering quote with a price calculator and a deposit"></textarea>
+          <div class="pbar">
+            <span class="logos"><img src="/assets/logos/calendar.svg" alt="" width="22" height="22"><img src="/assets/logos/outlook.jpg" alt="" width="22" height="22"><img src="/assets/logos/hubspot.svg" alt="" width="22" height="22"></span>
+            <span class="small">Free plan. No card needed.</span>
+            <span class="grow"></span>
+            <button class="btn btn--green" type="submit">Get started <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></button>
+          </div>
+        </div></form>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__frame">
+    <div class="site-footer__in">
+      <div class="site-footer__brand">
+        <a class="logo" href="/" aria-label="Claritia home"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</a>
+        <p>Forms that book the meeting</p>
+      </div>
+      <div class="site-footer__col"><h2>Product</h2><ul><li><a href="/products/forms">Forms</a></li><li><a href="/products/meetings">Meetings</a></li><li><a href="/products/routing">Routing</a></li><li><a href="/#workflows">Workflows</a></li><li><a href="/integrations">Integrations</a></li></ul></div>
+      <div class="site-footer__col"><h2>Form templates</h2><ul><li><a href="/templates">All form templates</a></li><li><a href="/templates/group/leads">Leads and sales</a></li><li><a href="/templates/group/booking">Booking</a></li><li><a href="/templates/group/money">Orders and payments</a></li><li><a href="/templates/group/events">Events</a></li></ul></div>
+      <div class="site-footer__col"><h2>Company</h2><ul><li><a href="/pricing">Pricing</a></li><li><a href="/#faq">Questions</a></li><li><a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a></li><li><a href="mailto:hello@tryclaritia.com">Contact</a></li></ul></div>
+      <div class="site-footer__col"><h2>Resources</h2><ul><li><a href="https://app.tryclaritia.com/signin">Sign in</a></li><li><a href="/blog">Blog</a></li><li><a href="/llms.txt">llms.txt</a></li><li><a href="/pricing.md">Pricing.md</a></li></ul></div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Perceptric. Claritia is a Perceptric product.</span>
+      <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js?v=9" defer></script>
+</body>
+</html>
