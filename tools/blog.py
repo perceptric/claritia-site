@@ -95,7 +95,17 @@ def md(text: str):
                 flush(); lst = (tag, [])
             lst[1].append(m.group(2)); continue
         if line.startswith(">"):
-            flush(); out.append(f"<blockquote><p>{inline(line.lstrip('> ').strip())}</p></blockquote>"); continue
+            # Lines in a row that start with > make one quote; a bare > line starts a new paragraph inside it.
+            flush(); block = [line]
+            while k < len(lines) and lines[k].startswith(">"):
+                block.append(lines[k]); k += 1
+            paras, cur = [], []
+            for q in block:
+                q = q[1:].strip()
+                if q: cur.append(inline(q))
+                elif cur: paras.append(cur); cur = []
+            if cur: paras.append(cur)
+            out.append("<blockquote>" + "".join(f"<p>{'<br>'.join(p)}</p>" for p in paras) + "</blockquote>"); continue
         if lst:
             flush()
         para.append(line.strip())
