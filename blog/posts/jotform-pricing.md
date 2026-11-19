@@ -6,13 +6,13 @@ kind: form
 date: 2026-11-18
 ---
 
-Jotform pricing is built around limits. Every plan, free or paid, caps how many forms you can keep, how many submissions you get each month, how much file space you have and how many people can see your forms. The price you pay depends on which of those limits you hit first.
+Jotform's plans are a ladder of limits. Every plan, free or paid, caps how many forms you can keep, how many submissions you get each month, how much file space you have and how many people can see your forms. The price you pay depends on which of those limits you hit first.
 
-That makes it easy to pick the wrong plan. You might buy Bronze for its submission count, then run out of forms. Or you might stay on the free plan and find your total saved submissions capped. This page lays out each plan's real numbers so you can choose once.
+That makes it easy to pick the wrong plan. You might buy Bronze for its submission count, then run out of forms. Or you might stay on the free plan and find your total saved submissions capped.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build unlimited forms with conditional logic on the free plan, and share them with teammates at no cost.
 
-Below, we go through each Jotform plan, what the free plan leaves out, the extra costs, and when another form builder fits better.
+Below, we go through each Jotform plan with its real numbers, then what the free plan leaves out, the extra costs, and when another form builder fits better.
 
 ## Main points
 
@@ -127,17 +127,21 @@ On the plus side, Jotform lets you cancel at any time and refunds a payment in f
 
 ## Is Jotform worth it?
 
-Jotform is worth it if you need a wide range of fields and widgets in one place, or if you work in health and need HIPAA features without a sales call. Its free plan is also good for trying things out, since Jotform includes its standard features on it.
+Jotform is worth it if you need a lot of field types and widgets in one place, or if you work in health and need HIPAA features without a sales call. Its free plan is also good for trying things out, since Jotform includes its standard features on it.
 
 It's harder to justify for teams. Every plan below Enterprise is for one user, so a marketing team that shares form work either shares a login or talks to sales. The form caps can also catch you out if you build many small forms.
 
-For a single person, Silver is often the best deal billed yearly. It's $5 a month more than Bronze, with twice the forms.
+For a single person, Silver billed yearly is often the best deal, at $5 a month more than Bronze.
 
 ## Jotform alternatives
 
 If Jotform's limits don't fit how you work, there are many options. We compared 8 of them, by users, form limits and price, in [the best Jotform alternatives](/blog/best-jotform-alternatives).
 
 [Claritia](/) is one of them. It's a forms and meetings tool for small teams, and its forms can book a meeting with the right person after the lead hits submit.
+
+![A Claritia form's thank-you screen that opens the right rep's calendar after submit](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: After a lead submits a Claritia form, the thank-you screen opens the right rep's calendar.*
 
 - **Free:** $0 for 1 seat and 250 submissions a month, with unlimited forms, conditional logic, file uploads and calculations.
 - **Starter:** $15 a seat a month ($12 billed yearly). Adds 2,000 submissions, e-signatures, Stripe payments and HubSpot.

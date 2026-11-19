@@ -12,7 +12,7 @@ The best lead generation form builders keep the form short and move the lead to 
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a lead form that books the meeting before the visitor leaves the page.
 
-In this post, we compare 8 lead generation form builders. You'll see what happens to each lead after the form, what each tool costs, and where it falls short.
+Below, we compare 8 lead generation form builders on what happens to each lead after the form, what each tool costs, and where it falls short.
 
 ## Main points
 
@@ -37,9 +37,9 @@ Typical features include:
 
 ## How to choose a lead generation form builder
 
-Field types matter less than what happens after the form. These five checks matter more:
+Field types matter less than what happens after the form. Check these five things:
 
-- **The step after submit.** A booked call or a CRM sync beats a lead sitting in a spreadsheet.
+- **The step after submit.** Where the lead goes in the first minute: a booked call, your CRM, or a spreadsheet.
 - **Tracking.** Hidden fields for UTM tags and ad pixels, so you know which campaigns work.
 - **Spam control.** Fake leads waste your team's time.
 - **Free plan limits.** How many leads you can collect before you pay.
@@ -79,6 +79,10 @@ A visitor books in the same flow and gets a confirmation email with a calendar i
 - **Follow-up:** On Starter, a follow-up goes out the next day until the lead books.
 - **Routing:** On Pro, route each lead to the right person based on their answers.
 
+![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
+
+*Caption: Claritia's submissions list shows each lead, who they booked with and their next step.*
+
 ### Pros
 
 - **One step from form to meeting:** The lead fills in the form and books a time in the same flow.
@@ -88,7 +92,7 @@ A visitor books in the same flow and gets a confirmation email with a calendar i
 ### Cons
 
 - **Newer tool:** Its app marketplace and community are smaller than the big names.
-- **Built for small teams:** It fits small teams more than large enterprises.
+- **Built for small teams:** It's made for small teams, not large enterprises.
 
 ### Price and plans
 
@@ -325,7 +329,7 @@ A Zoho CRM field and the integration come on every plan, and paid plans have hig
 ### Cons
 
 - **Small free plan:** 3 forms.
-- **Best inside Zoho:** It shines most for teams inside the Zoho world.
+- **Best inside Zoho:** It works best for teams already on other Zoho apps.
 
 ### Price and plans
 
@@ -364,7 +368,7 @@ Claritia connects to HubSpot on Starter. Fillout, Jotform, Paperform and Typefor
 
 ## Get started
 
-Set up a lead form that books meetings on the free plan.
+Start with one short form on the free plan and see how many leads book a call.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first lead form and book your first meeting today.
 

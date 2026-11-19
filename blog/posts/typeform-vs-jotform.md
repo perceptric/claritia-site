@@ -6,13 +6,13 @@ kind: form
 date: 2026-11-18
 ---
 
-Typeform and Jotform are both well known, both paid, and both built for forms that face customers. Yet they feel very different. Typeform shows one question at a time and puts design first. Jotform puts every field, widget and template you might need into one editor.
+Typeform and Jotform are well known form builders, made for forms that face customers. Yet they feel very different. Typeform shows one question at a time and puts design first. Jotform puts every field, widget and template you might need into one editor.
 
-The choice usually comes down to two things: how many answers you collect each month, and how the form should feel. Get either wrong and you either pay for responses you can't use or end up with a form that doesn't match your brand. This guide walks through both so you can decide quickly.
+The choice usually comes down to two things: how many answers you collect each month, and how the form should feel. Get the first wrong and you pay for responses you can't use. Get the second wrong and the form won't match your brand.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that books the meeting on the same page, with 250 submissions a month on the free plan.
 
-In this post, we compare Typeform and Jotform on price, response limits, design, logic, payments, users and integrations, then give a clear pick for each kind of team.
+Below, we compare Typeform and Jotform on price, response limits, design, logic, payments, users and integrations, then give a clear pick for each kind of team.
 
 ## Main points
 
@@ -84,7 +84,7 @@ Jotform counts forms as well as submissions, so Bronze stops at 25 forms. Its fr
 
 Typeform's main strength is how a form feels. One question at a time keeps people focused, and the layout looks clean on a phone. Plus removes Typeform branding and adds a custom subdomain.
 
-Jotform gives you both styles. The classic layout puts many fields on a page, which suits long forms like applications and orders. The card layout shows one question at a time. Its design tools are wide, though the editor has more menus to learn. Free forms carry Jotform branding.
+Jotform gives you both styles. The classic layout puts many fields on a page, which suits long forms like applications and orders. The card layout shows one question at a time. It has many design settings, though the editor has more menus to learn. Free forms carry Jotform branding.
 
 ## Logic and question types
 
@@ -108,7 +108,7 @@ Jotform's plans below Enterprise are for one user. If several people need to bui
 
 ## Integrations
 
-Both tools connect to the usual tools. Typeform's plan comparison lists HubSpot, Salesforce, Google Sheets, Slack, Calendly, Pipedrive, Mailchimp and Airtable, plus more than 500 apps through Zapier. Its HubSpot connection maps any question to a HubSpot property.
+Both connect to the usual apps. Typeform's plan comparison lists HubSpot, Salesforce, Google Sheets, Slack, Calendly, Pipedrive, Mailchimp and Airtable, plus more than 500 apps through Zapier. Its HubSpot connection maps any question to a HubSpot property.
 
 Jotform lists Google Sheets, Salesforce, HubSpot, Slack, Stripe, PayPal, Square and Zapier among its featured integrations. Its HubSpot connection can create contacts, deals and tickets from a submission.
 
@@ -158,6 +158,10 @@ If what you really want is for each form to turn a lead into a meeting, neither 
 [Claritia](/) is a forms and meetings tool for small teams. A Claritia form can end with a booking step, so the lead picks a time with the right person on the same page. On Pro, routing rules read the answers and pick the meeting and the person. See [Claritia Forms](/products/forms).
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
+
+![A Claritia form that asks team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: A Claritia form can end on a time picker, so the lead books on the same page.*
 
 Why Typeform and Jotform users look at it:
 

@@ -6,13 +6,13 @@ kind: meeting
 date: 2026-11-19
 ---
 
-If your day runs in Google Calendar, you want bookings to land there on their own. A client picks a time, the event shows up with a Google Meet link, and nobody can grab a slot you already filled. Getting that right takes one thing: a booking tool that reads your Google Calendar closely and writes back to it fast.
+If your day runs in Google Calendar, you want bookings to land there on their own. A client picks a time, the event shows up with a Google Meet link, and nobody can grab a slot you already filled. For that, you need a booking tool that reads your Google Calendar closely and writes back to it fast.
 
-Google now has its own booking pages, so you may not need anything else. But the free version is small, and many tools add more on top of Google Calendar: more calendars checked, reminders, team booking, or questions before the time. The right pick depends on how people reach you.
+Google now has its own booking pages, so you may not need anything else. But the free version is small. Other tools add more on top of Google Calendar, such as more calendars checked, reminders, team booking or questions before the time. Which one you need depends on how people reach you.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to connect Google Calendar in one click and book each lead from your form, with a Google Meet link on every meeting.
 
-In this post, we compare 8 appointment scheduling tools that work with Google Calendar, including Google's own appointment schedules, on what they check, what they add and what they cost.
+Below, we compare 8 appointment scheduling tools that work with Google Calendar, Google's own appointment schedules among them. For each, we look at what it checks, what it adds and the price.
 
 ## Main points
 
@@ -80,6 +80,10 @@ It connects Google Calendar in one click on every plan. Google tells Claritia as
 - **One invite, in your words:** Guests get Claritia's invite, so Google doesn't send them a second one.
 - **Booking inside forms:** The calendar opens right after the form, with name and email filled in.
 - **Team booking on Pro:** Round robin and meetings with everyone free read each person's Google Calendar.
+
+![Claritia availability settings with Google Calendar connected, working hours by day, buffer and notice](/assets/blog/ui/ui-meetings-availability.webp)
+
+*Caption: In Claritia, you connect Google Calendar and set your working hours, buffer and notice in one place.*
 
 ### Pros
 
@@ -341,7 +345,7 @@ The basic version is. With a personal account or Workspace Business Starter, you
 
 ### Can Google appointment schedules add a Zoom link?
 
-Not on their own. Google offers Meet, in person, phone or none. For Zoom, Google says to pick none and add the link to the event after someone books. Tools like Claritia and Calendly add a Zoom link to each booking.
+Not on their own. Google offers Meet, in person, phone or none. For Zoom, Google says to pick none and add the link to the event by hand after someone books. Tools like Claritia and Calendly add a Zoom link to each booking.
 
 ### What is the best meeting scheduler for Google Calendar?
 

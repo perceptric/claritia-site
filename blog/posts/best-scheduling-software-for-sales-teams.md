@@ -8,11 +8,11 @@ date: 2026-10-29
 
 A sales team books meetings all day: first calls, demos, follow-ups and handoffs from one rep to another. The right scheduling tool lets a lead pick a time in one step and puts that meeting with the right rep. It should also log the meeting in your CRM, so no one has to copy it over by hand.
 
-This post is for sales teams of a few reps up to a few dozen. Look at how the tool ties to your CRM and how it shares meetings across reps. Then check what a lead sees when they book, because that page is often their first real look at your team.
+This post is for sales teams of a few reps up to a few dozen. Look closely at the page a lead sees when they book. It's often their first real look at your team.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to let leads book a demo inside your form, with reminders a day and an hour before.
 
-In this post, we compare 8 scheduling tools for sales teams on CRM ties, team booking and the real price for a team of reps.
+Below, we compare 8 scheduling tools for sales teams on CRM ties, team booking and the real price for a team of reps.
 
 ## Main points
 
@@ -37,7 +37,7 @@ Typical features include:
 
 ## How to choose scheduling software for sales teams
 
-A long feature list matters less than how a tool fits your sales process. These five checks matter most:
+A long feature list matters less than how a tool fits your sales process. Check these five things:
 
 - **CRM ties.** Logging meetings and booking with the record owner.
 - **Team booking.** Round robin and meetings with several reps.
@@ -64,7 +64,7 @@ A long feature list matters less than how a tool fits your sales process. These 
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-A lead fills your demo form and picks a time on the same page, then workflows send reminders and follow-ups so fewer meetings slip.
+A lead fills in your demo form and picks a time on the same page. Workflows then send the reminders and follow-ups.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -77,6 +77,10 @@ A lead fills your demo form and picks a time on the same page, then workflows se
 - **Round robin and routing:** Round robin with weights and priority on Pro, along with routing.
 - **Reminders:** A day and an hour before, on every plan.
 - **No-show follow-up:** On Pro, a follow-up that sends the reschedule link.
+
+![A Claritia form's thank-you screen that opens the right rep's calendar after submit](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: Right after a lead sends the demo form, Claritia opens the right rep's calendar.*
 
 ### Pros
 
@@ -265,7 +269,7 @@ Its plans cover booking at every step, from a plain link on Schedule to routing 
 
 Guests see a full week of open times and can lay their own calendar over the link to spot a match. Hosts set buffers, limits, preferred times, and time blocks, put links on their own domain, and take Stripe payments.
 
-It also supports round robin, collective, and group links, meeting polls, and reminder workflows. Both paid plans include round robin and CRM connections, and Premium adds Stripe payments at booking. It suits reps who want a booking link that looks and feels polished.
+It also supports round robin, collective, and group links, meeting polls, and reminder workflows. Both paid plans include round robin and CRM connections, and Premium adds Stripe payments at booking. It suits reps who care how their booking link looks.
 
 [![SavvyCal homepage](/assets/blog/tools/savvycal.webp)](https://savvycal.com/)
 

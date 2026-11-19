@@ -8,11 +8,11 @@ date: 2026-11-19
 
 A lead asks for a demo, then never picks a time. Another has a good first call, says they'll talk to their team, and goes quiet. Neither of them said no. They got busy, and nobody sent the next email.
 
-Plenty of inbound deals stall in these gaps. The fix is a short follow-up, sent at the right moment, that makes the next step easy: a link to book, a quote to read, a question that takes one line to answer. Writing each one from scratch is why teams skip them.
+Plenty of inbound deals stall in these gaps. The fix is a short follow-up, sent at the right moment, that makes the next step easy. Writing each one from scratch is why teams skip them.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to follow up with every form lead the next day until they book a meeting, on Starter.
 
-In this post, you'll find 9 sales follow-up email templates for inbound leads, when to send each one, and how to send them on a schedule without writing each by hand.
+Below are 9 sales follow-up email templates for inbound leads, each with when to send it. At the end, we show how to send them on a schedule without writing each by hand.
 
 ## Main points
 
@@ -237,6 +237,10 @@ Several of the templates above can run as workflows, so they go out at the right
 - **After a held meeting:** On Pro, a thank-you email goes out once the meeting is done.
 - **Moved or canceled (template 8):** On every plan, emails go out when a meeting moves or is canceled.
 - **Reminders:** On every plan, a confirmation with the calendar invite, then reminders a day and an hour before.
+
+![What Claritia sends after a booking: a confirmation with the invite, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: After each booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
 
 On Starter, you set your own wording and times, and emails can go out from your own [Gmail](/integrations/gmail) or [Outlook](/integrations/outlook). On Pro, follow-up emails go out from your own domain.
 

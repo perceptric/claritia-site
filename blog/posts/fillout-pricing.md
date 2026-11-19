@@ -6,9 +6,9 @@ kind: form
 date: 2026-11-19
 ---
 
-Fillout pricing is built around responses, not people. Every plan, even the free one, lets you add as many teammates and forms as you like. What changes from plan to plan is how many responses you get each month, how much Fillout branding shows, and a set of features like partial submissions and a custom domain.
+Fillout prices its plans by responses. Every plan, even the free one, lets you add as many teammates and forms as you like. What changes from plan to plan is how many responses you get each month, how much Fillout branding shows, and a set of features like partial submissions and a custom domain.
 
-That makes Fillout cheaper than most form builders for a team, but it also means the response count and a few key features decide your plan. This page lays out what each Fillout plan costs, what it includes and where the extra costs come from.
+That makes Fillout cheaper than most form builders for a team. It also means your response count and a few key features decide your plan.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form with conditional logic that books the meeting before the person leaves the page.
 
@@ -93,13 +93,13 @@ Prices checked November 2026 on [Fillout's pricing page](https://www.fillout.com
 
 ## Team bundle and Enterprise
 
-**The Team bundle** is $250 a month billed yearly, or $3,000 a year. It's an all-in-one plan for forms, apps and databases built on Zite. Fillout lists more than 800 credits a month, unlimited users and workspaces, 1,000,000 records, 250,000 workflow runs a month, roles, granular permissions, unlimited brand kits and enforced two-factor sign in. It also unlocks the Salesforce integration.
+**The Team bundle** is $250 a month billed yearly, or $3,000 a year. It's an all-in-one plan for forms, apps and databases built on Zite. Fillout lists more than 800 credits a month, unlimited users and workspaces, 1,000,000 records, 250,000 workflow runs a month, roles, granular permissions, unlimited brand kits and enforced two-factor sign in. It also adds the Salesforce integration.
 
 **Enterprise** has a custom price through Fillout's sales team. It adds single sign-on (SSO), audit logs, unlimited workflow runs, unlimited revision history, dedicated support, custom agreements and SLAs, and the option to store files only in your own storage.
 
 ## What the free plan leaves out
 
-Fillout's free plan covers more than most. What it lacks is mostly polish and data on who didn't finish:
+What the free plan lacks is mostly polish, plus data on who didn't finish:
 
 - **Your own brand.** Free forms show a Fillout badge. Lighter branding starts on Starter, and no branding starts on Pro.
 - **Spam protection.** CAPTCHA starts on Starter.
@@ -135,9 +135,13 @@ Fillout is a weaker fit if you need Salesforce on a budget, or if every form sho
 
 ## Fillout alternatives
 
-If Fillout's plans don't fit, you have other good options. We compared them in [the best Typeform alternatives](/blog/best-typeform-alternatives), and if you want to pay nothing, see [the best free form builders](/blog/best-free-form-builder).
+If Fillout's plans don't fit, we compared other options in [the best Typeform alternatives](/blog/best-typeform-alternatives), and if you want to pay nothing, see [the best free form builders](/blog/best-free-form-builder).
 
 [Claritia](/) is one of them. It's a forms and meetings tool for small B2B teams. The lead fills in the form, and the right person's calendar opens before they leave the page.
+
+![A Claritia form that asks team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: A Claritia form asks its questions, then ends on open times with the right person.*
 
 - **Free:** $0 for 1 seat and 250 submissions a month, with unlimited forms, conditional logic, calculations, file uploads, hidden fields and booking inside forms.
 - **Starter:** $15 a seat a month ($12 billed yearly). Adds 2,000 submissions, Stripe payments, e-signatures, redirects and HubSpot.

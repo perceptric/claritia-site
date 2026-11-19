@@ -12,7 +12,7 @@ A group meeting scheduler fixes this in one of two ways. A meeting poll lets eve
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** and run meeting polls and group meetings with a guest limit from your booking page on Starter.
 
-In this post, we explain how group scheduling works, show you how to set up a group meeting step by step, and compare 8 tools on polls, group events and price.
+Below, we explain how group scheduling works and how to set up a group meeting step by step. Then we compare 8 tools on polls, group events and price.
 
 ## Main points
 
@@ -90,6 +90,10 @@ For groups, Starter adds meeting polls and group meetings with a guest limit, ne
 - **Meeting polls:** On Starter, on the same account as your booking pages.
 - **Group meetings:** One slot with a guest limit, on Starter.
 - **Meetings with everyone free:** Only times when every chosen host is free, on Pro.
+
+![Claritia meeting types, including a round robin sales demo, an everyone-free onboarding call and a group demo with 20 seats](/assets/blog/ui/ui-meetings-meeting-types.webp)
+
+*Caption: In Claritia, a group demo with 20 seats sits next to one-on-one and everyone-free meeting types.*
 
 ### Pros
 
@@ -364,7 +368,7 @@ Doodle and Rallly show poll times in each person's own time zone. When2meet asks
 
 ## Get started
 
-Decide first whether you need a poll or a group event, then pick the tool with the right free cap. If you want both next to your one-on-one booking, set them up in one place.
+Decide first whether you need a poll or a group event, then pick the tool with the right free cap. If you want both next to your one-on-one booking, you can set them up in one place.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** and add meeting polls and group meetings with a guest limit when you move to Starter.
 

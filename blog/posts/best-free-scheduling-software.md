@@ -12,11 +12,11 @@ So the useful question is which limit you will hit first. For some people it's t
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that books meetings at no cost, with reminders a day and an hour before.
 
-In this post, we compare 9 free scheduling plans and name the limit you'll hit first in each, plus what the next plan costs.
+Below, we compare 9 free scheduling plans. For each one, we name the limit you'll hit first and what the next plan costs.
 
 ## Main points
 
-- Every tool on this list has a free plan with no end date. The difference is where each free plan stops.
+- Every tool on this list has a free plan with no end date, and each one stops at a different limit.
 - The first limit varies: one event type on Calendly, one user on Cal.com, one calendar on TidyCal.
 - Reminders on free vary too. Claritia, Zcal and Cal.com send them, while Calendly and Koalendar keep them for paid plans.
 - Top picks: [Claritia](/), [Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/), [Zcal](https://zcal.co/), [Cal.com](https://cal.com/), [Koalendar](https://koalendar.com/), [TidyCal](https://tidycal.com/), [Calendly](https://calendly.com/), [HubSpot Meetings](https://www.hubspot.com/products/sales/schedule-meeting) and [Setmore](https://www.setmore.com/).
@@ -65,7 +65,7 @@ Every free plan looks generous on its pricing page. These five checks show what 
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Its free plan puts booking inside a form, so you learn who's coming before they pick a time, with reminders and reschedule links included. It suits people who want a lead form and a booking page in one free tool.
+Its free plan puts booking inside a form, with reminders and reschedule links included.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -78,6 +78,10 @@ Its free plan puts booking inside a form, so you learn who's coming before they 
 - **Reminders and links:** Reminders a day and an hour before, plus reschedule and cancel links.
 - **AI form builder:** Tia builds a form from a plain sentence, with 100 AI credits a month on free.
 - **Templates and spam checks:** 840 form templates and Cloudflare spam protection on free. Browse the [templates](/templates) to start from one.
+
+![A Claritia form that asks team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: A Claritia form asks its questions first, then shows open times on the same page.*
 
 ### Pros
 
@@ -135,7 +139,7 @@ It checks your calendars to prevent double bookings, sends confirmation emails, 
 
 Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier.
 
-Its free plan is one of the fullest around for a single person, with unlimited links and calendar accounts and free meeting polls. Paid plans mainly add team features and text reminders, so it suits solo users who want polls and reminders for free.
+Its free plan is one of the fullest around for a single person, with unlimited links and calendar accounts and free meeting polls. Paid plans mainly add team features and text reminders, so a solo user can get polls and reminders without paying.
 
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
@@ -170,7 +174,7 @@ Both paid plans come with a 14-day free trial.
 
 Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub.
 
-Its free plan is built for one user, with unlimited links and calendars plus email and SMS notifications, and you can host the code yourself. It suits solo users and developers who want room to grow.
+Its free plan is built for one user, with unlimited links and calendars plus email and SMS notifications, and you can host the code yourself. Solo users and developers get the most from it.
 
 [![Cal.com homepage](/assets/blog/tools/cal-com.webp)](https://cal.com/)
 
@@ -329,7 +333,7 @@ It supports round robin and group meeting links, logs booked meetings on contact
 
 [Setmore](https://www.setmore.com/) is an online appointment scheduling app for service businesses and teams that want customers to book and pay without back-and-forth calls. Each business gets a branded booking page with its services, real-time availability and reviews, which it can share on its website, Facebook, Instagram or a QR code.
 
-Setmore books one-on-one appointments and group classes, sends email and text reminders, adds Zoom or Google Meet links, syncs with Google Calendar and takes card payments. Its free plan lets up to four people take bookings, with unlimited appointments, phone apps and support from real people, so it suits small shops and studios with a few staff members.
+Setmore books one-on-one appointments and group classes, sends email and text reminders, adds Zoom or Google Meet links, syncs with Google Calendar and takes card payments. Its free plan lets up to four people take bookings, with unlimited appointments, phone apps and support from real people. That fits a small shop or studio with a few staff members.
 
 [![Setmore homepage](/assets/blog/tools/setmore.webp)](https://www.setmore.com/)
 
@@ -367,7 +371,7 @@ Setmore books one-on-one appointments and group classes, sends email and text re
 
 ### Is there scheduling software that's free forever?
 
-Yes. Every tool on this list has a free plan with no end date. The difference is where each free plan stops.
+Yes. Every tool on this list has a free plan with no end date. Each one stops at a different limit, such as one event type, one user or one calendar.
 
 ### Which free scheduling tool sends reminders?
 
@@ -387,7 +391,7 @@ Upgrade when the free limit starts costing you bookings. That might be a second 
 
 ## Start free today
 
-Build a form that books meetings at no cost.
+Pick the free plan whose first limit you can live with, and upgrade only when it starts costing you bookings.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first booking form and take your first meeting today.
 

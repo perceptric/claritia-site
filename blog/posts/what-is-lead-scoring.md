@@ -12,7 +12,7 @@ Lead scoring fixes the order. Each lead gets points for who they are and what th
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to qualify each lead inside the form and book the good fits with the right rep on the same page.
 
-In this post, you'll learn what lead scoring is, how a scoring model works, a simple point model you can copy, and how the score drives routing and follow-up.
+Below, we explain how a scoring model works, give you a simple point model to copy, and show how the score drives routing and follow-up.
 
 ## Main points
 
@@ -30,7 +30,7 @@ It's one part of [lead qualification](/blog/lead-qualification). Qualification a
 
 ## How lead scoring works
 
-Most scoring follows the same six steps, whether you use a spreadsheet or a CRM:
+Most scoring follows the same six steps, in a spreadsheet or in a CRM:
 
 1. **Describe your best customers.** Look at the deals you won. What size were those companies, who bought, and what did they do first?
 2. **Turn those traits into rules.** Each rule is one fact you can check, such as "company has 20 to 200 employees" or "visited the pricing page".
@@ -120,7 +120,7 @@ Speed matters most at the top. A hot lead who waits a day may already be talking
 - **Scoring everything.** Points for every page view make the score noisy. Ten blog posts don't make a lead ten times more likely to buy.
 - **No negative rules.** Students and competitors climb the list and waste rep time.
 - **No decay.** Leads who were active a year ago stay "hot" forever.
-- **A score with no action.** If nothing happens when a lead turns hot, the model is just a number in a field.
+- **A score with no action.** If nothing happens when a lead turns hot, the scoring work was wasted.
 
 ## Tools for lead scoring
 
@@ -135,6 +135,10 @@ It builds forms from a sentence or one of 840 templates, opens the right person'
 It keeps segments and lead scoring next to your contacts, and its AI qualify step only picks an outcome you set. In forms, calculations can add up points as a lead answers, on every plan.
 
 Routing by any answer to a meeting and a person starts on Pro, with a log of why each lead went where it did. See how [Claritia routing](/products/routing) works.
+
+![Claritia routing rules that book large teams into an enterprise demo and send small budgets a starter guide](/assets/blog/ui/ui-routing-routing.webp)
+
+*Caption: Claritia's routing rules act on form answers, such as team size, country and budget, to pick the next step.*
 
 ### HubSpot
 

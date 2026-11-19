@@ -10,11 +10,11 @@ Chili Piper is strong at turning a form fill into a booked meeting. Its Growth p
 
 That's a lot for a team of five, or for a team that wants to pay month to month. A good Chili Piper alternative still sends each form lead to the right person and books the meeting.
 
-It shares leads fairly, shows why each lead went where it did, and comes with a price and contract a smaller team can live with.
+It should also share leads fairly and show why each lead went where it did. And its price and contract should fit a smaller team.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to route each form lead to the right rep and book the meeting on the same page, with monthly billing.
 
-In this post, we compare 9 tools that route leads and book meetings. You'll see what each one routes on, what it costs and how it bills.
+Below, we compare 9 tools that route leads and book meetings, with what each one routes on, what it costs and how it bills.
 
 ## Main points
 
@@ -67,7 +67,7 @@ Price matters, but so does the contract behind it. These five checks help:
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Routing and round robin come on the Pro plan, and you can pay month to month, so it suits small teams who want Chili Piper style routing with monthly billing and a free start.
+Routing and round robin come on the Pro plan, and you can pay for it month to month.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -82,6 +82,10 @@ Routing and round robin come on the Pro plan, and you can pay month to month, so
 - **Owner first:** On Business, along with double round robin and Salesforce.
 - **CRM connections:** HubSpot and Pipedrive connect from Starter, along with many other CRMs.
 
+![Claritia routing rules that send each lead to a meeting and a rep based on team size, country and budget](/assets/blog/ui/ui-routing-routing.webp)
+
+*Caption: Claritia's routing rules send each lead to a meeting and a rep, and everyone else to the sales round robin.*
+
 ### Pros
 
 - **Monthly billing:** Pay month to month, or save 20% billed yearly.
@@ -90,7 +94,7 @@ Routing and round robin come on the Pro plan, and you can pay month to month, so
 
 ### Cons
 
-- **Built for small teams:** It fits small teams more than large enterprises.
+- **Built for small teams:** It's made for small teams, not large enterprises.
 - **No Zapier or Make apps yet:** They're on the way and aren't listed yet.
 
 ### Price and plans
@@ -106,7 +110,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 [Default](https://www.default.com/) is a go-to-market platform for B2B revenue and RevOps teams that want inbound leads qualified, routed, and booked without manual work. When a visitor submits a demo form, it enriches the record from a chain of data providers, checks it against ideal customer rules, assigns a rep by round robin or territory, and opens that rep's branded scheduler.
 
-It also offers a Chrome extension, two-way CRM sync, an API, and access for AI agents through MCP. Its plans set the base fee, and each rep then takes a seat for routing or scheduling. It suits ops teams who want routing and workflows under one contract.
+It also offers a Chrome extension, two-way CRM sync, an API, and access for AI agents through MCP. Its plans set the base fee, and each rep then takes a seat for routing or scheduling.
 
 [![Default homepage](/assets/blog/tools/default.webp)](https://www.default.com/)
 
@@ -176,7 +180,7 @@ It books meetings from web forms and booking pages, with round robin and custom 
 
 It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps.
 
-Routing forms and round robin come on the Teams plan, which also routes by the owner set in HubSpot and sends meetings to Salesforce. Routing by Salesforce owner needs Enterprise. That covers a good share of what teams buy Chili Piper for, on a booking page your leads already know.
+Routing forms and round robin come on the Teams plan, which also routes by the owner set in HubSpot and sends meetings to Salesforce. Routing by Salesforce owner needs Enterprise. That covers a good share of what teams buy Chili Piper for.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -407,7 +411,7 @@ Start with your main demo form and its routing rules. Rebuild one path, test it 
 
 ## Get started
 
-Ready to route your first form? Give each lead the right rep and a booked meeting, without a yearly contract.
+Start with one form. Each lead gets the right rep and a booked meeting, with no yearly contract.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first form today, then turn on routing on Pro, billed monthly or yearly.
 

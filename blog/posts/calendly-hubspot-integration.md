@@ -12,7 +12,7 @@ Calendly and HubSpot fix this with a direct connection. Each booking can create 
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send each form lead to HubSpot and book the meeting with the right rep on the same page.
 
-In this post, you'll see what the Calendly HubSpot integration does, what you need on each side, how to set it up step by step, and how to fix the usual problems.
+Below, you'll see what the Calendly HubSpot integration does and what you need on each side. Then we set it up step by step and fix the usual problems.
 
 ## Main points
 
@@ -162,6 +162,10 @@ Setup takes three steps: sign in with HubSpot under Settings, then Integrations,
 
 **Plans:** HubSpot, Calendly bookings and booking pages for each person start on Starter at $15 a seat a month ($12 yearly). Routing by any answer and round robin are on Pro at $39 ($31 yearly). Booking a known lead with their HubSpot owner first is on Business at $79 ($63 yearly). See [pricing](/pricing).
 
+![Claritia owner first setting that books a lead with their HubSpot owner, or the sales team when the owner is away](/assets/blog/ui/ui-routing-owner-first.webp)
+
+*Caption: With owner first, a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns when she's away.*
+
 **Cons:** Claritia is a newer tool with a smaller marketplace than Calendly's, and its Zapier and Make apps aren't listed yet.
 
 ## Questions
@@ -194,6 +198,6 @@ Yes. If you use both, watch your calendar: Calendly's help center says running C
 
 The Calendly HubSpot integration takes about five minutes to connect once you're on the right plan. Test it with one booking, then add routing if you're on Teams.
 
-> **[Try Claritia free](https://app.tryclaritia.com/signup)** to send each form lead to HubSpot and book the meeting with the right rep on the same page.
+> **[Try Claritia free](https://app.tryclaritia.com/signup)** if your bookings start on a form, and send each lead to HubSpot and the right rep's calendar in one step.
 
 See how Claritia works with [HubSpot](/integrations/hubspot), or compare [Calendly alternatives](/blog/best-calendly-alternatives).
