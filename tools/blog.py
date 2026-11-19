@@ -24,7 +24,7 @@ import products as px  # noqa: E402
 
 esc, I, frame = px.esc, px.I, px.frame
 SITE = shell.SITE
-BLOG_V = 3
+BLOG_V = 4
 POSTS = ROOT / "blog" / "posts"
 
 
