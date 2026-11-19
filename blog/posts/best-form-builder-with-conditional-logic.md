@@ -8,11 +8,11 @@ date: 2026-11-05
 
 A form with conditional logic changes as people answer it. A visitor who picks "Just browsing" skips the budget questions. A visitor who picks "Ready to buy" sees the booking step. Each person gets a shorter form, and you get cleaner answers.
 
-Most form builders list conditional logic, but how far it goes varies a lot. A good one can skip whole steps, run math on answers, pass hidden values like UTM tags into the rules, and let you try all of it on the free plan before you pay.
+Most form builders list conditional logic. How far it goes is another matter. A good one can skip whole steps, run math on answers, pass hidden values like UTM tags into the rules, and let you try all of it on the free plan before you pay.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form with conditional logic, step skips and calculations on the free plan, and let it end in a booked meeting.
 
-In this post, we compare 8 form builders with conditional logic. You'll see how deep each one's logic goes, what it costs, and where it falls short.
+Below, we compare 8 form builders with conditional logic: how deep each one's rules go, what it costs, and where it falls short.
 
 ## Main points
 
@@ -37,7 +37,7 @@ Typical features include:
 
 ## How to choose a form builder with conditional logic
 
-Almost every tool says it has logic. These five checks show how much you really get:
+Almost every tool says it has logic. Five checks show how much you really get:
 
 - **Depth of logic.** Rules that show or hide questions, plus jumps that skip whole pages.
 - **Logic on the free plan.** You should be able to test real rules before you spend money.
@@ -64,7 +64,7 @@ Almost every tool says it has logic. These five checks show how much you really 
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Its forms come with conditional logic and step skips on the free plan, plus calculations and formulas. When the logic decides a visitor is a fit, the same form books them with the right person, so it suits teams that want the logic to end in a booked meeting.
+Its forms come with conditional logic and step skips on the free plan, plus calculations and formulas. When the logic decides a visitor is a fit, the same form books them with the right person.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -78,9 +78,13 @@ Its forms come with conditional logic and step skips on the free plan, plus calc
 - **Booking inside the form:** A qualified visitor books a meeting in the same flow.
 - **Tia, the AI form builder:** Builds a form from a plain sentence, so you start with questions in place.
 
+![Claritia's On submission panel with routing rules based on form answers](/assets/blog/ui/ui-routing-on-submission.webp)
+
+*Caption: Claritia's On submission rules use the answers to pick what happens next.*
+
 ### Pros
 
-- **Logic for free:** Step skips and calculations cost nothing.
+- **Test before you pay:** Step skips and calculations work without a paid plan.
 - **Logic that leads somewhere:** The answers can decide who the lead meets with.
 - **Fair seat pricing:** Teammates who only build forms or read answers are free.
 
@@ -104,7 +108,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment.
 
-Showing one question at a time makes branching feel natural, which suits brand-led forms where the look matters as much as the rules. The free plan has a low response cap, so most teams move to a paid plan quickly.
+Showing one question at a time makes branching feel natural. That suits brand-led forms where the look matters as much as the rules. The free plan has a low response cap, so most teams move to a paid plan quickly.
 
 [![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
 
@@ -117,13 +121,13 @@ Showing one question at a time makes branching feel natural, which suits brand-l
 
 ### Pros
 
-- **Natural branching:** With one question at a time, branching feels natural to the person filling it in.
+- **Smooth branching:** The person filling it in never sees the questions they skip.
 - **Design control:** A good fit when the look of each question matters.
 
 ### Cons
 
 - **Tight response caps:** 100 a month on Basic and 1,000 on Plus.
-- **Free plan for trying:** It's mainly for testing the tool.
+- **Free plan for trying out:** It's mainly for testing the tool.
 
 ### Price and plans
 
@@ -237,7 +241,7 @@ Yearly billing gives two months off.
 
 Forms can take bookings and Stripe payments, send contracts for e-signature through Papersign, and pass submissions to CRMs, email tools, and spreadsheets through integrations or Stepper workflows. Its forms look like web pages, with text and images between the questions.
 
-Conditional logic is on every plan, a calculations assistant comes on Pro and up, and it works well for quotes, bookings and any form that needs to read like a landing page.
+Conditional logic is on every plan, and a calculations assistant comes on Pro and up. It works well for quotes, bookings and forms that need to read like a landing page.
 
 [![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
 
@@ -270,7 +274,7 @@ Conditional logic is on every plan, a calculations assistant comes on Pro and up
 
 It can build a form from a prompt, turn PDFs or photos of paper forms into online forms, and read business cards or IDs to fill in fields. Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM.
 
-Its rules system is detailed, and the pricing page lists field rules, form rules, page rules and set value actions, each with an advanced version. Teams already on Zoho CRM and other Zoho apps will find the fit close.
+Its rules are detailed. The pricing page lists field rules, form rules, page rules and set value actions, each with an advanced version. It fits best for teams already on Zoho CRM and other Zoho apps.
 
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 
@@ -361,7 +365,7 @@ Yes. In Claritia, Pro plans route by any answer to a meeting and a person. A qua
 
 ## Get started
 
-Build your first branching form on the free plan in a few minutes.
+A branching form takes a few minutes to build on the free plan.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first branching form and book your first meeting today.
 

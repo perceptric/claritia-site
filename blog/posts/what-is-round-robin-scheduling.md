@@ -70,6 +70,10 @@ Plain turn-taking is the starting point. Most teams add one or more of these:
 - **Away days.** People on leave drop out of the rotation until they're back.
 - **Owner first.** A lead who already has an owner in your CRM books with that owner, and the rotation only covers new leads.
 
+![A Claritia sales team with weights, one rep away until Monday, and daily and weekly caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
+
+*Caption: In Claritia, Maya has weight 2 and the others have weight 1. One rep is away until Monday, and caps limit each day and week.*
+
 ## Examples of round robin scheduling
 
 - **Demo requests.** A software company sends every demo request to its four account executives in turn.
@@ -103,7 +107,13 @@ It builds forms from a sentence or one of 840 templates, opens the right person'
 
 The form answers pick the team, and the rotation picks the person. Round robin on Pro comes with weights and priority, team pools, away days and daily and weekly caps.
 
-Every meeting shows the rule that matched and why that person was picked, and Business adds owner first. Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.
+Every meeting shows the rule that matched and why that person was picked, and Business adds owner first.
+
+![A Claritia routing log showing rule 2 sent a lead from Germany to Lena Koch](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
+
+*Caption: The log for one lead shows the rule that matched and why Lena got the meeting.*
+
+Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.
 
 ### Calendly
 

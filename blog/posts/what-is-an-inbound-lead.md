@@ -12,7 +12,7 @@ Inbound leads are the warmest leads a small B2B team gets, because they came to 
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send each inbound lead to the right person and let them book a meeting before they leave your site.
 
-In this post, we explain what an inbound lead is, show common examples, and walk through how to handle one from first visit to booked meeting.
+Below: what an inbound lead is, common examples, and how to handle one from first visit to booked meeting.
 
 ## Main points
 
@@ -79,6 +79,10 @@ A demo request from a good fit can skip straight to sales. A newsletter signup u
 
 The person who just filled in your form is thinking about the problem right now. A reply the next day reaches someone who has moved on. The fastest response is no wait at all: let them book a meeting inside the form.
 
+![A form's thank-you screen that opens the right rep's calendar right after submit](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
+
 ### Send each lead to one owner
 
 A lead in a shared inbox belongs to no one. Use rules to give each lead an owner the moment it arrives. If the person is already in your CRM, send them to the rep who owns the account.
@@ -117,23 +121,27 @@ It builds forms from a sentence or one of 840 templates, opens the right person'
 
 On Pro, each answer can pick the meeting and the person, with round robin, team pools and away days, and on Business a known lead books with their owner in your CRM. Every routing choice is kept in a log, so you can see why each lead went where it did. See [Claritia routing](/products/routing).
 
+![Claritia's routing log for one lead: country is Germany, rule 2 picked Lena Koch, who has 3 of 8 meetings this week](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
+
+*Caption: Claritia's routing log shows why a lead from Germany went to Lena: rule 2 matched, and she had an open time.*
+
 ### HubSpot
 
 [HubSpot](https://www.hubspot.com/) is a customer platform for businesses of all sizes that want their marketing, sales and customer service teams to work from the same customer data. It is built around a shared CRM and adds separate products, called hubs, for marketing, sales, service, content, data management, and quotes and billing.
 
-Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents. Its forms, live chat and chatbots are free, and it suits teams that already run their marketing and sales in HubSpot.
+Teams use it to capture leads with forms and chat, send email campaigns, manage deals, run a help desk, build web pages and set up AI agents. Its forms, live chat and chatbots are free. It fits best for teams that already run their marketing and sales in HubSpot.
 
 ### Chili Piper
 
 [Chili Piper](https://www.chilipiper.com/) is a meeting booking and lead routing platform for B2B revenue teams that want inbound buyers to book with the right rep right away. When someone submits a form, it qualifies them, routes them by rules such as company size, region or account owner, and shows that rep's calendar on the spot.
 
-It also routes Salesforce records by rep workload, identifies visiting companies, runs an AI chat, blocks fake bookings and sends reps a brief before each meeting. It shares leads across a sales team with handoffs from SDRs to AEs, connects to Salesforce and HubSpot, and suits larger sales teams.
+It also routes Salesforce records by rep workload, identifies visiting companies, runs an AI chat, blocks fake bookings and sends reps a brief before each meeting. It shares leads across a sales team with handoffs from SDRs to AEs and connects to Salesforce and HubSpot. It's built for larger sales teams.
 
 ### Calendly
 
 [Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments.
 
-Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Its routing forms come on the Teams plan, where a lead answers a few questions and lands on the right booking page, which suits teams that want simple routing on a booking link.
+Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Its routing forms come on the Teams plan. A lead answers a few questions and lands on the right booking page, which is enough for teams that want simple routing on a booking link.
 
 For a deeper look, see our list of the [best lead routing software](/blog/best-lead-routing-software).
 

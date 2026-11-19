@@ -8,7 +8,7 @@ date: 2026-11-18
 
 Calendly pricing looks simple at first: a free plan, two paid plans and Enterprise. Then you notice that every price is per seat, that the yearly and monthly prices differ, and that the AI features now sit on separate Plus plans. A team of five can pay very different amounts depending on which boxes they tick.
 
-If you're choosing a plan, or trying to work out why your bill went up, you need the real numbers and the limits behind each one. That's what this page gives you.
+If you're choosing a plan, or trying to work out why your bill went up, you need the real numbers and the limits behind each one. This page has both.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to book meetings from your forms, with Google Calendar and Outlook on the free plan.
 
@@ -130,6 +130,10 @@ Calendly is a weaker fit if your main goal is to turn website visitors into book
 If Calendly's pricing doesn't fit, you have good options. We compared them in detail in [the best Calendly alternatives](/blog/best-calendly-alternatives), and if you want to pay nothing, see [the best free scheduling software](/blog/best-free-scheduling-software).
 
 [Claritia](/) is one option, built for small teams that want forms and meetings together. The lead fills in a form and the right person's calendar opens in the same flow.
+
+![A Claritia thank-you screen that opens the right rep's calendar after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: Right after submit, the form's thank-you screen opens the right rep's calendar.*
 
 - **Free:** $0 for 1 seat, 1 meeting type, 1 calendar, Google Calendar and Outlook, Zoom, Meet and Teams links, and booking inside forms.
 - **Starter:** $15 a seat a month ($12 billed yearly). Adds unlimited meeting types, 6 calendars a seat, group meetings, meeting polls, paid meetings with Stripe and HubSpot.

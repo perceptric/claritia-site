@@ -1,6 +1,6 @@
 ---
 title: "HubSpot Forms: How to Create, Embed and Set Up a Form (2026)"
-description: "How to create a HubSpot form, embed it on any site, add a pop-up, and see which HubSpot plan unlocks steps, styling and conditional logic in 2026."
+description: "How to create a HubSpot form, embed it on any site and add a pop-up, plus which HubSpot plan you need for steps, styling and conditional logic in 2026."
 category: Integrations
 kind: integration
 date: 2026-11-19
@@ -175,7 +175,13 @@ Conditional logic, multi-page forms with a progress bar, hidden fields for UTM t
 - **Timeline:** Each fill shows on the contact's timeline in HubSpot.
 - **Keep your HubSpot forms:** Claritia can hear your HubSpot form send and open the right calendar on the same page.
 
-On Business, at $79 a seat a month ($63 billed yearly), a lead HubSpot already knows books with their contact owner first. Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.
+On Business, at $79 a seat a month ($63 billed yearly), a lead HubSpot already knows books with their contact owner first.
+
+![Claritia's owner first setting books a lead with their HubSpot owner, Maya, and falls back to the sales team](/assets/blog/ui/ui-routing-owner-first.webp)
+
+*Caption: With owner first, a lead Maya owns in HubSpot books with Maya, and the sales team takes turns when she's away.*
+
+Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.
 
 ### Fillout
 

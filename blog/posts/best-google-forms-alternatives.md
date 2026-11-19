@@ -12,7 +12,7 @@ Things change when a form faces your customers. You may want your own brand on i
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to import your Google Forms for free and add a meeting booking step to each one.
 
-In this post, we compare 9 Google Forms alternatives by design, logic, price and what happens after submit, with the pros and cons of each.
+Below, we compare 9 Google Forms alternatives by design, logic, price and what happens after submit.
 
 ## Main points
 
@@ -67,7 +67,7 @@ Every tool here has a free plan, so price alone won't decide it. These five chec
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-It picks up where Google Forms stops. You can import your Google Forms on the free plan and give each one smarter logic and a meeting booking step, and Tia, the AI form builder, drafts new forms from one plain sentence.
+It picks up where Google Forms stops. You can import your Google Forms on the free plan and give each one deeper logic and a meeting booking step. For new forms, Tia, the AI form builder, drafts one from a plain sentence.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -80,6 +80,10 @@ It picks up where Google Forms stops. You can import your Google Forms on the fr
 - **Styles and templates:** 18 form styles and 840 templates, with your own brand from Starter.
 - **Booking inside the form:** Leads pick a time as soon as they answer, with reminders a day and an hour before.
 - **Tia, the AI form builder:** Draft a new form from one plain sentence.
+
+![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: A Claritia form that ends with the lead picking a meeting time.*
 
 ### Pros
 
@@ -108,7 +112,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking.
 
-It keeps the best part of Google Forms, the $0 price, with unlimited forms and submissions under fair use and logic and payments for free. It suits people who want Google Forms' price with a nicer form.
+It keeps the best part of Google Forms, the $0 price. You get unlimited forms and submissions under fair use, and logic and payments for free, in a nicer form.
 
 [![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
 
@@ -141,7 +145,7 @@ It keeps the best part of Google Forms, the $0 price, with unlimited forms and s
 
 It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations.
 
-It's a good fit if your team shares form work, like it does in Google Forms, since every plan has unlimited seats. The free plan takes 1,000 responses a month and links to Google Sheets, which suits teams that live in spreadsheets.
+It's a good fit if your team shares form work, like it does in Google Forms, since every plan has unlimited seats. The free plan takes 1,000 responses a month and links to Google Sheets, so answers can stay in your spreadsheets.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -173,7 +177,7 @@ It's a good fit if your team shares form work, like it does in Google Forms, sin
 
 [Microsoft Forms](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes) is a survey and quiz app in Microsoft 365 for schools, businesses and individuals who want to collect feedback or check what people know. Users build surveys, polls and quizzes with question types such as choice, text, rating and Likert, add branching logic and themes, and share the form by link.
 
-Built-in AI suggests questions and designs, results appear as answers come in, and a form can also be created from an Excel workbook. It's the closest match to Google Forms in spirit, simple and free with a Microsoft account. It fits teams that work in Microsoft 365, Excel and Teams, and business and school accounts get very high response limits.
+Built-in AI suggests questions and designs, results appear as answers come in, and a form can also be created from an Excel workbook. It's the closest match to Google Forms in spirit: simple, and free with a Microsoft account. Teams that work in Microsoft 365, Excel and Teams will feel at home, and business and school accounts get very high response limits.
 
 [![Microsoft Forms homepage](/assets/blog/tools/microsoft-forms.webp)](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes)
 
@@ -181,7 +185,7 @@ Built-in AI suggests questions and designs, results appear as answers come in, a
 
 - **Free:** With a Microsoft account.
 - **Excel:** Answers open in Excel.
-- **Quizzes and polls:** Much like Google Forms.
+- **Quizzes and polls:** The same kinds you'd make in Google Forms.
 - **High limits:** Up to 5,000,000 responses per form on business and school accounts.
 
 ### Pros
@@ -236,7 +240,7 @@ It shows one question at a time with polished design that fits a brand, so it's 
 
 [Jotform](https://www.jotform.com/) is a drag and drop form builder for businesses, schools, nonprofits, and public agencies that want to collect data, payments, and signatures without writing code. Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways.
 
-Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It covers far more form types than Google Forms, with a very large template library and widgets for special fields. It's a single-user tool below Enterprise, so it suits solo builders who need special fields and templates.
+Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It covers far more form types than Google Forms, with a very large template library and widgets for special fields. Plans below Enterprise are for one user, so it works best when one person builds the forms.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 

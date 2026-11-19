@@ -12,7 +12,7 @@ Most of them come from doing the math by hand. Someone converts a time in their 
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to share a booking page that shows each visitor times in their own time zone and language, on every plan.
 
-In this guide, we walk through seven steps to book meetings across time zones, the problems people hit most, and the tools that help.
+Below are seven steps to book meetings across time zones, the problems people hit most, and the tools that help.
 
 ## Main points
 
@@ -41,9 +41,13 @@ Then set your working hours in your booking tool. Add a minimum notice, so nobod
 
 In Claritia, working hours, buffers, notice and daily caps come on every plan. See [Claritia Meetings](/products/meetings) for how availability works.
 
+![Claritia's availability settings with a connected calendar, working hours by day, a buffer and minimum notice](/assets/blog/ui/ui-meetings-availability.webp)
+
+*Caption: In Claritia, you set working hours for each day, plus a buffer and minimum notice.*
+
 ## Step 2: Find the overlap in working hours
 
-Before you offer times, look at where everyone's workday overlaps. A world clock lines up the hours side by side, so you can see the overlap at a glance. Here is one moment on a weekday in late November 2026:
+Before you offer times, look at where everyone's workday overlaps. A world clock lines up the hours side by side. Here is one moment on a weekday in late November 2026:
 
 | City | Local time | Time zone then |
 |---|---|---|
@@ -91,7 +95,7 @@ Sometimes you still need to put times in an email. When you do, name the city an
 
 Abbreviations cause mix-ups. CST can be US Central or China Standard Time, and IST can be India, Israel or Irish Standard Time. People also write EST all year, when New York switches to EDT in summer.
 
-Even better, send a booking link instead of a list of times. In Claritia, Starter can also copy your open times into an email for you.
+Better yet, send a booking link instead of a list of times. In Claritia, Starter can also copy your open times into an email for you.
 
 ## Step 6: Send a calendar invite, not just a time
 
@@ -124,7 +128,7 @@ Places in the southern hemisphere that use daylight saving change in the opposit
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Its booking pages show each visitor's time zone and language on every plan, with working hours, buffers, notice and daily caps. It connects [Google Calendar](/integrations/google-calendar) or [Outlook](/integrations/outlook), and Starter adds meeting polls. It's a newer tool, so its marketplace is smaller than the big names.
+Its booking pages show each visitor's time zone and language on every plan, with working hours, buffers, notice and daily caps. It connects [Google Calendar](/integrations/google-calendar) or [Outlook](/integrations/outlook), and Starter adds meeting polls. Its marketplace is smaller than the big names'.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 

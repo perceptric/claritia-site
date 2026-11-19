@@ -12,7 +12,7 @@ You don't have to pay to get past those limits. Several tools give more for free
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to put booking inside a form at $0, with reminders a day and an hour before each meeting.
 
-In this post, we compare 9 free Calendly alternatives on what their free plan includes, so you can see what you gain and what you give up before you switch.
+Below, we compare 9 free Calendly alternatives on what their free plan includes, so you can see what you gain and give up before you switch.
 
 ## Main points
 
@@ -69,7 +69,7 @@ Prices checked November 2026.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Its free plan puts the booking inside a form, so a visitor answers your questions and picks a time on the same page, which suits anyone whose bookings start on a website. Workflows then send reminders and follow-ups.
+Its free plan puts the booking inside a form, so a visitor answers your questions and picks a time on the same page. Workflows then send reminders and follow-ups.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -81,6 +81,10 @@ Its free plan puts the booking inside a form, so a visitor answers your question
 - **Reminders on free:** A confirmation with a calendar invite, then reminders a day and an hour before.
 - **Calendars and video:** Google Calendar or Outlook, with a Google Meet, Teams or Zoom link on each meeting.
 - **Unlimited forms:** With conditional logic, 840 [templates](/templates) and 250 submissions a month.
+
+![What Claritia sends after a booking: a confirmation, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: On the free plan, each booking gets a confirmation with the invite and reminders a day and an hour before.*
 
 ### Pros
 
@@ -173,7 +177,7 @@ Its free plan is built for one user and doesn't cap links or calendars, and it a
 
 [Koalendar](https://koalendar.com/) is a scheduling app for small businesses, consultants, educators, and teams that want a simple booking page clients can use from any device. You create booking pages with your logo and colors, connect Google, Outlook, or iCloud calendars, and add custom questions.
 
-It detects time zones, sends email and SMS reminders, supports group, collective, and round robin bookings, takes Stripe payments, and offers booking pages in many languages. Its free plan gives you unlimited event types, booking pages and bookings, which suits solo pros who offer several kinds of meetings.
+It detects time zones, sends email and SMS reminders, supports group, collective, and round robin bookings, takes Stripe payments, and offers booking pages in many languages. Its free plan gives you unlimited event types, booking pages and bookings. That helps a solo pro who offers several kinds of meetings.
 
 [![Koalendar homepage](/assets/blog/tools/koalendar.webp)](https://koalendar.com/)
 
@@ -237,7 +241,7 @@ The free plan has unlimited booking types and bookings and lets you take paid bo
 
 [Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits.
 
-Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It has a forever free plan for one user, with reminders and two-way calendar sync, and it suits solo users who already work in Zoho apps or Microsoft 365.
+Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It has a forever free plan for one user, with reminders and two-way calendar sync. It fits in easily if you already work in Zoho apps or Microsoft 365.
 
 [![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
 
@@ -331,7 +335,7 @@ It sends confirmations, reminders, and follow-ups by email and SMS, triggers web
 
 [Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/) is a booking feature built into Google Calendar for people who want others to pick an open time without leaving their own calendar. You set the length, hours, buffers, and daily limits, add booking form questions, and share a booking page link or embed it on a website.
 
-It checks your calendars to prevent double bookings, sends confirmation emails, and on eligible paid accounts adds reminders, guest email checks, and Stripe payments. It is already in your calendar if you have a Google account, and a personal account gets one booking page. It suits people who live in Google Calendar.
+It checks your calendars to prevent double bookings, sends confirmation emails, and on eligible paid accounts adds reminders, guest email checks, and Stripe payments. It is already in your calendar if you have a Google account, and a personal account gets one booking page. If you live in Google Calendar, it's the easiest place to start.
 
 [![Google Calendar appointment schedules homepage](/assets/blog/tools/google-appointment-schedules.webp)](https://workspace.google.com/resources/appointment-scheduling/)
 

@@ -8,11 +8,11 @@ date: 2026-11-18
 
 Calendly and Acuity Scheduling both let people pick a time from your calendar and book it. That's where the likeness ends. Calendly grew up around meetings between businesses: sales calls, demos and interviews. Acuity grew up around appointments: a haircut, a therapy session, a training class, often paid at booking.
 
-So the right pick depends less on features lists and more on what you sell. If you sell your time to clients, Acuity has more of what you need on every plan. If you book meetings with leads or partners, Calendly fits better. This guide shows where each one wins.
+So the right pick depends less on feature lists and more on what you sell. If you sell your time to clients, Acuity has more of what you need on every plan. If you book meetings with leads or partners, Calendly fits better.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to put questions in front of your calendar and book the meeting on the same page.
 
-In this post, we compare Calendly and Acuity Scheduling on price, free plans, payments, intake forms, reminders, teams and integrations, then give a clear pick for each kind of business.
+Below, we compare the two on price, payments, intake forms, reminders, teams and integrations, then give a pick for each kind of business.
 
 ## Main points
 
@@ -41,7 +41,7 @@ Prices checked November 2026.
 
 [Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments.
 
-Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Reminders, payments and team meetings come on paid plans, with round robin and lead routing on Teams, and the AI notetaker and email scheduling assistant are sold as add-ons.
+Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Reminders, payments and team meetings come on paid plans, with round robin and lead routing on Teams. The AI notetaker and email scheduling assistant are sold as add-ons.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -49,13 +49,13 @@ Newer tools include an AI assistant that finds times over email and a notetaker 
 
 [Acuity Scheduling](https://acuityscheduling.com/) is appointment scheduling software for service businesses such as salons, coaches, wellness providers, fitness studios, and tutors that want clients to book and pay on their own. Clients pick times on a branded booking page, fill out intake forms, and get automatic confirmations and reminders.
 
-Owners can take deposits or full payments through Stripe, Square, or PayPal, sell packages, subscriptions, and gift certificates, run waitlists, and manage staff calendars across locations. Every plan includes custom client forms, payments, email reminders and time zone conversion, and higher plans add text reminders, the waitlist, packages, memberships and HIPAA support.
+Owners can take deposits or full payments through Stripe, Square, or PayPal, sell packages, subscriptions, and gift certificates, run waitlists, and manage staff calendars across locations. Every plan includes custom client forms, payments, email reminders and time zone conversion. Higher plans add text reminders, the waitlist, packages, memberships and HIPAA support.
 
 [![Acuity Scheduling homepage](/assets/blog/tools/acuity-scheduling.webp)](https://acuityscheduling.com/)
 
 ## Price and plans
 
-The two tools price in different ways, so compare them for your team size.
+The two tools price in different ways, so run the numbers for your team size.
 
 | Calendly plan | Yearly | Monthly | Main limits |
 |---|---|---|---|
@@ -78,7 +78,7 @@ For a small business with four staff, Acuity Standard at $27 a month billed year
 
 Acuity takes payments on every plan through Stripe, Square, PayPal or Venmo, and you can ask for deposits. From Standard, you can sell appointment packages, memberships and gift certificates. If clients prepay for a set of sessions or a monthly plan, this is where Acuity stands out.
 
-Calendly collects payments at booking through Stripe or PayPal from the Standard plan. Its paid plans now also list payment links, prepaid meeting packages and invoices. That covers simple paid calls well. Acuity still has the wider set of tools for businesses that sell many kinds of appointments.
+Calendly collects payments at booking through Stripe or PayPal from the Standard plan. Its paid plans now also list payment links, prepaid meeting packages and invoices. That handles simple paid calls. For businesses that sell many kinds of appointments, Acuity still has more.
 
 ## Intake forms and booking questions
 
@@ -96,7 +96,7 @@ Calendly's free plan doesn't include automated reminders. Standard adds automati
 
 This is Calendly's strongest area. Teams adds round robin, which shares meetings across teammates, and routing forms that send each lead to the right person. It can route by the owner set in HubSpot, and it sends meetings to Salesforce. Routing by Salesforce lookup sits on Enterprise.
 
-Acuity handles staff through calendars, and the plan you pick sets how many you get. Premium adds multiple time zones for staff and locations. Its pricing page doesn't list round robin or lead routing, so it suits businesses where clients book a service more than a sales team.
+Acuity handles staff through calendars, and the plan you pick sets how many you get. Premium adds multiple time zones for staff and locations. Its pricing page doesn't list round robin or lead routing. It's made for clients booking a service, not for a sales team sharing leads.
 
 ## Integrations
 
@@ -160,9 +160,13 @@ What it offers next to Calendly and Acuity:
 - **Round robin and routing:** On Pro, with weights, caps and away days, and routing by any answer.
 - **Keep Calendly running:** On Starter, Calendly bookings come into Claritia, so you can move at your own pace. See [Claritia and Calendly](/integrations/calendly).
 
+![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: In Claritia, the questions come first and the time picker sits at the end of the same form.*
+
 The free plan gives 1 seat, 1 calendar, 1 meeting type and 250 submissions a month. Starter is $15 a seat a month ($12 billed yearly). See [pricing](/pricing) for every plan.
 
-Claritia has limits too. It's a newer tool, so its app marketplace and community are smaller. It has no Zapier or Make apps listed yet. And it doesn't sell packages, memberships or gift certificates the way Acuity does.
+Claritia has limits too. Its app marketplace and community are smaller, and it has no Zapier or Make apps listed yet. It doesn't sell packages, memberships or gift certificates the way Acuity does.
 
 ## Questions
 

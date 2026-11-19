@@ -8,11 +8,11 @@ date: 2026-11-19
 
 Your HubSpot account fills up with contacts from forms, chats and email sign-ups. Some are buyers ready to talk. Most are not. Without a score, reps open the newest record first, and a good lead who filled in a demo form two days ago is still waiting for a reply.
 
-HubSpot's lead scoring tool can sort those contacts for you, but it's spread across plans and options. Contact scores, deal scores, AI scores and the predictive likelihood to close each sit on a different hub or tier. Once you know which part does what, you can build a first score in an afternoon.
+HubSpot's lead scoring tool can sort those contacts for you, but its parts are spread across plans. Contact scores, deal scores, AI scores and the predictive likelihood to close each sit on a different hub or tier. Once you know which part does what, you can build a first score in an afternoon.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send each form answer to HubSpot as a contact property, so your fit scores have the data they need from the first fill.
 
-In this post, you'll see how HubSpot lead scoring works, which plans include it, how to set up a score step by step, and the mistakes to avoid.
+Below: how HubSpot lead scoring works, which plans include it, how to set up a score step by step, and the mistakes to avoid.
 
 ## Main points
 
@@ -32,7 +32,7 @@ There are three types of score:
 - **Engagement scores** look at actions, such as form submissions, email clicks, page visits and meetings.
 - **Combined scores** use both and save three values: the total, the engagement part and the fit part.
 
-Rules sit in groups. Each rule adds or takes away points, each group can have its own limit, and the whole score has a limit too. That lets you cap low-value actions, like page views, while letting a booked meeting count for much more.
+Rules sit in groups. Each rule adds or takes away points, each group can have its own limit, and the whole score has a limit too. You can cap low-value actions, like page views, and still let a booked meeting count for much more.
 
 ### Score decay and thresholds
 
@@ -144,7 +144,7 @@ To send high scorers to the right rep, pair the score with routing. Our guide to
 
 ## Tools for HubSpot lead scoring
 
-HubSpot's own scoring works well once you're on Professional. These tools help fill the score with data, or score and route leads if you're on a lower plan.
+HubSpot's own scoring works well once you're on Professional. These tools help fill the score with data, or score and route leads on a lower plan.
 
 ### Claritia
 
@@ -159,7 +159,11 @@ On Starter, each fill creates or updates a HubSpot contact matched by email, and
 - **Pro, $39 a seat a month ($31 yearly):** [Routing](/products/routing) by any answer to a meeting and a person.
 - **Business, $79 a seat a month ($63 yearly):** Known HubSpot contacts book with their owner first.
 
-Claritia also keeps segments and lead scoring of its own. It's a newer tool, so its marketplace is smaller than HubSpot's, and its Zapier and Make apps aren't listed yet.
+![Claritia's owner first rule: a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns if she is away](/assets/blog/ui/ui-routing-owner-first.webp)
+
+*Caption: With owner first, a lead owned by Maya in HubSpot books with Maya, and if she's away the team takes turns.*
+
+Claritia also keeps segments and lead scoring of its own. Its marketplace is smaller than HubSpot's, and its Zapier and Make apps aren't listed yet.
 
 ### Zoho CRM
 

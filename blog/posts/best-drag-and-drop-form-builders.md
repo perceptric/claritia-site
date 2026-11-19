@@ -5,7 +5,8 @@ category: Forms
 kind: form
 date: 2026-11-18
 ---
- You need a form today, and you don't want to write code or wait for a developer. A drag and drop form builder lets you pick a field, drop it where it belongs and see the form take shape as you go.
+
+You need a form today, and you don't want to write code or wait for a developer. A drag and drop form builder lets you pick a field, drop it where it belongs and see the form take shape as you go.
 
 The catch is that every builder says it's easy, and you only learn how it really feels once you're ten questions in.
 
@@ -13,7 +14,7 @@ The best editor is one you can come back to in six months and still find your wa
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form by describing it in one sentence, then change any question by hand or by asking.
 
-In this post, we compare 8 form builders by how they feel to build in. You'll see what each one does well, where it falls short and what it costs.
+Below, we compare 8 form builders by how they feel to build in, with what each costs and where it falls short.
 
 ## Main points
 
@@ -71,7 +72,7 @@ Prices checked November 2026.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-It takes a different route from a classic drag and drop builder, since Tia, the AI form builder, writes the questions and pages from your sentence and links a meeting. You then change anything by hand or by asking Tia, which suits small teams who want a working form fast.
+It works differently from a classic drag and drop builder. Tia, the AI form builder, writes the questions and pages from your sentence and links a meeting. Then you change anything by hand or by asking Tia.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -84,6 +85,10 @@ It takes a different route from a classic drag and drop builder, since Tia, the 
 - **Pages and logic:** Multi-page forms, show-if logic, page skips and calculations on the free plan.
 - **840 templates and 18 styles:** Start from a real form in your field. See the [form templates](/templates).
 - **Booking inside the form:** The last page can be the right person's calendar.
+
+![Claritia's form builder with Tia's chat on the left and the live form on the right](/assets/blog/ui/ui-forms-app.webp)
+
+*Caption: You talk to Tia on the left and see the form change on the right.*
 
 ### Pros
 
@@ -141,7 +146,7 @@ Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in 
 
 [Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures.
 
-It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. Its free plan includes 1,000 responses a month and unlimited seats, so the whole team can build, which suits teams who want a modern editor and a large free allowance.
+It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. Its free plan includes 1,000 responses a month and unlimited seats, so the whole team can build.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -209,7 +214,7 @@ Prices are per year, for the first year.
 
 [Zoho Forms](https://www.zoho.com/forms/) is an online form builder for businesses that want to collect data and move it through review and approval steps without code. It can build a form from a prompt, turn PDFs or photos of paper forms into online forms, and read business cards or IDs to fill in fields.
 
-Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM. Its no-code drag and drop builder comes with templates and conditional logic, and paid plans start at 10,000 submissions a month, so it suits teams who use Zoho apps or expect a lot of answers.
+Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM. Its no-code drag and drop builder comes with templates and conditional logic, and paid plans start at 10,000 submissions a month. That helps if you already use Zoho apps or expect a lot of answers.
 
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 
@@ -306,7 +311,7 @@ Its builder is strong at math, with repeating sections and tables that suit quot
 
 [Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge.
 
-Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's the simple free choice here, and it suits quick internal forms and surveys more than branded lead forms.
+Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's the simple free pick on this list, better for quick internal forms and surveys than for branded lead forms.
 
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 

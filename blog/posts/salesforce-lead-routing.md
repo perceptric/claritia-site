@@ -111,6 +111,10 @@ Each form lead goes to Salesforce as a lead or a contact, matched by email so it
 
 A lead Salesforce already knows books with its owner first, new leads go to the team's round robin, and each fill shows as a completed task on the record.
 
+![Claritia's routing log for one lead, showing the rule that matched and the rep it picked](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
+
+*Caption: Claritia keeps a log for every lead, so you can see which rule matched and why that rep got it.*
+
 The [Salesforce integration](/integrations/salesforce) is on Business, at $79 a seat a month ($63 billed yearly). Claritia is a newer tool with a smaller app marketplace than the Salesforce-native tools, and its Zapier and Make apps aren't listed yet.
 
 ### LeanData

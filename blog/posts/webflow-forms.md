@@ -71,6 +71,10 @@ There are two ways to do this, and both end with the lead in Claritia.
 
 Describe the form to Tia, Claritia's AI form builder, in a sentence. For example: "a demo request form for a design agency that asks about budget and books a call." Tia writes the questions and pages. You can also start from one of 840 [form templates](/templates).
 
+![Tia building a demo request form from one sentence](/assets/blog/ui/ui-forms-tia.webp)
+
+*Caption: Tia turns one sentence into a demo request form you can then edit.*
+
 Then shape it:
 
 - **Split it into pages.** Multi-page forms with a progress bar are on every plan, Free included.
@@ -88,6 +92,10 @@ Open the form's Share tab in Claritia and copy the embed code. It's two lines:
 In the Webflow Designer, drag an Embed element to the spot where the form should go. Paste the code and save. The snippet from the Share tab already carries your form's ID in place of FORM_ID.
 
 The form can sit in the page, or open as a popup, a slide-in, a corner button or a side tab. The script loads after the page, so your Webflow page draws first.
+
+![Claritia's share panel with the form link, the embed code and display options](/assets/blog/ui/ui-forms-share.webp)
+
+*Caption: The Share tab gives you the form link, the embed code, and a choice of in page, popup, slide in, corner button or side tab.*
 
 ## Step 4: Or keep your Webflow form
 

@@ -172,6 +172,8 @@
 <p><strong>Keep it</strong> if you like your Webflow form as it is. Claritia hears the form send and opens the right calendar on the same page. On Starter, Webflow form fills also come into Claritia by webhook, so they book and get follow-ups the same way.</p>
 <h2 id="step-2-build-the-form-in-claritia">Step 2: Build the form in Claritia</h2>
 <p>Describe the form to Tia, Claritia's AI form builder, in a sentence. For example: "a demo request form for a design agency that asks about budget and books a call." Tia writes the questions and pages. You can also start from one of 840 <a href="/templates">form templates</a>.</p>
+<p><img src="/assets/blog/ui/ui-forms-tia.webp" alt="Tia building a demo request form from one sentence" width="968" height="780" loading="lazy"></p>
+<p><em>Caption: Tia turns one sentence into a demo request form you can then edit.</em></p>
 <p>Then shape it:</p>
 <ul><li><strong>Split it into pages.</strong> Multi-page forms with a progress bar are on every plan, Free included.</li><li><strong>Add logic.</strong> Show a question only when an earlier answer calls for it, and skip pages that don't apply. Also on every plan.</li><li><strong>Keep the campaign data.</strong> Hidden fields catch UTM tags, the page and the referrer.</li><li><strong>End on a calendar.</strong> Link a meeting type, so a qualified lead picks a time before they leave.</li></ul>
 <h2 id="step-3-add-an-embed-element-in-webflow">Step 3: Add an Embed element in Webflow</h2>
@@ -179,6 +181,8 @@
 <ul><li><code>&lt;script src="https://app.tryclaritia.com/forms/v1.js" async&gt;&lt;/script&gt;</code></li><li><code>&lt;claritia-form form-id="FORM_ID"&gt;&lt;/claritia-form&gt;</code></li></ul>
 <p>In the Webflow Designer, drag an Embed element to the spot where the form should go. Paste the code and save. The snippet from the Share tab already carries your form's ID in place of FORM_ID.</p>
 <p>The form can sit in the page, or open as a popup, a slide-in, a corner button or a side tab. The script loads after the page, so your Webflow page draws first.</p>
+<p><img src="/assets/blog/ui/ui-forms-share.webp" alt="Claritia's share panel with the form link, the embed code and display options" width="1374" height="740" loading="lazy"></p>
+<p><em>Caption: The Share tab gives you the form link, the embed code, and a choice of in page, popup, slide in, corner button or side tab.</em></p>
 <h2 id="step-4-or-keep-your-webflow-form">Step 4: Or keep your Webflow form</h2>
 <p>If you'd rather keep the form you have, skip steps 2 and 3. Add the Claritia script to the page and point Claritia at your Webflow form. When the form sends, the right calendar opens on the same page and the lead books.</p>
 <p>To save every Webflow fill in Claritia too, use the webhook route on Starter. Webflow can fire a webhook on each form submission, and Claritia treats those fills like its own: they book, sync and get follow-ups.</p>

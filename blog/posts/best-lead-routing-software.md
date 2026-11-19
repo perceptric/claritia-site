@@ -12,7 +12,7 @@ A good router reads what the lead told you and checks who already owns the accou
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that routes each lead to the right rep and books the meeting in the same step.
 
-In this post, we compare 8 lead routing tools. You'll see what each one routes on, which CRM it needs and what it costs.
+Below, we compare 8 lead routing tools by what they route on, which CRM they need and what they cost.
 
 ## Main points
 
@@ -34,6 +34,10 @@ Typical features include:
 - Territory routing by region or account.
 - A fallback when no one in the rule is free.
 - A routing log that shows why each lead went where it did.
+
+![A Claritia routing log showing rule 2 sent a lead from Germany to Lena Koch](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
+
+*Caption: A routing log in Claritia shows the country, the rule that matched and the rep it picked.*
 
 ## How to choose lead routing software
 
@@ -64,7 +68,7 @@ Start with where your leads come from. Then run these five checks:
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Routing starts from the form itself, since each form picks the meeting and each meeting picks the person. You can route by any answer or by what the person said in past fills, and on Business a known account goes to its CRM owner.
+Routing starts from the form. Each form picks the meeting, and each meeting picks the person. You can route by any answer or by what the person said in past fills, and on Business a known account goes to its CRM owner.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -78,6 +82,10 @@ Routing starts from the form itself, since each form picks the meeting and each 
 - **Owner first:** On Business, with double round robin and Salesforce. See the [Salesforce integration](/integrations/salesforce).
 - **Fair rotation:** Team pools and away days keep the rotation fair on Pro.
 - **Booking inside the form:** The lead picks a time on the same page.
+
+![Claritia's routing screen with rules, the reason a rep got a lead and team load](/assets/blog/ui/ui-routing-app.webp)
+
+*Caption: Claritia's routing screen puts the rules, each lead's reason and the team's load in one place.*
 
 ### Pros
 
@@ -173,7 +181,7 @@ Paid plans need at least 5 licenses and are billed yearly.
 
 It also routes Salesforce records by rep workload, identifies visiting companies, runs an AI chat, blocks fake bookings and sends reps a brief before each meeting. Its strength is the handoff, where an SDR books the right AE in one click.
 
-It connects to Salesforce and HubSpot and shares leads fairly across a sales team, so it suits larger sales teams with set handoffs between SDRs and AEs.
+It connects to Salesforce and HubSpot and shares leads fairly across a sales team. The pricing is set for larger teams.
 
 [![Chili Piper homepage](/assets/blog/tools/chili-piper.webp)](https://www.chilipiper.com/)
 
@@ -206,7 +214,7 @@ All plans are billed yearly.
 
 [Default](https://www.default.com/) is a go-to-market platform for B2B revenue and RevOps teams that want inbound leads qualified, routed, and booked without manual work. When a visitor submits a demo form, it enriches the record from a chain of data providers, checks it against ideal customer rules, assigns a rep by round robin or territory, and opens that rep's branded scheduler.
 
-It also offers a Chrome extension, two-way CRM sync, an API, and access for AI agents through MCP. Each rep takes a seat for routing or scheduling on top of the base plan, and the Routing and Scheduling seat covers queues and round robins, plus booking links. It suits ops teams who want routing and workflow runs in one platform.
+It also offers a Chrome extension, two-way CRM sync, an API, and access for AI agents through MCP. Each rep takes a seat for routing or scheduling on top of the base plan, and the Routing and Scheduling seat covers queues and round robins, plus booking links. Ops teams get routing and workflow runs in one place.
 
 [![Default homepage](/assets/blog/tools/default.webp)](https://www.default.com/)
 
@@ -242,7 +250,7 @@ Plans are billed yearly, plus seats.
 
 It matches leads to accounts and owners already in the CRM, routes the rest by territory and other rules, and runs round robin with weights, caps, and paired AE and SE booking. It logs the reason behind every assignment, returns credit for no-shows, and syncs meetings to HubSpot, Salesforce, or Attio.
 
-It books leads from forms and booking pages. Essentials handles round robin with custom rules and domain matching, and Advanced adds matching on any CRM property, along with fallback redistribution. It suits B2B teams who want CRM-aware routing without a large contract.
+It books leads from forms and booking pages. Essentials handles round robin with custom rules and domain matching, and Advanced adds matching on any CRM property, along with fallback redistribution. That gives B2B teams routing that knows the CRM, without a large contract.
 
 [![RevenueHero homepage](/assets/blog/tools/revenuehero.webp)](https://www.revenuehero.io/)
 

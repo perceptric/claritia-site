@@ -8,11 +8,11 @@ date: 2026-11-19
 
 A prospect booked a demo last Tuesday. Since then, a stack of other meetings has landed in the same calendar. When your call comes up, they're in the middle of something else, or they forgot what the call was about. You wait five minutes, then write the "are you joining?" email.
 
-A short reminder the day before changes that. It brings the meeting back to mind, says what you'll cover and gives the link in one tap. It also gives people a polite way to move the time before it goes to waste, instead of skipping the call.
+A short reminder the day before changes that. It brings the meeting back to mind, says what you'll cover and puts the link one tap away. People who can't make it get a polite way to move the time instead of skipping the call.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send a reminder a day and an hour before every meeting booked from your forms, on every plan.
 
-In this post, you'll find 8 meeting reminder email templates for B2B meetings, how to send a reminder email step by step, and tools that send them on their own.
+Below are 8 meeting reminder email templates for B2B meetings, the steps to send one, and tools that send them for you.
 
 ## Main points
 
@@ -39,7 +39,7 @@ It's different from the calendar invite. The invite holds the time. The reminder
 
 ## How to send a reminder email
 
-Here's how to send a reminder email, with an example at the end:
+Seven steps, with an example at the end:
 
 1. **Pick the timing.** A day before for most meetings, plus an hour before for sales calls.
 2. **Write the subject line.** Put the meeting name and time first: "Reminder: intro call tomorrow at 10am."
@@ -117,7 +117,7 @@ Each template has a line on when to send it, the email itself and why it works. 
 >
 > {your name}
 
-**Why it works:** A short agenda shows the meeting is worth the time, and naming the decision up front helps the client come ready to make it.
+**Why it works:** A short agenda shows the meeting is worth the time. Naming the decision up front helps the client come ready to make it.
 
 ### 4. Internal meeting reminder
 
@@ -237,7 +237,11 @@ For reminders and follow-ups, here's what each plan includes:
 - **Starter, $15 a seat a month ($12 billed yearly):** Your own wording and times, a follow-up the next day until a form lead books, and emails from your own [Gmail](/integrations/gmail) or [Outlook](/integrations/outlook).
 - **Pro, $39 a seat a month ($31 billed yearly):** A no-show follow-up with the reschedule link, a thank-you after a held meeting, and follow-up emails from your own domain.
 
-Claritia is a newer tool with a smaller marketplace, its Zapier and Make apps aren't listed yet, and SMS reminders on Pro and Business are still coming soon.
+![What runs after a booking in Claritia: a confirmation with the invite, a reminder a day before and one an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: Claritia sends the confirmation with the invite, then reminders a day and an hour before the meeting.*
+
+Claritia has a smaller marketplace, and its Zapier and Make apps aren't listed yet. SMS reminders on Pro and Business are still coming soon.
 
 ### HubSpot Meetings
 

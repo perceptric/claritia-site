@@ -6,13 +6,13 @@ kind: form
 date: 2026-10-21
 ---
 
-WordPress gives you two ways to add forms. You can install a plugin that runs inside your site and stores entries in your WordPress database. Or you can use a hosted form tool and embed it on your pages. Both work well, and the right pick depends on where you want your leads to live.
+WordPress gives you two ways to add forms. You can install a plugin that runs inside your site and stores entries in your WordPress database. Or you can use a hosted form tool and embed it on your pages. Both work. The right pick depends on where you want your leads to live and who will build the forms.
 
-A good WordPress form builder fits who will build the forms and where the answers go next. A plugin keeps everything in WordPress admin. A hosted tool keeps forms working the same way across every site you run, and it adds less load to your server.
+A plugin keeps everything in WordPress admin. A hosted tool keeps forms working the same way across every site you run, and it adds less load to your server.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to add a form that books meetings to your WordPress site with one script tag.
 
-In this post, we compare 8 WordPress form builders, both plugins and hosted tools, with real prices and the pros and cons of each.
+Below, we compare 8 WordPress form builders, plugins and hosted tools both, with real prices.
 
 ## Main points
 
@@ -37,7 +37,7 @@ Typical features include:
 
 ## How to choose a WordPress form builder
 
-Think about who will build the forms and where the answers go. Then use these five checks:
+Start with who will build the forms and where the answers go. Then run five checks:
 
 - **How it runs on WordPress.** A native plugin or a hosted tool you embed.
 - **Logic and calculations.** Rules that show or hide fields and do math on answers.
@@ -78,6 +78,10 @@ It is a hosted tool, so there is no plugin to install or update. You paste one s
 - **Tracking tags:** Google Analytics, Google Tag Manager, Meta Pixel and Google Ads tags work on the form.
 - **HubSpot:** Each form fill can go to HubSpot on Starter.
 
+![Claritia's share panel with a form link, the one-line embed code and display options](/assets/blog/ui/ui-forms-share.webp)
+
+*Caption: Claritia's share panel gives you the one-line embed code and lets you show the form in the page, as a popup, a slide in, a corner button or a side tab.*
+
 ### Pros
 
 - **No plugin to maintain:** Nothing to install or update on your site.
@@ -104,7 +108,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 Entries are kept in the WordPress dashboard, and the plugin can send email notifications, accept Stripe payments, collect signatures and file uploads, save partial entries and pass leads to email marketing tools and CRMs.
 
-It is the most installed form plugin on this list, with over 5 million active installs for WPForms Lite, and conditional logic is on every paid plan. Its builder is easy to learn, which suits site owners who want a friendly one inside WordPress.
+It is the most installed form plugin on this list, with over 5 million active installs for WPForms Lite, and conditional logic is on every paid plan. Its builder is easy to learn.
 
 [![WPForms homepage](/assets/blog/tools/wpforms.webp)](https://wpforms.com/)
 
@@ -142,7 +146,7 @@ Prices below are for the first year. Renewals are at the normal price.
 
 It can take payments through Stripe, Square and other processors, register users, create posts from entries, route notifications based on answers, and send data to other tools through a REST API and webhooks.
 
-It has long been a favorite of WordPress developers. Conditional logic is a core feature on every license, and a large set of add-ons covers payments and CRMs.
+It has long been a favorite of WordPress developers. Conditional logic is a core feature on every license.
 
 [![Gravity Forms homepage](/assets/blog/tools/gravity-forms.webp)](https://www.gravityforms.com/)
 
@@ -175,7 +179,7 @@ It has long been a favorite of WordPress developers. Conditional logic is a core
 
 Its Views feature shows entries on the front end, so users can make directories, job boards and dashboards, and it takes payments through Stripe, PayPal or Square and sends entries to tools such as Mailchimp, HubSpot and Salesforce.
 
-Conditional logic and calculations are on every plan, which makes it a good fit for quote forms and calculators, and its higher plans add AI and form abandonment.
+Conditional logic and calculations are on every plan, so quote forms and calculators are its strong suit. Higher plans add AI and form abandonment.
 
 [![Formidable Forms homepage](/assets/blog/tools/formidable-forms.webp)](https://formidableforms.com/)
 
@@ -212,7 +216,7 @@ Prices below are for the first year. Renewals are at the normal price.
 
 It offers a drag-and-drop editor with many input fields, templates and an AI form builder, plus conditional logic, multi-step forms, calculations and conversational forms that ask one question at a time. It accepts payments and donations, turns entries into PDFs, shows submission charts, exports data and sends leads to CRMs and other tools.
 
-Every paid plan gets the full feature set and plans differ only by number of sites, so even the single-site plan has conditional logic, partial entries and the AI form builder. It suits small sites that want every feature without picking a tier.
+Every paid plan gets the full feature set, and plans differ only by number of sites. Even the single-site plan has conditional logic, partial entries and the AI form builder.
 
 [![Fluent Forms homepage](/assets/blog/tools/fluent-forms.webp)](https://fluentforms.com/)
 
@@ -277,7 +281,7 @@ Prices below are for the first year. Renewals are at normal prices, such as $99 
 
 [Forminator](https://wpmudev.com/project/forminator-pro/) is a WordPress plugin from WPMU DEV for site owners who want forms, quizzes and polls from one plugin, starting with a free version. It builds contact, registration, login and payment forms with conditional logic, calculations, repeatable fields and save and resume.
 
-It takes Stripe and PayPal payments and blocks spam with CAPTCHA tools, and its paid version adds Stripe subscriptions, PDFs made from entries, e-signatures, address autocomplete and n8n workflows. The free plugin has over 600,000 active installs, and it suits sites that want a lot from a free plugin.
+It takes Stripe and PayPal payments and blocks spam with CAPTCHA tools, and its paid version adds Stripe subscriptions, PDFs made from entries, e-signatures, address autocomplete and n8n workflows. The free plugin has over 600,000 active installs.
 
 [![Forminator homepage](/assets/blog/tools/forminator.webp)](https://wpmudev.com/project/forminator-pro/)
 
@@ -309,7 +313,7 @@ It takes Stripe and PayPal payments and blocks spam with CAPTCHA tools, and its 
 
 Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports. It is hosted and has an official WordPress plugin, so you add a form with a shortcode or paste the embed code into a Custom HTML block.
 
-Entries live in Jotform, so the same forms work on any site, which suits teams that run several sites and want one place for every form.
+Entries live in Jotform, so the same forms work on any site. Teams that run several sites get one place for every form.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -322,7 +326,7 @@ Entries live in Jotform, so the same forms work on any site, which suits teams t
 
 ### Pros
 
-- **One tool for many sites:** The same forms work on any site.
+- **One tool for many sites:** Build once, embed anywhere.
 - **Logic for free:** Conditional logic is on the free plan.
 
 ### Cons

@@ -12,7 +12,7 @@ The fix is to match each form to the offer. Ask only what you need for the next 
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to start from a ready-made lead capture form and book the meeting right after submit.
 
-In this post, you'll find 10 lead capture form examples, the fields each one should ask, why each field earns its place, and a free template for each.
+Below are 10 lead capture form examples, with the fields each one should ask, why each field is there, and a free template to start from.
 
 ## Main points
 
@@ -59,6 +59,10 @@ Before the examples, here are the parts that belong on almost every form:
 
 Start from a [demo request template](/templates/category/demo-request).
 
+[![The first page of Claritia's SaaS demo request template form](/assets/blog/ui/tpl-saas-demo-request.webp)](/templates/saas-demo-request)
+
+*Caption: The first page of questions in Claritia's SaaS demo request template.*
+
 ### 2. Quote request form
 
 **Who it's for:** Agencies, trades, cleaning, catering, moving and other service businesses.
@@ -95,6 +99,10 @@ Start from a [quote request template](/templates/category/quote).
 **Next step:** Book the consultation in the same flow, with a reminder a day and an hour before so they show up.
 
 Start from a [consultation template](/templates/category/consultation).
+
+[![The first page of Claritia's consulting discovery template form](/assets/blog/ui/tpl-consulting-discovery.webp)](/templates/consulting-discovery)
+
+*Caption: The first page of questions in Claritia's consulting discovery template.*
 
 ### 4. Newsletter signup form
 
@@ -197,6 +205,10 @@ Start from a [callback request template](/templates/category/callback).
 **Next step:** Take a deposit with Stripe, or book a call to confirm the details.
 
 Start from a [calculator template](/templates/category/calculator).
+
+![A Claritia catering quote form that prices options as people answer and takes a deposit with Stripe](/assets/blog/ui/ui-forms-catering-quote.webp)
+
+*Caption: A quote form that prices each choice as the lead answers, then takes a deposit with Stripe.*
 
 ### 10. Waitlist form
 

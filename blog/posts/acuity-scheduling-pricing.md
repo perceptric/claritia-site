@@ -6,13 +6,13 @@ kind: meeting
 date: 2026-11-19
 ---
 
-Acuity Scheduling pricing has three plans and no free one. That sounds simple, but the plan you need depends on two things that are easy to miss: how many calendars your business uses, and which client features you want, like text reminders, packages or a waitlist.
+Acuity Scheduling pricing has three plans and no free one. The plan you need comes down to two things people often miss: how many calendars your business uses, and which client features you want, like text reminders, packages or a waitlist.
 
-If you run a salon, a studio or a practice, you want to know what you'll pay this month and next year, before you set up your services. This page lays out each Acuity Scheduling plan, what it includes, what it leaves out and where the extra costs come from.
+If you run a salon, a studio or a practice, you want to know what you'll pay this month and next year before you set up your services.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to put your intake questions and your booking calendar on one page, on a free plan with no time limit.
 
-Below, we walk through every Acuity plan, what you give up on Starter, the costs to watch and when another tool may fit better.
+Below is each Acuity plan, what you give up on Starter, the extra costs, and when another tool may fit better.
 
 ## Main points
 
@@ -26,9 +26,9 @@ Below, we walk through every Acuity plan, what you give up on Starter, the costs
 
 No. Acuity Scheduling doesn't have a free plan. Its pricing page says it doesn't offer free appointment scheduling at this time.
 
-What you get instead is a 7-day free trial of any plan, and you don't need a credit card to start it. When the trial ends, Acuity says you won't be charged until you pick a plan. So you can test your booking page, forms and reminders with real clients for a week, then decide.
+You get a 7-day free trial of any plan instead, and you don't need a credit card to start it. When the trial ends, Acuity says you won't be charged until you pick a plan. You can test your booking page, forms and reminders with real clients for a week, then decide.
 
-If you need a booking tool that stays free, you'll have to look elsewhere. We list free options in [the best Acuity Scheduling alternatives](/blog/acuity-scheduling-alternatives).
+For a booking tool that stays free, look elsewhere. We list free options in [the best Acuity Scheduling alternatives](/blog/acuity-scheduling-alternatives).
 
 ## Acuity Scheduling pricing: how much does it cost?
 
@@ -100,7 +100,7 @@ Acuity has no free plan, so the real question is what you miss on the cheapest p
 
 ## Extra costs to watch
 
-Acuity says there are no set-up, cancellation or support fees. These are the costs that still add up:
+Acuity says there are no set-up, cancellation or support fees. These costs still add up:
 
 - **The calendar caps.** Plans jump at 1, 6 and 36 calendars. Hiring a seventh staff member moves you from $27 to $55 a month on yearly billing.
 - **Monthly billing.** Paying month to month adds $4 a month on Starter, $7 on Standard and $14 on Premium.
@@ -112,19 +112,23 @@ Acuity says there are no set-up, cancellation or support fees. These are the cos
 
 ## Is Acuity Scheduling worth it?
 
-For many appointment businesses, yes. Intake forms, payments and deposits come on every plan, which some booking tools charge more for. Clients get a clean booking page in their own time zone, and you get reminders without building anything.
+For many appointment businesses, yes. Intake forms, payments and deposits come on every plan, and some booking tools charge more for those. Clients see a clean booking page in their own time zone, and reminders go out without you building anything.
 
-Standard is the plan most small businesses end up on. It covers up to 6 staff or rooms, text reminders, a waitlist, packages and memberships for $27 a month billed yearly. Starter is fine for one person who only needs email reminders.
+Most small businesses end up on Standard. It covers up to 6 staff or rooms, text reminders, a waitlist, packages and memberships for $27 a month billed yearly. Starter is fine for one person who only needs email reminders.
 
-Premium makes sense for health practices that need a signed BAA, or for businesses that care about removing the Acuity footer. For everyone else, it's a big step up for features you may not use.
+Premium makes sense for health practices that need a signed BAA, or for businesses that want the Acuity footer gone. For anyone else, it's a big price jump for features you may not use.
 
-Acuity is a weaker fit for teams that book meetings with leads. Its pricing page doesn't list round robin or lead routing, and HubSpot and Salesforce aren't in its CRM list. In that case, compare it with Calendly in our [Calendly vs Acuity](/blog/calendly-vs-acuity) guide.
+Teams that book meetings with leads should look harder. Acuity's pricing page doesn't list round robin or lead routing, and HubSpot and Salesforce aren't in its CRM list. If that's you, compare it with Calendly in our [Calendly vs Acuity](/blog/calendly-vs-acuity) guide.
 
 ## Acuity Scheduling alternatives
 
-If Acuity's plans don't fit, there are good options, including several with free plans. We compared them in [the best Acuity Scheduling alternatives](/blog/acuity-scheduling-alternatives), and you can see more tools in [the best appointment scheduling software](/blog/best-appointment-scheduling-software).
+If Acuity's plans don't fit, several other tools have free plans. We compared them in [the best Acuity Scheduling alternatives](/blog/acuity-scheduling-alternatives), and you can see more tools in [the best appointment scheduling software](/blog/best-appointment-scheduling-software).
 
 [Claritia](/) is one of them. It's a forms, scheduling and follow-up app for small teams. A client answers your questions in a form, and the right person's calendar opens before they leave the page.
+
+![A form's thank-you screen showing the right rep's calendar with open times](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: In Claritia, the thank-you screen opens the right person's calendar as soon as the form is sent.*
 
 - **Free:** $0 for 1 seat, 1 meeting type, 1 calendar and 250 form submissions a month, with booking inside forms and email reminders a day and an hour before.
 - **Starter:** $15 a seat a month ($12 billed yearly). Adds unlimited meeting types, 6 calendars per seat, group meetings, paid meetings with Stripe, Square or PayPal, and text reminders through your own Twilio number.
@@ -161,7 +165,7 @@ On Premium, you can sign a Business Associate Agreement (BAA) for HIPAA complian
 
 ## Get started
 
-If you want a booking tool you can use for free, with your questions and your calendar on one page, Claritia's free plan has no time limit. Build a form, connect Google Calendar or Outlook and share the link.
+Claritia's free plan puts your questions and your calendar on one page, and it has no time limit. Build a form, connect Google Calendar or Outlook and share the link.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to book your first client from a form today, with no card needed.
 

@@ -8,11 +8,11 @@ date: 2026-11-19
 
 A sales team loses meetings in the gaps. A lead fills in the demo form and waits for a reply. Someone has to check whose turn it is, send the invite, remind the lead the day before and chase them when they don't show. Each step is small, and each one slips on a busy day.
 
-Automated scheduling software closes those gaps. The lead books on the spot, the right rep gets the meeting, and reminders and follow-ups go out without anyone pressing send. The tools differ in how much of that chain they run, and in what they charge for a team.
+Automated scheduling software closes those gaps. The lead books on the spot, the right rep gets the meeting, and reminders and follow-ups go out without anyone pressing send. Tools differ in how much of that chain they run and what they charge a team.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to book leads from your form and send reminders a day and an hour before each meeting, with follow-ups that run on their own.
 
-In this post, we compare 8 automated scheduling tools for sales and client-facing teams on booking, reminders, round robin, routing and follow-ups.
+Below, we compare 8 automated scheduling tools for sales and client-facing teams.
 
 ## Main points
 
@@ -79,6 +79,10 @@ Its workflows send the confirmation with the invite, then reminders a day and an
 - **Round robin on Pro:** With weights and priority, daily and weekly limits, and away days.
 - **Routing on Pro:** Route by any answer to a meeting and a person, with a log of why. See [Claritia Routing](/products/routing).
 - **Owner first on Business:** Known leads book with their owner in your CRM.
+
+![What runs after a booking in Claritia: a confirmation with the invite, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: After a booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
 
 ### Pros
 
@@ -244,7 +248,7 @@ It supports round robin and group meeting links, logs booked meetings on contact
 
 ### Pros
 
-- **No setup for logging:** The meeting is in the CRM already.
+- **No setup for logging:** The meeting is already in the CRM.
 - **One place for the pipeline:** Meetings, contacts and sequences together.
 
 ### Cons
@@ -358,7 +362,7 @@ Most tools here do. Claritia sends bookings to HubSpot and many other CRMs on St
 
 ## Get started
 
-Set up the chain once: a form that books, a fair split across reps, and reminders that send themselves.
+Set up the chain once. After that, the form books the meeting and the reminders send themselves.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your demo form, turn on reminders and book your first meeting today.
 

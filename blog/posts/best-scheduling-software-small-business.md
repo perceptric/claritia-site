@@ -12,7 +12,7 @@ The biggest difference between these tools is how they charge. Most charge per p
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to let clients fill in your form and book a time inside it, and pay only for teammates people can book.
 
-In this post, we compare 8 scheduling tools for small business on free plans, how each one charges, reminders and client forms.
+Below, we compare 8 scheduling tools for small business on free plans, how each one charges, reminders and client forms.
 
 ## Main points
 
@@ -64,7 +64,7 @@ Most tools here handle a basic booking page. These five checks show which one fi
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-A client fills in your form and books a time inside it, so you get their details and the meeting in one step. It suits small teams that win clients through a website and want the form to book the meeting.
+A client fills in your form and books a time inside it, so you get their details and the meeting in one step.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -77,6 +77,10 @@ A client fills in your form and books a time inside it, so you get their details
 - **Routing by answer:** On Pro, answers send each booking to the right person.
 - **Paid meetings:** Starter adds paid meetings with Stripe or PayPal.
 - **Team booking pages:** Starter adds booking pages for each person and the team.
+
+![What Claritia sends after a booking: a confirmation, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: After a booking, Claritia sends the confirmation and invite, then a reminder a day before and an hour before.*
 
 ### Pros
 
@@ -133,7 +137,7 @@ Owners can take deposits or full payments through Stripe, Square, or PayPal, sel
 
 [Setmore](https://www.setmore.com/) is an online appointment scheduling app for service businesses and teams that want customers to book and pay without back-and-forth calls. Each business gets a branded booking page with its services, real-time availability and reviews, which it can share on its website, Facebook, Instagram or a QR code.
 
-Setmore books one-on-one appointments and group classes, sends email and text reminders, adds Zoom or Google Meet links, syncs with Google Calendar and takes card payments. Its free plan covers up to four users with unlimited appointments, and it has phone apps for iOS and Android. It suits shops and studios with a few staff and a small budget.
+Setmore books one-on-one appointments and group classes, sends email and text reminders, adds Zoom or Google Meet links, syncs with Google Calendar and takes card payments. Its free plan covers up to four users with unlimited appointments, and it has phone apps for iOS and Android. That works for a shop or studio with a few staff and a small budget.
 
 [![Setmore homepage](/assets/blog/tools/setmore.webp)](https://www.setmore.com/)
 
@@ -167,7 +171,7 @@ Paid plans are charged per user.
 
 It offers personal booking pages for one person's availability and shared booking pages where teams define services, staff, and business hours. Bookings works with Outlook calendars, creates a Microsoft Teams link for online appointments, sends email and text reminders, and stores its data in Exchange Online.
 
-If your business already pays for Microsoft 365, you may already have it, since it comes with Business Basic, Business Standard, Business Premium and Teams Essentials, among other plans. It suits offices that already run on Outlook and Teams.
+If your business already pays for Microsoft 365, you may already have it, since it comes with Business Basic, Business Standard, Business Premium and Teams Essentials, among other plans. It fits best in offices that already run on Outlook and Teams.
 
 [![Microsoft Bookings homepage](/assets/blog/tools/microsoft-bookings.webp)](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app)
 
@@ -228,7 +232,7 @@ Newer tools include an AI assistant that finds times over email and a notetaker 
 
 [Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits.
 
-Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It also links to Bigin, and its per-user prices are among the lowest here, so it suits small teams already using Zoho CRM or Bigin.
+Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. It also links to Bigin, and its per-user prices are among the lowest here. Small teams already on Zoho CRM or Bigin get the most from it.
 
 [![Zoho Bookings homepage](/assets/blog/tools/zoho-bookings.webp)](https://www.zoho.com/bookings/)
 
@@ -348,6 +352,10 @@ Email reminders cover most bookings. Text reminders help with walk-in style busi
 ### How do you stop double bookings?
 
 Connect every calendar your team uses, so the tool hides times that are already taken. Claritia adds buffers and daily caps on the free plan to keep each day manageable.
+
+![Claritia availability settings with Google Calendar connected, working hours, buffer and notice](/assets/blog/ui/ui-meetings-availability.webp)
+
+*Caption: In Claritia you connect your calendar and set working hours, a buffer and notice.*
 
 ## Get started
 
