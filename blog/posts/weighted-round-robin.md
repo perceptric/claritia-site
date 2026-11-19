@@ -38,7 +38,7 @@ When they aren't, you give the bigger server a bigger weight. Say server A has t
 
 Many load balancers, NGINX among them, use round robin by default and let you set a weight for each server. Some also mix the turns up, so the bigger server doesn't get all of its requests in a row.
 
-Weighted round robin doesn't look at how busy each server is right now. If that matters, load balancers offer other methods, such as least connections, which sends each request to the server with the fewest open connections.
+Weighted round robin doesn't look at how busy each server is right now. If that matters, load balancers have other methods, such as least connections, which sends each request to the server with the fewest open connections.
 
 ### Weighted round robin for sales teams
 
@@ -85,6 +85,10 @@ Maya has weight 2, and Lena and Sam have weight 1 each. The total is 4. If the t
 
 Now add a daily cap of 6 meetings for each person. On a busy Monday, Maya reaches 6 by noon. She drops out for the rest of the day, and Lena and Sam take the afternoon. On Tuesday, Maya is furthest behind her share, so she gets the first few leads.
 
+![A Claritia team set up for weighted round robin: Maya at weight two, the others at weight one, one rep away until Monday, and daily and weekly caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
+
+*Caption: A similar setup in Claritia: Maya has weight two, the others have weight one, and caps limit meetings per day and per week.*
+
 ### Example 3: catching up after a busy slot
 
 Rep A has weight 2 and rep B has weight 1. After 6 leads, A should have 4 and B should have 2. But A was in meetings for two of the slots that leads picked, so B took them. Now A has 2 and B has 4.
@@ -125,7 +129,13 @@ It builds forms from a sentence or one of 840 templates, opens the right person'
 
 Round robin with weights and priority is on Pro. You set a weight for each person, people who are away or at their daily or weekly cap are skipped, and the most due person gets the next lead.
 
-Forms can send each lead to the right team pool first, and each meeting shows the rule that matched and why that person was picked. Claritia is a newer tool, with a smaller marketplace and no Zapier or Make apps listed yet. See [Claritia routing](/products/routing).
+Forms can send each lead to the right team pool first, and each meeting shows the rule that matched and why that person was picked.
+
+![Claritia's routing log for one lead, showing the rule that picked Lena Koch, her open time and her meetings so far this week](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
+
+*Caption: Claritia's routing log shows why Lena got this lead, including how many meetings she already has this week.*
+
+Claritia is a newer tool, with a smaller marketplace and no Zapier or Make apps listed yet. See [Claritia routing](/products/routing).
 
 ### Cal.com
 

@@ -8,11 +8,11 @@ date: 2026-11-18
 
 Every new lead raises the same question: who should talk to this person? On a small team, someone reads the inbox and passes leads on by hand. That works until the team grows, a rep goes on holiday, or two people answer the same lead while a third lead waits all weekend.
 
-Lead routing answers that question with rules instead of guesswork. Each lead goes to one clear owner, fast, and you can see why it went there. Get it right and your reps spend their time talking to buyers instead of sorting them.
+Lead routing answers it with rules. Each lead goes to one clear owner, fast, and you can see why it went there. Get it right and your reps spend their time talking to buyers, not sorting them.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to route each form lead to the right rep by its answers, with the meeting booked on the same page.
 
-In this post, you'll learn what lead routing is, how it works, the main types, and how to choose a tool for it.
+Below: how routing works, the main types, a few examples, and the tools that do it.
 
 ## Main points
 
@@ -26,9 +26,9 @@ In this post, you'll learn what lead routing is, how it works, the main types, a
 
 Lead routing is the process of assigning each new lead to the right sales rep or team, based on rules you set.
 
-The rules can look at what the lead told you, such as company size or country, or at what your CRM already knows, such as who owns the account. Done well, it gets every lead to one owner in seconds, so no lead is missed or answered twice.
+The rules can look at what the lead told you, such as company size or country, or at what your CRM already knows, such as who owns the account. Every lead gets one owner in seconds, so none is missed or answered twice.
 
-You'll also hear it called lead assignment or lead distribution. Most people use the three terms to mean the same thing.
+You'll also hear it called lead assignment or lead distribution. Most people use the three terms for the same thing.
 
 ## How lead routing works
 
@@ -42,15 +42,19 @@ Most routing follows the same five steps, whether a spreadsheet or software does
 
 A good router also keeps a record of each choice. When a rep asks "why did I get this one?", you can answer in a click.
 
+![Claritia routing log for one lead: country is Germany, rule 2 picked Lena Koch, with her open time and meetings this week](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
+
+*Caption: Claritia's log shows which rule matched a lead and why Lena got the meeting.*
+
 ## Types of lead routing
 
 ### Round robin
 
-Round robin hands leads to each rep in turn, so everyone gets a fair share. Weighted round robin gives some reps more than others, for example a senior rep who can take twice as many. It's the simplest place to start. Read more in our guide to [round robin scheduling software](/blog/best-round-robin-scheduling-software).
+Round robin hands leads to each rep in turn, so everyone gets a fair share. Weighted round robin gives some reps more than others, for example a senior rep who can take twice as many. Start here if you're new to routing. Read more in our guide to [round robin scheduling software](/blog/best-round-robin-scheduling-software).
 
 ### Territory routing
 
-Territory routing sends leads by place or segment. One rep covers Germany, another covers the US West Coast, and a third covers companies above a certain size. It works when your reps need local knowledge, a time zone or a language.
+Territory routing sends leads by place or segment. One rep covers Germany, another covers the US West Coast, and a third covers companies above a certain size. Use it when reps need local knowledge, a time zone or a language.
 
 ### Owner-based routing
 
@@ -58,11 +62,15 @@ Owner-based routing, also called owner first, sends a lead to the rep who alread
 
 ### Account matching
 
-Account matching, also called lead-to-account matching, links a new lead to a company that's already in your CRM. A lead from jane@acme.com is matched to the Acme account, then sent to the Acme account owner. It matters most in B2B sales, where several people from one company may reach out at different times.
+Account matching, also called lead-to-account matching, links a new lead to a company that's already in your CRM. A lead from jane@acme.com is matched to the Acme account, then sent to the Acme account owner. This matters most in B2B sales, where several people from one company may reach out weeks apart.
 
 ### Rules by answer
 
 Many teams also route on the answers in the form. A lead who picks "Enterprise" sees the enterprise demo. A lead with a small budget gets a guide by email instead of a sales call. This is often the first rule in the chain, before round robin picks the person.
+
+![Claritia routing rules by team size, country and budget, with a round robin fallback and every lead added to HubSpot](/assets/blog/ui/ui-routing-routing.webp)
+
+*Caption: Claritia's routing rules send each lead to a meeting or a rep based on its answers.*
 
 ## Examples of lead routing
 
@@ -93,21 +101,25 @@ Lead routing tools fall into two groups. Some live inside Salesforce and handle 
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
-It drafts follow-up emails in your brand's voice for you to approve, and it routes from the form itself. Rules read each answer and book the right meeting with the right person, then the team takes turns fairly with weights, caps and away days.
+It routes from the form itself. Rules read each answer and book the right meeting with the right person, then the team takes turns with weights, caps and away days. It also drafts follow-up emails in your brand's voice for you to approve.
 
 Every booking keeps a note of which rule matched and why that person was picked. On Business, a lead who's already in HubSpot or Salesforce books with their owner first. Routing by answer starts on Pro at $39 a seat a month ($31 billed yearly). See how [Claritia routing](/products/routing) works.
 
+![Claritia owner first routing: a lead owned by Maya in HubSpot books with Maya, and the sales team takes turns if she is away](/assets/blog/ui/ui-routing-owner-first.webp)
+
+*Caption: With owner first, a lead Maya owns in HubSpot books with Maya, and the team takes turns when she's away.*
+
 ### LeanData
 
-[LeanData](https://www.leandata.com/) is a revenue orchestration platform for B2B marketing, sales, operations, and customer success teams that want every lead and account handled by the right person. It matches leads to accounts and opportunities, routes them by territory rules, round robin, and service levels, and keeps an audit trail of each decision, with deep Salesforce support.
+[LeanData](https://www.leandata.com/) is a revenue orchestration platform for B2B marketing, sales, operations and customer success teams that want every lead and account handled by the right person. It matches leads to accounts and opportunities, routes them by territory rules, round robin and service levels, and keeps an audit trail of each decision. Its Salesforce support goes deep.
 
 Its BookIt tool lets prospects schedule with the assigned rep, and Journeys tracks buying groups across a deal. Its Standard edition covers round robin, territory and account-based routing, plus lead-to-account matching, and higher editions add contacts, accounts and any Salesforce object. Pricing is by quote, and onboarding is billed apart.
 
 ### Distribution Engine
 
-[Distribution Engine](https://www.distributionengine.com/) is a lead routing and case assignment app built inside Salesforce for revenue operations teams and Salesforce admins who want every record to reach the right rep fast, without writing code.
+[Distribution Engine](https://www.distributionengine.com/) is a lead routing and case assignment app built inside Salesforce. It's for revenue operations teams and Salesforce admins who want every record to reach the right rep fast, without writing code.
 
 It assigns leads, cases and other records by round robin, territory, skills, workload, availability and account ownership, matches inbound leads to existing accounts, and reassigns work that misses its response target.
 
@@ -141,7 +153,7 @@ No. You can route from form answers alone, which Claritia does on Pro. A CRM hel
 
 ### How fast should a lead be routed?
 
-As fast as you can make it. Software routes a lead in seconds, and the best setups let the lead book a meeting with the chosen rep before they leave the page.
+In seconds, if you can. Software can do that, and the best setups let the lead book a meeting with the chosen rep before they leave the page.
 
 ## Get started
 

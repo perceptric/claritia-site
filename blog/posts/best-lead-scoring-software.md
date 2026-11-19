@@ -12,11 +12,11 @@ Lead scoring software ranks those leads for you. It adds points for good fit and
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to qualify each lead inside the form, route it by its answers and book the meeting before the lead leaves.
 
-In this post, we compare 7 lead scoring tools for small B2B teams. You'll see what kind of score each one builds, which plan includes it and what it costs.
+Below, we compare 7 lead scoring tools for small B2B teams: the kind of score each one builds, the plan that includes it and what it costs.
 
 ## Main points
 
-- Most CRMs keep lead scoring off their free and entry plans. Check the plan that includes it, not the starting price.
+- Most CRMs keep lead scoring off their free and entry plans.
 - Rule-based scoring lets you set the points yourself. Predictive or AI scoring learns from past deals and needs enough history.
 - [HubSpot](https://www.hubspot.com/) scores on Professional and up, [Salesforce Sales Cloud](https://www.salesforce.com/sales/) includes its predictive scoring on Advanced and Max, and [Zoho CRM](https://www.zoho.com/crm/) has scoring rules from Standard at $14 a user a month.
 - Top picks: [Claritia](/), [HubSpot](https://www.hubspot.com/), [Salesforce Sales Cloud](https://www.salesforce.com/sales/), [Zoho CRM](https://www.zoho.com/crm/), [Freshsales](https://www.freshworks.com/crm/sales/), [ActiveCampaign](https://www.activecampaign.com/) and [Pipedrive](https://www.pipedrive.com/).
@@ -26,7 +26,7 @@ In this post, we compare 7 lead scoring tools for small B2B teams. You'll see wh
 
 Lead scoring software gives each lead a number based on how well they fit your ideal customer and how interested they seem. It updates the score as the lead's details change or as they open emails, visit pages and fill in forms. New to the idea? Start with our guide to [what lead scoring is](/blog/what-is-lead-scoring).
 
-Typical features include:
+Most of them have:
 
 - Fit rules based on details like company size, job title or country.
 - Interest rules based on actions like a demo request or a pricing page visit.
@@ -68,7 +68,7 @@ Prices checked November 2026.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-For scoring, it keeps segments and lead scoring next to your contacts, and its AI qualify step only picks an outcome you set. Form calculations can add up points as a lead answers, on every plan, and routing by answer sends each lead to the right meeting and person on Pro.
+For scoring, it keeps segments and lead scoring next to your contacts, and a form can add up points while the lead answers. The answers then decide which meeting and which rep each lead gets.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -81,6 +81,10 @@ For scoring, it keeps segments and lead scoring next to your contacts, and its A
 - **AI qualify:** It only picks an outcome you set, so leads never land in a bucket you didn't define.
 - **Routing:** Route by any answer to a meeting and a person on Pro, with a log of every decision.
 - **CRM sync:** Send leads to HubSpot on Starter, or to Pipedrive, Zoho CRM, Close and others. Salesforce is on Business.
+
+![Claritia routing rules that book large teams into an enterprise demo, send small budgets a starter guide and give everyone else to the sales round robin](/assets/blog/ui/ui-routing-routing.webp)
+
+*Caption: Claritia's routing rules turn form answers into an outcome: an enterprise demo, a rep by country, a starter guide or the sales round robin.*
 
 ### Pros
 

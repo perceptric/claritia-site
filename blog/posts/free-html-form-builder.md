@@ -12,7 +12,7 @@ A free HTML form builder does that work for you. You build the form in a visual 
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form, paste one script tag into any site and let each lead book a meeting on the spot.
 
-In this post, we compare 7 free tools that give you a form for any HTML site. You'll see what each free plan allows, and how to embed a form step by step.
+Below, we compare 7 free tools that give you a form for any HTML site, with what each free plan allows and how to embed a form step by step.
 
 ## Main points
 
@@ -30,7 +30,7 @@ You build the form in the tool, then copy an embed code, usually a script tag or
 
 It works on hand-coded sites and on site builders like WordPress, Webflow, Framer, Squarespace and Shopify, since all of them accept a piece of HTML.
 
-Typical features include:
+Most of them have:
 
 - An embed code to paste into your page, plus a share link.
 - Display options such as inline, popup or full page.
@@ -69,7 +69,7 @@ Prices checked November 2026.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Tia, the AI form builder, drafts the form, and you paste one script tag into your page to show it inline, as a popup or as a side tab. The last page can be a calendar, so each lead books a meeting before they leave.
+Tia, the AI form builder, drafts the form, and you paste one script tag into your page to show it inline, as a popup or as a side tab. The last page can be a calendar, so the lead books a time right there.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -82,6 +82,10 @@ Tia, the AI form builder, drafts the form, and you paste one script tag into you
 - **Spam protection:** Cloudflare Turnstile, a hidden trap and disposable email blocking.
 - **Logic for free:** Multi-page forms, show-if logic and calculations on every plan.
 - **Booking inside the form:** People pick a time with the right person on the last page.
+
+![Claritia's share panel with a form link, the one-line embed code and display options](/assets/blog/ui/ui-forms-share.webp)
+
+*Caption: Claritia's share panel gives you the form link, the embed code and a choice of in page, popup, slide in, corner button or side tab.*
 
 ### Pros
 
@@ -142,7 +146,7 @@ Yearly billing gives two months off.
 
 [Fillout](https://www.fillout.com/) is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures.
 
-It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. It gives you 1,000 responses a month for free, with embedding on every plan and unlimited seats, so it suits teams who want a big free plan and a modern editor.
+It also has scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations. You get 1,000 responses a month for free, with embedding on every plan and unlimited seats. It suits teams who want a big free plan and a modern editor.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -271,7 +275,7 @@ Forms can be shared by email, link, or embed. Responses appear as live charts an
 
 [Formspree](https://formspree.io/) is a form backend for developers, designers and agencies who build their own HTML or JavaScript forms and do not want to run a server for them. A form posts to a Formspree endpoint, which saves each submission to an inbox, filters spam, checks fields on the server and accepts file uploads.
 
-It sends notification emails and autoresponses, routes submissions by rules, connects to tools such as Slack, Google Sheets and Airtable, and offers an API and React library. You build the form with your own markup and styles, then point its action at your Formspree address, which makes it the right pick for developers and anyone with a hand-coded site.
+It sends notification emails and autoresponses, routes submissions by rules, connects to tools such as Slack, Google Sheets and Airtable, and has an API and React library. You build the form with your own markup and styles, then point its action at your Formspree address. That makes it the right pick for developers and anyone with a hand-coded site.
 
 [![Formspree homepage](/assets/blog/tools/formspree.webp)](https://formspree.io/)
 
@@ -336,7 +340,7 @@ Yes. A form builder or a form backend acts as your backend. With Formspree, you 
 
 ### Which free form builder has no submission limit?
 
-Tally offers unlimited forms and submissions on its free plan, within fair use. Fillout's free plan is next, with 1,000 responses a month.
+Tally has unlimited forms and submissions on its free plan, within fair use. Fillout's free plan is next, with 1,000 responses a month.
 
 ### Do embedded forms work on WordPress and Webflow?
 

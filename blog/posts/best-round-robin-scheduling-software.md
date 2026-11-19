@@ -8,11 +8,11 @@ date: 2026-11-04
 
 Round robin scheduling shares new meetings across your team. Without it, one person gets every call while another waits for work, and a lead waits longer than they should for a time.
 
-A good tool hands each booking to the right free teammate. It lets you give some people more meetings than others, drops people who are away, and comes on a plan you can afford. That last part matters, since round robin often sits one or two plans above the cheapest one.
+A good tool hands each booking to the right free teammate. It lets you give some people more meetings than others and drops people who are away. It also has to come on a plan you can afford, which is harder than it sounds.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that books the right teammate, then add round robin with weights and away days on Pro.
 
-In this post, we compare 9 round robin scheduling tools for small teams who book demos or intro calls. You'll see how each one picks the next person and which plan you need for it.
+Below are 9 round robin tools for small teams who book demos or intro calls, with how each picks the next person and the plan you need for it.
 
 ## Main points
 
@@ -34,6 +34,10 @@ Typical features include:
 - Team booking links that show everyone's open times.
 - Forms that send each lead to the right group first.
 - Calendar sync, so only free times show.
+
+![Claritia sales team load this week as bars for each rep, with one rep away](/assets/blog/ui/ui-routing-sales-team.webp)
+
+*Caption: Claritia shows how many meetings each rep has this week, so you can see the load stay even.*
 
 ## How to choose round robin scheduling software
 
@@ -61,7 +65,7 @@ Most tools list round robin somewhere. These five checks show which one fits you
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
@@ -79,6 +83,10 @@ The visitor picks a time inside the form, and the meeting goes to the next right
 - **Limits for each person:** Daily and weekly caps, so one person never takes every call in a busy week.
 - **Routing by answer:** Route by any answer to a meeting and a person, with a routing log that shows where each lead went.
 - **Owner first and double round robin:** On Business.
+
+![Claritia team settings with a weight for each rep, one rep away until Monday, and daily and weekly caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
+
+*Caption: In Claritia, Maya gets twice the weight of her teammates, one rep is away until Monday, and caps limit meetings per day and week.*
 
 ### Pros
 
@@ -236,7 +244,7 @@ Its scheduling engine handles one-on-one, multi-host, and group meetings, create
 
 Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier.
 
-Its free plan stays free and gives you unlimited links. Round robin and collective events start on Pro, which also adds follow-up emails and SMS reminders, so it suits small teams who want round robin at the lowest price here.
+Its free plan doesn't expire and gives you unlimited links. Round robin and collective events start on Pro, which also adds follow-up emails and SMS reminders, so it suits small teams who want round robin at the lowest price here.
 
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
@@ -299,7 +307,7 @@ Team scheduling pages, round robin included, need a paid Sales Hub or Service Hu
 
 ## 8. Zoho Bookings
 
-[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits.
+[Zoho Bookings](https://www.zoho.com/bookings/) is appointment scheduling software for businesses of any size that want meetings to land on their calendar without emails back and forth. It offers one-on-one, group, collective, and resource-based event types, with workspaces for branches or departments, staff roles, and booking limits.
 
 Routing forms qualify leads before they book, workflows send email and SMS and update records, and it connects with Zoho CRM, Zoho Desk, and other Zoho apps. Its free plan covers one user with reminders and two-way calendar sync. Round robin is on its feature list, though the pricing page doesn't show which plan includes it.
 
@@ -314,7 +322,7 @@ Routing forms qualify leads before they book, workflows send email and SMS and u
 
 ### Pros
 
-- **Low prices:** Low per-user prices.
+- **Low prices:** Basic is $6 a user a month billed yearly.
 - **Good fit for Zoho users:** Premium comes with Zoho One.
 
 ### Cons
@@ -345,7 +353,7 @@ It sends confirmations, reminders, and follow-ups by email and SMS, triggers web
 
 ### Pros
 
-- **Simple pages:** Booking pages kept plain and simple.
+- **Plain pages:** Booking pages with nothing extra to learn.
 - **Free trial:** New users get 14 days with no credit card.
 
 ### Cons

@@ -241,7 +241,7 @@ For reminders and follow-ups, here's what each plan includes:
 
 *Caption: Claritia sends the confirmation with the invite, then reminders a day and an hour before the meeting.*
 
-Claritia has a smaller marketplace, and its Zapier and Make apps aren't listed yet. SMS reminders on Pro and Business are still coming soon.
+Claritia has a smaller marketplace, and its Zapier and Make apps aren't listed yet. Built-in SMS reminders on Pro and Business are still coming soon. For now, texts go through your own Twilio number on Starter and up.
 
 ### HubSpot Meetings
 

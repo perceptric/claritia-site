@@ -12,7 +12,7 @@ HubSpot can route leads on its own, but the tools are spread across workflows, m
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to route each HubSpot form lead by its answers and book the meeting with the right rep before the lead leaves the page.
 
-In this post, you'll set up lead routing in HubSpot step by step, see which plan each step needs, and fix the most common problems.
+Below, you'll set up lead routing in HubSpot step by step, see which plan each step needs and fix the most common problems.
 
 ## Main points
 
@@ -125,6 +125,10 @@ On Starter, each fill creates or updates a HubSpot contact matched by email, and
 - **Pro, $39 a seat a month ($31 yearly):** [Routing](/products/routing) by any answer, round robin with weights, team pools and a routing log.
 - **Business, $79 a seat a month ($63 yearly):** Known HubSpot contacts book with their owner first, and new leads go to the team's round robin.
 
+![Claritia's owner first setting: a lead owned by Maya in HubSpot is booked with Maya, and the team takes turns if she is away](/assets/blog/ui/ui-routing-owner-first.webp)
+
+*Caption: With owner first, a lead whose HubSpot owner is Maya books with Maya, and the sales team takes turns when she is away.*
+
 Claritia is a newer tool, so its app marketplace is smaller than HubSpot's, and its Zapier and Make apps aren't listed yet.
 
 ### Chili Piper
@@ -139,7 +143,7 @@ It works with HubSpot and Salesforce, and its Growth plan adds form routing, ter
 
 [Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings.
 
-It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps.
+It sends email and text reminders, has routing forms that send website leads to the right teammate, and collects payments. Newer additions include an AI assistant that finds times over email and a notetaker that writes meeting recaps.
 
 Its Teams plan adds routing forms and round robin at $16 a seat a month billed yearly, so a lead answers a few questions and lands on the right booking page. It suits teams who want light routing in front of a booking link.
 

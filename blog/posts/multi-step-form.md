@@ -12,7 +12,7 @@ A multi-step form asks the same questions in small groups, one page at a time. P
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a multi-step form with a progress bar and page skips on the free plan, and end it on a booked meeting.
 
-In this post, you'll learn what a multi-step form is, when to use one, how to split your questions, and six example forms you can try.
+Below: when to use one, how to split your questions, and six example forms you can try.
 
 ## Main points
 
@@ -57,7 +57,7 @@ For a newsletter signup or a three-field contact form, a single page is still be
 
 ## Progress bars
 
-A progress bar shows people where they are and how much is left, so they never have to wonder how long the form is.
+A progress bar shows people where they are and how much is left.
 
 Keep it honest. If logic skips pages, the bar should jump ahead too, not stall. For a very long form, a step count like "Step 2 of 5" can be clearer than a bar. In Claritia, multi-page forms come with a progress bar on every plan, Free included.
 
@@ -81,6 +81,10 @@ Each example below is a real template you can fill in now. See all of them on th
 
 [Demo request](/templates/saas-demo-request) has 8 questions over 2 pages. The first page asks for name, work email, company and job title. The second, "A bit about your team", asks about team size, current tools, goals and timing. It qualifies the lead and books a meeting with a rep at the end.
 
+[![The first page of Claritia's demo request template: name, work email, company and job title, with step 1 of 2 on the progress bar](/assets/blog/ui/tpl-saas-demo-request.webp)](/templates/saas-demo-request)
+
+*Caption: Step 1 of 2 in the demo request template asks only for name, work email, company and job title.*
+
 ### Discovery questionnaire
 
 [Discovery questionnaire](/templates/consulting-discovery) has 9 questions over 3 pages: where things stand today, where you want to be, and who decides. The consultant reads the answers before the first call.
@@ -92,6 +96,10 @@ Each example below is a real template you can fill in now. See all of them on th
 ### Case evaluation
 
 [Case evaluation](/templates/legal-case-evaluation) has 26 questions over 5 pages. The type of case decides the next step: a personal injury case sees injury details, a family matter sees family questions, and a work or business case sees those. It ends with a timeline, documents and a consent box.
+
+[![The first page of Claritia's case evaluation template: contact details and a type of case menu](/assets/blog/ui/tpl-legal-case-evaluation.webp)](/templates/legal-case-evaluation)
+
+*Caption: The case evaluation template asks the type of case on the first page, and that answer picks the next page.*
 
 ### Tax prep intake
 
@@ -113,7 +121,7 @@ Each example below is a real template you can fill in now. See all of them on th
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
@@ -125,7 +133,7 @@ Partial answers and drop-off by question are on Business at $79 a seat a month (
 
 ### Typeform
 
-[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies.
+[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys and quizzes people finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies.
 
 Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment.
 
@@ -189,7 +197,7 @@ Claritia, Fillout and Tally all have multi-page forms on their free plans. Clari
 
 ## Get started
 
-Take your longest form and split it into short steps, with the easy questions first and skips for pages that don't apply. Then watch how many more people reach the end.
+Take your longest form and split it into short steps, with the easy questions first and skips for pages that don't apply. Then compare how many people reach the end.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a multi-step form from a sentence or a template and let it end in a booked meeting.
 

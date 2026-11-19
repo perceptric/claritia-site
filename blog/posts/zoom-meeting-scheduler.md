@@ -67,6 +67,10 @@ A booking tool makes sense if you don't want another Zoom add-on, or if you need
 4. Set working hours, buffers, notice and daily caps.
 5. Share the booking page, or put it in an email.
 
+![Claritia's availability settings with Google Calendar connected, working hours by day, a buffer and notice](/assets/blog/ui/ui-meetings-availability.webp)
+
+*Caption: In Claritia's availability settings, you connect your calendar and set working hours, buffers and notice.*
+
 From then on, each booking makes a new Zoom meeting on the host's account. The join link goes on the calendar event and on the guest's invite. If a step ever has to run again, Claritia reuses the Zoom meeting it already made, so a guest never gets two links. See the [Zoom integration](/integrations/zoom) for the details.
 
 ## Step 4: Put the booking inside a form
@@ -76,6 +80,10 @@ When your Zoom calls come from your website, a plain link loses you the chance t
 1. In Claritia, build a form from a sentence or start from one of 840 [templates](/templates), such as a demo request or a discovery call.
 2. Add booking to the last page and pick the meeting type you set up with Zoom.
 3. Embed the form on your site with one script tag, or share it by link.
+
+![A Claritia form that asks about team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: A Claritia form asks its questions first, then ends on a time picker on the same page.*
 
 The visitor answers your questions, then picks a time on the same page, with their name and email already filled in. The Zoom link is made as soon as they book. On Pro, round robin shares the calls across your team, and the Zoom meeting is made on the account of the person who gets the lead.
 
@@ -119,9 +127,9 @@ Zoom's FAQ says the free tier has one booking page, one calendar and automatic c
 
 ### Calendly
 
-[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments.
+[Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings. It sends email and text reminders, has routing forms that send website leads to the right teammate, and collects payments.
 
-Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Zoom links work on every plan, and on Teams an admin can connect Zoom for the whole team. The free plan has one event type and no automated reminders.
+Newer additions include an AI assistant that finds times over email and a notetaker that writes meeting recaps. Zoom links work on every plan, and on Teams an admin can connect Zoom for the whole team. The free plan has one event type and no automated reminders.
 
 ### Cal.com
 
@@ -131,7 +139,7 @@ Teams can use round robin, collective events where every host must be free, rout
 
 ### YouCanBookMe
 
-[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe.
+[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and has booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe.
 
 It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. It connects to Zoom on its free plan, which allows 30 bookings a month on one booking page.
 
@@ -157,7 +165,7 @@ Yes, in Claritia. Free Zoom accounts work there, and Zoom's own limits still app
 
 ### Can a team share one Zoom booking link?
 
-Yes. Zoom Scheduler and Calendly offer round robin on paid plans. In Claritia, round robin is on Pro, and each Zoom meeting is made on the account of the person who gets the lead.
+Yes. Zoom Scheduler and Calendly have round robin on paid plans. In Claritia, round robin is on Pro, and each Zoom meeting is made on the account of the person who gets the lead.
 
 ### Can people book a Zoom call from a form?
 

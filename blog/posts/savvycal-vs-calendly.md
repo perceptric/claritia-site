@@ -8,11 +8,11 @@ date: 2026-11-19
 
 SavvyCal and Calendly do the same basic job. You share a link, people pick a time, and the meeting lands on your calendar with a video link. Both handle team scheduling, both connect to HubSpot, and both start at the same price for one person.
 
-The differences show up in two places. SavvyCal puts a lot of care into what the person booking sees, and it gives round robin on its first paid plan. Calendly has a free plan, routing forms, text reminders and a long list of extras for sales teams. This guide walks through where each one wins.
+The differences show up in two places. SavvyCal puts a lot of care into what the person booking sees, and it gives round robin on its first paid plan. Calendly has a free plan, routing forms, text reminders and a long list of extras for sales teams.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to let form answers pick the meeting and the person, with booking inside forms on the free plan.
 
-In this post, we compare SavvyCal and Calendly on free plans, price, the booking page, team scheduling, routing, reminders, payments and integrations, then give a clear pick for each kind of user.
+Below, we compare SavvyCal and Calendly on free plans, price, the booking page, team scheduling, routing, reminders, payments and integrations, then pick one for each kind of user.
 
 ## Main points
 
@@ -51,7 +51,7 @@ Hosts set buffers, limits, preferred times, and time blocks, put links on their 
 
 [Calendly](https://calendly.com/) is scheduling software for professionals and teams who want people to book meetings without trading emails. You connect your calendars, set hours, buffers, and daily limits, and share booking links for one-on-one, multi-host, or group meetings.
 
-It sends email and text reminders, offers routing forms that send website leads to the right teammate, and collects payments. Newer tools include an AI assistant that finds times over email and a notetaker that writes meeting recaps. The notetaker and the email assistant, called Callie, come with the Standard Plus and Teams Plus plans.
+It sends email and text reminders, has routing forms that send website leads to the right teammate, and collects payments. Newer additions include an AI assistant that finds times over email and a notetaker that writes meeting recaps. The notetaker and the email assistant, called Callie, come with the Standard Plus and Teams Plus plans.
 
 [![Calendly homepage](/assets/blog/tools/calendly.webp)](https://calendly.com/)
 
@@ -163,12 +163,16 @@ It builds forms from a sentence or one of 840 templates, opens the right person'
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
-What it offers next to SavvyCal and Calendly:
+What it adds next to SavvyCal and Calendly:
 
 - **Booking inside forms:** On the free plan, with Google Calendar and Outlook.
 - **Routing by any answer:** On Pro, with a routing log that shows why each person was picked. See [Claritia Routing](/products/routing).
 - **Round robin:** Weights, priority, daily and weekly caps and away days on Pro.
 - **Keep Calendly running:** On Starter, [Calendly bookings](/integrations/calendly) come into Claritia while you move.
+
+![Claritia's round robin team with weights, one rep away until Monday, and daily and weekly caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
+
+*Caption: A Claritia round robin team: Maya has a weight of two, one rep is away until Monday, and caps limit meetings per day and per week.*
 
 Starter is $15 a seat a month ($12 billed yearly), and Pro is $39 ($31 billed yearly). See [pricing](/pricing) for every plan.
 
@@ -194,7 +198,7 @@ No. SavvyCal says it doesn't offer routing forms today. Calendly has them on Tea
 
 ### Does SavvyCal have a free trial?
 
-No self-serve trial. Every SavvyCal plan has a 30-day money-back guarantee instead, and teams can email SavvyCal to try it first. Calendly offers a 14-day free trial.
+No self-serve trial. Every SavvyCal plan has a 30-day money-back guarantee instead, and teams can email SavvyCal to try it first. Calendly has a 14-day free trial.
 
 ## Get started
 

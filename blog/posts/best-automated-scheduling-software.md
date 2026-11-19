@@ -92,7 +92,7 @@ Its workflows send the confirmation with the invite, then reminders a day and an
 
 ### Cons
 
-- **Email only for now:** SMS reminders on Pro and Business are coming soon.
+- **Built-in SMS still coming:** Text reminders go through your own Twilio number on Starter and up, only to people who said yes. Built-in SMS reminders on Pro and Business are coming soon.
 - **Newer tool:** Its marketplace is smaller, and Zapier and Make apps aren't listed yet.
 - **No native mobile app:** Reps work in the browser.
 

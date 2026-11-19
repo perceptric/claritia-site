@@ -6,13 +6,13 @@ kind: meeting
 date: 2026-11-19
 ---
 
-Setting up a meeting with one other person should take a minute. Instead it often takes five emails. You offer times, they offer others, and by the time you agree, one of the slots is gone. With a group, the thread gets longer and someone always gets left out.
+Setting up a meeting with one other person should take a minute. It often takes five emails. You offer times, they offer others, and by the time you agree, one of the slots is gone. With a group, the thread gets longer and someone always gets left out.
 
 A free meeting scheduler ends that thread. For one person, you send a link that shows only your open times. For a group, you send a poll and everyone marks what works. Most free plans do one of those jobs well, and only a few do both.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to share a link that books meetings on your calendar, with reminders a day and an hour before.
 
-In this post, we compare 8 free meeting schedulers on the two jobs that matter when you meet with other people: booking one-on-one calls and finding one time for a group.
+Below, we compare 8 free meeting schedulers on those two jobs: booking one-on-one calls and finding one time for a group.
 
 ## Main points
 
@@ -61,7 +61,7 @@ Prices checked November 2026.
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
@@ -77,6 +77,10 @@ Its free plan gives you one meeting type on one calendar, shown in each visitor'
 - **Time zone and language:** Times show in each visitor's own time zone and language on every plan.
 - **Reminders on free:** A confirmation with a calendar invite, then reminders a day and an hour before.
 - **Polls and groups on Starter:** Meeting polls, group meetings with a guest limit and single-use links.
+
+![A Claritia booking page calendar with open times for a 30 min Google Meet sales demo](/assets/blog/ui/ui-meetings-sales-demo.webp)
+
+*Caption: A Claritia booking page shows only your open times, here for a 30 minute sales demo on Google Meet.*
 
 ### Pros
 
@@ -354,7 +358,7 @@ Several do. Doodle and Rallly show poll times in each person's time zone, Cal.co
 
 ## Get started
 
-Pick the tool that fits how you meet: a link for one person, a poll for a group. If your meetings start on your website, put the booking at the end of a form.
+Match the tool to how you meet: a link for one person, a poll for a group. If your meetings start on your website, put the booking at the end of a form.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to connect Google Calendar or Outlook and share your first booking link today.
 

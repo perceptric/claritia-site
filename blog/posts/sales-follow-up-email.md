@@ -246,7 +246,7 @@ On Starter, you set your own wording and times, and emails can go out from your 
 
 The AI drafts follow-up emails in your brand's voice, and nothing sends until you approve it. Starter is $15 a seat a month ($12 billed yearly) and Pro is $39 ($31 billed yearly). Teammates who only build forms or read results are free.
 
-Claritia has real limits too. It's a newer tool with a smaller marketplace, its Zapier and Make apps aren't listed yet, and SMS reminders on Pro and Business are still coming soon.
+Claritia has real limits too. It's a newer tool with a smaller marketplace, its Zapier and Make apps aren't listed yet, and built-in SMS reminders on Pro and Business are still coming soon. For now, texts go through your own Twilio number on Starter and up.
 
 ## Other tools for sales follow-up emails
 

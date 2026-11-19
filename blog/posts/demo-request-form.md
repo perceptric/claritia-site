@@ -6,13 +6,13 @@ kind: form
 date: 2026-11-19
 ---
 
-Your demo request form is where buyers who are ready to talk raise their hand. Yet many demo forms still ask a dozen questions, then end on a plain "Thanks, we'll be in touch." The lead waits for an email, and meanwhile they may book a call with someone else.
+Your demo request form is where buyers who are ready to talk raise their hand. Yet many demo forms still ask a dozen questions, then end on a plain "Thanks, we'll be in touch." The lead waits for an email, and in the meantime may book a call with someone else.
 
 A good request a demo form does two jobs. It asks just enough to send the lead to the right person and prepare the call. Then it lets them book that call on the spot. Getting both right is mostly a matter of what you leave out.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a demo request form that ends on the right rep's calendar, so the lead books before they leave.
 
-In this post, we cover what to ask on a demo request form, what to skip, three example layouts you can copy, and what should happen the moment someone hits submit.
+Below: what to ask, what to skip, three layouts you can copy, and what should happen the moment someone hits submit.
 
 ## Main points
 
@@ -60,7 +60,7 @@ If you need more detail to qualify, ask it on a second page or with conditional 
 
 ## 3 demo request form examples
 
-Each example below has a line on when to use it, the fields it asks, why it works and a free template to start from. All three end on a calendar.
+Each example says when to use it, what it asks and why it works, with a free template to start from. All three end on a calendar.
 
 ### 1. The short demo form
 
@@ -78,6 +78,10 @@ Each example below has a line on when to use it, the fields it asks, why it work
 **Why it works:** Four quick fields, one open question, then the calendar. It's short enough that a busy buyer finishes it on a phone, and the open question still gives the rep something to prepare.
 
 Start from the [book a call template](/templates/general-book-a-call).
+
+[![Claritia's book a call template: name, work email, company, team size and what you'd like to cover](/assets/blog/ui/tpl-general-book-a-call.webp)](/templates/general-book-a-call)
+
+*Caption: The book a call template asks four quick fields and one open question before the calendar.*
 
 ### 2. The qualifying demo form
 
@@ -103,6 +107,10 @@ Start from the [book a call template](/templates/general-book-a-call).
 
 Start from the [demo request template](/templates/saas-demo-request).
 
+[![Page 1 of Claritia's demo request template: name, work email, company and job title](/assets/blog/ui/tpl-saas-demo-request.webp)](/templates/saas-demo-request)
+
+*Caption: Page 1 of the demo request template keeps to name, work email, company and job title.*
+
 ### 3. The enterprise demo form
 
 **When to use it:** Large accounts with security reviews, several teams and a buying group.
@@ -123,7 +131,7 @@ Start from the [enterprise demo request template](/templates/saas-enterprise-dem
 
 ## What should happen after someone submits
 
-The moment after submit is where most demo forms lose people. Here's what should happen instead:
+Most demo forms lose people in the moment after submit. Here's what should happen instead:
 
 1. **The calendar opens right away.** The lead picks a time on the thank-you screen, with their name and email already filled in.
 2. **The right rep is picked.** Rules read the answers, such as team size or region, and show that rep's calendar. A round robin shares the rest fairly.
@@ -133,6 +141,10 @@ The moment after submit is where most demo forms lose people. Here's what should
 6. **Leads who don't book get a nudge.** A short follow-up the next day with the booking link. Our [sales follow-up email templates](/blog/sales-follow-up-email) include one for this.
 
 A buyer who picks a time on the page doesn't sit in an inbox waiting for a reply, and your rep doesn't spend the morning chasing them.
+
+![Claritia thank-you screen that opens the right rep's calendar right after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
 
 ## Common mistakes
 
@@ -146,7 +158,7 @@ A buyer who picks a time on the page doesn't sit in an inbox waiting for a reply
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 

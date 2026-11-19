@@ -91,7 +91,7 @@ A lead fills in your demo form and picks a time on the same page. Workflows then
 ### Cons
 
 - **No native mobile app:** Reps book from the web.
-- **Email reminders only for now:** SMS reminders on Pro and Business are coming soon.
+- **Built-in SMS still coming:** Text reminders go through your own Twilio number on Starter and up, only to people who said yes. Built-in SMS reminders on Pro and Business are coming soon.
 
 ### Price and plans
 

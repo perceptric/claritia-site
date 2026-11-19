@@ -8,15 +8,15 @@ date: 2026-10-22
 
 A lead often goes quiet for an ordinary reason. They filled your form and meant to book, then a meeting pulled them away. Or they booked and missed the call. Without a next message, that lead is gone.
 
-Lead follow-up software sends the next message at the right time, so a good lead gets a second and third chance to talk to you. The right tool runs on its own and starts at the moments that matter to you: a form fill with no booking, a meeting tomorrow, a no-show, a call that just ended.
+Lead follow-up software sends the next message at the right time, so a good lead gets a second and third chance to talk to you. The right tool runs on its own and starts when you'd want it to: a form fill with no booking, a meeting tomorrow, a no-show, a call that just ended.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send reminders before every meeting, then follow up with form leads until they book on Starter.
 
-In this post, we compare 8 lead follow-up tools for small teams. You'll see what starts each one's follow-up, the channels it uses and what each plan costs.
+Below are 8 lead follow-up tools for small teams, with what starts each one's follow-up, the channels it uses and what each plan costs.
 
 ## Main points
 
-- Start with the moments that matter to you, then pick the tool whose triggers match them.
+- List the moments when a lead needs a nudge, then pick the tool whose triggers match them.
 - Tools differ by channel. Some send email, some call and text, and some add LinkedIn steps.
 - Meeting tools like Calendly and Zcal follow up around a booked meeting, so leads who never book get none.
 - Top picks: [Claritia](/), [HubSpot Sales Hub](https://www.hubspot.com/products/sales), [Close](https://www.close.com/), [ActiveCampaign](https://www.activecampaign.com/), [lemlist](https://www.lemlist.com/), [Kixie](https://www.kixie.com/), [Calendly](https://calendly.com/) and [Zcal](https://zcal.co/).
@@ -28,7 +28,7 @@ Lead follow-up software sends the next message to a lead at the right moment, su
 
 Typical features include:
 
-- Triggers tied to real moments, such as a form fill or a missed meeting.
+- Triggers such as a form fill or a missed meeting.
 - Email, text, call or LinkedIn steps.
 - Messages sent from your own inbox, in your own words.
 - Reminders before a booked meeting.
@@ -59,7 +59,7 @@ Pick your moments first. Then run these five checks:
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
@@ -78,6 +78,10 @@ When someone fills your form but doesn't book, Starter follows up the next day u
 - **Your own inbox:** Emails from your own Gmail or Outlook, with your own wording and times, on Starter.
 - **Team alerts:** Slack and Microsoft Teams connections can alert your team too.
 
+![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
+
+*Caption: Claritia lists each lead with who they booked and the next step, such as Booked or Guide sent.*
+
 ### Pros
 
 - **Follow-up starts at the form:** Leads who fill a form but never book still get a nudge.
@@ -86,7 +90,7 @@ When someone fills your form but doesn't book, Starter follows up the next day u
 
 ### Cons
 
-- **No SMS yet:** SMS reminders on Pro and Business are coming soon.
+- **Built-in SMS still coming:** Text reminders go through your own Twilio number on Starter and up, only to people who said yes. Built-in SMS reminders on Pro and Business are coming soon.
 - **No Zapier or Make apps yet:** They're on the way and aren't listed yet.
 
 ### Price and plans
@@ -198,7 +202,7 @@ Prices scale with your contact count, so see their pricing page for yours.
 
 [lemlist](https://www.lemlist.com/) is a sales outreach platform for sales teams that want to find prospects and run outbound campaigns across several channels. It offers a B2B lead database, finds and verifies emails and phone numbers, and enriches leads with data from LinkedIn, company websites and the CRM.
 
-Teams build sequences that mix email, LinkedIn visits and messages, calls, WhatsApp and SMS, handle every reply in one inbox, and watch mailbox and domain health to keep emails out of spam. LinkedIn steps and calls join the same sequence on its Multichannel plan. It works well for outbound teams who reach out first, before a lead fills any form.
+Teams build sequences that mix email, LinkedIn visits and messages, calls, WhatsApp and SMS, handle every reply in one inbox, and watch mailbox and domain health to keep emails out of spam. LinkedIn steps and calls join the same sequence on its Multichannel plan. It fits outbound teams who reach out first, before a lead fills any form.
 
 [![lemlist homepage](/assets/blog/tools/lemlist.webp)](https://www.lemlist.com/)
 
@@ -212,7 +216,7 @@ Teams build sequences that mix email, LinkedIn visits and messages, calls, Whats
 ### Pros
 
 - **One sequence, many channels:** Email, LinkedIn and calls together on Multichannel.
-- **Generous email limit:** Up to 50,000 emails a month on the Email plan.
+- **High email limit:** Up to 50,000 emails a month on the Email plan.
 
 ### Cons
 
@@ -346,7 +350,7 @@ Yes, with Claritia Starter. Emails go out from your own Gmail or Outlook, with y
 
 ### Does Claritia send text reminders?
 
-SMS reminders on Pro and Business are coming soon. Today, Claritia sends email reminders a day and an hour before each meeting.
+Yes, through your own Twilio number on Starter and up, only to people who said yes. Built-in SMS reminders on Pro and Business are coming soon. Email reminders a day and an hour before each meeting come on every plan.
 
 ## Get started
 

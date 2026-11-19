@@ -12,7 +12,7 @@ A short reminder fixes most of this. It tells the client when and where, and it 
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send email reminders a day and an hour before every appointment, on the free plan too.
 
-In this post, you'll find appointment reminder templates for email and text, when to send each one, and tools that send them for you.
+Below are reminder templates for email and text, when to send each one, and tools that send them for you.
 
 ## Main points
 
@@ -26,7 +26,7 @@ In this post, you'll find appointment reminder templates for email and text, whe
 
 An appointment reminder is a short email or text sent to a client before a booked visit. It confirms the date, time and place, says what to bring, and links to reschedule or cancel. Its job is to get the client there, or to free the slot early if they can't make it.
 
-Most businesses send two. Email suits the details, like an address, parking or a list of what to bring. A text suits the last nudge, since it's short and lands on the phone the client carries with them.
+Most businesses send two. Email suits the details, like an address, parking or a list of what to bring. A text suits the last nudge, since it's short and lands on the phone in the client's pocket.
 
 ## What a good appointment reminder includes
 
@@ -51,7 +51,7 @@ Send reminders in the client's time zone, and stop them as soon as a visit is mo
 
 ## Appointment reminder email templates
 
-Each template has a line on when to send it, the email itself and why it works. Swap the words in curly brackets for your own details.
+Each template says when to send it and why it works. Swap the words in curly brackets for your own details.
 
 ### 1. Consultation reminder
 
@@ -251,7 +251,7 @@ Sending each reminder by hand works for a few clients a week. Past that, some ge
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
@@ -262,9 +262,14 @@ For reminders, here's what each plan includes:
 - **Every plan, free included:** A confirmation email with the calendar invite, email reminders a day and an hour before, and emails when a meeting moves or is canceled.
 - **Starter, $15 a seat a month ($12 billed yearly):** Your own wording and times for each email.
 - **Pro, $39 a seat a month ($31 billed yearly):** A no-show follow-up with the reschedule link, and a thank-you after a held meeting.
-- **SMS reminders (soon):** 100 a month on Pro and 300 on Business, at no extra cost when they ship.
+- **Texts through your own Twilio:** On Starter and up, only to people who said yes.
+- **Built-in SMS reminders (soon):** 100 a month on Pro and 300 on Business, at no extra cost when they ship.
 
-Claritia has real limits too. It's a newer tool with a smaller marketplace, its Zapier and Make apps aren't listed yet, and its text reminders aren't out yet. See [Claritia meetings](/products/meetings) for how booking and reminders fit together.
+![What runs after a Claritia booking: a confirmation with the invite, then reminders a day before and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: After each booking, Claritia sends the confirmation with the invite, then reminders a day and an hour before.*
+
+Claritia has limits too. It's newer, with a smaller marketplace, its Zapier and Make apps aren't listed yet, and its built-in SMS reminders haven't shipped yet. For now, texts go through your own Twilio number. See [Claritia meetings](/products/meetings) for how booking and reminders fit together.
 
 ### Acuity Scheduling
 
@@ -324,7 +329,7 @@ Yes. Claritia sends email reminders a day and an hour before on every plan, free
 
 ## Get started
 
-Pick the two reminders you'll send every time, a day before and an hour before, and set them up once. Then add the no-show follow-up, so a missed visit turns into a new booking.
+Pick the two reminders you'll send every time, a day before and an hour before, and set them up once. Then add the no-show follow-up, so a missed visit has a path to a new booking.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send reminders a day and an hour before every appointment, starting today.
 

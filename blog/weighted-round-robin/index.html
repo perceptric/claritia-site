@@ -161,7 +161,7 @@
 <p>Many people first meet the term in load balancing. A load balancer sits in front of several servers and passes each new request to one of them. With plain round robin, each server gets the next request in turn. That works when the servers are the same size.</p>
 <p>When they aren't, you give the bigger server a bigger weight. Say server A has three times the capacity of server B. Give A a weight of 3 and B a weight of 1, and A gets 3 of every 4 requests.</p>
 <p>Many load balancers, NGINX among them, use round robin by default and let you set a weight for each server. Some also mix the turns up, so the bigger server doesn't get all of its requests in a row.</p>
-<p>Weighted round robin doesn't look at how busy each server is right now. If that matters, load balancers offer other methods, such as least connections, which sends each request to the server with the fewest open connections.</p>
+<p>Weighted round robin doesn't look at how busy each server is right now. If that matters, load balancers have other methods, such as least connections, which sends each request to the server with the fewest open connections.</p>
 <h3 id="weighted-round-robin-for-sales-teams">Weighted round robin for sales teams</h3>
 <p>Sales teams use the same idea for leads and meetings. Each rep gets a weight, and new leads are shared in proportion to it. Common reasons to weight reps differently:</p>
 <ul><li><strong>Experience.</strong> Senior reps take more meetings than new hires.</li><li><strong>Hours.</strong> A part-time rep takes fewer than a full-time one.</li><li><strong>Ramp-up.</strong> A new hire starts low and moves up as they learn.</li><li><strong>Other work.</strong> A rep who also manages the team takes fewer calls.</li></ul>
@@ -177,6 +177,8 @@
 <h3 id="example-2-three-reps-and-a-busy-week">Example 2: three reps and a busy week</h3>
 <p>Maya has weight 2, and Lena and Sam have weight 1 each. The total is 4. If the team books 40 meetings in a week, Maya's share is about 20, and Lena and Sam get about 10 each.</p>
 <p>Now add a daily cap of 6 meetings for each person. On a busy Monday, Maya reaches 6 by noon. She drops out for the rest of the day, and Lena and Sam take the afternoon. On Tuesday, Maya is furthest behind her share, so she gets the first few leads.</p>
+<p><img src="/assets/blog/ui/ui-routing-team-in-availability.webp" alt="A Claritia team set up for weighted round robin: Maya at weight two, the others at weight one, one rep away until Monday, and daily and weekly caps" width="1374" height="700" loading="lazy"></p>
+<p><em>Caption: A similar setup in Claritia: Maya has weight two, the others have weight one, and caps limit meetings per day and per week.</em></p>
 <h3 id="example-3-catching-up-after-a-busy-slot">Example 3: catching up after a busy slot</h3>
 <p>Rep A has weight 2 and rep B has weight 1. After 6 leads, A should have 4 and B should have 2. But A was in meetings for two of the slots that leads picked, so B took them. Now A has 2 and B has 4.</p>
 <p>A tool that follows a fixed order would carry on as if nothing happened. A tool that tracks shares sees A is 2 behind, so the next leads A is free for go to A until the counts are back in line.</p>
@@ -192,7 +194,10 @@
 <p><a href="/">Claritia</a> is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.</p>
 <p>It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.</p>
 <p>Round robin with weights and priority is on Pro. You set a weight for each person, people who are away or at their daily or weekly cap are skipped, and the most due person gets the next lead.</p>
-<p>Forms can send each lead to the right team pool first, and each meeting shows the rule that matched and why that person was picked. Claritia is a newer tool, with a smaller marketplace and no Zapier or Make apps listed yet. See <a href="/products/routing">Claritia routing</a>.</p>
+<p>Forms can send each lead to the right team pool first, and each meeting shows the rule that matched and why that person was picked.</p>
+<p><img src="/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp" alt="Claritia's routing log for one lead, showing the rule that picked Lena Koch, her open time and her meetings so far this week" width="968" height="506" loading="lazy"></p>
+<p><em>Caption: Claritia's routing log shows why Lena got this lead, including how many meetings she already has this week.</em></p>
+<p>Claritia is a newer tool, with a smaller marketplace and no Zapier or Make apps listed yet. See <a href="/products/routing">Claritia routing</a>.</p>
 <h3 id="cal-com">Cal.com</h3>
 <p><a href="https://cal.com/" target="_blank" rel="noopener">Cal.com</a> is scheduling software for individuals and companies that want booking links they can shape around their own process. It syncs calendars, detects time zones, sends reminders, and runs video calls through Zoom, Google Meet, Microsoft Teams, or its own Cal Video.</p>
 <p>Teams can use round robin, collective events where every host must be free, routing forms, and workflows, plus admin tools such as SAML SSO and audit logs. Its source code is published on GitHub.</p>

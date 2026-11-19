@@ -6,13 +6,13 @@ kind: integration
 date: 2026-11-19
 ---
 
-Your reps book meetings in Calendly all day. Then the same meetings have to show up in Salesforce, on the right lead, with the right owner, or your pipeline reports are wrong. Typing them in by hand takes time, and it's the first thing that slips in a busy week.
+Your reps book meetings in Calendly all day. Then the same meetings have to show up in Salesforce, on the right lead, with the right owner, or your pipeline reports are wrong. Typing them in by hand takes time. In a busy week, it's the first thing that slips.
 
 Calendly for Salesforce does this for you. It installs a package in your Salesforce org that creates leads and events as meetings are booked. It also has more rules than most integrations: a Salesforce edition minimum, a Calendly plan minimum, and routing features that only come with Enterprise.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send each form lead to Salesforce with the right owner and the meeting already booked.
 
-In this post, you'll see what the Calendly Salesforce integration does, what you need on each side, how to install it step by step, and how to fix the usual problems.
+Below: what the Calendly Salesforce integration does, what you need on each side, the install steps, and fixes for the usual problems.
 
 ## Main points
 
@@ -180,7 +180,7 @@ Setup is three steps: sign in with Salesforce under Settings, then Integrations,
 
 ### Does Calendly integrate with Salesforce?
 
-Yes. Calendly offers a managed package that you install in Salesforce from Calendly's integration settings. It creates leads and events as meetings are booked and canceled.
+Yes. Calendly has a managed package that you install in Salesforce from Calendly's integration settings. It creates leads and events as meetings are booked and canceled.
 
 ### Which Calendly plan includes Salesforce?
 

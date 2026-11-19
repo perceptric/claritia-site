@@ -6,13 +6,13 @@ kind: route
 date: 2026-11-18
 ---
 
-Small B2B teams hear two kinds of advice. One camp says to write content and let buyers come to you. The other says to pick your dream accounts and reach out. Both are right some of the time, and it's hard to plan when the terms get used loosely.
+Small B2B teams hear two kinds of advice. One camp says to write content and let buyers come to you. The other says to pick your dream accounts and reach out. Both are right some of the time. It's hard to plan when people use the terms loosely.
 
 The difference between inbound and outbound leads comes down to who makes the first move. That one fact changes how warm the lead is, how fast you need to act and what your team spends its time on.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to make sure every inbound lead reaches the right rep and books a meeting on the spot.
 
-In this post, we compare inbound and outbound leads side by side, with examples, and explain how to handle each kind.
+Below, we compare the two side by side, with examples, and cover how to handle each.
 
 ## Main points
 
@@ -26,7 +26,7 @@ In this post, we compare inbound and outbound leads side by side, with examples,
 
 An inbound lead is a person who contacts your business first, for example by filling in a form, booking a call or starting a chat.
 
-An outbound lead is a person your team contacts first, through cold email, calls, social messages or events. Inbound leads start with the buyer's interest, and outbound leads start with your choice of who to reach.
+An outbound lead is a person your team contacts first, through cold email, calls, social messages or events. Inbound starts with the buyer's interest. Outbound starts with your choice of who to reach.
 
 For a closer look at the first kind, read [what an inbound lead is](/blog/what-is-an-inbound-lead).
 
@@ -53,13 +53,17 @@ For a closer look at the first kind, read [what an inbound lead is](/blog/what-i
 
 The work happens before and after the lead arrives. Before, you make your business easy to find. After, you make sure no lead waits. Our guide to [inbound lead generation](/blog/inbound-lead-generation) covers both.
 
+![A Claritia form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: A Claritia form asks for team size, then lets the lead pick a time without leaving the page.*
+
 ## How outbound leads work
 
 1. **You choose who to reach.** A list of companies and roles that fit your buyer.
 2. **You research them.** Their needs, their tools and a reason to reach out now.
 3. **You make contact.** A cold email, a call or a social message.
 4. **You follow up.** Several touches over days or weeks, since most people don't reply to the first.
-5. **They reply or book.** Now they become an active conversation, and the next steps look much like inbound.
+5. **They reply or book.** Now it's a real conversation, and the next steps look much like inbound.
 
 ## Examples
 
@@ -114,7 +118,7 @@ It depends on your stage and your buyers.
 - **If you sell something new**, or to a short list of large accounts, outbound gets you in front of them sooner.
 - **If you're just starting**, a little outbound gets early conversations while you build inbound.
 
-Most teams end up with both. The real gain often comes from handling inbound well, because those leads are already raising a hand. A team that books every good inbound lead on the spot gets more from the traffic it already has.
+Most teams end up with both. The bigger gain often comes from handling inbound well, because those people already raised a hand. Book every good inbound lead on the spot and you get more from the traffic you already have.
 
 ## Common mistakes
 
@@ -128,11 +132,15 @@ Most teams end up with both. The real gain often comes from handling inbound wel
 
 ### Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-It handles the inbound side. Routing by answers to the right meeting and person is on Pro, and on Starter, leads go to HubSpot, Pipedrive, Attio and other CRMs while a follow-up goes out the next day until the lead books. See [Claritia routing](/products/routing).
+It covers the inbound side. Routing by answers to the right meeting and person is on Pro. On Starter, leads go to HubSpot, Pipedrive, Attio and other CRMs, and a follow-up goes out the next day until the lead books. See [Claritia routing](/products/routing).
+
+![Claritia thank-you screen that opens the right rep's calendar right after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: After the form is sent, Claritia opens the right rep's calendar on the thank-you screen.*
 
 ### lemlist
 
@@ -180,7 +188,7 @@ Yes. Many small teams use outbound to start conversations and inbound to keep a 
 
 ## Get started
 
-Whichever mix you choose, inbound leads are the ones you can't afford to keep waiting. Route each one to the right rep and let them book the meeting while they're still on your site.
+Whatever your mix, inbound leads are the ones you can't keep waiting. Route each one to the right rep and let them book the meeting while they're still on your site.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that routes inbound leads and books the meeting on the spot.
 

@@ -8,11 +8,11 @@ date: 2026-11-18
 
 Typeform pricing is based on responses. Each plan gives you a set number of form responses a month, shared across all your forms, plus a set number of users. When you run out, your forms stop taking answers until the next month or until you pay for more. That makes the response limit the number that matters most.
 
-The free plan adds to the confusion. It exists, but it's small, and many people only find its limit after they've shared a form. This page lays out what each plan costs, what it includes and where the extra costs come from.
+The free plan adds to the confusion. It exists, but it's small, and many people only find its limit after they've shared a form.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to get 250 form submissions a month on the free plan, with conditional logic and meeting booking included.
 
-Below, we walk through every Typeform plan, what the free plan leaves out, the costs to watch and when another tool may fit better.
+Below is every Typeform plan, what the free plan leaves out, the extra costs and when another tool may fit better.
 
 ## Main points
 
@@ -97,7 +97,7 @@ Each paid plan also has a maximum you can reach with extra responses: 750 a mont
 
 ## What the free plan leaves out
 
-Typeform's free plan has more features than most people expect. What it lacks is volume and a few key features:
+Typeform's free plan has more features than most people expect. It's short on volume, and a few things are paid only:
 
 - **Responses.** 10 a month across all forms is enough to test. A live form will use it up fast.
 - **Payments and file uploads.** Typeform lists these as paid features.
@@ -108,7 +108,7 @@ Typeform's free plan has more features than most people expect. What it lacks is
 
 ## Extra costs to watch
 
-The plan price is only part of what you pay. Watch for these:
+The plan price is only part of the bill. Watch for these:
 
 - **Responses run out mid-month.** Typeform emails you at 90% and 100% of your limit. At 100%, your forms go into Private mode until the next month starts or you upgrade.
 - **Extra responses.** You can buy responses as an add-on or turn on auto-upgrade, but only up to your plan's maximum.
@@ -122,15 +122,15 @@ The plan price is only part of what you pay. Watch for these:
 
 Typeform is worth it if the look of your form matters most. Its one-question-at-a-time style is calm and polished, and logic and calculations are included even on the free plan.
 
-It gets expensive as volume grows. Basic gives you 100 responses a month for $28 billed yearly, which is fine for a small form but low for a busy lead form.
+The cost climbs with volume. Basic gives you 100 responses a month for $28 billed yearly, which is fine for a small form but low for a busy lead form.
 
-Plus is often the plan people need in practice, since it removes the branding and adds teammates, at $56 a month billed yearly. If you need Salesforce or conversion tracking, you're looking at Business at $91 billed yearly.
+In practice, many people need Plus, since it removes the branding and adds teammates, at $56 a month billed yearly. If you need Salesforce or conversion tracking, you're looking at Business at $91 billed yearly.
 
 Typeform also stops at the form. If your goal is to book a meeting with each lead, you'll connect it to a scheduling tool, which is another bill.
 
 ## Typeform alternatives
 
-If Typeform's response limits don't fit your traffic, there are good options. We compared them in [the best Typeform alternatives](/blog/best-typeform-alternatives).
+If Typeform's response limits don't fit your traffic, we compared other tools in [the best Typeform alternatives](/blog/best-typeform-alternatives).
 
 [Claritia](/) is one of them. It's a forms and meetings tool for small teams. The lead fills in the form, and the right person's calendar opens before they leave the page.
 
@@ -139,7 +139,11 @@ If Typeform's response limits don't fit your traffic, there are good options. We
 - **Pro:** $39 a seat a month ($31 billed yearly). Adds 5,000 submissions, routing by answer and removes Claritia branding.
 - **Business:** $79 a seat a month ($63 billed yearly). Adds unlimited submissions, partial answers, drop-off by question and Salesforce.
 
-Teammates who only build forms or read answers don't need a seat. To be fair, Claritia is a newer tool with a smaller app marketplace than Typeform, and its Zapier and Make apps aren't listed yet. On Starter, you can also bring [Typeform answers into Claritia](/integrations/typeform) while you move. See all [form features](/products/forms).
+![A Claritia quote form that prices options as people answer and takes a deposit with Stripe](/assets/blog/ui/ui-forms-catering-quote.webp)
+
+*Caption: This Claritia form adds up the price as people answer, then takes a deposit with Stripe.*
+
+Teammates who only build forms or read answers don't need a seat. Claritia is newer, with a smaller app marketplace than Typeform, and its Zapier and Make apps aren't listed yet. On Starter, you can also bring [Typeform answers into Claritia](/integrations/typeform) while you move. See all [form features](/products/forms).
 
 ## Questions
 

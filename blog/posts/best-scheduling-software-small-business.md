@@ -91,7 +91,7 @@ A client fills in your form and books a time inside it, so you get their details
 ### Cons
 
 - **No native mobile app:** You manage bookings in the browser.
-- **Email reminders only for now:** Text reminders on Pro and Business are coming soon.
+- **Built-in SMS still coming:** Text reminders go through your own Twilio number on Starter and up, only to people who said yes. Built-in SMS reminders on Pro and Business are coming soon.
 
 ### Price and plans
 

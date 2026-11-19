@@ -1,6 +1,6 @@
 ---
 title: 8 Best Appointment Scheduling Software Tools, Compared (2026)
-description: Compare the best appointment scheduling software on reminders, intake questions, payments and price, and find the right fit for how your clients book.
+description: Compare 8 appointment scheduling software tools on reminders, intake questions, payments and price, and see which fits the way your clients book.
 category: Scheduling
 kind: meeting
 date: 2026-10-31
@@ -8,16 +8,16 @@ date: 2026-10-31
 
 Appointment software has one job: get the right client into the right slot, and make sure they show up. Everything else on the feature list serves that job. A booking page saves the phone calls, and reminders cut down on empty chairs.
 
-This guide is for anyone who books clients by the hour, from a solo coach to a small practice with a front desk. As you read, picture two moments in each tool: the day before the visit, and the moment a client needs to move it. The best tool handles both without you stepping in.
+This guide is for anyone who books clients by the hour, from a solo coach to a small practice with a front desk. As you read, picture two moments in each tool: the day before the visit, and the moment a client needs to move it. A good tool handles both without you.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to ask your intake questions and book the appointment in one form, with email reminders a day and an hour before.
 
-In this post, we compare 8 appointment scheduling tools on reminders, intake questions, payments and price, and show where each one falls short.
+Below, we compare 8 appointment scheduling tools on reminders, intake questions, payments and price, and show where each one falls short.
 
 ## Main points
 
 - Good appointment software lets clients book on their own and sends the reminders that get them through the door.
-- Look at two moments in each tool: the day before the visit, and the moment a client needs to move it.
+- Reminders and self-service changes matter more than a long feature list.
 - Free plans differ a lot. Acuity Scheduling has only a 7-day trial, while Google Calendar's appointment schedules are free with a Google account.
 - Top picks: [Claritia](/), [Acuity Scheduling](https://acuityscheduling.com/), [Google Calendar appointment schedules](https://workspace.google.com/resources/appointment-scheduling/), [Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app), [YouCanBookMe](https://youcanbook.me/), [SimplyBook.me](https://simplybook.me/), [Zcal](https://zcal.co/) and [TidyCal](https://tidycal.com/).
 - Pick [Claritia](/) if clients find you on your website and you want their answers and the booking in one form.
@@ -26,7 +26,7 @@ In this post, we compare 8 appointment scheduling tools on reminders, intake que
 
 Appointment scheduling software shows your open times on a booking page. Clients pick a slot, and the tool adds it to your calendar and sends reminders. It takes the place of phone calls and long email threads about when to meet.
 
-Typical features include:
+Most of them have:
 
 - A booking page that shows only the times you are free.
 - Calendar sync, so new bookings don't clash with what's already there.
@@ -64,7 +64,7 @@ Price matters, but these five checks tell you more about how a tool will run you
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Your client picks an appointment inside a short form, so you get their answers and the booking together, and reminders then go out on their own.
+For an appointment business, the client answers your intake questions and picks a time in the same short form.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -75,8 +75,12 @@ Your client picks an appointment inside a short form, so you get their answers a
 - **Booking inside the form:** Intake questions come before the time slot.
 - **Confirmation and reminders:** A confirmation email with a calendar invite, plus reminders a day and an hour before.
 - **Self-service changes:** Reschedule and cancel links on every booking, free plan included.
-- **Day controls:** Working hours, buffers, notice and daily caps keep each day under control.
+- **Day controls:** Working hours, buffers, notice and daily caps.
 - **Paid meetings:** Starter adds paid meetings with Stripe or PayPal, plus e-signatures on forms. See [Claritia Meetings](/products/meetings) for the booking side.
+
+![Claritia's after-booking steps: a confirmation with the invite, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: After each booking, Claritia sends a confirmation with the invite, then a reminder a day before and an hour before.*
 
 ### Pros
 
@@ -86,7 +90,7 @@ Your client picks an appointment inside a short form, so you get their answers a
 
 ### Cons
 
-- **Email reminders only for now:** Text reminders on Pro and Business are coming soon.
+- **Built-in SMS still coming:** Text reminders go through your own Twilio number on Starter and up, only to people who said yes. Built-in SMS reminders on Pro and Business are coming soon.
 - **No native mobile app:** Your front desk works in the browser.
 
 ### Price and plans
@@ -104,7 +108,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 Clients pick times on a branded booking page, fill out intake forms, and get automatic confirmations and reminders. Owners can take deposits or full payments through Stripe, Square, or PayPal, sell packages, subscriptions, and gift certificates, run waitlists, and manage staff calendars across locations.
 
-Acuity has served appointment businesses for years, and every plan includes intake forms and online payments. Higher plans add the waitlist and HIPAA support, which makes it a strong fit for therapists and clinics that take payment at booking.
+Acuity has served appointment businesses for years, and every plan includes intake forms and online payments. Higher plans add the waitlist and HIPAA support, so it suits therapists and clinics that take payment at booking.
 
 [![Acuity Scheduling homepage](/assets/blog/tools/acuity-scheduling.webp)](https://acuityscheduling.com/)
 
@@ -164,7 +168,7 @@ It checks your calendars to prevent double bookings, sends confirmation emails, 
 
 ## 4. Microsoft Bookings
 
-[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is a scheduling app included with many Microsoft 365 business subscriptions, built for organizations that want customers or colleagues to book time without the back and forth. It offers personal booking pages for one person's availability and shared booking pages where teams define services, staff, and business hours.
+[Microsoft Bookings](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) is a scheduling app included with many Microsoft 365 business subscriptions, built for organizations that want customers or colleagues to book time without the back and forth. It has personal booking pages for one person's availability and shared booking pages where teams define services, staff, and business hours.
 
 Bookings works with Outlook calendars, creates a Microsoft Teams link for online appointments, sends email and text reminders, and stores its data in Exchange Online. It's a good fit for offices that already pay for Microsoft 365.
 
@@ -180,7 +184,7 @@ Bookings works with Outlook calendars, creates a Microsoft Teams link for online
 ### Pros
 
 - **Already in your plan:** It's included with Business Basic, Business Standard, Business Premium and Teams Essentials.
-- **Text notifications:** Email and text both help cut no-shows.
+- **Texts as well as email:** Clients can get both kinds of notice.
 
 ### Cons
 
@@ -193,7 +197,7 @@ Bookings works with Outlook calendars, creates a Microsoft Teams link for online
 
 ## 5. YouCanBookMe
 
-[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and offers booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe.
+[YouCanBookMe](https://youcanbook.me/) is an online scheduling tool for small and midsize businesses that want a branded booking page tied to their calendars. It syncs with Google, Apple, Outlook, and Fastmail calendars, and has booking forms with conditional questions, approval of requests before they are confirmed, password protected pages, and paid bookings through Stripe.
 
 It sends confirmations, reminders, and follow-ups by email and SMS, triggers webhooks, and reports on bookings, no-shows, and revenue. It's known for its long list of settings, such as notice periods you can tune, and the free plan is enough to try it. It suits solo pros and small teams who want fine control over their booking page.
 
@@ -226,7 +230,7 @@ It sends confirmations, reminders, and follow-ups by email and SMS, triggers web
 
 [SimplyBook.me](https://simplybook.me/) is an online booking system for service businesses in fields like beauty, health, education, fitness, and public services that want clients to book at any hour. It gives each business a booking website and lets clients also book through Facebook, Instagram, Google, or a branded client app.
 
-It sends reminders by email, SMS, and WhatsApp, takes payments online or in person through its POS, and adds options such as classes, memberships, intake forms, and gift cards.
+It sends reminders by email, SMS and WhatsApp, and takes payments online or in person through its POS. You can add classes, memberships, intake forms and gift cards.
 
 Along with the booking website you get a widget for your own site, and you pay by the number of bookings and providers. It's a good fit for studios and service shops with a menu of services and several providers.
 
@@ -262,7 +266,7 @@ Along with the booking website you get a widget for your own site, and you pay b
 
 Teams can use round robin and collective events, while group events, sign-up sheets, and polls handle classes and groups. It sends confirmations and reminders and connects to Zoom, Stripe, and Zapier.
 
-A solo user gets email reminders and payments without a paid plan, which makes it a good fit for one person who books a mix of calls and sessions. Paid plans add text reminders and team scheduling.
+A solo user gets email reminders and payments without a paid plan. That suits one person who books a mix of calls and sessions. Paid plans add text reminders and team scheduling.
 
 [![Zcal homepage](/assets/blog/tools/zcal.webp)](https://zcal.co/)
 
@@ -349,7 +353,7 @@ For one person with simple needs, often yes. Once you need intake questions befo
 
 ### Which tools send text reminders?
 
-Acuity sends them from Standard, and Microsoft Bookings sends text notifications. Zcal includes SMS credits on Pro. Claritia sends email reminders today, with text reminders on Pro and Business coming soon.
+Acuity sends them from Standard, and Microsoft Bookings sends text notifications. Zcal includes SMS credits on Pro. Claritia sends email reminders on every plan and text reminders through your own Twilio number on Starter and up. Built-in SMS reminders on Pro and Business are coming soon.
 
 ### Can you take payment when a client books?
 

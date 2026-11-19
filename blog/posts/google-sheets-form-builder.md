@@ -12,7 +12,7 @@ A form builder for Google Sheets does that for you. Each time someone sends the 
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that adds each answer to Google Sheets and books the meeting before the visitor leaves.
 
-In this post, we compare 8 form builders that send answers to Google Sheets, then show how to set one up in a few minutes.
+Below are 8 form builders that send answers to Google Sheets, and how to set one up in a few minutes.
 
 ## Main points
 
@@ -64,7 +64,7 @@ Prices checked November 2026.
 
 ## 1. Claritia
 
-[Claritia](/) is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.
+[Claritia](/) is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
@@ -82,6 +82,10 @@ Its [Google Sheets integration](/integrations/google-sheets) adds a row for each
 - **Never lost:** Every fill is saved in Claritia first, and the send tries again if Google Sheets is busy.
 - **Clear rows:** Each row starts with when it was sent, the fill's ID and the form.
 - **Booking inside the form:** The right person's calendar opens as soon as the form is sent.
+
+![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
+
+*Caption: Every fill is saved in Claritia first, with who the lead booked and what happens next.*
 
 ### Pros
 
@@ -107,7 +111,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 [Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge.
 
-Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis.
+Forms can be shared by email, link, or embed. Responses appear as live charts and can go to Google Sheets for closer analysis.
 
 You link a form to a new or existing spreadsheet from the Responses tab, and Google Sheets puts the answers in a table. Form collaborators get access to a new response sheet on their own.
 
@@ -273,7 +277,7 @@ It can also start from your sheet. Type /google in a blank form, pick the spread
 
 ## 7. Typeform
 
-[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies.
+[Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys and quizzes people finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies.
 
 Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment.
 
@@ -349,7 +353,7 @@ It pushes entries to a new or existing Google Sheet and can save file uploads an
 
 ## How to send form answers to Google Sheets
 
-The steps are much the same in every tool. Here's how it works in Claritia:
+The steps are much the same in every tool. Here they are in Claritia:
 
 1. **Connect Google Sheets.** Go to Settings, then Integrations, and sign in with Google.
 2. **Pick the sheet.** Open the form's Sync tab, add Google Sheets and pick a sheet, or make a new one. You can paste the link of a sheet you already have.

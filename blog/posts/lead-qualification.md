@@ -8,11 +8,11 @@ date: 2026-11-18
 
 Your reps have a limited number of calls in a week. When half of them go to people who can't buy, don't need what you sell or are just curious, the good leads wait. Some of them never get a call at all.
 
-Lead qualification is how you decide who is worth a sales conversation, and when. Done by hand, it means a rep reads every form and makes a guess. Done well, the form asks the right questions and sends each lead down the right path before anyone on your team lifts a finger.
+Lead qualification is how you decide who is worth a sales conversation, and when. Done by hand, it means a rep reads every form and makes a guess. Done well, the form asks the right questions and sends each lead down the right path on its own.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form that asks qualifying questions and books good-fit leads with the right rep on the spot.
 
-In this post, we explain what lead qualification is, how BANT and two other frameworks work, which questions to ask on a form, and how a form can qualify a lead before they book.
+Below, we explain what lead qualification is, how BANT and two other frameworks work, which questions to ask on a form, and how a form can qualify a lead before they book.
 
 ## Main points
 
@@ -111,7 +111,15 @@ The best time to qualify is inside the form, before anyone books. Here's how it 
 4. **Other leads get a useful next step.** A guide, a self-serve plan or a shorter intro call.
 5. **Your team sees why.** A log shows which rule matched for each lead, so you can fix a rule when it sends someone to the wrong place.
 
-This keeps unfit leads off your reps' calendars without making good leads wait. It also means a qualified lead never waits for a reply, which matters for [speed to lead](/blog/inbound-lead-generation).
+![Claritia routing rules: large teams book the enterprise demo, leads from Germany book with Lena, small budgets get the starter guide, everyone else goes to the sales round robin](/assets/blog/ui/ui-routing-routing.webp)
+
+*Caption: In Claritia, routing rules like these read each answer and pick the meeting, the rep or the guide.*
+
+![Claritia's routing log for one lead from Germany, showing the rule that picked Lena Koch and her open time](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
+
+*Caption: The routing log shows why a lead went to Lena: the country rule matched and she had an open time.*
+
+Unfit leads stay off your reps' calendars, and a qualified lead never waits for a reply, which matters for [speed to lead](/blog/inbound-lead-generation).
 
 ## Common mistakes
 
@@ -180,7 +188,7 @@ Lead scoring gives each lead points for things like company size, role or action
 
 ## Get started
 
-Qualify leads in the form, and let the good ones book right away. Your reps get better calls, and good leads never wait for a reply.
+Qualify leads in the form, and let the good ones book right away. Your reps get better calls, and the best leads book while they're still on your site.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a qualifying form that books good-fit leads with the right rep.
 

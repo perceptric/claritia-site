@@ -148,30 +148,34 @@
       <div class="bl-body-wrap">
         <aside class="bl-toc" aria-label="On this page"><b>On this page</b><a href="#main-points">Main points</a><a href="#what-is-lead-routing">What is lead routing?</a><a href="#how-lead-routing-works">How lead routing works</a><a href="#types-of-lead-routing">Types of lead routing</a><a href="#examples-of-lead-routing">Examples of lead routing</a><a href="#best-practices">Best practices</a><a href="#common-mistakes">Common mistakes</a><a href="#tools-for-lead-routing">Tools for lead routing</a><a href="#questions">Questions</a><a href="#get-started">Get started</a></aside>
         <div class="bl-body"><p>Every new lead raises the same question: who should talk to this person? On a small team, someone reads the inbox and passes leads on by hand. That works until the team grows, a rep goes on holiday, or two people answer the same lead while a third lead waits all weekend.</p>
-<p>Lead routing answers that question with rules instead of guesswork. Each lead goes to one clear owner, fast, and you can see why it went there. Get it right and your reps spend their time talking to buyers instead of sorting them.</p>
+<p>Lead routing answers it with rules. Each lead goes to one clear owner, fast, and you can see why it went there. Get it right and your reps spend their time talking to buyers, not sorting them.</p>
 <blockquote><p><strong><a href="https://app.tryclaritia.com/signup">Try Claritia free</a></strong> to route each form lead to the right rep by its answers, with the meeting booked on the same page.</p></blockquote>
-<p>In this post, you'll learn what lead routing is, how it works, the main types, and how to choose a tool for it.</p>
+<p>Below: how routing works, the main types, a few examples, and the tools that do it.</p>
 <h2 id="main-points">Main points</h2>
 <ul><li>Lead routing is the set of rules that decides which person or team gets each new lead.</li><li>The main types are round robin, territory, owner-based and account matching. Most teams mix two or three.</li><li>Good routing has a fallback for leads no rule matches, and a log that shows why each lead went where it did.</li><li>Routing works best when the lead can book a meeting with the chosen rep right away.</li><li>Tools to look at: <a href="/">Claritia</a> for form leads, <a href="https://www.leandata.com/" target="_blank" rel="noopener">LeanData</a> and <a href="https://www.distributionengine.com/" target="_blank" rel="noopener">Distribution Engine</a> for Salesforce, and <a href="https://www.chilipiper.com/" target="_blank" rel="noopener">Chili Piper</a> for large sales teams.</li></ul>
 <h2 id="what-is-lead-routing">What is lead routing?</h2>
 <p>Lead routing is the process of assigning each new lead to the right sales rep or team, based on rules you set.</p>
-<p>The rules can look at what the lead told you, such as company size or country, or at what your CRM already knows, such as who owns the account. Done well, it gets every lead to one owner in seconds, so no lead is missed or answered twice.</p>
-<p>You'll also hear it called lead assignment or lead distribution. Most people use the three terms to mean the same thing.</p>
+<p>The rules can look at what the lead told you, such as company size or country, or at what your CRM already knows, such as who owns the account. Every lead gets one owner in seconds, so none is missed or answered twice.</p>
+<p>You'll also hear it called lead assignment or lead distribution. Most people use the three terms for the same thing.</p>
 <h2 id="how-lead-routing-works">How lead routing works</h2>
 <p>Most routing follows the same five steps, whether a spreadsheet or software does the work:</p>
 <ol><li><strong>A lead comes in.</strong> Someone fills in a form, books a demo, starts a chat or is added from a list.</li><li><strong>The lead is checked.</strong> The router reads the answers and looks the person up in your CRM. Is this a new lead or a contact you already know?</li><li><strong>Rules pick a team.</strong> The first rule that matches wins. For example, companies with more than 50 people go to the enterprise team.</li><li><strong>The team picks a person.</strong> Round robin, the account owner or a territory map chooses one rep. People who are away or full are skipped.</li><li><strong>The rep gets the lead.</strong> The owner is set in your CRM, the rep gets an alert, and in the best setups the lead books a meeting with that rep on the spot.</li></ol>
 <p>A good router also keeps a record of each choice. When a rep asks "why did I get this one?", you can answer in a click.</p>
+<p><img src="/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp" alt="Claritia routing log for one lead: country is Germany, rule 2 picked Lena Koch, with her open time and meetings this week" width="968" height="506" loading="lazy"></p>
+<p><em>Caption: Claritia's log shows which rule matched a lead and why Lena got the meeting.</em></p>
 <h2 id="types-of-lead-routing">Types of lead routing</h2>
 <h3 id="round-robin">Round robin</h3>
-<p>Round robin hands leads to each rep in turn, so everyone gets a fair share. Weighted round robin gives some reps more than others, for example a senior rep who can take twice as many. It's the simplest place to start. Read more in our guide to <a href="/blog/best-round-robin-scheduling-software">round robin scheduling software</a>.</p>
+<p>Round robin hands leads to each rep in turn, so everyone gets a fair share. Weighted round robin gives some reps more than others, for example a senior rep who can take twice as many. Start here if you're new to routing. Read more in our guide to <a href="/blog/best-round-robin-scheduling-software">round robin scheduling software</a>.</p>
 <h3 id="territory-routing">Territory routing</h3>
-<p>Territory routing sends leads by place or segment. One rep covers Germany, another covers the US West Coast, and a third covers companies above a certain size. It works when your reps need local knowledge, a time zone or a language.</p>
+<p>Territory routing sends leads by place or segment. One rep covers Germany, another covers the US West Coast, and a third covers companies above a certain size. Use it when reps need local knowledge, a time zone or a language.</p>
 <h3 id="owner-based-routing">Owner-based routing</h3>
 <p>Owner-based routing, also called owner first, sends a lead to the rep who already owns that person or account in your CRM. If a customer of yours fills in a form, they go back to the rep they know instead of a stranger. If the owner is away, a fallback picks someone else.</p>
 <h3 id="account-matching">Account matching</h3>
-<p>Account matching, also called lead-to-account matching, links a new lead to a company that's already in your CRM. A lead from jane@acme.com is matched to the Acme account, then sent to the Acme account owner. It matters most in B2B sales, where several people from one company may reach out at different times.</p>
+<p>Account matching, also called lead-to-account matching, links a new lead to a company that's already in your CRM. A lead from jane@acme.com is matched to the Acme account, then sent to the Acme account owner. This matters most in B2B sales, where several people from one company may reach out weeks apart.</p>
 <h3 id="rules-by-answer">Rules by answer</h3>
 <p>Many teams also route on the answers in the form. A lead who picks "Enterprise" sees the enterprise demo. A lead with a small budget gets a guide by email instead of a sales call. This is often the first rule in the chain, before round robin picks the person.</p>
+<p><img src="/assets/blog/ui/ui-routing-routing.webp" alt="Claritia routing rules by team size, country and budget, with a round robin fallback and every lead added to HubSpot" width="968" height="944" loading="lazy"></p>
+<p><em>Caption: Claritia's routing rules send each lead to a meeting or a rep based on its answers.</em></p>
 <h2 id="examples-of-lead-routing">Examples of lead routing</h2>
 <ul><li><strong>A small agency:</strong> Every contact form lead goes to the three founders in turn. If one is on holiday, the other two share the leads.</li><li><strong>A software company:</strong> Leads from companies with 1 to 50 people go to the small business team by round robin. Larger companies go to the enterprise team. A known account goes to its owner.</li><li><strong>A business with regions:</strong> A lead from Germany goes to the German-speaking rep. Leads from countries with no assigned rep go to a shared team.</li><li><strong>An SDR team:</strong> Every new lead goes to an SDR first. After a qualifying call, the SDR books the right account executive.</li></ul>
 <h2 id="best-practices">Best practices</h2>
@@ -181,14 +185,16 @@
 <h2 id="tools-for-lead-routing">Tools for lead routing</h2>
 <p>Lead routing tools fall into two groups. Some live inside Salesforce and handle territories across thousands of accounts. Others start from a web form and book the meeting in the same step. For a full comparison with prices, see our list of the <a href="/blog/best-lead-routing-software">best lead routing software</a>.</p>
 <h3 id="claritia">Claritia</h3>
-<p><a href="/">Claritia</a> is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.</p>
-<p>It drafts follow-up emails in your brand's voice for you to approve, and it routes from the form itself. Rules read each answer and book the right meeting with the right person, then the team takes turns fairly with weights, caps and away days.</p>
+<p><a href="/">Claritia</a> is a forms, scheduling and follow-up app for small B2B teams. It gets each website lead to the right rep and booked into a meeting before they leave the page.</p>
+<p>It routes from the form itself. Rules read each answer and book the right meeting with the right person, then the team takes turns with weights, caps and away days. It also drafts follow-up emails in your brand's voice for you to approve.</p>
 <p>Every booking keeps a note of which rule matched and why that person was picked. On Business, a lead who's already in HubSpot or Salesforce books with their owner first. Routing by answer starts on Pro at $39 a seat a month ($31 billed yearly). See how <a href="/products/routing">Claritia routing</a> works.</p>
+<p><img src="/assets/blog/ui/ui-routing-owner-first.webp" alt="Claritia owner first routing: a lead owned by Maya in HubSpot books with Maya, and the sales team takes turns if she is away" width="1318" height="652" loading="lazy"></p>
+<p><em>Caption: With owner first, a lead Maya owns in HubSpot books with Maya, and the team takes turns when she's away.</em></p>
 <h3 id="leandata">LeanData</h3>
-<p><a href="https://www.leandata.com/" target="_blank" rel="noopener">LeanData</a> is a revenue orchestration platform for B2B marketing, sales, operations, and customer success teams that want every lead and account handled by the right person. It matches leads to accounts and opportunities, routes them by territory rules, round robin, and service levels, and keeps an audit trail of each decision, with deep Salesforce support.</p>
+<p><a href="https://www.leandata.com/" target="_blank" rel="noopener">LeanData</a> is a revenue orchestration platform for B2B marketing, sales, operations and customer success teams that want every lead and account handled by the right person. It matches leads to accounts and opportunities, routes them by territory rules, round robin and service levels, and keeps an audit trail of each decision. Its Salesforce support goes deep.</p>
 <p>Its BookIt tool lets prospects schedule with the assigned rep, and Journeys tracks buying groups across a deal. Its Standard edition covers round robin, territory and account-based routing, plus lead-to-account matching, and higher editions add contacts, accounts and any Salesforce object. Pricing is by quote, and onboarding is billed apart.</p>
 <h3 id="distribution-engine">Distribution Engine</h3>
-<p><a href="https://www.distributionengine.com/" target="_blank" rel="noopener">Distribution Engine</a> is a lead routing and case assignment app built inside Salesforce for revenue operations teams and Salesforce admins who want every record to reach the right rep fast, without writing code.</p>
+<p><a href="https://www.distributionengine.com/" target="_blank" rel="noopener">Distribution Engine</a> is a lead routing and case assignment app built inside Salesforce. It's for revenue operations teams and Salesforce admins who want every record to reach the right rep fast, without writing code.</p>
 <p>It assigns leads, cases and other records by round robin, territory, skills, workload, availability and account ownership, matches inbound leads to existing accounts, and reassigns work that misses its response target.</p>
 <p>A companion product, Booking Engine, books meetings and hands qualified leads to reps inside Salesforce. It installs from the Salesforce AppExchange and publishes its prices, from $20 a user a month billed yearly, with a minimum of 5 licenses and a 30-day free trial.</p>
 <h3 id="chili-piper">Chili Piper</h3>
@@ -205,7 +211,7 @@
 <h3 id="do-you-need-a-crm-for-lead-routing">Do you need a CRM for lead routing?</h3>
 <p>No. You can route from form answers alone, which Claritia does on Pro. A CRM helps when you want owner-based routing or account matching, since those need to know who owns each person or company.</p>
 <h3 id="how-fast-should-a-lead-be-routed">How fast should a lead be routed?</h3>
-<p>As fast as you can make it. Software routes a lead in seconds, and the best setups let the lead book a meeting with the chosen rep before they leave the page.</p>
+<p>In seconds, if you can. Software can do that, and the best setups let the lead book a meeting with the chosen rep before they leave the page.</p>
 <h2 id="get-started">Get started</h2>
 <p>Write down who should get which lead, add a fallback, then let software do the sorting. Start with round robin and one or two rules, and add more as you learn.</p>
 <blockquote><p><strong><a href="https://app.tryclaritia.com/signup">Try Claritia free</a></strong> to build a form that routes each lead to the right rep and books the meeting in one step.</p></blockquote>
