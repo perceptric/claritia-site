@@ -177,7 +177,7 @@ Open the Add panel in the Designer and drag a form block onto the page. Style it
 
 ### How many form submissions does Webflow allow?
 
-The free Starter plan allows 50 form submissions per site in total. Basic, Premium and higher site plans allow unlimited form submissions.
+The free Starter plan allows 50 form submissions per site. Basic, Premium and higher site plans allow unlimited form submissions.
 
 ### Can Webflow forms have conditional logic?
 
