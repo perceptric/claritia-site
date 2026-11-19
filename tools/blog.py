@@ -24,7 +24,7 @@ import products as px  # noqa: E402
 
 esc, I, frame = px.esc, px.I, px.frame
 SITE = shell.SITE
-BLOG_V = 2
+BLOG_V = 3
 POSTS = ROOT / "blog" / "posts"
 
 
@@ -53,6 +53,32 @@ def inline(t: str) -> str:
     t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
     t = re.sub(r"(?<![*\w])\*([^*]+)\*(?!\*)", r"<em>\1</em>", t)
     return t
+
+
+# A quote that is just "**[Try Claritia free](signup link)** to ..." becomes a banner people can click.
+CTA_RE = re.compile(r"^>\s*\*\*\[([^\]]+)\]\((https://app\.tryclaritia\.com/[^)\s]*)\)\*\*\s*(.*)$")
+
+
+def cta_banner(block: list):
+    if len(block) != 1:
+        return None
+    m = CTA_RE.match(block[0].strip())
+    if not m:
+        return None
+    label, href, rest = m.group(1), m.group(2), m.group(3).strip()
+    for lead in ("to ", "and "):
+        if rest.startswith(lead):
+            rest = rest[len(lead):]; break
+    else:
+        rest = "Start free " + rest if rest else "Start free today."
+    head = rest[:1].upper() + rest[1:]
+    if not head.endswith((".", "!", "?")):
+        head += "."
+    return (f'<aside class="bl-cta" aria-label="{esc(label)}"><div class="bl-cta__body">'
+            f'<span class="bl-cta__mark"><svg aria-hidden="true"><use href="#mark"/></svg></span>'
+            f'<div class="bl-cta__text"><p class="bl-cta__h">{inline(head)}</p>'
+            f'<p class="bl-cta__sub">Forms, booking and follow-ups in one app. Free plan, no card needed.</p></div></div>'
+            f'<a class="btn btn--primary btn--lg bl-cta__btn" href="{esc(href)}">{esc(label)} {I("arrow", "i s14 arr")}</a></aside>')
 
 
 def md(text: str):
@@ -110,6 +136,9 @@ def md(text: str):
             flush(); block = [line]
             while k < len(lines) and lines[k].startswith(">"):
                 block.append(lines[k]); k += 1
+            cta = cta_banner(block)
+            if cta:
+                out.append(cta); continue
             paras, cur = [], []
             for q in block:
                 q = q[1:].strip()

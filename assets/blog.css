@@ -43,8 +43,9 @@
 .bl-body > * + * { margin-top: 20px; }
 .bl-body h2 { margin-top: 48px; font-size: 28px; line-height: 1.2; font-weight: 500; letter-spacing: -0.025em; color: var(--ink); scroll-margin-top: 100px; }
 .bl-body h3 { margin-top: 32px; font-size: 21px; line-height: 1.3; font-weight: 500; letter-spacing: -0.015em; color: var(--ink); }
-.bl-body a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line-strong, #d4d4d4); text-underline-offset: 3px; }
-.bl-body a:hover { text-decoration-color: var(--green, #0c8c5e); }
+.bl-body a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--green-300, #94d4b7); text-underline-offset: 4px; transition: text-decoration-color var(--fast, 150ms) ease, color var(--fast, 150ms) ease; }
+.bl-body a:hover { color: var(--green-ink, #086444); text-decoration-color: var(--green, #0c8c5e); }
+.bl-body a:has(> img) { text-decoration: none; }
 .bl-body ul, .bl-body ol { padding-left: 22px; }
 .bl-body ul { list-style: disc; }
 .bl-body ol { list-style: decimal; }
@@ -70,3 +71,22 @@
 .bl-table th { padding: 12px 14px; text-align: left; font-weight: 500; color: var(--ink); background: var(--surface-3); border-bottom: 1px solid var(--line); white-space: nowrap; }
 .bl-table td { padding: 12px 14px; vertical-align: top; border-top: 1px solid var(--line); color: var(--text); }
 .bl-table tr:first-child td { border-top: 0; }
+
+/* CTA banner: a "Try Claritia free" line in a post becomes this */
+.bl-cta { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 36px 0; padding: 26px 28px; border-radius: var(--r-lg, 16px); background: var(--green-50, #f2faf6); box-shadow: 0 0 0 1px var(--green-200, #c9eadb); overflow: hidden; }
+.bl-cta::after { content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(circle, rgba(12,140,94,.10), transparent 70%); pointer-events: none; }
+.bl-cta__body { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.bl-cta__mark { flex: none; width: 44px; height: 44px; }
+.bl-cta__mark svg { display: block; width: 44px; height: 44px; }
+.bl-cta__text { min-width: 0; }
+.bl-body .bl-cta__h { margin: 0; font-size: 18px; line-height: 1.35; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; }
+.bl-body .bl-cta__sub { margin: 4px 0 0; font-size: 14px; line-height: 1.4; color: var(--body); }
+.bl-body .bl-cta__btn { flex: none; position: relative; z-index: 1; color: #fff; text-decoration: none; }
+.bl-body .bl-cta__btn:hover { color: #fff; }
+@media (max-width: 720px) {
+  .bl-cta { flex-direction: column; align-items: stretch; padding: 22px; }
+  .bl-cta__body { align-items: flex-start; }
+  .bl-cta__mark, .bl-cta__mark svg { width: 36px; height: 36px; }
+  .bl-cta__btn { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .bl-body a { transition: none; } }
