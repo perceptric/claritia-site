@@ -439,6 +439,13 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
 .tdesc__picks .chip { display: inline-flex; align-items: center; }
 
 .tbar--tpl { margin-bottom: 14px; }
+/* Pages: one page or multi-page */
+.tpgs { display: none; align-items: center; gap: 4px; padding: 3px; border-radius: 999px; box-shadow: var(--sh-outline); background: var(--panel); }
+.js .tpgs { display: inline-flex; }
+.tpgs button { height: 30px; padding: 0 12px; border-radius: 999px; font-size: 14px; font-weight: 500; color: var(--muted); transition: color var(--fast), background-color var(--fast); }
+.tpgs button:hover { color: var(--ink); }
+.tpgs button[aria-checked="true"] { background: var(--hover); color: var(--ink); }
+.cf[hidden] { display: none !important; }
 .cf__logo { width: auto; max-width: 140px; height: 28px; object-fit: contain; object-position: left center; margin-bottom: 6px; }
 
 /* The sample booking step on a template's end screen */

@@ -247,6 +247,7 @@
       var vals = {}, shown = {};
       all.forEach(function (x) {
         if (x.f.show && !meets(x.f.show, vals)) return;
+        if (x.f.hide && x.f.hide.some(function (c) { return meets(c, vals); })) return;
         shown[x.f.key] = true;
         var v = value(x.f);
         if (v !== undefined) vals[x.f.key] = v;
@@ -628,6 +629,50 @@ function keepInView(el) {
   if (dx) el.style.transform = "translateX(" + Math.round(dx) + "px)";
 }
 
+// Use form template links: the style and the pages picked on this page go along (?theme=, ?pages=).
+function relink() {
+  document.querySelectorAll("[data-use]").forEach(function (a) {
+    var q = new URLSearchParams();
+    if (a.getAttribute("data-theme")) q.set("theme", a.getAttribute("data-theme"));
+    if (a.getAttribute("data-pages")) q.set("pages", a.getAttribute("data-pages"));
+    var qs = q.toString();
+    a.href = a.getAttribute("data-use") + (qs ? "?" + qs : "");
+  });
+}
+
+// Pages: the form on one page or in pages, for a form that goes both ways --------------------------------------
+(function () {
+  var bar = document.querySelector(".tpgs");
+  var stage = document.querySelector("[data-stage]");
+  if (!bar || !stage) return;
+  var own = bar.getAttribute("data-own");
+  var btns = Array.prototype.slice.call(bar.querySelectorAll("button[data-pages]"));
+  function apply(mode, quiet) {
+    btns.forEach(function (b) { b.setAttribute("aria-checked", b.getAttribute("data-pages") === mode ? "true" : "false"); });
+    stage.querySelectorAll("form[data-cf][data-pages]").forEach(function (f) { f.hidden = f.getAttribute("data-pages") !== mode; });
+    document.querySelectorAll("[data-use]").forEach(function (a) {
+      if (mode === own) a.removeAttribute("data-pages"); else a.setAttribute("data-pages", mode);
+    });
+    relink();
+    if (!quiet) {
+      var u = new URL(location.href);
+      if (mode === own) u.searchParams.delete("pages"); else u.searchParams.set("pages", mode);
+      history.replaceState(null, "", u.pathname + u.search + u.hash);
+    }
+  }
+  btns.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-pages")); }); });
+  bar.addEventListener("keydown", function (e) {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    e.preventDefault();
+    var i = btns.findIndex(function (b) { return b.getAttribute("aria-checked") === "true"; });
+    var n = btns[(i + (e.key === "ArrowRight" ? 1 : btns.length - 1)) % btns.length];
+    apply(n.getAttribute("data-pages"));
+    n.focus();
+  });
+  var want = new URLSearchParams(location.search).get("pages");
+  if (want === "one" || want === "multi") apply(want, true);
+})();
+
 // Styles: the style menu, Shuffle and the style tiles ------------------------------------------------------------
 (function () {
   var bars = Array.prototype.slice.call(document.querySelectorAll("[data-styles]"));
@@ -672,7 +717,8 @@ function keepInView(el) {
       } else {
         var stage = document.querySelector("[data-stage]");
         if (stage) paint(stage, id);
-        document.querySelectorAll("[data-use]").forEach(function (a) { a.href = a.getAttribute("data-use") + "?theme=" + id; });
+        document.querySelectorAll("[data-use]").forEach(function (a) { a.setAttribute("data-theme", id); });
+        relink();
         document.querySelectorAll(".tlook[data-pick]").forEach(function (x) { x.classList.toggle("is-on", x.getAttribute("data-pick") === id); });
       }
       document.querySelectorAll(".tlook[data-global]").forEach(function (x) { x.classList.toggle("is-on", own && x.getAttribute("data-global") === id); });

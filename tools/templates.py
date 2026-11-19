@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 14, 14
+CSS_V, JS_V = 15, 15
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
@@ -323,9 +323,9 @@ def card(t) -> str:
 CUR = {"USD": "$", "EUR": "€", "GBP": "£"}
 
 
-def field(f) -> str:
+def field(f, pre: str = "") -> str:
     k, key = f["kind"], f["key"]
-    fid = f"f-{key}"
+    fid = f"{pre}f-{key}"
     req = f.get("required")
     star = '<span class="cf__req" aria-hidden="true"> *</span>' if req else ""
     attrs = f'data-key="{key}" data-kind="{k}"' + (" data-req" if req else "")
@@ -433,12 +433,13 @@ def cover_html(s) -> str:
     return f'<div class="cf__cover cf__cover--{lay}" data-cover>{photo_img(ph, "cf__cover-img", "(min-width: 768px) 40vw, 100vw" if side else "100vw")}<div class="cf__cover-w">{words}</div></div>'
 
 
-def live_form(t) -> str:
-    s = t["schema"]
+def live_form(t, s=None, pre: str = "", mode: str = "", hidden: bool = False) -> str:
+    """The template's form, live. `s` is the form the other way (one page or multi-page), with `pre` on its ids."""
+    s = s or t["schema"]
     pages = []
     for i, p in enumerate(s["pages"]):
         title = f'<p class="cf__ptitle">{esc(p["title"])}</p>' if p.get("title") else ""
-        pages.append(f'<fieldset class="cf__page" data-page="{i}"><legend class="sr-only">Page {i + 1}</legend>{title}<div class="cf__fields">{"".join(field(f) for f in p["fields"])}</div></fieldset>')
+        pages.append(f'<fieldset class="cf__page" data-page="{i}"><legend class="sr-only">Page {i + 1}</legend>{title}<div class="cf__fields">{"".join(field(f, pre) for f in p["fields"])}</div></fieldset>')
     multi = len(s["pages"]) > 1
     # Marketing email needs a yes: an unchecked box for news, and a plain notice about the reply.
     notice = "" if t["internal"] else ('<label class="cf__agree cf__optin"><input type="checkbox" name="_news" value="yes"><span class="cf__mark cf__mark--checkbox"></span>'
@@ -446,7 +447,8 @@ def live_form(t) -> str:
                                         '<p class="cf__notice">We\'ll use your details to reply to you.</p>')
     end = s["end"]
     data = json.dumps({"schema": s, "use": f"{APP}/forms/templates/{t['slug']}"}, ensure_ascii=False).replace("</", "<\\/")
-    return f"""<form class="cf" novalidate data-cf>
+    flags = (f' data-pages="{mode}"' if mode else "") + (" hidden" if hidden else "")
+    return f"""<form class="cf" novalidate data-cf{flags}>
   <div class="cf__head"><h2 class="cf__title">{esc(s["title"])}</h2>{f'<p class="cf__intro">{esc(s["intro"])}</p>' if s.get("intro") else ""}</div>
   {'<div class="cf__prog" hidden><span class="cf__prog-l"></span><span class="cf__prog-n"></span><span class="cf__bar"><i></i></span></div>' if multi else ""}
   {cover_html(s)}
@@ -803,11 +805,23 @@ FEATS = [
 
 
 def stage(t, tid: str) -> str:
+    """The form in its style. A form that goes both ways holds the other way too, hidden until Pages picks it."""
+    alt = t.get("alt")
+    other = "multi" if t["pages"] == "one" else "one"
+    forms = live_form(t, mode=t["pages"] if alt else "") + (live_form(t, alt, "alt-", other, True) if alt else "")
     return f"""<div {th_attrs(tid)} data-stage>
           <div class="fth__card"><div class="fart" aria-hidden="true"></div><div class="fth__body">
-          {live_form(t)}
+          {forms}
           </div></div>
         </div>"""
+
+
+def pages_bar(t) -> str:
+    """One page or multi-page, for a form that goes both ways."""
+    if not t.get("alt"):
+        return ""
+    btn = lambda m, label: f'<button type="button" role="radio" aria-checked="{"true" if t["pages"] == m else "false"}" data-pages="{m}">{label}</button>'
+    return f'<div class="tpgs" role="radiogroup" aria-label="Pages" data-own="{t["pages"]}">{btn("one", "One page")}{btn("multi", "Multi-page")}</div>'
 
 
 def logos() -> str:
@@ -919,14 +933,14 @@ def template_page(t):
           <p class="lead">{esc(describe(t))}</p>
           <div class="tpl__tags"><span class="tag tag--sig">Free</span>{tags}<span class="tag">{questions(t)} questions</span>{f'<span class="tag">{pages} pages</span>' if pages > 1 else ""}</div>
         </div>
-        <div class="tpl__ctas"><a class="btn btn--primary btn--lg" href="{use}?theme={t["theme"]}" data-use="{use}">Use form template <span class="nudge" aria-hidden="true">&rarr;</span></a><a class="btn btn--ghost btn--lg" href="#try">Explore demo</a></div>
+        <div class="tpl__ctas"><a class="btn btn--primary btn--lg" href="{use}?theme={t["theme"]}" data-use="{use}" data-theme="{t["theme"]}">Use form template <span class="nudge" aria-hidden="true">&rarr;</span></a><a class="btn btn--ghost btn--lg" href="#try">Explore demo</a></div>
       </div>
     </div>
   </section>
   <section class="tpl" id="try">
     <div class="wrap tpl__in">
       <div class="tpl__main">
-        <div class="tbar tbar--tpl">{style_bar(t["theme"])}</div>
+        <div class="tbar tbar--tpl">{style_bar(t["theme"])}{pages_bar(t)}</div>
         {stage(t, t["theme"])}
       </div>
       <aside class="tpl__side">
@@ -948,7 +962,7 @@ def template_page(t):
             {'<li><svg aria-hidden="true"><use href="#i-check"/></svg>People skip the pages that don&#39;t apply to them.</li>' if any(p.get("skip") or p.get("jumps") for p in s["pages"]) else ""}
           </ul>
         </div>
-        <a class="btn btn--primary tbox__cta" href="{use}?theme={t["theme"]}" data-use="{use}">Use form template <span class="nudge" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn--primary tbox__cta" href="{use}?theme={t["theme"]}" data-use="{use}" data-theme="{t["theme"]}">Use form template <span class="nudge" aria-hidden="true">&rarr;</span></a>
       </aside>
     </div>
   </section>
