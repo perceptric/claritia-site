@@ -70,6 +70,10 @@ If your account has more than one brand, you can pick the brand the form belongs
 
 Click the **+** icon in the top left, open **Fields**, and drag a field type onto the form. In the **Edit field** panel, connect it to an existing property, or click **Create new property** to make one.
 
+![HubSpot form editor with the Edit field panel open on Connected property, a property search box and a Create new property button](/assets/blog/vendor/hubspot-form-editor-01.webp)
+
+*In the Edit field panel, search for a property to connect the field to, or select Create new property. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
+
 The property decides where the answer is stored. A field tied to the company name property, for example, can create or update a company and link it to the contact.
 
 A few things to know:
@@ -83,13 +87,25 @@ A few things to know:
 
 On a Starter, Professional or Enterprise plan, you can split a long form into steps. Hover between two steps in the editor and click the **+** icon. A form can have up to 20 steps, and Marketing Hub Starter adds an optional progress bar.
 
+![HubSpot Edit step panel with the Progress bar switch on and format options for percentage, number of steps or no text](/assets/blog/vendor/hubspot-form-editor-02.webp)
+
+*The progress bar switch sits in the Edit step panel, where you choose whether it shows a percentage, the step count or no text. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
+
 Conditional logic needs Marketing Hub or Content Hub Professional or Enterprise. Click the logic icon, then **Add logic**, and build a rule: if a field matches a value, then show or hide fields, show or hide steps, or redirect the visitor. Each form can hold up to 200 rules with 10 conditions each.
+
+![HubSpot Logic panel showing Rule 1 with an If field condition on Event Location set to New York](/assets/blog/vendor/hubspot-form-editor-03.webp)
+
+*A logic rule starts with an If field condition, here an event location that is New York. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
 
 If you're on Free or Starter and need logic, this is the step where many teams look at another form tool. More on that below, or see our guide to [multi-step forms](/blog/multi-step-form).
 
 ## Step 4: Style the form
 
 Styling needs Marketing Hub, Content Hub or Service Hub Starter or higher. Click the styling icon on the left. You can change fields, buttons, body text, headings, the background and the progress bar, or pick a quick style.
+
+![HubSpot Form styles panel with sections for branding, fields, buttons, paragraph, heading and background](/assets/blog/vendor/hubspot-form-editor-04.webp)
+
+*The Form styles panel groups its settings by part of the form, and the defaults apply to every step. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
 
 Styles apply to all steps at once. If you need full control with your own CSS, the form developer code is on Marketing Hub or Content Hub Professional. The new editor doesn't offer raw HTML forms.
 
@@ -99,6 +115,10 @@ Click the contents icon, then **On submit**. You have two options:
 
 - **Show a thank-you message**, which you can edit in the panel.
 - **Redirect** to a HubSpot page, a URL, a meeting link or a payment link.
+
+![HubSpot form editor with a Form submitted thank-you message selected for editing on the last step](/assets/blog/vendor/hubspot-form-editor-05.webp)
+
+*The thank-you message is a text block on the form's last step, and you edit it in place. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
 
 To send a new lead to a booking page, pick a meeting link here. Choosing a different page for each answer needs conditional logic, and a redirect to a scheduling page by answer needs Sales Hub or Service Hub Enterprise.
 
@@ -112,11 +132,19 @@ Click the settings icon to open the form's settings. The ones most teams change:
 - **Lifecycle stage.** Set the stage for new and existing records. HubSpot won't move a record's stage backwards.
 - **Create new contacts from unknown email addresses.** Stops HubSpot from matching a submission to a returning visitor's cookie.
 
+![HubSpot form Settings on the Submission settings tab with Notify contact owner and Add users to notify checked](/assets/blog/vendor/hubspot-form-settings-01.webp)
+
+*Notify contact owner and Add users to notify sit on the Submission settings tab of the form's settings. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/set-up-your-form-submission-notifications).*
+
 If you want each lead to get an owner automatically, our guide to [HubSpot lead routing](/blog/hubspot-lead-routing) walks through the workflow.
 
 ## Step 7: Preview and publish
 
 Click **Preview** in the top right to test the form on desktop, tablet and phone. You can step through pages and logic, but preview mode doesn't send submissions.
+
+![HubSpot form preview with the Preview Step menu open to Step 1, Step 2 and Form submitted](/assets/blog/vendor/hubspot-form-editor-06.webp)
+
+*In preview, the step menu lets you jump to any step, including the Form submitted screen. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
 
 When it looks right, click **Review and update**, then **Update** at the bottom of the right panel. The form is now live, and HubSpot offers three ways to share it.
 
@@ -127,6 +155,10 @@ After you publish, choose one of these:
 - **Embed with HubSpot:** Pick a HubSpot website page, landing page or CTA to place the form on.
 - **Get embed code:** Copy the code and paste it into an HTML block on your own site.
 - **Copy a share link:** Send people to the form on its own page. The link can't be edited, and anyone with it can open the form.
+
+![HubSpot Form Published screen with three choices: Embed with HubSpot, Get embed code and Copy a share link](/assets/blog/vendor/hubspot-form-publish-01.webp)
+
+*The Form Published screen shows each way to share the form once it's live. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
 
 Before you embed on an outside site, add that site's domain to your HubSpot tracking settings. HubSpot marks submissions from domains it doesn't know as spam. Install the HubSpot tracking code on the page too, or you won't see analytics for the form.
 
@@ -142,7 +174,15 @@ In HubSpot, pop-up forms are built with the CTA tool. It needs Marketing Hub or 
 4. Turn on **Close after submission** in the form module if the pop-up should close once someone sends it.
 5. Set where and when it shows, then publish.
 
+![HubSpot CTA form module settings with a Choose a form menu and the Close after submission switch turned on](/assets/blog/vendor/hubspot-cta-popup-01.webp)
+
+*In the CTA's form module, pick your form and turn on Close after submission. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/ctas/create-calls-to-action).*
+
 For pop-ups on pages outside HubSpot, the tracking code or the WordPress plugin must be installed.
+
+![HubSpot CTA targeting settings with triggers for button click, page scroll, exit intent, elapsed time and inactivity](/assets/blog/vendor/hubspot-cta-popup-02.webp)
+
+*The CTA's targeting settings decide when the pop-up shows, such as after a page scroll or a set time on the page. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/ctas/create-calls-to-action).*
 
 ## Common problems
 
@@ -154,6 +194,12 @@ For pop-ups on pages outside HubSpot, the tracking code or the WordPress plugin 
 - **You want the form inside an email.** HubSpot doesn't support forms in emails. Link to a page with the form, or use a CTA.
 - **Your own HTML form isn't syncing.** HubSpot's non-HubSpot forms tool only collects plain HTML forms with an email field. It skips forms in iframes or single-page apps, and it ignores hidden fields.
 - **The validation text is wrong.** HubSpot doesn't let you edit messages like "Please complete this mandatory field" in the form tool. A developer has to change it with a script.
+
+The switch for collecting your own HTML forms is on the Non-HubSpot Forms tab of HubSpot's form settings.
+
+![HubSpot Forms settings on the Non-HubSpot Forms tab with Collect data from website forms turned on](/assets/blog/vendor/hubspot-non-hubspot-forms-01.webp)
+
+*Turn Collect data from website forms on or off here, and choose who gets an email for each collected submission. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/use-non-hubspot-forms).*
 
 ## When another form builder fits better
 

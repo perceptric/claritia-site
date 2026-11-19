@@ -54,6 +54,10 @@ On the HubSpot side, HubSpot's marketplace lists every feature of the Typeform a
 - **An email question.** Contacts need an email to match on, so add one and make it required.
 - **A paid HubSpot plan for follow-up automation.** HubSpot workflows, which you'd use to assign owners or create follow-up tasks after submit, need a Professional or Enterprise plan.
 
+![HubSpot workflow Triggers panel with options for manual triggers, AI triggers, events such as a form submission, and filter criteria](/assets/blog/vendor/hubspot-workflow-triggers-01.webp)
+
+*Follow-up after a form starts in HubSpot's workflow triggers, for example when a contact completes a form submission. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/workflows/create-workflows).*
+
 Watch the response cap most. Ten responses a month on Free will test the connection, but they won't run lead capture. Our [Typeform pricing guide](/blog/typeform-pricing) covers each plan.
 
 ## Step 1: Plan your fields
@@ -61,6 +65,10 @@ Watch the response cap most. Ten responses a month on Free will test the connect
 Before you connect anything, write a short list with two columns: each question in your typeform, and the HubSpot property it should fill. Mark which record each one belongs to: contact, company or deal.
 
 Then check HubSpot. Every property on your list should exist there, so create the missing ones now. Keep the list open while you map in the next steps.
+
+![HubSpot Properties settings page with the Select an object menu open on contact properties](/assets/blog/vendor/hubspot-properties-01.webp)
+
+*HubSpot's Properties settings, where you pick contact, company or deal properties and create the ones you're missing. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/properties/create-and-edit-properties).*
 
 ## Step 2: Connect HubSpot in Typeform
 
@@ -80,6 +88,10 @@ A few tips:
 - Map your email question to HubSpot's Email property, so contacts match instead of doubling up.
 - Map hidden fields too, such as a UTM source, so you know where the lead came from.
 - If a property is grayed out, the question type doesn't fit that kind of property. Pick a different property or change the question.
+
+![A HubSpot form with a dropdown field and a radio select field](/assets/blog/vendor/hubspot-property-types-01.webp)
+
+*Dropdown and radio select are two of HubSpot's property field types, and each type takes a different kind of answer. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/properties/property-field-types-in-hubspot).*
 
 ## Step 4: Choose how matches work
 
@@ -110,6 +122,10 @@ Submit again with the same email and check that the contact was updated, not cop
 **Responses stopped reaching HubSpot.** Check your response count first. At your plan's limit, forms go private and stop collecting. Typeform emails you at 90% and 100%.
 
 **Contacts are doubling up.** Your email question isn't mapped to HubSpot's Email property, or you chose no other properties to match on.
+
+![A HubSpot contact record with the Actions menu open and Merge highlighted](/assets/blog/vendor/hubspot-contact-merge-01.webp)
+
+*If doubles already got in, the Merge option in a contact's Actions menu combines two records into one. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/records/merge-records).*
 
 **Some contacts arrive with blanks.** People skipped questions. Typeform's HubSpot listing suggests making the key questions required.
 

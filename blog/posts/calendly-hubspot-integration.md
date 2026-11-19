@@ -50,13 +50,17 @@ Prices checked November 2026 on [Calendly's pricing page](https://calendly.com/p
 | Meeting recaps | Standard Plus or Teams Plus, which add Notetaker | Free or paid |
 | Routing from HubSpot forms | Teams ($16 a seat a month yearly, $20 monthly) or Enterprise | Free or paid |
 | Booking known contacts with their owner | Teams or Enterprise, with managed events | Free or paid |
-| Moving custom answers into contact properties | Any plan above | Professional or Enterprise, for workflows |
+| Moving custom answers into contact properties | Teams, Teams Plus or Enterprise | Professional or Enterprise, for workflows |
 
 You'll also need:
 
 - **Admin rights in Calendly.** Only owners and admins can connect HubSpot.
 - **Admin rights in HubSpot.**
 - **Room for custom properties.** Calendly's help center warns that HubSpot's free plan allows only 10 custom properties, and syncs may fail past that limit.
+
+![HubSpot Properties settings page with the Select an object menu open on contact properties](/assets/blog/vendor/hubspot-properties-01.webp)
+
+*HubSpot's Properties settings, where you pick an object and see how many properties it has. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/properties/create-and-edit-properties).*
 
 Calendly's free plan can't connect to HubSpot at all. If you're weighing plans, our [Calendly pricing guide](/blog/calendly-pricing) covers each one.
 
@@ -67,6 +71,16 @@ Calendly's free plan can't connect to HubSpot at all. If you're weighing plans, 
 3. Sign in to HubSpot if it asks you to.
 4. If you have more than one HubSpot account, pick the one you want and select **Choose Account**.
 5. Read the permissions, tick the box to confirm, and select **Connect app**.
+
+![HubSpot Choose an account screen for the Calendly app, with two accounts and a Choose Account button](/assets/blog/vendor/calendly-hubspot-connect-01.webp)
+
+*If you have more than one HubSpot account, pick one here and select Choose Account. Image: [Calendly Help Center](https://calendly.com/help/calendly-hubspot).*
+
+The permissions screen comes next. It lists what Calendly can view and change in HubSpot, such as contacts, properties and forms.
+
+![HubSpot permissions screen for the Calendly app with the confirm box ticked and a Connect app button](/assets/blog/vendor/calendly-hubspot-connect-02.webp)
+
+*Tick the box to confirm the app's terms, then select Connect app. Image: [Calendly Help Center](https://calendly.com/help/calendly-hubspot).*
 
 Calendly takes you back to its own settings once the connection is made.
 
@@ -88,6 +102,10 @@ Book a meeting on one of your own event types with an email that isn't in HubSpo
 - The meeting shows on the contact's timeline.
 - Your custom question answers sit under the Activity tab.
 
+![A HubSpot contact's Activities tab with the More menu open to Calls, Tasks and Meetings](/assets/blog/vendor/hubspot-record-timeline-01.webp)
+
+*On the contact record, the Activities tab holds the timeline, and the More menu narrows it to meetings. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/records/work-with-records).*
+
 Now cancel the test meeting and check that its title starts with "[Canceled]".
 
 ## Step 4: Route leads from your HubSpot forms (Teams and up)
@@ -101,7 +119,15 @@ This step lets a lead who fills in your HubSpot form pick a time with the right 
 5. Select **Share** next to the form, then **Copy code**.
 6. Paste that code after your HubSpot form code on your website.
 
+![HubSpot Form Published screen with three choices: Embed with HubSpot, Get embed code and Copy a share link](/assets/blog/vendor/hubspot-form-publish-01.webp)
+
+*Get embed code in HubSpot gives you the form code that Calendly's code goes after. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
+
 Your HubSpot form stays the same. When someone submits it, Calendly shows a booking pop-up with the right booking page.
+
+![A HubSpot form with a dropdown field and a radio select field](/assets/blog/vendor/hubspot-property-types-01.webp)
+
+*Dropdown and radio select fields like these are the answers Calendly routes can read. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/properties/property-field-types-in-hubspot).*
 
 ## Step 5: Book known contacts with their owner (Teams and up)
 
@@ -118,6 +144,20 @@ For this to work, each Calendly user must also be a HubSpot user who can own con
 ## Step 6: Move custom answers into properties (optional)
 
 Calendly puts answers in the activity feed, and it won't update properties on contacts HubSpot already has. To copy an answer like job title or company into a contact property, build a HubSpot workflow. HubSpot workflows need a Professional or Enterprise plan.
+
+Calendly's help center walks through it. The workflow starts with the **When filter criteria is met** trigger.
+
+![HubSpot workflow enrollment trigger options with When filter criteria is met highlighted](/assets/blog/vendor/calendly-hubspot-workflow-01.webp)
+
+*Pick When filter criteria is met as the workflow's enrollment trigger. Image: [Calendly Help Center](https://calendly.com/help/how-to-map-custom-answers-to-hubspot-properties).*
+
+Then filter on **Activity (Associated Object)** and search for **Meeting name**, so the workflow picks up booked meetings.
+
+![HubSpot workflow criteria panel filtering on Activity (Associated Object), with Meeting name in the search results](/assets/blog/vendor/calendly-hubspot-workflow-02.webp)
+
+*Meeting name sits under Activity (Associated Object) in the trigger's filter list. Image: [Calendly Help Center](https://calendly.com/help/how-to-map-custom-answers-to-hubspot-properties).*
+
+Last, add an **Edit record** action and pick the contact property to update.
 
 ## What it can't do
 
@@ -159,6 +199,10 @@ It fits when your bookings start on a form and you'd rather not pay for a schedu
 - **Keep Calendly if you like.** Calendly bookings can come into Claritia by webhook, and a Claritia form can end with your Calendly page. See the [Calendly integration](/integrations/calendly).
 
 Setup takes three steps: sign in with HubSpot under Settings, then Integrations, add HubSpot on the form's Sync tab, and publish. A send that fails tries again, and a sync log shows each one.
+
+![A Claritia form's thank-you screen that opens the right rep's calendar](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*After someone sends a Claritia form, the thank-you screen opens the right rep's calendar.*
 
 **Plans:** HubSpot, Calendly bookings and booking pages for each person start on Starter at $15 a seat a month ($12 yearly). Routing by any answer and round robin are on Pro at $39 ($31 yearly). Booking a known lead with their HubSpot owner first is on Business at $79 ($63 yearly). See [pricing](/pricing).
 

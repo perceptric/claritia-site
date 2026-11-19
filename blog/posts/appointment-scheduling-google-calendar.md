@@ -91,6 +91,10 @@ It connects Google Calendar in one click on every plan. Google tells Claritia as
 - **Reminders for free:** A confirmation with the invite, then reminders a day and an hour before.
 - **Fair seat pricing:** Teammates who only build forms or read answers are free.
 
+![Claritia booking page calendar with open times for a Google Meet sales demo](/assets/blog/ui/ui-meetings-sales-demo.webp)
+
+*A Claritia booking page shows only your open times, here for a sales demo on Google Meet.*
+
 ### Cons
 
 - **One meeting type on free:** A second meeting type and more calendars need Starter.
@@ -213,6 +217,16 @@ Teams can use round robin and collective events, while group events, sign-up she
 - **Email reminders:** Automated, on free.
 - **Polls and group events:** Group events take up to 5 people per slot on free.
 - **Payments:** Stripe on free, with a 3% fee.
+
+![Zcal Add calendar connection window with Connect buttons for Google Calendar and Outlook Calendar](/assets/blog/vendor/zcal-calendars-01.webp)
+
+*In Zcal's account settings, Add calendar connection lists Google Calendar for personal and Workspace accounts. Image: [Zcal Help](https://help.zcal.co/calendar/overview).*
+
+Once a calendar is connected, you choose which calendars Zcal reads for conflicts and which one gets new bookings.
+
+![Zcal Calendars settings with read calendars from three accounts and one write calendar](/assets/blog/vendor/zcal-calendars-02.webp)
+
+*Read calendars block your busy times, and the write calendar is where Zcal adds each booking. Image: [Zcal Help](https://help.zcal.co/calendar/overview).*
 
 ### Pros
 

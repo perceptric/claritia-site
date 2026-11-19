@@ -75,11 +75,21 @@ Calendly says it doesn't use your Salesforce client ID or client secret to reach
 
 ## Step 2: Install the Calendly package
 
+Once Salesforce is connected, Calendly shows a box with the two steps left: install the package, then refresh.
+
+![Calendly box titled Setting up the integration to sync data, with links to install the Calendly package in Salesforce and refresh the page](/assets/blog/vendor/calendly-salesforce-install-01.webp)
+
+*Calendly's reminder to install the package in Salesforce, then refresh the page. Image: [Calendly Help Center](https://calendly.com/help/how-to-integrate-calendly-with-salesforce).*
+
 1. On the Salesforce page in Calendly, select **Install the Calendly package**.
 2. In Salesforce, select **Install for All Users**, then **Install**.
 3. When asked to grant third-party access, select **Yes**, then **Continue**.
 4. When the install is done, select **Done**.
 5. Go back to Calendly and select **Refresh** to finish the connection.
+
+![Salesforce Install Calendly screen with Install for All Users selected and an Install button](/assets/blog/vendor/calendly-salesforce-install-02.webp)
+
+*In Salesforce, pick Install for All Users, tick the box to acknowledge the notice, and select Install. Image: [Calendly Help Center](https://calendly.com/help/how-to-integrate-calendly-with-salesforce).*
 
 If the install fails, you're likely on Salesforce Group or Professional edition. The integration uses Salesforce's web service API, which needs Enterprise edition or higher.
 
@@ -87,10 +97,18 @@ If the install fails, you're likely on Salesforce Group or Professional edition.
 
 This is the step people miss. In package version 2.3 and later, the flow templates come turned off, so admins choose when changes go live. Calendly recommends making copies and turning those on.
 
+![Salesforce Setup Flows list with columns for flow label, process type, Active and package state](/assets/blog/vendor/salesforce-flows-list-01.webp)
+
+*The Flows list in Salesforce Setup has an Active column, so you can see which flows are off. Image: [Salesforce Trailhead](https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/deploy-your-flow-to-production).*
+
 1. In Salesforce, open your list of flows.
 2. Open a flow template, such as MapCalendlyLinkTemplate.
 3. Select **Save As**, give it a flow label, and select **Save**.
 4. Go back to the list, open the new flow and select **Activate**.
+
+![Salesforce Flow Builder Save as window with a Save As menu, Flow Label and Flow API Name fields, and a Save button](/assets/blog/vendor/salesforce-flow-save-as-01.webp)
+
+*Salesforce's Save As window, with the Flow Label field you fill in before you select Save. Image: [Salesforce Trailhead](https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/deploy-your-flow-to-production).*
 
 Do this for each template you need. From version 2.5, keep the two subflow templates inside CreateEventTemplate active as they are, unless you're changing the subflows themselves.
 
@@ -102,6 +120,10 @@ Book a meeting with an email that isn't in Salesforce yet. Then check:
 - The event sits on that lead, owned by the rep who took the meeting.
 - The owner is the rep, not your system admin. If it's the admin, the rep's emails don't match.
 
+![Salesforce All Leads list view with name, title, company, email, phone, source and an Owner Alias column](/assets/blog/vendor/salesforce-lead-routing-01.webp)
+
+*The Owner Alias column in the leads list shows who owns each lead, so a test lead owned by the admin stands out. Image: [Salesforce Trailhead](https://trailhead.salesforce.com/content/learn/modules/leads_opportunities_lightning_experience/create-and-convert-leads-lightning).*
+
 Then book again with an email that belongs to an existing contact, and check that the event lands on that contact.
 
 ## Step 5: Customize what gets created (optional)
@@ -112,6 +134,10 @@ Open your copied flows in Salesforce to change the default behavior. Common chan
 - Update the lead owner to match the event owner, for leads that move to a new rep.
 - Delete the event in Salesforce when a meeting is canceled or moved.
 - Run the flow only when certain conditions are met, or delay the sync.
+
+![Salesforce Flow Builder Add Element panel showing Data elements: Create Records, Update Records, Get Records, Delete Records and Roll Back Records](/assets/blog/vendor/salesforce-flow-elements-01.webp)
+
+*Data elements in Flow Builder, such as Create Records, are the steps a flow uses to make or change records. Image: [Salesforce Trailhead](https://trailhead.salesforce.com/content/learn/modules/flow-basics/meet-flow-builder).*
 
 If you base a new flow on a template, turn the template off so you don't get duplicate events.
 
@@ -171,6 +197,10 @@ It fits when your Salesforce leads start on a web form. Here is how it works wit
 - **Keep Calendly if you like.** Calendly bookings can come into Claritia by webhook, and a Claritia form can end with your Calendly page. See the [Calendly integration](/integrations/calendly).
 
 Setup is three steps: sign in with Salesforce under Settings, then Integrations, add Salesforce on the form's Sync tab and match each field, then publish. You don't need API keys. A send that fails tries again, and a sync log shows each one.
+
+![Claritia team settings with weights for each rep, one rep away and daily and weekly meeting caps](/assets/blog/ui/ui-routing-team-in-availability.webp)
+
+*Team settings in Claritia decide how often each rep gets new leads, who's away and how many meetings each can take.*
 
 **Plans:** Salesforce is on Business at $79 a seat a month ($63 yearly). Taking Calendly bookings starts on Starter at $15 ($12 yearly). See [pricing](/pricing).
 

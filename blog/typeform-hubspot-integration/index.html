@@ -143,7 +143,7 @@
       <nav class="bl-crumb" aria-label="Breadcrumb"><a href="/blog">Blog</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><span>Integrations</span></nav>
       <h1>Typeform HubSpot Integration: How to Connect and Map Fields (2026)</h1>
       <p class="bl-lead">Set up the Typeform HubSpot integration step by step. See what it sends to HubSpot, which plans you need, how field mapping works, and how to fix problems.</p>
-      <div class="bl-by"><time datetime="2026-11-19">November 19, 2026</time><span>8 min read</span></div>
+      <div class="bl-by"><time datetime="2026-11-19">November 19, 2026</time><span>9 min read</span></div>
       <img class="bl-cover" src="/blog/typeform-hubspot-integration/cover.png?v=90dfa23aaa" alt="" width="1200" height="630">
       <div class="bl-body-wrap">
         <aside class="bl-toc" aria-label="On this page"><b>On this page</b><a href="#main-points">Main points</a><a href="#what-the-integration-does">What the integration does</a><a href="#what-you-need">What you need</a><a href="#step-1-plan-your-fields">Step 1: Plan your fields</a><a href="#step-2-connect-hubspot-in-typeform">Step 2: Connect HubSpot in Typeform</a><a href="#step-3-map-each-question">Step 3: Map each question</a><a href="#step-4-choose-how-matches-work">Step 4: Choose how matches work</a><a href="#step-5-turn-it-on-and-test">Step 5: Turn it on and test</a><a href="#what-it-can-t-do">What it can&#x27;t do</a><a href="#common-problems">Common problems</a><a href="#another-way-claritia">Another way: Claritia</a><a href="#questions">Questions</a><a href="#get-started">Get started</a></aside>
@@ -165,10 +165,14 @@
 <div class="bl-table"><table><thead><tr><th>Typeform plan</th><th>Price yearly</th><th>Price monthly</th><th>Responses a month</th><th>HubSpot integration</th></tr></thead><tbody><tr><td>Free</td><td>$0</td><td>$0</td><td>10</td><td>Yes</td></tr><tr><td>Basic</td><td>$28 a month</td><td>$39 a month</td><td>100</td><td>Yes</td></tr><tr><td>Plus</td><td>$56 a month</td><td>$79 a month</td><td>1,000</td><td>Yes</td></tr><tr><td>Business</td><td>$91 a month</td><td>$129 a month</td><td>10,000</td><td>Yes</td></tr></tbody></table></div>
 <p>On the HubSpot side, HubSpot's marketplace lists every feature of the Typeform app as available with HubSpot Free. You'll also need:</p>
 <ul><li><strong>A HubSpot login</strong> that can connect apps to your account.</li><li><strong>Your HubSpot properties ready.</strong> Make any custom properties in HubSpot before you map, so they show up in the list.</li><li><strong>An email question.</strong> Contacts need an email to match on, so add one and make it required.</li><li><strong>A paid HubSpot plan for follow-up automation.</strong> HubSpot workflows, which you'd use to assign owners or create follow-up tasks after submit, need a Professional or Enterprise plan.</li></ul>
+<p><img src="/assets/blog/vendor/hubspot-workflow-triggers-01.webp" alt="HubSpot workflow Triggers panel with options for manual triggers, AI triggers, events such as a form submission, and filter criteria" width="624" height="1262" loading="lazy"></p>
+<p><em>Follow-up after a form starts in HubSpot's workflow triggers, for example when a contact completes a form submission. Image: <a href="https://knowledge.hubspot.com/workflows/create-workflows" target="_blank" rel="noopener">HubSpot Knowledge Base</a>.</em></p>
 <p>Watch the response cap most. Ten responses a month on Free will test the connection, but they won't run lead capture. Our <a href="/blog/typeform-pricing">Typeform pricing guide</a> covers each plan.</p>
 <h2 id="step-1-plan-your-fields">Step 1: Plan your fields</h2>
 <p>Before you connect anything, write a short list with two columns: each question in your typeform, and the HubSpot property it should fill. Mark which record each one belongs to: contact, company or deal.</p>
 <p>Then check HubSpot. Every property on your list should exist there, so create the missing ones now. Keep the list open while you map in the next steps.</p>
+<p><img src="/assets/blog/vendor/hubspot-properties-01.webp" alt="HubSpot Properties settings page with the Select an object menu open on contact properties" width="1140" height="762" loading="lazy"></p>
+<p><em>HubSpot's Properties settings, where you pick contact, company or deal properties and create the ones you're missing. Image: <a href="https://knowledge.hubspot.com/properties/create-and-edit-properties" target="_blank" rel="noopener">HubSpot Knowledge Base</a>.</em></p>
 <h2 id="step-2-connect-hubspot-in-typeform">Step 2: Connect HubSpot in Typeform</h2>
 <ol><li>Open your form in Typeform and go to the <strong>Connect</strong> panel.</li><li>Find HubSpot and select <strong>Connect</strong>.</li><li>Sign in to HubSpot and pick the account you want to use.</li><li>Allow Typeform the access it asks for.</li></ol>
 <p>You can also connect while you build. In the Create panel, select <strong>+ Add content</strong> and choose <strong>Create with HubSpot</strong>. Typeform checks that the right HubSpot account is connected, then maps each new question to a matching HubSpot field as you add it.</p>
@@ -176,6 +180,8 @@
 <p>For each question, pick the HubSpot property it should fill from the <strong>Map to</strong> list. Work through contacts first, then companies and deals if you use them.</p>
 <p>A few tips:</p>
 <ul><li>Map your email question to HubSpot's Email property, so contacts match instead of doubling up.</li><li>Map hidden fields too, such as a UTM source, so you know where the lead came from.</li><li>If a property is grayed out, the question type doesn't fit that kind of property. Pick a different property or change the question.</li></ul>
+<p><img src="/assets/blog/vendor/hubspot-property-types-01.webp" alt="A HubSpot form with a dropdown field and a radio select field" width="800" height="668" loading="lazy"></p>
+<p><em>Dropdown and radio select are two of HubSpot's property field types, and each type takes a different kind of answer. Image: <a href="https://knowledge.hubspot.com/properties/property-field-types-in-hubspot" target="_blank" rel="noopener">HubSpot Knowledge Base</a>.</em></p>
 <h2 id="step-4-choose-how-matches-work">Step 4: Choose how matches work</h2>
 <p>For contacts, the email decides. For companies, the company domain name decides. For deals, choose a property, such as the deal name, that marks a deal as the same one.</p>
 <p>If you don't map an email for contacts, choose other properties to match on. Typeform has said that with no match properties, a new contact is created each time someone submits.</p>
@@ -188,6 +194,8 @@
 <h2 id="common-problems">Common problems</h2>
 <p><strong>Responses stopped reaching HubSpot.</strong> Check your response count first. At your plan's limit, forms go private and stop collecting. Typeform emails you at 90% and 100%.</p>
 <p><strong>Contacts are doubling up.</strong> Your email question isn't mapped to HubSpot's Email property, or you chose no other properties to match on.</p>
+<p><img src="/assets/blog/vendor/hubspot-contact-merge-01.webp" alt="A HubSpot contact record with the Actions menu open and Merge highlighted" width="700" height="918" loading="lazy"></p>
+<p><em>If doubles already got in, the Merge option in a contact's Actions menu combines two records into one. Image: <a href="https://knowledge.hubspot.com/records/merge-records" target="_blank" rel="noopener">HubSpot Knowledge Base</a>.</em></p>
 <p><strong>Some contacts arrive with blanks.</strong> People skipped questions. Typeform's HubSpot listing suggests making the key questions required.</p>
 <p><strong>A question won't map.</strong> The property type and question type don't fit. Change one of them, or map to a different property.</p>
 <p><strong>A property you need isn't in the list.</strong> Create it in HubSpot first, then reopen the mapping.</p>
