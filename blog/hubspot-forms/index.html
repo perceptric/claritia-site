@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HubSpot Forms: How to Create, Embed and Set Up a Form (2026) · Claritia</title>
+<meta name="description" content="How to create a HubSpot form, embed it on any site, add a pop-up, and see which HubSpot plan unlocks steps, styling and conditional logic in 2026.">
+<link rel="canonical" href="https://tryclaritia.com/blog/hubspot-forms">
+<meta property="og:site_name" content="Claritia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HubSpot Forms: How to Create, Embed and Set Up a Form (2026) · Claritia">
+<meta property="og:description" content="How to create a HubSpot form, embed it on any site, add a pop-up, and see which HubSpot plan unlocks steps, styling and conditional logic in 2026.">
+<meta property="og:url" content="https://tryclaritia.com/blog/hubspot-forms">
+<meta property="og:image" content="https://tryclaritia.com/blog/hubspot-forms/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/claritia-mark-small.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#fafaf5">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=15">
+<link rel="stylesheet" href="/assets/products.css?v=3">
+<link rel="stylesheet" href="/assets/blog.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "HubSpot Forms: How to Create, Embed and Set Up a Form (2026)", "description": "How to create a HubSpot form, embed it on any site, add a pop-up, and see which HubSpot plan unlocks steps, styling and conditional logic in 2026.", "datePublished": "2026-11-19", "image": "https://tryclaritia.com/blog/hubspot-forms/cover.png", "mainEntityOfPage": "https://tryclaritia.com/blog/hubspot-forms", "author": {"@type": "Person", "name": "Claritia"}, "publisher": {"@type": "Organization", "name": "Claritia", "logo": {"@type": "ImageObject", "url": "https://tryclaritia.com/assets/brand/claritia-app-icon.png"}}}</script>
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#0C8C5E"/><rect x="9" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="9" y="20.5" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="20.5" width="13" height="7" rx="3.5" fill="#fff"/><rect x="9" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16" fill="none"><path d="m3.5 8.5 3 3 6-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 16 16" fill="none"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7z" fill="currentColor"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+  <symbol id="chev-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></symbol>
+  <symbol id="grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="bolt" viewBox="0 0 24 24"><path d="M13 3L5 13h6l-1 8 8-10h-6l1-8z"/></symbol>
+  <symbol id="form" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+  <symbol id="flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v3a3 3 0 0 0 3 3h6.5"/><path d="M13 12l2.5 2.5L13 17"/></symbol>
+  <symbol id="route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H14a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h5.5"/></symbol>
+  <symbol id="table" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 10h16M10 10v10"/></symbol>
+  <symbol id="sort" viewBox="0 0 24 24"><path d="M7 4v16M4 17l3 3 3-3M17 20V4M14 7l3-3 3 3"/></symbol>
+  <symbol id="filter" viewBox="0 0 24 24"><path d="M4 5h16l-6 7.5V19l-4 1v-7.5L4 5z"/></symbol>
+  <symbol id="eyeoff" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 8.5 4.5 9.5 6a16 16 0 0 1-2.6 3.2M6.6 6.6C4.5 8 3.1 10.1 2.5 12c1 1.5 4.5 6 9.5 6a9.6 9.6 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+  <symbol id="type" viewBox="0 0 24 24"><path d="M5 6V4h14v2M12 4v16M9 20h6"/></symbol>
+  <symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/><path d="M19 15.5c.2 1.6.9 2.3 2.5 2.5-1.6.2-2.3.9-2.5 2.5-.2-1.6-.9-2.3-2.5-2.5 1.6-.2 2.3-.9 2.5-2.5z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.2l2.4 2.4 4.6-5"/></symbol>
+  <symbol id="home" viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="side" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M9.5 5v14"/></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.5 3.5 5.3 3.5 8.5s-1.1 6-3.5 8.5c-2.4-2.5-3.5-5.3-3.5-8.5s1.1-6 3.5-8.5z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4 7l8 6 8-6"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="desk" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20h8M12 16.5V20"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/></symbol>
+  <symbol id="plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"/></symbol>
+  <symbol id="card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h3"/></symbol>
+  <symbol id="video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 5.8a3 3 0 0 1 0 5.4M18 14a5.5 5.5 0 0 1 2.5 5"/></symbol>
+  <symbol id="lang" viewBox="0 0 24 24"><path d="M4 6h9M8.5 4v2M6 6c.5 3 2.6 5.6 5 7M11 6c-.5 3-2.6 5.6-5 7M13 20l4-9 4 9M14.5 17h5"/></symbol>
+  <symbol id="hook" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><circle cx="12" cy="6" r="2.5"/><path d="M10.8 8.2L7.3 14.8M13.2 8.2l3.5 6.6M8.5 17h7"/></symbol>
+  <symbol id="sign" viewBox="0 0 24 24"><path d="M4 18c3-1 4.5-4 6-8 1-2.6 2.5-3.5 3.5-2.5S13 11 11 14c-1.6 2.4 0 3.5 2 2l2-1.6c1-.8 2-.4 2.2.6.2 1 1 1.5 2.8 1"/><path d="M4 21h16"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="site-header__bar">
+    <a class="logo" href="/" aria-label="Claritia home"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="nav">
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Product <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--prod">
+            <div class="menu">
+              <a class="menu__item" href="/products/forms"><span class="itile"><svg class="i" aria-hidden="true"><use href="#form"/></svg></span><span><b>Forms</b><small>Pages, logic and prices</small></span></a><a class="menu__item" href="/products/meetings"><span class="itile"><svg class="i" aria-hidden="true"><use href="#cal"/></svg></span><span><b>Meetings</b><small>Booking pages and team pools</small></span></a><a class="menu__item" href="/products/routing"><span class="itile"><svg class="i" aria-hidden="true"><use href="#route"/></svg></span><span><b>Routing</b><small>The right person for each lead</small></span></a><a class="menu__item" href="/#workflows"><span class="itile"><svg class="i" aria-hidden="true"><use href="#flow"/></svg></span><span><b>Workflows</b><small>Reminders and follow-ups</small></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Form templates <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--mega">
+            <div class="mcols">
+              <div class="mcol"><b class="mcol__h">By use</b><a href="/templates/group/leads">Leads and sales</a><a href="/templates/group/booking">Booking</a><a href="/templates/group/money">Orders and payments</a><a href="/templates/group/events">Events</a><a href="/templates/group/feedback">Feedback and surveys</a><a href="/templates/group/intake">Intake and onboarding</a><a href="/templates/group/apply">Apply and join</a><a href="/templates/group/legal">Consent and legal</a></div>
+              <div class="mcol"><b class="mcol__h">Popular</b><a href="/templates/category/demo-request">Demo request</a><a href="/templates/category/contact">Contact</a><a href="/templates/category/quote">Quote</a><a href="/templates/category/appointment">Appointment</a><a href="/templates/category/registration">Registration</a><a href="/templates/category/job-application">Job application</a><a href="/templates/category/order">Order</a><a href="/templates/category/feedback">Feedback</a></div>
+              <div class="mcol"><b class="mcol__h">By industry</b><a href="/templates/saas">SaaS and software</a><a href="/templates/agency">Agencies</a><a href="/templates/consulting">Consulting</a><a href="/templates/healthcare">Healthcare</a><a href="/templates/real-estate">Real estate</a><a href="/templates/education">Education and training</a><a href="/templates/fitness">Fitness</a><a href="/templates/legal">Legal</a></div>
+            </div>
+            <div class="menu-foot"><a href="/templates">See all 840 templates <svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+        <li class="nav__group">
+          <button type="button" class="nav__trigger" aria-expanded="false">Integrations <svg class="nav__chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+          <div class="nav__panel nav__panel--mega">
+            <div class="mcols mcols--ix">
+              <div class="mcol"><b class="mcol__h">By kind</b><div class="mlinks2"><a href="/integrations#crm">CRM</a><a href="/integrations#calendars">Calendars</a><a href="/integrations#video">Video</a><a href="/integrations#chat">Chat</a><a href="/integrations#email">Email</a><a href="/integrations#sheets">Sheets</a><a href="/integrations#work-tools">Work tools</a><a href="/integrations#documents">Documents</a><a href="/integrations#files">Files</a><a href="/integrations#payments">Payments</a><a href="/integrations#analytics">Analytics</a><a href="/integrations#website">Website</a></div></div>
+              <div class="mcol"><b class="mcol__h">Popular</b><div class="mtools"><a class="mtool" href="/integrations/hubspot"><img src="/assets/logos/hubspot.svg" alt="" width="18" height="18">HubSpot</a><a class="mtool" href="/integrations/salesforce"><img src="/assets/logos/salesforce.svg" alt="" width="18" height="18">Salesforce</a><a class="mtool" href="/integrations/google-calendar"><img src="/assets/logos/calendar.svg" alt="" width="18" height="18">Google Calendar</a><a class="mtool" href="/integrations/outlook"><img src="/assets/logos/outlook.jpg" alt="" width="18" height="18">Outlook</a><a class="mtool" href="/integrations/zoom"><img src="/assets/logos/zoom.svg" alt="" width="18" height="18">Zoom</a><a class="mtool" href="/integrations/slack"><img src="/assets/logos/slack.svg" alt="" width="18" height="18">Slack</a><a class="mtool" href="/integrations/google-sheets"><img src="/assets/logos/googlesheets.svg" alt="" width="18" height="18">Google Sheets</a><a class="mtool" href="/integrations/mailchimp"><img src="/assets/logos/mailchimp.svg" alt="" width="18" height="18">Mailchimp</a><a class="mtool" href="/integrations/stripe"><img src="/assets/logos/stripe.svg" alt="" width="18" height="18">Stripe</a><a class="mtool" href="/integrations/webflow"><img src="/assets/logos/webflow.svg" alt="" width="18" height="18">Webflow</a></div></div>
+            </div>
+            <div class="menu-foot"><a href="/integrations">See all 73 integrations <svg class="i s14" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+        <li><a class="nav__link" href="/pricing">Pricing</a></li>
+        <li><a class="nav__link" href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="site-actions">
+      <a class="site-actions__signin" href="https://app.tryclaritia.com/signin">Sign in</a>
+      <a class="btn btn--primary" href="https://app.tryclaritia.com/signup">Start free <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-label="Open menu">
+        <svg class="i-open" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="i-close" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="sheet">
+  <div class="sheet__body">
+    <span class="sheet__label">Product</span>
+    <a href="/products/forms">Forms</a>
+    <a href="/products/meetings">Meetings</a>
+    <a href="/products/routing">Routing</a>
+    <a href="/#workflows">Workflows</a>
+    <a href="/templates">Form templates</a>
+    <a href="/integrations">Integrations</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/blog">Blog</a>
+  </div>
+  <div class="sheet__foot">
+    <a class="btn btn--ghost btn--lg" href="https://app.tryclaritia.com/signin">Sign in</a>
+    <a class="btn btn--primary btn--lg" href="https://app.tryclaritia.com/signup">Start free</a>
+  </div>
+</div>
+
+<main id="main">
+  <div class="frame">
+    <article class="bl-post">
+      <nav class="bl-crumb" aria-label="Breadcrumb"><a href="/blog">Blog</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><span>Integrations</span></nav>
+      <h1>HubSpot Forms: How to Create, Embed and Set Up a Form (2026)</h1>
+      <p class="bl-lead">How to create a HubSpot form, embed it on any site, add a pop-up, and see which HubSpot plan unlocks steps, styling and conditional logic in 2026.</p>
+      <div class="bl-by"><time datetime="2026-11-19">November 19, 2026</time><span>11 min read</span></div>
+      <img class="bl-cover" src="/blog/hubspot-forms/cover.png?v=ffe34442c2" alt="" width="1200" height="630">
+      <div class="bl-body-wrap">
+        <aside class="bl-toc" aria-label="On this page"><b>On this page</b><a href="#main-points">Main points</a><a href="#what-is-a-hubspot-form">What is a HubSpot form?</a><a href="#what-you-need">What you need</a><a href="#step-1-create-the-form">Step 1: Create the form</a><a href="#step-2-add-fields-and-connect-them-to-properties">Step 2: Add fields and connect them to properties</a><a href="#step-3-add-steps-and-logic">Step 3: Add steps and logic</a><a href="#step-4-style-the-form">Step 4: Style the form</a><a href="#step-5-choose-what-happens-after-submit">Step 5: Choose what happens after submit</a><a href="#step-6-set-notifications-and-contact-settings">Step 6: Set notifications and contact settings</a><a href="#step-7-preview-and-publish">Step 7: Preview and publish</a><a href="#step-8-embed-the-form-on-your-site">Step 8: Embed the form on your site</a><a href="#step-9-add-a-pop-up-form">Step 9: Add a pop-up form</a><a href="#common-problems">Common problems</a><a href="#when-another-form-builder-fits-better">When another form builder fits better</a><a href="#questions">Questions</a><a href="#get-started">Get started</a></aside>
+        <div class="bl-body"><p>You want a form on your website that puts every lead straight into HubSpot. HubSpot has a form builder for that, and you can start for free. Then the questions pile up. Where is the embed code? Why are submissions landing in spam? Why is the logic button locked?</p>
+<p>Most of the answers come down to two things: where a setting lives in the form editor, and which HubSpot plan it needs. Once you know both, a working HubSpot web form takes about as long as writing its questions.</p>
+<blockquote><p><strong><a href="https://app.tryclaritia.com/signup">Try Claritia free</a></strong> to build a form with free conditional logic that sends each lead to HubSpot and books the meeting on the same page.</p></blockquote>
+<p>In this post, you'll create a HubSpot form step by step, embed it on your site, add a pop-up, and see what each HubSpot plan includes for forms.</p>
+<h2 id="main-points">Main points</h2>
+<ul><li>HubSpot forms are free to build on every plan, and each submission creates or updates a contact in your HubSpot CRM.</li><li>Multi-step forms and form styling need a Starter plan. Conditional logic needs Marketing Hub or Content Hub Professional, which starts at $800 a month billed yearly.</li><li>To embed a HubSpot form, publish it, copy the embed code, and add your site's domain in HubSpot's tracking settings, or submissions get marked as spam.</li><li>Pop-up forms are built with HubSpot's CTA tool, which needs Marketing Hub or Content Hub Starter.</li><li>If you need logic or booking without a bigger plan, form builders like <a href="/">Claritia</a> and <a href="https://www.fillout.com/" target="_blank" rel="noopener">Fillout</a> still send leads to HubSpot.</li></ul>
+<h2 id="what-is-a-hubspot-form">What is a HubSpot form?</h2>
+<p>A HubSpot form is a form you build in HubSpot's Marketing Hub that saves each answer to your HubSpot CRM. Each field connects to a contact or company property, so a submission creates or updates a record. You can place it on HubSpot pages, embed it on any website, or share it as a standalone page.</p>
+<p><a href="https://www.hubspot.com/products/marketing/forms" target="_blank" rel="noopener">HubSpot forms</a> is the form builder in HubSpot's Marketing Hub for marketers who want website visitors to become CRM contacts automatically. Users build forms in a drag-and-drop editor or from templates for newsletter signups, downloads, event registration and more, then embed them on a site or publish them as standalone pages.</p>
+<p>Each submission is saved to the contact database, can trigger a follow-up email or nurture campaign, and feeds reports on views, submissions and conversion rate.</p>
+<p><a href="https://www.hubspot.com/products/marketing/forms" target="_blank" rel="noopener"><img src="/assets/blog/tools/hubspot-forms.webp" alt="HubSpot forms homepage" width="1440" height="900" loading="lazy"></a></p>
+<h2 id="what-you-need">What you need</h2>
+<ul><li><strong>A HubSpot account.</strong> The free plan is enough to build and embed a form. HubSpot's pricing page lists it as free for up to 2 users.</li><li><strong>Edit forms permission.</strong> HubSpot requires it to create or edit forms.</li><li><strong>Access to your website.</strong> You'll paste an embed code into a page, or use HubSpot's WordPress plugin.</li><li><strong>The HubSpot tracking code</strong> on that site, if you want form analytics or pop-ups on pages outside HubSpot.</li></ul>
+<h3 id="what-each-hubspot-plan-includes-for-forms">What each HubSpot plan includes for forms</h3>
+<p>HubSpot doesn't list form features on its pricing page, so this table comes from its knowledge base articles on creating, styling and embedding forms. Prices are from HubSpot's Marketing Hub pricing page. Prices checked November 2026.</p>
+<div class="bl-table"><table><thead><tr><th>Plan</th><th>Price</th><th>What it adds for forms</th></tr></thead><tbody><tr><td>Free</td><td>$0, for up to 2 users</td><td>Forms, fields tied to CRM properties, hidden fields, thank-you message or redirect, embed code and share link</td></tr><tr><td>Starter</td><td>$7 a seat a month billed yearly, or $10 billed monthly, as a new-customer offer (listed at $20)</td><td>Multi-step forms with up to 20 steps, a progress bar, form styling, and pop-ups through the CTA tool</td></tr><tr><td>Professional</td><td>$800 a month billed yearly, or $890 monthly on a yearly commitment, with 3 core seats</td><td>Conditional logic, CSS through the form developer code, AI form translation, and links to marketing campaigns</td></tr><tr><td>Enterprise</td><td>$3,600 a month, with 5 core seats</td><td>Everything in Professional, with more seats, marketing contacts and HubSpot Credits</td></tr></tbody></table></div>
+<p>A few notes on the table:</p>
+<ul><li><strong>Onboarding fees.</strong> Professional has a required one-time onboarding fee of $3,000, and Enterprise has one of $7,000.</li><li><strong>Hubs matter.</strong> Styling works on Marketing Hub, Content Hub or Service Hub Starter. Conditional logic needs Marketing Hub or Content Hub Professional.</li><li><strong>Meeting redirects.</strong> Sending someone to a scheduling page with conditional logic needs Sales Hub or Service Hub Enterprise.</li><li><strong>Follow-up emails.</strong> HubSpot's forms FAQ says Professional and Enterprise accounts can use workflows to send an email after a submission.</li></ul>
+<h2 id="step-1-create-the-form">Step 1: Create the form</h2>
+<ol><li>In HubSpot, go to <strong>Marketing</strong>, then <strong>Forms</strong>. On some accounts, it sits under <strong>More</strong> first.</li><li>Click <strong>Create form</strong> in the top right.</li><li>Select the <strong>Form Editor</strong>, then click <strong>Next</strong>.</li><li>Pick a template and click <strong>Use template</strong>, or choose <strong>Start from blank</strong>.</li></ol>
+<p>If your account has more than one brand, you can pick the brand the form belongs to from your profile menu before you start.</p>
+<h2 id="step-2-add-fields-and-connect-them-to-properties">Step 2: Add fields and connect them to properties</h2>
+<p>Click the <strong>+</strong> icon in the top left, open <strong>Fields</strong>, and drag a field type onto the form. In the <strong>Edit field</strong> panel, connect it to an existing property, or click <strong>Create new property</strong> to make one.</p>
+<p>The property decides where the answer is stored. A field tied to the company name property, for example, can create or update a company and link it to the contact.</p>
+<p>A few things to know:</p>
+<ul><li><strong>Email is required by default.</strong> HubSpot needs it to create a contact, and it checks the address is valid before the form sends.</li><li><strong>Hidden fields</strong> pass a value you set without showing the field, which helps for things like a lead source. A required field can't be hidden.</li><li><strong>Not every property type works.</strong> Calculation, rollup, rich text, URL and date and time picker properties aren't supported in forms.</li><li><strong>Phone fields show a country code</strong> based on the visitor's location. You can't hide it on the default phone property.</li></ul>
+<h2 id="step-3-add-steps-and-logic">Step 3: Add steps and logic</h2>
+<p>On a Starter, Professional or Enterprise plan, you can split a long form into steps. Hover between two steps in the editor and click the <strong>+</strong> icon. A form can have up to 20 steps, and Marketing Hub Starter adds an optional progress bar.</p>
+<p>Conditional logic needs Marketing Hub or Content Hub Professional or Enterprise. Click the logic icon, then <strong>Add logic</strong>, and build a rule: if a field matches a value, then show or hide fields, show or hide steps, or redirect the visitor. Each form can hold up to 200 rules with 10 conditions each.</p>
+<p>If you're on Free or Starter and need logic, this is the step where many teams look at another form tool. More on that below, or see our guide to <a href="/blog/multi-step-form">multi-step forms</a>.</p>
+<h2 id="step-4-style-the-form">Step 4: Style the form</h2>
+<p>Styling needs Marketing Hub, Content Hub or Service Hub Starter or higher. Click the styling icon on the left. You can change fields, buttons, body text, headings, the background and the progress bar, or pick a quick style.</p>
+<p>Styles apply to all steps at once. If you need full control with your own CSS, the form developer code is on Marketing Hub or Content Hub Professional. The new editor doesn't offer raw HTML forms.</p>
+<h2 id="step-5-choose-what-happens-after-submit">Step 5: Choose what happens after submit</h2>
+<p>Click the contents icon, then <strong>On submit</strong>. You have two options:</p>
+<ul><li><strong>Show a thank-you message</strong>, which you can edit in the panel.</li><li><strong>Redirect</strong> to a HubSpot page, a URL, a meeting link or a payment link.</li></ul>
+<p>To send a new lead to a booking page, pick a meeting link here. Choosing a different page for each answer needs conditional logic, and a redirect to a scheduling page by answer needs Sales Hub or Service Hub Enterprise.</p>
+<h2 id="step-6-set-notifications-and-contact-settings">Step 6: Set notifications and contact settings</h2>
+<p>Click the settings icon to open the form's settings. The ones most teams change:</p>
+<ul><li><strong>Notify contact owner.</strong> Sends an alert to the contact's owner. If the contact has no owner, no alert goes out.</li><li><strong>Add users to notify.</strong> Pick people or teams who get every submission.</li><li><strong>Email domains to block.</strong> Block a domain, or switch on <strong>Block free email providers</strong> for B2B forms.</li><li><strong>Lifecycle stage.</strong> Set the stage for new and existing records. HubSpot won't move a record's stage backwards.</li><li><strong>Create new contacts from unknown email addresses.</strong> Stops HubSpot from matching a submission to a returning visitor's cookie.</li></ul>
+<p>If you want each lead to get an owner automatically, our guide to <a href="/blog/hubspot-lead-routing">HubSpot lead routing</a> walks through the workflow.</p>
+<h2 id="step-7-preview-and-publish">Step 7: Preview and publish</h2>
+<p>Click <strong>Preview</strong> in the top right to test the form on desktop, tablet and phone. You can step through pages and logic, but preview mode doesn't send submissions.</p>
+<p>When it looks right, click <strong>Review and update</strong>, then <strong>Update</strong> at the bottom of the right panel. The form is now live, and HubSpot offers three ways to share it.</p>
+<h2 id="step-8-embed-the-form-on-your-site">Step 8: Embed the form on your site</h2>
+<p>After you publish, choose one of these:</p>
+<ul><li><strong>Embed with HubSpot:</strong> Pick a HubSpot website page, landing page or CTA to place the form on.</li><li><strong>Get embed code:</strong> Copy the code and paste it into an HTML block on your own site.</li><li><strong>Copy a share link:</strong> Send people to the form on its own page. The link can't be edited, and anyone with it can open the form.</li></ul>
+<p>Before you embed on an outside site, add that site's domain to your HubSpot tracking settings. HubSpot marks submissions from domains it doesn't know as spam. Install the HubSpot tracking code on the page too, or you won't see analytics for the form.</p>
+<p>On WordPress, HubSpot's WordPress plugin handles the tracking code and can insert forms for you. Changes you make to the form in HubSpot show up on your site on their own.</p>
+<h2 id="step-9-add-a-pop-up-form">Step 9: Add a pop-up form</h2>
+<p>In HubSpot, pop-up forms are built with the CTA tool. It needs Marketing Hub or Content Hub Starter or higher.</p>
+<ol><li>Go to <strong>Marketing</strong>, then <strong>CTAs</strong>, and click <strong>Create</strong>.</li><li>Open the <strong>Pop-ups</strong> tab and pick a type: a banner fixed to the page, a pop-up box on a schedule, or a slide-in from the corner.</li><li>Choose a template, then drag in a <strong>Form (New Editor)</strong> module and pick your form. One CTA holds one form, and it can't hold a meeting module too.</li><li>Turn on <strong>Close after submission</strong> in the form module if the pop-up should close once someone sends it.</li><li>Set where and when it shows, then publish.</li></ol>
+<p>For pop-ups on pages outside HubSpot, the tracking code or the WordPress plugin must be installed.</p>
+<h2 id="common-problems">Common problems</h2>
+<ul><li><strong>Submissions land in spam.</strong> The site's domain isn't in your tracking settings. Add it and test again.</li><li><strong>No analytics on an embedded form.</strong> The HubSpot tracking code isn't on the page.</li><li><strong>The logic or styling options are locked.</strong> Logic needs Marketing Hub or Content Hub Professional, and styling needs a Starter plan.</li><li><strong>Owners get no alert.</strong> Notify contact owner only works when the contact already has an owner.</li><li><strong>You want a submission cap.</strong> HubSpot can't limit how many times a form is sent. You'd have to watch the count and unpublish it.</li><li><strong>You want the form inside an email.</strong> HubSpot doesn't support forms in emails. Link to a page with the form, or use a CTA.</li><li><strong>Your own HTML form isn't syncing.</strong> HubSpot's non-HubSpot forms tool only collects plain HTML forms with an email field. It skips forms in iframes or single-page apps, and it ignores hidden fields.</li><li><strong>The validation text is wrong.</strong> HubSpot doesn't let you edit messages like "Please complete this mandatory field" in the form tool. A developer has to change it with a script.</li></ul>
+<h2 id="when-another-form-builder-fits-better">When another form builder fits better</h2>
+<p>HubSpot's own forms are a good fit when you're already paying for Marketing Hub Professional, or when a short contact form is all you need. If you want logic, booking or more design on a smaller plan, these tools still send each lead to HubSpot.</p>
+<h3 id="claritia">Claritia</h3>
+<p><a href="/">Claritia</a> is a forms, scheduling and follow-up app built for small B2B teams that want every lead from their website to reach the right rep and book a meeting before they leave the page.</p>
+<p>It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.</p>
+<p><a href="/"><img src="/assets/blog/tools/claritia.webp" alt="Claritia homepage" width="1440" height="900" loading="lazy"></a></p>
+<p>Conditional logic, multi-page forms with a progress bar, hidden fields for UTM tags, and popup embeds are on every plan, free included. The <a href="/integrations/hubspot">HubSpot integration</a> starts on Starter at $15 a seat a month ($12 billed yearly):</p>
+<ul><li><strong>Contacts without duplicates:</strong> Each fill creates a HubSpot contact or updates the one with that email.</li><li><strong>Field mapping:</strong> Match each question to a HubSpot property, like company or job title.</li><li><strong>Owners:</strong> Use the person Claritia's routing picks, or let HubSpot's own rules decide.</li><li><strong>Timeline:</strong> Each fill shows on the contact's timeline in HubSpot.</li><li><strong>Keep your HubSpot forms:</strong> Claritia can hear your HubSpot form send and open the right calendar on the same page.</li></ul>
+<p>On Business, at $79 a seat a month ($63 billed yearly), a lead HubSpot already knows books with their contact owner first. Claritia is a newer tool with a smaller marketplace, and its Zapier and Make apps aren't listed yet.</p>
+<h3 id="fillout">Fillout</h3>
+<p><a href="https://www.fillout.com/" target="_blank" rel="noopener">Fillout</a> is a form builder for teams that want branded forms, surveys, and quizzes connected to the tools they already use. You can describe a form for its AI to build or use drag and drop, then add logic, file uploads, payments, and signatures.</p>
+<p>It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations.</p>
+<p><a href="https://www.fillout.com/" target="_blank" rel="noopener"><img src="/assets/blog/tools/fillout.webp" alt="Fillout homepage" width="1440" height="900" loading="lazy"></a></p>
+<p>Its pricing page lists HubSpot among the integrations included on the free plan, which gives you 1,000 responses a month. Paid plans start at $15 a month billed yearly.</p>
+<p>For six more options with prices and how each one connects, see our list of the <a href="/blog/best-hubspot-forms-alternatives">best HubSpot Forms alternatives</a>.</p>
+<h2 id="questions">Questions</h2>
+<h3 id="are-hubspot-forms-free">Are HubSpot forms free?</h3>
+<p>Yes. You can create, embed and share HubSpot forms on the free plan, and each submission goes to your CRM. Multi-step forms and styling need a Starter plan, and conditional logic needs Marketing Hub or Content Hub Professional.</p>
+<h3 id="how-do-i-create-a-form-in-hubspot">How do I create a form in HubSpot?</h3>
+<p>Go to Marketing, then Forms, and click Create form. Pick the Form Editor, start from a template or a blank form, add fields tied to properties, then click Review and update to publish.</p>
+<h3 id="how-do-i-embed-a-hubspot-form-on-my-website">How do I embed a HubSpot form on my website?</h3>
+<p>Publish the form, choose Get embed code, and paste the code into an HTML block on your page. Add your site's domain to HubSpot's tracking settings first, or submissions are marked as spam.</p>
+<h3 id="can-i-make-a-pop-up-form-in-hubspot">Can I make a pop-up form in HubSpot?</h3>
+<p>Yes, with the CTA tool on Marketing Hub or Content Hub Starter or higher. Create a pop-up box, banner or slide-in CTA, and add a Form (New Editor) module with your form.</p>
+<h3 id="do-hubspot-forms-have-conditional-logic">Do HubSpot forms have conditional logic?</h3>
+<p>Yes, on Marketing Hub or Content Hub Professional or Enterprise. You can show or hide fields and steps, or redirect visitors, with up to 200 rules per form.</p>
+<h3 id="can-i-use-another-form-builder-with-hubspot">Can I use another form builder with HubSpot?</h3>
+<p>Yes. Claritia sends each fill to HubSpot as a contact on Starter, with conditional logic on every plan. Fillout includes HubSpot on its free plan.</p>
+<h2 id="get-started">Get started</h2>
+<p>Build your first HubSpot form on the free plan, embed it, and check that a test entry reaches your CRM. If you need logic or a booked meeting right after the form, try a builder that keeps HubSpot as your CRM.</p>
+<blockquote><p><strong><a href="https://app.tryclaritia.com/signup">Try Claritia free</a></strong> to build a form, connect HubSpot and book your first meeting today.</p></blockquote>
+<p>You can also read about the <a href="/integrations/hubspot">HubSpot integration</a> or browse free <a href="/templates">form templates</a>.</p></div>
+      </div>
+    </article>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+  <div class="frame">
+    <section class="bl-more" aria-labelledby="more-h"><h2 id="more-h">More from the blog</h2><div class="bl-grid"><a class="bl-card" href="/blog/zoom-meeting-scheduler"><span class="bl-card__img"><img src="/blog/zoom-meeting-scheduler/cover.png?v=2d22856ce1" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Scheduling</b>November 19, 2026</span><b class="bl-card__h">Zoom Meeting Scheduler: How to Let People Book Zoom Calls (2026)</b></span></a><a class="bl-card" href="/blog/best-no-code-form-builder"><span class="bl-card__img"><img src="/blog/best-no-code-form-builder/cover.png?v=05258d5af6" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Forms</b>November 19, 2026</span><b class="bl-card__h">8 Best No-Code Form Builders for Full Workflows (2026)</b></span></a><a class="bl-card" href="/blog/hubspot-lead-scoring"><span class="bl-card__img"><img src="/blog/hubspot-lead-scoring/cover.png?v=7ac48be500" alt="" width="1200" height="630" loading="lazy"></span><span class="bl-card__t"><span class="bl-meta"><b>Integrations</b>November 19, 2026</span><b class="bl-card__h">HubSpot Lead Scoring: How It Works and How to Set It Up (2026)</b></span></a></div></section>
+  </div>
+  <div class="band"><div class="frame"></div></div>
+<!-- The last prompt, on dark -->
+  <div class="dark">
+    <div class="band"><div class="frame"></div></div>
+    <div class="frame">
+      <section class="cta" aria-labelledby="cta-h">
+        <div class="ghostapp" aria-hidden="true"><div class="gbar"><span class="sq"><svg class="i s14"><use href="#home"/></svg></span>Lead intake<div class="end"><span>Share</span><span>Publish</span></div></div></div>
+        <h2 id="cta-h">What form do you need?</h2>
+        <form class="dprompt" action="https://app.tryclaritia.com/forms/new" method="get"><div class="in">
+          <label class="sr-only" for="ask2">Describe the form you need</label>
+          <textarea id="ask2" name="ask" maxlength="300" placeholder="Build a catering quote with a price calculator and a deposit"></textarea>
+          <div class="pbar">
+            <span class="logos"><img src="/assets/logos/calendar.svg" alt="" width="22" height="22"><img src="/assets/logos/outlook.jpg" alt="" width="22" height="22"><img src="/assets/logos/hubspot.svg" alt="" width="22" height="22"></span>
+            <span class="small">Free plan. No card needed.</span>
+            <span class="grow"></span>
+            <button class="btn btn--green" type="submit">Get started <svg class="i s14 arr" aria-hidden="true"><use href="#arrow"/></svg></button>
+          </div>
+        </div></form>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__frame">
+    <div class="site-footer__in">
+      <div class="site-footer__brand">
+        <a class="logo" href="/" aria-label="Claritia home"><svg aria-hidden="true"><use href="#mark"/></svg>Claritia</a>
+        <p>Forms that book the meeting</p>
+      </div>
+      <div class="site-footer__col"><h2>Product</h2><ul><li><a href="/products/forms">Forms</a></li><li><a href="/products/meetings">Meetings</a></li><li><a href="/products/routing">Routing</a></li><li><a href="/#workflows">Workflows</a></li><li><a href="/integrations">Integrations</a></li></ul></div>
+      <div class="site-footer__col"><h2>Form templates</h2><ul><li><a href="/templates">All form templates</a></li><li><a href="/templates/group/leads">Leads and sales</a></li><li><a href="/templates/group/booking">Booking</a></li><li><a href="/templates/group/money">Orders and payments</a></li><li><a href="/templates/group/events">Events</a></li></ul></div>
+      <div class="site-footer__col"><h2>Company</h2><ul><li><a href="/pricing">Pricing</a></li><li><a href="/#faq">Questions</a></li><li><a href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a></li><li><a href="mailto:hello@tryclaritia.com">Contact</a></li></ul></div>
+      <div class="site-footer__col"><h2>Resources</h2><ul><li><a href="https://app.tryclaritia.com/signin">Sign in</a></li><li><a href="/blog">Blog</a></li><li><a href="/llms.txt">llms.txt</a></li><li><a href="/pricing.md">Pricing.md</a></li></ul></div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Perceptric. Claritia is a Perceptric product.</span>
+      <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js?v=9" defer></script>
+</body>
+</html>
