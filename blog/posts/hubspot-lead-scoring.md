@@ -34,11 +34,23 @@ There are three types of score:
 
 Rules sit in groups. Each rule adds or takes away points, each group can have its own limit, and the whole score has a limit too. You can cap low-value actions, like page views, and still let a booked meeting count for much more.
 
+![HubSpot lead score editor showing an event scoring group with a group limit box, a Decay scores switch and an event rule worth points](/assets/blog/vendor/hubspot-lead-scoring-01.webp)
+
+*A scoring group in HubSpot's editor, with its own group limit at the top right and an event rule that adds points. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/scoring/build-lead-scores).*
+
 ### Score decay and thresholds
 
 For engagement and combined scores, you can turn on score decay. It cuts the points from an action by a set share every 1, 3, 6 or 12 months, so old activity counts for less. Decay doesn't work on rules filtered by frequency or time frame.
 
+![HubSpot Decay scores switch turned on, set to reduce by a share every month, above a form submission rule](/assets/blog/vendor/hubspot-lead-scoring-02.webp)
+
+*With decay on, you pick how much to cut and how often, and HubSpot applies it to the rules in that group. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/scoring/understand-the-lead-scoring-tool).*
+
 Thresholds sort records into labels. Fit and engagement scores use High, Medium and Low. Combined scores use A1 to C3, where the letter is fit and the number is engagement, so C1 means a poor fit who is very engaged.
+
+![HubSpot distribution preview for a combined score, a grid from A1 to C3 with level of fit on one side and level of engagement on the other, above a score distribution graph](/assets/blog/vendor/hubspot-lead-scoring-03.webp)
+
+*The distribution preview for a combined score lays out the A1 to C3 labels, with fit as the letter and engagement as the number. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/scoring/test-records-in-scoring-tools).*
 
 ## Which HubSpot plans include lead scoring?
 
@@ -87,6 +99,10 @@ Add a third list of bad signs, like a personal email address, a student title or
 4. Pick the type: fit, engagement or combined. Deal scores are combined by default.
 5. Name the score so your team knows what it's for, such as "Inbound contact score".
 
+![HubSpot Lead Scoring page listing scores with their scored object, score type and on or off status, with Create score with AI and Create score buttons](/assets/blog/vendor/hubspot-lead-scoring-04.webp)
+
+*The Lead Scoring page, where Create score and Create score with AI sit at the top right and each score shows its object, type and status. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/scoring/lead-score-history-and-performance).*
+
 ## Step 3: Add fit rules
 
 1. Click **+ Add property group**.
@@ -97,6 +113,10 @@ Add a third list of bad signs, like a personal email address, a student title or
 
 You can also score on segment membership. That helps with OR logic: build a segment for "any of these job titles" and give points for belonging to it.
 
+![HubSpot fit rule on the Country/Region property with three regions, each scored on its own with a different number of points](/assets/blog/vendor/hubspot-lead-scoring-05.webp)
+
+*A fit rule on a property, with each value scored on its own so every region can earn different points. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/scoring/build-lead-scores).*
+
 ## Step 4: Add engagement rules
 
 1. Click **+ Add event group** and give it a clear name, like "Sales actions".
@@ -105,6 +125,10 @@ You can also score on segment membership. That helps with OR logic: build a segm
 4. Use **Limit to** for actions that repeat, so ten page views don't outweigh one demo request.
 5. Set a group limit, so a whole group of small actions can't push a lead to the top.
 6. Turn on **Decay scores** for actions that go stale, for example 50% after 3 months.
+
+![HubSpot event rule for Meeting booked filtered by form name, scoring two forms individually with different points](/assets/blog/vendor/hubspot-lead-scoring-06.webp)
+
+*An event rule where each form is scored on its own, so a Contact Us form can count for more than a newsletter form. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/scoring/build-lead-scores).*
 
 Calls only count toward scores when they're made with HubSpot's own calling tool.
 
@@ -116,9 +140,17 @@ On the Contacts, Companies or Deals tab, choose to score all records or only som
 
 Pick a score limit. The ranges run from -100 to 100 up to -10,000 to 10,000. Then set the threshold ranges, for example 70 to 100 as High, 40 to 69 as Medium and anything below 40 as Low.
 
+![HubSpot score editor with the Score limit dropdown at the top, above a scoring group with a group limit and an event rule](/assets/blog/vendor/hubspot-lead-scoring-07.webp)
+
+*The score limit dropdown sits at the top of the Criteria tab, above every group in the score. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/scoring/understand-the-lead-scoring-tool).*
+
 ## Step 7: Test it, then turn it on
 
 Use the test records option to check a few contacts you know well: a recent customer, a good open lead and a poor fit. Preview the score spread too. If almost everyone is High, your points are too generous.
+
+![HubSpot score in test mode with a contact picked, showing which rules matched, points from each rule and a total score with a High label](/assets/blog/vendor/hubspot-lead-scoring-08.webp)
+
+*Testing a contact shows which rules matched, the points from each one, and the total score with its label. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/scoring/test-records-in-scoring-tools).*
 
 When you turn the score on, HubSpot scores records from their past values and actions, then keeps updating as things change.
 

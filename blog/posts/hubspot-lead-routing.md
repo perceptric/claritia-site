@@ -67,11 +67,19 @@ Each rule becomes a branch in your workflow. If you can't write a rule in one li
 
 Open Settings, then Users and teams, and put your reps into teams. A workflow can rotate within a team, which is easier to keep up than a hand-picked list of names.
 
+![HubSpot Edit team window with a team name, team members and a membership dropdown for each user](/assets/blog/vendor/hubspot-lead-routing-01.webp)
+
+*The Edit team window, where you name the team, add users and set each one as a main or extra team member. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/user-management/create-and-manage-teams).*
+
 Check every rep's seat. HubSpot only rotates to active users with a paid Sales or Service Professional or Enterprise seat. Users with core or view-only seats are greyed out, and so are people who haven't accepted their invite. For team rotation, only main team members with the right seat get leads.
 
 ## Step 3: Ask the right questions on your form
 
 Routing can only use what you know. Add the fields your rules need to the form, and make the key ones required. A dropdown for country or company size works better than a text box, because a workflow branch can match the exact value.
+
+![HubSpot form editor with a field selected and the Required field switch turned on in the left panel](/assets/blog/vendor/hubspot-lead-routing-02.webp)
+
+*In HubSpot's form editor, select a field and turn on Required field so every lead answers it. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
 
 In the form's settings, turn on **Notify contact owner** if you want the owner alerted each time a contact they own sends the form. If the contact has no owner yet, no alert goes out, so the workflow in the next step matters.
 
@@ -86,15 +94,35 @@ In the form's settings, turn on **Notify contact owner** if you want the owner a
 7. Pick specific users or a team to rotate between.
 8. Save the workflow and turn it on.
 
+![HubSpot Rotate record to owner action set to the contact owner property, with overwrite turned on and rotation between teams](/assets/blog/vendor/hubspot-lead-routing-03.webp)
+
+*The Rotate record to owner action, where you pick the owner property, choose whether to overwrite, and rotate between users or teams. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/workflows/assign-and-rotate-record-owners-using-workflows).*
+
 By default, HubSpot shares records equally within the team or list you picked. If you rotate HubSpot's lead records instead of contacts, which HubSpot marks as beta, you also get load balanced, round robin and random options, and you need Sales Hub Professional or Enterprise.
 
+![HubSpot Rotate record to owner action for lead records with a Lead Owner property, specific users, a Distribution dropdown and assignment settings](/assets/blog/vendor/hubspot-lead-routing-04.webp)
+
+*For lead records, the same action adds a Distribution choice and an option to assign only to users who are available. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/workflows/assign-and-rotate-record-owners-using-workflows).*
+
 Turn off the setting that syncs the lead owner with the contact or company owner first, or the two will fight.
+
+![HubSpot contact workflow with an enrollment trigger card followed by a Rotate record to owner action that rotates contacts within one team](/assets/blog/vendor/hubspot-lead-routing-05.webp)
+
+*A finished workflow on the canvas: the enrollment trigger on top, then the rotate action that shares contacts within a team. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/user-management/create-and-manage-teams).*
 
 ## Step 5: Let the lead book with a rep
 
 An owner on the record is only half the job. The lead still needs to talk to someone. Create a round robin scheduling page in the meetings tool and add the same reps. It shows the open times of everyone on the page, so the lead books with whoever is free.
 
+![HubSpot Schedule page published window with options to show the page in a pop-up, get embed code or copy a share link](/assets/blog/vendor/hubspot-lead-routing-06.webp)
+
+*Once the scheduling page is published, HubSpot offers a pop-up, embed code or a share link you can add to your form's thank-you message. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/meetings-tool/create-and-edit-scheduling-pages).*
+
 On the page's welcome tab, turn on **Prioritize contact owner**. A known contact enters their email and sees their owner's calendar first. Link the meeting page on your form's thank-you message, or on Sales Hub or Service Hub Enterprise, use form conditional logic to redirect each lead to the right meeting page by answer.
+
+![HubSpot form editor Logic panel explaining that conditional logic can redirect qualified leads to sales, with an Add logic button](/assets/blog/vendor/hubspot-lead-routing-07.webp)
+
+*The Logic panel in HubSpot's form editor, where Add logic starts a rule that can send qualified leads straight to sales. Image: [HubSpot Knowledge Base](https://knowledge.hubspot.com/forms/create-and-edit-forms).*
 
 ## Step 6: Test it, then keep an eye on it
 
@@ -120,6 +148,10 @@ HubSpot's own tools work well once you're on Professional. If you're not, or if 
 It opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
 On Starter, each fill creates or updates a HubSpot contact matched by email, and either Claritia's routing or HubSpot's own rules can pick the owner. Contacts that already have an owner keep theirs. You can also keep your HubSpot forms, since Claritia hears the form send and opens the right calendar.
+
+![A Claritia thank-you screen that opens the right rep's calendar right after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Right after the form is sent, the thank-you screen opens the calendar of the rep the lead was routed to.*
 
 - **Starter, $15 a seat a month ($12 yearly):** The [HubSpot integration](/integrations/hubspot), field mapping and fills on the contact timeline.
 - **Pro, $39 a seat a month ($31 yearly):** [Routing](/products/routing) by any answer, round robin with weights, team pools and a routing log.

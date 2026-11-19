@@ -26,6 +26,10 @@ In this post, you'll set up lead routing in Salesforce step by step, add a simpl
 
 Lead routing in Salesforce means giving each new lead record an owner based on rules. The owner can be a user, such as a sales rep, or a queue that a team works from. Salesforce's main tool for this is the lead assignment rule, set up in Setup. For the basics of routing in general, read [what lead routing is](/blog/what-is-lead-routing).
 
+![Salesforce All Leads list view with name, title, company, email, phone, source and an Owner Alias column showing reps and a queue](/assets/blog/vendor/salesforce-lead-routing-01.webp)
+
+*In the leads list, the Owner Alias column shows who owns each lead, a rep or a queue such as GeneralQueue. Image: [Salesforce Trailhead](https://trailhead.salesforce.com/content/learn/modules/leads_opportunities_lightning_experience/create-and-convert-leads-lightning).*
+
 ## What you need
 
 - **Admin access** to Setup in your Salesforce org.
@@ -52,6 +56,10 @@ In Setup, open Lead Settings and pick a default lead owner. When an assignment r
 ## Step 3: Create queues for your teams
 
 If a team should share leads, create a queue for it in Setup under Queues. Pick Lead as the object and add the team members. A queue keeps leads in one list until someone takes them. That's handy, but it's also where leads wait, so the team needs a habit of picking them up.
+
+![Salesforce Queue Members section with a list of available users and an Add button to move them into the queue](/assets/blog/vendor/salesforce-lead-routing-02.webp)
+
+*The Queue Members section of a new queue, where you move users from Available Members into the queue. Image: [Salesforce Trailhead](https://trailhead.salesforce.com/content/learn/projects/customize-an-org-to-support-a-new-business-unit/automate-your-business-process).*
 
 ## Step 4: Create the lead assignment rule
 
@@ -88,6 +96,10 @@ An active rule doesn't run on every lead by default. Check each way leads come i
 
 Create one test lead for each rule entry, plus one that should hit the catch-all. Check the owner on each, and check that the alert email arrived. Then watch new leads for a week and fix the order of any entries that clash.
 
+![Salesforce New Lead form with Lead Owner, name, company, title, lead source, industry, email and lead status fields](/assets/blog/vendor/salesforce-lead-routing-03.webp)
+
+*The New Lead form in Salesforce, where you fill in the fields your rules check, such as Industry or Lead Source, for each test lead. Image: [Salesforce Trailhead](https://trailhead.salesforce.com/content/learn/modules/prospect-tracking-with-salesforce-leads-quick-look/track-prospects-with-salesforce-leads).*
+
 ## Common problems
 
 - **The rule didn't run.** The lead came in by code, a flow or an import that skipped assignment. See Step 6.
@@ -108,6 +120,10 @@ Assignment rules cover a lot for free, but they stop at the owner field. When yo
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
 Each form lead goes to Salesforce as a lead or a contact, matched by email so it doesn't make duplicates, and you choose whether Claritia's routing or your Salesforce assignment rules set the owner.
+
+![Claritia routing rules checked in order, from enterprise demo to a country rule to the sales round robin](/assets/blog/ui/ui-routing-routing.webp)
+
+*Claritia's routing rules run top to bottom like an assignment rule, with a round robin for everyone else.*
 
 A lead Salesforce already knows books with its owner first, new leads go to the team's round robin, and each fill shows as a completed task on the record.
 

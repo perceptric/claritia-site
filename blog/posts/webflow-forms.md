@@ -82,6 +82,10 @@ Then shape it:
 - **Keep the campaign data.** Hidden fields catch UTM tags, the page and the referrer.
 - **End on a calendar.** Link a meeting type, so a qualified lead picks a time before they leave.
 
+![A Claritia form that asks team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*A form that asks a qualifying question and ends on a time picker, so the lead books inside the form.*
+
 ## Step 3: Add an Embed element in Webflow
 
 Open the form's Share tab in Claritia and copy the embed code. It's two lines:
@@ -101,11 +105,19 @@ The form can sit in the page, or open as a popup, a slide-in, a corner button or
 
 If you'd rather keep the form you have, skip steps 2 and 3. Add the Claritia script to the page and point Claritia at your Webflow form. When the form sends, the right calendar opens on the same page and the lead books.
 
+![A Claritia thank-you screen that opens the right rep's calendar right after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*After the form sends, the right rep's calendar opens on the same page.*
+
 To save every Webflow fill in Claritia too, use the webhook route on Starter. Webflow can fire a webhook on each form submission, and Claritia treats those fills like its own: they book, sync and get follow-ups.
 
 ## Step 5: Connect HubSpot and your other tools
 
 Every lead goes to Claritia first, then on to the tools you connect. On Starter, connect [HubSpot](/integrations/hubspot) in one click, and each form fill becomes a HubSpot contact, matched by email.
+
+![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
+
+*Each fill shows in Claritia's submissions list with who the lead booked with and the next step.*
 
 The same plan adds Google Sheets, Airtable, Notion, Slack, Microsoft Teams and email tools like Mailchimp. Webhooks and CSV export work on every plan.
 

@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=15">
 <link rel="stylesheet" href="/assets/products.css?v=3">
-<link rel="stylesheet" href="/assets/blog.css?v=3">
+<link rel="stylesheet" href="/assets/blog.css?v=4">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Webflow Forms: How to Add Multi-Step Forms, Logic and HubSpot (2026)", "description": "Learn what a Webflow form can and can't do, then add a multi-step form with logic in one Embed element, or keep your form and send answers to HubSpot.", "datePublished": "2026-11-19", "image": "https://tryclaritia.com/blog/webflow-forms/cover.png", "mainEntityOfPage": "https://tryclaritia.com/blog/webflow-forms", "author": {"@type": "Person", "name": "Claritia"}, "publisher": {"@type": "Organization", "name": "Claritia", "logo": {"@type": "ImageObject", "url": "https://tryclaritia.com/assets/brand/claritia-app-icon.png"}}}</script>
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
 </head>
@@ -176,6 +176,8 @@
 <p><em>Tia turns one sentence into a demo request form you can then edit.</em></p>
 <p>Then shape it:</p>
 <ul><li><strong>Split it into pages.</strong> Multi-page forms with a progress bar are on every plan, Free included.</li><li><strong>Add logic.</strong> Show a question only when an earlier answer calls for it, and skip pages that don't apply. Also on every plan.</li><li><strong>Keep the campaign data.</strong> Hidden fields catch UTM tags, the page and the referrer.</li><li><strong>End on a calendar.</strong> Link a meeting type, so a qualified lead picks a time before they leave.</li></ul>
+<p><img src="/assets/blog/ui/ui-forms-preview.webp" alt="A Claritia form that asks team size and ends on a time picker" width="968" height="780" loading="lazy"></p>
+<p><em>A form that asks a qualifying question and ends on a time picker, so the lead books inside the form.</em></p>
 <h2 id="step-3-add-an-embed-element-in-webflow">Step 3: Add an Embed element in Webflow</h2>
 <p>Open the form's Share tab in Claritia and copy the embed code. It's two lines:</p>
 <ul><li><code>&lt;script src="https://app.tryclaritia.com/forms/v1.js" async&gt;&lt;/script&gt;</code></li><li><code>&lt;claritia-form form-id="FORM_ID"&gt;&lt;/claritia-form&gt;</code></li></ul>
@@ -185,9 +187,13 @@
 <p><em>The Share tab gives you the form link, the embed code, and a choice of in page, popup, slide in, corner button or side tab.</em></p>
 <h2 id="step-4-or-keep-your-webflow-form">Step 4: Or keep your Webflow form</h2>
 <p>If you'd rather keep the form you have, skip steps 2 and 3. Add the Claritia script to the page and point Claritia at your Webflow form. When the form sends, the right calendar opens on the same page and the lead books.</p>
+<p><img src="/assets/blog/ui/ui-meetings-thank-you-screen.webp" alt="A Claritia thank-you screen that opens the right rep's calendar right after the form is sent" width="1318" height="744" loading="lazy"></p>
+<p><em>After the form sends, the right rep's calendar opens on the same page.</em></p>
 <p>To save every Webflow fill in Claritia too, use the webhook route on Starter. Webflow can fire a webhook on each form submission, and Claritia treats those fills like its own: they book, sync and get follow-ups.</p>
 <h2 id="step-5-connect-hubspot-and-your-other-tools">Step 5: Connect HubSpot and your other tools</h2>
 <p>Every lead goes to Claritia first, then on to the tools you connect. On Starter, connect <a href="/integrations/hubspot">HubSpot</a> in one click, and each form fill becomes a HubSpot contact, matched by email.</p>
+<p><img src="/assets/blog/ui/ui-forms-submissions.webp" alt="Claritia submissions list showing each lead, who they booked with and the next step" width="1318" height="778" loading="lazy"></p>
+<p><em>Each fill shows in Claritia's submissions list with who the lead booked with and the next step.</em></p>
 <p>The same plan adds Google Sheets, Airtable, Notion, Slack, Microsoft Teams and email tools like Mailchimp. Webhooks and CSV export work on every plan.</p>
 <h2 id="step-6-publish-and-test">Step 6: Publish and test</h2>
 <p>Publish your Webflow site. Then fill in the form yourself, on a phone as well as a laptop:</p>
