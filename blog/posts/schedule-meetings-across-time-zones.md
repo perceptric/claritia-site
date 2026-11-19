@@ -37,6 +37,10 @@ Every tool starts from your calendar, so a wrong setting there spreads to every 
 
 Google Calendar can also show additional time zones on your calendar grid. Add the zones of the people you meet most, and you'll see their hours next to yours.
 
+![Google Calendar week view on the web with three time zone columns beside the hours](/assets/blog/vendor/google-calendar-time-zones-01.webp)
+
+*Each extra time zone gets its own column of hours, with a short label at the top. Image: [Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/09/view-up-to-three-time-zones-in-google-Calendar-on-the-web.html).*
+
 Then set your working hours in your booking tool. Add a minimum notice, so nobody books a slot an hour away while you're asleep, and a daily cap if late calls tire you out.
 
 In Claritia, working hours, buffers, notice and daily caps come on every plan. See [Claritia Meetings](/products/meetings) for how availability works.
@@ -78,6 +82,10 @@ Check three things on your page before you share it:
 
 Claritia shows each visitor's time zone and language on every plan. Cal.com detects time zones on its free plan, and YouCanBookMe detects time zone and language for each booker.
 
+![Claritia booking page calendar with open times for a 30 min Google Meet sales demo](/assets/blog/ui/ui-meetings-sales-demo.webp)
+
+*A Claritia booking page lists the open times for the meeting, and each visitor sees them in their own time zone.*
+
 ## Step 4: Use a meeting poll for a group
 
 When three or more people must agree on a time, use a meeting poll. Pick 3 to 5 options inside the overlap you found in Step 2, share one link, and let everyone vote.
@@ -102,6 +110,12 @@ Better yet, send a booking link instead of a list of times. In Claritia, Starter
 A time typed in a chat message stays fixed in the writer's zone. A calendar invite converts itself. Google says an event shows up in the local time zone of each person you invite, even if they're somewhere else.
 
 So once a time is agreed, send a real invite from your calendar or booking tool. Add the video link inside it, so nobody has to search their inbox on the day. Claritia adds a Google Meet, Teams or Zoom link to each meeting it books.
+
+In Google Calendar, you can set an event's time zone by typing a city or country.
+
+![Google Calendar Event time zone window with a search for Mountain View listing matching cities and their time zones](/assets/blog/vendor/google-calendar-time-zone-picker-01.webp)
+
+*Each match shows the city with its time zone and offset, so you pick the right one. Image: [Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/03/easily-find-and-set-time-zones-in-Google-Calendar-by-searching-for-city-or-country.html).*
 
 ## Step 7: Double-check around daylight saving changes
 

@@ -58,6 +58,12 @@ Bookings with me, also called Personal Bookings, gives you a one-on-one booking 
 
 People who book don't need a Microsoft account. Each booking lands on your Outlook calendar, and Bookings can send email reminders to both of you.
 
+The Bookings home page shows your personal page at the top, with each meeting type as a card.
+
+![Microsoft Bookings home page with a personal booking page, three meeting types and a Create meeting type button](/assets/blog/vendor/microsoft-bookings-home-01.webp)
+
+*Each card shows whether a meeting type is public or private and how long it runs, and Create meeting type sits at the top right. Image: [Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/bookings/bookings-overview).*
+
 ## Step 3: Set up a shared page for your team
 
 Shared Bookings is for a team that takes calls together, like sales, support or advising.
@@ -72,6 +78,30 @@ Shared Bookings is for a team that takes calls together, like sales, support or 
 
 Microsoft says a shared page can have up to 100 staff, and changes to some settings can take up to 10 minutes to apply.
 
+Once staff are added, the shared calendar shows a column for each person, with their bookings and busy times side by side.
+
+![Microsoft Bookings calendar for a shared page with a column per staff member and a Staff list on the left](/assets/blog/vendor/microsoft-bookings-staff-01.webp)
+
+*The Staff, Services and Booking page settings sit in the left menu of each shared page. Image: [Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/bookings/add-staff).*
+
+With **Add online meeting** on, the confirmation email carries the Teams link.
+
+![Microsoft Bookings confirmation email with the date, time zone and a Join Teams meeting link](/assets/blog/vendor/microsoft-bookings-teams-link-01.webp)
+
+*A Bookings confirmation shows the time with its time zone and a Join Teams meeting link. Image: [Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/bookings/define-service-offerings).*
+
+The **Booking page** settings are where you choose who can book and copy, email or embed the link.
+
+![Microsoft Bookings booking page settings set to Available to anyone, with the page link and Email and Embed buttons](/assets/blog/vendor/microsoft-bookings-page-settings-01.webp)
+
+*Business page access control is where you require a Microsoft 365 account from your company. Image: [Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/bookings/customize-booking-page).*
+
+Here is what a published page looks like to the person booking.
+
+![A published Microsoft Bookings page with a calendar, open times, a staff picker and a details form](/assets/blog/vendor/microsoft-bookings-page-public-01.webp)
+
+*People pick a day and time, can choose a staff member, and add their details before they select Book. Image: [Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/bookings/customize-booking-page).*
+
 ## Step 4: Or use a booking tool connected to Outlook
 
 A booking tool makes sense when your meetings start on your website, when you want questions answered before the call, or when you need round robin across a sales team. Here's how it works in [Claritia](/):
@@ -83,6 +113,10 @@ A booking tool makes sense when your meetings start on your website, when you wa
 5. Share the booking page, put it in an email, or add it to the last page of a form.
 
 Outlook tells Claritia as soon as your calendar changes, so a taken time never shows, and time you mark out of office is blocked too. See the [Outlook integration](/integrations/outlook) for the details.
+
+![Claritia availability settings with a connected calendar, working hours by day, buffer and notice](/assets/blog/ui/ui-meetings-availability.webp)
+
+*Working hours, buffers and notice are set once and apply to every meeting type.*
 
 If you want new leads posted in a Teams channel as well, the [Microsoft Teams integration](/integrations/microsoft-teams) does that on Starter and up.
 
@@ -96,7 +130,29 @@ When you need one time that works for five people, a booking page isn't the righ
 4. Add a title and agenda, and select **Send**.
 5. When the votes are in, open the event, choose the time with the most yes votes and select **End poll with selected option**.
 
+Once you select **Scheduling poll**, Outlook lists suggested times with a count of who is free for each.
+
+![New Outlook event with Scheduling poll selected, three suggested times with free counts and the Teams meeting toggle on](/assets/blog/vendor/outlook-scheduling-poll-01.webp)
+
+*The icons next to each time show how many attendees are free, and Add a time option adds more. Image: [Microsoft Support](https://support.microsoft.com/en-us/topic/09f21fc7-3f38-4421-83b8-01a98bf19447).*
+
+To close the poll, pick the winning time in the event.
+
+![Outlook Scheduling Poll with the End poll with selected option button](/assets/blog/vendor/outlook-scheduling-poll-end-01.webp)
+
+*End poll with selected option sends the final invite for the time you picked. Image: [Microsoft Support](https://support.microsoft.com/en-us/topic/09f21fc7-3f38-4421-83b8-01a98bf19447).*
+
 In classic Outlook, you can turn on the Teams meeting option while you set up the poll. People outside your company vote on a secure web page. The new Outlook also places holds on everyone's calendars for each option until you pick one.
+
+![Scheduling Poll voting page with Prefer, Yes and No buttons for each time and how others voted](/assets/blog/vendor/outlook-scheduling-poll-vote-01.webp)
+
+*On the voting page, each person marks a time as Prefer, Yes or No and can see how others voted. Image: [Microsoft Support](https://support.microsoft.com/en-us/outlook/scheduling-poll-voting).*
+
+The holds look like this on each calendar until the poll ends.
+
+![Outlook calendar showing HOLD: For Marketing Sync entries for each poll option](/assets/blog/vendor/outlook-scheduling-poll-holds-01.webp)
+
+*Each poll option shows as a hold, so no one books over it while votes come in. Image: [Microsoft Support](https://support.microsoft.com/en-us/topic/09f21fc7-3f38-4421-83b8-01a98bf19447).*
 
 ## Step 6: Test your link
 

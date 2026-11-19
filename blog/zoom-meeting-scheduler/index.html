@@ -143,7 +143,7 @@
       <nav class="bl-crumb" aria-label="Breadcrumb"><a href="/blog">Blog</a><svg class="i" aria-hidden="true"><use href="#chev-r"/></svg><span>Scheduling</span></nav>
       <h1>Zoom Meeting Scheduler: How to Let People Book Zoom Calls (2026)</h1>
       <p class="bl-lead">Set up a Zoom meeting scheduler so people book Zoom calls from a link or a form, with a new Zoom link for each booking. Steps, tools and common fixes.</p>
-      <div class="bl-by"><time datetime="2026-11-19">November 19, 2026</time><span>9 min read</span></div>
+      <div class="bl-by"><time datetime="2026-11-19">November 19, 2026</time><span>10 min read</span></div>
       <img class="bl-cover" src="/blog/zoom-meeting-scheduler/cover.png?v=2d22856ce1" alt="" width="1200" height="630">
       <div class="bl-body-wrap">
         <aside class="bl-toc" aria-label="On this page"><b>On this page</b><a href="#main-points">Main points</a><a href="#what-you-need">What you need</a><a href="#step-1-pick-the-right-route">Step 1: Pick the right route</a><a href="#step-2-use-zoom-scheduler">Step 2: Use Zoom Scheduler</a><a href="#step-3-or-use-a-booking-tool-connected-to-zoom">Step 3: Or use a booking tool connected to Zoom</a><a href="#step-4-put-the-booking-inside-a-form">Step 4: Put the booking inside a form</a><a href="#step-5-test-your-link">Step 5: Test your link</a><a href="#common-problems">Common problems</a><a href="#tools-for-scheduling-zoom-meetings">Tools for scheduling Zoom meetings</a><a href="#questions">Questions</a><a href="#get-started">Get started</a></aside>
@@ -164,6 +164,15 @@
 <p>Zoom Scheduler is Zoom's booking app. It lets people book time with you from a booking page, and Zoom says every booking makes its own Zoom link, invite and reminders without extra setup.</p>
 <ol><li>Start a free trial of Scheduler, or check whether your company's Zoom Workplace Business or Enterprise plan already includes it.</li><li>Connect your calendars. Zoom lists Zoom, Google, Microsoft 365, Outlook.com and iCloud calendars, up to six of them.</li><li>Create a booking page for one-on-one calls, or a group page where several people can book the same slot.</li><li>Set your hours and the questions you want guests to answer.</li><li>Pick Zoom as the place to meet. Scheduler can also add Google Meet, Microsoft Teams or Webex links.</li><li>Share the booking page link by email or on your site.</li></ol>
 <p>Zoom's help center lists the exact clicks for each step. On a paid Scheduler seat you also get email and SMS reminders, round robin, routing forms and Stripe payments, which Zoom says work in the US and UK.</p>
+<p>The first time you open Scheduler, it asks you to connect a calendar before you set your availability.</p>
+<p><img src="/assets/blog/vendor/zoom-scheduler-connect-calendar-01.webp" alt="Welcome to Zoom Scheduler screen with Connect buttons for Zoom Mail and Calendar, Google Calendar and Outlook Calendar" width="1400" height="1094" loading="lazy"></p>
+<p><em>Scheduler uses the connected calendar to know when you're free and to add events as people book. Image: <a href="https://library.zoom.com/zoom-workplace/zoom-scheduler/zoom-scheduler-explainer" target="_blank" rel="noopener">Zoom Technical Library</a>.</em></p>
+<p>Reminders are set on the Notifications step of each booking page.</p>
+<p><img src="/assets/blog/vendor/zoom-scheduler-notifications-01.webp" alt="Zoom Scheduler booking page settings on the Notifications step, with Reminder Email, Reminder SMS and Follow Up Email toggles" width="1400" height="993" loading="lazy"></p>
+<p><em>Each reminder has its own toggle and timing, such as an email one day before the event. Image: <a href="https://library.zoom.com/zoom-workplace/zoom-scheduler/zoom-scheduler-explainer" target="_blank" rel="noopener">Zoom Technical Library</a>.</em></p>
+<p>When the page is ready, the share window gives you the link, a QR code, an email version and embed code for your site.</p>
+<p><img src="/assets/blog/vendor/zoom-scheduler-share-01.webp" alt="Zoom Scheduler Share your booking link window on the Add to Website tab, with embed code and style options" width="1058" height="1202" loading="lazy"></p>
+<p><em>The Add to Website tab gives you embed code and lets you set the size, colors and font. Image: <a href="https://developers.zoom.us/docs/scheduler/integrate/" target="_blank" rel="noopener">Zoom Developer Docs</a>.</em></p>
 <h2 id="step-3-or-use-a-booking-tool-connected-to-zoom">Step 3: Or use a booking tool connected to Zoom</h2>
 <p>A booking tool makes sense if you don't want another Zoom add-on, or if you need a feature Zoom doesn't have, like booking inside a form. Here's how it works in <a href="/">Claritia</a>:</p>
 <ol><li>Open <strong>Meetings</strong> and connect your Google Calendar or Outlook.</li><li>Connect Zoom. Each host signs in with Zoom once, so meetings are made on their own account.</li><li>Open a meeting type and set its location to <strong>Zoom</strong>.</li><li>Set working hours, buffers, notice and daily caps.</li><li>Share the booking page, or put it in an email.</li></ol>
@@ -176,6 +185,8 @@
 <p><img src="/assets/blog/ui/ui-forms-preview.webp" alt="A Claritia form that asks about team size and ends on a time picker" width="968" height="780" loading="lazy"></p>
 <p><em>A Claritia form asks its questions first, then ends on a time picker on the same page.</em></p>
 <p>The visitor answers your questions, then picks a time on the same page, with their name and email already filled in. The Zoom link is made as soon as they book. On Pro, round robin shares the calls across your team, and the Zoom meeting is made on the account of the person who gets the lead.</p>
+<p><img src="/assets/blog/ui/ui-meetings-thank-you-screen.webp" alt="A Claritia thank-you screen that opens the right rep's calendar right after the form is sent" width="1318" height="744" loading="lazy"></p>
+<p><em>Right after submit, the thank-you screen opens the calendar of the rep who gets the lead.</em></p>
 <h2 id="step-5-test-your-link">Step 5: Test your link</h2>
 <p>Before you share the link widely, book a meeting with yourself from a private browser window. Check four things:</p>
 <ul><li>The invite shows a Zoom link, and it opens the right meeting.</li><li>The meeting is hosted on the right person's Zoom account.</li><li>The time shows in the right time zone.</li><li>The slot you booked is gone from the page right after.</li></ul>

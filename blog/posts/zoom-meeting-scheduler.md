@@ -57,6 +57,24 @@ Zoom Scheduler is Zoom's booking app. It lets people book time with you from a b
 
 Zoom's help center lists the exact clicks for each step. On a paid Scheduler seat you also get email and SMS reminders, round robin, routing forms and Stripe payments, which Zoom says work in the US and UK.
 
+The first time you open Scheduler, it asks you to connect a calendar before you set your availability.
+
+![Welcome to Zoom Scheduler screen with Connect buttons for Zoom Mail and Calendar, Google Calendar and Outlook Calendar](/assets/blog/vendor/zoom-scheduler-connect-calendar-01.webp)
+
+*Scheduler uses the connected calendar to know when you're free and to add events as people book. Image: [Zoom Technical Library](https://library.zoom.com/zoom-workplace/zoom-scheduler/zoom-scheduler-explainer).*
+
+Reminders are set on the Notifications step of each booking page.
+
+![Zoom Scheduler booking page settings on the Notifications step, with Reminder Email, Reminder SMS and Follow Up Email toggles](/assets/blog/vendor/zoom-scheduler-notifications-01.webp)
+
+*Each reminder has its own toggle and timing, such as an email one day before the event. Image: [Zoom Technical Library](https://library.zoom.com/zoom-workplace/zoom-scheduler/zoom-scheduler-explainer).*
+
+When the page is ready, the share window gives you the link, a QR code, an email version and embed code for your site.
+
+![Zoom Scheduler Share your booking link window on the Add to Website tab, with embed code and style options](/assets/blog/vendor/zoom-scheduler-share-01.webp)
+
+*The Add to Website tab gives you embed code and lets you set the size, colors and font. Image: [Zoom Developer Docs](https://developers.zoom.us/docs/scheduler/integrate/).*
+
 ## Step 3: Or use a booking tool connected to Zoom
 
 A booking tool makes sense if you don't want another Zoom add-on, or if you need a feature Zoom doesn't have, like booking inside a form. Here's how it works in [Claritia](/):
@@ -86,6 +104,10 @@ When your Zoom calls come from your website, a plain link loses you the chance t
 *A Claritia form asks its questions first, then ends on a time picker on the same page.*
 
 The visitor answers your questions, then picks a time on the same page, with their name and email already filled in. The Zoom link is made as soon as they book. On Pro, round robin shares the calls across your team, and the Zoom meeting is made on the account of the person who gets the lead.
+
+![A Claritia thank-you screen that opens the right rep's calendar right after the form is sent](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Right after submit, the thank-you screen opens the calendar of the rep who gets the lead.*
 
 ## Step 5: Test your link
 

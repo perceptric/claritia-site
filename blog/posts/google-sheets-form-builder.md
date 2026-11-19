@@ -124,6 +124,10 @@ You link a form to a new or existing spreadsheet from the Responses tab, and Goo
 - **Unlink any time:** Old data stays, and new answers stop.
 - **Shared editing:** Several people can work on one form.
 
+![Google Forms Responses tab with a response count, a Link to Sheets button and the Accepting responses toggle](/assets/blog/vendor/google-forms-link-to-sheets-01.webp)
+
+*The Link to Sheets button sits at the top of the Responses tab in Google Forms. Image: [Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html).*
+
 ### Pros
 
 - **Free and built in:** No other account or integration to set up.
@@ -155,6 +159,10 @@ Google Sheets is among the integrations on every plan, the free one too, and the
 - **Logic and calculations:** On the free plan.
 - **Payments:** Collect payments on the free plan.
 - **Unlimited seats:** On every plan.
+
+![Google Sheet filled by a Fillout form, with Submission ID, Submission time and a column for each form field](/assets/blog/vendor/fillout-google-sheets-01.webp)
+
+*Each Fillout response becomes a row, starting with its submission ID and time. Image: [Fillout Help Center](https://www.fillout.com/help/google-sheets).*
 
 ### Pros
 
@@ -189,6 +197,10 @@ Its Google Sheets integration is free for all users. When you connect an existin
 - **Past answers too:** Export existing submissions when you connect.
 - **Sync log:** See each send and resend any that failed.
 - **Several sheets:** Connect one form to more than one spreadsheet.
+
+![Tally Connect with Google Sheets window with spreadsheet and sheet pickers and an Export existing submissions toggle](/assets/blog/vendor/tally-google-sheets-01.webp)
+
+*The Export existing submissions toggle is how Tally sends past answers when you connect. Image: [Tally Help Center](https://tally.so/help/google-sheets-integration).*
 
 ### Pros
 
@@ -259,6 +271,10 @@ It can also start from your sheet. Type /google in a blank form, pick the spread
 - **Stepper workflows:** Look up, update and format rows, on every plan.
 - **Zapier and Make:** For teams that already use them.
 
+![Paperform slash menu showing Import questions from Google Sheets under Quick integrations](/assets/blog/vendor/paperform-google-sheets-01.webp)
+
+*Typing a slash in the Paperform editor opens the menu with Import questions from Google Sheets. Image: [Paperform Help Center](https://paperform.co/help/articles/quick-integrations/).*
+
 ### Pros
 
 - **Fastest setup:** Start from the sheet you already have.
@@ -325,6 +341,10 @@ It pushes entries to a new or existing Google Sheet and can save file uploads an
 - **New or existing sheet:** Make one on the spot or use your own.
 - **Approvals:** Multi-level approvals, from Standard.
 - **Offline app:** Collect entries with no signal.
+
+![Zoho Forms Integrate with Google Sheets screen with new or existing spreadsheet options and a Google Drive section for attachments](/assets/blog/vendor/zoho-forms-google-sheets-01.webp)
+
+*One Zoho Forms screen sets the spreadsheet, the extra columns to add and the Drive folder for files. Image: [Zoho Forms User Guide](https://help.zoho.com/portal/en/kb/forms/integrations/google-sheets/articles/google-sheets-integration).*
 
 ### Pros
 

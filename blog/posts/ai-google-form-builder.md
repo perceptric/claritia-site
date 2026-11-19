@@ -59,9 +59,23 @@ Here's how Google's help page describes it:
 4. Read the draft. To try again, edit the prompt or click **Recreate**. Google warns that you can't go back to an earlier version after you recreate.
 5. When the draft looks right, click **Create form**.
 
+The **Help me create a form** window opens over a blank form, with sample ideas and a box for your prompt.
+
+![Gemini window in Google Forms with three sample prompts and a prompt box with a Create button](/assets/blog/vendor/google-forms-gemini-create-01.webp)
+
+*You type your prompt in the box at the bottom, and can point Gemini at a Drive file, then click Create. Image: [Google Docs Editors Help](https://support.google.com/docs/answer/16346789?hl=en).*
+
 The same tool makes quizzes. Gemini marks the correct answers and sets points, and you can check them with "Show answer key".
 
+![Gemini quiz draft in Google Forms with a point value, a marked correct answer, Show answer key, Recreate and Create quiz](/assets/blog/vendor/google-forms-gemini-quiz-01.webp)
+
+*The draft shows the prompt at the top with Recreate, and each question has its points and the correct answer checked. Image: [Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/07/use-gemini-in-google-forms-to-quickly-create-a-new-quiz.html).*
+
 To add questions later, use **Help me write a question** or **Suggest questions**. Google says these need a form title and at least 2 questions, and they work in English on single-section forms.
+
+![Suggested questions panel in Google Forms with two questions checked and an Insert 2 suggestions button](/assets/blog/vendor/google-forms-gemini-suggest-01.webp)
+
+*Suggested questions shows up below your form, and you tick the ones to keep before you insert them. Image: [Google Workspace Updates](https://workspaceupdates.googleblog.com/2025/08/gemini-google-forms-suggest-questions.html).*
 
 ## Step 4: Or build it with a Google Forms add-on
 
@@ -106,11 +120,21 @@ In most AI form builders, you can ask the AI for a change or add show-if rules i
 - **Claritia:** On Starter, each fill adds a row to the sheet you pick, and a new question gets its own column. See the [Google Sheets integration](/integrations/google-sheets).
 - **Other tools:** Fillout, Tally and Jotform each have a Google Sheets integration. Connect your Google account and pick the sheet.
 
+In Google Forms, the sheet link sits at the top of the **Responses** tab.
+
+![Google Forms Responses tab with a response count, a Link to Sheets button and the Accepting responses toggle](/assets/blog/vendor/google-forms-link-to-sheets-01.webp)
+
+*Link to Sheets and the More menu next to it are where you pick the sheet for your answers. Image: [Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html).*
+
 ## Step 8: Test and share
 
 Fill in the form yourself once, from a phone and a computer. Check that each answer lands in the right column and that any logic sends you down the right path.
 
 Then share the link, embed the form on your site or send it by email. Watch the first few answers arrive before you send it to everyone.
+
+![Claritia share panel with the form link, one-line embed code and display options](/assets/blog/ui/ui-forms-share.webp)
+
+*In Claritia, the share panel gives you the form link, a one-line embed code and display options such as a popup or side tab.*
 
 ## Common problems
 
