@@ -159,3 +159,12 @@
   .pd-shelf { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 560px) { .pd-stats { grid-template-columns: minmax(0, 1fr); } .pd-bar { grid-template-columns: 90px minmax(0, 1fr) 40px; } }
+
+/* Guides: links to the blog posts on this product's topic */
+.pd-guides { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 56px; }
+@media (min-width: 720px) { .pd-guides { grid-template-columns: 1fr 1fr; } }
+.pd-guide { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; border-radius: var(--r-lg, 14px); background: var(--surface, #fff); box-shadow: 0 0 0 1px var(--line, #ebebeb); color: var(--ink); text-decoration: none; transition: box-shadow 150ms ease; }
+.pd-guide b { font-weight: 500; }
+.pd-guide:hover { box-shadow: 0 0 0 1px var(--green, #0c8c5e); }
+.pd-guide .arr { flex: none; color: var(--meta, #737373); }
+@media (prefers-reduced-motion: reduce) { .pd-guide { transition: none; } }

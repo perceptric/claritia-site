@@ -3,14 +3,14 @@ Arrowsterr's platform pages: a centered hero with the app drawn in HTML, the too
 the Claritia way, four features each beside a small part of the app, how it works, templates and the dark close. All
 static, nothing to operate. Styles in assets/products.css. Plan tags follow docs/pricing.md in the app repo.
 Run: python3 tools/products.py"""
-import pathlib, sys
+import json, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import shell  # noqa: E402
 import templates as tpl  # noqa: E402
 
-PX_V = 2
+PX_V = 3
 esc = shell.esc
 APP = "https://app.tryclaritia.com"
 BY = {t["slug"]: t for t in tpl.T}
@@ -180,14 +180,63 @@ def shelf(title_h, sub, slugs, more_label, more_href):
     </section>"""
 
 
+def guides(title_h, items):
+    links = "".join(f'<a class="pd-guide" href="/blog/{slug}"><b>{esc(t)}</b>{I("arrow", "i s14 arr")}</a>' for slug, t in items)
+    return f"""    <section class="pd-sec" aria-labelledby="gd-h">
+      <div class="pd-head"><h2 class="h2" id="gd-h">{esc(title_h)}</h2></div>
+      <div class="pd-guides">{links}</div>
+    </section>"""
+
+
+def faq(items):
+    plus = '<svg aria-hidden="true"><use href="#i-plus"/></svg>'
+    qa = "".join(f"<details><summary>{esc(q)} {plus}</summary><p>{esc(a)}</p></details>" for q, a in items)
+    return f"""    <section class="pd-sec" aria-labelledby="faq-h">
+      <div class="faq">
+        <div class="faq__head">
+          <h2 class="h2" id="faq-h">Questions</h2>
+          <p class="lead">Something else? <a href="mailto:hello@tryclaritia.com">hello@tryclaritia.com</a></p>
+        </div>
+        <div class="qa">{qa}</div>
+      </div>
+    </section>"""
+
+
+def faq_ld(items):
+    data = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in items]}
+    return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + "</script>\n"
+
+
 def cta():
     return shell.LAST_PROMPT
 
 
-def page(slug, title, desc, main):
+def page(slug, title, desc, main, ld=""):
     extra = (f'<link rel="stylesheet" href="{tpl.FONTS_URL}">\n<link rel="stylesheet" href="/assets/forms.css?v={tpl.CSS_V}">\n'
-             f'<link rel="stylesheet" href="/assets/themes.css?v={tpl.CSS_V}">\n<link rel="stylesheet" href="/assets/products.css?v={PX_V}">\n')
+             f'<link rel="stylesheet" href="/assets/themes.css?v={tpl.CSS_V}">\n<link rel="stylesheet" href="/assets/products.css?v={PX_V}">\n' + ld)
     return shell.head(title, desc, slug, extra) + "\n" + shell.body(main)
+
+
+FORMS_FAQ = [
+    ("What is an online form builder?", "An online form builder is a tool for making forms in your browser and putting them on your website, with no code. With Claritia you describe the form in a sentence, Tia builds it, and every answer is saved and sent to the tools you use."),
+    ("Is Claritia's online form builder free?", "Yes. The Free plan has unlimited forms, the AI form builder, conditional logic and 250 submissions, with no card needed. Paid plans add more submissions, payments and integrations."),
+    ("How do I add a form to my website?", "Paste one line of code into any page, or follow the guides for Webflow, WordPress and Framer. The form can sit in the page or open as a popup, a slide-in, a corner button or a side tab."),
+    ("Can I use Claritia instead of Google Forms?", "Yes. Paste a Google Form's edit link and its questions come over as a draft in Claritia. Your Google Form stays as it is, and the import works on every plan."),
+    ("Can a form take payments or book a meeting?", "Yes. Forms take payments and deposits with Stripe on Starter, and on every plan a form can end on the calendar so the lead books a meeting right away."),
+]
+
+MEETINGS_FAQ = [
+    ("What is a meeting scheduler?", "A meeting scheduler lets people book time with you from a link or a form. It checks your calendar so only free times show, then sends the invite. Claritia also sends reminders a day and an hour before."),
+    ("What is online appointment scheduling software?", "It lets clients book, move or cancel an appointment online at any hour, without emails back and forth. Claritia gives each person and team a booking page, with reschedule and cancel links in every invite."),
+    ("Does Claritia work with Google Calendar and Outlook?", "Yes, on every plan. It reads busy times from Google Calendar or Outlook and adds a Google Meet, Microsoft Teams or Zoom link to each meeting."),
+    ("Is there a free meeting scheduler plan?", "Yes. The Free plan includes one calendar and one meeting type, booking inside forms, the visitor's time zone, reschedule and cancel links, and email reminders."),
+    ("Can meetings go to the right person on my team?", "Yes. Round robin with weights and priority is on Pro, and routing sends each lead to the right meeting and person from their form answers."),
+]
+
+FORMS_GUIDES = [("best-form-builder", "Best form builders for small teams"), ("best-free-form-builder", "Best free form builders"), ("best-no-code-form-builder", "Best no-code form builders"), ("best-ai-form-builder", "Best AI form builders"), ("google-sheets-form-builder", "Form builders for Google Sheets"), ("lead-capture-form-examples", "Lead capture form examples"), ("best-google-forms-alternatives", "Google Forms alternatives"), ("best-typeform-alternatives", "Typeform alternatives")]
+
+MEETINGS_GUIDES = [("appointment-scheduling-google-calendar", "Appointment scheduling for Google Calendar"), ("best-free-meeting-scheduler", "Best free meeting schedulers"), ("best-appointment-scheduling-software", "Best appointment scheduling software"), ("best-calendly-alternatives", "Calendly alternatives"), ("zoom-meeting-scheduler", "How to book Zoom meetings from a link"), ("best-meeting-scheduler-for-outlook", "Meeting schedulers for Outlook"), ("group-meeting-scheduler", "Group meeting schedulers"), ("best-automated-scheduling-software", "Automated scheduling software")]
 
 
 # Forms -----------------------------------------------------------------------------------------------------------
@@ -217,7 +266,7 @@ def forms_page():
              '<span class="pd-label">Embed</span><div class="pd-code">&lt;script src="https://app.tryclaritia.com/forms/v1.js" async&gt;&lt;/script&gt;\n&lt;claritia-form form-id="demo-request"&gt;&lt;/claritia-form&gt;</div>'
              '<span class="pd-label">Shows as</span><div class="pd-tabs"><span class="is-on">In the page</span><span>Popup</span><span>Slide in</span><span>Corner button</span><span>Side tab</span></div>')
     main = (
-        frame(hero("form", "Forms", "Forms that turn visitors into leads", "Describe the form you need and Tia builds it in your brand, with pages, logic, prices and payments, and the meeting booked at the end.", ("See all templates", "/templates"), shot))
+        frame(hero("form", "Forms", "The online form builder that turns visitors into leads", "Describe the form you need and Tia builds it in your brand, with pages, logic, prices and payments, and the meeting booked at the end. Put it on any website with one line of code.", ("See all templates", "/templates"), shot))
         + frame(then_now("Instead of a form tool, a scheduler and a spreadsheet, one place for every lead", "Each answer, booking and follow-up stays on the same record.",
                          [("form", "Build the form in one tool", "Copy and paste"), ("cal", "Send a booking link by email", "Half never book"), ("table", "Paste answers into a sheet", "By hand"), ("mail", "Write each follow-up", "Often late")],
                          [("spark", "Tia builds the form", "In minutes"), ("cal", "The calendar is the last page", "Booked on the page"), ("table", "Every answer saved and synced", "On its own"), ("mail", "Follow-ups go out", "On time")]))
@@ -234,9 +283,11 @@ def forms_page():
             ("Watch the leads come in", "Answers land in Submissions and in the tools you connect."),
         ], card("Share", share)))
         + frame(shelf("Start from a template", "Real forms in 85 categories, each free on every plan.", ["food-catering-calculator", "agency-project-inquiry", "healthcare-patient-intake", "construction-roof-inspection", "creative-photo-session", "events-registration"], f"See all {len(tpl.T)} templates", "/templates"))
+        + frame(guides("Guides to online form builders", FORMS_GUIDES))
+        + frame(faq(FORMS_FAQ))
         + cta()
     )
-    return page("/products/forms", "Forms · Claritia", f"Claritia Forms: describe a form and Tia builds it in your brand, with steps, logic, prices, payments and booking at the end. {len(tpl.T)} free templates.", main)
+    return page("/products/forms", "Online Form Builder for Your Website, Free to Start · Claritia", f"Claritia is an online form builder for your website. Describe a form and Tia builds it in your brand, with logic, payments and booking. {len(tpl.T)} free templates.", main, faq_ld(FORMS_FAQ))
 
 
 # Meetings ----------------------------------------------------------------------------------------------------------
@@ -267,7 +318,7 @@ def meetings_page():
         '<span class="grow">Buffer and notice</span><span class="pd-num">10 min, 4 hours</span>',
     ])
     main = (
-        frame(hero("cal", "Meetings", "Meetings that book themselves", "Booking pages, team meetings and booking right inside your forms, on Google and Outlook, with reminders that go out on their own.", ("See booking templates", "/templates/group/booking"), shot))
+        frame(hero("cal", "Meetings", "The meeting scheduler that books itself", "Booking pages, team meetings and booking right inside your forms, on Google and Outlook, with reminders that go out on their own.", ("See booking templates", "/templates/group/booking"), shot))
         + frame(then_now("Instead of booking links in emails, the meeting booked on the spot", "Leads pick a time while they're still on your page, with the right person.",
                          [("mail", "Reply with a booking link", "Hours later"), ("users", "Check whose turn it is", "In a spreadsheet"), ("clock", "Send reminders by hand", "Or forget"), ("refresh", "Chase the no-shows", "One by one")],
                          [("form", "The form ends on the calendar", "Booked now"), ("route", "The right person is picked", "Fairly"), ("mail", "Reminders send themselves", "Day and hour before"), ("refresh", "No-shows get the reschedule link", "On their own")]))
@@ -284,9 +335,11 @@ def meetings_page():
             ("Share it, or add it to a form", "A booking page, a link in an email, or the last page of a form."),
         ], card("Availability", hours)))
         + frame(shelf("Forms that book a meeting", "Each one ends on the calendar. Open one and try it.", ["general-book-a-call", "wellness-new-patient", "education-course-inquiry", "pets-grooming", "education-tutoring", "hospitality-group-booking"], "See all booking templates", "/templates/group/booking"))
+        + frame(guides("Guides to meeting and appointment scheduling", MEETINGS_GUIDES))
+        + frame(faq(MEETINGS_FAQ))
         + cta()
     )
-    return page("/products/meetings", "Meetings · Claritia", "Claritia Meetings: booking pages, round robin, group meetings, polls and booking inside forms, on Google and Outlook, with reminders built in.", main)
+    return page("/products/meetings", "Meeting Scheduler and Appointment Scheduling Software · Claritia", "Claritia is a meeting scheduler and online appointment scheduling software for Google and Outlook: booking pages, round robin, polls and booking inside forms.", main, faq_ld(MEETINGS_FAQ))
 
 
 # Routing ------------------------------------------------------------------------------------------------------------
