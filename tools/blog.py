@@ -30,11 +30,22 @@ POSTS = ROOT / "blog" / "posts"
 
 # Markdown, the small part posts use ------------------------------------------------------------------------------
 
+def img_size(src: str) -> str:
+    """ width="..." height="..." for an image in the site's folder, or nothing if it can't be read."""
+    f = ROOT / src.lstrip("/")
+    try:
+        from PIL import Image
+        with Image.open(f) as im:
+            return f' width="{im.width}" height="{im.height}"'
+    except Exception:
+        return ""
+
+
 def inline(t: str) -> str:
     t = html.escape(t, quote=False)
     t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
-    # Tool screenshots in /assets/blog/tools/ are all 1440 x 900, so they get a size and don't shift the page.
-    t = re.sub(r"!\[([^\]]*)\]\((/assets/blog/tools/[^)\s]+)\)", r'<img src="\2" alt="\1" width="1440" height="900" loading="lazy">', t)
+    # Images from the site's own folder get their real size, so the page doesn't shift while they load.
+    t = re.sub(r"!\[([^\]]*)\]\((/assets/[^)\s]+)\)", lambda m: f'<img src="{m.group(2)}" alt="{m.group(1)}"{img_size(m.group(2))} loading="lazy">', t)
     t = re.sub(r"!\[([^\]]*)\]\(([^)\s]+)\)", r'<img src="\2" alt="\1" loading="lazy">', t)
     # Links to other sites open in a new tab (Claritia's own app and site stay in this one).
     t = re.sub(r"\[([^\]]+)\]\((https?://(?![^/)]*tryclaritia\.com)[^)\s]+)\)", r'<a href="\2" target="_blank" rel="noopener">\1</a>', t)
