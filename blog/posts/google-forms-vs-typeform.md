@@ -8,11 +8,11 @@ date: 2026-11-18
 
 Google Forms and Typeform sit at two ends of the form builder world. Google Forms is free, plain and quick, and its answers land in Google Sheets. Typeform is paid, polished and built around one question at a time. Many teams start on Google Forms and wonder whether Typeform is worth the money.
 
-The honest answer depends on who fills in the form. A form for your own team rarely needs to look special. A form on your website that asks a stranger for their details often does. This guide helps you see which side your form is on.
+It depends on who fills in the form. A form for your own team rarely needs to look special. A form on your website that asks a stranger for their details often does.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to import a Google Form, give it your brand on Pro and end it with a booked meeting.
 
-In this post, we compare Google Forms and Typeform on price, response limits, design, logic, uploads and teamwork, then give a clear pick for each kind of form.
+Below, we compare the two on price, response limits, design, logic, uploads and teamwork, then give a pick for each kind of form.
 
 ## Main points
 
@@ -41,7 +41,7 @@ Prices checked November 2026.
 
 [Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge.
 
-Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's free, and any form can become a quiz with an answer key, points and feedback.
+Forms can be shared by email, link, or embed. Responses show up as live charts, and you can export them to Google Sheets. It's free, and any form can become a quiz with an answer key, points and feedback.
 
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 
@@ -49,7 +49,7 @@ Forms can be shared by email, link, or embed. Responses appear as live charts an
 
 [Typeform](https://www.typeform.com/) is an online form builder for marketing, product, HR, and customer teams that want forms, surveys, and quizzes people actually finish. It builds conversational forms that adapt to each answer, can draft and brand a form from a written prompt, and accepts video and audio replies.
 
-Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment. It's a paid form builder where each question fills the screen, so people move through the form one answer at a time. Its plans include logic, hidden fields and a Salesforce integration too.
+Responses can go to tools like HubSpot, Google Sheets, and Notion, take Stripe payments, book Calendly meetings, and feed AI summaries of themes and sentiment. It's a paid form builder where each question fills the screen, so people move through one answer at a time. Its plans also include logic, hidden fields and a Salesforce integration.
 
 [![Typeform homepage](/assets/blog/tools/typeform.webp)](https://www.typeform.com/)
 
@@ -66,21 +66,21 @@ Typeform charges by plan, and each plan has a monthly response limit:
 | Plus | $56 a month | $79 a month | 1,000 | 3 |
 | Business | $91 a month | $129 a month | 10,000 | 5 |
 
-The response limit is the part people miss. Typeform's free plan takes 10 responses a month across all your forms. When you hit your limit, Typeform says your forms go private until the next month or until you upgrade. If you expect a few hundred answers a month, plan on Plus at least.
+People often miss the response limit. Typeform's free plan takes 10 responses a month across all your forms. When you hit your limit, Typeform says your forms go private until the next month or until you upgrade. If you expect a few hundred answers a month, plan on Plus at least.
 
 Google Forms has limits inside each form instead. A form can hold up to 300 pieces of content, such as questions, images and videos, and up to 75 sections.
 
 ## Design and the form experience
 
-This is Typeform's home ground. One question at a time keeps people focused, and the layout looks good on a phone. You can add your logo and pick themes, and Plus removes Typeform branding and adds a custom subdomain. For a lead form on your homepage, that polish can be worth paying for.
+Here Typeform is at its best. One question at a time keeps people focused, and the layout looks good on a phone. You can add your logo and pick themes, and Plus removes Typeform branding and adds a custom subdomain. For a lead form on your homepage, that polish can be worth paying for.
 
-Google Forms lets you change the theme color, font and header image, and add images or videos between questions. Most Google Forms still look like Google Forms. That's fine for a staff survey. It can feel out of place on a company website.
+Google Forms lets you change the theme color, font and header image, and add images or videos between questions. Most Google Forms still look like Google Forms. That's fine for a staff survey, but it can feel out of place on a company website.
 
 ## Logic and question types
 
 Google Forms covers the core question types: short answer, paragraph, multiple choice, checkboxes, dropdown, file upload, linear scale, rating, grids, date and time. Its logic works through sections. On a choice question, you send people to a chosen section based on their answer, or end the form.
 
-Typeform's free plan includes branching, scores and calculations. You can recall earlier answers in later questions and use hidden fields to pass in data like a name or a campaign tag. That makes it easier to build a quiz that gives each person a result, or a lead form that skips questions that don't apply.
+Typeform's free plan includes branching, scores and calculations. You can recall earlier answers in later questions and use hidden fields to pass in data like a name or a campaign tag. With these, you can build a quiz that gives each person a result, or a lead form that skips questions that don't apply.
 
 ## Uploads, payments and quizzes
 
@@ -149,9 +149,13 @@ How it compares with both:
 - **On the free plan:** Unlimited forms, 250 submissions a month, conditional logic, calculations and hidden fields for UTM tags.
 - **Your brand:** Custom brand on Starter, and Tia can dress a form in your site's look on Pro.
 
+![Claritia reading a website's colors, font, buttons and fields to style a form](/assets/blog/ui/ui-forms-read-from-acme-com.webp)
+
+*Caption: Claritia reads a website's colors, font, buttons and fields, then styles the form to match.*
+
 Starter is $15 a seat a month ($12 billed yearly). See [pricing](/pricing) for every plan.
 
-Claritia has real limits too. It's a newer tool with a smaller app marketplace and community. It has no Zapier or Make apps listed yet, and it doesn't grade quizzes like Google Forms.
+Claritia has limits too. It's a newer tool with a smaller app marketplace and community. It has no Zapier or Make apps listed yet, and it doesn't grade quizzes like Google Forms.
 
 ## Questions
 

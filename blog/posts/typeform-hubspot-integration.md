@@ -8,11 +8,11 @@ date: 2026-11-19
 
 You built a Typeform that people finish. The answers pile up in Typeform's results, and someone exports a CSV each week to load into HubSpot. By then the hot leads have cooled, and the sales team never sees what each person said.
 
-Typeform to HubSpot doesn't have to work like that. Typeform has its own HubSpot app that sends each response straight into your CRM as a contact, and can also fill in a company and a deal. It works on every Typeform plan, including Free, and with HubSpot's free CRM.
+It doesn't have to work like that. Typeform has its own HubSpot app that sends each response straight into your CRM as a contact, and can also fill in a company and a deal. It works on every Typeform plan, including Free, and with HubSpot's free CRM.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to send each form answer to HubSpot and book the meeting with the right rep before the lead leaves the page.
 
-In this post, you'll see what the Typeform HubSpot integration does, what you need on each side, how to connect it step by step, and how to fix the usual problems.
+Below: what the integration does, what you need on each side, how to connect it step by step, and how to fix the usual problems.
 
 ## Main points
 
@@ -24,7 +24,7 @@ In this post, you'll see what the Typeform HubSpot integration does, what you ne
 
 ## What the integration does
 
-Typeform built the HubSpot app, and HubSpot lists it as a certified app in its marketplace. Based on Typeform's integration page, its HubSpot listing and its pricing page, here is what it does.
+Typeform built the HubSpot app, and HubSpot lists it as a certified app in its marketplace. Here is what it does, based on Typeform's integration page, its HubSpot listing and its pricing page.
 
 **Responses become HubSpot records.** Each response can create or update a contact, a company and a deal in HubSpot. One response can fill all three.
 
@@ -54,7 +54,7 @@ On the HubSpot side, HubSpot's marketplace lists every feature of the Typeform a
 - **An email question.** Contacts need an email to match on, so add one and make it required.
 - **A paid HubSpot plan for follow-up automation.** HubSpot workflows, which you'd use to assign owners or create follow-up tasks after submit, need a Professional or Enterprise plan.
 
-The response cap matters most. Ten responses a month on Free is enough to test the connection, not to run lead capture. Our [Typeform pricing guide](/blog/typeform-pricing) covers each plan.
+Watch the response cap most. Ten responses a month on Free will test the connection, but they won't run lead capture. Our [Typeform pricing guide](/blog/typeform-pricing) covers each plan.
 
 ## Step 1: Plan your fields
 
@@ -137,6 +137,10 @@ You can use it two ways with Typeform and HubSpot.
 - **Every field mapped.** Match each question to a HubSpot contact property.
 - **The owner set for you.** Use the person Claritia's routing picks, or let HubSpot's own rules decide.
 - **Fills on the timeline.** Reps see what the lead asked for on the contact in HubSpot.
+
+![A form's thank-you screen that opens the right rep's calendar](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: When a Claritia form is sent, the thank-you screen opens the right rep's calendar.*
 
 Claritia's free plan takes 250 submissions a month, with conditional logic and multi-page forms included. HubSpot, Typeform answers and follow-up the next day until they book start on Starter at $15 a seat a month ($12 yearly). Routing by any answer is on Pro at $39 ($31 yearly). See [pricing](/pricing).
 

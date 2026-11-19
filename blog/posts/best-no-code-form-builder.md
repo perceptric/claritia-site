@@ -8,11 +8,11 @@ date: 2026-11-19
 
 Most form builders let you drag fields onto a page without code. The hard part starts after you share the form: a price that changes with each answer, a deposit taken on the spot, a row in your sheet, a lead sent to the right person and an email that goes out the next day.
 
-If your tool can't do those steps, you end up writing scripts, gluing apps together with Zapier, or copying answers by hand. A good no-code form builder handles the whole job, from the first question to the follow-up, with settings you can click through.
+If your tool can't do those steps, you end up writing scripts, gluing apps together with Zapier or copying answers by hand. A good no-code form builder runs the whole job, from the first question to the follow-up, with settings you click through.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form with logic, prices and a booked meeting at the end, without writing a line of code.
 
-In this post, we compare 8 no-code form builders on the work they do around the form: logic, calculations, payments, integrations and the steps that run after submit.
+Below, we compare 8 no-code form builders on the work they do around the form: logic, calculations, payments, integrations and the steps that run after submit.
 
 ## Main points
 
@@ -26,7 +26,7 @@ In this post, we compare 8 no-code form builders on the work they do around the 
 
 A no-code form builder is a tool for making online forms, and the steps around them, without writing code. You add fields, set rules and connect other apps through menus and settings. The tool hosts the form, saves each answer and runs the steps you set.
 
-The best ones go past the form itself. They handle the whole workflow:
+The better ones go past the form and run the workflow too:
 
 - **Logic.** Show a question, skip a page or end the form based on an answer.
 - **Calculations.** Add up a price, a score or a quote while people answer.
@@ -83,6 +83,10 @@ Conditional logic, page skips, calculations and booking inside the form are on t
 - **Routing:** On Pro, send each lead to a meeting and a person based on any answer.
 - **Integrations:** Webhooks and CSV on free. HubSpot, Pipedrive, [Google Sheets](/integrations/google-sheets), Slack and more from Starter.
 
+![A Claritia quote form that prices options and takes a deposit with Stripe](/assets/blog/ui/ui-forms-catering-quote.webp)
+
+*Caption: A Claritia quote form adds up the price as people pick options, then takes a deposit with Stripe.*
+
 ### Pros
 
 - **One flow from form to meeting:** No separate scheduler or spreadsheet to keep in sync.
@@ -110,7 +114,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations.
 
-Its free plan is unusually full for workflow work. Payments, calculations and scoring, hidden fields, PDF generation and Fillout Workflows are all included, with 1,000 responses a month and unlimited seats.
+Its free plan covers more workflow than most. Payments, calculations and scoring, hidden fields, PDF generation and Fillout Workflows are all included, with 1,000 responses a month and unlimited seats.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -293,7 +297,7 @@ Its free plan connects to Zoho apps and to Google Sheets, Microsoft Excel, webho
 ### Pros
 
 - **High submission limits:** 10,000 a month on the $10 Basic plan.
-- **Fits Zoho:** Easy wins if your team already runs on Zoho.
+- **Fits Zoho:** Quick to connect if your team already runs on Zoho.
 
 ### Cons
 
@@ -373,7 +377,7 @@ It can show a thank-you page, redirect, send an email, start an approval, create
 
 ## Get started
 
-Write down every step your form should run, then pick the tool that does them without code. If the last step is a meeting, let the form book it.
+List every step your form should run, then pick the tool that does them without code. If the last step is a meeting, let the form book it.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form with logic, prices and booking, and take your first lead today.
 

@@ -6,13 +6,13 @@ kind: form
 date: 2026-11-18
 ---
 
-A small B2B team can't afford to waste the visitors it already gets. Yet that is what happens on most sites. Someone reads a post, looks at pricing, fills in a long form, and then waits a day for an email that asks them to pick a time.
+A small B2B team can't afford to waste the visitors it already gets, yet most sites do. Someone reads a post, looks at pricing, fills in a long form, and then waits a day for an email that asks them to pick a time.
 
 Inbound lead generation covers the full path from a buyer finding you to a meeting on your calendar. Each step can leak leads, and the steps after the form are often the easiest to fix.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to turn inbound visitors into booked meetings with a form that opens the right rep's calendar.
 
-In this guide, we cover the channels that bring inbound leads, the form that captures them, speed to lead, booking and follow-up.
+This guide covers the channels that bring inbound leads, the form that captures them, speed to lead, booking and follow-up.
 
 ## Main points
 
@@ -73,7 +73,7 @@ Ads bring traffic quickly while slower channels grow. Send that traffic to a pag
 
 ## The form
 
-The form is where a visitor becomes a lead. Small changes here pay off on every channel above.
+The form is where a visitor becomes a lead, so a small fix here helps every channel above.
 
 - **Ask only what you need.** Name, work email and one to three questions you will use to route or prepare.
 - **Use logic.** Show a question only when an earlier answer calls for it, so most people see a short form.
@@ -102,6 +102,10 @@ The old way: the lead fills in a form, a rep emails a few times, the lead picks 
 
 The better way: the form ends on the right person's calendar. The lead's name and email are already filled in. They pick a time, get a confirmation with a calendar invite, and you see the booking with their answers.
 
+![A form's thank-you screen that opens the right rep's calendar](/assets/blog/ui/ui-meetings-thank-you-screen.webp)
+
+*Caption: In Claritia, the thank-you screen opens the right rep's calendar as soon as the form is sent.*
+
 A few things to set up:
 
 - **The right person.** Route by answers like team size, country or product. Send known accounts to their owner.
@@ -119,6 +123,10 @@ Not every lead books, and not every booked lead shows up. Follow-up catches both
 - **A nudge for leads who didn't book.** The next day, with the booking link.
 - **A no-show follow-up.** A short note with the reschedule link.
 - **A thank-you after the meeting.** With the next step you agreed on.
+
+![What runs after a booking: a confirmation, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: Claritia sends a confirmation with the invite, then reminders a day and an hour before the meeting.*
 
 Keep follow-up short and in your own voice. Stop it as soon as the lead books or replies.
 
@@ -151,7 +159,7 @@ Teams use it to capture leads with forms and chat, send email campaigns, manage 
 
 [OptinMonster](https://optinmonster.com/) is a lead generation tool for website owners and marketers who want to turn more visitors into email subscribers, leads and sales. It builds popups, floating bars, fullscreen overlays, slide-ins, inline forms and spin-a-wheel coupon offers from templates in a drag-and-drop editor.
 
-Campaigns show up based on rules such as exit intent, inactivity, scheduled dates, the page being viewed and past visitor behavior, and it includes A/B tests and conversion reports. It works on WordPress, Shopify and other sites. Its triggers also include time on site and scroll, and it helps turn blog readers into subscribers.
+Campaigns show up based on rules such as exit intent, inactivity, scheduled dates, the page being viewed and past visitor behavior, and it includes A/B tests and conversion reports. It works on WordPress, Shopify and other sites. Its triggers also include time on site and scroll, which helps turn blog readers into subscribers.
 
 ### Unbounce
 
@@ -189,7 +197,7 @@ Inbound leads are usually warmer, while outbound lets you pick exactly who to re
 
 ## Get started
 
-Inbound lead generation pays off when every good lead reaches a person fast. Start with a short form that routes each lead and opens the right calendar on the spot.
+Start with a short form that routes each lead and opens the right calendar on the spot, so every good lead reaches a person fast.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first inbound lead form and book your first meeting today.
 

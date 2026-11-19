@@ -5,15 +5,14 @@ category: Routing
 kind: route
 date: 2026-11-18
 ---
- Chili Piper and Calendly both turn a form fill into a booked meeting with the right rep.
 
-On a demo, they can look almost the same: a lead fills in a form, a calendar pops up, and the meeting lands with a rep picked by your rules. Yet one starts at $15,000 a year and the other has a free plan.
+Chili Piper and Calendly both turn a form fill into a booked meeting with the right rep. On a demo they can look almost the same: a lead fills in a form, a calendar pops up, and the meeting lands with a rep picked by your rules. Yet one starts at $15,000 a year and the other has a free plan.
 
-The gap in price reflects a gap in scope. Chili Piper is built for revenue teams that route every lead, contact and account through Salesforce, with handoffs between SDRs and AEs. Calendly is a scheduling tool that added routing on its Teams plan. This guide shows where that difference matters and where it doesn't.
+The price gap comes from a gap in scope. Chili Piper is built for revenue teams that route every lead, contact and account through Salesforce, with handoffs between SDRs and AEs. Calendly is a scheduling tool that added routing on its Teams plan.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to route each form lead to the right rep and book the meeting on the same page, with monthly billing.
 
-In this post, we compare Chili Piper and Calendly on routing, form booking, CRM depth, follow-up, price and contract terms, then give a clear pick for each kind of team.
+Below, we compare the two on routing, form booking, CRM depth, follow-up, price and contract terms, and show where the difference in scope matters. Then we give a pick for each kind of team.
 
 ## Main points
 
@@ -58,7 +57,7 @@ Newer tools include an AI assistant that finds times over email and a notetaker 
 
 ## Price and contract terms
 
-This is the first thing most teams notice.
+Most teams notice this first.
 
 | | Chili Piper | Calendly |
 |---|---|---|
@@ -73,7 +72,7 @@ Chili Piper's pricing FAQ says all plans are billed annually and monthly billing
 
 Each plan also includes a yearly pool of AI credits, used for enrichment and agents: 45,000 on Growth and 150,000 on Scale. If you only want the calendar, ChiliCal is sold on its own at $12 a user a month, with a 200 seat minimum.
 
-To put it in numbers: 15 seats on Calendly Teams cost $2,880 a year billed yearly. The same 15 seats on Chili Piper Growth cost $15,000 a year.
+In numbers: 15 seats on Calendly Teams cost $2,880 a year billed yearly. The same 15 seats on Chili Piper Growth cost $15,000 a year.
 
 ## Lead routing
 
@@ -81,7 +80,7 @@ Chili Piper's routing is broad. It routes any lead, contact, account or custom S
 
 It can match leads to accounts, dedupe and merge, and convert leads or create opportunities. Round robin supports weighting, caps and meeting limits, and it can adjust for no-shows, cancellations and spam to keep the split fair.
 
-Calendly's routing lives on Teams. Forms screen invitees and route them by their answers, and Teams can route by the owner set in HubSpot. Routing by Salesforce lookup and Microsoft Dynamics sit on Enterprise. Round robin shares meetings across teammates. It covers the common case, where a form answer or a HubSpot owner decides who the lead meets.
+Calendly's routing lives on Teams. Forms screen invitees and route them by their answers, and Teams can route by the owner set in HubSpot. Routing by Salesforce lookup and Microsoft Dynamics sit on Enterprise. Round robin shares meetings across teammates. That covers the common case, where a form answer or a HubSpot owner decides who the lead meets.
 
 ## Booking from forms
 
@@ -158,9 +157,13 @@ What it offers next to Chili Piper and Calendly:
 - **Owner first:** On Business, a known lead books with their owner in [HubSpot](/integrations/hubspot) or [Salesforce](/integrations/salesforce).
 - **Follow-up:** Workflows send a follow-up the next day until the lead books, and Pro adds no-show follow-up with the reschedule link.
 
+![Claritia's routing log for one lead, showing the rule and rep that were picked](/assets/blog/ui/ui-routing-why-lena-got-this-lead.webp)
+
+*Caption: Claritia's routing log shows which rule matched a lead from Germany and why Lena Koch got the meeting.*
+
 Pro is $39 a seat a month ($31 billed yearly), and Business is $79 ($63 billed yearly). See [pricing](/pricing) for every plan.
 
-Claritia isn't a match for everything Chili Piper does. It's a newer tool with a smaller app marketplace. It has no Zapier or Make apps listed yet, Salesforce sits on Business, and it doesn't route custom Salesforce objects or run AI chat on your site.
+Claritia doesn't do everything Chili Piper does. It's a newer tool with a smaller app marketplace. It has no Zapier or Make apps listed yet, Salesforce sits on Business, and it doesn't route custom Salesforce objects or run AI chat on your site.
 
 ## Questions
 

@@ -6,13 +6,13 @@ kind: form
 date: 2026-11-02
 ---
 
-A free form builder is a smart way to start. You can test an idea and take your first leads before you spend a cent. The catch is that free plans differ more than their sign-up pages suggest. Some cap answers each month or the number of forms. Others hold back logic or payments until you upgrade.
+A free form builder lets you test an idea and take your first leads before you spend a cent. The catch: free plans differ more than their sign-up pages suggest. Some cap answers each month or the number of forms. Others hold back logic or payments until you upgrade.
 
-A good free form builder gives you a plan you can run for real, with room to grow. The limits are clear, the features you need are on the $0 plan, and the first paid plan is a fair price once you outgrow free.
+A good one gives you a plan you can run for real. Its limits are clear, the features you need are on the $0 plan, and the first paid plan is fairly priced for when you outgrow free.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to get unlimited forms, 250 submissions a month and meeting booking inside the form, all for $0.
 
-In this post, we compare 9 free form builders. You'll see what each free plan includes, what it holds back, and what the first upgrade costs.
+Below, we compare 9 free form builders: what each free plan includes, what it holds back and what the first upgrade costs.
 
 ## Main points
 
@@ -37,7 +37,7 @@ Typical features include:
 
 ## How to choose a free form builder
 
-Read the limits closely before you build. These five checks tell you what you really get for $0:
+Read the limits before you build. These five checks show what you really get for $0:
 
 - **Monthly answer limit.** How many submissions the free plan takes before forms close or stop.
 - **Form limit.** Whether you can build as many forms as you need.
@@ -65,7 +65,7 @@ Read the limits closely before you build. These five checks tell you what you re
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-Its free plan gives you unlimited forms and 250 submissions a month, and each form can book a meeting with you on the spot. Tia, the AI form builder, drafts the form so you can start in minutes, which suits small teams and founders who want free forms that turn into booked calls.
+Its free plan gives you unlimited forms and 250 submissions a month, and each form can book a meeting with you on the spot. Tia, the AI form builder, drafts the form, so you can start in minutes.
 
 [![Claritia homepage](/assets/blog/tools/claritia.webp)](/)
 
@@ -78,6 +78,10 @@ Its free plan gives you unlimited forms and 250 submissions a month, and each fo
 - **Booking inside the form:** One meeting type with Google Calendar or Outlook, plus reminders a day and an hour before.
 - **Sharing and data:** Webhooks and CSV export, plus embeds on WordPress, Webflow, Framer, Shopify and Squarespace.
 - **Tia, the AI form builder:** Drafts a form from one plain sentence.
+
+![A form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: A Claritia form asks for team size, then shows open times so the lead books on the spot.*
 
 ### Pros
 
@@ -105,7 +109,7 @@ You can start on the free plan with no card. Paid plans are priced per seat, and
 
 Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking.
 
-It has the most generous free plan in this list, with unlimited forms and submissions under fair use and logic and payments at no cost. It suits makers and small teams who need high volume on $0.
+It has the most generous free plan on this list: unlimited forms and submissions under fair use, with logic and payments at no cost. Makers and small teams who need high volume on $0 get the most from it.
 
 [![Tally homepage](/assets/blog/tools/tally.webp)](https://tally.so/)
 
@@ -140,7 +144,7 @@ Paying yearly gives two months off.
 
 It also offers scheduling forms that sync with Google Calendar or Outlook, PDF generation, workflows, login forms that let people edit past answers, custom domains, and native integrations.
 
-The free plan gives you 1,000 responses a month with unlimited forms and seats, and it includes logic, payments and scheduling forms. That makes it one of the best free plans for a team where several people build forms.
+The free plan gives you 1,000 responses a month with unlimited forms and seats, plus logic, payments and scheduling forms. If several people on your team build forms, few free plans beat it.
 
 [![Fillout homepage](/assets/blog/tools/fillout.webp)](https://www.fillout.com/)
 
@@ -172,7 +176,7 @@ The free plan gives you 1,000 responses a month with unlimited forms and seats, 
 
 [Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge.
 
-Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. It's free with a Google account, answers land in Google Sheets, and you can share editing with your team. For internal surveys and quizzes, it's often all you need.
+Forms can be shared by email, link, or embed. Responses show up as live charts and land in Google Sheets. It's free with a Google account, and you can share editing with your team.
 
 [![Google Forms homepage](/assets/blog/tools/google-forms.webp)](https://www.google.com/forms/about/)
 
@@ -204,7 +208,7 @@ Forms can be shared by email, link, or embed. Responses appear as live charts an
 
 Users build surveys, polls and quizzes with question types such as choice, text, rating and Likert, add branching logic and themes, and share the form by link. Built-in AI suggests questions and designs, results appear as answers come in, and a form can also be created from an Excel workbook.
 
-With a free Microsoft account, each form takes up to 200 responses and you can keep up to 400 forms. Business and school accounts get far higher limits, so it suits offices and schools that use Microsoft apps.
+With a free Microsoft account, each form takes up to 200 responses and you can keep up to 400 forms. Business and school accounts get far higher limits.
 
 [![Microsoft Forms homepage](/assets/blog/tools/microsoft-forms.webp)](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes)
 
@@ -234,7 +238,7 @@ With a free Microsoft account, each form takes up to 200 responses and you can k
 
 [Zoho Forms](https://www.zoho.com/forms/) is an online form builder for businesses that want to collect data and move it through review and approval steps without code. It can build a form from a prompt, turn PDFs or photos of paper forms into online forms, and read business cards or IDs to fill in fields.
 
-Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM. Its free plan is for one user, with 3 forms and 500 submissions a month, which is plenty for a single contact or event form. It's the natural pick for solo users who already use Zoho CRM.
+Forms support many field types, subforms, payments, and multi-level approvals, a mobile app collects entries offline, and data can flow into Zoho CRM. Its free plan is for one user, with 3 forms and 500 submissions a month. It's the natural pick for solo users who already use Zoho CRM.
 
 [![Zoho Forms homepage](/assets/blog/tools/zoho-forms.webp)](https://www.zoho.com/forms/)
 
@@ -266,7 +270,7 @@ Forms support many field types, subforms, payments, and multi-level approvals, a
 
 Forms can use conditional logic, answer piping, prefilled fields, and translations, and they accept one-time or recurring payments through many gateways. Submissions can become PDFs, flow into CRMs and spreadsheets, and be managed in related Jotform tools for tables, approval workflows, e-signatures, and reports.
 
-Its free plan opens up the huge template library and widgets, though the limits are tight, at 5 forms and 100 submissions a month. It's a good place to start for solo users who want a template for an unusual form.
+Its free plan opens up the huge template library and widgets, but the limits are tight: 5 forms and 100 submissions a month. Start here if you work alone and need a template for an unusual form.
 
 [![Jotform homepage](/assets/blog/tools/jotform.webp)](https://www.jotform.com/)
 
@@ -300,7 +304,7 @@ Its free plan opens up the huge template library and widgets, though the limits 
 
 Forms can move entries through approval workflows, generate documents, look up data from other forms and take payments through Square, Stripe, PayPal or its own Cognito Pay. It also includes controls that help teams meet HIPAA, GDPR and CCPA rules.
 
-It's one of the few free plans that handles payments and real math, with 100 entries a month and unlimited forms. That makes it a good fit for small order forms, quotes with totals and paid sign-ups.
+It's one of the few free plans that handles payments and real math, with 100 entries a month and unlimited forms. Use it for small order forms, quotes with totals and paid sign-ups.
 
 [![Cognito Forms homepage](/assets/blog/tools/cognito-forms.webp)](https://www.cognitoforms.com/)
 
@@ -332,7 +336,7 @@ It's one of the few free plans that handles payments and real math, with 100 ent
 
 Forms can take bookings and Stripe payments, send contracts for e-signature through Papersign, and pass submissions to CRMs, email tools, and spreadsheets through integrations or Stepper workflows.
 
-Its free plan lets you mix content and questions like a web page, with unlimited forms and users and a cap of 30 submissions a month. Think of it as a long trial for anyone trying a page-style builder before choosing a paid plan.
+Its free plan lets you mix content and questions like a web page, with unlimited forms and users and a cap of 30 submissions a month. Treat it as a long trial of a page-style builder before you choose a paid plan.
 
 [![Paperform homepage](/assets/blog/tools/paperform.webp)](https://paperform.co/)
 

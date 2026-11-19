@@ -6,13 +6,13 @@ kind: meeting
 date: 2026-11-18
 ---
 
-Scheduling a Teams call with someone outside your company usually means an email chain. You offer a few times, they pick one that just got taken, and someone has to copy the Teams link into a new invite. Multiply that by every client, candidate or lead, and it eats hours each week.
+Scheduling a Teams call with someone outside your company usually means an email chain. You offer a few times, they pick one that just got taken, and someone has to copy the Teams link into a new invite. Do that for every client, candidate or lead, and it eats hours each week.
 
-A Teams meeting scheduler turns that into a link. The other person opens it, sees only the times you're free in Outlook, picks one, and both of you get an invite with a Teams link inside. Microsoft has its own ways to do this, and booking tools that connect to Outlook can do it too.
+A Teams meeting scheduler turns that into a link. The other person opens it, sees only the times you're free in Outlook, picks one, and both of you get an invite with a Teams link inside. Microsoft has its own ways to do this, and so do booking tools that connect to Outlook.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to connect Microsoft 365 and add a Teams link to every meeting booked from your page or form.
 
-In this guide, we show three ways to let people book Teams meetings from a link, step by step, plus fixes for the problems people hit most.
+This guide shows three ways to let people book Teams meetings from a link, step by step, plus fixes for the problems people hit most.
 
 ## Main points
 
@@ -123,7 +123,7 @@ Before you share the link widely, book a meeting with yourself from a private br
 
 It builds forms from a sentence or one of 840 templates, opens the right person's calendar the moment the form is sent, routes each lead by its answers, and drafts follow-up emails in your brand's voice for you to approve.
 
-It connects Outlook or Microsoft 365 on every plan and adds a Teams link to each meeting for work and school accounts. Because booking can sit inside a form, you learn who's coming before they pick a time.
+It connects Outlook or Microsoft 365 on every plan and adds a Teams link to each meeting for work and school accounts. Booking can sit inside a form, so you learn who's coming before they pick a time.
 
 Round robin with weights is on Pro. The free plan has one meeting type on one calendar, and Claritia is a newer tool with a smaller marketplace than the big names.
 

@@ -12,7 +12,7 @@ A booking form fixes that. It asks what you need to know, shows the times or dat
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a booking form that asks your questions and books the time on your calendar, on the free plan.
 
-In this post, we explain what a booking form is, how it differs from a booking page, the fields to include, 8 booking form examples with free templates, and how to put one on your website.
+Below: what a booking form is, how it differs from a booking page, which fields to include, 8 examples with free templates, and how to put one on your website.
 
 ## Main points
 
@@ -26,7 +26,7 @@ In this post, we explain what a booking form is, how it differs from a booking p
 
 A booking form is an online form where a customer reserves a time, a date or an item with your business. It collects their contact details, what they want and when, then confirms the booking or sends it to you to approve. Common types include appointments, consultations, classes, events, rentals and service visits.
 
-The best booking forms connect to your calendar. They only show times you're free, add the booking to your calendar, and send the customer a confirmation and reminders.
+The best booking forms connect to your calendar. They show only the times you're free, put each booking on your calendar and send the customer a confirmation and reminders.
 
 ## Booking form vs booking page
 
@@ -40,6 +40,10 @@ The two overlap, but they start in a different place.
 | Examples | Plumbing visit, car rental, consultation with intake questions | Intro call, office hours |
 
 A booking page is fine when every booking is the same. A booking form is better when you need to know what the job is before you pick the time or the person. Many tools now do both: the form asks the questions, and its last page is the calendar.
+
+![A form that asks for team size and ends on a time picker](/assets/blog/ui/ui-forms-preview.webp)
+
+*Caption: In Claritia, the form asks its questions first, and the last step is a time picker.*
 
 If you're picking a scheduling tool for the calendar side, see our list of the [best appointment scheduling software](/blog/best-appointment-scheduling-software).
 
@@ -191,7 +195,7 @@ Start from the [reservation form templates](/templates/category/reservation).
 - A time window, such as 8 to 10 am or noon to 2 pm
 - What it's for
 
-**Why it works:** The customer gives you a window, not an exact slot, and you confirm the time. It keeps you in control while still saving the back and forth.
+**Why it works:** The customer gives you a window, not an exact slot, and you confirm the time. You stay in control and still skip the back and forth.
 
 Browse every [booking form template](/templates/group/booking) to find one for your business.
 
@@ -217,6 +221,10 @@ Browse every [booking form template](/templates/group/booking) to find one for y
 5. **Turn on reminders.** A confirmation with the invite, then reminders a day and an hour before.
 6. **Put it on your site.** Share the link, add a QR code, or paste one line of code into your page. Claritia has guides for [WordPress](/integrations/wordpress), [Webflow](/integrations/webflow) and [Squarespace](/integrations/squarespace).
 7. **Test it.** Book a slot yourself, on a phone and a laptop, and check the invite, the reminder and the reschedule link.
+
+![What runs after a booking: a confirmation, then reminders a day and an hour before](/assets/blog/ui/ui-meetings-after-booking.webp)
+
+*Caption: After each booking, Claritia sends a confirmation with the invite, then reminders a day and an hour before.*
 
 ## Common mistakes
 
@@ -284,7 +292,7 @@ Yes, in many tools. Claritia forms take payments and deposits with Stripe on Sta
 
 ## Get started
 
-Pick the example closest to what you sell, cut every field you won't use, and connect your calendar so each booking confirms itself.
+Pick the example closest to what you sell and cut every field you won't use. Then connect your calendar, so each booking confirms itself.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to start from a booking form template and take your first booking today.
 

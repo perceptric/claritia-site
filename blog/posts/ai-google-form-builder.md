@@ -8,11 +8,11 @@ date: 2026-11-19
 
 Typing every question into Google Forms by hand is slow. You think up the questions, pick each field type, write the answer choices and fix the order. For a long survey or a quiz, that can take an hour before anyone sees the form.
 
-AI can write the first draft for you in seconds. There are three ways to do it: Google's own Gemini inside Google Forms, an add-on from the Google Workspace Marketplace, or an AI form builder that sends every answer to Google Sheets the same way Google Forms does.
+AI can write the first draft in seconds. You have three ways to get it: Google's own Gemini inside Google Forms, an add-on from the Google Workspace Marketplace, or an AI form builder that sends every answer to Google Sheets the same way Google Forms does.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to describe your form in one sentence, let Tia build it, and send each answer to Google Sheets.
 
-In this post, we walk through each way step by step, from the prompt to a tested form with its answers landing in a sheet.
+Below, we go through each one, from the prompt to a tested form that puts its answers in a sheet.
 
 ## Main points
 
@@ -37,11 +37,11 @@ In this post, we walk through each way step by step, from the prompt to a tested
 | A Google Forms add-on | Free Google accounts that want AI in Forms | Varies by add-on | Yes, the form stays a Google Form |
 | An AI form builder | Lead forms, payments, booking and branding | Free plans on most tools | Yes, through each tool's Google Sheets integration |
 
-If you just need an internal survey or a class quiz, start with Gemini or an add-on. If the form faces customers, an AI form builder gives you more design, logic and steps after submit.
+For an internal survey or a class quiz, start with Gemini or an add-on. For a form that faces customers, an AI form builder gives you more control over design, logic and what happens after submit.
 
 ## Step 2: Write a clear prompt
 
-AI drafts are only as good as the prompt. Say who the form is for, what it should collect and how long it should be. Name any choices you already know.
+The draft can only be as good as the prompt. Say who the form is for, what it should collect and how long it should be. Name any answer choices you already know.
 
 A weak prompt: "Make an event form."
 
@@ -65,14 +65,14 @@ To add questions later, use **Help me write a question** or **Suggest questions*
 
 ## Step 4: Or build it with a Google Forms add-on
 
-If you don't have Gemini in Forms, add-ons bring AI to Google Forms from the [Google Workspace Marketplace](https://workspace.google.com/marketplace). You install one, open it from your form and it adds the questions it writes to that form.
+No Gemini in Forms? Add-ons from the [Google Workspace Marketplace](https://workspace.google.com/marketplace) bring AI to Google Forms. You install one, open it from your form, and it adds the questions it writes to that form.
 
 Two examples:
 
 - **[Form Builder GPT](https://workspace.google.com/marketplace/app/form_builder_gpt_myquizgpt/290631259928)** by MyQuizGPT writes quizzes, surveys and registration forms from a prompt, a file or Google Drive content. You pick the questions to keep before they're added.
 - **[Form Builder](https://workspace.google.com/marketplace/app/form_builder/133781775166)** imports questions from Sheets, Docs, Slides, PDFs, Word files and images, and its listing says it can write questions with AI as well.
 
-Before you install one, read the permissions it asks for and its privacy policy. Add-ons are made by other companies, not by Google.
+Add-ons are made by other companies, not by Google. Read the permissions one asks for, and its privacy policy, before you install it.
 
 ## Step 5: Or build it in an AI form builder
 
@@ -86,11 +86,15 @@ In [Claritia](/), it works like this:
 4. Add logic, a thank-you screen or a meeting to book at the end.
 5. On Starter, open the form's **Sync** tab, add Google Sheets and pick a sheet.
 
+![Tia building a demo request form from one sentence](/assets/blog/ui/ui-forms-tia.webp)
+
+*Caption: Tia, Claritia's AI form builder, turns one sentence into a demo request form.*
+
 Already built a Google Form with Gemini? You can [import it into Claritia](/integrations/google-forms) by pasting its edit link. The questions come over, and your Google Form isn't changed.
 
 ## Step 6: Add logic and sections by hand
 
-AI drafts rarely get logic right on the first try. Check which questions should only show for some people, and set those rules yourself.
+AI drafts rarely get logic right the first time. Check which questions should show only for some people, and set those rules yourself.
 
 In Google Forms, logic works through sections: you send people to a section based on their answer. Gemini can't build forms with several sections, so add them after the draft.
 
@@ -106,7 +110,7 @@ In most AI form builders, you can ask the AI for a change or add show-if rules i
 
 Fill in the form yourself once, from a phone and a computer. Check that each answer lands in the right column and that any logic sends you down the right path.
 
-Then share the link, embed the form on your site or send it by email. Watch the first few answers come in before you send it to everyone.
+Then share the link, embed the form on your site or send it by email. Watch the first few answers arrive before you send it to everyone.
 
 ## Common problems
 
@@ -120,9 +124,9 @@ Then share the link, embed the form on your site or send it by email. Watch the 
 
 ### Google Forms with Gemini
 
-[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, made for people and teams who want to gather answers from any device with little setup. You pick question types, arrange them with drag and drop, add logic that shows questions based on earlier answers, or build quizzes that test knowledge.
+[Google Forms](https://www.google.com/forms/about/) is the survey and form tool in Google Workspace, for people and teams who want to gather answers from any device with little setup. You pick question types and arrange them with drag and drop. You can add logic that shows questions based on earlier answers, or build quizzes.
 
-Forms can be shared by email, link, or embed. Responses appear as live charts and can be exported to Google Sheets for deeper analysis. With an eligible Google Workspace or Google AI plan, Gemini drafts new forms and quizzes from a prompt.
+Forms can be shared by email, link, or embed. Responses show up as live charts, and you can export them to Google Sheets. With an eligible Google Workspace or Google AI plan, Gemini drafts new forms and quizzes from a prompt.
 
 ### Claritia
 
@@ -140,7 +144,7 @@ It also offers scheduling forms that sync with Google Calendar or Outlook, PDF g
 
 ### Tally
 
-[Tally](https://tally.so/) is a form builder for individuals and teams who want to make forms by typing, much like writing in a document. You insert blocks for contact details, file uploads, ratings, signatures, and Stripe payments, then add conditional logic, calculations, hidden fields, and answer piping.
+[Tally](https://tally.so/) is a form builder for individuals and teams who want to make forms by typing, much like writing in a document. You insert blocks for contact details, file uploads, ratings, signatures and Stripe payments. Then you add conditional logic, calculations, hidden fields and answer piping.
 
 Forms can be embedded or shown as popups, and submissions can go to Notion, Slack, Airtable, or Google Sheets. Tally is hosted in Europe and does not use cookie tracking. Tally AI builds a form from a prompt, and its Google Sheets integration is free for all users.
 
@@ -180,7 +184,7 @@ Yes. Claritia imports a Google Form from its edit link on every plan, the free o
 
 ## Get started
 
-Write a clear prompt, let AI draft the form, then add the logic and the sheet yourself. If the form is for leads, give it a next step too.
+Let AI write the first draft from a clear prompt. Add the logic and the sheet yourself. If the form is for leads, give it a next step too, like a meeting to book.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a form with Tia, send answers to Google Sheets and book your first meeting today.
 

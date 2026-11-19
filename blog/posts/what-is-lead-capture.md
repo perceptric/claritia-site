@@ -12,7 +12,7 @@ Lead capture fixes that. It gives a visitor a clear reason to share their name a
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build a lead capture form that saves every answer and books the meeting before the visitor leaves the page.
 
-In this post, we explain what lead capture is, how it works, what a good lead capture form looks like, and the tools that do it.
+Below: what lead capture is, how it works, what a good lead capture form looks like and which tools do it.
 
 ## Main points
 
@@ -49,11 +49,11 @@ Steps 5 and 6 are where most leads are lost. A form that only sends an email to 
 
 Most websites use more than one of these. Each fits a different moment in a visit.
 
-- **Embedded forms.** A form inside the page, like a demo request or contact form. It suits visitors who came ready to act.
-- **Popups and slide-ins.** A form that appears after a delay, on scroll or when someone is about to leave. It suits content pages where people read but don't act.
-- **Live chat and chatbots.** A chat window that asks a few questions and collects an email. It suits visitors with a question before they commit.
+- **Embedded forms.** A form inside the page, like a demo request or contact form. Good for visitors who came ready to act.
+- **Popups and slide-ins.** A form that appears after a delay, on scroll or when someone is about to leave. Good for content pages where people read but don't act.
+- **Live chat and chatbots.** A chat window that asks a few questions and collects an email. Good for visitors who have a question before they commit.
 - **Landing pages.** A page built around one offer and one form, often for paid ads.
-- **Booking pages.** A calendar where the visitor picks a time and leaves their details. It suits leads who already know they want to talk.
+- **Booking pages.** A calendar where the visitor picks a time and leaves their details. Best for leads who already know they want to talk.
 - **Gated content.** A guide, report or template that visitors get in return for their email.
 
 ## Lead capture form examples
@@ -71,6 +71,10 @@ Here are common lead capture forms for a small B2B team, with what each one usua
 
 You can start from a [demo request template](/templates/category/demo-request) and change the questions to fit your offer.
 
+[![The first page of questions in Claritia's SaaS demo request template](/assets/blog/ui/tpl-saas-demo-request.webp)](/templates/saas-demo-request)
+
+*Caption: The first page of questions in Claritia's SaaS demo request template.*
+
 ## Best practices for lead capture
 
 ### Ask for less
@@ -84,6 +88,10 @@ Add hidden fields for UTM tags, the page and the referrer. Without them, you can
 ### Give a next step on the spot
 
 Don't end on a plain thank-you message if you can avoid it. Show a calendar, send the guide, or tell the lead exactly when they will hear back. A form that books the meeting right after submit saves a round of emails.
+
+![Claritia submissions list showing each lead, who they booked with and the next step](/assets/blog/ui/ui-forms-submissions.webp)
+
+*Caption: Claritia's submissions list shows each lead, who they booked with and their next step, such as Booked or Guide sent.*
 
 ### Send each lead to the right place
 
@@ -171,7 +179,7 @@ As fast as you can. A lead that just filled in your form is thinking about the p
 
 ## Get started
 
-Lead capture works best when the form is short and the next step comes right away. Build a form that saves every answer with its source and opens the calendar the moment a lead submits.
+Keep the form short and give the next step right away. Build a form that saves every answer with its source and opens the calendar the moment a lead submits.
 
 > **[Try Claritia free](https://app.tryclaritia.com/signup)** to build your first lead capture form and book your first meeting today.
 
