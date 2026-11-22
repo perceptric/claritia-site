@@ -1,6 +1,6 @@
 # Working in this repo
 
-- After making changes, always commit and push to `main`. Hostinger auto-deploys from `main`.
+- After making changes, always commit and push to `main`. OVH auto-deploys from `main`.
   (Standing instruction from the owner.)
 - The site is static HTML, CSS and a little plain JavaScript. No build step, no library. Every section
   must stay readable and usable when JavaScript or motion is off.
