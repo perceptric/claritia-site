@@ -947,8 +947,10 @@ img.h-avatar, img.h-lw-av { object-fit: cover; display: block; }
 .h-rep .h-rp { display: flex; align-items: center; gap: 8px; }
 .h-rep .h-rp img { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; }
 .h-int-dots img { width: 22px; height: 22px; padding: 3px; border-radius: var(--r-status); background: #fff; box-shadow: var(--sh-chip); object-fit: contain; }
-.h-wm { display: inline-flex; align-items: center; gap: 10px; }
-.h-wm img { width: 24px; height: 24px; object-fit: contain; }
+/* Each tool's full logo, sized by eye so they read about the same (--h on each image). */
+.h-wm { display: inline-flex; align-items: center; height: 44px; }
+.h-wm img { display: block; width: auto; height: var(--h, 28px); }
+@media (max-width: 640px) { .h-wm img { height: calc(var(--h, 28px) * .8); } }
 
 @media (max-width: 640px) {
   .h-demo { padding-top: 120px; }
@@ -967,7 +969,6 @@ img.h-avatar, img.h-lw-av { object-fit: cover; display: block; }
 .h-bpick button { flex: none; }
 .h-lf-est > div { min-width: 0; }
 .h-lf-est b { white-space: nowrap; }
-.h-wm img { width: auto; max-width: 76px; height: 22px; }
 @media (max-width: 1000px) { .h-core-grid.h-flip { grid-template-columns: 1fr; } }
 @media (max-width: 640px) { .h-bp-wrap { left: 12px; right: 12px; } }
 
@@ -1352,16 +1353,15 @@ main.h-home { overflow-x: clip; }
   <div class="h-strip-label">Works with the tools your team already uses</div>
   <div class="h-marquee">
     <div class="h-marquee-track" id="track">
-      <span class="h-wm"><img src="/assets/logos/calendar.svg" alt="">Google Calendar</span>
-      <span class="h-wm"><img src="/assets/logos/hubspot.svg" alt="">HubSpot</span>
-      <span class="h-wm"><img src="/assets/logos/salesforce.svg" alt="">Salesforce</span>
-      <span class="h-wm"><img src="/assets/logos/zoom.svg" alt="">Zoom</span>
-      <span class="h-wm"><img src="/assets/logos/slack.svg" alt="">Slack</span>
-      <span class="h-wm"><img src="/assets/logos/stripe.svg" alt="">Stripe</span>
-      <span class="h-wm"><img src="/assets/logos/outlook.jpg" alt="">Outlook</span>
-      <span class="h-wm"><img src="/assets/logos/mailchimp.svg" alt="">Mailchimp</span>
-      <span class="h-wm"><img src="/assets/logos/webflow.svg" alt="">Webflow</span>
-      <span class="h-wm"><img src="/assets/logos/googlesheets.svg" alt="">Google Sheets</span>
+      <span class="h-wm"><img src="/assets/logos/full/google-workspace.svg" alt="Google Workspace" style="--h:26px" decoding="async"></span>
+      <span class="h-wm"><img src="/assets/logos/full/hubspot.svg" alt="HubSpot" style="--h:30px" decoding="async"></span>
+      <span class="h-wm"><img src="/assets/logos/full/salesforce.svg" alt="Salesforce" style="--h:42px" decoding="async"></span>
+      <span class="h-wm"><img src="/assets/logos/full/zoom.svg" alt="Zoom" style="--h:24px" decoding="async"></span>
+      <span class="h-wm"><img src="/assets/logos/full/slack.svg" alt="Slack" style="--h:30px" decoding="async"></span>
+      <span class="h-wm"><img src="/assets/logos/full/stripe.svg" alt="Stripe" style="--h:34px" decoding="async"></span>
+      <span class="h-wm"><img src="/assets/logos/full/microsoft.svg" alt="Microsoft" style="--h:28px" decoding="async"></span>
+      <span class="h-wm"><img src="/assets/logos/full/mailchimp.svg" alt="Mailchimp" style="--h:34px" decoding="async"></span>
+      <span class="h-wm"><img src="/assets/logos/full/webflow.svg" alt="Webflow" style="--h:24px" decoding="async"></span>
     </div>
   </div>
 </section>
