@@ -698,6 +698,173 @@ table.h-log td small { display: block; color: var(--faint); font-size: 11px; }
 @media (max-width: 1000px) { .h-faq-grid { grid-template-columns: 1fr; gap: 40px; } .h-faq-left { position: static; } }
 @media (max-width: 640px) { .h-faq { padding: 80px 0; } .h-qa summary { font-size: 16px; } .h-qa p { padding-right: 0; } }
 
+/* ===== v7: live demos in the three core sections ===== */
+.h-ticks2 { list-style: none; padding: 0; margin: 28px 0 32px; display: grid; gap: 14px; }
+.h-ticks2 li { display: flex; align-items: center; gap: 12px; font-size: 17px; font-weight: 500; color: var(--ink); letter-spacing: -.01em; line-height: 24px; }
+.h-tk { flex: none; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: var(--green-100); color: var(--green-ink); }
+.h-tk svg { width: 13px; height: 13px; }
+.h-demo { min-height: 620px; padding: 72px 32px 40px; }
+.h-try { position: absolute; left: 24px; top: 22px; display: inline-flex; align-items: center; gap: 8px; height: 28px; padding: 0 12px 0 10px; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-pill); font-size: 13px; font-weight: 500; color: var(--nav); z-index: 2; }
+.h-try i { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 rgba(12,140,94,.5); animation: ping 1.8s ease-out infinite; }
+@keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(12,140,94,.5); } 80%, 100% { box-shadow: 0 0 0 8px rgba(12,140,94,0); } }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+
+/* live form */
+.h-lf { position: relative; z-index: 1; width: min(400px, 100%); background: #fff; border-radius: var(--r-2xl); box-shadow: var(--sh-menu); padding: 24px; }
+.h-lf-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+.h-lf-head h4 { margin: 0; font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; font-size: 26px; line-height: 1; text-transform: uppercase; color: #1f2328; }
+.h-lf-logo { font-size: 12px; font-weight: 600; color: var(--x-orange); }
+.h-lf .h-opt { font: inherit; font-size: 13px; cursor: pointer; background: #fff; transition: box-shadow var(--fast) var(--ease), background var(--fast) var(--ease), color var(--fast) var(--ease), transform var(--fast) var(--ease); }
+.h-lf .h-opt:hover { box-shadow: 0 0 0 1px rgba(0,0,0,.25); }
+.h-lf .h-opt:active { transform: scale(.96); }
+.h-lf .h-opt[aria-pressed="true"] { box-shadow: 0 0 0 1.5px var(--x-orange); background: #fff0e4; color: #b9500f; font-weight: 600; }
+.h-lf-ins { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s var(--ease-out); }
+.h-lf-ins-in { overflow: hidden; padding: 0 2px 2px; margin: 0 -2px; }
+.h-lf[data-job="storm"] .h-lf-ins { grid-template-rows: 1fr; }
+.h-lf[data-job="storm"] .h-lf-ins-in { animation: fadein .4s ease; }
+.h-flag { font-size: 10.5px; font-weight: 600; color: var(--green-ink); background: var(--green-100); border-radius: var(--r-tag); padding: 1px 6px; }
+.h-lf-input { width: 100%; font: inherit; font-size: 13px; padding: 8px 10px; border: 0; border-radius: var(--r-sm); box-shadow: 0 0 0 1px rgba(0,0,0,.12); outline: none; background: #fff; }
+.h-lf-input:focus { box-shadow: 0 0 0 1.5px var(--x-orange); }
+.h-lf-calc { display: grid; grid-template-rows: 1fr; transition: grid-template-rows .35s var(--ease-out); }
+.h-lf-calc > * { min-height: 0; }
+.h-lf[data-job="inspection"] .h-lf-calc { display: none; }
+.h-lf-row { justify-content: space-between; }
+.h-lf-row output { font-weight: 600; color: #1f2328; font-variant-numeric: tabular-nums; }
+.h-lf-range { width: 100%; accent-color: var(--x-orange); margin: 2px 0 2px; }
+.h-lf-est { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); }
+.h-lf-est span { display: block; font-size: 13px; color: var(--meta); }
+.h-lf-est small { display: block; font-size: 11.5px; color: var(--faint); margin-top: 2px; }
+.h-lf-est b { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-size: 32px; line-height: 1; font-weight: 700; color: #1f2328; font-variant-numeric: tabular-nums; }
+.h-lf-est b.h-bump { animation: bump .3s ease; }
+@keyframes bump { 50% { transform: scale(1.06); color: var(--x-orange); } }
+.h-lf-btn { display: block; width: 100%; margin-top: 16px; border: 0; cursor: pointer; background: var(--x-orange); color: #fff; font: inherit; font-weight: 600; font-size: 14px; border-radius: var(--r-sm); padding: 11px 16px; transition: filter var(--fast) var(--ease), transform var(--fast) var(--ease); }
+.h-lf-btn:hover { filter: brightness(.95); }
+.h-lf-btn:active { transform: scale(.98); }
+.h-lf-stripe, .h-lf-done { display: none; }
+.h-lf[data-stage="pay"] .h-lf-body, .h-lf[data-stage="done"] .h-lf-body, .h-lf[data-stage="done"] .h-lf-stripe { display: none; }
+.h-lf[data-stage="pay"] .h-lf-stripe { display: block; animation: rise .35s var(--ease-out); }
+.h-lf[data-stage="done"] .h-lf-done { display: grid; animation: rise .35s var(--ease-out); }
+.h-st-head { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 0 6px; font-size: 14px; color: var(--meta); }
+.h-st-head b { font-size: 26px; font-weight: 600; color: #1f2328; font-variant-numeric: tabular-nums; }
+.h-st-card { display: grid; grid-template-columns: 1fr auto auto; gap: 14px; padding: 10px 12px; border-radius: var(--r-sm); box-shadow: 0 0 0 1px rgba(0,0,0,.12); font-family: var(--mono); font-size: 13px; color: #333; }
+.h-st-pay { background: #635bff; position: relative; }
+.h-st-pay[data-busy="true"] { color: transparent; pointer-events: none; }
+.h-st-pay[data-busy="true"]::after { content: ""; position: absolute; left: 50%; top: 50%; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; border: 2px solid rgba(255,255,255,.4); border-top-color: #fff; animation: spinr .7s linear infinite; }
+@keyframes spinr { to { transform: rotate(360deg); } }
+.h-st-by { text-align: center; font-size: 12px; color: var(--faint); margin-top: 10px; }
+.h-st-by b { color: #635bff; font-weight: 700; letter-spacing: -.02em; }
+.h-lf-done { justify-items: center; text-align: center; gap: 6px; padding: 26px 8px 6px; }
+.h-lf-done b, .h-lm-done > b { font-size: 20px; font-weight: 600; color: #1f2328; }
+.h-lf-done p, .h-lm-done > p { font-size: 14px; color: var(--meta); max-width: 280px; }
+.h-tick-anim { width: 56px; height: 56px; margin-bottom: 8px; }
+.h-tick-anim circle { fill: none; stroke: var(--green); stroke-width: 3; stroke-dasharray: 151; stroke-dashoffset: 151; animation: draw .6s var(--ease-out) forwards; }
+.h-tick-anim path { fill: none; stroke: var(--green); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw .35s .45s var(--ease-out) forwards; }
+.h-lm .h-tick-anim circle, .h-lm .h-tick-anim path { stroke: var(--acc); }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.h-lf-reset { margin-top: 12px; border: 0; background: none; cursor: pointer; font: inherit; font-size: 13px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line-strong); padding: 0; }
+
+/* live booking */
+.h-lm { --acc: #0c8c5e; position: relative; z-index: 1; width: min(400px, 100%); background: #fff; border-radius: var(--r-2xl); box-shadow: var(--sh-menu); padding: 18px; display: grid; gap: 14px; transition: --acc .3s; }
+.h-lm-brand { position: absolute; right: 24px; top: 22px; display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 6px 0 12px; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-pill); font-size: 13px; font-weight: 500; color: var(--nav); z-index: 2; }
+.h-lm-brand span { margin-right: 2px; }
+.h-lm-brand button { width: 18px; height: 18px; border-radius: 50%; border: 0; cursor: pointer; box-shadow: 0 0 0 2px #fff, 0 0 0 3px transparent; transition: box-shadow var(--fast) var(--ease), transform var(--fast) var(--ease); }
+.h-lm-brand button:hover { transform: scale(1.1); }
+.h-lm-brand button[aria-pressed="true"] { box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--ink); }
+.h-lm-route { border-radius: var(--r-lg); background: var(--surface-3); box-shadow: 0 0 0 1px var(--line); padding: 12px; display: grid; gap: 10px; }
+.h-lm-rule { font-size: 12.5px; color: var(--meta); }
+.h-lm-rule b { color: var(--ink); font-weight: 500; }
+.h-lm-reps { display: flex; gap: 6px; }
+.h-lm-rep { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 10px 0 3px; border-radius: var(--r-pill); background: #fff; box-shadow: 0 0 0 1px var(--line); font-size: 12.5px; font-weight: 500; color: var(--meta); transition: box-shadow .2s, color .2s, transform .2s; }
+.h-lm-rep i { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-style: normal; font-size: 10px; font-weight: 600; color: #fff; background: #b8b8b4; transition: background .2s; }
+.h-lm-rep[data-on="true"] { box-shadow: 0 0 0 1.5px var(--acc); color: var(--ink); transform: translateY(-1px); }
+.h-lm-rep[data-on="true"] i { background: var(--acc); }
+.h-lm-rep[data-away="true"] { opacity: .55; }
+.h-lm-sent { font-size: 12.5px; font-weight: 500; color: var(--acc); }
+.h-lm-sent[data-show="false"] { visibility: hidden; }
+.h-lm-sent[data-show="true"] { animation: fadein .3s ease; }
+.h-lm-pickwrap { display: grid; gap: 12px; }
+.h-lm-host { display: flex; align-items: center; gap: 10px; }
+.h-lm-host b { display: block; font-size: 14px; font-weight: 500; color: var(--ink); }
+.h-lm-host span { font-size: 12.5px; color: var(--meta); }
+.h-lm-host .h-lm-av { color: #fff; font-size: 12px; }
+.h-lm-av, .h-lw-av { width: 34px; height: 34px; flex: none; border-radius: 50%; display: grid; place-items: center; background: var(--acc, var(--green)); color: #fff; font-size: 12px; font-weight: 600; transition: background .3s; }
+.h-lm-days { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.h-lm-days button, .h-lm-times button { font: inherit; cursor: pointer; border: 0; background: #fff; transition: background .2s, color .2s, box-shadow .2s, transform var(--fast) var(--ease); }
+.h-lm-days button:active, .h-lm-times button:active { transform: scale(.95); }
+.h-lm-days button { display: grid; justify-items: center; gap: 2px; padding: 7px 0; border-radius: var(--r-md); font-size: 11px; color: var(--meta); box-shadow: 0 0 0 1px var(--line); }
+.h-lm-days b { font-size: 16px; font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
+.h-lm-days button[aria-pressed="true"] { background: var(--acc); box-shadow: none; color: rgba(255,255,255,.8); }
+.h-lm-days button[aria-pressed="true"] b { color: #fff; }
+.h-lm-times { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.h-lm-times button { padding: 7px 0; border-radius: var(--r-sm); font-size: 12.5px; font-weight: 500; color: var(--ink); box-shadow: 0 0 0 1px var(--line); }
+.h-lm-times button:hover { box-shadow: 0 0 0 1px var(--acc); }
+.h-lm-times button[aria-pressed="true"] { box-shadow: 0 0 0 1.5px var(--acc); background: color-mix(in srgb, var(--acc) 10%, #fff); }
+.h-lm-times[data-swap="a"] button { animation: fadein .25s ease; }
+.h-lm-times[data-swap="b"] button { animation: fadein2 .25s ease; }
+@keyframes fadein2 { from { opacity: 0; } to { opacity: 1; } }
+.h-lm-confirm { border: 0; cursor: pointer; font: inherit; font-size: 14px; font-weight: 500; color: #fff; background: var(--acc); border-radius: var(--r-pill); padding: 10px; transition: background .3s, transform var(--fast) var(--ease); }
+.h-lm-confirm:active { transform: scale(.98); }
+.h-lm-done { display: none; justify-items: center; text-align: center; gap: 6px; padding: 8px 0 4px; }
+.h-lm[data-stage="done"] .h-lm-pickwrap { display: none; }
+.h-lm[data-stage="done"] .h-lm-done { display: grid; animation: rise .35s var(--ease-out); }
+.h-lm-sync { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; width: 100%; text-align: left; }
+.h-lm-sync li { display: flex; align-items: center; gap: 10px; font-size: 13px; padding: 8px 10px; border-radius: var(--r-md); box-shadow: 0 0 0 1px var(--line); opacity: 0; animation: rise .35s var(--ease-out) forwards; }
+.h-lm-sync li:nth-child(1) { animation-delay: .5s; }
+.h-lm-sync li:nth-child(2) { animation-delay: .8s; }
+.h-lm-sync li:nth-child(3) { animation-delay: 1.1s; }
+.h-lm-sync span { width: 22px; height: 22px; flex: none; border-radius: 6px; display: grid; place-items: center; color: #fff; font-size: 11px; font-weight: 700; }
+.h-lm-sync span svg { width: 12px; height: 12px; }
+.h-lg-g { background: #1a73e8; }
+.h-lg-o { background: #0f6cbd; }
+.h-lg-m { background: var(--acc); }
+
+/* live email workflow */
+.h-lw { position: relative; z-index: 1; width: 100%; max-width: 600px; display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 20px; align-items: start; }
+.h-lw-flow { list-style: none; margin: 0; padding: 0; position: relative; display: grid; gap: 6px; }
+.h-lw-flow::before { content: ""; position: absolute; left: 9px; top: 14px; bottom: 14px; width: 2px; border-radius: 2px; background: var(--line-strong); }
+.h-lw-flow::after { content: ""; position: absolute; left: 9px; top: 14px; width: 2px; height: calc(100% - 28px); border-radius: 2px; background: var(--green); transform-origin: top; transform: scaleY(var(--p, 1)); transition: transform .6s var(--ease-out); }
+.h-lw-flow li { position: relative; display: flex; align-items: center; gap: 10px; }
+.h-lw-dot { position: relative; z-index: 1; flex: none; width: 20px; height: 20px; border-radius: 50%; background: var(--surface); box-shadow: 0 0 0 2px var(--line-strong); transition: background .3s, box-shadow .3s; }
+.h-lw-flow li[data-s="done"] .h-lw-dot { background: var(--green); box-shadow: 0 0 0 2px var(--green); }
+.h-lw-flow li[data-s="done"] .h-lw-dot::after, .h-lw-flow li[data-s="active"] .h-lw-dot::after { content: ""; position: absolute; left: 6px; top: 4px; width: 5px; height: 9px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.h-lw-flow li[data-s="active"] .h-lw-dot { background: var(--green); box-shadow: 0 0 0 2px var(--green), 0 0 0 7px rgba(12,140,94,.18); }
+.h-lw-flow button { flex: 1; min-width: 0; text-align: left; border: 0; cursor: pointer; font: inherit; background: var(--surface); border-radius: var(--r-md); padding: 8px 10px; box-shadow: var(--sh-rest); transition: box-shadow .2s, transform .2s; }
+.h-lw-flow button:hover { transform: translateX(2px); }
+.h-lw-flow li[data-s="active"] button { box-shadow: 0 0 0 1.5px var(--green), var(--sh-hover); }
+.h-lw-flow b { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: var(--ink); line-height: 18px; }
+.h-lw-flow b em { font-style: normal; font-size: 10px; font-weight: 600; color: var(--tag-purple-ink); background: var(--tag-purple); border-radius: var(--r-tag); padding: 0 5px; }
+.h-lw-flow small { font-size: 11.5px; color: var(--meta); }
+.h-lw-flow li[data-s=""] button { opacity: .6; }
+.h-lw-mail { background: var(--surface); border-radius: var(--r-2xl); box-shadow: var(--sh-menu); padding: 20px; min-height: 250px; }
+.h-lw-mail[data-swap="a"] { animation: rise .35s var(--ease-out); }
+.h-lw-mail[data-swap="b"] { animation: rise2 .35s var(--ease-out); }
+@keyframes rise2 { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.h-lw-top { display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.h-lw-top b { display: block; font-size: 13.5px; font-weight: 500; color: var(--ink); line-height: 18px; }
+.h-lw-top span { font-size: 12.5px; color: var(--meta); }
+.h-lw-top .h-lw-av { color: #fff; font-size: 12px; }
+.h-lw-status { margin-left: auto; font-size: 11.5px !important; font-weight: 500; color: var(--green-ink) !important; background: var(--green-100); border-radius: var(--r-status); padding: 2px 8px; white-space: nowrap; }
+.h-lw-status[data-ai="true"] { color: var(--tag-purple-ink) !important; background: var(--tag-purple); }
+.h-lw-mail h5 { margin: 14px 0 8px; font-size: 16px; letter-spacing: -.01em; }
+.h-lw-mail p { font-size: 14px; line-height: 23px; color: var(--nav); }
+.h-lw-mail mark { background: var(--green-100); color: var(--green-ink); border-radius: var(--r-tag); padding: 1px 4px; }
+.h-lw-mail [data-caret] { display: inline-block; width: 2px; height: 1em; margin-left: 1px; vertical-align: -2px; background: var(--ink); animation: blinkc 1s steps(1) infinite; }
+@keyframes blinkc { 50% { opacity: 0; } }
+.h-lw-replay { position: absolute; right: 24px; top: 22px; z-index: 2; display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 12px; border: 0; cursor: pointer; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-pill); font: inherit; font-size: 13px; font-weight: 500; color: var(--nav); }
+.h-lw-replay svg { width: 13px; height: 13px; transform: rotate(180deg) scaleX(-1); }
+
+@media (max-width: 640px) {
+  .h-demo { min-height: 0; padding: 64px 14px 24px; }
+  .h-lw { grid-template-columns: 1fr; }
+  .h-lm-brand span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .h-try i, .h-tick-anim circle, .h-tick-anim path, .h-lm-sync li, .h-lw-mail [data-caret] { animation: none !important; }
+  .h-tick-anim circle, .h-tick-anim path { stroke-dashoffset: 0; }
+  .h-lm-sync li { opacity: 1; }
+}
+
 html:not(.js) .h-bill { display: none; }
 main.h-home { overflow-x: clip; }
 </style>
@@ -1184,30 +1351,62 @@ main.h-home { overflow-x: clip; }
     <div class="h-core-copy">
       <span class="h-eyebrow"><svg><use href="#i-form"/></svg>Forms</span>
       <h2>Build any form in one sentence</h2>
-      <p>Describe the form you need and Claritia builds it, or start from one of 840 templates.</p>
-      <ul class="h-core-list">
-        <li><b>Show-if logic</b><span>Ask only what matters for each lead.</span></li>
-        <li><b>Prices and quotes</b><span>Estimates worked out as they answer.</span></li>
-        <li><b>Payments</b><span>Take deposits with Stripe inside the form.</span></li>
+      <p>Describe the form you need and Claritia builds it, or start from one of our 840 templates for every use case imaginable.</p>
+      <ul class="h-ticks2">
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>Show-if logic</li>
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>Pricing calculator</li>
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>Stripe payments</li>
       </ul>
       <a class="h-btn-dark h-lg" href="https://app.tryclaritia.com/signup">Build a form <svg class="h-arrow"><use href="#i-arrow"/></svg></a>
     </div>
-    <div class="h-core-visual h-v-green">
-      <div class="h-v-card">
-        <div class="h-formcard h-rl">
-          <h4>Get a free roof estimate</h4>
+    <div class="h-core-visual h-v-green h-demo">
+      <span class="h-try"><i></i>Live demo. Try it.</span>
+      <div class="h-lf h-rl" id="lf" data-job="new" data-stage="form">
+        <div class="h-lf-head"><h4>Get a free roof estimate</h4><span class="h-lf-logo">Ridgeline</span></div>
+        <div class="h-lf-body">
           <div class="h-f-label">What do you need done?</div>
-          <div class="h-opts"><span class="h-opt">Repair</span><span class="h-opt">New roof</span><span class="h-opt">Inspection</span><span class="h-opt h-on">Storm damage</span></div>
-          <div class="h-dash-box">
-            <div class="h-f-label" style="margin-top:0">Insurance claim number <em>added by AI</em></div>
-            <div class="h-f-input">CLM-</div>
+          <div class="h-opts" id="lfJob">
+            <button type="button" class="h-opt" data-v="repair" aria-pressed="false">Repair</button>
+            <button type="button" class="h-opt" data-v="new" aria-pressed="true">New roof</button>
+            <button type="button" class="h-opt" data-v="inspection" aria-pressed="false">Inspection</button>
+            <button type="button" class="h-opt" data-v="storm" aria-pressed="false">Storm damage</button>
           </div>
-          <div class="h-f-label">Roof size</div>
-          <div class="h-f-input" style="color:#333">1,800 sq ft</div>
-          <div class="h-v-total"><span>Estimate</span><b>$9,300</b></div>
+          <div class="h-lf-ins">
+            <div class="h-lf-ins-in">
+              <div class="h-f-label">Insurance claim number <span class="h-flag">Show-if</span></div>
+              <input class="h-lf-input" id="lfClaim" type="text" placeholder="CLM-0000" aria-label="Insurance claim number">
+            </div>
+          </div>
+          <div class="h-lf-calc">
+            <div class="h-f-label h-lf-row"><label for="lfSize">Roof size</label><output id="lfSizeOut" for="lfSize">1,800 sq ft</output></div>
+            <input class="h-lf-range" id="lfSize" type="range" min="800" max="4000" step="100" value="1800">
+            <div class="h-f-label">Material</div>
+            <div class="h-opts" id="lfMat">
+              <button type="button" class="h-opt" data-v="3.5" aria-pressed="false">Asphalt</button>
+              <button type="button" class="h-opt" data-v="4.5" aria-pressed="true">Architectural</button>
+              <button type="button" class="h-opt" data-v="9" aria-pressed="false">Metal</button>
+            </div>
+          </div>
+          <div class="h-lf-est">
+            <div><span>Estimate</span><small id="lfFormula">1,800 sq ft × $4.50 + $1,200 removal</small></div>
+            <b id="lfTotal">$9,300</b>
+          </div>
+          <button type="button" class="h-lf-btn" id="lfPay">Book a visit · Pay $50 deposit</button>
+        </div>
+        <div class="h-lf-stripe">
+          <div class="h-st-head"><span>Pay Ridgeline Roofing</span><b>$50.00</b></div>
+          <div class="h-f-label">Card</div>
+          <div class="h-st-card"><span class="h-st-num">4242 4242 4242 4242</span><span>12 / 28</span><span>123</span></div>
+          <button type="button" class="h-lf-btn h-st-pay" id="lfPayNow">Pay $50.00</button>
+          <p class="h-st-by">Payments by <b>stripe</b></p>
+        </div>
+        <div class="h-lf-done">
+          <svg class="h-tick-anim" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <b>Deposit paid</b>
+          <p>Your visit is booked. You'll get a written quote the same day.</p>
+          <button type="button" class="h-lf-reset" id="lfReset">Try it again</button>
         </div>
       </div>
-      <div class="h-v-note h-tl"><small><svg><use href="#i-spark"/></svg>Ask AI</small>Add a question about storm damage</div>
     </div>
   </div>
 </section>
@@ -1217,31 +1416,64 @@ main.h-home { overflow-x: clip; }
   <div class="h-wrap h-core-grid h-flip">
     <div class="h-core-copy">
       <span class="h-eyebrow"><svg><use href="#i-cal"/></svg>Meetings</span>
-      <h2>Let leads book before they leave</h2>
-      <p>The calendar opens right inside the form, with the right rep already picked.</p>
-      <ul class="h-core-list">
-        <li><b>Booking in the form</b><span>Leads pick a time on the same page.</span></li>
-        <li><b>Round robin</b><span>Every lead goes to the right rep.</span></li>
-        <li><b>Calendar sync</b><span>Works with Google Calendar and Outlook.</span></li>
+      <h2>Book meetings inside your forms</h2>
+      <p>The calendar opens right inside the form, so leads book before they leave.</p>
+      <ul class="h-ticks2">
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>Route form submissions to the right person in your team</li>
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>Sync with Google Calendar and Outlook</li>
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>Customize it to match your brand style</li>
       </ul>
       <a class="h-btn-dark h-lg" href="/products/meetings">See meetings <svg class="h-arrow"><use href="#i-arrow"/></svg></a>
     </div>
-    <div class="h-core-visual h-v-blue">
-      <div class="h-v-card">
-        <div class="h-m-form">
-          <div class="h-m-done"><svg><use href="#i-check"/></svg><span>Team size</span><b>11 to 50</b></div>
-          <div class="h-m-route"><svg><use href="#i-route"/></svg>Sent to <b>Maya Ortiz</b> by round robin</div>
-          <div class="h-m-pick">
-            <div class="h-host"><span class="h-avatar" style="background:#0c8c5e">MO</span><div><b>Intro call with Maya</b><span>30 min · Google Meet</span></div></div>
-            <div class="h-m-days">
-              <span>Mon<b>16</b></span><span class="h-on">Tue<b>17</b></span><span>Wed<b>18</b></span><span>Thu<b>19</b></span><span>Fri<b>20</b></span>
-            </div>
-            <div class="h-m-times"><span>9:00 am</span><span class="h-on">10:30 am</span><span>11:00 am</span><span>1:00 pm</span></div>
-            <span class="h-m-confirm">Confirm Tue, Nov 17 at 10:30</span>
+    <div class="h-core-visual h-v-blue h-demo">
+      <span class="h-try"><i></i>Live demo. Try it.</span>
+      <div class="h-lm-brand" id="lmBrand" aria-label="Brand color">
+        <span>Brand</span>
+        <button type="button" data-acc="#0c8c5e" aria-pressed="true" aria-label="Green" style="background:#0c8c5e"></button>
+        <button type="button" data-acc="#f26b1d" aria-pressed="false" aria-label="Orange" style="background:#f26b1d"></button>
+        <button type="button" data-acc="#4f46e5" aria-pressed="false" aria-label="Indigo" style="background:#4f46e5"></button>
+      </div>
+      <div class="h-lm" id="lm" data-stage="pick">
+        <div class="h-lm-route">
+          <div class="h-lm-rule">Team size <b>11 to 50</b> goes to <b>Sales</b></div>
+          <div class="h-lm-reps" id="lmReps">
+            <span class="h-lm-rep" data-on="true"><i>MO</i>Maya</span>
+            <span class="h-lm-rep" data-on="false"><i>LK</i>Lena</span>
+            <span class="h-lm-rep" data-on="false" data-away="true"><i>SB</i>Sam</span>
           </div>
+          <div class="h-lm-sent" id="lmSent">Sent to Maya Ortiz by round robin</div>
+        </div>
+        <div class="h-lm-pickwrap">
+          <div class="h-lm-host"><span class="h-lm-av">MO</span><div><b>Intro call with Maya Ortiz</b><span>30 min · Google Meet</span></div></div>
+          <div class="h-lm-days" id="lmDays">
+            <button type="button" data-v="Mon, Nov 16" aria-pressed="false">Mon<b>16</b></button>
+            <button type="button" data-v="Tue, Nov 17" aria-pressed="true">Tue<b>17</b></button>
+            <button type="button" data-v="Wed, Nov 18" aria-pressed="false">Wed<b>18</b></button>
+            <button type="button" data-v="Thu, Nov 19" aria-pressed="false">Thu<b>19</b></button>
+            <button type="button" data-v="Fri, Nov 20" aria-pressed="false">Fri<b>20</b></button>
+          </div>
+          <div class="h-lm-times" id="lmTimes">
+            <button type="button" data-v="9:00 am" aria-pressed="false">9:00 am</button>
+            <button type="button" data-v="10:30 am" aria-pressed="true">10:30 am</button>
+            <button type="button" data-v="11:00 am" aria-pressed="false">11:00 am</button>
+            <button type="button" data-v="1:00 pm" aria-pressed="false">1:00 pm</button>
+            <button type="button" data-v="2:30 pm" aria-pressed="false">2:30 pm</button>
+            <button type="button" data-v="4:00 pm" aria-pressed="false">4:00 pm</button>
+          </div>
+          <button type="button" class="h-lm-confirm" id="lmConfirm">Confirm Tue, Nov 17 at 10:30 am</button>
+        </div>
+        <div class="h-lm-done">
+          <svg class="h-tick-anim" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <b>You're booked</b>
+          <p id="lmWhen">Tue, Nov 17 at 10:30 am with Maya Ortiz</p>
+          <ul class="h-lm-sync">
+            <li><span class="h-lg-g">G</span>Added to Maya's Google Calendar</li>
+            <li><span class="h-lg-o">O</span>Invite sent to Priya's Outlook</li>
+            <li><span class="h-lg-m"><svg><use href="#i-mail"/></svg></span>Reminders set for 1 day and 1 hour before</li>
+          </ul>
+          <button type="button" class="h-lf-reset" id="lmReset">Book another time</button>
         </div>
       </div>
-      <div class="h-v-note h-br"><small><svg><use href="#i-check"/></svg>Booked</small>Added to Google Calendar</div>
     </div>
   </div>
 </section>
@@ -1251,28 +1483,37 @@ main.h-home { overflow-x: clip; }
   <div class="h-wrap h-core-grid">
     <div class="h-core-copy">
       <span class="h-eyebrow"><svg><use href="#i-mail"/></svg>Email marketing</span>
-      <h2>Follow-ups that write themselves</h2>
-      <p>AI writes every email from the lead's answers, in your brand's voice.</p>
-      <ul class="h-core-list">
-        <li><b>AI follow-ups</b><span>Written from what each lead told you.</span></li>
-        <li><b>Reminders</b><span>Sent a day and an hour before each call.</span></li>
-        <li><b>You approve</b><span>Every AI draft waits for your OK.</span></li>
+      <h2>Automated email workflows to nurture leads</h2>
+      <p>Every lead gets the right email at the right time, written in your brand's voice.</p>
+      <ul class="h-ticks2">
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>Reminders before every meeting</li>
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>AI follow-ups written from each lead's answers</li>
+        <li><span class="h-tk"><svg><use href="#i-check"/></svg></span>Nurture sequences that run on their own</li>
       </ul>
       <a class="h-btn-dark h-lg" href="/email-templates">See email templates <svg class="h-arrow"><use href="#i-arrow"/></svg></a>
     </div>
-    <div class="h-core-visual h-v-purple">
-      <div class="h-v-card h-wide">
-        <div class="h-draft">
-          <div class="h-draft-head"><span class="h-avatar" style="background:#0c8c5e">MO</span><div><b>Maya Ortiz</b><span>to Priya Raman</span></div><span class="h-ai"><svg><use href="#i-spark"/></svg>Drafted by AI</span></div>
-          <h4>Ideas for your call on Tuesday</h4>
-          <p>Hi Priya, thanks for booking <mark>Tuesday at 10:30</mark>. You said your <mark>team of 11 to 50</mark> wants to <mark>book more demos</mark>, so I'll show how teams your size route every lead in seconds.</p>
-          <div class="h-draft-acts"><span class="h-btn-light">Edit</span><span class="h-btn-green">Approve and send</span></div>
+    <div class="h-core-visual h-v-purple h-demo">
+      <span class="h-try"><i></i>Live demo. Click a step.</span>
+      <div class="h-lw" id="lw">
+        <ol class="h-lw-flow" id="lwFlow" style="--p:1">
+          <li data-i="0" data-s="done"><span class="h-lw-dot"></span><button type="button"><b>Demo booked</b><small>Trigger</small></button></li>
+          <li data-i="1" data-s="done"><span class="h-lw-dot"></span><button type="button"><b>Confirmation</b><small>Right away</small></button></li>
+          <li data-i="2" data-s="active"><span class="h-lw-dot"></span><button type="button"><b>AI prep email <em>AI</em></b><small>Right away</small></button></li>
+          <li data-i="3" data-s="done"><span class="h-lw-dot"></span><button type="button"><b>Reminder</b><small>1 day before</small></button></li>
+          <li data-i="4" data-s="done"><span class="h-lw-dot"></span><button type="button"><b>Reminder</b><small>1 hour before</small></button></li>
+          <li data-i="5" data-s="done"><span class="h-lw-dot"></span><button type="button"><b>Thank-you or new link</b><small>After the call</small></button></li>
+        </ol>
+        <div class="h-lw-mail" id="lwMail">
+          <div class="h-lw-top"><span class="h-lw-av">MO</span><div><b>Maya Ortiz</b><span>to Priya Raman</span></div><span class="h-lw-status" id="lwStatus">Sent</span></div>
+          <h5 id="lwSubj">Ideas for your call on Tuesday</h5>
+          <p id="lwBody">Hi Priya, thanks for booking <mark>Tuesday at 10:30</mark>. You said your <mark>team of 11 to 50</mark> wants to <mark>book more demos</mark>, so I'll show how teams your size route every lead in seconds.</p>
         </div>
       </div>
-      <div class="h-v-note h-bl"><small><svg><use href="#i-mail"/></svg>Sequence</small>Confirmation sent · 3 more to go</div>
+      <button type="button" class="h-lw-replay" id="lwReplay"><svg><use href="#i-arrow"/></svg>Replay</button>
     </div>
   </div>
 </section>
+
 <!-- ONE RECORD (dark) -->
 <section class="h-record">
   <div class="h-wrap h-rec-grid">
@@ -1521,6 +1762,183 @@ main.h-home { overflow-x: clip; }
       document.querySelectorAll('.h-price [data-y]').forEach(function (e) { e.hidden = !y; });
     });
   });
+
+
+  // ---------- Live demos ----------
+  var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+  function pressOne(group, btn) {
+    group.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+  }
+  function onView(el, fn) {
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { io.disconnect(); fn(); } });
+    }, { threshold: 0.45 });
+    io.observe(el);
+  }
+
+  // Form: show-if, pricing calculator, Stripe deposit
+  (function () {
+    var lf = document.getElementById('lf');
+    if (!lf) return;
+    var job = 'new', rate = 4.5, size = 1800, shown = 9300, raf = 0;
+    var total = document.getElementById('lfTotal'), formula = document.getElementById('lfFormula');
+    var range = document.getElementById('lfSize'), out = document.getElementById('lfSizeOut');
+    function calc() {
+      var sq = size.toLocaleString('en-US') + ' sq ft', r = '$' + rate.toFixed(2);
+      if (job === 'inspection') { formula.textContent = 'Flat fee for an inspection'; return 150; }
+      if (job === 'repair') { formula.textContent = sq + ' × ' + r + ' × 30% for a repair'; return size * rate * 0.3; }
+      formula.textContent = sq + ' × ' + r + ' + $1,200 removal';
+      return size * rate + 1200;
+    }
+    function update() {
+      var target = calc();
+      cancelAnimationFrame(raf);
+      if (still) { shown = target; total.textContent = money(target); return; }
+      var from = shown, t0 = performance.now();
+      (function step(t) {
+        var k = Math.min(1, (t - t0) / 380), e = 1 - Math.pow(1 - k, 3);
+        shown = from + (target - from) * e;
+        total.textContent = money(shown);
+        if (k < 1) raf = requestAnimationFrame(step);
+      })(t0);
+      total.removeAttribute('data-bump');
+    }
+    document.getElementById('lfJob').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      pressOne(this, b); job = b.dataset.v; lf.dataset.job = job; update();
+    });
+    document.getElementById('lfMat').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      pressOne(this, b); rate = parseFloat(b.dataset.v); update();
+    });
+    range.addEventListener('input', function () {
+      size = parseInt(range.value, 10); out.textContent = size.toLocaleString('en-US') + ' sq ft'; update();
+    });
+    document.getElementById('lfPay').addEventListener('click', function () { lf.dataset.stage = 'pay'; });
+    var payNow = document.getElementById('lfPayNow');
+    payNow.addEventListener('click', function () {
+      payNow.dataset.busy = 'true';
+      setTimeout(function () { payNow.dataset.busy = 'false'; lf.dataset.stage = 'done'; }, still ? 0 : 900);
+    });
+    document.getElementById('lfReset').addEventListener('click', function () { lf.dataset.stage = 'form'; });
+    // a short guided run when the form scrolls into view: pick Storm damage, then grow the roof
+    onView(lf, function () {
+      if (still) return;
+      setTimeout(function () { var b = lf.querySelector('#lfJob [data-v="storm"]'); if (b && job === 'new') b.click(); }, 700);
+      setTimeout(function () {
+        if (size !== 1800) return;
+        var s = 1800, iv = setInterval(function () {
+          s += 100; range.value = s; range.dispatchEvent(new Event('input'));
+          if (s >= 2400) clearInterval(iv);
+        }, 90);
+      }, 1500);
+    });
+  })();
+
+  // Booking: round robin, pick a time, brand color, confirm
+  (function () {
+    var lm = document.getElementById('lm');
+    if (!lm) return;
+    var day = 'Tue, Nov 17', time = '10:30 am';
+    var confirmBtn = document.getElementById('lmConfirm');
+    var reps = lm.querySelectorAll('#lmReps > span');
+    var sent = document.getElementById('lmSent');
+    function label() { confirmBtn.textContent = 'Confirm ' + day + ' at ' + time; }
+    document.getElementById('lmDays').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      pressOne(this, b); day = b.dataset.v; label();
+      var times = document.getElementById('lmTimes');
+      times.dataset.swap = times.dataset.swap === 'a' ? 'b' : 'a';
+    });
+    document.getElementById('lmTimes').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      pressOne(this, b); time = b.dataset.v; label();
+    });
+    confirmBtn.addEventListener('click', function () {
+      document.getElementById('lmWhen').textContent = day + ' at ' + time + ' with Maya Ortiz';
+      lm.dataset.stage = 'done';
+    });
+    document.getElementById('lmReset').addEventListener('click', function () { lm.dataset.stage = 'pick'; });
+    document.getElementById('lmBrand').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      pressOne(this, b); lm.style.setProperty('--acc', b.dataset.acc);
+    });
+    function route() {
+      if (still) return;
+      var order = [1, 2, 0], i = 0;
+      sent.dataset.show = 'false';
+      reps.forEach(function (r) { r.dataset.on = 'false'; });
+      var iv = setInterval(function () {
+        reps.forEach(function (r, k) { r.dataset.on = k === order[i] ? 'true' : 'false'; });
+        i++;
+        if (i === order.length) { clearInterval(iv); setTimeout(function () { sent.dataset.show = 'true'; }, 250); }
+      }, 420);
+    }
+    onView(lm, route);
+  })();
+
+  // Email workflow: steps light up in order, the AI email types itself
+  (function () {
+    var flow = document.getElementById('lwFlow');
+    if (!flow) return;
+    var items = flow.querySelectorAll('li');
+    var mail = document.getElementById('lwMail'), subj = document.getElementById('lwSubj');
+    var body = document.getElementById('lwBody'), status = document.getElementById('lwStatus');
+    var MAILS = [
+      { s: 'New booking: Priya Raman', b: 'Priya from Northwind booked an <mark>Intro call</mark> with Maya for <mark>Tue, Nov 17 at 10:30</mark>. The sequence starts now.', t: 'Trigger' },
+      { s: "You're booked: Intro call on Tue, Nov 17", b: 'Hi Priya, your call with Maya is set for <mark>Tuesday at 10:30</mark>. The invite and Google Meet link are on your calendar.', t: 'Sent' },
+      { s: 'Ideas for your call on Tuesday', b: "Hi Priya, thanks for booking <mark>Tuesday at 10:30</mark>. You said your <mark>team of 11 to 50</mark> wants to <mark>book more demos</mark>, so I'll show how teams your size route every lead in seconds.", t: 'Written by AI', ai: true },
+      { s: 'Tomorrow: your call with Maya', b: 'Hi Priya, a quick reminder that you meet Maya <mark>tomorrow at 10:30</mark>. Need a new time? Pick one with one click.', t: 'Scheduled' },
+      { s: 'Starting in 1 hour', b: 'Hi Priya, your call with Maya starts at <mark>10:30</mark>. Join from the Google Meet link in your invite.', t: 'Scheduled' },
+      { s: 'Thanks for your time, Priya', b: "Hi Priya, thanks for the call today. Here's the recap and next steps. Missed it? <mark>Pick a new time</mark> here.", t: 'After the call' }
+    ];
+    var timers = [];
+    function clear() { timers.forEach(clearTimeout); timers = []; }
+    function setProgress(i) { flow.style.setProperty('--p', String(i / (items.length - 1))); }
+    function show(i, type) {
+      var m = MAILS[i];
+      items.forEach(function (li, k) { li.dataset.s = k < i ? 'done' : k === i ? 'active' : li.dataset.s === 'done' && type === 'click' ? 'done' : ''; });
+      subj.textContent = m.s; status.textContent = m.t; status.dataset.ai = m.ai ? 'true' : 'false';
+      mail.dataset.swap = mail.dataset.swap === 'a' ? 'b' : 'a';
+      if (m.ai && type !== 'click' && !still) typeOut(m.b); else body.innerHTML = m.b;
+    }
+    function typeOut(html) {
+      var plain = html.replace(/<[^>]+>/g, ''), n = 0;
+      (function tick() {
+        n += 3;
+        // rebuild with marks up to n visible characters
+        var out = '', seen = 0, inTag = false;
+        for (var j = 0; j < html.length && seen < n; j++) {
+          var c = html[j];
+          if (c === '<') inTag = true;
+          out += c;
+          if (!inTag) seen++;
+          if (c === '>') inTag = false;
+        }
+        if ((out.match(/<mark>/g) || []).length > (out.match(/<\/mark>/g) || []).length) out += '</mark>';
+        body.innerHTML = out + (seen < plain.length ? '<span data-caret></span>' : '');
+        if (seen < plain.length) timers.push(setTimeout(tick, 22));
+      })();
+    }
+    function play() {
+      clear();
+      items.forEach(function (li) { li.dataset.s = ''; });
+      setProgress(0);
+      var delays = [0, 1100, 2200, 6200, 7400, 8600];
+      delays.forEach(function (d, i) {
+        timers.push(setTimeout(function () { setProgress(i); show(i, 'play'); }, still ? 0 : d));
+      });
+      timers.push(setTimeout(function () { items.forEach(function (li) { li.dataset.s = 'done'; }); items[items.length - 1].dataset.s = 'active'; }, still ? 0 : 9800));
+    }
+    items.forEach(function (li, i) {
+      li.querySelector('button').addEventListener('click', function () { clear(); setProgress(items.length - 1); show(i, 'click');
+        items.forEach(function (x, k) { x.dataset.s = k === i ? 'active' : 'done'; }); });
+    });
+    document.getElementById('lwReplay').addEventListener('click', play);
+    onView(flow, function () { if (!still) play(); });
+  })();
 
   // Duplicate marquee for a seamless loop
   var track = document.getElementById('track');
