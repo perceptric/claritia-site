@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=15">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=Barlow+Condensed:wght@600;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&amp;family=Playfair+Display:wght@500;600&amp;family=Jost:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=Manrope:wght@500;600;700&amp;family=Barlow+Condensed:wght@600;700&amp;family=Barlow:wght@400;500;600&amp;display=swap">
 <style>
 /* Layout: Fillout's homepage skeleton (floating nav, hero prompt, product tabs, logo strip, trust row, feature cards, branding split) built with Claritia's own site.h-css tokens. Single light look, as on tryclaritia.h-com. */
 :root {
@@ -865,6 +865,112 @@ table.h-log td small { display: block; color: var(--faint); font-size: 11px; }
   .h-lm-sync li { opacity: 1; }
 }
 
+/* ===== v8: brand picker, brand-skinned demos, real photos and logos ===== */
+.h-demo { padding-top: 92px; }
+.h-bp-wrap { position: absolute; left: 20px; right: 20px; top: 18px; z-index: 3; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.h-bp-label { font-size: 12px; font-weight: 500; color: var(--meta); text-transform: uppercase; letter-spacing: .06em; }
+.h-bpick { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.h-bpick button { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px 0 8px; border: 0; cursor: pointer; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-pill); font: inherit; font-size: 13px; font-weight: 500; transition: box-shadow var(--fast) var(--ease), transform var(--fast) var(--ease); }
+.h-bpick button span { color: var(--nav); }
+.h-bpick button svg { width: 16px; height: 16px; flex: none; }
+.h-bpick button:hover { transform: translateY(-1px); }
+.h-bpick button[aria-pressed="true"] { box-shadow: 0 0 0 1.5px currentColor, 0 4px 12px -4px rgba(0,0,0,.18); }
+.h-bpick button[aria-pressed="true"] span { color: var(--ink); }
+
+/* brand-skinned live form */
+.h-lf { --b-accent: #f26b1d; --b-ink: #b9500f; --b-soft: #fff0e4; --b-text: #1f2328; --b-muted: #5f6368; --b-line: rgba(31,35,40,.16);
+  --b-font: "Barlow", sans-serif; --b-head: "Barlow Condensed", sans-serif; --b-head-w: 700; --b-head-tt: uppercase; --b-head-ls: .01em; --b-head-size: 26px;
+  --b-r: 4px; --b-br: 4px; --b-btn-shadow: 0 3px 0 #1f2328;
+  font-family: var(--b-font); color: var(--b-text); border-radius: calc(var(--b-r) + 8px); transition: border-radius .3s; }
+.h-lf[data-swap="a"] { animation: rise .4s var(--ease-out); }
+.h-lf[data-swap="b"] { animation: rise2 .4s var(--ease-out); }
+.h-lf-head h4 { font-family: var(--b-head); font-weight: var(--b-head-w); text-transform: var(--b-head-tt); letter-spacing: var(--b-head-ls); font-size: var(--b-head-size); color: var(--b-text); line-height: 1.1; }
+.h-lf-logo { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: var(--b-accent); white-space: nowrap; }
+.h-lf-logo svg { width: 16px; height: 16px; }
+.h-lf-logo span { color: var(--b-text); }
+.h-lf .h-f-label { color: var(--b-text); }
+.h-lf #lfJob button, .h-lf-fopts button { font: inherit; font-size: 13px; cursor: pointer; padding: 6px 11px; border: 0; border-radius: var(--b-r); background: #fff; color: var(--b-text); box-shadow: 0 0 0 1px var(--b-line); transition: box-shadow var(--fast) var(--ease), background var(--fast) var(--ease), transform var(--fast) var(--ease); }
+.h-lf #lfJob button:hover, .h-lf-fopts button:hover { box-shadow: 0 0 0 1px var(--b-accent); }
+.h-lf #lfJob button:active, .h-lf-fopts button:active { transform: scale(.96); }
+.h-lf #lfJob button[aria-pressed="true"], .h-lf-fopts button[aria-pressed="true"] { box-shadow: 0 0 0 1.5px var(--b-accent); background: var(--b-soft); color: var(--b-ink); font-weight: 600; }
+.h-lf-ins { display: block; margin-top: 10px; padding: 10px 12px 12px; border-radius: var(--b-r); background: var(--b-soft); box-shadow: inset 0 0 0 1px var(--b-line); }
+.h-lf-ins .h-f-label { margin-top: 0; flex-wrap: wrap; }
+.h-lf-ins[data-swap="a"] { animation: rise .35s var(--ease-out); }
+.h-lf-ins[data-swap="b"] { animation: rise2 .35s var(--ease-out); }
+.h-lf .h-flag { color: var(--b-ink); background: #fff; box-shadow: 0 0 0 1px var(--b-line); }
+.h-lf-fopts { display: flex; flex-wrap: wrap; gap: 6px; }
+.h-lf-range { accent-color: var(--b-accent); }
+.h-lf-row output { color: var(--b-text); }
+.h-lf-est span, .h-lf-est small { color: var(--b-muted); }
+.h-lf-est b { font-family: var(--b-head); font-weight: var(--b-head-w); color: var(--b-text); font-size: 24px; text-align: right; letter-spacing: var(--b-head-ls); }
+.h-lf-est b[data-bump="a"] { animation: bump .3s ease; }
+.h-lf-est b[data-bump="b"] { animation: bump2 .3s ease; }
+@keyframes bump { 50% { transform: scale(1.06); } }
+@keyframes bump2 { 50% { transform: scale(1.06); } }
+.h-lf-btn { background: var(--b-accent); border-radius: var(--b-br); box-shadow: var(--b-btn-shadow); font-family: var(--b-font); }
+.h-st-head span { display: grid; }
+.h-st-store { font-size: 14px; color: var(--b-text); font-weight: 600 !important; }
+.h-st-head small { font-size: 12px; color: var(--b-muted); }
+.h-st-pay { background: #635bff; box-shadow: none; border-radius: 6px; }
+.h-st-by { display: flex; align-items: center; justify-content: center; gap: 6px; }
+.h-st-by img { height: 16px; width: auto; }
+.h-lf-done b { color: var(--b-text); font-family: var(--b-head); text-transform: var(--b-head-tt); font-weight: var(--b-head-w); }
+.h-lf .h-tick-anim circle, .h-lf .h-tick-anim path { stroke: var(--b-accent); }
+
+/* brand-skinned booking */
+.h-lm { --b-accent: #4f46e5; --acc: var(--b-accent); font-family: var(--b-font, var(--font)); border-radius: calc(var(--b-r, 8px) + 8px); }
+.h-lm[data-swap="a"] { animation: rise .4s var(--ease-out); }
+.h-lm[data-swap="b"] { animation: rise2 .4s var(--ease-out); }
+.h-lm-logo { display: flex; align-items: center; gap: 7px; font-family: var(--b-head, var(--font)); font-weight: var(--b-head-w, 700); letter-spacing: var(--b-head-ls, 0); font-size: 16px; color: var(--b-text, var(--ink)); }
+.h-lm-logo svg { width: 20px; height: 20px; color: var(--b-accent); }
+.h-lm-route { border-radius: var(--b-r, 12px); }
+.h-lm-reps { flex-wrap: wrap; }
+.h-lm-reps [data-rep] { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 11px 0 3px; border-radius: var(--r-pill); background: #fff; box-shadow: 0 0 0 1px var(--line); font-size: 12.5px; font-weight: 500; color: var(--meta); transition: box-shadow .2s, color .2s, transform .2s; }
+.h-lm-reps [data-rep] img { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; filter: grayscale(.9); opacity: .7; transition: filter .2s, opacity .2s; }
+.h-lm-reps [data-rep][data-on="true"] { box-shadow: 0 0 0 1.5px var(--b-accent); color: var(--ink); transform: translateY(-1px); }
+.h-lm-reps [data-rep][data-on="true"] img { filter: none; opacity: 1; }
+.h-lm-sent { color: var(--b-accent); }
+.h-lm-host b { color: var(--b-text, var(--ink)); }
+img.h-lm-av { object-fit: cover; }
+.h-lm-days button, .h-lm-times button { border-radius: var(--b-r, 8px); }
+.h-lm-days button[aria-pressed="true"] { background: var(--b-accent); }
+.h-lm-times button[aria-pressed="true"] { box-shadow: 0 0 0 1.5px var(--b-accent); background: var(--b-soft, #eef0ff); color: var(--b-ink, var(--ink)); }
+.h-lm-times button:hover { box-shadow: 0 0 0 1px var(--b-accent); }
+.h-lm-confirm { background: var(--b-accent); border-radius: var(--b-br, 999px); box-shadow: var(--b-btn-shadow, none); font-family: var(--b-font, var(--font)); }
+.h-lm-done > b { font-family: var(--b-head, var(--font)); font-weight: var(--b-head-w, 600); color: var(--b-text, var(--ink)); }
+.h-lm .h-tick-anim circle, .h-lm .h-tick-anim path { stroke: var(--b-accent); }
+.h-lm-sync li img { width: 22px; height: 22px; flex: none; object-fit: contain; border-radius: 5px; }
+
+/* real photos */
+img.h-avatar, img.h-lw-av { object-fit: cover; display: block; }
+.h-close-leads img.h-avatar { width: 28px; height: 28px; border-radius: 50%; }
+.h-rep .h-rp { display: flex; align-items: center; gap: 8px; }
+.h-rep .h-rp img { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; }
+.h-int-dots img { width: 22px; height: 22px; padding: 3px; border-radius: var(--r-status); background: #fff; box-shadow: var(--sh-chip); object-fit: contain; }
+.h-wm { display: inline-flex; align-items: center; gap: 10px; }
+.h-wm img { width: 24px; height: 24px; object-fit: contain; }
+
+@media (max-width: 640px) {
+  .h-demo { padding-top: 120px; }
+  .h-bp-label { display: none; }
+  .h-bpick button { height: 30px; padding: 0 10px 0 7px; font-size: 12.5px; }
+}
+
+.h-lm-sync em { font-style: normal; }
+.h-core-grid.h-flip { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
+.h-bp-wrap { flex-direction: column; gap: 8px; top: 16px; }
+.h-bp-label { white-space: nowrap; }
+.h-demo { padding-top: 112px; }
+.h-bpick { max-width: 100%; }
+.h-bpick { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding: 3px; margin: -3px; justify-content: flex-start; }
+.h-bpick::-webkit-scrollbar { display: none; }
+.h-bpick button { flex: none; }
+.h-lf-est > div { min-width: 0; }
+.h-lf-est b { white-space: nowrap; }
+.h-wm img { width: auto; max-width: 76px; height: 22px; }
+@media (max-width: 1000px) { .h-core-grid.h-flip { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .h-bp-wrap { left: 12px; right: 12px; } }
+
 html:not(.js) .h-bill { display: none; }
 main.h-home { overflow-x: clip; }
 </style>
@@ -1022,7 +1128,7 @@ main.h-home { overflow-x: clip; }
       <textarea id="promptText" placeholder="Describe the form you want to create..."></textarea>
       <div class="h-prompt-bar">
         <button type="button" class="h-icon-btn" aria-label="Attach a file"><svg><use href="#i-clip"/></svg></button>
-        <div class="h-int-dots" aria-label="Connects with HubSpot, Google Calendar and Stripe"><i style="background:#ff7a59">H</i><i style="background:#1a73e8">G</i><i style="background:#635bff">S</i></div>
+        <div class="h-int-dots" aria-label="Connects with HubSpot, Google Calendar and Stripe"><img src="/assets/logos/hubspot.svg" alt=""><img src="/assets/logos/calendar.svg" alt=""><img src="/assets/logos/stripe.svg" alt=""></div>
         <button type="submit" class="h-create-btn" id="createBtn">Create form <svg class="h-arrow"><use href="#i-arrow"/></svg></button>
       </div>
     </div></div></div></form>
@@ -1107,7 +1213,7 @@ main.h-home { overflow-x: clip; }
         <div class="h-window">
           <div class="h-win-head"><svg><use href="#i-cal"/></svg>Intro call · 30 min<span class="h-pill">Google Meet</span></div>
           <div class="h-mock-pad">
-            <div class="h-host"><span class="h-avatar" style="background:#0c8c5e">MO</span><div><b>Maya Ortiz</b><span>Your host · Acme sales team</span></div></div>
+            <div class="h-host"><img class="h-avatar" src="/assets/demo/women-44.jpg" alt=""><div><b>Maya Ortiz</b><span>Your host · Acme sales team</span></div></div>
             <div class="h-cal">
               <div>
                 <div style="font-weight:700;font-size:14px;margin-bottom:10px">November 2026</div>
@@ -1153,9 +1259,9 @@ main.h-home { overflow-x: clip; }
           <div class="h-mock-pad">
             <div class="h-rule">If <span class="h-tok">Team size</span> is <span class="h-tok">11 to 50</span> send to <span class="h-tok h-g">Sales, North America</span></div>
             <div class="h-reps">
-              <div class="h-rep"><b>Maya Ortiz</b><span class="h-tag h-g">Assigned</span></div>
-              <div class="h-rep"><b>Lena Koch</b><span class="h-tag h-b">Next up</span></div>
-              <div class="h-rep"><b>Sam Brooks</b><span class="h-tag h-o">Away until Mon</span></div>
+              <div class="h-rep"><span class="h-rp"><img src="/assets/demo/women-44.jpg" alt=""><b>Maya Ortiz</b></span><span class="h-tag h-g">Assigned</span></div>
+              <div class="h-rep"><span class="h-rp"><img src="/assets/demo/women-68.jpg" alt=""><b>Lena Koch</b></span><span class="h-tag h-b">Next up</span></div>
+              <div class="h-rep"><span class="h-rp"><img src="/assets/demo/men-32.jpg" alt=""><b>Sam Brooks</b></span><span class="h-tag h-o">Away until Mon</span></div>
             </div>
             <div class="h-tbl-wrap">
               <table class="h-log">
@@ -1246,16 +1352,16 @@ main.h-home { overflow-x: clip; }
   <div class="h-strip-label">Works with the tools your team already uses</div>
   <div class="h-marquee">
     <div class="h-marquee-track" id="track">
-      <span class="h-wm">Google Calendar</span>
-      <span class="h-wm">HubSpot</span>
-      <span class="h-wm">salesforce</span>
-      <span class="h-wm">zoom</span>
-      <span class="h-wm">slack</span>
-      <span class="h-wm">stripe</span>
-      <span class="h-wm">Outlook</span>
-      <span class="h-wm">Mailchimp</span>
-      <span class="h-wm">Webflow</span>
-      <span class="h-wm">Google Sheets</span>
+      <span class="h-wm"><img src="/assets/logos/calendar.svg" alt="">Google Calendar</span>
+      <span class="h-wm"><img src="/assets/logos/hubspot.svg" alt="">HubSpot</span>
+      <span class="h-wm"><img src="/assets/logos/salesforce.svg" alt="">Salesforce</span>
+      <span class="h-wm"><img src="/assets/logos/zoom.svg" alt="">Zoom</span>
+      <span class="h-wm"><img src="/assets/logos/slack.svg" alt="">Slack</span>
+      <span class="h-wm"><img src="/assets/logos/stripe.svg" alt="">Stripe</span>
+      <span class="h-wm"><img src="/assets/logos/outlook.jpg" alt="">Outlook</span>
+      <span class="h-wm"><img src="/assets/logos/mailchimp.svg" alt="">Mailchimp</span>
+      <span class="h-wm"><img src="/assets/logos/webflow.svg" alt="">Webflow</span>
+      <span class="h-wm"><img src="/assets/logos/googlesheets.svg" alt="">Google Sheets</span>
     </div>
   </div>
 </section>
@@ -1360,50 +1466,43 @@ main.h-home { overflow-x: clip; }
       <a class="h-btn-dark h-lg" href="https://app.tryclaritia.com/signup">Build a form <svg class="h-arrow"><use href="#i-arrow"/></svg></a>
     </div>
     <div class="h-core-visual h-v-green h-demo">
-      <span class="h-try"><i></i>Live demo. Try it.</span>
-      <div class="h-lf h-rl" id="lf" data-job="new" data-stage="form">
-        <div class="h-lf-head"><h4>Get a free roof estimate</h4><span class="h-lf-logo">Ridgeline</span></div>
+      <div class="h-bp-wrap">
+        <span class="h-bp-label">Pick a brand</span>
+        <div class="h-bpick" id="lfBrands" aria-label="Pick a brand for the form"></div>
+      </div>
+      <div class="h-lf" id="lf" data-stage="form">
+        <div class="h-lf-head"><h4 id="lfTitle">Get a free roof estimate</h4><span class="h-lf-logo" id="lfLogo">Ridgeline</span></div>
         <div class="h-lf-body">
-          <div class="h-f-label">What do you need done?</div>
+          <div class="h-f-label" id="lfQ">What do you need done?</div>
           <div class="h-opts" id="lfJob">
-            <button type="button" class="h-opt" data-v="repair" aria-pressed="false">Repair</button>
-            <button type="button" class="h-opt" data-v="new" aria-pressed="true">New roof</button>
-            <button type="button" class="h-opt" data-v="inspection" aria-pressed="false">Inspection</button>
-            <button type="button" class="h-opt" data-v="storm" aria-pressed="false">Storm damage</button>
+            <button type="button" data-i="0" aria-pressed="false">Repair</button>
+            <button type="button" data-i="1" aria-pressed="false">New roof</button>
+            <button type="button" data-i="2" aria-pressed="false">Inspection</button>
+            <button type="button" data-i="3" aria-pressed="true">Storm damage</button>
           </div>
-          <div class="h-lf-ins">
-            <div class="h-lf-ins-in">
-              <div class="h-f-label">Insurance claim number <span class="h-flag">Show-if</span></div>
-              <input class="h-lf-input" id="lfClaim" type="text" placeholder="CLM-0000" aria-label="Insurance claim number">
-            </div>
+          <div class="h-lf-ins" id="lfIns">
+            <div class="h-f-label"><span id="lfFollowQ">Is water coming in right now?</span> <span class="h-flag" id="lfIf">Show-if: Storm damage</span></div>
+            <div class="h-lf-fopts" id="lfFollow"><button type="button" aria-pressed="true">Yes</button><button type="button" aria-pressed="false">No</button></div>
           </div>
-          <div class="h-lf-calc">
-            <div class="h-f-label h-lf-row"><label for="lfSize">Roof size</label><output id="lfSizeOut" for="lfSize">1,800 sq ft</output></div>
-            <input class="h-lf-range" id="lfSize" type="range" min="800" max="4000" step="100" value="1800">
-            <div class="h-f-label">Material</div>
-            <div class="h-opts" id="lfMat">
-              <button type="button" class="h-opt" data-v="3.5" aria-pressed="false">Asphalt</button>
-              <button type="button" class="h-opt" data-v="4.5" aria-pressed="true">Architectural</button>
-              <button type="button" class="h-opt" data-v="9" aria-pressed="false">Metal</button>
-            </div>
-          </div>
+          <div class="h-f-label h-lf-row"><label for="lfSize" id="lfCalcLabel">Roof size</label><output id="lfSizeOut" for="lfSize">2,000 sq ft</output></div>
+          <input class="h-lf-range" id="lfSize" type="range" min="800" max="4000" step="100" value="2000">
           <div class="h-lf-est">
-            <div><span>Estimate</span><small id="lfFormula">1,800 sq ft × $4.50 + $1,200 removal</small></div>
-            <b id="lfTotal">$9,300</b>
+            <div><span>Estimate</span><small id="lfFormula">Rough range. Your crew lead confirms on site.</small></div>
+            <b id="lfTotal">$9,000 to $13,000</b>
           </div>
-          <button type="button" class="h-lf-btn" id="lfPay">Book a visit · Pay $50 deposit</button>
+          <button type="button" class="h-lf-btn" id="lfPay">Book my visit · Pay $50</button>
         </div>
         <div class="h-lf-stripe">
-          <div class="h-st-head"><span>Pay Ridgeline Roofing</span><b>$50.00</b></div>
+          <div class="h-st-head"><span><b class="h-st-store" id="lfStoreName">Pay Ridgeline Roofing</b><small id="lfPayWhat">Visit deposit</small></span><b id="lfAmt">$50.00</b></div>
           <div class="h-f-label">Card</div>
           <div class="h-st-card"><span class="h-st-num">4242 4242 4242 4242</span><span>12 / 28</span><span>123</span></div>
           <button type="button" class="h-lf-btn h-st-pay" id="lfPayNow">Pay $50.00</button>
-          <p class="h-st-by">Payments by <b>stripe</b></p>
+          <p class="h-st-by">Payments by <img src="/assets/logos/stripe.svg" alt="Stripe"></p>
         </div>
         <div class="h-lf-done">
           <svg class="h-tick-anim" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <b>Deposit paid</b>
-          <p>Your visit is booked. You'll get a written quote the same day.</p>
+          <b id="lfDoneHead">Payment received</b>
+          <p id="lfDoneText">You're on the schedule, Priya. A receipt is on its way.</p>
           <button type="button" class="h-lf-reset" id="lfReset">Try it again</button>
         </div>
       </div>
@@ -1426,25 +1525,23 @@ main.h-home { overflow-x: clip; }
       <a class="h-btn-dark h-lg" href="/products/meetings">See meetings <svg class="h-arrow"><use href="#i-arrow"/></svg></a>
     </div>
     <div class="h-core-visual h-v-blue h-demo">
-      <span class="h-try"><i></i>Live demo. Try it.</span>
-      <div class="h-lm-brand" id="lmBrand" aria-label="Brand color">
-        <span>Brand</span>
-        <button type="button" data-acc="#0c8c5e" aria-pressed="true" aria-label="Green" style="background:#0c8c5e"></button>
-        <button type="button" data-acc="#f26b1d" aria-pressed="false" aria-label="Orange" style="background:#f26b1d"></button>
-        <button type="button" data-acc="#4f46e5" aria-pressed="false" aria-label="Indigo" style="background:#4f46e5"></button>
+      <div class="h-bp-wrap">
+        <span class="h-bp-label">Pick a brand</span>
+        <div class="h-bpick" id="lmBrands" aria-label="Pick a brand for the booking page"></div>
       </div>
       <div class="h-lm" id="lm" data-stage="pick">
+        <div class="h-lm-logo" id="lmLogo">Northwind</div>
         <div class="h-lm-route">
-          <div class="h-lm-rule">Team size <b>11 to 50</b> goes to <b>Sales</b></div>
+          <div class="h-lm-rule" id="lmRule">Teams of 11 to 50 go to Sales, North America</div>
           <div class="h-lm-reps" id="lmReps">
-            <span class="h-lm-rep" data-on="true"><i>MO</i>Maya</span>
-            <span class="h-lm-rep" data-on="false"><i>LK</i>Lena</span>
-            <span class="h-lm-rep" data-on="false" data-away="true"><i>SB</i>Sam</span>
+            <span data-rep data-on="true"><img src="/assets/demo/women-44.jpg" alt="">Maya</span>
+            <span data-rep data-on="false"><img src="/assets/demo/women-68.jpg" alt="">Lena</span>
+            <span data-rep data-on="false"><img src="/assets/demo/men-32.jpg" alt="">Sam</span>
           </div>
           <div class="h-lm-sent" id="lmSent">Sent to Maya Ortiz by round robin</div>
         </div>
         <div class="h-lm-pickwrap">
-          <div class="h-lm-host"><span class="h-lm-av">MO</span><div><b>Intro call with Maya Ortiz</b><span>30 min · Google Meet</span></div></div>
+          <div class="h-lm-host"><img class="h-lm-av" id="lmHostImg" src="/assets/demo/women-44.jpg" alt=""><div><b id="lmHostName">Product demo · 30 min</b><span id="lmHostWhere">with Maya Ortiz · Google Meet</span></div></div>
           <div class="h-lm-days" id="lmDays">
             <button type="button" data-v="Mon, Nov 16" aria-pressed="false">Mon<b>16</b></button>
             <button type="button" data-v="Tue, Nov 17" aria-pressed="true">Tue<b>17</b></button>
@@ -1464,12 +1561,12 @@ main.h-home { overflow-x: clip; }
         </div>
         <div class="h-lm-done">
           <svg class="h-tick-anim" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <b>You're booked</b>
+          <b id="lmDoneHead">You're booked, Priya</b>
           <p id="lmWhen">Tue, Nov 17 at 10:30 am with Maya Ortiz</p>
           <ul class="h-lm-sync">
-            <li><span class="h-lg-g">G</span>Added to Maya's Google Calendar</li>
-            <li><span class="h-lg-o">O</span>Invite sent to Priya's Outlook</li>
-            <li><span class="h-lg-m"><svg><use href="#i-mail"/></svg></span>Reminders set for 1 day and 1 hour before</li>
+            <li><img src="/assets/logos/calendar.svg" alt=""><em id="lmSyncCal">Added to Maya's Google Calendar</em></li>
+            <li><img src="/assets/logos/outlook.jpg" alt=""><em>Invite sent to Priya's Outlook</em></li>
+            <li><img src="/assets/logos/gmail.svg" alt=""><em>Reminders set for 1 day and 1 hour before</em></li>
           </ul>
           <button type="button" class="h-lf-reset" id="lmReset">Book another time</button>
         </div>
@@ -1504,7 +1601,7 @@ main.h-home { overflow-x: clip; }
           <li data-i="5" data-s="done"><span class="h-lw-dot"></span><button type="button"><b>Thank-you or new link</b><small>After the call</small></button></li>
         </ol>
         <div class="h-lw-mail" id="lwMail">
-          <div class="h-lw-top"><span class="h-lw-av">MO</span><div><b>Maya Ortiz</b><span>to Priya Raman</span></div><span class="h-lw-status" id="lwStatus">Sent</span></div>
+          <div class="h-lw-top"><img class="h-lw-av" src="/assets/demo/women-44.jpg" alt=""><div><b>Maya Ortiz</b><span>to Priya Raman</span></div><span class="h-lw-status" id="lwStatus">Sent</span></div>
           <h5 id="lwSubj">Ideas for your call on Tuesday</h5>
           <p id="lwBody">Hi Priya, thanks for booking <mark>Tuesday at 10:30</mark>. You said your <mark>team of 11 to 50</mark> wants to <mark>book more demos</mark>, so I'll show how teams your size route every lead in seconds.</p>
         </div>
@@ -1533,7 +1630,7 @@ main.h-home { overflow-x: clip; }
     </div>
     <div class="h-rec-card">
       <div class="h-person">
-        <span class="h-avatar" style="background:#5429d6">PR</span>
+        <img class="h-avatar" src="/assets/demo/women-26.jpg" alt="">
         <div><b>Priya Raman</b><span>Northwind · priya@northwind.co</span></div>
         <span class="h-live-dot">Live record</span>
       </div>
@@ -1673,9 +1770,9 @@ main.h-home { overflow-x: clip; }
       <a class="h-btn-light h-lg" href="mailto:hello@tryclaritia.com?subject=Claritia%20demo">Book a demo</a>
     </div>
     <div class="h-close-leads" aria-label="Example leads">
-      <span><i class="h-avatar" style="background:#5429d6">PR</i>Priya Raman<em class="h-tag h-g">Booked</em></span>
-      <span><i class="h-avatar" style="background:#1e4f9a">JL</i>Jordan Lee<em class="h-tag h-g">Booked</em></span>
-      <span><i class="h-avatar" style="background:#9a3412">LC</i>Laura Chen<em class="h-tag h-p">Follow-up</em></span>
+      <span><img class="h-avatar" src="/assets/demo/women-26.jpg" alt="">Priya Raman<em class="h-tag h-g">Booked</em></span>
+      <span><img class="h-avatar" src="/assets/demo/men-46.jpg" alt="">Jordan Lee<em class="h-tag h-g">Booked</em></span>
+      <span><img class="h-avatar" src="/assets/demo/women-90.jpg" alt="">Laura Chen<em class="h-tag h-p">Follow-up</em></span>
     </div>
   </div>
 </section>
@@ -1777,105 +1874,211 @@ main.h-home { overflow-x: clip; }
     }, { threshold: 0.45 });
     io.observe(el);
   }
+  function short(n) { var p = n.split(' '); return p[0] === 'Dr.' ? 'Dr. ' + p[p.length - 1] : p[0]; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
-  // Form: show-if, pricing calculator, Stripe deposit
+  // Example brands (made up), each with its own colors, type, corners, questions, people and prices
+  var AV = { w26: '/assets/demo/women-26.jpg', w44: '/assets/demo/women-44.jpg', w65: '/assets/demo/women-65.jpg', w68: '/assets/demo/women-68.jpg', w90: '/assets/demo/women-90.jpg', m32: '/assets/demo/men-32.jpg', m46: '/assets/demo/men-46.jpg', m75: '/assets/demo/men-75.jpg' };
+  var BRANDS = [
+    { id: 'ridge', name: 'Ridgeline Roofing', short: 'Ridgeline',
+      logo: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 13L12 4l10 9" stroke="currentColor" stroke-width="3" fill="none"/><rect x="6" y="13" width="12" height="8" fill="currentColor"/></svg>',
+      color: { accent: '#f26b1d', ink: '#b9500f', soft: '#fff0e4', text: '#1f2328', muted: '#5f6368', line: 'rgba(31,35,40,.16)' },
+      font: { body: '"Barlow",sans-serif', head: '"Barlow Condensed",sans-serif', w: '700', tt: 'uppercase', ls: '.01em', size: '26px' },
+      shape: { r: '4px', br: '4px', shadow: '0 3px 0 #1f2328' },
+      form: { title: 'Get a free roof estimate', q: 'What do you need done?', opts: ['Repair', 'New roof', 'Inspection', 'Storm damage'], confirm: 'Book my visit' },
+      logic: [{ q: 'Where is the problem?', opts: ['Leak', 'Missing shingles', 'Gutters'] }, { q: 'What material do you want?', opts: ['Shingle', 'Metal', 'Tile'] }, { q: 'Are you buying or selling?', opts: ['Buying', 'Selling', 'Neither'] }, { q: 'Is water coming in right now?', opts: ['Yes', 'No'] }],
+      calc: { label: 'Roof size', min: 800, max: 4000, step: 100, val: 2000, show: function (v) { return v.toLocaleString('en-US') + ' sq ft'; }, total: function (v) { return money(v * 4.5) + ' to ' + money(v * 6.5); }, note: 'Rough range. Your crew lead confirms on site.' },
+      pay: function () { return [50, 'Visit deposit']; },
+      reps: [{ n: 'Dan Miller', av: 'm75' }, { n: 'Tony Reyes', av: 'm46' }], pick: 0,
+      meet: 'Free on-site estimate · 45 min', where: 'At your home', rule: 'Storm damage jobs go to the closest crew lead',
+      booked: "You're on the schedule" },
+    { id: 'north', name: 'Northwind', short: 'Northwind',
+      logo: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 20-8-5-8 5z" fill="currentColor"/></svg>',
+      color: { accent: '#4f46e5', ink: '#3730a3', soft: '#eef0ff', text: '#111827', muted: '#6b7280', line: 'rgba(17,24,39,.12)' },
+      font: { body: '"Manrope",sans-serif', head: '"Manrope",sans-serif', w: '700', tt: 'none', ls: '-.025em', size: '22px' },
+      shape: { r: '8px', br: '8px', shadow: '0 1px 2px rgba(17,24,39,.3)' },
+      form: { title: 'Book a Northwind demo', q: 'How big is your team?', opts: ['Just me', '2 to 10', '11 to 50', '51 or more'], confirm: 'Start my plan' },
+      logic: [{ q: 'Do you use a CRM today?', opts: ['HubSpot', 'Salesforce', 'None'] }, { q: 'Do you use a CRM today?', opts: ['HubSpot', 'Salesforce', 'None'] }, { q: 'How many reps share leads?', opts: ['2 to 5', '6 to 20', '21 or more'] }, { q: 'How many reps share leads?', opts: ['2 to 5', '6 to 20', '21 or more'] }],
+      calc: { label: 'Seats', min: 1, max: 50, step: 1, val: 10, show: function (v) { return v + (v > 1 ? ' seats' : ' seat'); }, total: function (v) { return money(v * 19) + ' / month'; }, note: '$19 a seat, billed monthly.' },
+      pay: function (v) { return [v * 19, 'First month']; },
+      reps: [{ n: 'Maya Ortiz', av: 'w44' }, { n: 'Lena Koch', av: 'w68' }, { n: 'Sam Brooks', av: 'm32' }], pick: 0,
+      meet: 'Product demo · 30 min', where: 'Google Meet', rule: 'Teams of 11 to 50 go to Sales, North America',
+      booked: "You're booked" },
+    { id: 'bright', name: 'Brightside Dental', short: 'Brightside',
+      logo: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M7 13c1.6 2.6 8.4 2.6 10 0" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>',
+      color: { accent: '#13a89e', ink: '#0b7c74', soft: '#e2f6f4', text: '#17333a', muted: '#5b7479', line: 'rgba(19,90,96,.16)' },
+      font: { body: '"DM Sans",sans-serif', head: '"DM Sans",sans-serif', w: '700', tt: 'none', ls: '-.02em', size: '22px' },
+      shape: { r: '14px', br: '999px', shadow: '0 6px 14px -6px rgba(19,168,158,.6)' },
+      form: { title: 'Book your first visit', q: 'What brings you in?', opts: ['Checkup', 'Tooth pain', 'Whitening', 'Braces'], confirm: 'Book my visit' },
+      logic: [{ q: 'When was your last cleaning?', opts: ['Under a year', '1 to 2 years', 'Longer'] }, { q: 'How bad is the pain?', opts: ['Mild', 'Strong', 'Severe'] }, { q: 'Have you whitened before?', opts: ['Yes', 'No'] }, { q: 'Who are the braces for?', opts: ['Me', 'My child'] }],
+      calc: { label: 'Insurance covers', min: 0, max: 100, step: 10, val: 80, show: function (v) { return v + '%'; }, total: function (v) { return 'You pay about ' + money(180 * (100 - v) / 100); }, note: 'Visit price before insurance: $180.' },
+      pay: function () { return [25, 'Booking deposit']; },
+      reps: [{ n: 'Dr. Amy Chen', av: 'w90' }, { n: 'Dr. Marcus Reed', av: 'm75' }, { n: 'Dr. Sofia Ruiz', av: 'w44' }], pick: 0,
+      meet: 'New patient visit · 45 min', where: 'Brightside, Main Street', rule: 'Tooth pain goes to the first free dentist',
+      booked: 'See you soon' },
+    { id: 'pebble', name: 'Pebble', short: 'Pebble',
+      logo: '<svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="13" rx="10" ry="8" fill="currentColor"/><circle cx="8.5" cy="10.5" r="2" fill="#fff" opacity=".7"/></svg>',
+      color: { accent: '#7c4dff', ink: '#5a2fd6', soft: '#efe9ff', text: '#2b2340', muted: '#706886', line: 'rgba(76,50,140,.16)' },
+      font: { body: '"Nunito",sans-serif', head: '"Nunito",sans-serif', w: '800', tt: 'none', ls: '-.01em', size: '23px' },
+      shape: { r: '16px', br: '16px', shadow: '0 4px 0 #5a2fd6' },
+      form: { title: 'Book a free lesson call', q: 'Which language are you learning?', opts: ['Spanish', 'French', 'Japanese', 'German'], confirm: "Let's go" },
+      logic: [{ q: 'Have you studied Spanish before?', opts: ['Never', 'A little', 'A lot'] }, { q: 'Have you studied French before?', opts: ['Never', 'A little', 'A lot'] }, { q: 'Can you read hiragana yet?', opts: ['Not yet', 'A little', 'Yes'] }, { q: 'Have you studied German before?', opts: ['Never', 'A little', 'A lot'] }],
+      calc: { label: 'Lessons per week', min: 1, max: 5, step: 1, val: 2, show: function (v) { return v + (v > 1 ? ' lessons' : ' lesson'); }, total: function (v) { return money(v * 48) + ' / month'; }, note: '$12 a lesson, billed monthly.' },
+      pay: function (v) { return [v * 48, 'First month']; },
+      reps: [{ n: 'Lucía Romero', av: 'w26' }, { n: 'Camille Durand', av: 'w68' }, { n: 'Kenji Sato', av: 'm46' }], pick: 0,
+      meet: 'Free lesson call · 20 min', where: 'Video call', rule: 'Spanish learners go to a tutor with open spots',
+      booked: "You're all set" },
+    { id: 'maison', name: 'Maison Vale', short: 'Maison Vale',
+      logo: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="12" y="15.6" text-anchor="middle" font-family="Playfair Display,serif" font-size="9.5" fill="currentColor">MV</text></svg>',
+      color: { accent: '#1c1a17', ink: '#1c1a17', soft: '#f1ece2', text: '#1c1a17', muted: '#7b7366', line: 'rgba(28,26,23,.18)' },
+      font: { body: '"Jost",sans-serif', head: '"Playfair Display",serif', w: '500', tt: 'none', ls: '0', size: '23px' },
+      shape: { r: '0px', br: '0px', shadow: 'none' },
+      form: { title: 'Reserve a private styling', q: 'What is the occasion?', opts: ['Wedding', 'Gala', 'Workwear', 'Travel'], confirm: 'Reserve' },
+      logic: [{ q: 'Are you the one getting married?', opts: ['Yes', "I'm a guest"] }, { q: 'Is it black tie?', opts: ['Yes', 'Not sure', 'No'] }, { q: 'How formal is your office?', opts: ['Suit and tie', 'Smart casual', 'Relaxed'] }, { q: 'Where are you headed?', opts: ['City', 'Coast', 'Mountains'] }],
+      calc: { label: 'Number of looks', min: 1, max: 6, step: 1, val: 3, show: function (v) { return v + (v > 1 ? ' looks' : ' look'); }, total: function (v) { return 'From ' + money(v * 450); }, note: 'Our stylists build each look around you.' },
+      pay: function () { return [100, 'Appointment deposit']; },
+      reps: [{ n: 'Céline Marchand', av: 'w65' }, { n: 'Hugo Laurent', av: 'm75' }, { n: 'Inès Moreau', av: 'w90' }], pick: 0,
+      meet: 'Private styling · 60 min', where: 'The atelier', rule: 'Weddings go to a bridal stylist',
+      booked: 'Your appointment is reserved' }
+  ];
+  function skin(el, b) {
+    var c = b.color, f = b.font, s = b.shape;
+    var v = { '--b-accent': c.accent, '--b-ink': c.ink, '--b-soft': c.soft, '--b-text': c.text, '--b-muted': c.muted, '--b-line': c.line,
+      '--b-font': f.body, '--b-head': f.head, '--b-head-w': f.w, '--b-head-tt': f.tt, '--b-head-ls': f.ls, '--b-head-size': f.size,
+      '--b-r': s.r, '--b-br': s.br, '--b-btn-shadow': s.shadow };
+    for (var k in v) el.style.setProperty(k, v[k]);
+    el.dataset.swap = el.dataset.swap === 'a' ? 'b' : 'a';
+  }
+  function picker(box, startId, onPick) {
+    box.innerHTML = BRANDS.map(function (b) {
+      return '<button type="button" data-bp="' + b.id + '" aria-pressed="' + (b.id === startId) + '" style="color:' + b.color.accent + '">' + b.logo + '<span>' + esc(b.short) + '</span></button>';
+    }).join('');
+    box.addEventListener('click', function (e) {
+      var btn = e.target.closest('button'); if (!btn) return;
+      pressOne(box, btn);
+      onPick(BRANDS.filter(function (b) { return b.id === btn.dataset.bp; })[0]);
+    });
+  }
+
+  // Form: pick a brand, show-if logic, pricing calculator, Stripe payment
   (function () {
     var lf = document.getElementById('lf');
     if (!lf) return;
-    var job = 'new', rate = 4.5, size = 1800, shown = 9300, raf = 0;
-    var total = document.getElementById('lfTotal'), formula = document.getElementById('lfFormula');
-    var range = document.getElementById('lfSize'), out = document.getElementById('lfSizeOut');
-    function calc() {
-      var sq = size.toLocaleString('en-US') + ' sq ft', r = '$' + rate.toFixed(2);
-      if (job === 'inspection') { formula.textContent = 'Flat fee for an inspection'; return 150; }
-      if (job === 'repair') { formula.textContent = sq + ' × ' + r + ' × 30% for a repair'; return size * rate * 0.3; }
-      formula.textContent = sq + ' × ' + r + ' + $1,200 removal';
-      return size * rate + 1200;
+    var brand = BRANDS[0], opt = 3, v = 2000;
+    var $ = function (id) { return document.getElementById(id); };
+    var range = $('lfSize');
+    function renderFollow() {
+      var l = brand.logic[opt];
+      $('lfIf').textContent = 'Show-if: ' + brand.form.opts[opt];
+      $('lfFollowQ').textContent = l.q;
+      $('lfFollow').innerHTML = l.opts.map(function (o, i) { return '<button type="button" aria-pressed="' + (i === 0) + '">' + esc(o) + '</button>'; }).join('');
+      var box = $('lfIns'); box.dataset.swap = box.dataset.swap === 'a' ? 'b' : 'a';
     }
-    function update() {
-      var target = calc();
-      cancelAnimationFrame(raf);
-      if (still) { shown = target; total.textContent = money(target); return; }
-      var from = shown, t0 = performance.now();
-      (function step(t) {
-        var k = Math.min(1, (t - t0) / 380), e = 1 - Math.pow(1 - k, 3);
-        shown = from + (target - from) * e;
-        total.textContent = money(shown);
-        if (k < 1) raf = requestAnimationFrame(step);
-      })(t0);
-      total.removeAttribute('data-bump');
+    function renderCalc(bump) {
+      $('lfSizeOut').textContent = brand.calc.show(v);
+      $('lfTotal').textContent = brand.calc.total(v);
+      $('lfFormula').textContent = brand.calc.note;
+      var p = brand.pay(v);
+      $('lfPay').textContent = brand.form.confirm + ' · Pay ' + money(p[0]);
+      $('lfAmt').textContent = money(p[0]) + '.00';
+      $('lfPayNow').textContent = 'Pay ' + money(p[0]) + '.00';
+      $('lfPayWhat').textContent = p[1];
+      if (bump) { var t = $('lfTotal'); t.dataset.bump = t.dataset.bump === 'a' ? 'b' : 'a'; }
     }
-    document.getElementById('lfJob').addEventListener('click', function (e) {
+    function apply(b) {
+      brand = b; opt = b.id === 'ridge' ? 3 : (b.id === 'north' ? 2 : 1);
+      skin(lf, b);
+      $('lfTitle').textContent = b.form.title;
+      $('lfLogo').innerHTML = b.logo + '<span>' + esc(b.short) + '</span>';
+      $('lfQ').textContent = b.form.q;
+      $('lfJob').innerHTML = b.form.opts.map(function (o, i) { return '<button type="button" data-i="' + i + '" aria-pressed="' + (i === opt) + '">' + esc(o) + '</button>'; }).join('');
+      $('lfCalcLabel').textContent = b.calc.label;
+      range.min = b.calc.min; range.max = b.calc.max; range.step = b.calc.step; v = b.calc.val; range.value = v;
+      $('lfStoreName').textContent = 'Pay ' + b.name;
+      lf.dataset.stage = 'form';
+      renderFollow(); renderCalc(false);
+    }
+    picker($('lfBrands'), 'ridge', apply);
+    $('lfJob').addEventListener('click', function (e) {
       var b = e.target.closest('button'); if (!b) return;
-      pressOne(this, b); job = b.dataset.v; lf.dataset.job = job; update();
+      pressOne(this, b); opt = +b.dataset.i; renderFollow();
     });
-    document.getElementById('lfMat').addEventListener('click', function (e) {
-      var b = e.target.closest('button'); if (!b) return;
-      pressOne(this, b); rate = parseFloat(b.dataset.v); update();
-    });
-    range.addEventListener('input', function () {
-      size = parseInt(range.value, 10); out.textContent = size.toLocaleString('en-US') + ' sq ft'; update();
-    });
-    document.getElementById('lfPay').addEventListener('click', function () { lf.dataset.stage = 'pay'; });
-    var payNow = document.getElementById('lfPayNow');
+    $('lfFollow').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) pressOne(this, b); });
+    range.addEventListener('input', function () { v = +range.value; renderCalc(true); });
+    $('lfPay').addEventListener('click', function () { lf.dataset.stage = 'pay'; });
+    var payNow = $('lfPayNow');
     payNow.addEventListener('click', function () {
       payNow.dataset.busy = 'true';
-      setTimeout(function () { payNow.dataset.busy = 'false'; lf.dataset.stage = 'done'; }, still ? 0 : 900);
+      setTimeout(function () { payNow.dataset.busy = 'false'; $('lfDoneHead').textContent = 'Payment received'; $('lfDoneText').textContent = brand.booked + ', Priya. A receipt is on its way.'; lf.dataset.stage = 'done'; }, still ? 0 : 900);
     });
-    document.getElementById('lfReset').addEventListener('click', function () { lf.dataset.stage = 'form'; });
-    // a short guided run when the form scrolls into view: pick Storm damage, then grow the roof
+    $('lfReset').addEventListener('click', function () { lf.dataset.stage = 'form'; });
+    apply(brand);
     onView(lf, function () {
       if (still) return;
-      setTimeout(function () { var b = lf.querySelector('#lfJob [data-v="storm"]'); if (b && job === 'new') b.click(); }, 700);
       setTimeout(function () {
-        if (size !== 1800) return;
-        var s = 1800, iv = setInterval(function () {
-          s += 100; range.value = s; range.dispatchEvent(new Event('input'));
-          if (s >= 2400) clearInterval(iv);
-        }, 90);
-      }, 1500);
+        var s = +range.value, end = Math.min(+range.max, s + 6 * +range.step), iv = setInterval(function () {
+          s += +range.step; range.value = s; range.dispatchEvent(new Event('input'));
+          if (s >= end) clearInterval(iv);
+        }, 110);
+      }, 900);
     });
   })();
 
-  // Booking: round robin, pick a time, brand color, confirm
+  // Booking: pick a brand, round robin picks the person, pick a time, confirm
   (function () {
     var lm = document.getElementById('lm');
     if (!lm) return;
-    var day = 'Tue, Nov 17', time = '10:30 am';
-    var confirmBtn = document.getElementById('lmConfirm');
-    var reps = lm.querySelectorAll('#lmReps > span');
-    var sent = document.getElementById('lmSent');
-    function label() { confirmBtn.textContent = 'Confirm ' + day + ' at ' + time; }
-    document.getElementById('lmDays').addEventListener('click', function (e) {
+    var $ = function (id) { return document.getElementById(id); };
+    var brand = BRANDS[1], day = 'Tue, Nov 17', time = '10:30 am', timer = 0;
+    function label() { $('lmConfirm').textContent = 'Confirm ' + day + ' at ' + time; }
+    function route() {
+      var reps = lm.querySelectorAll('#lmReps [data-rep]');
+      var sent = $('lmSent');
+      clearInterval(timer);
+      if (still) { reps.forEach(function (r, k) { r.dataset.on = String(k === brand.pick); }); sent.dataset.show = 'true'; return; }
+      sent.dataset.show = 'false';
+      var order = [], i = 0;
+      for (var k = 1; k < reps.length; k++) order.push(k);
+      order.push(brand.pick);
+      timer = setInterval(function () {
+        reps.forEach(function (r, k) { r.dataset.on = String(k === order[i]); });
+        i++;
+        if (i === order.length) { clearInterval(timer); setTimeout(function () { sent.dataset.show = 'true'; }, 250); }
+      }, 420);
+    }
+    function apply(b, animate) {
+      brand = b;
+      skin(lm, b);
+      var rep = b.reps[b.pick];
+      $('lmRule').textContent = b.rule;
+      $('lmReps').innerHTML = b.reps.map(function (r, k) { return '<span data-rep data-on="' + (k === b.pick) + '"><img src="' + AV[r.av] + '" alt="">' + esc(short(r.n)) + '</span>'; }).join('');
+      $('lmSent').textContent = 'Sent to ' + rep.n + ' by round robin';
+      $('lmHostImg').src = AV[rep.av];
+      $('lmHostName').textContent = b.meet;
+      $('lmHostWhere').textContent = 'with ' + rep.n + ' · ' + b.where;
+      $('lmLogo').innerHTML = b.logo + '<span>' + esc(b.name) + '</span>';
+      lm.dataset.stage = 'pick';
+      if (animate) route();
+    }
+    picker($('lmBrands'), 'north', function (b) { apply(b, true); });
+    $('lmDays').addEventListener('click', function (e) {
       var b = e.target.closest('button'); if (!b) return;
       pressOne(this, b); day = b.dataset.v; label();
-      var times = document.getElementById('lmTimes');
-      times.dataset.swap = times.dataset.swap === 'a' ? 'b' : 'a';
+      var t = $('lmTimes'); t.dataset.swap = t.dataset.swap === 'a' ? 'b' : 'a';
     });
-    document.getElementById('lmTimes').addEventListener('click', function (e) {
+    $('lmTimes').addEventListener('click', function (e) {
       var b = e.target.closest('button'); if (!b) return;
       pressOne(this, b); time = b.dataset.v; label();
     });
-    confirmBtn.addEventListener('click', function () {
-      document.getElementById('lmWhen').textContent = day + ' at ' + time + ' with Maya Ortiz';
+    $('lmConfirm').addEventListener('click', function () {
+      var rep = brand.reps[brand.pick];
+      $('lmDoneHead').textContent = brand.booked + ', Priya';
+      $('lmWhen').textContent = day + ' at ' + time + ' with ' + rep.n;
+      $('lmSyncCal').textContent = 'Added to ' + short(rep.n) + "'s Google Calendar";
       lm.dataset.stage = 'done';
     });
-    document.getElementById('lmReset').addEventListener('click', function () { lm.dataset.stage = 'pick'; });
-    document.getElementById('lmBrand').addEventListener('click', function (e) {
-      var b = e.target.closest('button'); if (!b) return;
-      pressOne(this, b); lm.style.setProperty('--acc', b.dataset.acc);
-    });
-    function route() {
-      if (still) return;
-      var order = [1, 2, 0], i = 0;
-      sent.dataset.show = 'false';
-      reps.forEach(function (r) { r.dataset.on = 'false'; });
-      var iv = setInterval(function () {
-        reps.forEach(function (r, k) { r.dataset.on = k === order[i] ? 'true' : 'false'; });
-        i++;
-        if (i === order.length) { clearInterval(iv); setTimeout(function () { sent.dataset.show = 'true'; }, 250); }
-      }, 420);
-    }
+    $('lmReset').addEventListener('click', function () { lm.dataset.stage = 'pick'; });
+    apply(brand, false);
     onView(lm, route);
   })();
 
