@@ -1,7 +1,7 @@
 # tryclaritia.com
 
 Static site for Claritia. Plain HTML, CSS and a little JavaScript: no WordPress, no build step, no library.
-Push to `main` and Hostinger deploys it.
+Push to `main` and OVH deploys it.
 
 The home page shows the product: forms, meetings, workflows and routing, a sample of the app, the tools it connects,
 form templates, pricing and questions. The look is calm and light (`BRAND.md`).
@@ -63,6 +63,6 @@ the Cookies part of the privacy policy in `tools/legal.py`.
 
 ## Running cost
 
-$0 added at Beta (50 teams) and at Growth (500 teams). The site is static on the existing Hostinger plan, and so are
+$0 added at Beta (50 teams) and at Growth (500 teams). The site is static on the existing OVH plan, and so are
 the 700 gallery pages.
 Fonts come from Google Fonts for free. No new paid service.
