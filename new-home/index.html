@@ -1,0 +1,1470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Claritia: forms, scheduling and email marketing in one app</title>
+<link rel="icon" href="/assets/brand/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/claritia-mark-small.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap">
+<style>
+/* Layout: Fillout's homepage skeleton (floating nav, hero prompt, product tabs, logo strip, trust row, feature cards, branding split) built with Claritia's own site.css tokens. Single light look, as on tryclaritia.com. */
+:root {
+  color-scheme: light;
+  --bg: #fafaf5;
+  --surface: #ffffff;
+  --surface-2: #f5f5f5;
+  --surface-3: #fafafa;
+  --tint: #f5f5f0;
+  --rail: #ebebe4;
+  --line: #ebebeb;
+  --line-light: #f2f2f2;
+  --line-strong: #d4d4d4;
+  --ink: #0f0f0f;
+  --text: #171717;
+  --body: #6c6c6d;
+  --meta: #737373;
+  --nav: #333333;
+  --faint: #a3a3a3;
+  --hover: rgba(0,0,0,.04);
+  --green: #0c8c5e;
+  --green-strong: #0a7a52;
+  --green-ink: #086444;
+  --green-50: #f2faf6;
+  --green-100: #e3f4ec;
+  --green-200: #c9eadb;
+  --green-300: #94d4b7;
+  --tag-orange: #ffe9cc; --tag-orange-ink: #9a3412;
+  --tag-blue: #e2effd; --tag-blue-ink: #1e4f9a;
+  --tag-purple: #e9e3fd; --tag-purple-ink: #5429d6;
+  --btn: #333333;
+  --dark: #242421;
+  --dark-panel: #282825;
+  --dark-raised: #2e2e2b;
+  --dark-body: rgba(255,255,255,.55);
+  --dark-line: rgba(255,255,255,.08);
+  --orange: #f26b1d;
+  --sh-rest: 0 4px 4px -12px rgba(0,0,0,.02), 0 12px 12px -6px rgba(0,0,0,.02), 0 6px 6px -3px rgba(0,0,0,.02), 0 3px 3px -1.5px rgba(0,0,0,.02), 0 1px 1px -.5px rgba(0,0,0,.04), 0 0 0 1px rgba(0,0,0,.06);
+  --sh-hover: 0 24px 24px -12px rgba(0,0,0,.04), 0 12px 12px -6px rgba(0,0,0,.02), 0 6px 6px -3px rgba(0,0,0,.04), 0 3px 3px -1.5px rgba(0,0,0,.08), 0 1px 1px -.5px rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.08);
+  --sh-chip: 0 1px 2px rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.06);
+  --sh-pill: 0 1px 2px rgba(0,0,0,.12), 0 0 0 1px rgba(0,0,0,.08);
+  --sh-outline: 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.16);
+  --sh-primary: 0 0 0 1px rgba(0,0,0,.8), 0 1px 3px rgba(0,0,0,.4), 1px 4px 8px rgba(0,0,0,.12);
+  --sh-green: 0 0 0 1px #086444, 0 1px 3px rgba(8,100,68,.4), 1px 4px 8px rgba(8,100,68,.14);
+  --sh-float: 0 16px 24px -8px rgba(33,49,86,.03), 0 8px 16px -4px rgba(32,49,86,.03), 0 4px 8px -2px rgba(32,49,86,.03), 0 2px 3px rgba(32,49,86,.03), 0 .75px .75px rgba(55,55,82,.04), 0 0 0 1px rgba(55,55,82,.04);
+  --sh-menu: 0 12px 32px -6px rgba(0,0,0,.12), 0 0 0 1px rgba(111,107,107,.1), 0 1px 3px rgba(63,70,75,.1);
+  --sh-dark: 0 -1px 0 rgba(255,255,255,.06), 0 0 0 1px rgba(255,255,255,.08);
+  --r-tag: 4px; --r-status: 6px; --r-sm: 8px; --r-md: 10px; --r-lg: 12px; --r-xl: 16px; --r-2xl: 20px; --r-3xl: 24px; --r-pill: 999px;
+  --font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --fast: 150ms; --ease: cubic-bezier(.4,0,.2,1); --ease-out: cubic-bezier(.22,1,.36,1);
+  --frame: min(1360px, calc(100% - 80px));
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 16px; line-height: 24px; -webkit-font-smoothing: antialiased; font-optical-sizing: auto; overflow-x: clip; }
+body::after { content: ""; position: fixed; inset: 0; z-index: -1; width: var(--frame); margin: 0 auto; border-left: 1px solid var(--rail); border-right: 1px solid var(--rail); pointer-events: none; }
+h1, h2, h3, h4, h5 { text-wrap: balance; margin: 0; font-weight: 500; color: var(--ink); }
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--green), 0 0 0 4px rgba(12,140,94,.18) !important; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* ---------- Buttons (Claritia .btn) ---------- */
+.btn-dark, .btn-light, .btn-green { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 34px; padding: 0 14px 0 16px; border-radius: var(--r-pill); font-size: 14px; font-weight: 500; line-height: 14px; white-space: nowrap; transition: background-color var(--fast) var(--ease), box-shadow var(--fast) var(--ease), transform var(--fast) var(--ease); }
+.btn-dark { background: var(--btn); color: #fff; box-shadow: var(--sh-primary); }
+.btn-dark:hover { background: #262626; }
+.btn-light { background: var(--surface); color: var(--ink); box-shadow: var(--sh-outline); }
+.btn-light:hover { box-shadow: 0 0 0 1px rgba(0,0,0,.14), 0 2px 4px rgba(0,0,0,.16); }
+.btn-green { background: var(--green-strong); color: #fff; box-shadow: var(--sh-green); }
+.btn-green:hover { background: var(--green-ink); }
+.btn-dark:active, .btn-light:active, .btn-green:active { transform: scale(.98); }
+.lg { height: 40px; padding: 0 18px; font-size: 15px; }
+.arrow { width: 14px; height: 14px; flex: none; transition: transform var(--fast) var(--ease); }
+a:hover > .arrow, button:hover > .arrow { transform: translateX(2px); }
+
+/* ---------- Nav (Fillout floating bar) ---------- */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--bg); }
+.nav-shell { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 14px); z-index: 50; height: 0; }
+.nav { max-width: 1120px; margin: 0 auto; display: flex; align-items: center; gap: 16px; height: 56px; padding: 0 10px 0 16px; border-radius: var(--r-xl); background: rgba(255,255,255,.82); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); box-shadow: var(--sh-float), 0 0 0 1px rgba(0,0,0,.05); }
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 18px; letter-spacing: -.03em; color: var(--ink); }
+.brand svg { width: 24px; height: 24px; flex: none; }
+.nav-links { display: flex; gap: 2px; margin: 0 auto; }
+.nav-links a { height: 36px; padding: 8px 10px 8px 16px; border-radius: var(--r-pill); font-size: 14px; font-weight: 500; line-height: 20px; color: var(--nav); display: flex; align-items: center; gap: 4px; transition: background-color var(--fast) var(--ease); }
+.nav-links a:last-child { padding-right: 16px; }
+.nav-links a:hover { background: var(--hover); }
+.nav-links svg { width: 14px; height: 14px; color: var(--meta); }
+.nav-right { display: flex; align-items: center; gap: 4px; }
+.nav-right .login { height: 36px; display: flex; align-items: center; padding: 0 12px; border-radius: var(--r-pill); font-weight: 500; font-size: 14px; color: var(--nav); }
+.nav-right .login:hover { background: var(--hover); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; overflow: hidden; margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: calc(env(safe-area-inset-top, 0px) + 140px); background: var(--bg); }
+.geo { position: absolute; inset: 0; pointer-events: none; }
+.geo svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.geo .fade { -webkit-mask: radial-gradient(60% 55% at 50% 42%, transparent 35%, #000 85%); mask: radial-gradient(60% 55% at 50% 42%, transparent 35%, #000 85%); }
+.geo .blink rect { animation: blink 6s ease-in-out infinite; }
+.geo .blink rect:nth-child(2n) { animation-delay: -2s; animation-duration: 7s; }
+.geo .blink rect:nth-child(3n) { animation-delay: -4s; animation-duration: 5s; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+.hero-inner { position: relative; text-align: center; padding-bottom: 136px; display: flex; flex-direction: column; align-items: center; }
+.announce { display: inline-flex; padding: 1px; border-radius: var(--r-pill); background: var(--surface-2); }
+.announce a { display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 12px 0 4px; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-pill); font-size: 14px; font-weight: 500; line-height: 14px; color: var(--ink); }
+.announce b { display: inline-flex; align-items: center; height: 22px; padding: 4px 8px; border-radius: var(--r-pill); background: var(--green-strong); color: #fff; font-weight: 500; }
+.hero h1 { margin-top: 28px; font-size: clamp(42px, 6.6vw, 80px); line-height: 1; font-weight: 500; letter-spacing: -.042em; color: var(--ink); }
+.hero h1 span { color: var(--faint); }
+.hero .sub { color: var(--body); font-size: 18px; line-height: 26px; margin-top: 20px; max-width: 480px; }
+.prompt { position: relative; width: 100%; max-width: 680px; margin: 44px auto 0; text-align: left; }
+.ring { position: relative; overflow: hidden; padding: 1px; border-radius: 18px; background: radial-gradient(140% 140% at 50% 0, rgba(0,0,0,.08), rgba(0,0,0,.024) 100%); }
+.ring::before { content: ""; position: absolute; top: 50%; left: 50%; width: 141.5%; aspect-ratio: 1; background: conic-gradient(var(--green), transparent 8%, transparent); transform: translate(-50%,-50%) rotate(0); animation: spin 5s linear infinite; }
+@keyframes spin { to { transform: translate(-50%,-50%) rotate(360deg); } }
+.ring-in { position: relative; padding: 4px; border-radius: 17px; background: var(--bg); }
+.pbox { border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--sh-rest); }
+.pbox textarea { display: block; width: 100%; height: 120px; border: 0; resize: none; padding: 16px 16px 0; font: inherit; font-size: 18px; line-height: 28px; color: var(--text); background: transparent; outline: none; border-radius: var(--r-lg) var(--r-lg) 0 0; box-shadow: none !important; }
+.pbox textarea::placeholder { color: #8a8a8b; }
+.prompt-bar { display: flex; align-items: center; gap: 8px; padding: 8px; }
+.icon-btn { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; color: var(--meta); }
+.icon-btn:hover { background: var(--hover); color: var(--nav); }
+.icon-btn svg { width: 17px; height: 17px; }
+.int-dots { display: flex; margin-left: auto; gap: 4px; padding: 0 6px; }
+.int-dots i { width: 22px; height: 22px; border-radius: var(--r-status); display: grid; place-items: center; font-style: normal; font-size: 10px; font-weight: 700; color: #fff; box-shadow: var(--sh-chip); }
+.create-btn { display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px 0 16px; border-radius: var(--r-pill); font-weight: 500; font-size: 14px; color: #fff; background: #b9c7c0; transition: background var(--fast) var(--ease), box-shadow var(--fast) var(--ease); }
+.create-btn.ready { background: var(--green-strong); box-shadow: var(--sh-green); }
+.create-btn.ready:hover { background: var(--green-ink); }
+.chips { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 4px 12px 4px 5px; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-pill); color: var(--nav); font-size: 14px; font-weight: 450; letter-spacing: -.01em; transition: box-shadow var(--fast) var(--ease); }
+.chip:hover { box-shadow: 0 1px 3px rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.1); }
+.chip i { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; }
+.chip i svg { width: 12px; height: 12px; }
+.alt-link { margin-top: 26px; color: var(--body); font-size: 15px; }
+.alt-link a { color: var(--ink); font-weight: 500; display: inline-flex; align-items: center; gap: 4px; border-bottom: 1px solid var(--line-strong); }
+
+/* ---------- Product tabs ---------- */
+.product { position: relative; margin-top: -76px; z-index: 2; }
+.tabs-scroll { overflow-x: auto; scrollbar-width: none; }
+.tabs-scroll::-webkit-scrollbar { display: none; }
+.tabs { display: flex; min-width: 640px; padding: 6px; gap: 4px; border-radius: var(--r-3xl) var(--r-3xl) 0 0; background: var(--tint); box-shadow: 0 0 0 1px var(--rail); }
+.tab { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; height: 46px; border-radius: 18px; color: var(--meta); font-weight: 500; font-size: 15px; white-space: nowrap; transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease), box-shadow var(--fast) var(--ease); }
+.tab svg { width: 18px; height: 18px; }
+.tab:hover { color: var(--ink); background: var(--hover); }
+.tab[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--sh-pill); }
+.tab[aria-selected="true"] svg { color: var(--green); }
+.panel-card { background: var(--surface); border-radius: 0 0 var(--r-3xl) var(--r-3xl); box-shadow: var(--sh-rest); padding: 40px; display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 40px; min-height: 540px; }
+.panel-copy { display: flex; flex-direction: column; min-width: 0; }
+.panel-copy h2 { font-size: clamp(30px, 3.2vw, 40px); line-height: 1.08; letter-spacing: -.035em; }
+.ticks { list-style: none; padding: 0; margin: 32px 0; display: grid; gap: 16px; }
+.ticks li { display: flex; gap: 12px; align-items: flex-start; font-size: 17px; font-weight: 500; color: var(--nav); line-height: 24px; letter-spacing: -.01em; }
+.ticks .ic { flex: none; width: 28px; height: 28px; margin-top: -2px; border-radius: var(--r-sm); display: grid; place-items: center; background: var(--surface); box-shadow: var(--sh-chip); color: var(--meta); }
+.ticks .ic svg { width: 15px; height: 15px; }
+.panel-copy .btn-dark { margin-top: auto; align-self: flex-start; }
+.stage { background: var(--tint); border-radius: var(--r-2xl); padding: 28px 0 28px 28px; overflow: hidden; min-width: 0; display: flex; box-shadow: inset 0 0 0 1px var(--rail); }
+.window { flex: 1; background: var(--surface); border-radius: var(--r-xl) 0 0 var(--r-xl); box-shadow: var(--sh-rest); overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.win-head { display: flex; align-items: center; gap: 10px; padding: 13px 18px; border-bottom: 1px solid var(--line); font-size: 14px; font-weight: 500; }
+.win-head svg { width: 15px; height: 15px; color: var(--meta); }
+.win-head .pill { margin-left: auto; font-size: 12px; font-weight: 500; color: var(--green-ink); background: var(--green-100); border-radius: var(--r-status); padding: 2px 8px; }
+.win-body { display: grid; grid-template-columns: 230px minmax(0, 1fr); flex: 1; min-height: 0; }
+.chat { border-right: 1px solid var(--line); padding: 16px; display: flex; flex-direction: column; gap: 12px; font-size: 12.5px; line-height: 18px; color: var(--nav); }
+.bubble { align-self: flex-end; background: var(--surface-2); border-radius: var(--r-lg); padding: 10px 12px; max-width: 95%; }
+.chat .meta-line { display: flex; align-items: center; gap: 7px; font-size: 12px; }
+.chat .meta-line svg { width: 13px; height: 13px; color: var(--green); flex: none; }
+.chat .ask { margin-top: auto; display: flex; align-items: center; justify-content: space-between; border-radius: var(--r-lg); padding: 7px 7px 7px 12px; color: #8a8a8b; box-shadow: var(--sh-outline); }
+.chat .ask b { width: 24px; height: 24px; border-radius: 50%; background: var(--btn); color: #fff; display: grid; place-items: center; }
+.chat .ask svg { width: 12px; height: 12px; }
+.preview { padding: 22px; background: var(--surface-3); min-width: 0; }
+.formcard { background: #fff; border-radius: var(--r-xl); padding: 22px; max-width: 360px; box-shadow: var(--sh-rest); }
+.formcard h4 { margin: 0 0 14px; font-size: 18px; color: #1f2328; letter-spacing: -.01em; }
+.rl h4 { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; font-size: 26px; text-transform: uppercase; letter-spacing: .01em; line-height: 1; }
+.rl { font-family: "Barlow", var(--font); }
+.f-label { font-size: 13px; font-weight: 500; color: var(--nav); margin: 12px 0 6px; display: flex; align-items: baseline; gap: 6px; }
+.f-label em { font-style: normal; font-size: 10.5px; font-weight: 500; color: var(--tag-purple-ink); }
+.f-input { border-radius: var(--r-sm); padding: 7px 10px; font-size: 12.5px; color: #9a9a9a; box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.06); }
+.opts { display: flex; flex-wrap: wrap; gap: 6px; }
+.opt { border-radius: var(--r-sm); padding: 5px 10px; font-size: 12.5px; color: var(--nav); box-shadow: 0 0 0 1px rgba(0,0,0,.1); }
+.opt.on { box-shadow: 0 0 0 1.5px var(--orange); background: #fff0e4; color: #b9500f; font-weight: 600; }
+.drop { border: 1.5px dashed #d9cbe9; border-radius: var(--r-md); padding: 14px; text-align: center; font-size: 12px; color: var(--meta); background: #fcfbff; }
+.f-btn { display: inline-block; margin-top: 16px; background: var(--orange); color: #fff; font-weight: 600; font-size: 13.5px; border-radius: var(--r-sm); padding: 8px 16px; }
+.highlight { outline: 1.5px solid #c7b6f5; outline-offset: 4px; border-radius: var(--r-md); }
+
+/* other panel mocks */
+.mock-pad { padding: 22px; display: grid; gap: 16px; align-content: start; }
+.host { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; font-weight: 600; font-size: 13px; color: #fff; flex: none; }
+.host b { display: block; font-size: 15px; font-weight: 500; }
+.host span { font-size: 13px; color: var(--body); }
+.cal { display: grid; grid-template-columns: minmax(0,1fr) 150px; gap: 18px; }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; font-size: 12px; color: var(--body); font-variant-numeric: tabular-nums; }
+.cal-grid .h { font-size: 10.5px; color: var(--faint); font-weight: 500; text-transform: uppercase; letter-spacing: .05em; }
+.cal-grid .d { padding: 6px 0; border-radius: var(--r-sm); }
+.cal-grid .av { color: var(--green-ink); font-weight: 600; background: var(--green-50); }
+.cal-grid .sel { background: var(--green); color: #fff; font-weight: 600; }
+.slots { display: grid; gap: 7px; align-content: start; }
+.slots .day { font-size: 12.5px; font-weight: 600; margin-bottom: 2px; }
+.slot { box-shadow: 0 0 0 1px var(--green-300); color: var(--green-ink); border-radius: var(--r-sm); padding: 7px; text-align: center; font-size: 13px; font-weight: 500; }
+.slot.pick { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; box-shadow: none; padding: 0; }
+.slot.pick span { background: #555; color: #fff; border-radius: var(--r-sm); padding: 7px 0; }
+.slot.pick span:last-child { background: var(--green); }
+.mtypes { display: grid; gap: 8px; }
+.mtype { display: flex; justify-content: space-between; align-items: center; gap: 10px; border-radius: var(--r-md); padding: 10px 12px; font-size: 13px; box-shadow: 0 0 0 1px var(--line); }
+.mtype b { font-weight: 500; }
+.mtype span { color: var(--body); font-size: 12px; text-align: right; }
+.rule { border-radius: var(--r-lg); padding: 14px; font-size: 13.5px; line-height: 1.9; box-shadow: 0 0 0 1px var(--line); background: var(--surface); }
+.tok { display: inline-block; background: var(--surface-2); border-radius: var(--r-status); padding: 0 7px; font-weight: 500; line-height: 1.7; box-shadow: 0 0 0 1px var(--line); }
+.tok.g { background: var(--green-50); box-shadow: 0 0 0 1px var(--green-300); color: var(--green-ink); }
+.reps { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
+.rep { border-radius: var(--r-md); padding: 10px; font-size: 12.5px; display: grid; gap: 6px; box-shadow: 0 0 0 1px var(--line); }
+.rep b { font-size: 13px; font-weight: 500; }
+.tag { justify-self: start; font-size: 11px; font-weight: 500; border-radius: var(--r-tag); padding: 1px 6px; }
+.tag.g { background: var(--green-100); color: var(--green-ink); }
+.tag.b { background: var(--tag-blue); color: var(--tag-blue-ink); }
+.tag.o { background: var(--tag-orange); color: var(--tag-orange-ink); }
+.tag.p { background: var(--tag-purple); color: var(--tag-purple-ink); }
+.tbl-wrap { overflow-x: auto; }
+table.log { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+table.log th { text-align: left; font-weight: 500; color: var(--faint); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+table.log td { padding: 9px 8px; border-bottom: 1px solid var(--line-light); white-space: nowrap; }
+table.log td small { display: block; color: var(--faint); font-size: 11px; }
+.email { border-radius: var(--r-lg); overflow: hidden; font-size: 13px; box-shadow: 0 0 0 1px var(--line); }
+.email .row { display: flex; gap: 10px; padding: 9px 14px; border-bottom: 1px solid var(--line); }
+.email .row span { color: var(--faint); width: 54px; flex: none; }
+.email .row b { font-weight: 500; }
+.email .msg { padding: 14px; line-height: 1.6; color: var(--nav); }
+.email .msg mark { background: var(--green-100); color: var(--green-ink); border-radius: var(--r-tag); padding: 0 3px; }
+.email .acts { display: flex; justify-content: flex-end; gap: 8px; padding: 0 14px 14px; }
+.email .acts span { border-radius: var(--r-pill); padding: 5px 12px; font-weight: 500; font-size: 12.5px; box-shadow: var(--sh-outline); }
+.email .acts span.go { background: var(--green-strong); color: #fff; box-shadow: var(--sh-green); }
+.seq { display: grid; font-size: 13px; }
+.seq div { display: flex; justify-content: space-between; gap: 10px; padding: 9px 2px; border-bottom: 1px dashed var(--line); }
+.seq div:last-child { border-bottom: 0; }
+.seq b { font-weight: 500; }
+.seq span { color: var(--body); font-size: 12px; white-space: nowrap; }
+.bars { display: grid; gap: 12px; }
+.bar-row { display: grid; grid-template-columns: 120px minmax(0,1fr) 44px; align-items: center; gap: 12px; font-size: 13px; font-variant-numeric: tabular-nums; }
+.bar-track { height: 8px; background: var(--surface-2); border-radius: var(--r-pill); overflow: hidden; }
+.bar-fill { height: 100%; background: var(--green); border-radius: var(--r-pill); }
+.bar-row.warn .bar-fill { background: var(--orange); }
+.bar-row b { text-align: right; font-weight: 500; }
+.hint { display: flex; gap: 10px; align-items: center; background: var(--tag-orange); color: var(--tag-orange-ink); border-radius: var(--r-md); padding: 10px 12px; font-size: 13px; }
+.hint svg { width: 16px; height: 16px; flex: none; }
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
+.kpi { border-radius: var(--r-md); padding: 12px; box-shadow: 0 0 0 1px var(--line); }
+.kpi span { font-size: 11.5px; color: var(--body); }
+.kpi b { display: block; font-size: 22px; font-weight: 500; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+
+/* ---------- Logo strip ---------- */
+.strip { padding: 72px 0 24px; }
+.strip-label { text-align: center; font-size: 13px; font-weight: 500; color: var(--meta); margin-bottom: 24px; }
+.marquee { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+.marquee-track { display: flex; gap: 64px; width: max-content; animation: slide 40s linear infinite; }
+.wm { font-size: 22px; font-weight: 600; letter-spacing: -.03em; color: #a9a9a5; white-space: nowrap; user-select: none; }
+@keyframes slide { to { transform: translateX(-50%); } }
+
+/* ---------- Trust row ---------- */
+.trust { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr) minmax(0,1fr); gap: 20px; align-items: center; padding: 48px 0 104px; }
+.trust h2 { font-size: clamp(30px, 3.4vw, 44px); line-height: 1.02; letter-spacing: -.035em; }
+.trust p { margin-top: 16px; font-size: 18px; line-height: 26px; color: var(--body); max-width: 520px; }
+.trust p b { color: var(--text); font-weight: 500; }
+.stat { background: var(--surface); border-radius: var(--r-3xl); box-shadow: var(--sh-rest); padding: 32px 20px; text-align: center; }
+.stat .lbl { display: flex; justify-content: center; align-items: center; gap: 8px; font-weight: 500; font-size: 15px; color: var(--nav); }
+.stat .lbl i { width: 24px; height: 24px; border-radius: var(--r-status); display: grid; place-items: center; font-style: normal; color: #fff; }
+.stat .lbl svg { width: 13px; height: 13px; }
+.stat .num { font-size: 52px; line-height: 1; font-weight: 500; letter-spacing: -.042em; margin-top: 18px; font-variant-numeric: tabular-nums; color: var(--ink); }
+.stat .cap { font-size: 14px; color: var(--body); margin-top: 10px; }
+
+/* ---------- Section heads ---------- */
+.section { padding: 112px 0 40px; border-top: 1px solid var(--rail); }
+.eyebrow { display: inline-flex; align-items: center; gap: 6px; height: 25px; padding: 0 10px 0 7px; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-chip); color: #3a3a38; font-size: 13px; font-weight: 500; }
+.eyebrow svg { width: 14px; height: 14px; color: var(--meta); }
+.s-head { text-align: center; margin-bottom: 56px; display: flex; flex-direction: column; align-items: center; }
+.s-head h2 { font-size: clamp(34px, 4.4vw, 56px); line-height: 1; margin-top: 20px; letter-spacing: -.04em; }
+.s-head p { font-size: 18px; line-height: 26px; color: var(--body); margin-top: 16px; max-width: 520px; }
+
+/* ---------- Feature cards ---------- */
+.f-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+.f-card { background: var(--surface); border-radius: var(--r-3xl); box-shadow: var(--sh-rest); padding: 36px 36px 0; display: flex; flex-direction: column; overflow: hidden; min-width: 0; transition: box-shadow var(--fast) var(--ease); }
+.f-card:hover, .mini:hover { box-shadow: var(--sh-hover); }
+.f-card h3 { font-size: 24px; letter-spacing: -.025em; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.badge { font-size: 13px; font-weight: 500; letter-spacing: 0; color: var(--green-ink); background: var(--green-100); border-radius: var(--r-status); padding: 2px 8px; }
+.f-card > p { font-size: 16px; line-height: 24px; color: var(--body); margin-top: 10px; }
+.f-card .cta { margin-top: 24px; align-self: flex-start; }
+.f-art { margin-top: 32px; background: var(--tint); border-radius: var(--r-xl) var(--r-xl) 0 0; padding: 36px 24px 0; flex: 1; display: flex; justify-content: center; align-items: flex-end; position: relative; min-height: 320px; box-shadow: inset 0 0 0 1px var(--rail); }
+.f-art .formcard { border-radius: var(--r-xl) var(--r-xl) 0 0; width: 100%; max-width: 380px; padding-bottom: 30px; }
+.sticky-note { position: absolute; left: 18px; top: 80px; width: 170px; background: #fff; border-radius: var(--r-lg); padding: 12px 14px; box-shadow: var(--sh-menu); transform: rotate(-5deg); font-size: 14px; line-height: 1.4; color: var(--nav); z-index: 2; }
+.sticky-note small { display: flex; align-items: center; gap: 5px; color: var(--green-ink); font-weight: 500; font-size: 11.5px; margin-bottom: 4px; }
+.sticky-note small svg { width: 11px; height: 11px; }
+.dash-box { border: 1.5px dashed var(--green-300); background: var(--green-50); border-radius: var(--r-md); padding: 10px 12px; margin-top: 12px; }
+.dash-box.drag { border-color: #e9b866; background: #fff6df; height: 46px; }
+.tpl-stack { position: absolute; left: 22px; top: 66px; display: grid; gap: 8px; z-index: 2; }
+.tpl-stack span { background: #fff; border-radius: var(--r-pill); padding: 6px 12px 6px 8px; font-size: 13px; font-weight: 500; box-shadow: var(--sh-pill); display: flex; align-items: center; gap: 7px; }
+.tpl-stack span i { width: 8px; height: 8px; border-radius: 50%; }
+.tpl-stack span.drag { transform: rotate(-4deg) translateX(8px); box-shadow: var(--sh-menu); }
+.f-row { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; margin-top: 20px; }
+.mini { background: var(--surface); border-radius: var(--r-3xl); box-shadow: var(--sh-rest); padding: 28px; display: flex; flex-direction: column; gap: 6px; min-width: 0; transition: box-shadow var(--fast) var(--ease); }
+.mini h3 { font-size: 18px; line-height: 22.5px; letter-spacing: -.01em; }
+.mini p { color: var(--body); font-size: 15px; }
+.mini .art { margin-top: 16px; background: var(--tint); border-radius: var(--r-xl); padding: 16px; font-size: 13px; display: grid; gap: 8px; box-shadow: inset 0 0 0 1px var(--rail); }
+.est { display: flex; justify-content: space-between; align-items: baseline; font-variant-numeric: tabular-nums; }
+.est span { color: var(--body); }
+.est b { font-weight: 500; }
+.est.total { border-top: 1px solid var(--line-strong); padding-top: 8px; margin-top: 2px; font-size: 15px; }
+.est.total b { font-size: 22px; color: var(--ink); letter-spacing: -.03em; }
+.pay { display: flex; align-items: center; justify-content: space-between; background: #fff; border-radius: var(--r-md); padding: 9px 12px; box-shadow: var(--sh-chip); }
+.pay b { font-weight: 500; font-variant-numeric: tabular-nums; }
+
+/* ---------- Branding ---------- */
+.b-grid { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: 20px; align-items: start; }
+.acc { display: grid; gap: 12px; }
+.acc-item { background: var(--surface); border-radius: var(--r-2xl); box-shadow: var(--sh-rest); text-align: left; width: 100%; transition: box-shadow var(--fast) var(--ease); }
+.acc-item:hover { box-shadow: var(--sh-hover); }
+.acc-item .t { display: flex; align-items: center; gap: 14px; padding: 22px 24px; font-size: 17px; font-weight: 500; letter-spacing: -.01em; color: var(--ink); }
+.acc-item .t .ic { width: 28px; height: 28px; border-radius: var(--r-sm); display: grid; place-items: center; background: var(--surface); box-shadow: var(--sh-chip); flex: none; color: var(--meta); }
+.acc-item .t .ic svg { width: 15px; height: 15px; }
+.acc-item .d { display: none; padding: 0 24px 24px 66px; font-size: 15px; color: var(--body); line-height: 23px; }
+.acc-item .d b { color: var(--text); font-weight: 500; }
+.acc-item[aria-expanded="true"] .d { display: block; }
+.acc-item[aria-expanded="true"] .t .ic { background: var(--green-50); color: var(--green); box-shadow: 0 0 0 1px var(--green-300); }
+.b-stage { background: var(--surface); border-radius: var(--r-3xl); box-shadow: var(--sh-rest); padding: 56px 40px 40px; position: relative; min-height: 560px; overflow: hidden; }
+.site-bar { display: flex; align-items: center; gap: 10px; max-width: 420px; border-radius: var(--r-lg); padding: 9px 12px; font-size: 14px; color: var(--nav); box-shadow: var(--sh-outline); }
+.site-bar svg { width: 15px; height: 15px; color: var(--meta); }
+.site-bar .ok { margin-left: auto; font-size: 12px; font-weight: 500; color: var(--green-ink); background: var(--green-100); border-radius: var(--r-status); padding: 2px 8px; display: flex; align-items: center; gap: 4px; }
+.b-split { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,.9fr); margin-top: 24px; border-radius: var(--r-xl); overflow: hidden; box-shadow: 0 0 0 1px var(--line); }
+.b-split .formcard { border-radius: 0; max-width: none; padding: 28px; box-shadow: none; }
+.roof { background: linear-gradient(160deg, #3a3f45 0%, #1f2328 100%); position: relative; min-height: 340px; display: flex; align-items: flex-end; padding: 22px; color: #fff; }
+.roof svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.roof b { position: relative; font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: .95; letter-spacing: .01em; }
+.roof b span { color: var(--orange); }
+.tilt { position: absolute; right: 26px; top: 24px; display: flex; align-items: center; gap: 10px; background: #fff; border-radius: var(--r-lg); padding: 9px 16px 9px 9px; box-shadow: var(--sh-menu); transform: rotate(5deg); font-size: 17px; font-weight: 500; z-index: 3; }
+.tilt i { width: 30px; height: 30px; border-radius: var(--r-sm); display: grid; place-items: center; background: var(--green); color: #fff; }
+.tilt i svg { width: 16px; height: 16px; }
+.overlay { position: absolute; left: 22px; bottom: 26px; width: min(330px, calc(100% - 44px)); background: #fff; border-radius: var(--r-xl); padding: 18px 20px; box-shadow: var(--sh-menu); transform: rotate(-3deg); z-index: 3; font-size: 13.5px; display: none; }
+.overlay.on { display: block; animation: pop .35s var(--ease-out); }
+@keyframes pop { from { opacity: .4; transform: rotate(-3deg) translateY(10px); } }
+.overlay h5 { margin: 0 0 4px; font-size: 16px; }
+.overlay .muted { color: var(--body); margin-bottom: 12px; }
+.sw { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.sw div { font-size: 10px; color: var(--body); line-height: 1.3; }
+.sw i { display: block; height: 32px; border-radius: var(--r-sm); margin-bottom: 4px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.06); }
+.voice { display: grid; gap: 6px; }
+.voice div { display: flex; gap: 8px; }
+.voice b { width: 68px; flex: none; font-weight: 500; }
+.quote { background: var(--surface-2); border-radius: var(--r-md); padding: 10px 12px; margin-top: 10px; line-height: 1.5; font-family: "Barlow", var(--font); font-size: 14px; }
+.link-row { display: flex; align-items: center; gap: 8px; background: var(--surface-2); border-radius: var(--r-sm); padding: 9px 12px; font-family: var(--mono); font-size: 12.5px; margin-bottom: 8px; }
+
+/* ---------- CTA (Claritia dark close) + footer ---------- */
+.cta-band { margin: 104px 0 0; background: var(--dark); border-radius: var(--r-3xl); padding: 72px 32px; text-align: center; color: #fff; position: relative; overflow: hidden; box-shadow: var(--sh-dark); }
+.cta-band .scene { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.cta-band h2 { color: #fff; font-size: clamp(32px, 4vw, 48px); line-height: 1; letter-spacing: -.035em; position: relative; }
+.cta-band p { font-size: 18px; line-height: 26px; margin: 16px auto 28px; max-width: 520px; color: var(--dark-body); position: relative; }
+.cta-band .btns { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; position: relative; }
+.cta-band .btn-ghost { display: inline-flex; align-items: center; height: 40px; padding: 0 18px; border-radius: var(--r-pill); font-size: 15px; font-weight: 500; color: #fff; box-shadow: 0 0 0 1px rgba(255,255,255,.18); }
+.cta-band .btn-ghost:hover { background: rgba(255,255,255,.08); }
+footer { padding: 56px 0 48px; color: var(--body); font-size: 14px; }
+.foot { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 30px; }
+.foot h6 { margin: 0 0 12px; font-size: 14px; font-weight: 500; color: var(--ink); }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.foot a:hover { color: var(--ink); }
+.foot .brand { margin-bottom: 10px; }
+.demo-note { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rail); font-size: 13px; color: var(--faint); }
+
+@media (prefers-reduced-motion: reduce) { .marquee-track, .ring::before, .geo .blink rect { animation: none; } * { transition: none !important; } }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  :root { --frame: calc(100% - 32px); }
+  .nav-links { display: none; }
+  .nav-right { margin-left: auto; }
+  .panel-card { grid-template-columns: 1fr; padding: 28px; }
+  .trust { grid-template-columns: 1fr 1fr; }
+  .trust > div:first-child { grid-column: 1 / -1; }
+  .f-grid, .b-grid, .f-row { grid-template-columns: 1fr; }
+  .foot { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .nav { padding-left: 14px; gap: 10px; }
+  .nav-right .login { display: none; }
+  .hero { padding-top: calc(env(safe-area-inset-top, 0px) + 110px); }
+  .hero-inner { padding-bottom: 116px; }
+  .int-dots { display: none; }
+  .create-btn { margin-left: auto; }
+  .win-body { grid-template-columns: 1fr; }
+  .chat { border-right: 0; border-bottom: 1px solid var(--line); }
+  .chat .ask { display: none; }
+  .stage { padding: 14px 0 14px 14px; }
+  .cal, .reps { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 96px minmax(0,1fr) 40px; }
+  .trust { grid-template-columns: 1fr; }
+  .f-card { padding: 28px 22px 0; }
+  .b-stage { padding: 80px 16px 220px; }
+  .b-split { grid-template-columns: 1fr; }
+  .roof { min-height: 180px; }
+  .acc-item .d { padding-left: 24px; }
+  .tilt { right: 14px; top: 16px; font-size: 15px; }
+  .sticky-note, .tpl-stack { top: 18px; }
+  .foot { grid-template-columns: 1fr; }
+}
+
+/* ===== v3: varied sections ===== */
+:root { --pills: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='20'%3E%3Crect x='4' y='4' width='20' height='12' rx='6' fill='%23e9efe9'/%3E%3C/svg%3E"); }
+
+/* product stage: mockup sits on a pill field */
+.stage { background: var(--green-50) var(--pills); box-shadow: inset 0 0 0 1px var(--green-200); }
+
+/* dark record band */
+.record { background: var(--dark); color: #fff; padding: 112px 0; margin-top: 40px; position: relative; overflow: hidden; }
+.record::before { content: ""; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='20'%3E%3Crect x='4' y='4' width='20' height='12' rx='6' fill='%23ffffff' fill-opacity='.035'/%3E%3C/svg%3E"); -webkit-mask: linear-gradient(90deg, #000, transparent 60%); mask: linear-gradient(90deg, #000, transparent 60%); pointer-events: none; }
+.rec-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 72px; align-items: center; }
+.eyebrow.dark { background: var(--dark-raised); color: rgba(255,255,255,.8); box-shadow: var(--sh-dark); }
+.eyebrow.dark svg { color: var(--green-300); }
+.rec-copy h2 { color: #fff; font-size: clamp(34px, 4.2vw, 52px); line-height: 1.02; letter-spacing: -.04em; margin-top: 20px; }
+.rec-copy p { color: var(--dark-body); font-size: 18px; line-height: 27px; margin-top: 18px; max-width: 470px; }
+.merge { display: flex; align-items: center; margin-top: 40px; }
+.merge .old { display: grid; gap: 12px; }
+.merge .old span { height: 32px; display: flex; align-items: center; padding: 0 14px; border-radius: var(--r-pill); font-size: 14px; color: rgba(255,255,255,.45); box-shadow: 0 0 0 1px rgba(255,255,255,.12); text-decoration: line-through; text-decoration-color: rgba(255,255,255,.3); }
+.merge-lines { width: 60px; height: 120px; color: rgba(148,212,183,.55); flex: none; }
+.merge .new { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px 0 8px; border-radius: var(--r-pill); background: var(--green-strong); color: #fff; font-weight: 500; box-shadow: 0 0 0 1px #086444, 0 0 32px rgba(12,140,94,.45); }
+.merge .new svg { width: 24px; height: 24px; }
+.rec-card { min-width: 0; }
+.person { display: flex; align-items: center; gap: 12px; padding-bottom: 22px; border-bottom: 1px solid var(--dark-line); }
+.person b { display: block; font-weight: 500; font-size: 17px; }
+.person span { color: var(--dark-body); font-size: 14px; }
+.person .live-dot { margin-left: auto; display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--green-300); white-space: nowrap; }
+.person .live-dot::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--green-300); box-shadow: 0 0 0 4px rgba(148,212,183,.15); }
+.timeline { list-style: none; margin: 0; padding: 8px 0 0; }
+.timeline li { position: relative; display: grid; grid-template-columns: 40px minmax(0,1fr) auto; gap: 16px; padding: 22px 0; }
+.timeline li:not(:last-child)::after { content: ""; position: absolute; left: 19.5px; top: 62px; bottom: -18px; width: 1px; background: linear-gradient(var(--green), rgba(12,140,94,.15)); }
+.timeline .node { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--dark-raised); box-shadow: var(--sh-dark); color: var(--green-300); }
+.timeline .node svg { width: 18px; height: 18px; }
+.timeline b { display: block; font-weight: 500; font-size: 16px; line-height: 22px; }
+.timeline span { color: var(--dark-body); font-size: 14px; }
+.timeline time { font-size: 13px; color: rgba(255,255,255,.4); font-variant-numeric: tabular-nums; padding-top: 2px; }
+
+/* features: open canvas, no boxes */
+.features { padding: 112px 0 96px; }
+.s-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+.canvas { position: relative; height: 600px; border-radius: 32px; background: radial-gradient(50% 60% at 50% 50%, var(--bg) 30%, transparent 75%), var(--pills); }
+.c-form { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(400px, 100%); }
+.c-form .formcard { max-width: none; box-shadow: var(--sh-menu); padding: 26px; }
+.callout { position: absolute; background: var(--surface); border-radius: var(--r-xl); padding: 14px 16px; box-shadow: var(--sh-hover); font-size: 14px; line-height: 1.45; color: var(--nav); width: 230px; }
+.callout small { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; color: var(--green-ink); margin-bottom: 8px; }
+.callout small svg { width: 13px; height: 13px; }
+.callout .tok { font-size: 12.5px; }
+.c1 { left: 6%; top: 64px; transform: rotate(-4deg); width: 200px; }
+.c2 { left: 4%; bottom: 70px; transform: rotate(2deg); width: 190px; }
+.c3 { right: 4%; top: 56px; transform: rotate(3deg); width: 260px; }
+.c4 { right: 7%; bottom: 120px; transform: rotate(-2deg); width: 230px; }
+.c5 { right: 26%; bottom: 22px; transform: rotate(4deg); width: 170px; display: grid; gap: 6px; }
+.tpl-list { display: grid; gap: 6px; }
+.tpl-list span { display: flex; align-items: center; gap: 8px; height: 30px; padding: 0 10px; border-radius: var(--r-pill); box-shadow: var(--sh-pill); font-size: 13px; font-weight: 500; }
+.tpl-list span:nth-child(2) { transform: translateX(10px) rotate(-3deg); box-shadow: var(--sh-menu); background: #fff; }
+.tpl-list i { width: 8px; height: 8px; border-radius: 50%; }
+.f-label em { color: var(--green-ink); }
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 64px; border-top: 1px solid var(--rail); }
+.trio > div { padding: 32px 32px 0; border-left: 1px solid var(--rail); }
+.trio > div:first-child { border-left: 0; padding-left: 0; }
+.t-ic { width: 32px; height: 32px; border-radius: var(--r-md); display: grid; place-items: center; background: var(--green-50); color: var(--green); box-shadow: 0 0 0 1px var(--green-200); }
+.t-ic svg { width: 16px; height: 16px; }
+.trio h3 { font-size: 18px; line-height: 22.5px; letter-spacing: -.01em; margin-top: 18px; }
+.trio p { color: var(--body); margin-top: 8px; font-size: 15px; line-height: 23px; }
+
+/* branding: list + composition on a field */
+.branding { padding: 112px 0; border-top: 1px solid var(--rail); }
+.branding .b-grid { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 64px; align-items: center; }
+.b-left h2 { font-size: clamp(34px, 4vw, 50px); line-height: 1.02; letter-spacing: -.04em; margin-top: 20px; }
+.b-lead { color: var(--body); font-size: 18px; line-height: 26px; margin-top: 16px; max-width: 440px; }
+.branding .acc { gap: 0; margin-top: 36px; }
+.branding .acc-item { background: none; box-shadow: none; border-radius: 0; padding: 18px 0 18px 22px; border-left: 2px solid var(--rail); position: relative; }
+.branding .acc-item:hover { box-shadow: none; }
+.branding .acc-item .t { padding: 0; font-size: 17px; color: var(--meta); display: block; }
+.branding .acc-item .d { padding: 6px 0 0; font-size: 15px; line-height: 23px; }
+.branding .acc-item[aria-expanded="true"] { border-left-color: var(--green); }
+.branding .acc-item[aria-expanded="true"] .t { color: var(--ink); }
+.branding .acc-item:hover .t { color: var(--ink); }
+.b-field { position: relative; padding: 48px 40px 120px; border-radius: 32px; background: radial-gradient(70% 70% at 60% 40%, rgba(255,240,228,.9), transparent 70%), var(--pills); min-width: 0; }
+.b-field .site-bar { background: var(--surface); box-shadow: var(--sh-hover); max-width: 380px; }
+.b-field .b-split { box-shadow: var(--sh-menu); background: #fff; }
+.b-field .overlay { left: auto; right: 20px; bottom: 24px; transform: rotate(3deg); }
+@keyframes pop { from { opacity: .4; transform: rotate(3deg) translateY(10px); } }
+
+/* close: bookend of the hero */
+.close { position: relative; overflow: hidden; padding: 128px 0 120px; border-top: 1px solid var(--rail); text-align: center; }
+.close-bg { position: absolute; inset: 0; background: var(--pills); -webkit-mask: radial-gradient(55% 60% at 50% 50%, transparent 40%, #000 85%); mask: radial-gradient(55% 60% at 50% 50%, transparent 40%, #000 85%); }
+.close-in { position: relative; display: flex; flex-direction: column; align-items: center; }
+.close h2 { margin-top: 24px; font-size: clamp(40px, 6vw, 72px); line-height: 1; letter-spacing: -.042em; }
+.close p { color: var(--body); font-size: 18px; line-height: 26px; margin-top: 18px; max-width: 460px; }
+.close-leads { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 48px; }
+.close-leads span { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 8px 0 4px; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-pill); font-size: 14px; font-weight: 500; }
+.close-leads .avatar { width: 28px; height: 28px; font-size: 11px; font-style: normal; }
+.close-leads em { font-style: normal; }
+footer { border-top: 1px solid var(--rail); }
+
+@media (max-width: 1000px) {
+  .rec-grid, .branding .b-grid { grid-template-columns: 1fr; gap: 48px; }
+  .canvas { height: auto; padding: 32px 16px; display: grid; gap: 14px; justify-items: center; }
+  .c-form { position: static; transform: none; order: -1; }
+  .callout { position: static; transform: none !important; width: min(400px, 100%) !important; }
+  .trio { grid-template-columns: 1fr; }
+  .trio > div { border-left: 0; padding: 28px 0 0; }
+}
+@media (max-width: 640px) {
+  .record { padding: 80px 0; }
+  .timeline li { grid-template-columns: 40px minmax(0,1fr); }
+  .timeline time { display: none; }
+  .person .live-dot { display: none; }
+  .b-field { padding: 24px 14px 230px; }
+  .b-field .overlay { right: 14px; left: 14px; width: auto; }
+  .merge .old span { font-size: 13px; padding: 0 10px; }
+}
+
+/* pricing: one joined sheet, columns split by rails */
+.pricing { padding: 112px 0; border-top: 1px solid var(--rail); }
+.pricing .s-head p { max-width: 560px; }
+.bill { display: inline-flex; gap: 2px; padding: 3px; margin-top: 28px; border-radius: var(--r-pill); background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line); }
+.bill button { height: 32px; padding: 0 16px; border-radius: var(--r-pill); font-size: 14px; font-weight: 500; color: var(--meta); display: inline-flex; align-items: center; gap: 8px; transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease); }
+.bill button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--sh-pill); }
+.bill .save { font-size: 11.5px; color: var(--green-ink); background: var(--green-100); border-radius: var(--r-tag); padding: 1px 6px; }
+.plans { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: var(--surface); border-radius: var(--r-3xl); box-shadow: var(--sh-rest); }
+.plan { padding: 30px 26px 32px; border-left: 1px solid var(--line); min-width: 0; display: flex; flex-direction: column; }
+.plan:first-child { border-left: 0; }
+.plan.pop { background: linear-gradient(180deg, var(--green-50), var(--surface) 55%); box-shadow: 0 0 0 1.5px var(--green); border-radius: var(--r-3xl); border-left-color: transparent; position: relative; z-index: 1; margin: -10px 0; padding-top: 40px; padding-bottom: 42px; }
+.plan.pop + .plan { border-left-color: transparent; }
+.plan-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 26px; }
+.most { line-height: 18px; }
+.plan h3 { font-size: 18px; line-height: 22.5px; letter-spacing: -.01em; }
+.most { font-size: 12px; font-weight: 500; color: #fff; background: var(--green-strong); border-radius: var(--r-pill); padding: 2px 9px; }
+.plan-for { color: var(--body); font-size: 14px; line-height: 20px; margin-top: 4px; min-height: 40px; }
+.price { display: flex; align-items: baseline; gap: 6px; margin-top: 18px; font-variant-numeric: tabular-nums; }
+.price b { font-size: 40px; line-height: 40px; font-weight: 500; letter-spacing: -.035em; color: var(--ink); }
+.price s { font-size: 18px; color: var(--faint); }
+.price span { font-size: 14px; color: var(--meta); }
+.seat { font-size: 13px; color: var(--meta); margin-top: 6px; }
+.plan-btn { margin-top: 20px; width: 100%; height: 38px; }
+.inc { font-size: 13px; font-weight: 500; color: var(--ink); margin-top: 26px; padding-top: 20px; border-top: 1px dashed var(--line-strong); }
+.plan ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 9px; }
+.plan li { display: flex; gap: 9px; align-items: flex-start; font-size: 14px; line-height: 20px; color: var(--nav); }
+.plan li svg { width: 14px; height: 14px; flex: none; margin-top: 3px; color: var(--green); }
+.plans-foot { text-align: center; margin-top: 36px; }
+.plans-foot a { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line-strong); }
+@media (max-width: 1000px) {
+  .plans { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .plan:nth-child(3) { border-left: 0; }
+  .plan:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .plan.pop { margin: 0; border-top-color: transparent; }
+}
+@media (max-width: 640px) {
+  .plans { grid-template-columns: 1fr; }
+  .plan { border-left: 0 !important; }
+  .plan + .plan { border-top: 1px solid var(--line); }
+  .plan-for { min-height: 0; }
+}
+
+/* ===== core features: forms / meetings / email ===== */
+.core-copy { min-width: 0; }
+.core-copy h2 { font-size: clamp(34px, 4vw, 50px); line-height: 1.02; letter-spacing: -.04em; margin-top: 20px; }
+.core-copy > p { color: var(--body); font-size: 18px; line-height: 26px; margin-top: 16px; max-width: 440px; }
+.core-list { list-style: none; padding: 0; margin: 28px 0 32px; display: grid; gap: 0; border-top: 1px solid var(--rail); }
+.core-list li { padding: 14px 0; border-bottom: 1px solid var(--rail); display: grid; gap: 2px; }
+.core-list b { font-weight: 500; color: var(--ink); }
+.core-list span { color: var(--body); font-size: 15px; }
+.split { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 72px; align-items: center; }
+
+/* meetings */
+.meet-sec { padding: 112px 0; border-top: 1px solid var(--rail); }
+.m-visual { position: relative; padding: 64px 0 270px 40px; min-width: 0; }
+.avatar, .host .avatar, .draft-head .avatar { color: #fff !important; }
+.m-visual::before { content: ""; position: absolute; inset: 0 30% 0 0; border-radius: 32px; background: radial-gradient(70% 70% at 40% 40%, var(--green-50), transparent 75%), var(--pills); }
+.m-flow { position: relative; max-width: 420px; }
+.m-form { background: var(--surface); border-radius: var(--r-2xl); box-shadow: var(--sh-menu); padding: 18px; display: grid; gap: 8px; }
+.m-done { display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 8px 10px; border-radius: var(--r-md); background: var(--surface-3); box-shadow: 0 0 0 1px var(--line); }
+.m-done svg { width: 14px; height: 14px; color: var(--green); flex: none; }
+.m-done span { color: var(--meta); }
+.m-done b { margin-left: auto; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.m-route { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--green-ink); padding: 4px 2px; }
+.m-route svg { width: 14px; height: 14px; }
+.m-route b { font-weight: 600; }
+.m-pick { border-radius: var(--r-lg); box-shadow: 0 0 0 1.5px var(--green-300); padding: 14px; display: grid; gap: 12px; }
+.m-days { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.m-days span { display: grid; justify-items: center; gap: 2px; padding: 7px 0; border-radius: var(--r-md); font-size: 11px; color: var(--meta); box-shadow: 0 0 0 1px var(--line); }
+.m-days b { font-size: 16px; font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
+.m-days .on { background: var(--green); box-shadow: none; color: rgba(255,255,255,.8); }
+.m-days .on b { color: #fff; }
+.m-times { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.m-times span { text-align: center; padding: 7px 0; border-radius: var(--r-sm); font-size: 13px; font-weight: 500; color: var(--green-ink); box-shadow: 0 0 0 1px var(--green-300); }
+.m-times .on { background: var(--green-100); box-shadow: 0 0 0 1.5px var(--green); }
+.m-confirm { display: block; text-align: center; background: var(--btn); color: #fff; border-radius: var(--r-pill); padding: 9px; font-size: 13.5px; font-weight: 500; box-shadow: var(--sh-primary); }
+.m-badge { position: absolute; display: flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px 0 6px; border-radius: var(--r-pill); background: var(--surface); box-shadow: var(--sh-hover); font-size: 13px; font-weight: 500; white-space: nowrap; }
+.m-badge i { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-style: normal; font-size: 11px; font-weight: 700; }
+.m-badge i svg { width: 12px; height: 12px; }
+.b1 { left: 0; top: 18px; transform: rotate(-3deg); }
+.b2 { left: 24px; bottom: 120px; transform: rotate(-2deg); }
+.m-page { position: absolute; right: 0; bottom: 0; width: 300px; background: var(--surface); border-radius: var(--r-xl); box-shadow: var(--sh-menu); padding: 14px; display: grid; gap: 6px; transform: rotate(2deg); }
+.m-url { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--meta); padding: 2px 4px 8px; }
+.m-url svg { width: 13px; height: 13px; color: var(--green); }
+.m-type { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; padding: 8px 10px; border-radius: var(--r-md); box-shadow: 0 0 0 1px var(--line); }
+.m-type b { font-weight: 500; white-space: nowrap; }
+.m-type span { color: var(--meta); font-size: 12px; text-align: right; }
+
+/* email */
+.mail-sec { padding: 112px 0; background: var(--tint); border-top: 1px solid var(--rail); border-bottom: 1px solid var(--rail); }
+.mail-stage { display: grid; grid-template-columns: 240px 120px minmax(0, 560px); justify-content: center; align-items: center; }
+.answers { display: grid; gap: 14px; justify-items: end; }
+.answers small { font-size: 12px; font-weight: 500; color: var(--meta); text-transform: uppercase; letter-spacing: .06em; }
+.ans { display: grid; text-align: right; padding: 10px 14px; border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--sh-rest); font-size: 14px; font-weight: 500; max-width: 240px; }
+.ans em { font-style: normal; font-size: 11.5px; font-weight: 500; color: var(--meta); }
+.wires { width: 120px; height: 300px; }
+.wires path { fill: none; stroke: var(--green); stroke-width: 1.5; stroke-dasharray: 4 5; opacity: .7; animation: flow 1.6s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -18; } }
+.draft { background: var(--surface); border-radius: var(--r-3xl); box-shadow: var(--sh-menu); padding: 28px; font-size: 15px; line-height: 25px; color: var(--nav); min-width: 0; }
+.draft-head { display: flex; align-items: center; gap: 10px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.draft-head b { display: block; font-weight: 500; font-size: 14px; line-height: 18px; color: var(--ink); }
+.draft-head span { font-size: 13px; color: var(--meta); }
+.draft-head .ai { margin-left: auto; display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 500; color: var(--tag-purple-ink); background: var(--tag-purple); border-radius: var(--r-status); padding: 2px 8px; white-space: nowrap; }
+.draft-head .ai svg { width: 12px; height: 12px; }
+.draft .avatar { width: 34px; height: 34px; font-size: 12px; }
+.draft h4 { font-size: 20px; letter-spacing: -.02em; margin: 18px 0 12px; }
+.draft p + p { margin-top: 10px; }
+.draft mark { background: var(--green-100); color: var(--green-ink); border-radius: var(--r-tag); padding: 1px 4px; box-shadow: 0 0 0 1px var(--green-200); }
+.draft-acts { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
+.seq-rail { margin: 64px auto 0; max-width: 980px; }
+.seq-label { font-size: 13px; font-weight: 500; color: var(--meta); text-align: center; margin-bottom: 20px; }
+.seq-rail ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); position: relative; }
+.seq-rail ol::before { content: ""; position: absolute; left: 8%; right: 8%; top: 7px; height: 2px; background: linear-gradient(90deg, var(--green) 0 26%, var(--line-strong) 26%); border-radius: 2px; }
+.seq-rail li { position: relative; display: grid; justify-items: center; text-align: center; gap: 4px; padding: 0 6px; }
+.seq-rail li i { width: 16px; height: 16px; border-radius: 50%; background: var(--surface); box-shadow: 0 0 0 2px var(--line-strong); margin-bottom: 10px; }
+.seq-rail li.done i { background: var(--green); box-shadow: 0 0 0 2px var(--green), 0 0 0 6px rgba(12,140,94,.15); }
+.seq-rail li.ready i { background: var(--surface); box-shadow: 0 0 0 2px var(--green); }
+.seq-rail b { font-weight: 500; font-size: 14px; color: var(--ink); }
+.seq-rail span { font-size: 12.5px; color: var(--meta); }
+
+@media (max-width: 1000px) {
+  .split { grid-template-columns: 1fr; gap: 40px; }
+  .meet-sec .core-copy { order: -1; }
+  .mail-stage { grid-template-columns: 1fr; gap: 16px; justify-items: center; }
+  .answers { display: flex; flex-wrap: wrap; justify-content: center; }
+  .answers small { width: 100%; text-align: center; }
+  .ans { text-align: left; }
+  .wires { display: none; }
+  .draft { max-width: 560px; }
+}
+@media (max-width: 640px) {
+  .meet-sec, .mail-sec { padding: 80px 0; }
+  .m-visual { padding: 56px 0 24px; display: grid; gap: 14px; }
+  .m-visual::before { inset: 0; }
+  .m-badge, .m-page { position: relative; left: auto; right: auto; top: auto; bottom: auto; transform: none; justify-self: start; }
+  .m-page { width: 100%; }
+  .b1 { position: absolute; top: 12px; left: 8px; }
+  .draft { padding: 20px; }
+  .draft-head .ai { display: none; }
+  .seq-rail ol { grid-template-columns: 1fr 1fr 1fr; row-gap: 24px; }
+  .seq-rail ol::before { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .wires path { animation: none; } }
+
+/* ===== v6: three core sections, one shared layout ===== */
+.core { padding: 104px 0; border-top: 1px solid var(--rail); }
+.core-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 72px; align-items: center; }
+.core-grid.flip .core-copy { order: 2; }
+.core-copy .btn-dark { margin-top: 0; }
+.core-list { margin: 28px 0 32px; }
+.core-visual { position: relative; min-height: 520px; border-radius: 32px; display: grid; place-items: center; padding: 56px 40px; min-width: 0; box-shadow: inset 0 0 0 1px var(--rail); }
+.v-green { background: radial-gradient(60% 60% at 50% 50%, var(--green-50), transparent 80%), var(--pills); }
+.v-blue { background: radial-gradient(60% 60% at 50% 50%, #eef5fd, transparent 80%), var(--pills); }
+.v-purple { background: radial-gradient(60% 60% at 50% 50%, #f4f0fe, transparent 80%), var(--pills); }
+.v-card { width: min(380px, 100%); position: relative; z-index: 1; }
+.v-card.wide { width: min(460px, 100%); }
+.v-card .formcard { max-width: none; box-shadow: var(--sh-menu); padding: 26px; }
+.v-card .m-form, .v-card .draft { box-shadow: var(--sh-menu); }
+.v-card .draft { padding: 24px; font-size: 14.5px; line-height: 24px; }
+.v-card .draft h4 { margin: 16px 0 8px; font-size: 18px; }
+.v-total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.v-total span { color: var(--meta); font-size: 14px; }
+.v-total b { font-size: 26px; font-weight: 600; color: var(--ink); letter-spacing: -.02em; font-family: "Barlow Condensed", "Arial Narrow", sans-serif; }
+.v-note { position: absolute; z-index: 2; background: var(--surface); border-radius: var(--r-lg); padding: 10px 14px; box-shadow: var(--sh-hover); font-size: 13.5px; line-height: 1.4; color: var(--nav); max-width: 200px; }
+.v-note small { display: flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 500; color: var(--green-ink); margin-bottom: 3px; }
+.v-note small svg { width: 12px; height: 12px; }
+.v-note.tl { left: 28px; top: 28px; transform: rotate(-4deg); }
+.v-note.br { right: 28px; bottom: 28px; transform: rotate(3deg); }
+.v-note.bl { left: 28px; bottom: 28px; transform: rotate(-3deg); }
+.core-visual:has(.v-note.tl) { padding-top: 112px; }
+.core-visual:has(.v-note.br), .core-visual:has(.v-note.bl) { padding-bottom: 104px; }
+.record { margin-top: 0; }
+@media (max-width: 1000px) {
+  .core-grid { grid-template-columns: 1fr; gap: 40px; }
+  .core-grid.flip .core-copy { order: 0; }
+}
+@media (max-width: 640px) {
+  .core { padding: 80px 0; }
+  .core-visual { min-height: 0; padding: 72px 14px 80px; }
+  .v-note.tl { top: 16px; left: 14px; }
+  .v-note.br, .v-note.bl { bottom: 16px; }
+  .v-note.br { right: 14px; }
+  .v-note.bl { left: 14px; }
+}
+
+/* FAQ */
+.faq { padding: 112px 0; border-top: 1px solid var(--rail); }
+.faq-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 72px; align-items: start; }
+.faq-left { position: sticky; top: 110px; }
+.faq-left h2 { font-size: clamp(34px, 4vw, 50px); line-height: 1.02; letter-spacing: -.04em; margin-top: 20px; }
+.faq-left p { color: var(--body); font-size: 18px; line-height: 26px; margin-top: 16px; }
+.faq-left p a { color: var(--ink); font-weight: 500; border-bottom: 1px solid var(--line-strong); }
+.faq-mail { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--rail); display: grid; gap: 4px; font-size: 14px; color: var(--meta); }
+.faq-mail b { font-weight: 500; color: var(--ink); font-size: 16px; user-select: all; }
+.faq-list { border-top: 1px solid var(--rail); }
+.qa { border-bottom: 1px solid var(--rail); }
+.qa summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0; font-size: 18px; font-weight: 500; letter-spacing: -.01em; color: var(--ink); }
+.qa summary::-webkit-details-marker { display: none; }
+.qa summary:hover { color: var(--green-ink); }
+.pm { position: relative; flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--surface); box-shadow: var(--sh-chip); }
+.pm::before, .pm::after { content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 1.6px; border-radius: 2px; background: var(--nav); transform: translate(-50%, -50%); transition: transform var(--fast) var(--ease); }
+.pm::after { transform: translate(-50%, -50%) rotate(90deg); }
+.qa[open] .pm { background: var(--green); box-shadow: none; }
+.qa[open] .pm::before, .qa[open] .pm::after { background: #fff; }
+.qa[open] .pm::after { transform: translate(-50%, -50%) rotate(0deg); }
+.qa p { padding: 0 48px 24px 0; color: var(--body); font-size: 16px; line-height: 25px; max-width: 640px; }
+.qa p a { color: var(--ink); font-weight: 500; border-bottom: 1px solid var(--line-strong); }
+@media (max-width: 1000px) { .faq-grid { grid-template-columns: 1fr; gap: 40px; } .faq-left { position: static; } }
+@media (max-width: 640px) { .faq { padding: 80px 0; } .qa summary { font-size: 16px; } .qa p { padding-right: 0; } }
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 12 12"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-form" viewBox="0 0 20 20"><rect x="3" y="2.5" width="14" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6.5 7h7M6.5 10.5h7M6.5 14h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="13.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M2.5 8.5h15M6.5 2v4M13.5 2v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="6" y="11" width="3" height="3" rx=".8" fill="currentColor"/></symbol>
+    <symbol id="i-route" viewBox="0 0 20 20"><circle cx="4.5" cy="4.5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="15.5" cy="15.5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="15.5" cy="4.5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6.7 4.5h6.6M4.5 6.7v3.3a3 3 0 003 3h5.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 5.5l6.5 5 6.5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 20 20"><path d="M4 16V9M10 16V4M16 16v-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 20 20"><path d="M10 2.5l1.8 4.7 4.7 1.8-4.7 1.8L10 15.5l-1.8-4.7L3.5 9l4.7-1.8z" fill="currentColor"/><path d="M16 13l.8 2.2L19 16l-2.2.8L16 19l-.8-2.2L13 16l2.2-.8z" fill="currentColor"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 20 20"><rect x="3" y="3" width="6" height="6" rx="1.6" fill="currentColor"/><rect x="11" y="3" width="6" height="6" rx="1.6" fill="currentColor" opacity=".45"/><rect x="3" y="11" width="6" height="6" rx="1.6" fill="currentColor" opacity=".45"/><rect x="11" y="11" width="6" height="6" rx="1.6" fill="currentColor"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 20 20"><path d="M11 2L4 11.5h5L8 18l7-9.5h-5z" fill="currentColor"/></symbol>
+    <symbol id="i-check" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clip" viewBox="0 0 20 20"><path d="M13.5 6.5l-5.6 5.6a1.6 1.6 0 002.3 2.3l6-6a3.2 3.2 0 00-4.5-4.5l-6.2 6.2a4.8 4.8 0 006.8 6.8l5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-up" viewBox="0 0 12 12"><path d="M6 10V2M2.5 5.5L6 2l3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-home" viewBox="0 0 16 16"><path d="M2.5 7.5L8 3l5.5 4.5V13H2.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2 8h12M8 2c2 2.2 2 9.8 0 12M8 2c-2 2.2-2 9.8 0 12" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 20 20"><path d="M10 2.5a7.5 7.5 0 000 15c1.2 0 1.6-.8 1.3-1.7-.4-1 .2-2 1.3-2h1.9a3 3 0 003-3A7.5 7.5 0 0010 2.5z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="6.5" cy="9" r="1.2" fill="currentColor"/><circle cx="9.5" cy="6" r="1.2" fill="currentColor"/><circle cx="13.3" cy="7.3" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 20 20"><path d="M3 5a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3.5V14H5a2 2 0 01-2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-link" viewBox="0 0 20 20"><path d="M8.5 11.5a3.5 3.5 0 005 0l2.5-2.5a3.5 3.5 0 00-5-5l-1 1M11.5 8.5a3.5 3.5 0 00-5 0L4 11a3.5 3.5 0 005 5l1-1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 16 16"><path d="M8 2l6.5 11.5h-13z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6.5v3.2M8 11.6v.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 16 16"><path d="M8 1.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z" fill="currentColor"/></symbol>
+    <symbol id="mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8.5" fill="#0C8C5E"/><rect x="4" y="8" width="10" height="6" rx="3" fill="#fff" fill-opacity=".35"/><rect x="18" y="8" width="10" height="6" rx="3" fill="#fff" fill-opacity=".35"/><rect x="4" y="18" width="10" height="6" rx="3" fill="#fff" fill-opacity=".35"/><rect x="18" y="18" width="10" height="6" rx="3" fill="#fff"/></symbol>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<div class="nav-shell"><div class="wrap">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top"><svg><use href="#mark"/></svg>Claritia</a>
+    <div class="nav-links">
+      <a href="#product">Product <svg><use href="#i-chev"/></svg></a>
+      <a href="#features">Templates <svg><use href="#i-chev"/></svg></a>
+      <a href="#integrations">Integrations <svg><use href="#i-chev"/></svg></a>
+      <a href="#branding">Resources <svg><use href="#i-chev"/></svg></a>
+      <a href="#pricing">Pricing</a>
+    </div>
+    <div class="nav-right">
+      <a class="login" href="#start">Sign in</a>
+      <a class="btn-dark" href="#start">Start free <svg class="arrow"><use href="#i-arrow"/></svg></a>
+    </div>
+  </nav>
+</div></div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="geo" aria-hidden="true">
+    <svg class="fade" viewBox="0 0 1456 780" preserveAspectRatio="xMidYMin slice">
+      <defs><pattern id="pills" width="28" height="20" patternUnits="userSpaceOnUse"><rect x="4" y="4" width="20" height="12" rx="6" fill="#efefe8"/></pattern></defs>
+      <rect width="1456" height="780" fill="url(#pills)"/>
+      <g class="blink"><rect x="116" y="684" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="648" y="744" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="60" y="104" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="88" y="724" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="396" y="744" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="1012" y="744" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="88" y="284" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="256" y="684" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="172" y="744" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="1124" y="244" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="172" y="704" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="1096" y="264" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="1208" y="684" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="1376" y="404" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="1040" y="584" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="1404" y="224" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="144" y="724" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="928" y="624" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="1292" y="564" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="200" y="644" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="284" y="424" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="60" y="84" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="1068" y="624" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="1432" y="584" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="144" y="344" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="1236" y="84" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="1292" y="384" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="1208" y="564" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="1264" y="484" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="32" y="584" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="284" y="144" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="88" y="264" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="228" y="304" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="704" y="624" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="284" y="564" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="228" y="544" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="144" y="224" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="4" y="624" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="312" y="324" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="4" y="184" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="1096" y="724" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="228" y="644" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="1152" y="64" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="1376" y="704" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="88" y="244" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="368" y="564" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="200" y="424" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="88" y="124" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="116" y="264" width="20" height="12" rx="6" fill="#0c8c5e"/><rect x="1124" y="324" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="200" y="624" width="20" height="12" rx="6" fill="#e3f4ec"/><rect x="844" y="604" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="144" y="184" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="1320" y="424" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="368" y="664" width="20" height="12" rx="6" fill="#94d4b7"/><rect x="256" y="684" width="20" height="12" rx="6" fill="#c9eadb"/><rect x="1348" y="664" width="20" height="12" rx="6" fill="#94d4b7"/></g>
+    </svg>
+  </div>
+  <div class="wrap hero-inner">
+    <span class="announce"><a href="#product"><b>New</b><span>AI follow-ups that sound like you</span><svg class="arrow"><use href="#i-arrow"/></svg></a></span>
+    <h1><span>Forms that</span> book the call</h1>
+    <p class="sub">Leads fill out your form, book a time with the right person and get AI follow-ups that sound just like you.</p>
+    <form class="prompt" id="promptForm"><div class="ring"><div class="ring-in"><div class="pbox">
+      <label for="promptText" style="position:absolute;left:-9999px">Describe the form you want to create</label>
+      <textarea id="promptText" placeholder="Describe the form you want to create..."></textarea>
+      <div class="prompt-bar">
+        <button type="button" class="icon-btn" aria-label="Attach a file"><svg><use href="#i-clip"/></svg></button>
+        <div class="int-dots" aria-label="Connects with HubSpot, Google Calendar and Stripe"><i style="background:#ff7a59">H</i><i style="background:#1a73e8">G</i><i style="background:#635bff">S</i></div>
+        <button type="submit" class="create-btn" id="createBtn">Create form <svg class="arrow"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div></div></div></form>
+    <div class="chips">
+      <button class="chip" data-p="A demo request form that asks for work email and team size, then books an intro call with the right rep"><i style="background:var(--green-100);color:var(--green-ink)"><svg><use href="#i-cal"/></svg></i>Demo request</button>
+      <button class="chip" data-p="Make a roof estimate form that asks about the job, the ZIP code and photos, then books a visit"><i style="background:var(--tag-orange);color:var(--tag-orange-ink)"><svg><use href="#i-home"/></svg></i>Free roof estimate</button>
+      <button class="chip" data-p="An event registration form with name, email and ticket type, and a $25 deposit through Stripe"><i style="background:var(--tag-purple);color:var(--tag-purple-ink)"><svg><use href="#i-form"/></svg></i>Event registration</button>
+    </div>
+    <p class="alt-link">Prefer to start from a template? <a href="#features">Browse 840 templates <svg class="arrow"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</header>
+
+<!-- PRODUCT TABS -->
+<section class="product" id="product">
+  <div class="wrap">
+    <div class="tabs-scroll">
+      <div class="tabs" role="tablist" aria-label="Claritia products">
+        <button class="tab" role="tab" id="t-forms" aria-selected="true" aria-controls="p-forms"><svg><use href="#i-form"/></svg>Forms</button>
+        <button class="tab" role="tab" id="t-meet" aria-selected="false" aria-controls="p-meet"><svg><use href="#i-cal"/></svg>Meetings</button>
+        <button class="tab" role="tab" id="t-route" aria-selected="false" aria-controls="p-route"><svg><use href="#i-route"/></svg>Routing</button>
+        <button class="tab" role="tab" id="t-mail" aria-selected="false" aria-controls="p-mail"><svg><use href="#i-mail"/></svg>Follow-ups</button>
+        <button class="tab" role="tab" id="t-stats" aria-selected="false" aria-controls="p-stats"><svg><use href="#i-chart"/></svg>Analytics</button>
+      </div>
+    </div>
+
+    <!-- Forms -->
+    <div class="panel-card" role="tabpanel" id="p-forms" aria-labelledby="t-forms">
+      <div class="panel-copy">
+        <h2>Make any form, quote or booking flow in minutes</h2>
+        <ul class="ticks">
+          <li><span class="ic"><svg><use href="#i-grid"/></svg></span>Build from one sentence or 840 templates</li>
+          <li><span class="ic"><svg><use href="#i-bolt"/></svg></span>Add show-if logic, prices and payments</li>
+          <li><span class="ic"><svg><use href="#i-cal"/></svg></span>Let leads book a time before they leave the page</li>
+        </ul>
+        <a class="btn-dark" href="#start">Make a form <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="stage">
+        <div class="window">
+          <div class="win-head"><svg><use href="#i-home"/></svg>Free roof estimate<span class="pill">Live</span></div>
+          <div class="win-body">
+            <div class="chat">
+              <div class="bubble" id="chatPrompt">Make a roof estimate form that asks about the job, the ZIP code and photos, then books a visit</div>
+              <div>Your form is ready.</div>
+              <div class="meta-line"><svg><use href="#i-check"/></svg>5 questions</div>
+              <div class="meta-line"><svg><use href="#i-check"/></svg>Visit booking with Dan Miller</div>
+              <div class="meta-line"><svg><use href="#i-check"/></svg>Ridgeline brand applied</div>
+              <div class="bubble">Make the photos optional</div>
+              <div>Done. Photos are now optional.</div>
+              <div class="ask">Ask for a change... <b><svg><use href="#i-up"/></svg></b></div>
+            </div>
+            <div class="preview">
+              <div class="formcard rl">
+                <h4>Get a free roof estimate</h4>
+                <div class="f-label">What do you need done?</div>
+                <div class="opts"><span class="opt">Repair</span><span class="opt on">New roof</span><span class="opt">Inspection</span><span class="opt">Storm damage</span></div>
+                <div class="f-label">What's your ZIP code?</div>
+                <div class="f-input">80202</div>
+                <div class="highlight">
+                  <div class="f-label">Add photos of the damage <em>optional</em></div>
+                  <div class="drop">Choose file or drag here</div>
+                </div>
+                <span class="f-btn">Next step</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meetings -->
+    <div class="panel-card" role="tabpanel" id="p-meet" aria-labelledby="t-meet" hidden>
+      <div class="panel-copy">
+        <h2>Let leads book before they leave</h2>
+        <ul class="ticks">
+          <li><span class="ic"><svg><use href="#i-cal"/></svg></span>The calendar opens right inside the form</li>
+          <li><span class="ic"><svg><use href="#i-grid"/></svg></span>Team pages, polls and paid sessions</li>
+          <li><span class="ic"><svg><use href="#i-bolt"/></svg></span>Syncs with Google Calendar and Outlook</li>
+        </ul>
+        <a class="btn-dark" href="#start">See meetings <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="stage">
+        <div class="window">
+          <div class="win-head"><svg><use href="#i-cal"/></svg>Intro call · 30 min<span class="pill">Google Meet</span></div>
+          <div class="mock-pad">
+            <div class="host"><span class="avatar" style="background:#0c8c5e">MO</span><div><b>Maya Ortiz</b><span>Your host · Acme sales team</span></div></div>
+            <div class="cal">
+              <div>
+                <div style="font-weight:700;font-size:14px;margin-bottom:10px">November 2026</div>
+                <div class="cal-grid">
+                  <span class="h">M</span><span class="h">T</span><span class="h">W</span><span class="h">T</span><span class="h">F</span><span class="h">S</span><span class="h">S</span>
+                  <span class="d">9</span><span class="d av">10</span><span class="d av">11</span><span class="d">12</span><span class="d av">13</span><span class="d">14</span><span class="d">15</span>
+                  <span class="d av">16</span><span class="d sel">17</span><span class="d av">18</span><span class="d av">19</span><span class="d av">20</span><span class="d">21</span><span class="d">22</span>
+                  <span class="d av">23</span><span class="d av">24</span><span class="d">25</span><span class="d">26</span><span class="d av">27</span><span class="d">28</span><span class="d">29</span>
+                </div>
+              </div>
+              <div class="slots">
+                <div class="day">Tue, Nov 17</div>
+                <div class="slot">9:00 am</div>
+                <div class="slot pick"><span>10:30</span><span>Confirm</span></div>
+                <div class="slot">11:00 am</div>
+                <div class="slot">1:00 pm</div>
+              </div>
+            </div>
+            <div class="mtypes">
+              <div class="mtype"><b>Product demo</b><span>45 min · Everyone free</span></div>
+              <div class="mtype"><b>Office hours</b><span>60 min · Up to 20 guests</span></div>
+              <div class="mtype"><b>Paid strategy session</b><span>60 min · $150 with Stripe</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Routing -->
+    <div class="panel-card" role="tabpanel" id="p-route" aria-labelledby="t-route" hidden>
+      <div class="panel-copy">
+        <h2>Send every lead to the right person</h2>
+        <ul class="ticks">
+          <li><span class="ic"><svg><use href="#i-route"/></svg></span>Route by any answer, like team size, ZIP code or budget</li>
+          <li><span class="ic"><svg><use href="#i-grid"/></svg></span>Round robin with weights, caps and away days</li>
+          <li><span class="ic"><svg><use href="#i-chart"/></svg></span>The routing log keeps the reason for each pick</li>
+        </ul>
+        <a class="btn-dark" href="#start">How routing works <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="stage">
+        <div class="window">
+          <div class="win-head"><svg><use href="#i-route"/></svg>Round robin · Sales, North America<span class="pill">On</span></div>
+          <div class="mock-pad">
+            <div class="rule">If <span class="tok">Team size</span> is <span class="tok">11 to 50</span> send to <span class="tok g">Sales, North America</span></div>
+            <div class="reps">
+              <div class="rep"><b>Maya Ortiz</b><span class="tag g">Assigned</span></div>
+              <div class="rep"><b>Lena Koch</b><span class="tag b">Next up</span></div>
+              <div class="rep"><b>Sam Brooks</b><span class="tag o">Away until Mon</span></div>
+            </div>
+            <div class="tbl-wrap">
+              <table class="log">
+                <thead><tr><th>Lead</th><th>Answer</th><th>Sent to</th></tr></thead>
+                <tbody>
+                  <tr><td>Priya Raman</td><td>11 to 50</td><td>Maya Ortiz<small>Next in turn</small></td></tr>
+                  <tr><td>Jordan Lee</td><td>51 or more</td><td>Enterprise team<small>Team size rule</small></td></tr>
+                  <tr><td>Laura Chen</td><td>2 to 10</td><td>Lena Koch<small>Sam is away</small></td></tr>
+                  <tr><td>Ana Silva</td><td>11 to 50</td><td>Lena Koch<small>Next in turn</small></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Follow-ups -->
+    <div class="panel-card" role="tabpanel" id="p-mail" aria-labelledby="t-mail" hidden>
+      <div class="panel-copy">
+        <h2>Follow-ups that write themselves</h2>
+        <ul class="ticks">
+          <li><span class="ic"><svg><use href="#i-spark"/></svg></span>AI writes each email from the lead's answers</li>
+          <li><span class="ic"><svg><use href="#i-palette"/></svg></span>Every email sounds like your brand</li>
+          <li><span class="ic"><svg><use href="#i-check"/></svg></span>You approve each AI draft before it sends</li>
+        </ul>
+        <a class="btn-dark" href="#start">See email templates <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="stage">
+        <div class="window">
+          <div class="win-head"><svg><use href="#i-mail"/></svg>AI follow-up<span class="pill">Drafted by AI</span></div>
+          <div class="mock-pad">
+            <div class="email">
+              <div class="row"><span>To</span>Priya Raman</div>
+              <div class="row"><span>Subject</span><b>Ideas for your call on Tuesday</b></div>
+              <div class="msg">Hi Priya,<br>Thanks for booking time for <mark>Tuesday at 10:30</mark>. You said your <mark>team of 11 to 50</mark> wants to <mark>book more demos from your site</mark>, so I'll show how teams your size route every lead in seconds.<br>Talk soon,<br>Maya</div>
+              <div class="acts"><span>Edit</span><span class="go">Approve and send</span></div>
+            </div>
+            <div class="seq">
+              <div><b>Confirmation with a calendar invite</b><span class="tag g">Sent</span></div>
+              <div><b>Prep email from her answers</b><span class="tag p">Ready</span></div>
+              <div><b>Reminder</b><span>1 day before</span></div>
+              <div><b>No-show follow-up with a new link</b><span>If missed</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics -->
+    <div class="panel-card" role="tabpanel" id="p-stats" aria-labelledby="t-stats" hidden>
+      <div class="panel-copy">
+        <h2>See what every form brings in</h2>
+        <ul class="ticks">
+          <li><span class="ic"><svg><use href="#i-chart"/></svg></span>Views, starts, answers and bookings per form</li>
+          <li><span class="ic"><svg><use href="#i-warn"/></svg></span>Spot the question where people stop</li>
+          <li><span class="ic"><svg><use href="#i-bolt"/></svg></span>Fix it in a click and watch the numbers move</li>
+        </ul>
+        <a class="btn-dark" href="#start">See plans <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="stage">
+        <div class="window">
+          <div class="win-head"><svg><use href="#i-chart"/></svg>Book a demo · Last 30 days<span class="pill">Example data</span></div>
+          <div class="mock-pad">
+            <div class="kpis">
+              <div class="kpi"><span>Answered</span><b>312</b></div>
+              <div class="kpi"><span>Booked</span><b>96</b></div>
+              <div class="kpi"><span>Show rate</span><b>88%</b></div>
+            </div>
+            <div style="font-weight:700;font-size:14px">Where people stop</div>
+            <div class="bars">
+              <div class="bar-row"><span>Work email</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>100%</b></div>
+              <div class="bar-row"><span>Team size</span><div class="bar-track"><div class="bar-fill" style="width:91%"></div></div><b>91%</b></div>
+              <div class="bar-row warn"><span>Phone number</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><b>68%</b></div>
+              <div class="bar-row"><span>What you need</span><div class="bar-track"><div class="bar-fill" style="width:65%"></div></div><b>65%</b></div>
+              <div class="bar-row"><span>Pick a time</span><div class="bar-track"><div class="bar-fill" style="width:62%"></div></div><b>62%</b></div>
+            </div>
+            <div class="hint"><svg><use href="#i-warn"/></svg>23% stop at Phone number. Try making it optional.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO STRIP -->
+<section class="strip" id="integrations" aria-label="Integrations">
+  <div class="strip-label">Works with the tools your team already uses</div>
+  <div class="marquee">
+    <div class="marquee-track" id="track">
+      <span class="wm">Google Calendar</span>
+      <span class="wm">HubSpot</span>
+      <span class="wm">salesforce</span>
+      <span class="wm">zoom</span>
+      <span class="wm">slack</span>
+      <span class="wm">stripe</span>
+      <span class="wm">Outlook</span>
+      <span class="wm">Mailchimp</span>
+      <span class="wm">Webflow</span>
+      <span class="wm">Google Sheets</span>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDING -->
+<section class="branding" id="branding">
+  <div class="wrap b-grid">
+    <div class="b-left">
+      <span class="eyebrow"><svg><use href="#i-palette"/></svg>Branding</span>
+      <h2>Claritia starts with your brand</h2>
+      <p class="b-lead">Add your website and Claritia reads it. Every form, booking page and email looks and sounds like you.</p>
+      <div class="acc" id="acc">
+        <button class="acc-item" aria-expanded="true" data-o="o-colors">
+          <span class="t">Your colors and fonts, every time</span>
+          <span class="d">Claritia picks up your logo, colors, fonts and button style and saves them as one brand file.</span>
+        </button>
+        <button class="acc-item" aria-expanded="false" data-o="o-voice">
+          <span class="t">Emails that sound like you</span>
+          <span class="d">It learns how you talk and what you avoid, so every AI follow-up reads like your team wrote it.</span>
+        </button>
+        <button class="acc-item" aria-expanded="false" data-o="o-link">
+          <span class="t">Share on your own link</span>
+          <span class="d">Forms and booking pages live on your team's link, ready for any site or email.</span>
+        </button>
+        <button class="acc-item" aria-expanded="false" data-o="o-meet">
+          <span class="t">Meeting types it suggests</span>
+          <span class="d">Claritia suggests meeting types and questions that fit your business, ready to switch on.</span>
+        </button>
+      </div>
+    </div>
+    <div class="b-field">
+      <div class="site-bar"><svg><use href="#i-globe"/></svg>ridgelineroofing.com<span class="ok"><svg class="arrow" style="width:11px;height:11px"><use href="#i-check"/></svg>Brand learned</span></div>
+      <div class="b-split">
+        <div class="formcard rl">
+          <h4>Get a free roof estimate</h4>
+          <div class="f-label">What do you need done?</div>
+          <div class="opts"><span class="opt">Repair</span><span class="opt">New roof</span><span class="opt">Inspection</span><span class="opt on">Storm damage</span></div>
+          <div class="f-label">How old is your roof?</div>
+          <div class="f-input">10 to 20 years</div>
+          <span class="f-btn">Next step</span>
+        </div>
+        <div class="roof">
+          <svg viewBox="0 0 300 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path d="M30 190 L150 90 L270 190" fill="none" stroke="#f26b1d" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M70 175 V260 H230 V175" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="6"/>
+            <rect x="130" y="205" width="40" height="55" fill="rgba(255,255,255,.12)"/>
+          </svg>
+          <b>Ridgeline<br><span>Roofing</span></b>
+        </div>
+      </div>
+
+      <div class="overlay on" id="o-colors">
+        <h5>brand.md</h5>
+        <div class="muted">Colors, type and voice</div>
+        <div class="sw">
+          <div><i style="background:#f26b1d"></i>Ridgeline Orange</div>
+          <div><i style="background:#1f2328"></i>Charcoal</div>
+          <div><i style="background:#b9500f"></i>Ember</div>
+          <div><i style="background:#fff0e4"></i>Peach</div>
+          <div><i style="background:#f6f4f1"></i>Sand</div>
+        </div>
+        <div style="margin-top:10px;color:var(--body)">Headings in Barlow Condensed, text in Barlow.</div>
+      </div>
+      <div class="overlay" id="o-voice">
+        <h5>Voice</h5>
+        <div class="voice">
+          <div><b>We say</b><span>straight talk and real prices</span></div>
+          <div><b>We avoid</b><span>jargon and pushy sales talk</span></div>
+        </div>
+        <div class="quote">Hi Jane, I'll be out Thursday at 9 to look at that leak over the kitchen. The visit is free, and you'll get a written quote the same day.<br>Dan Miller</div>
+      </div>
+      <div class="overlay" id="o-link">
+        <h5>Your links</h5>
+        <div class="muted">Ready to share or embed</div>
+        <div class="link-row"><svg class="arrow" style="color:var(--green)"><use href="#i-link"/></svg>ridgeline.claritia.app/estimate</div>
+        <div class="link-row"><svg class="arrow" style="color:var(--green)"><use href="#i-link"/></svg>ridgeline.claritia.app/book</div>
+      </div>
+      <div class="overlay" id="o-meet">
+        <h5>Meeting types</h5>
+        <div class="mtypes" style="margin-top:8px">
+          <div class="mtype"><b>Free on-site estimate</b><span>45 min · At your home</span></div>
+          <div class="mtype"><b>Storm damage check</b><span>30 min · At your home</span></div>
+          <div class="mtype"><b>Quote review call</b><span>15 min · Phone</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE: FORMS -->
+<section class="core" id="features">
+  <div class="wrap core-grid">
+    <div class="core-copy">
+      <span class="eyebrow"><svg><use href="#i-form"/></svg>Forms</span>
+      <h2>Build any form in one sentence</h2>
+      <p>Describe the form you need and Claritia builds it, or start from one of 840 templates.</p>
+      <ul class="core-list">
+        <li><b>Show-if logic</b><span>Ask only what matters for each lead.</span></li>
+        <li><b>Prices and quotes</b><span>Estimates worked out as they answer.</span></li>
+        <li><b>Payments</b><span>Take deposits with Stripe inside the form.</span></li>
+      </ul>
+      <a class="btn-dark lg" href="#top">Build a form <svg class="arrow"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="core-visual v-green">
+      <div class="v-card">
+        <div class="formcard rl">
+          <h4>Get a free roof estimate</h4>
+          <div class="f-label">What do you need done?</div>
+          <div class="opts"><span class="opt">Repair</span><span class="opt">New roof</span><span class="opt">Inspection</span><span class="opt on">Storm damage</span></div>
+          <div class="dash-box">
+            <div class="f-label" style="margin-top:0">Insurance claim number <em>added by AI</em></div>
+            <div class="f-input">CLM-</div>
+          </div>
+          <div class="f-label">Roof size</div>
+          <div class="f-input" style="color:#333">1,800 sq ft</div>
+          <div class="v-total"><span>Estimate</span><b>$9,300</b></div>
+        </div>
+      </div>
+      <div class="v-note tl"><small><svg><use href="#i-spark"/></svg>Ask AI</small>Add a question about storm damage</div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE: MEETINGS -->
+<section class="core" id="meetings">
+  <div class="wrap core-grid flip">
+    <div class="core-copy">
+      <span class="eyebrow"><svg><use href="#i-cal"/></svg>Meetings</span>
+      <h2>Let leads book before they leave</h2>
+      <p>The calendar opens right inside the form, with the right rep already picked.</p>
+      <ul class="core-list">
+        <li><b>Booking in the form</b><span>Leads pick a time on the same page.</span></li>
+        <li><b>Round robin</b><span>Every lead goes to the right rep.</span></li>
+        <li><b>Calendar sync</b><span>Works with Google Calendar and Outlook.</span></li>
+      </ul>
+      <a class="btn-dark lg" href="#start">See meetings <svg class="arrow"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="core-visual v-blue">
+      <div class="v-card">
+        <div class="m-form">
+          <div class="m-done"><svg><use href="#i-check"/></svg><span>Team size</span><b>11 to 50</b></div>
+          <div class="m-route"><svg><use href="#i-route"/></svg>Sent to <b>Maya Ortiz</b> by round robin</div>
+          <div class="m-pick">
+            <div class="host"><span class="avatar" style="background:#0c8c5e">MO</span><div><b>Intro call with Maya</b><span>30 min · Google Meet</span></div></div>
+            <div class="m-days">
+              <span>Mon<b>16</b></span><span class="on">Tue<b>17</b></span><span>Wed<b>18</b></span><span>Thu<b>19</b></span><span>Fri<b>20</b></span>
+            </div>
+            <div class="m-times"><span>9:00 am</span><span class="on">10:30 am</span><span>11:00 am</span><span>1:00 pm</span></div>
+            <span class="m-confirm">Confirm Tue, Nov 17 at 10:30</span>
+          </div>
+        </div>
+      </div>
+      <div class="v-note br"><small><svg><use href="#i-check"/></svg>Booked</small>Added to Google Calendar</div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE: EMAIL -->
+<section class="core" id="email">
+  <div class="wrap core-grid">
+    <div class="core-copy">
+      <span class="eyebrow"><svg><use href="#i-mail"/></svg>Email marketing</span>
+      <h2>Follow-ups that write themselves</h2>
+      <p>AI writes every email from the lead's answers, in your brand's voice.</p>
+      <ul class="core-list">
+        <li><b>AI follow-ups</b><span>Written from what each lead told you.</span></li>
+        <li><b>Reminders</b><span>Sent a day and an hour before each call.</span></li>
+        <li><b>You approve</b><span>Every AI draft waits for your OK.</span></li>
+      </ul>
+      <a class="btn-dark lg" href="#start">See email templates <svg class="arrow"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="core-visual v-purple">
+      <div class="v-card wide">
+        <div class="draft">
+          <div class="draft-head"><span class="avatar" style="background:#0c8c5e">MO</span><div><b>Maya Ortiz</b><span>to Priya Raman</span></div><span class="ai"><svg><use href="#i-spark"/></svg>Drafted by AI</span></div>
+          <h4>Ideas for your call on Tuesday</h4>
+          <p>Hi Priya, thanks for booking <mark>Tuesday at 10:30</mark>. You said your <mark>team of 11 to 50</mark> wants to <mark>book more demos</mark>, so I'll show how teams your size route every lead in seconds.</p>
+          <div class="draft-acts"><span class="btn-light">Edit</span><span class="btn-green">Approve and send</span></div>
+        </div>
+      </div>
+      <div class="v-note bl"><small><svg><use href="#i-mail"/></svg>Sequence</small>Confirmation sent · 3 more to go</div>
+    </div>
+  </div>
+</section>
+<!-- ONE RECORD (dark) -->
+<section class="record">
+  <div class="wrap rec-grid">
+    <div class="rec-copy">
+      <span class="eyebrow dark"><svg><use href="#i-grid"/></svg>One app</span>
+      <h2>Three tools in, one lead record out</h2>
+      <p>Most teams pay for a form tool, a scheduler and an email tool, then copy leads between them. In Claritia each step shares the same lead, so each one knows what came before.</p>
+      <div class="merge" aria-label="Form tool, scheduler and email tool become Claritia">
+        <div class="old">
+          <span>Form tool</span>
+          <span>Scheduler</span>
+          <span>Email tool</span>
+        </div>
+        <svg class="merge-lines" viewBox="0 0 60 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 18 C 30 18, 30 60, 60 60 M0 60 H60 M0 102 C 30 102, 30 60, 60 60" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4"/></svg>
+        <span class="new"><svg><use href="#mark"/></svg>Claritia</span>
+      </div>
+    </div>
+    <div class="rec-card">
+      <div class="person">
+        <span class="avatar" style="background:#5429d6">PR</span>
+        <div><b>Priya Raman</b><span>Northwind · priya@northwind.co</span></div>
+        <span class="live-dot">Live record</span>
+      </div>
+      <ol class="timeline">
+        <li>
+          <span class="node"><svg><use href="#i-form"/></svg></span>
+          <div><b>Filled out "Book a demo"</b><span>Team of 11 to 50 · Wants more demos from the site</span></div>
+          <time>9:41</time>
+        </li>
+        <li>
+          <span class="node"><svg><use href="#i-cal"/></svg></span>
+          <div><b>Booked an intro call with Maya Ortiz</b><span>Tue, Nov 17 at 10:30 · Sent by round robin</span></div>
+          <time>9:42</time>
+        </li>
+        <li>
+          <span class="node"><svg><use href="#i-mail"/></svg></span>
+          <div><b>Got a prep email written from her answers</b><span>Sequence: Demo booked · 3 more to go</span></div>
+          <time>9:43</time>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="s-head">
+      <span class="eyebrow"><svg><use href="#i-chart"/></svg>Pricing</span>
+      <h2>Plans that grow with you</h2>
+      <p>Pay for each teammate who takes calls. Teammates who only build forms or read answers are always free.</p>
+      <div class="bill" role="group" aria-label="Billing period">
+        <button type="button" data-bill="m" aria-pressed="true">Monthly</button>
+        <button type="button" data-bill="y" aria-pressed="false">Yearly <span class="save">Save 20%</span></button>
+      </div>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <div class="plan-top"><h3>Free</h3></div>
+        <p class="plan-for">For one person who wants to try it</p>
+        <div class="price"><b>$0</b><span>/month</span></div>
+        <p class="seat">1 seat. No card needed.</p>
+        <a class="btn-light plan-btn" href="#start">Start free</a>
+        <p class="inc">All the basics</p>
+        <ul><li><svg><use href="#i-check"/></svg>Unlimited forms</li><li><svg><use href="#i-check"/></svg>250 submissions/month</li><li><svg><use href="#i-check"/></svg>1 calendar per seat</li><li><svg><use href="#i-check"/></svg>100 AI credits/month</li><li><svg><use href="#i-check"/></svg>1,000 workflow emails/month</li><li><svg><use href="#i-check"/></svg>AI form builder</li><li><svg><use href="#i-check"/></svg>Multi-page forms + progress bar</li><li><svg><use href="#i-check"/></svg>Conditional logic and page skips</li><li><svg><use href="#i-check"/></svg>Calculations and formulas</li><li><svg><use href="#i-check"/></svg>File uploads</li><li><svg><use href="#i-check"/></svg>840 form templates</li><li><svg><use href="#i-check"/></svg>Meeting booking inside forms</li><li><svg><use href="#i-check"/></svg>Google Meet, Teams and Zoom links</li><li><svg><use href="#i-check"/></svg>Email reminders a day and an hour before</li></ul>
+      </div>
+      <div class="plan">
+        <div class="plan-top"><h3>Starter</h3></div>
+        <p class="plan-for">For small teams that book calls</p>
+        <div class="price"><s data-y hidden>$15</s><b data-m>$15</b><b data-y hidden>$12</b><span>/seat/month</span></div>
+        <p class="seat">For each teammate who takes calls</p>
+        <a class="btn-dark plan-btn" href="#start">Start free</a>
+        <p class="inc">Everything in Free, plus</p>
+        <ul><li><svg><use href="#i-check"/></svg>Unlimited forms</li><li><svg><use href="#i-check"/></svg>2,000 submissions/month</li><li><svg><use href="#i-check"/></svg>6 calendars per seat</li><li><svg><use href="#i-check"/></svg>500 AI credits/month</li><li><svg><use href="#i-check"/></svg>10,000 workflow emails/month</li><li><svg><use href="#i-check"/></svg>Unlimited meeting types</li><li><svg><use href="#i-check"/></svg>e-Signatures</li><li><svg><use href="#i-check"/></svg>Stripe payment</li><li><svg><use href="#i-check"/></svg>Custom brand</li><li><svg><use href="#i-check"/></svg>Redirect on completion</li><li><svg><use href="#i-check"/></svg>Booking pages for each person and the team</li><li><svg><use href="#i-check"/></svg>Group meetings with a guest limit</li><li><svg><use href="#i-check"/></svg>Meeting polls</li><li><svg><use href="#i-check"/></svg>Paid meetings with Stripe</li></ul>
+      </div>
+      <div class="plan pop">
+        <div class="plan-top"><h3>Pro</h3><span class="most">Most picked</span></div>
+        <p class="plan-for">For teams that share leads</p>
+        <div class="price"><s data-y hidden>$39</s><b data-m>$39</b><b data-y hidden>$31</b><span>/seat/month</span></div>
+        <p class="seat">For each teammate who takes calls</p>
+        <a class="btn-green plan-btn" href="#start">Start free</a>
+        <p class="inc">Everything in Starter, plus</p>
+        <ul><li><svg><use href="#i-check"/></svg>5,000 submissions/month</li><li><svg><use href="#i-check"/></svg>2,000 AI credits/month</li><li><svg><use href="#i-check"/></svg>50,000 workflow emails/month</li><li><svg><use href="#i-check"/></svg>Follow-up emails from your own domain</li><li><svg><use href="#i-check"/></svg>Remove Claritia branding</li><li><svg><use href="#i-check"/></svg>Round robin with weights and priority</li><li><svg><use href="#i-check"/></svg>Meetings with everyone free</li><li><svg><use href="#i-check"/></svg>Team pools</li><li><svg><use href="#i-check"/></svg>Daily and weekly limits for each person</li><li><svg><use href="#i-check"/></svg>No-show follow-up with the reschedule link</li></ul>
+      </div>
+      <div class="plan">
+        <div class="plan-top"><h3>Business</h3></div>
+        <p class="plan-for">For busy teams with lots of leads</p>
+        <div class="price"><s data-y hidden>$79</s><b data-m>$79</b><b data-y hidden>$63</b><span>/seat/month</span></div>
+        <p class="seat">For each teammate who takes calls</p>
+        <a class="btn-dark plan-btn" href="#start">Start free</a>
+        <p class="inc">Everything in Pro, plus</p>
+        <ul><li><svg><use href="#i-check"/></svg>Unlimited submissions</li><li><svg><use href="#i-check"/></svg>5,000 AI credits/month</li><li><svg><use href="#i-check"/></svg>200,000 workflow emails/month</li><li><svg><use href="#i-check"/></svg>Your own domain for forms and booking pages</li><li><svg><use href="#i-check"/></svg>Partial answers</li><li><svg><use href="#i-check"/></svg>Drop-off by question</li><li><svg><use href="#i-check"/></svg>Owner first (the person's owner in your CRM)</li><li><svg><use href="#i-check"/></svg>Double round robin (one from each of two teams)</li><li><svg><use href="#i-check"/></svg>Salesforce</li><li><svg><use href="#i-check"/></svg>Chat help</li></ul>
+      </div>
+    </div>
+    <p class="plans-foot"><a href="#pricing">See every feature and price <svg class="arrow"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-left">
+      <span class="eyebrow"><svg><use href="#i-chat"/></svg>Questions</span>
+      <h2>Still have questions?</h2>
+      <p>We're here to help. Feel free to <a href="#start">book a call</a>.</p>
+      <div class="faq-mail">
+        <span>Can't find what you're looking for? Email us at</span>
+        <b>hello@tryclaritia.com</b>
+      </div>
+    </div>
+    <div class="faq-list">
+      <details class="qa" open>
+        <summary>How is Claritia priced?<span class="pm" aria-hidden="true"></span></summary>
+        <p>Every plan is priced per seat, and a seat is a teammate people can book a meeting with. Free is $0 for one seat. Starter is $15, Pro $39 and Business $79 per seat a month, and paying yearly saves 20%. <a href="#pricing">See every plan</a>.</p>
+      </details>
+      <details class="qa">
+        <summary>How long does setup take?<span class="pm" aria-hidden="true"></span></summary>
+        <p>About 15 minutes. Add the form to your site, connect Google Calendar or Outlook in one click and pick who gets which leads.</p>
+      </details>
+      <details class="qa">
+        <summary>How do I move from Typeform, Calendly or Chili Piper?<span class="pm" aria-hidden="true"></span></summary>
+        <p>Keep the forms you have, or build new ones by chatting with AI or starting from a template. Google Forms import is built in, and Claritia can take answers and bookings from Typeform, Tally, Calendly and Cal.com while you switch.</p>
+      </details>
+      <details class="qa">
+        <summary>How does routing decide who gets a lead?<span class="pm" aria-hidden="true"></span></summary>
+        <p>You set rules from any answer, like team size, ZIP code or budget. Round robin with weights, caps and away days picks the next rep, and the routing log keeps the reason for every decision. Routing is on Pro and Business.</p>
+      </details>
+      <details class="qa">
+        <summary>Does the AI send emails without me checking?<span class="pm" aria-hidden="true"></span></summary>
+        <p>No. AI follow-ups are written from your own content and the lead's answers, and they wait for your approval before they send.</p>
+      </details>
+      <details class="qa">
+        <summary>How does Claritia look after deliverability?<span class="pm" aria-hidden="true"></span></summary>
+        <p>Follow-ups go out from your own domain on Pro and Business, or from your own Gmail or Outlook. Reminders and confirmations go out on their own, a day and an hour before each meeting.</p>
+      </details>
+      <details class="qa">
+        <summary>Does it work with my CRM and calendar?<span class="pm" aria-hidden="true"></span></summary>
+        <p>Yes. Google Calendar and Outlook work on every plan, HubSpot from Starter and Salesforce on Business, plus 70 more tools.</p>
+      </details>
+      <details class="qa">
+        <summary>Will it work for my industry?<span class="pm" aria-hidden="true"></span></summary>
+        <p>Yes. There are 840 form templates for SaaS, agencies, healthcare, real estate, education, fitness, legal and more, and you can describe any form you need.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA (bookends the hero) -->
+<section class="close" id="start">
+  <div class="close-bg" aria-hidden="true"></div>
+  <div class="wrap close-in">
+    <span class="announce"><a href="#top"><b>Free</b><span>One seat, no card needed</span></a></span>
+    <h2>Start free with Claritia</h2>
+    <p>Build your first form, connect your calendar and book your first meeting today.</p>
+    <div class="s-btns">
+      <a class="btn-green lg" href="#top">Start free <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      <a class="btn-light lg" href="#top">Book a demo</a>
+    </div>
+    <div class="close-leads" aria-label="Example leads">
+      <span><i class="avatar" style="background:#5429d6">PR</i>Priya Raman<em class="tag g">Booked</em></span>
+      <span><i class="avatar" style="background:#1e4f9a">JL</i>Jordan Lee<em class="tag g">Booked</em></span>
+      <span><i class="avatar" style="background:#9a3412">LC</i>Laura Chen<em class="tag p">Follow-up</em></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand"><svg><use href="#mark"/></svg>Claritia</div>
+        <p>Forms, scheduling and email marketing in one app.</p>
+      </div>
+      <div><h6>Product</h6><ul><li><a href="#product">Forms</a></li><li><a href="#product">Meetings</a></li><li><a href="#product">Routing</a></li><li><a href="#product">Workflows</a></li></ul></div>
+      <div><h6>Templates</h6><ul><li><a href="#features">Demo request</a></li><li><a href="#features">Quote</a></li><li><a href="#features">Appointment</a></li><li><a href="#features">Registration</a></li></ul></div>
+      <div><h6>Company</h6><ul><li><a href="#pricing">Pricing</a></li><li><a href="#faq">Questions</a></li><li><a href="#integrations">Integrations</a></li><li><a href="#start">Sign in</a></li></ul></div>
+    </div>
+    <p class="demo-note">&copy; 2026 Perceptric. Claritia is a Perceptric product. Brands, people and numbers in the product mocks are examples.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Tabs
+  var tabs = document.querySelectorAll('.tab');
+  function select(tab) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { select(t); });
+    t.addEventListener('keydown', function (e) {
+      var n = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!n) return;
+      var next = tabs[(i + n + tabs.length) % tabs.length];
+      next.focus(); select(next);
+    });
+  });
+
+  // Prompt box
+  var ta = document.getElementById('promptText');
+  var btn = document.getElementById('createBtn');
+  function sync() { btn.classList.toggle('ready', ta.value.trim().length > 0); }
+  ta.addEventListener('input', sync);
+  document.querySelectorAll('.chip').forEach(function (c) {
+    c.addEventListener('click', function () { ta.value = c.dataset.p; sync(); ta.focus(); });
+  });
+  document.getElementById('promptForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = ta.value.trim();
+    if (!v) { ta.focus(); return; }
+    document.getElementById('chatPrompt').textContent = v;
+    select(document.getElementById('t-forms'));
+    document.getElementById('product').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // Accordion
+  var items = document.querySelectorAll('.acc-item');
+  items.forEach(function (it) {
+    it.addEventListener('click', function () {
+      items.forEach(function (x) {
+        var on = x === it;
+        x.setAttribute('aria-expanded', on ? 'true' : 'false');
+        document.getElementById(x.dataset.o).classList.toggle('on', on);
+      });
+    });
+  });
+
+
+  // Billing toggle
+  var billBtns = document.querySelectorAll('.bill button');
+  billBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var y = b.dataset.bill === 'y';
+      billBtns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      document.querySelectorAll('.price [data-m]').forEach(function (e) { e.hidden = y; });
+      document.querySelectorAll('.price [data-y]').forEach(function (e) { e.hidden = !y; });
+    });
+  });
+
+  // Duplicate marquee for a seamless loop
+  var track = document.getElementById('track');
+  Array.prototype.slice.call(track.children).forEach(function (n) {
+    var c = n.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c);
+  });
+})();
+</script>
+
+</body>
+</html>
