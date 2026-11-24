@@ -168,8 +168,8 @@
     'p-route': function (st) {
       var lead = st.querySelector('.h-rt-lead'), mark = lead.querySelector('mark'), line = st.querySelector('.h-rt .h-fline');
       var ifNode = st.querySelector('.h-rt-if'), rows = all(st, '.h-rt-br'), hit = st.querySelector('.h-rt-br.h-hit');
-      var tag = hit.querySelector('.h-tag'), rep = hit.querySelector('.h-rt-rep'), why = st.querySelector('.h-rt-why');
-      [lead, ifNode, why, tag].concat(rows).forEach(hide);
+      var tag = hit.querySelector('.h-tag'), rep = hit.querySelector('.h-rt-rep');
+      [lead, ifNode, tag].concat(rows).forEach(hide);
       line.classList.remove('h-done');
       hit.classList.remove('h-hit');
       mark.classList.add('pt-m');
@@ -192,9 +192,7 @@
       at(t + 220, function () { ifNode.classList.remove('pt-ring'); hit.classList.add('h-hit'); pop(rep); });
       t += 700;
       at(t, function () { show(tag); pop(tag); });
-      t += 450;
-      at(t, function () { show(why); });
-      return t + 900;
+      return t + 1000;
     },
 
     'p-mail': function (st) {
