@@ -174,6 +174,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .h-rl { font-family: "Barlow", var(--font); }
 .h-f-label { font-size: 13px; font-weight: 500; color: var(--nav); margin: 12px 0 6px; display: flex; align-items: baseline; gap: 6px; }
 .h-f-label em { font-style: normal; font-size: 10.5px; font-weight: 500; color: var(--tag-purple-ink); }
+.h-f-input:empty::before { content: "\200b"; }
 .h-f-input { border-radius: var(--r-sm); padding: 7px 10px; font-size: 12.5px; color: #9a9a9a; box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.06); }
 .h-opts { display: flex; flex-wrap: wrap; gap: 6px; }
 .h-opt { border-radius: var(--r-sm); padding: 5px 10px; font-size: 12.5px; color: var(--nav); box-shadow: 0 0 0 1px rgba(0,0,0,.1); }
@@ -309,15 +310,15 @@ table.h-log td small { display: block; color: var(--faint); font-size: 11px; }
 
 /* ---------- Branding ---------- */
 .h-b-grid { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: 20px; align-items: start; }
-.h-acc { display: grid; gap: 12px; }
+.h-acc { display: grid; gap: 12px; margin-top: 28px; }
 .h-acc-item { background: var(--surface); border-radius: var(--r-2xl); box-shadow: var(--sh-rest); text-align: left; width: 100%; transition: box-shadow var(--fast) var(--ease); }
 .h-acc-item:hover { box-shadow: var(--sh-hover); }
 .h-acc-item .h-t { display: flex; align-items: center; gap: 14px; padding: 22px 24px; font-size: 17px; font-weight: 500; letter-spacing: -.01em; color: var(--ink); }
 .h-acc-item .h-t .h-ic { width: 28px; height: 28px; border-radius: var(--r-sm); display: grid; place-items: center; background: var(--surface); box-shadow: var(--sh-chip); flex: none; color: var(--meta); }
 .h-acc-item .h-t .h-ic svg { width: 15px; height: 15px; }
-.h-acc-item .h-d { display: none; padding: 0 24px 24px 66px; font-size: 15px; color: var(--body); line-height: 23px; }
+.h-acc-item .h-d { display: none; padding: 0 24px 24px; font-size: 15px; color: var(--body); line-height: 23px; }
 .h-acc-item .h-d b { color: var(--text); font-weight: 500; }
-.h-acc-item[aria-expanded="true"] .h-d { display: block; }
+.h-acc-item[aria-expanded="true"] .h-d { display: block; animation: rise .3s var(--ease-out); }
 .h-acc-item[aria-expanded="true"] .h-t .h-ic { background: var(--green-50); color: var(--green); box-shadow: 0 0 0 1px var(--green-300); }
 .h-b-stage { background: var(--surface); border-radius: var(--r-3xl); box-shadow: var(--sh-rest); padding: 56px 40px 40px; position: relative; min-height: 560px; overflow: hidden; }
 .h-site-bar { display: flex; align-items: center; gap: 10px; max-width: 420px; border-radius: var(--r-lg); padding: 9px 12px; font-size: 14px; color: var(--nav); box-shadow: var(--sh-outline); }
@@ -332,8 +333,8 @@ table.h-log td small { display: block; color: var(--faint); font-size: 11px; }
 .h-tilt { position: absolute; right: 26px; top: 24px; display: flex; align-items: center; gap: 10px; background: #fff; border-radius: var(--r-lg); padding: 9px 16px 9px 9px; box-shadow: var(--sh-menu); transform: rotate(5deg); font-size: 17px; font-weight: 500; z-index: 3; }
 .h-tilt i { width: 30px; height: 30px; border-radius: var(--r-sm); display: grid; place-items: center; background: var(--green); color: #fff; }
 .h-tilt i svg { width: 16px; height: 16px; }
-.h-overlay { position: absolute; left: 22px; bottom: 26px; width: min(330px, calc(100% - 44px)); background: #fff; border-radius: var(--r-xl); padding: 18px 20px; box-shadow: var(--sh-menu); transform: rotate(-3deg); z-index: 3; font-size: 13.5px; display: none; }
-.h-overlay.h-on { display: block; animation: pop .35s var(--ease-out); }
+.h-overlay { position: absolute; left: 22px; bottom: 26px; width: min(330px, calc(100% - 44px)); background: #fff; border-radius: var(--r-xl); padding: 18px 20px; box-shadow: var(--sh-menu); z-index: 3; font-size: 13.5px; display: none; }
+.h-overlay.h-on { display: block; animation: rise .35s var(--ease-out); }
 @keyframes pop { from { opacity: .4; transform: rotate(-3deg) translateY(10px); } }
 .h-overlay h5 { margin: 0 0 4px; font-size: 16px; }
 .h-overlay .h-muted { color: var(--body); margin-bottom: 12px; }
@@ -456,7 +457,7 @@ table.h-log td small { display: block; color: var(--faint); font-size: 11px; }
 .h-b-field { position: relative; padding: 48px 40px 120px; border-radius: 32px; background: radial-gradient(70% 70% at 60% 40%, rgba(255,240,228,.9), transparent 70%), var(--pills); min-width: 0; }
 .h-b-field .h-site-bar { background: var(--surface); box-shadow: var(--sh-hover); max-width: 380px; }
 .h-b-field .h-b-split { box-shadow: var(--sh-menu); background: #fff; }
-.h-b-field .h-overlay { left: auto; right: 20px; bottom: 24px; transform: rotate(3deg); }
+.h-b-field .h-overlay { left: auto; right: 20px; bottom: 24px; }
 @keyframes pop { from { opacity: .4; transform: rotate(3deg) translateY(10px); } }
 
 /* close: bookend of the hero */
@@ -878,7 +879,7 @@ table.h-log td small { display: block; color: var(--faint); font-size: 11px; }
 .h-bpick button[aria-pressed="true"] span { color: var(--ink); }
 
 /* brand-skinned live form */
-.h-lf { --b-accent: #f26b1d; --b-ink: #b9500f; --b-soft: #fff0e4; --b-text: #1f2328; --b-muted: #5f6368; --b-line: rgba(31,35,40,.16);
+.h-lf { --b-accent: #0c8c5e; --b-ink: #0a7a52; --b-soft: #e3f4ec; --b-text: #171717; --b-muted: #6c6c6d; --b-line: rgba(15,15,15,.12);
   --b-font: "Barlow", sans-serif; --b-head: "Barlow Condensed", sans-serif; --b-head-w: 700; --b-head-tt: uppercase; --b-head-ls: .01em; --b-head-size: 26px;
   --b-r: 4px; --b-br: 4px; --b-btn-shadow: 0 3px 0 #1f2328;
   font-family: var(--b-font); color: var(--b-text); border-radius: calc(var(--b-r) + 8px); transition: border-radius .3s; }
@@ -918,7 +919,7 @@ table.h-log td small { display: block; color: var(--faint); font-size: 11px; }
 .h-lf .h-tick-anim circle, .h-lf .h-tick-anim path { stroke: var(--b-accent); }
 
 /* brand-skinned booking */
-.h-lm { --b-accent: #4f46e5; --acc: var(--b-accent); font-family: var(--b-font, var(--font)); border-radius: calc(var(--b-r, 8px) + 8px); }
+.h-lm { --b-accent: #0c8c5e; --acc: var(--b-accent); font-family: var(--b-font, var(--font)); border-radius: calc(var(--b-r, 8px) + 8px); }
 .h-lm[data-swap="a"] { animation: rise .4s var(--ease-out); }
 .h-lm[data-swap="b"] { animation: rise2 .4s var(--ease-out); }
 .h-lm-logo { display: flex; align-items: center; gap: 7px; font-family: var(--b-head, var(--font)); font-weight: var(--b-head-w, 700); letter-spacing: var(--b-head-ls, 0); font-size: 16px; color: var(--b-text, var(--ink)); }
@@ -974,6 +975,53 @@ img.h-avatar, img.h-lw-av { object-fit: cover; display: block; }
 
 html:not(.js) .h-bill { display: none; }
 main.h-home { overflow-x: clip; }
+
+/* ---------- Home motion: Branding scan, lead record (assets/home-motion.js) ---------- */
+.h-demo.h-nopick { padding-top: 40px; }
+.h-timeline li { padding: 16px 0; }
+.h-timeline li:not(:last-child)::after { top: 56px; bottom: -14px; }
+.h-rec-sync { display: flex; align-items: center; gap: 10px; margin-top: 6px; padding-top: 18px; border-top: 1px solid var(--dark-line); font-size: 14px; color: var(--dark-body); }
+.h-rec-sync svg { width: 16px; height: 16px; color: var(--green-300); flex: none; }
+.h-rec-sync b { color: #fff; font-weight: 500; }
+.h-person .h-live-dot.hm-pulse::before { animation: ping 1.8s var(--ease-out) infinite; }
+.h-site-bar .hm-url { color: var(--nav); }
+.h-site-bar .hm-url:empty::before { content: "yourwebsite.com"; color: var(--faint); }
+.h-site-bar .hm-st { margin-left: auto; display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: var(--meta); white-space: nowrap; }
+.hm-spin { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--line-strong); border-top-color: var(--green); animation: hm-rot .8s linear infinite; }
+@keyframes hm-rot { to { transform: rotate(360deg); } }
+.hm-site { position: absolute; z-index: 2; overflow: hidden; background: #fff; border-radius: var(--r-xl); box-shadow: var(--sh-menu); font-family: "Barlow", var(--font); color: #1f2328; transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out); }
+.hm-site.hm-gone { opacity: 0; transform: scale(.97); }
+.hm-nav { display: flex; align-items: center; gap: 18px; padding: 15px 22px; border-bottom: 1px solid #eeebe7; }
+.hm-logo { display: inline-flex; align-items: center; gap: 8px; font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; font-size: 19px; letter-spacing: .02em; text-transform: uppercase; }
+.hm-logo svg { width: 22px; height: 22px; }
+.hm-logo span { color: #f26b1d; }
+.hm-links { display: flex; gap: 14px; margin-left: auto; }
+.hm-links i { width: 42px; height: 8px; border-radius: 4px; background: #ebe8e4; }
+.hm-cta { background: #1f2328; color: #fff; font-weight: 600; font-size: 12px; padding: 7px 12px; border-radius: 6px; white-space: nowrap; }
+.hm-hero { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); min-height: 300px; }
+.hm-copy { padding: 30px 24px; background: #f6f4f1; }
+.hm-copy h6 { margin: 0; font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; font-size: 32px; line-height: .95; text-transform: uppercase; letter-spacing: .01em; }
+.hm-copy p { margin: 12px 0 16px; font-size: 14px; line-height: 21px; color: #5b5f64; max-width: 260px; }
+.hm-btn { display: inline-block; background: #f26b1d; color: #fff; font-weight: 600; font-size: 14px; padding: 10px 16px; border-radius: 6px; }
+.hm-photo { position: relative; background: linear-gradient(160deg, #3a3f45 0%, #1f2328 100%); }
+.hm-photo svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hm-beam { position: absolute; left: 0; right: 0; top: 0; height: 90px; z-index: 4; pointer-events: none; transform: translateY(-90px); background: linear-gradient(rgba(12,140,94,0), rgba(12,140,94,.16)); border-bottom: 2px solid var(--green); box-shadow: 0 8px 24px rgba(12,140,94,.35); }
+.hm-beam.hm-run { transition: transform 2400ms linear; }
+.hm-pick { position: absolute; z-index: 3; border: 1.5px dashed var(--green); border-radius: 6px; background: rgba(12,140,94,.06); opacity: 0; transform: scale(1.06); transition: opacity 250ms var(--ease), transform 300ms var(--ease-out); pointer-events: none; }
+.hm-pick.hm-on { opacity: 1; transform: none; }
+.hm-pick.hm-off { opacity: 0; }
+.hm-pick b { position: absolute; left: calc(100% + 8px); top: 50%; transform: translateY(-50%); white-space: nowrap; background: var(--green-strong); color: #fff; font: 500 11px/1 var(--font); padding: 5px 7px; border-radius: 5px; box-shadow: 0 4px 12px -4px rgba(0,0,0,.3); }
+.hm-pick.hm-left b { left: auto; right: calc(100% + 8px); }
+.hm-pick.hm-corner b { left: auto; right: 4px; top: 0; transform: translateY(-60%); }
+.h-sw div.hm-hide { opacity: 0; transform: translateY(4px); }
+.h-sw div { transition: opacity 300ms var(--ease-out), transform 300ms var(--ease-out); }
+@media (max-width: 640px) {
+  .hm-hero { grid-template-columns: 1fr; min-height: 0; }
+  .hm-photo { min-height: 200px; }
+  .hm-pick b, .hm-pick.hm-left b { left: auto; right: 4px; top: 0; transform: translateY(-60%); }
+  .hm-links { display: none; }
+  .hm-copy h6 { font-size: 28px; }
+}
 
 /* ---------- Workflow panels: Routing and Follow-ups tabs ---------- */
 .h-flow { flex: 1; padding: 20px 22px; display: flex; flex-direction: column; align-items: center; background: radial-gradient(circle, #e4e4de 1px, transparent 1.4px) 0 0 / 18px 18px, var(--surface); }
@@ -1578,11 +1626,7 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
       </ul>
       <a class="h-btn-dark h-lg" href="https://app.tryclaritia.com/signup">Build a form <svg class="h-arrow"><use href="#i-arrow"/></svg></a>
     </div>
-    <div class="h-core-visual h-v-green h-demo">
-      <div class="h-bp-wrap">
-        <span class="h-bp-label">Pick a brand</span>
-        <div class="h-bpick" id="lfBrands" aria-label="Pick a brand for the form"></div>
-      </div>
+    <div class="h-core-visual h-v-green h-demo h-nopick">
       <div class="h-lf" id="lf" data-stage="form">
         <div class="h-lf-head"><h4 id="lfTitle">Get a free roof estimate</h4><span class="h-lf-logo" id="lfLogo">Ridgeline</span></div>
         <div class="h-lf-body">
@@ -1637,11 +1681,7 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
       </ul>
       <a class="h-btn-dark h-lg" href="/products/meetings">See meetings <svg class="h-arrow"><use href="#i-arrow"/></svg></a>
     </div>
-    <div class="h-core-visual h-v-blue h-demo">
-      <div class="h-bp-wrap">
-        <span class="h-bp-label">Pick a brand</span>
-        <div class="h-bpick" id="lmBrands" aria-label="Pick a brand for the booking page"></div>
-      </div>
+    <div class="h-core-visual h-v-blue h-demo h-nopick">
       <div class="h-lm" id="lm" data-stage="pick">
         <div class="h-lm-logo" id="lmLogo">Northwind</div>
         <div class="h-lm-route">
@@ -1728,9 +1768,9 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
 <section class="h-record">
   <div class="h-wrap h-rec-grid">
     <div class="h-rec-copy">
-      <span class="h-eyebrow h-dark"><svg><use href="#i-grid"/></svg>One app</span>
-      <h2>Three tools in, one lead record out</h2>
-      <p>Most teams pay for a form tool, a scheduler and an email tool, then copy leads between them. In Claritia each step shares the same lead, so each one knows what came before.</p>
+      <span class="h-eyebrow h-dark"><svg><use href="#i-grid"/></svg>Lead record</span>
+      <h2>Every lead shows up with the full story</h2>
+      <p>Their answers, their company, the rep they were sent to, the meeting and every email land on one record. Your rep walks into the call already knowing what matters, and your CRM gets the same story.</p>
       <div class="h-merge" aria-label="Form tool, scheduler and email tool become Claritia">
         <div class="h-old">
           <span>Form tool</span>
@@ -1754,16 +1794,27 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
           <time>9:41</time>
         </li>
         <li>
+          <span class="h-node"><svg><use href="#i-globe"/></svg></span>
+          <div><b>Company found: Northwind</b><span>Software · 45 people · Denver</span></div>
+          <time>9:41</time>
+        </li>
+        <li>
+          <span class="h-node"><svg><use href="#i-route"/></svg></span>
+          <div><b>Sent to Maya Ortiz</b><span>Round robin · Sales, North America</span></div>
+          <time>9:41</time>
+        </li>
+        <li>
           <span class="h-node"><svg><use href="#i-cal"/></svg></span>
-          <div><b>Booked an intro call with Maya Ortiz</b><span>Tue, Nov 17 at 10:30 · Sent by round robin</span></div>
+          <div><b>Booked an intro call</b><span>Tue, Nov 17 at 10:30 · Google Meet</span></div>
           <time>9:42</time>
         </li>
         <li>
           <span class="h-node"><svg><use href="#i-mail"/></svg></span>
-          <div><b>Got a prep email written from her answers</b><span>Sequence: Demo booked · 3 more to go</span></div>
+          <div><b>Got a prep email written from her answers</b><span>Approved by Maya · 3 more in the workflow</span></div>
           <time>9:43</time>
         </li>
       </ol>
+      <div class="h-rec-sync"><svg><use href="#i-check"/></svg><span><b>Synced to HubSpot</b> · Contact, company and meeting</span></div>
     </div>
   </div>
 </section>
@@ -1912,6 +1963,7 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
 
 <script src="/assets/site.js?v=9" defer></script>
 <script src="/assets/product-tabs.js?v=3" defer></script>
+<script src="/assets/home-motion.js?v=1" defer></script>
 <script>
 (function () {
   // Tabs (all panels show without JavaScript)
@@ -1978,7 +2030,7 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
 
 
   // ---------- Live demos ----------
-  var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = /[?&]still=/.test(location.search) || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
   function pressOne(group, btn) {
     group.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
@@ -1996,6 +2048,18 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
   // Example brands (made up), each with its own colors, type, corners, questions, people and prices
   var AV = { w26: '/assets/demo/women-26.jpg', w44: '/assets/demo/women-44.jpg', w65: '/assets/demo/women-65.jpg', w68: '/assets/demo/women-68.jpg', w90: '/assets/demo/women-90.jpg', m32: '/assets/demo/men-32.jpg', m46: '/assets/demo/men-46.jpg', m75: '/assets/demo/men-75.jpg' };
   var BRANDS = [
+    { id: 'claritia', name: 'Claritia', short: 'Claritia',
+      logo: '<svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="13" fill="currentColor"/><rect x="9" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="10" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="9" y="20.5" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="20.5" width="13" height="7" rx="3.5" fill="#fff"/><rect x="9" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/><rect x="26" y="31" width="13" height="7" rx="3.5" fill="#fff" fill-opacity=".32"/></svg>',
+      color: { accent: '#0c8c5e', ink: '#0a7a52', soft: '#e3f4ec', text: '#171717', muted: '#6c6c6d', line: 'rgba(15,15,15,.12)' },
+      font: { body: '"Inter",sans-serif', head: '"Inter",sans-serif', w: '600', tt: 'none', ls: '-.03em', size: '22px' },
+      shape: { r: '10px', br: '999px', shadow: '0 0 0 1px rgba(0,0,0,.12), 0 2px 6px rgba(0,0,0,.1)' },
+      form: { title: 'Book a Claritia demo', q: 'How big is your team?', opts: ['Just me', '2 to 10', '11 to 50', '51 or more'], confirm: 'Start Pro' },
+      logic: [{ q: 'What do you want first?', opts: ['Forms', 'Booking', 'Both'] }, { q: 'Do you use a CRM today?', opts: ['HubSpot', 'Salesforce', 'None'] }, { q: 'How many reps share leads?', opts: ['2 to 5', '6 to 20', '21 or more'] }, { q: 'Do you need Salesforce?', opts: ['Yes', 'Not yet'] }],
+      calc: { label: 'Seats on Pro', min: 1, max: 50, step: 1, val: 10, show: function (v) { return v + (v > 1 ? ' seats' : ' seat'); }, total: function (v) { return money(v * 39) + ' / month'; }, note: 'Pro is $39 a seat a month.' },
+      pay: function (v) { return [v * 39, 'First month of Pro']; },
+      reps: [{ n: 'Maya Ortiz', av: 'w44' }, { n: 'Lena Koch', av: 'w68' }, { n: 'Sam Brooks', av: 'm32' }], pick: 0,
+      meet: 'Product demo · 30 min', where: 'Google Meet', rule: 'Teams of 11 to 50 go to Sales, North America',
+      booked: "You're booked" },
     { id: 'ridge', name: 'Ridgeline Roofing', short: 'Ridgeline',
       logo: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 13L12 4l10 9" stroke="currentColor" stroke-width="3" fill="none"/><rect x="6" y="13" width="12" height="8" fill="currentColor"/></svg>',
       color: { accent: '#f26b1d', ink: '#b9500f', soft: '#fff0e4', text: '#1f2328', muted: '#5f6368', line: 'rgba(31,35,40,.16)' },
@@ -2065,7 +2129,43 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
     for (var k in v) el.style.setProperty(k, v[k]);
     el.dataset.swap = el.dataset.swap === 'a' ? 'b' : 'a';
   }
+  // A fake cursor that plays a demo once. A real click inside the demo stops it.
+  function demoCursor(box) {
+    var c = document.createElement('span'), timers = [], stopped = false;
+    c.className = 'pt-cursor';
+    c.setAttribute('aria-hidden', 'true');
+    c.innerHTML = '<svg viewBox="0 0 17 20"><path d="M1 1 L1 15.5 L4.8 12 L7.5 18 L10 17 L7.4 11.2 L12.5 11 Z"/></svg>';
+    box.appendChild(c);
+    function at(ms, fn) { timers.push(setTimeout(function () { if (!stopped) fn(); }, ms)); }
+    function place(el) {
+      var b = box.getBoundingClientRect(), r = el.getBoundingClientRect();
+      c.style.transform = 'translate(' + (r.left - b.left + r.width * .55) + 'px,' + (r.top - b.top + r.height * .6) + 'px)';
+    }
+    function move(get) {
+      var el = get(); if (!el) return;
+      if (!c.classList.contains('pt-on')) {
+        c.style.transition = 'none';
+        c.style.transform = 'translate(' + box.offsetWidth * .8 + 'px,' + box.offsetHeight * .95 + 'px)';
+        void c.offsetWidth; c.style.transition = ''; c.classList.add('pt-on');
+        setTimeout(function () { place(el); }, 30);
+      } else place(el);
+    }
+    function stop() { stopped = true; timers.forEach(clearTimeout); timers = []; c.classList.remove('pt-on'); }
+    box.addEventListener('pointerdown', function (e) { if (e.isTrusted) stop(); }, true);
+    return {
+      at: at,
+      move: function (ms, get) { at(ms, function () { move(get); }); },
+      click: function (ms, get) {
+        at(ms, function () { move(get); });
+        at(ms + 650, function () { var el = get(); if (!el) return; c.classList.add('pt-down'); el.click(); });
+        at(ms + 810, function () { c.classList.remove('pt-down'); });
+      },
+      hide: function (ms) { at(ms, function () { c.classList.remove('pt-on'); }); },
+      stopped: function () { return stopped; }
+    };
+  }
   function picker(box, startId, onPick) {
+    if (!box) return;
     box.innerHTML = BRANDS.map(function (b) {
       return '<button type="button" data-bp="' + b.id + '" aria-pressed="' + (b.id === startId) + '" style="color:' + b.color.accent + '">' + b.logo + '<span>' + esc(b.short) + '</span></button>';
     }).join('');
@@ -2080,7 +2180,7 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
   (function () {
     var lf = document.getElementById('lf');
     if (!lf) return;
-    var brand = BRANDS[0], opt = 3, v = 2000;
+    var brand = BRANDS[0], opt = 2, v = 10;
     var $ = function (id) { return document.getElementById(id); };
     var range = $('lfSize');
     function renderFollow() {
@@ -2102,7 +2202,7 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
       if (bump) { var t = $('lfTotal'); t.dataset.bump = t.dataset.bump === 'a' ? 'b' : 'a'; }
     }
     function apply(b) {
-      brand = b; opt = b.id === 'ridge' ? 3 : (b.id === 'north' ? 2 : 1);
+      brand = b; opt = b.id === 'ridge' ? 3 : (b.id === 'north' || b.id === 'claritia' ? 2 : 1);
       skin(lf, b);
       $('lfTitle').textContent = b.form.title;
       $('lfLogo').innerHTML = b.logo + '<span>' + esc(b.short) + '</span>';
@@ -2131,12 +2231,23 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
     apply(brand);
     onView(lf, function () {
       if (still) return;
-      setTimeout(function () {
+      var a = demoCursor(lf);
+      function job(i) { return function () { return $('lfJob').querySelectorAll('button')[i]; }; }
+      a.click(500, job(1));                                  // 2 to 10: the show-if question changes
+      a.click(1700, job(2));                                 // 11 to 50: it changes again
+      a.click(2900, function () { return $('lfFollow').querySelectorAll('button')[1]; });
+      a.move(4000, function () { return range; });
+      a.at(4500, function () {                               // drag the seats up, the price follows
         var s = +range.value, end = Math.min(+range.max, s + 6 * +range.step), iv = setInterval(function () {
+          if (a.stopped()) return clearInterval(iv);
           s += +range.step; range.value = s; range.dispatchEvent(new Event('input'));
           if (s >= end) clearInterval(iv);
         }, 110);
-      }, 900);
+      });
+      a.click(5600, function () { return $('lfPay'); });     // to the Stripe step
+      a.click(7000, function () { return $('lfPayNow'); });  // pay, then the done screen
+      a.hide(8000);
+      a.at(11500, function () { lf.dataset.stage = 'form'; });
     });
   })();
 
@@ -2145,7 +2256,7 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
     var lm = document.getElementById('lm');
     if (!lm) return;
     var $ = function (id) { return document.getElementById(id); };
-    var brand = BRANDS[1], day = 'Tue, Nov 17', time = '10:30 am', timer = 0;
+    var brand = BRANDS[0], day = 'Tue, Nov 17', time = '10:30 am', timer = 0;
     function label() { $('lmConfirm').textContent = 'Confirm ' + day + ' at ' + time; }
     function route() {
       var reps = lm.querySelectorAll('#lmReps [data-rep]');
@@ -2195,7 +2306,16 @@ tr.pt-slide { transition: transform 420ms var(--ease-out); }
     });
     $('lmReset').addEventListener('click', function () { lm.dataset.stage = 'pick'; });
     apply(brand, false);
-    onView(lm, route);
+    onView(lm, function () {
+      route();
+      if (still) return;
+      var a = demoCursor(lm);
+      a.click(2000, function () { return $('lmDays').querySelectorAll('button')[2]; });   // Wed 18
+      a.click(3200, function () { return $('lmTimes').querySelectorAll('button')[2]; });  // 11:00 am
+      a.click(4400, function () { return $('lmConfirm'); });                               // booked
+      a.hide(5300);
+      a.at(9000, function () { lm.dataset.stage = 'pick'; });
+    });
   })();
 
   // Email workflow: steps light up in order, the AI email types itself
