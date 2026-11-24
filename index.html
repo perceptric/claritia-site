@@ -974,6 +974,62 @@ img.h-avatar, img.h-lw-av { object-fit: cover; display: block; }
 
 html:not(.js) .h-bill { display: none; }
 main.h-home { overflow-x: clip; }
+
+/* ---------- Product tab animations (assets/product-tabs.js) ---------- */
+.h-tab { position: relative; }
+.pt-prog { position: absolute; left: 24%; right: 24%; bottom: 5px; height: 2px; border-radius: 2px; background: var(--green); opacity: 0; transform: scaleX(0); transform-origin: 0 50%; pointer-events: none; }
+.pt-prog.pt-run { opacity: .85; transform: scaleX(1); transition-property: transform; transition-timing-function: linear; }
+.h-window { position: relative; }
+.pt-a { transition: opacity 420ms var(--ease-out), transform 420ms var(--ease-out), filter 420ms var(--ease-out); }
+.pt-hide { opacity: 0; transform: translateY(6px); filter: blur(2px); }
+.pt-pop { animation: pt-pop 420ms var(--ease-out); }
+@keyframes pt-pop { 0% { transform: scale(.7); } 60% { transform: scale(1.06); } 100% { transform: none; } }
+.pt-caret::after { content: ""; display: inline-block; width: 1.5px; height: 1em; margin-left: 1px; vertical-align: -2px; background: currentColor; animation: pt-blink 1s steps(1) infinite; }
+@keyframes pt-blink { 50% { opacity: 0; } }
+.pt-cursor { position: absolute; left: 0; top: 0; z-index: 6; pointer-events: none; opacity: 0; transition: transform 560ms var(--ease-out), opacity 200ms var(--ease); }
+.pt-cursor.pt-on { opacity: 1; }
+.pt-cursor svg { display: block; width: 20px; height: 24px; fill: #151515; stroke: #fff; stroke-width: 1.3; stroke-linejoin: round; filter: drop-shadow(0 2px 3px rgba(0,0,0,.25)); transform-origin: 0 0; transition: transform 120ms var(--ease); }
+.pt-cursor.pt-down svg { transform: scale(.8); }
+/* forms */
+.h-chat .h-ask .pt-typed { color: var(--ink); }
+.h-highlight { transition: outline-color 300ms var(--ease); }
+.h-highlight.pt-nohl { outline-color: transparent; }
+.h-highlight.pt-glow { animation: pt-glow 900ms var(--ease-out); }
+@keyframes pt-glow { 0% { outline-offset: 10px; } 100% { outline-offset: 4px; } }
+/* meetings */
+.h-slot.pt-booked { background: var(--green); color: #fff; box-shadow: none; font-weight: 600; }
+.pt-toast { position: absolute; right: 16px; top: 62px; z-index: 5; display: flex; align-items: center; gap: 8px; background: var(--surface); border-radius: var(--r-lg); padding: 9px 13px; font-size: 12.5px; font-weight: 500; box-shadow: var(--sh-rest); }
+.pt-toast svg { width: 15px; height: 15px; fill: none; stroke: var(--green); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+/* routing */
+.h-rule { transition: box-shadow 300ms var(--ease); }
+.h-rule.pt-flash { animation: pt-flash 1200ms var(--ease-out); }
+@keyframes pt-flash { 0%, 40% { box-shadow: 0 0 0 1.5px var(--green), 0 0 0 6px var(--green-100); } 100% { box-shadow: 0 0 0 1px var(--line); } }
+.pt-lead { position: absolute; z-index: 5; display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; background: var(--surface); border-radius: var(--r-pill); padding: 5px 11px; font-size: 12px; font-weight: 500; box-shadow: var(--sh-pill); }
+.pt-lead i { width: 7px; height: 7px; border-radius: 50%; background: var(--tag-blue-ink); }
+.pt-lead.pt-gone { opacity: 0; transform: translateY(16px) scale(.6); }
+.h-rep { transition: box-shadow 260ms var(--ease); }
+.h-rep.pt-focus { box-shadow: 0 0 0 2px var(--green); }
+.h-tag.pt-shake { animation: pt-shake 500ms var(--ease); }
+@keyframes pt-shake { 20%, 60% { transform: translateX(-3px); } 40%, 80% { transform: translateX(3px); } }
+tr.pt-rowin td { animation: pt-row 1600ms var(--ease-out); }
+@keyframes pt-row { 0% { background: var(--green-100); opacity: 0; } 25% { opacity: 1; } 100% { background: transparent; } }
+tr.pt-slide { transition: transform 420ms var(--ease-out); }
+/* follow-ups */
+.h-win-head .h-pill.pt-shimmer { background: linear-gradient(110deg, var(--green-100) 30%, #fff 50%, var(--green-100) 70%) 0 0 / 220% 100%; animation: pt-shimmer 1.1s linear infinite; }
+@keyframes pt-shimmer { from { background-position: 100% 0; } to { background-position: -120% 0; } }
+.pt-wd { opacity: 0; transition: opacity 220ms var(--ease); }
+.pt-wd.pt-on { opacity: 1; }
+.h-email .h-msg mark.pt-m { background: linear-gradient(var(--green-100), var(--green-100)) no-repeat 0 0 / 0% 100%; transition: background-size 520ms var(--ease-out); }
+.h-email .h-msg mark.pt-m.pt-on { background-size: 100% 100%; }
+.h-email .h-acts span.h-go.pt-sent { background: var(--green); }
+/* analytics */
+.pt-bars .h-bar-fill { transition: width 600ms var(--ease-out), background-color 300ms var(--ease); }
+.h-bar-row.pt-pulse .h-bar-track { animation: pt-pulse 900ms var(--ease-out); }
+@keyframes pt-pulse { 0% { box-shadow: 0 0 0 0 rgba(242,107,29,.45); } 100% { box-shadow: 0 0 0 7px rgba(242,107,29,0); } }
+.h-hint { transition: background-color 300ms var(--ease), color 300ms var(--ease); }
+.h-hint.pt-good { background: var(--green-100); color: var(--green-ink); }
+.pt-fix { margin-left: auto; flex: none; background: var(--surface); color: inherit; border-radius: var(--r-pill); padding: 3px 10px; font-weight: 600; font-size: 12px; box-shadow: 0 0 0 1px rgba(0,0,0,.08); white-space: nowrap; }
+.pt-fix.pt-done { background: var(--green); color: #fff; box-shadow: none; }
 </style>
 <script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.documentElement.classList.contains("rv-on"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("is-in")})},2500);</script>
 </head>
@@ -1798,26 +1854,29 @@ main.h-home { overflow-x: clip; }
 </footer>
 
 <script src="/assets/site.js?v=9" defer></script>
+<script src="/assets/product-tabs.js?v=1" defer></script>
 <script>
 (function () {
   // Tabs (all panels show without JavaScript)
   document.querySelectorAll('[data-tabhide]').forEach(function (p) { p.hidden = true; });
   var tabs = document.querySelectorAll('.h-tab');
-  function select(tab) {
+  function select(tab, byUser) {
     tabs.forEach(function (t) {
       var on = t === tab;
       t.setAttribute('aria-selected', on ? 'true' : 'false');
       t.tabIndex = on ? 0 : -1;
       document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
     });
+    if (window.hTabMotion) window.hTabMotion.onSelect(tab, byUser);
   }
+  window.hSelectTab = function (tab) { select(tab, false); };
   tabs.forEach(function (t, i) {
-    t.addEventListener('click', function () { select(t); });
+    t.addEventListener('click', function () { select(t, true); });
     t.addEventListener('keydown', function (e) {
       var n = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
       if (!n) return;
       var next = tabs[(i + n + tabs.length) % tabs.length];
-      next.focus(); select(next);
+      next.focus(); select(next, true);
     });
   });
 
