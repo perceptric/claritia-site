@@ -124,11 +124,10 @@
       var days = all(st, '.h-cal-grid .h-d'), sel = st.querySelector('.h-cal-grid .h-sel');
       var open = days.filter(function (d) { return d.classList.contains('h-av') || d === sel; });
       var slotKids = [].slice.call(st.querySelector('.h-slots').children), pick = st.querySelector('.h-slot.h-pick');
-      var types = all(st, '.h-mtype'), pickHTML = pick.innerHTML;
+      var pickHTML = pick.innerHTML;
       hide(host);
       open.forEach(function (d) { d.classList.remove('h-av', 'h-sel'); });
       slotKids.forEach(hide);
-      types.forEach(hide);
       pick.classList.remove('h-pick');
       pick.textContent = '10:30 am';
       var toast = document.createElement('div');
@@ -163,123 +162,96 @@
       t += 300;
       at(t, function () { show(toast); });
       c.hide(t + 250);
-      t += 500;
-      types.forEach(function (m, i) { at(t + i * 110, function () { show(m); }); });
-      return t + types.length * 110 + 400;
+      return t + 900;
     },
 
     'p-route': function (st) {
-      var win = st.querySelector('.h-window'), rule = st.querySelector('.h-rule');
-      var reps = all(st, '.h-rep'), tags = reps.map(function (r) { return r.querySelector('.h-tag'); });
-      var rows = all(st, '.h-log tbody tr');
-      [].slice.call(rule.childNodes).forEach(function (n) {
-        if (n.nodeType === 3 && n.textContent.trim()) {
-          var s = document.createElement('span');
-          s.textContent = n.textContent;
-          rule.replaceChild(s, n);
-        }
-      });
-      var words = [].slice.call(rule.children).slice(1); // "If" stays
-      words.forEach(hide);
-      hide(tags[0]);
-      hide(tags[1]);
-      rows[0].style.display = 'none';
-      var lead = document.createElement('div');
-      lead.className = 'pt-lead';
-      lead.innerHTML = '<i></i>New lead: Priya Raman · 11 to 50';
-      hide(lead);
-      win.appendChild(lead);
+      var lead = st.querySelector('.h-rt-lead'), mark = lead.querySelector('mark'), line = st.querySelector('.h-rt .h-fline');
+      var ifNode = st.querySelector('.h-rt-if'), rows = all(st, '.h-rt-br'), hit = st.querySelector('.h-rt-br.h-hit');
+      var tag = hit.querySelector('.h-tag'), rep = hit.querySelector('.h-rt-rep');
+      [lead, ifNode, tag].concat(rows).forEach(hide);
+      line.classList.remove('h-done');
+      hit.classList.remove('h-hit');
+      mark.classList.add('pt-m');
 
       var t = 200;
-      words.forEach(function (w, i) { at(t + i * 170, function () { show(w); }); });
-      t += words.length * 170 + 350;
-      at(t, function () {
-        var w = win.getBoundingClientRect(), r = rule.getBoundingClientRect();
-        lead.style.left = (r.right - w.left - lead.offsetWidth - 12) + 'px';
-        lead.style.top = (r.top - w.top - lead.offsetHeight / 2) + 'px';
-        show(lead);
-      });
-      t += 800;
-      at(t, function () { lead.classList.add('pt-gone'); rule.classList.add('pt-flash'); });
-      t += 500;
-      at(t, function () { reps[2].classList.add('pt-focus'); });
+      at(t, function () { show(lead); });
+      t += 450;
+      at(t, function () { mark.classList.add('pt-on'); });
+      t += 350;
+      at(t, function () { line.classList.add('h-done'); });
       t += 300;
-      at(t, function () { tags[2].classList.add('pt-shake'); });
-      t += 500;
-      at(t, function () { reps[2].classList.remove('pt-focus'); reps[0].classList.add('pt-focus'); });
-      t += 300;
-      at(t, function () { show(tags[0]); pop(tags[0]); });
-      t += 400;
-      at(t, function () { show(tags[1]); pop(tags[1]); });
-      t += 550;
-      at(t, function () {
-        rows[0].style.display = '';
-        rows[0].classList.add('pt-rowin');
-        var h = rows[0].offsetHeight;
-        rows.slice(1).forEach(function (r) { r.style.transition = 'none'; r.style.transform = 'translateY(' + -h + 'px)'; });
-        void rows[0].offsetWidth;
-        rows.slice(1).forEach(function (r) { r.style.transition = ''; r.classList.add('pt-slide'); r.style.transform = ''; });
+      at(t, function () { show(ifNode); ifNode.classList.add('pt-ring'); });
+      t += 350;
+      rows.forEach(function (r, i) { at(t + i * 150, function () { show(r); }); });
+      t += rows.length * 150 + 350;
+      rows.forEach(function (r, i) {
+        if (r === hit) return;
+        at(t + i * 220, function () { r.classList.add('pt-skip'); });
       });
-      at(t + 1400, function () { reps[0].classList.remove('pt-focus'); });
-      return t + 1500;
+      at(t + 220, function () { ifNode.classList.remove('pt-ring'); hit.classList.add('h-hit'); pop(rep); });
+      t += 700;
+      at(t, function () { show(tag); pop(tag); });
+      return t + 1000;
     },
 
     'p-mail': function (st) {
-      var win = st.querySelector('.h-window'), pill = st.querySelector('.h-win-head .h-pill');
-      var heads = all(st, '.h-email .h-row'), msg = st.querySelector('.h-msg'), acts = st.querySelector('.h-acts');
-      var edit = acts.children[0], go = acts.querySelector('.h-go');
-      var seq = all(st, '.h-seq > div'), prep = seq[1] && seq[1].querySelector('.h-tag');
-      var words = [], marks = [];
-      (function split(node) {
-        [].slice.call(node.childNodes).forEach(function (n) {
-          if (n === acts) return;
-          if (n.nodeType === 3) {
-            var frag = document.createDocumentFragment();
-            n.textContent.split(/(\s+)/).forEach(function (w) {
-              if (!w) return;
-              if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
-              var s = document.createElement('span');
-              s.className = 'pt-wd';
-              s.textContent = w;
-              frag.appendChild(s);
-              words.push(s);
-            });
-            node.replaceChild(frag, n);
-          } else if (n.tagName === 'MARK') {
-            n.classList.add('pt-m');
-            n.setAttribute('data-w', words.length);
-            marks.push(n);
-            split(n);
-          }
-        });
-      })(msg);
-      heads.forEach(hide);
-      hide(acts);
-      seq.forEach(hide);
-      if (prep) hide(prep);
+      var win = st.querySelector('.h-window'), flow = st.querySelector('.h-wf');
+      var nodes = all(flow, ':scope > .h-fnode'), lines = all(flow, '.h-fline'), pair = all(flow, '.h-fpair .h-fnode');
+      var split = flow.querySelector('.h-fsplit');
+      var tags = nodes.map(function (n) { return n.querySelector(':scope > .h-tag'); });
+      var ai = nodes[2], aiSmall = ai.querySelector('small'), aiTag = tags[2], aiText = aiSmall.textContent;
+      var waitNode = nodes[3];
+      nodes.concat(pair).forEach(function (n) { n.classList.add('pt-dim'); });
+      split.classList.add('pt-dim');
+      tags.forEach(function (g) { if (g) hide(g); });
+      lines.forEach(function (l) { l.classList.remove('h-done'); });
       var c = cursor(win);
+      function light(i, ms) { at(ms, function () { nodes.forEach(function (n) { n.classList.remove('pt-ring'); }); nodes[i].classList.remove('pt-dim'); nodes[i].classList.add('pt-ring'); pop(nodes[i]); }); }
+      function tagTo(g, text, tone, ms) {
+        at(ms, function () { g.textContent = text; g.className = 'h-tag' + (tone ? ' ' + tone : '') + ' pt-a'; pop(g); });
+      }
 
       var t = 200;
-      at(t, function () { show(heads[0]); });
-      at(t + 150, function () { show(heads[1]); });
-      t += 450;
-      at(t, function () { pill.classList.add('pt-shimmer'); });
-      words.forEach(function (w, i) { at(t + i * 26, function () { w.classList.add('pt-on'); }); });
-      marks.forEach(function (m) { at(t + (+m.getAttribute('data-w')) * 26 + 60, function () { m.classList.add('pt-on'); }); });
-      t += words.length * 26 + 250;
-      at(t, function () { pill.classList.remove('pt-shimmer'); show(acts); });
-      seq.forEach(function (s, i) { at(t + 150 + i * 110, function () { show(s); }); });
-      if (prep) at(t + 750, function () { show(prep); pop(prep); });
-      t += 1050;
-      c.show(t, acts, .2, .5);
-      c.move(t + 60, go);
+      light(0, t);
+      at(t + 250, function () { show(tags[0]); pop(tags[0]); });
       t += 650;
-      c.press(t);
-      at(t, function () { go.textContent = 'Sent'; go.classList.add('pt-sent'); pop(go); hide(edit); });
+      at(t, function () { lines[0].classList.add('h-done'); });
       t += 300;
-      if (prep) at(t, function () { prep.textContent = 'Sent'; prep.classList.remove('h-p'); prep.classList.add('h-g'); pop(prep); });
-      c.hide(t + 300);
-      return t + 800;
+      light(1, t);
+      at(t + 300, function () { show(tags[1]); pop(tags[1]); });
+      t += 700;
+      at(t, function () { lines[1].classList.add('h-done'); });
+      t += 300;
+      light(2, t);
+      tagTo(aiTag, 'Writing', 'h-p pt-shimmer', t + 150);
+      t = type(aiSmall, 'Hi Priya, thanks for booking Tuesday at 10:30...', 22, t + 200, true) + 250;
+      tagTo(aiTag, 'Needs approval', 'h-o', t);
+      var approve = document.createElement('span');
+      approve.className = 'pt-approve';
+      approve.textContent = 'Approve';
+      at(t, function () { ai.insertBefore(approve, aiTag); pop(approve); });
+      c.show(t + 100, ai, .35, 1.6);
+      c.move(t + 200, approve);
+      t += 800;
+      c.press(t);
+      at(t, function () { approve.remove(); aiSmall.textContent = aiText; });
+      tagTo(aiTag, 'Sent', 'h-g', t);
+      c.hide(t + 350);
+      t += 450;
+      at(t, function () { lines[2].classList.add('h-done'); });
+      t += 300;
+      light(3, t);
+      at(t + 200, function () { show(tags[3]); pop(tags[3]); waitNode.classList.add('pt-tick'); });
+      t += 1100;
+      at(t, function () {
+        waitNode.classList.remove('pt-ring');
+        nodes[4].classList.remove('pt-dim');
+        show(tags[4]);
+        split.classList.remove('pt-dim');
+        pair.forEach(function (n) { n.classList.remove('pt-dim'); });
+      });
+      return t + 900;
     },
 
     'p-stats': function (st) {
