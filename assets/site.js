@@ -195,3 +195,35 @@
   if (saved) run(saved);
   else open(false);
 })();
+
+// No lone word on the last line. CSS keeps most text from ending on one word (text-wrap: pretty and balance in
+// site.css); this catches what the browser leaves, like two-line paragraphs and browsers without text-wrap: the last
+// two words of each paragraph, item, cell or link list entry share a no-break space, even when the last word sits in
+// a link or ends in a period of its own. Short words only, so nothing gets too wide to wrap.
+(function () {
+  var SEL = "p, li, td, th, dd, figcaption, blockquote, summary, h1, h2, h3, h4, h5, h6, .tcard__blurb";
+  var SKIP = "header, button, pre, code, [contenteditable], .nw";
+  document.querySelectorAll(SEL).forEach(function (el) {
+    if (el.closest(SKIP) || el.textContent.trim().split(/\s+/).length < 3) return;
+    var nodes = [], walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), n;
+    while ((n = walk.nextNode())) nodes.push(n);
+    // From the end: skip trailing spaces, then the last word (it may run across nodes), then glue the space before it.
+    var tail = "", seenWord = false;
+    for (var k = nodes.length - 1; k >= 0; k--) {
+      var t = nodes[k].nodeValue;
+      for (var j = t.length - 1; j >= 0; j--) {
+        var c = t.charAt(j);
+        if (c === "\u00a0" && seenWord) return; // done already
+        if (/\s/.test(c) && c !== "\u00a0") {
+          if (!seenWord) continue;
+          var before = (t.slice(0, j) + "").split(/\s+/).pop();
+          if (tail.length > 14 || before.length + tail.length > 24) return;
+          nodes[k].nodeValue = t.slice(0, j) + "\u00a0" + t.slice(j + 1);
+          return;
+        }
+        seenWord = true;
+        tail = c + tail;
+      }
+    }
+  });
+})();

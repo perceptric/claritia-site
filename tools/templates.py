@@ -17,13 +17,22 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "tools" / "templates.json").read_text())
 SITE = "https://tryclaritia.com"
 APP = "https://app.tryclaritia.com"
-CSS_V, JS_V = 16, 16
+CSS_V, JS_V = 17, 16
 
 T = DATA["templates"]
 KIND = DATA["kinds"]
 USE = {u["value"]: u["label"] for u in DATA["useCases"]}
 IND = [i for i in DATA["industries"]]
 esc = lambda s: html.escape(str(s), quote=True)
+
+
+def glue(s: str) -> str:
+    """Escaped text with its last two words joined by a no-break space, so a short line never ends on one word.
+    For text that can't balance on its own, like card blurbs cut to two lines."""
+    head, sep, last = str(s).rpartition(" ")
+    if not sep or len(last) > 14 or len(head.rsplit(" ", 1)[-1]) + len(last) > 24:
+        return esc(s)
+    return esc(head) + "&nbsp;" + esc(last)
 
 
 def ind_slug(v: str) -> str:
@@ -313,7 +322,7 @@ def card(t) -> str:
         f'<a class="tcard" href="/templates/{t["slug"]}" data-does="{" ".join(t["does"])}" data-feature="{" ".join(t["features"])}" data-layout="{t["layout"]}" data-length="{t["length"]}" data-words="{esc(words)}">'
         f"{thumb(t)}"
         f'<span class="tcard__body"><span class="tcard__top"><b class="tcard__name">{esc(t["name"])}</b>{tag}</span>'
-        f'<span class="tcard__blurb">{esc(t["blurb"])}</span>'
+        f'<span class="tcard__blurb">{glue(t["blurb"])}</span>'
         f'<span class="tcard__meta">{esc(t["industryLabel"])} <span aria-hidden="true">/</span> {meta}</span></span></a>'
     )
 

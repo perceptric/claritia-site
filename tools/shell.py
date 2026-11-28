@@ -5,8 +5,8 @@ import html, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://tryclaritia.com"
-SITE_CSS_V = 15
-SITE_JS_V = 9
+SITE_CSS_V = 16
+SITE_JS_V = 10
 FONT_CSS = "https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap"
 
 INDEX = (ROOT / "index.html").read_text()

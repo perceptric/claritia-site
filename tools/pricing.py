@@ -209,7 +209,7 @@ STYLE = """<style>
 .ftable .grp th{position:sticky;left:0;background:var(--surface)}
 #pricing .plans{grid-template-columns:minmax(0,1fr)}
 }
-@media (max-width:560px){.pr-hero .display{font-size:40px;line-height:42px}}
+@media (max-width:560px){.pr-hero .display{font-size:40px;line-height:45px}}
 </style>
 """
 
@@ -293,8 +293,13 @@ def table():
         rows.append(f'<tr class="grp"><th colspan="5" scope="colgroup">{esc(name)}</th></tr>')
         for it in items:
             label, vals = it[0], it[1]
-            soon = ' <span class="tag">Soon</span>' if len(it) > 2 else ""
-            rows.append(f'<tr><th scope="row">{esc(label)}{soon}</th>' + "".join(cell(v, PLANS[i].get("pick")) for i, v in enumerate(vals)) + "</tr>")
+            # The tag stays on the line with the label's last word (.nw keeps them together).
+            if len(it) > 2:
+                head, _, last = label.rpartition(" ")
+                text = (esc(head) + " " if head else "") + f'<span class="nw">{esc(last)} <span class="tag">Soon</span></span>'
+            else:
+                text = esc(label)
+            rows.append(f'<tr><th scope="row">{text}</th>' + "".join(cell(v, PLANS[i].get("pick")) for i, v in enumerate(vals)) + "</tr>")
     return f"""<div class="ftable"><table>
 <caption class="sr-only">Every feature in each Claritia plan</caption>
 <thead><tr><th scope="col"><span class="sr-only">Feature</span></th>{head}</tr></thead>

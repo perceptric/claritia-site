@@ -10,7 +10,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import shell  # noqa: E402
 import templates as tpl  # noqa: E402
 
-PX_V = 3
+PX_V = 4
 esc = shell.esc
 APP = "https://app.tryclaritia.com"
 BY = {t["slug"]: t for t in tpl.T}

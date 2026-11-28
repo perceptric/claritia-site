@@ -83,7 +83,7 @@
 .tcard__body { display: flex; flex: 1; flex-direction: column; gap: 6px; padding: 16px 18px 18px; }
 .tcard__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
 .tcard__name { font-size: 15.5px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.35; }
-.tcard__blurb { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 14px; line-height: 1.5; color: var(--muted); }
+.tcard__blurb { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 14px; line-height: 1.5; color: var(--muted); text-wrap: balance; }
 .tcard__meta { margin-top: auto; padding-top: 6px; font-size: 13px; color: var(--meta); }
 .tag--warn { background: var(--tag-orange); color: var(--tag-orange-ink); }
 
@@ -217,7 +217,7 @@
 .cf { display: flex; flex-direction: column; gap: 24px; color: var(--f-text); font-family: var(--f-font); }
 .cf__head { display: flex; flex-direction: column; gap: 8px; }
 .cf__title { font-family: var(--f-head); font-size: 28px; line-height: 1.12; font-weight: var(--f-head-weight); font-style: var(--f-head-style); letter-spacing: -0.02em; }
-.fth[data-layout="plain"] .cf__title { font-size: clamp(34px, 5vw, 46px); line-height: 1.02; }
+.fth[data-layout="plain"] .cf__title { font-size: clamp(34px, 5vw, 46px); line-height: 1.12; }
 .cf__intro { font-size: 15px; line-height: 1.55; color: var(--f-muted); }
 .cf__prog { display: grid; grid-template-columns: 1fr auto; gap: 8px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--f-muted); }
 .cf__bar { grid-column: 1 / -1; height: 4px; overflow: hidden; border-radius: 999px; background: var(--f-soft); }
@@ -473,7 +473,7 @@ input:focus-visible + .cf__mark, .cf__step input:focus-visible + span, .cf__star
 .tkit:hover { box-shadow: var(--sh-hover); }
 .tkit__l { grid-row: 1 / 3; font-size: 13px; font-weight: 500; color: var(--meta); }
 .tkit b { font-size: 15px; font-weight: 500; color: var(--ink); }
-.tkit__t { grid-column: 2; font-size: 13.5px; color: var(--muted); }
+.tkit__t { grid-column: 2; font-size: 13.5px; color: var(--muted); text-wrap: balance; }
 .tkit__go { grid-row: 1 / 3; grid-column: 3; font-size: 14px; font-weight: 500; color: var(--ink); white-space: nowrap; }
 .tkit__wrap { margin-top: -8px; margin-bottom: 8px; }
 .tkits { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); }

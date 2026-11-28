@@ -28,7 +28,7 @@
 .bl-crumb { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--meta); }
 .bl-crumb a:hover { color: var(--ink); }
 .bl-crumb svg { width: 14px; height: 14px; }
-.bl-post h1 { max-width: 820px; margin-top: 20px; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05; font-weight: 500; letter-spacing: -0.04em; color: var(--ink); text-wrap: balance; }
+.bl-post h1 { max-width: 820px; margin-top: 20px; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.12; font-weight: 500; letter-spacing: -0.04em; color: var(--ink); text-wrap: balance; }
 .bl-lead { max-width: 680px; margin-top: 18px; font-size: 20px; line-height: 1.5; color: var(--body); text-wrap: pretty; }
 .bl-by { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 22px; font-size: 14px; color: var(--meta); }
 .bl-by span:first-child { color: var(--text); font-weight: 500; }

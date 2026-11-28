@@ -4,7 +4,7 @@
 
 .pd-hero { padding: 112px var(--frame-pad) 0; text-align: center; }
 .pd-hero .eyebrow { margin: 0 auto; }
-.pd-hero h1 { max-width: 860px; margin: 24px auto 0; font-size: clamp(42px, 5vw, 64px); line-height: 1.02; font-weight: 500; letter-spacing: -.042em; color: var(--ink); text-wrap: balance; }
+.pd-hero h1 { max-width: 860px; margin: 24px auto 0; font-size: clamp(42px, 5vw, 64px); line-height: 1.12; font-weight: 500; letter-spacing: -.042em; color: var(--ink); text-wrap: balance; }
 .pd-hero .sub { max-width: 600px; margin: 22px auto 0; }
 .pd-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 32px; }
 .pd-note { margin-top: 14px; font-size: 13px; color: var(--meta); }
@@ -100,6 +100,8 @@
 .pd-chain--old > div { background: var(--surface-2); color: var(--body); }
 .pd-chain--old > div svg { color: var(--faint); }
 .pd-chain--old > i { width: 0; border-left: 2px dashed var(--line-strong); }
+/* The short note on the right stays on one line; the step's own words wrap instead. */
+.pd-chain > div small { flex: none; white-space: nowrap; }
 .pd-chain--old > div small { margin-left: auto; font-size: 12.5px; color: var(--tag-orange-ink); }
 .pd-chain--new > div { background: var(--surface); box-shadow: var(--sh-rest); }
 .pd-chain--new > div svg { color: var(--green); }
@@ -111,7 +113,7 @@
 .pd-feat { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 72px; }
 .pd-feat--flip > :first-child { order: 2; }
 .pd-feat__text { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; min-width: 0; max-width: 500px; }
-.pd-feat__text h3 { font-size: 34px; line-height: 1.1; font-weight: 500; letter-spacing: -.03em; color: var(--ink); text-wrap: balance; }
+.pd-feat__text h3 { font-size: 34px; line-height: 1.12; font-weight: 500; letter-spacing: -.03em; color: var(--ink); text-wrap: balance; }
 .pd-feat__text p { font-size: 17px; line-height: 26px; color: var(--body); text-wrap: pretty; }
 .pd-feat__text .tag { height: 22px; }
 
@@ -138,7 +140,7 @@
 .pd-trio a { display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 2px solid var(--ink); }
 .pd-trio a:hover h2 { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
 .pd-trio b { font-size: 13px; font-weight: 500; color: var(--meta); }
-.pd-trio h2 { font-size: 32px; line-height: 1.05; font-weight: 500; letter-spacing: -.03em; color: var(--ink); }
+.pd-trio h2 { font-size: 32px; line-height: 1.12; font-weight: 500; letter-spacing: -.03em; color: var(--ink); }
 .pd-trio p { font-size: 16px; line-height: 24px; color: var(--body); }
 .pd-trio em { display: inline-flex; align-items: center; gap: 6px; font-style: normal; font-size: 14px; font-weight: 500; color: var(--green-ink); }
 

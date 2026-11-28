@@ -110,7 +110,8 @@
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid; }
-html { line-height: 1.5; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; font-family: var(--font); background: var(--bg); overflow-x: clip; scroll-padding-top: 88px; }
+/* text-wrap: pretty (inherited by all text) keeps a lone word off the last line; headings balance instead (below). */
+html { line-height: 1.5; text-wrap: pretty; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; font-family: var(--font); background: var(--bg); overflow-x: clip; scroll-padding-top: 88px; }
 body { min-height: 100vh; color: var(--text); font-size: 16px; line-height: 24px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-optical-sizing: auto; overflow-x: clip; }
 body.is-locked { overflow: hidden; }
 img, svg, video { display: block; max-width: 100%; }
@@ -119,6 +120,8 @@ button, input, textarea, select { font: inherit; color: inherit; background: non
 button { cursor: pointer; }
 ul, ol { list-style: none; }
 h1, h2, h3, h4 { font-weight: 500; text-wrap: balance; }
+/* Short text (labels, table cells, list items, captions, card lines) balances, so a two-line label never ends on one word. */
+th, td, li, dt, dd, small, label, summary, figcaption, button, h5, h6, .tjump__list a { text-wrap: balance; }
 :focus-visible { outline: none; box-shadow: var(--sh-focus) !important; }
 a:focus-visible:not([class]) { border-radius: 4px; }
 .js .col3 { cursor: pointer; }
@@ -143,10 +146,14 @@ body.home main#main { padding-top: 0; }
 .wrap { width: calc(var(--frame) - 2 * var(--frame-pad)); margin-inline: auto; }
 
 /* ---------- Type ---------- */
-.display { font-size: 64px; line-height: 64px; font-weight: 500; letter-spacing: -.042em; color: var(--ink); }
-.h2 { font-size: 44px; line-height: 44px; font-weight: 500; letter-spacing: -.035em; color: var(--ink); }
+.display { font-size: 64px; line-height: 72px; font-weight: 500; letter-spacing: -.042em; color: var(--ink); }
+.h2 { font-size: 44px; line-height: 50px; font-weight: 500; letter-spacing: -.035em; color: var(--ink); }
 .h3 { font-size: 18px; line-height: 22.5px; font-weight: 500; letter-spacing: -.01em; color: var(--ink); }
-.two { color: inherit; }
+/* A heading's second sentence sits on its own line as its own block, so each sentence balances on its own and neither ends on a lone word. */
+.two { color: inherit; display: block; }
+/* Words that stay on one line together, like a label's last word and its tag. */
+.nw { white-space: nowrap; }
+h1 > br, h2 > br, h3 > br { display: none; }
 .lead { font-size: 18px; line-height: 24px; color: var(--body); text-wrap: pretty; }
 .lead a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line-strong); }
 .small { font-size: 14px; line-height: 20px; color: var(--meta); }
@@ -640,7 +647,7 @@ button.tabb { cursor: pointer; }
 
 /* The last prompt, on dark */
 .cta { position: relative; overflow: hidden; padding: 104px 12px 128px; text-align: center; }
-.cta h2 { font-size: 36px; line-height: 36px; font-weight: 500; letter-spacing: -.035em; color: #fff; }
+.cta h2 { font-size: 36px; line-height: 40px; font-weight: 500; letter-spacing: -.035em; color: #fff; }
 .ghostapp { position: absolute; top: 310px; left: 20px; right: 20px; height: 260px; border-radius: var(--r-xl); background: rgba(255,255,255,.015); box-shadow: 0 0 0 1px rgba(255,255,255,.08); }
 .ghostapp .gbar { display: flex; align-items: center; gap: 10px; height: 42px; padding: 0 10px; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 14px; color: rgba(255,255,255,.8); }
 .ghostapp .sq { background: rgba(255,255,255,.06); box-shadow: var(--sh-dark); color: rgba(255,255,255,.7); }
@@ -670,8 +677,8 @@ button.tabb { cursor: pointer; }
   .site-nav, .site-actions .btn--primary { display: none; }
   .site-actions { margin-left: auto; gap: 8px; }
   .menu-btn { display: grid; }
-  .display { font-size: 44px; line-height: 46px; }
-  .h2 { font-size: 34px; line-height: 36px; }
+  .display { font-size: 44px; line-height: 50px; }
+  .h2 { font-size: 34px; line-height: 38px; }
   .section { padding: 80px 0; }
   .sec { padding: 96px var(--frame-pad) 32px; }
   .hero-in { align-items: flex-start; padding: 72px 24px 0; text-align: left; }
@@ -695,7 +702,7 @@ button.tabb { cursor: pointer; }
   .faq { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 48px; align-items: start; }
 }
 @media (max-width: 560px) {
-  .display { font-size: 40px; line-height: 44px; }
+  .display { font-size: 40px; line-height: 45px; }
   .hero-in { padding: 64px 16px 0; }
   .announce a { font-size: 13px; }
   .feats, .hgrid, .plans { grid-template-columns: minmax(0, 1fr); }
@@ -711,7 +718,7 @@ button.tabb { cursor: pointer; }
   .opts { grid-template-columns: minmax(0, 1fr); }
   .ghostapp { left: 8px; right: 8px; }
   .cta { padding: 88px 8px 104px; }
-  .cta h2 { font-size: 30px; line-height: 32px; }
+  .cta h2 { font-size: 30px; line-height: 34px; }
   .dbtn > span { white-space: normal; }
   .site-actions__signin { display: none; }
 }
